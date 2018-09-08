@@ -26,6 +26,9 @@ export namespace Components {
     'onUserDidLogOut'?: (event: CustomEvent) => void;
   }
 
+  interface PageEnter {}
+  interface PageEnterAttributes extends StencilHTMLAttributes {}
+
   interface PageLogin {}
   interface PageLoginAttributes extends StencilHTMLAttributes {
     'onUserDidLogIn'?: (event: CustomEvent) => void;
@@ -82,6 +85,7 @@ declare global {
     'PageAboutPopover': Components.PageAboutPopover;
     'PageAbout': Components.PageAbout;
     'PageAccount': Components.PageAccount;
+    'PageEnter': Components.PageEnter;
     'PageLogin': Components.PageLogin;
     'PageMap': Components.PageMap;
     'PageScheduleFilter': Components.PageScheduleFilter;
@@ -100,6 +104,7 @@ declare global {
     'page-about-popover': Components.PageAboutPopoverAttributes;
     'page-about': Components.PageAboutAttributes;
     'page-account': Components.PageAccountAttributes;
+    'page-enter': Components.PageEnterAttributes;
     'page-login': Components.PageLoginAttributes;
     'page-map': Components.PageMapAttributes;
     'page-schedule-filter': Components.PageScheduleFilterAttributes;
@@ -136,6 +141,12 @@ declare global {
   var HTMLPageAccountElement: {
     prototype: HTMLPageAccountElement;
     new (): HTMLPageAccountElement;
+  };
+
+  interface HTMLPageEnterElement extends Components.PageEnter, HTMLStencilElement {}
+  var HTMLPageEnterElement: {
+    prototype: HTMLPageEnterElement;
+    new (): HTMLPageEnterElement;
   };
 
   interface HTMLPageLoginElement extends Components.PageLogin, HTMLStencilElement {}
@@ -209,6 +220,7 @@ declare global {
     'page-about-popover': HTMLPageAboutPopoverElement
     'page-about': HTMLPageAboutElement
     'page-account': HTMLPageAccountElement
+    'page-enter': HTMLPageEnterElement
     'page-login': HTMLPageLoginElement
     'page-map': HTMLPageMapElement
     'page-schedule-filter': HTMLPageScheduleFilterElement
@@ -227,6 +239,7 @@ declare global {
     'page-about-popover': HTMLPageAboutPopoverElement;
     'page-about': HTMLPageAboutElement;
     'page-account': HTMLPageAccountElement;
+    'page-enter': HTMLPageEnterElement;
     'page-login': HTMLPageLoginElement;
     'page-map': HTMLPageMapElement;
     'page-schedule-filter': HTMLPageScheduleFilterElement;

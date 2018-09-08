@@ -165,7 +165,7 @@ export class PageSchedule {
       <ion-header>
         <ion-toolbar>
           <ion-buttons slot="start">
-            <ion-menu-button></ion-menu-button>
+            {/* <ion-menu-button></ion-menu-button> */}
           </ion-buttons>
 
           <ion-segment value={this.segment} color={mode === 'md' ? 'light' : null}>
@@ -178,9 +178,10 @@ export class PageSchedule {
           </ion-segment>
 
           <ion-buttons slot="end">
-            <ion-button onClick={() => this.presentFilter()}>
+            {/* <ion-button onClick={() => this.presentFilter()}>
               <ion-icon slot="icon-only" name="options"></ion-icon>
-            </ion-button>
+            </ion-button> */}
+             <ion-menu-button></ion-menu-button>
           </ion-buttons>
         </ion-toolbar>
 
