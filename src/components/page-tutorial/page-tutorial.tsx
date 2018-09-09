@@ -13,20 +13,20 @@ export class PageTutorial {
 
   slides = [
     {
-      src: 'assets/img/ica-slidebox-img-1.png',
+      src: '/assets/img/ica-slidebox-img-1.png',
       title: `Welcome to the <b>ICA</b>`,
       text: `The <b>ionic conference app</b> is a practical preview of the
               ionic framework in action, and a demonstration of proper code use.`
     },
     {
-      src: 'assets/img/ica-slidebox-img-2.png',
+      src: '/assets/img/ica-slidebox-img-2.png',
       title: `What is Ionic?`,
       text: `<b>Ionic Pro</b> is a powerful set of services and features built
               on top of Ionic Framework that brings a totally new level of app
               development agility to mobile dev teams.`
     },
     {
-      src: 'assets/img/ica-slidebox-img-3.png',
+      src: '/assets/img/ica-slidebox-img-3.png',
       title: `What is Ionic Pro?`,
       text: `<b>Ionic Pro</b> is a powerful set of services and features built
               on top of Ionic Framework that brings a totally new level of app

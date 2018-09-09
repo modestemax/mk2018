@@ -7,7 +7,7 @@ import { Component } from '@stencil/core';
 export class PageAbout {
   render() {
     return [
-      <ion-content>
+      <ion-content class="mk_photo">
         {/*<div class="about-header">*/}
           {/*<img src="assets/img/mk-enter.png" alt="ionic logo" />*/}
         {/*</div>*/}
