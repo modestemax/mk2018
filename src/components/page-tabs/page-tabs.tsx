@@ -1,4 +1,4 @@
-import { Component } from '@stencil/core';
+import {Component} from '@stencil/core';
 
 @Component({
   tag: 'page-tabs',
@@ -9,12 +9,16 @@ export class PageTabs {
   render() {
     return [
       <ion-tabs>
-        <ion-tab label="Schedule" icon="calendar" name="tab-schedule">
+        <ion-tab label="" icon="calendar" name="tab-who-am-i">
           <ion-nav></ion-nav>
+        </ion-tab>
+        <ion-tab label="Schedule" icon="calendar" name="tab-schedule">
+        <ion-nav></ion-nav>
         </ion-tab>
         <ion-tab label="Speakers" icon="contacts" name="tab-speaker">
           <ion-nav></ion-nav>
         </ion-tab>
+
         <ion-tab label="Map" icon="map" component="page-map"></ion-tab>
         <ion-tab label="About" icon="information-circle" component="page-about"></ion-tab>
       </ion-tabs>

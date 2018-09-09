@@ -37,6 +37,15 @@ export namespace Components {
   interface PageMap {}
   interface PageMapAttributes extends StencilHTMLAttributes {}
 
+  interface PageMyCv {
+    'docName': string;
+    'goback': string;
+  }
+  interface PageMyCvAttributes extends StencilHTMLAttributes {
+    'docName'?: string;
+    'goback'?: string;
+  }
+
   interface PageScheduleFilter {
     'excludedTracks': string[];
   }
@@ -81,6 +90,9 @@ export namespace Components {
   interface PageTutorialAttributes extends StencilHTMLAttributes {
     'lng'?: string;
   }
+
+  interface PageWhoAmI {}
+  interface PageWhoAmIAttributes extends StencilHTMLAttributes {}
 }
 
 declare global {
@@ -92,6 +104,7 @@ declare global {
     'PageEnter': Components.PageEnter;
     'PageLogin': Components.PageLogin;
     'PageMap': Components.PageMap;
+    'PageMyCv': Components.PageMyCv;
     'PageScheduleFilter': Components.PageScheduleFilter;
     'PageSchedule': Components.PageSchedule;
     'PageSession': Components.PageSession;
@@ -101,6 +114,7 @@ declare global {
     'PageSupport': Components.PageSupport;
     'PageTabs': Components.PageTabs;
     'PageTutorial': Components.PageTutorial;
+    'PageWhoAmI': Components.PageWhoAmI;
   }
 
   interface StencilIntrinsicElements {
@@ -111,6 +125,7 @@ declare global {
     'page-enter': Components.PageEnterAttributes;
     'page-login': Components.PageLoginAttributes;
     'page-map': Components.PageMapAttributes;
+    'page-my-cv': Components.PageMyCvAttributes;
     'page-schedule-filter': Components.PageScheduleFilterAttributes;
     'page-schedule': Components.PageScheduleAttributes;
     'page-session': Components.PageSessionAttributes;
@@ -120,6 +135,7 @@ declare global {
     'page-support': Components.PageSupportAttributes;
     'page-tabs': Components.PageTabsAttributes;
     'page-tutorial': Components.PageTutorialAttributes;
+    'page-who-am-i': Components.PageWhoAmIAttributes;
   }
 
 
@@ -163,6 +179,12 @@ declare global {
   var HTMLPageMapElement: {
     prototype: HTMLPageMapElement;
     new (): HTMLPageMapElement;
+  };
+
+  interface HTMLPageMyCvElement extends Components.PageMyCv, HTMLStencilElement {}
+  var HTMLPageMyCvElement: {
+    prototype: HTMLPageMyCvElement;
+    new (): HTMLPageMyCvElement;
   };
 
   interface HTMLPageScheduleFilterElement extends Components.PageScheduleFilter, HTMLStencilElement {}
@@ -219,6 +241,12 @@ declare global {
     new (): HTMLPageTutorialElement;
   };
 
+  interface HTMLPageWhoAmIElement extends Components.PageWhoAmI, HTMLStencilElement {}
+  var HTMLPageWhoAmIElement: {
+    prototype: HTMLPageWhoAmIElement;
+    new (): HTMLPageWhoAmIElement;
+  };
+
   interface HTMLElementTagNameMap {
     'app-root': HTMLAppRootElement
     'page-about-popover': HTMLPageAboutPopoverElement
@@ -227,6 +255,7 @@ declare global {
     'page-enter': HTMLPageEnterElement
     'page-login': HTMLPageLoginElement
     'page-map': HTMLPageMapElement
+    'page-my-cv': HTMLPageMyCvElement
     'page-schedule-filter': HTMLPageScheduleFilterElement
     'page-schedule': HTMLPageScheduleElement
     'page-session': HTMLPageSessionElement
@@ -236,6 +265,7 @@ declare global {
     'page-support': HTMLPageSupportElement
     'page-tabs': HTMLPageTabsElement
     'page-tutorial': HTMLPageTutorialElement
+    'page-who-am-i': HTMLPageWhoAmIElement
   }
 
   interface ElementTagNameMap {
@@ -246,6 +276,7 @@ declare global {
     'page-enter': HTMLPageEnterElement;
     'page-login': HTMLPageLoginElement;
     'page-map': HTMLPageMapElement;
+    'page-my-cv': HTMLPageMyCvElement;
     'page-schedule-filter': HTMLPageScheduleFilterElement;
     'page-schedule': HTMLPageScheduleElement;
     'page-session': HTMLPageSessionElement;
@@ -255,6 +286,7 @@ declare global {
     'page-support': HTMLPageSupportElement;
     'page-tabs': HTMLPageTabsElement;
     'page-tutorial': HTMLPageTutorialElement;
+    'page-who-am-i': HTMLPageWhoAmIElement;
   }
 
 
