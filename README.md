@@ -1,12 +1,2 @@
-# Ionic Stencil Conference App
-
-A conference app built with Stencil to demonstrate Ionic
-
-## Getting Started
-
-Clone this repo and run:
-
-```bash
-npm install
-npm start
-```
+# mk2018
+Application Mobile pour Maurice Kamto Presidentielle 2018
