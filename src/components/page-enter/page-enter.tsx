@@ -15,9 +15,9 @@ export class PageAbout {
       <ion-footer>
         <ion-toolbar>
           <div text-center>
-            <ion-anchor href="/home?lang=fr">FRANCAIS</ion-anchor>
+            <ion-anchor href="/tutorial/fr">FRANCAIS</ion-anchor>
             <span> | </span>
-            <ion-anchor href="/home?lang=en">ENGLISH</ion-anchor>
+            <ion-anchor href="/tutorial/en">ENGLISH</ion-anchor>
           </div>
         </ion-toolbar>
       </ion-footer>

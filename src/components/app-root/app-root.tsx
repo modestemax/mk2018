@@ -95,7 +95,12 @@ export class AppRoot {
           <ion-route url="/about" component="page-about"></ion-route>
         </ion-route>
         <ion-route url="/enter" component="page-enter"></ion-route>
-        <ion-route url="/tutorial" component="page-tutorial"></ion-route>
+
+        <ion-route url="/tutorial" component="page-tutorial">
+       {/*   <ion-route url="/fr" component="page-tutorial" componentProps={{ lng: 'fr' }}></ion-route>
+          <ion-route url="/en" component="page-tutorial" componentProps={{ lng: 'en' }}></ion-route>
+       */} </ion-route>
+
         <ion-route url="/login" component="page-login"></ion-route>
         <ion-route url="/account" component="page-account"></ion-route>
         <ion-route url="/signup" component="page-signup"></ion-route>

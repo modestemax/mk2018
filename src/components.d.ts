@@ -75,8 +75,12 @@ export namespace Components {
   interface PageTabs {}
   interface PageTabsAttributes extends StencilHTMLAttributes {}
 
-  interface PageTutorial {}
-  interface PageTutorialAttributes extends StencilHTMLAttributes {}
+  interface PageTutorial {
+    'lng': string;
+  }
+  interface PageTutorialAttributes extends StencilHTMLAttributes {
+    'lng'?: string;
+  }
 }
 
 declare global {

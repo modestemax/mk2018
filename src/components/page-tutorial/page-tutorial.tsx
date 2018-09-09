@@ -1,16 +1,20 @@
-import { Component } from "@stencil/core";
-import { UserData } from "../../providers/user-data";
+import { Component, Prop } from '@stencil/core';
+import { UserData } from '../../providers/user-data';
 
 @Component({
-  tag: "page-tutorial",
-  styleUrl: "page-tutorial.css"
+  tag: 'page-tutorial',
+  styleUrl: 'page-tutorial.css'
 })
 export class PageTutorial {
+
+  @Prop() lng = 'fr';
+
   componentDidLoad() {
     UserData.hasSeenTutorial(true);
   }
 
   render() {
+    debugger
     return [
       <ion-header no-border>
         <ion-toolbar class="tutorial-transparent">
@@ -25,11 +29,11 @@ export class PageTutorial {
       <ion-content scrollY={false}>
         <ion-slides pager={true}>
           <ion-slide>
-            <img src="assets/img/ica-slidebox-img-1.png" class="slide-image" />
+            <img src="assets/img/ica-slidebox-img-1.png" class="slide-image"/>
           </ion-slide>
 
           <ion-slide>
-            <img src="assets/img/ica-slidebox-img-1.png" class="slide-image" />
+            <img src="assets/img/ica-slidebox-img-1.png" class="slide-image"/>
             <h2 class="slide-title">
               Welcome to the <b>ICA</b>
             </h2>
@@ -40,7 +44,7 @@ export class PageTutorial {
           </ion-slide>
 
           <ion-slide>
-            <img src="assets/img/ica-slidebox-img-2.png" class="slide-image" />
+            <img src="assets/img/ica-slidebox-img-2.png" class="slide-image"/>
             <h2 class="slide-title">What is Ionic?</h2>
             <p>
               <b>Ionic Framework</b> is an open source SDK that enables
@@ -50,7 +54,7 @@ export class PageTutorial {
           </ion-slide>
 
           <ion-slide>
-            <img src="assets/img/ica-slidebox-img-3.png" class="slide-image" />
+            <img src="assets/img/ica-slidebox-img-3.png" class="slide-image"/>
             <h2 class="slide-title">What is Ionic Pro?</h2>
             <p>
               <b>Ionic Pro</b> is a powerful set of services and features built
@@ -60,11 +64,11 @@ export class PageTutorial {
           </ion-slide>
 
           <ion-slide>
-            <img src="assets/img/ica-slidebox-img-4.png" class="slide-image" />
+            <img src="assets/img/ica-slidebox-img-4.png" class="slide-image"/>
             <h2 class="slide-title">Ready to Play?</h2>
             <ion-button fill="clear" href="/schedule">
               Continue
-              <ion-icon slot="end" name="arrow-forward" />
+              <ion-icon slot="end" name="arrow-forward"/>
             </ion-button>
           </ion-slide>
         </ion-slides>
