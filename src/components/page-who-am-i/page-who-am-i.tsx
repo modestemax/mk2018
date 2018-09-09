@@ -84,7 +84,7 @@ export class PageWhoAmI {
       <ion-content>
         <ion-list>
 
-          <ion-group>
+          <ion-item-group>
             <ion-grid no-padding>
 
               {this.documents.map((docs) => (
@@ -106,7 +106,7 @@ export class PageWhoAmI {
                 </ion-row>
               ))}
             </ion-grid>
-          </ion-group>
+          </ion-item-group>
         </ion-list>
       </ion-content>
     ];
