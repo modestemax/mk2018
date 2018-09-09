@@ -1,4 +1,4 @@
-import { get, remove, set } from './storage';
+import {get, remove, set} from './storage';
 
 const HAS_LOGGED_IN = 'hasLoggedIn';
 const HAS_SEEN_TUTORIAL = 'hasSeenTutorial';
@@ -59,6 +59,14 @@ export class UserDataController {
   async checkHasSeenTutorial(): Promise<boolean> {
     const value = await get(HAS_SEEN_TUTORIAL);
     return !!value;
+  }
+
+  async getLng(): Promise<string> {
+    return get('lng');
+  }
+
+  async setLng(lng): Promise<void> {
+    await set('lng', lng);
   }
 }
 

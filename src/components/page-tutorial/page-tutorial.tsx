@@ -1,5 +1,6 @@
-import { Component, Prop } from '@stencil/core';
-import { UserData } from '../../providers/user-data';
+import {Component, Prop, State} from '@stencil/core';
+
+import {UserData} from '../../providers/user-data';
 
 @Component({
   tag: 'page-tutorial',
@@ -8,60 +9,58 @@ import { UserData } from '../../providers/user-data';
 export class PageTutorial {
 
   @Prop() lng = 'fr';
+  @State()  showSkip = true;
+
+  slides = [
+    {
+      src: 'assets/img/ica-slidebox-img-1.png',
+      title: `Welcome to the <b>ICA</b>`,
+      text: `The <b>ionic conference app</b> is a practical preview of the
+              ionic framework in action, and a demonstration of proper code use.`
+    },
+    {
+      src: 'assets/img/ica-slidebox-img-2.png',
+      title: `What is Ionic?`,
+      text: `<b>Ionic Pro</b> is a powerful set of services and features built
+              on top of Ionic Framework that brings a totally new level of app
+              development agility to mobile dev teams.`
+    },
+    {
+      src: 'assets/img/ica-slidebox-img-3.png',
+      title: `What is Ionic Pro?`,
+      text: `<b>Ionic Pro</b> is a powerful set of services and features built
+              on top of Ionic Framework that brings a totally new level of app
+              development agility to mobile dev teams.`
+    }
+  ];
 
   componentDidLoad() {
     UserData.hasSeenTutorial(true);
+    UserData.setLng(this.lng);
   }
 
   render() {
-    debugger
+
     return [
       <ion-header no-border>
         <ion-toolbar class="tutorial-transparent">
           <ion-buttons slot="end">
-            <ion-button color="primary" href="/schedule">
-              Skip
-            </ion-button>
+            {this.showSkip
+              ? <ion-button color="primary" href="/schedule"> Skip </ion-button>
+              : ''}
           </ion-buttons>
         </ion-toolbar>
       </ion-header>,
 
       <ion-content scrollY={false}>
-        <ion-slides pager={true}>
-          <ion-slide>
-            <img src="assets/img/ica-slidebox-img-1.png" class="slide-image"/>
-          </ion-slide>
-
-          <ion-slide>
-            <img src="assets/img/ica-slidebox-img-1.png" class="slide-image"/>
-            <h2 class="slide-title">
-              Welcome to the <b>ICA</b>
-            </h2>
-            <p>
-              The <b>ionic conference app</b> is a practical preview of the
-              ionic framework in action, and a demonstration of proper code use.
-            </p>
-          </ion-slide>
-
-          <ion-slide>
-            <img src="assets/img/ica-slidebox-img-2.png" class="slide-image"/>
-            <h2 class="slide-title">What is Ionic?</h2>
-            <p>
-              <b>Ionic Framework</b> is an open source SDK that enables
-              developers to build high quality mobile apps with web technologies
-              like HTML, CSS, and JavaScript.
-            </p>
-          </ion-slide>
-
-          <ion-slide>
-            <img src="assets/img/ica-slidebox-img-3.png" class="slide-image"/>
-            <h2 class="slide-title">What is Ionic Pro?</h2>
-            <p>
-              <b>Ionic Pro</b> is a powerful set of services and features built
-              on top of Ionic Framework that brings a totally new level of app
-              development agility to mobile dev teams.
-            </p>
-          </ion-slide>
+        <ion-slides onIonSlideReachEnd={() => this.showSkip = false} pager={true}>
+          {this.slides.map(({src, title, text}) =>
+            (<ion-slide>
+                <img src={src} class="slide-image"/>
+                <h2 class="slide-title" innerHTML={title}/>
+                <p innerHTML={text}/>
+              </ion-slide>
+            ))}
 
           <ion-slide>
             <img src="assets/img/ica-slidebox-img-4.png" class="slide-image"/>

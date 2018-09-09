@@ -1,10 +1,10 @@
 import '@ionic/core';
 
-import { Component, Element, Listen, Prop, State } from '@stencil/core';
-import { UserData } from '../../providers/user-data';
-import { Plugins } from '@capacitor/core';
+import {Component, Element, Listen, Prop, State} from '@stencil/core';
+import {UserData} from '../../providers/user-data';
+import {Plugins} from '@capacitor/core';
 
-const { SplashScreen } = Plugins;
+const {SplashScreen} = Plugins;
 
 @Component({
   tag: 'app-root',
@@ -13,10 +13,11 @@ const { SplashScreen } = Plugins;
 export class AppRoot {
   @State() loggedIn = false;
   hasSeenTutorial = false;
+  userLng = 'fr';
 
   @Element() el: HTMLElement;
 
-  @Prop({ context: 'isServer' }) isServer: boolean;
+  @Prop({context: 'isServer'}) isServer: boolean;
 
 
   appPages = [
@@ -46,6 +47,7 @@ export class AppRoot {
     this.hasSeenTutorial = this.isServer
       ? true
       : await UserData.checkHasSeenTutorial();
+    this.userLng = (await UserData.getLng()) || this.userLng;
   }
 
   async componentDidLoad() {
@@ -76,17 +78,17 @@ export class AppRoot {
   renderRouter() {
     return (
       <ion-router useHash={false}>
-        <ion-route-redirect from="/" to={this.hasSeenTutorial ? '/schedule' : '/tutorial'} />
+        <ion-route-redirect from="/" to={this.hasSeenTutorial ? '/schedule' : '/tutorial'}/>
 
         <ion-route component="page-tabs">
           <ion-route url="/schedule" component="tab-schedule">
             <ion-route component="page-schedule"></ion-route>
-            <ion-route url="/session/:sessionId" component="page-session" componentProps={{ goback: '/schedule' }}></ion-route>
+            <ion-route url="/session/:sessionId" component="page-session" componentProps={{goback: '/schedule'}}></ion-route>
           </ion-route>
 
           <ion-route url="/speakers" component="tab-speaker">
             <ion-route component="page-speaker-list"></ion-route>
-            <ion-route url="/session/:sessionId" component="page-session" componentProps={{ goback: '/speakers' }}></ion-route>
+            <ion-route url="/session/:sessionId" component="page-session" componentProps={{goback: '/speakers'}}></ion-route>
             <ion-route url="/:speakerId" component="page-speaker-detail"></ion-route>
           </ion-route>
 
@@ -96,10 +98,11 @@ export class AppRoot {
         </ion-route>
         <ion-route url="/enter" component="page-enter"></ion-route>
 
-        <ion-route url="/tutorial" component="page-tutorial">
-       {/*   <ion-route url="/fr" component="page-tutorial" componentProps={{ lng: 'fr' }}></ion-route>
-          <ion-route url="/en" component="page-tutorial" componentProps={{ lng: 'en' }}></ion-route>
-       */} </ion-route>
+        {/*<ion-route url="/tutorial" >*/}
+        <ion-route url="/tutorial" component="page-tutorial" componentProps={{lng: this.userLng}}></ion-route>
+        <ion-route url="/tutorial/fr" component="page-tutorial" componentProps={{lng: 'fr'}}></ion-route>
+        <ion-route url="tutorial/en" component="page-tutorial" componentProps={{lng: 'en'}}></ion-route>
+        {/*</ion-route>*/}
 
         <ion-route url="/login" component="page-login"></ion-route>
         <ion-route url="/account" component="page-account"></ion-route>
@@ -111,36 +114,36 @@ export class AppRoot {
 
   renderMenu() {
     return (
-    <ion-menu side="end">
-      <ion-header>
-        <ion-toolbar>
-          <ion-title>Menu</ion-title>
-        </ion-toolbar>
-      </ion-header>
-      <ion-content forceOverscroll={false}>
-        <ion-list>
-          <ion-list-header>
-            Navigate
-          </ion-list-header>
-
-          {this.appPages.map((p) =>
-            <ion-menu-toggle autoHide={false}>
-              <ion-item href={p.url}>
-                <ion-icon slot="start" name={p.icon}></ion-icon>
-                <ion-label>
-                  {p.title}
-                </ion-label>
-              </ion-item>
-            </ion-menu-toggle>
-          )}
-        </ion-list>
-
-        <ion-list>
-          <ion-list-header>
-            Account
+      <ion-menu side="end">
+        <ion-header>
+          <ion-toolbar>
+            <ion-title>Menu</ion-title>
+          </ion-toolbar>
+        </ion-header>
+        <ion-content forceOverscroll={false}>
+          <ion-list>
+            <ion-list-header>
+              Navigate
             </ion-list-header>
 
-          {/* <ion-menu-toggle autoHide={false}>
+            {this.appPages.map((p) =>
+              <ion-menu-toggle autoHide={false}>
+                <ion-item href={p.url}>
+                  <ion-icon slot="start" name={p.icon}></ion-icon>
+                  <ion-label>
+                    {p.title}
+                  </ion-label>
+                </ion-item>
+              </ion-menu-toggle>
+            )}
+          </ion-list>
+
+          <ion-list>
+            <ion-list-header>
+              Account
+            </ion-list-header>
+
+            {/* <ion-menu-toggle autoHide={false}>
             {this.loggedIn
               ? <ion-item href="account">
                 <ion-icon slot="start" name="person"></ion-icon>
@@ -158,16 +161,16 @@ export class AppRoot {
             }
           </ion-menu-toggle> */}
 
-          <ion-menu-toggle autoHide={false}>
-            <ion-item href="support" button>
-              <ion-icon slot="start" name="help"></ion-icon>
-              <ion-label>
-                Support
+            <ion-menu-toggle autoHide={false}>
+              <ion-item href="support" button>
+                <ion-icon slot="start" name="help"></ion-icon>
+                <ion-label>
+                  Support
                 </ion-label>
-            </ion-item>
-          </ion-menu-toggle>
+              </ion-item>
+            </ion-menu-toggle>
 
-          {/* <ion-menu-toggle autoHide={false}>
+            {/* <ion-menu-toggle autoHide={false}>
             {this.loggedIn
               ? <ion-item onClick={() => this.logout()} button>
                 <ion-icon slot="start" name="log-out"></ion-icon>
@@ -184,30 +187,31 @@ export class AppRoot {
               </ion-item>
             }
           </ion-menu-toggle> */}
-        </ion-list>
+          </ion-list>
 
-        <ion-list>
-          <ion-list-header>
-            Tutorial
-          </ion-list-header>
-          <ion-menu-toggle autoHide={false}>
-            <ion-item href="tutorial">
-              <ion-icon slot="start" name="hammer"></ion-icon>
-              <ion-label>Show Tutorial</ion-label>
-            </ion-item>
-          </ion-menu-toggle>
-        </ion-list>
-      </ion-content>
-    </ion-menu>
+          <ion-list>
+            <ion-list-header>
+              Tutorial
+            </ion-list-header>
+            <ion-menu-toggle autoHide={false}>
+              <ion-item href="tutorial">
+                <ion-icon slot="start" name="hammer"></ion-icon>
+                <ion-label>Show Tutorial</ion-label>
+              </ion-item>
+            </ion-menu-toggle>
+          </ion-list>
+        </ion-content>
+      </ion-menu>
     );
   }
+
   // TODO ion-menu should be split out
   render() {
     return (
       <ion-app>
         {this.renderRouter()}
         <ion-split-pane>
-        {this.renderMenu()}
+          {this.renderMenu()}
           <ion-router-outlet animated={false} main></ion-router-outlet>
         </ion-split-pane>
       </ion-app>
