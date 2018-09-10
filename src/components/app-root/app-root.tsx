@@ -78,12 +78,17 @@ export class AppRoot {
   renderRouter() {
     return (
       <ion-router useHash={false}>
-        <ion-route-redirect from="/" to={this.hasSeenTutorial  ? '/who-am-i' : '/enter'}/>
+        <ion-route-redirect from="/" to={this.hasSeenTutorial ? '/who-am-i' : '/enter'}/>
 
         <ion-route component="page-tabs">
           <ion-route url="/who-am-i" component="tab-who-am-i">
             <ion-route component="page-who-am-i"></ion-route>
             <ion-route url="/my-cv/:docName" component="page-my-cv" componentProps={{goback: '/who-am-i'}}></ion-route>
+          </ion-route>
+
+          <ion-route url="/my-project" component="tab-my-project">
+            <ion-route component="page-my-project"></ion-route>
+            <ion-route url="/chantier/:num" component="page-chantier" componentProps={{goback: '/my-project'}}></ion-route>
           </ion-route>
 
           <ion-route url="/schedule" component="tab-schedule">

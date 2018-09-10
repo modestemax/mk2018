@@ -10,48 +10,54 @@ import {Component, Prop /*Element, Listen, , State */} from '@stencil/core';
   tag: 'page-who-am-i',
   styleUrl: 'page-who-am-i.css',
 })
-export class PageWhoAmI {
+export class PageMyProject {
 
 
   @Prop({context: 'config'}) config: Config;
 
-  documents = [
-    [
-      {
-        color: 'blue',
-        docName: 'etat-civil',
-        logo: '/assets/img/ica-slidebox-img-2.png',
-        title: 'Etat Civil<br/>&nbsp;'
-      },
-      {
-        color: 'blue',
-        docName: 'academic',
-        logo: '/assets/img/ica-slidebox-img-2.png',
-        title: 'Parcours<br/>Academique'
-      }
-    ],
-    [
-      {
-        color: 'blue',
-        docName: 'administration',
-        logo: '/assets/img/ica-slidebox-img-2.png',
-        title: 'Fonctions<br/>Administratives'
-      },
-      {
-        color: 'blue',
-        docName: 'international',
-        logo: '/assets/img/ica-slidebox-img-2.png',
-        title: 'Activites<br/>Internationales'
-      }
-    ],
-    [
-      {
-        color: 'blue',
-        docName: 'distinction',
-        logo: '/assets/img/ica-slidebox-img-2.png',
-        title: 'Distinctions'
-      }
-    ],
+  chantiers = [
+    {
+      numChantier: null,
+      logo: '/assets/img/ica-slidebox-img-2.png',
+      label: 'Notre Idéologie',
+      title: 'LE SOCIAL LIBERALISME',
+      text: `Afin de mettre chaque Camerounais au cœur de l'action politique pour la modernisation de notre pays`
+    }
+    , {
+      numChantier: 1,
+      logo: '/assets/img/ica-slidebox-img-2.png',
+      label: 'Chantier No 1',
+      title: `MODERNISATION POLITIQUE ET INSTITUTIONNELLE`,
+      text: `Organiser le vivre ensemble et moderniser les Institutions de la République.`
+    }
+    , {
+      numChantier: 2,
+      logo: '/assets/img/ica-slidebox-img-2.png',
+      label: 'Chantier No 2',
+      title: `MODERNISATION DE L'ECONOMIE, L'AMENAGEMENT DU TERRITOIRE ET LE DEVELOPPEMENT DURABLE`,
+      text: `Le Cameroun un havre de paix et de prospérité.`
+    }
+    , {
+      numChantier: 3,
+      logo: '/assets/img/ica-slidebox-img-2.png',
+      label: 'Chantier No 3',
+      title: `MODERNISATION DE L'EDUCATION ET DU SYSTEME SOCIAL, LE STATUT DE LA FEMME`,
+      text: `Des Camerounais bien formés, solidaires et en bonne santé`
+    }
+    , {
+      numChantier: 4,
+      logo: '/assets/img/ica-slidebox-img-2.png',
+      label: 'Chantier No 4',
+      title: `MODERNISATION DE LA CULTURE, LE TOURISME ET LE DEVELOPPEMENT SPORTIF`,
+      text: `Mieux faire connaitre le Cameroun, Afrique en miniature.`
+    }
+    , {
+      numChantier: 5,
+      logo: '/assets/img/ica-slidebox-img-2.png',
+      label: 'Chantier No 5',
+      title: `LA MODERNISATION DE LA POLITIQUE ETRANGERE ET DE LA DIPLOMATIE, PLACE DE LA DIASPORA`,
+      text: `Une diplomatie de présence avec forte implication de la diaspora.`
+    }
   ];
 
   componentWillLoad() {
@@ -90,7 +96,7 @@ export class PageWhoAmI {
           <ion-item-group>
             <ion-grid no-padding>
 
-              {this.documents.map((docs) => (
+              {this.chantiers.map((docs) => (
                 <ion-row>
                   {docs.map(doc => (
                     <ion-col>
