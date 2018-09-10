@@ -84,7 +84,7 @@ export class PageWhoAmI {
       <ion-content>
         <ion-list>
           <ion-item>
-            <img src="assets/img/ionic-logo-white.svg" alt="ionic logo"/>
+            <img src="assets/img/ica-slidebox-img-1.png" alt="ionic logo"/>
           </ion-item>
 
           <ion-item-group>

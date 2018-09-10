@@ -12,7 +12,7 @@ export class PageTabs {
         <ion-tab label="" icon="calendar" name="tab-who-am-i">
           <ion-nav></ion-nav>
         </ion-tab>
-        <ion-tab label="" icon="calendar" name="tab-my-project">
+        <ion-tab label="" icon="calendar" name="tab-mon-projet">
           <ion-nav></ion-nav>
         </ion-tab>
         <ion-tab label="Schedule" icon="calendar" name="tab-schedule">

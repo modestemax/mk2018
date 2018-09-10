@@ -7,10 +7,10 @@ import {Component, Prop /*Element, Listen, , State */} from '@stencil/core';
 
 
 @Component({
-  tag: 'page-who-am-i',
-  styleUrl: 'page-who-am-i.css',
+  tag: 'page-mon-projet',
+  styleUrl: 'page-mon-projet.css',
 })
-export class PageMyProject {
+export class PageMonProjet {
 
 
   @Prop({context: 'config'}) config: Config;
@@ -69,54 +69,43 @@ export class PageMyProject {
     // this.fab = this.el.querySelector('#socialFab');
   }
 
-
   render() {
-    // const mode = this.config.get('mode');
 
     return [
       <ion-header>
         <ion-toolbar>
-
           <ion-title>
-            Qui suis-je
+            Mon Projet pour le Cameroun
           </ion-title>
-
           <ion-buttons slot="end">
             <ion-menu-button></ion-menu-button>
           </ion-buttons>
         </ion-toolbar>
       </ion-header>,
 
-      <ion-content>
-        <ion-list>
-          <ion-item>
-            <img src="assets/img/ionic-logo-white.svg" alt="ionic logo"/>
-          </ion-item>
+      <ion-content scrollY={false}>
+        <ion-slides pager={true}>
+          {this.chantiers.map(({numChantier, logo, label, title, text}) =>
+            (<ion-slide>
+                <ion-card>
+                  <ion-card-heade>
+                    <img src={logo} class="slide-image"/>
+                  </ion-card-heade>
+                  <ion-card-content>
+                    <ion-label class="slide-title" innerHTML={label}/>
+                    <h2 class="slide-title" innerHTML={title}/>
+                    <p innerHTML={text}/>
+                    <ion-button fill="clear" href={`/mon-projet/chantier/${numChantier}`}>
+                      Continue
+                      <ion-icon slot="end" name="arrow-forward"/>
+                    </ion-button>
 
-          <ion-item-group>
-            <ion-grid no-padding>
+                  </ion-card-content>
 
-              {this.chantiers.map((docs) => (
-                <ion-row>
-                  {docs.map(doc => (
-                    <ion-col>
-                      <ion-item detail={false} href={`/who-am-i/mon-cv/${doc.docName}`}>
-                        <div>
-                          <div>
-                            <img src={doc.logo} alt="logo"/>
-                          </div>
-
-                          <ion-label innerHTML={doc.title}/>
-                        </div>
-                      </ion-item>
-
-                    </ion-col>
-                  ))}
-                </ion-row>
-              ))}
-            </ion-grid>
-          </ion-item-group>
-        </ion-list>
+                </ion-card>
+              </ion-slide>
+            ))}
+        </ion-slides>
       </ion-content>
     ];
   }

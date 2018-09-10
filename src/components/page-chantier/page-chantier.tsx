@@ -1,37 +1,36 @@
-import { Component, Prop, State } from '@stencil/core';
+import {Component, Prop} from '@stencil/core';
 // import { ConferenceData } from '../../providers/conference-data';
 // import { UserData } from '../../providers/user-data';
 
 @Component({
-  tag: 'page-mon-cv',
-  styleUrl: 'page-mon-cv.css',
+  tag: 'page-chantier',
+  styleUrl: 'page-chantier.css',
 })
 export class PageChantier {
 
-  // private session: any;
-  @State() isFavorite: boolean;
-  @Prop() docName: string;
   @Prop() goback = '/';
-  private docTitle;
+  @Prop() num = 5;
   private content;
+  private docTitle;
+  private logo;
 
   async componentWillLoad() {
     // this.session = await ConferenceData.getSession(this.docName);
-    this.content = this.getContent();
+    this.content = this.getContent() || [];
   }
 
   getContent() {
-    switch (this.docName) {
-      case 'etat-civil':
-        return this.etatCivilContent();
-      case 'academic':
-        return this.academicContent();
-      case 'administration':
-        return this.administrationContent();
-      case 'international':
-        return this.internationalContent();
-      case 'distinction':
-        return this.distinctionContent();
+    switch (this.num) {
+      case 1:
+        return this.chantier1Content();
+      case 2:
+        return this.chantier2Content();
+      case 3:
+        return this.chantier3Content();
+      case 4:
+        return this.chantier4Content();
+      case 5:
+        return this.chantier5Content();
 
     }
   }
@@ -55,77 +54,67 @@ export class PageChantier {
 
       <ion-content>
         <ion-list>
-          {this.content.map(item => (
-            <ion-item-group>
-              <ion-item-divider>
-                <ion-label>
-                  {item.title}
-                </ion-label>
-              </ion-item-divider>
-              {item.items.map(text => (
-                <ion-item>
-                  {text}
-                </ion-item>
-              ))}
-
-            </ion-item-group>
+          <ion-item>
+            <img src={this.logo} alt="ionic logo"/>
+          </ion-item>
+          {this.content.map(({title, detail}) => (
+            <ion-item href={`/mon-projet/chantier/${this.num}/detail/${detail}`}>
+              {title}
+            </ion-item>
           ))}
         </ion-list>
       </ion-content>
     ];
   }
 
-  private etatCivilContent() {
-    this.docTitle = 'Etat Civil';
+  private chantier1Content() {
+    this.docTitle = 'Chantier N° 5';
+    this.logo = '/assets/img/ica-slidebox-img-1.png';
+    return [];
+  }
+
+  private chantier2Content() {
+    this.docTitle = 'Chantier N° 5';
+    this.logo = '/assets/img/ica-slidebox-img-1.png';
+    return [];
+  }
+
+  private chantier3Content() {
+    this.docTitle = 'Chantier N° 5';
+    this.logo = '/assets/img/ica-slidebox-img-1.png';
+    return [];
+  }
+
+  private chantier4Content() {
+    this.docTitle = 'Chantier N° 5';
+    this.logo = '/assets/img/ica-slidebox-img-1.png';
+    return [];
+  }
+
+  private chantier5Content() {
+    this.docTitle = 'Chantier N° 5';
+    this.logo = '/assets/img/ica-slidebox-img-1.png';
     return [
       {
-        title: '1979 : Faculté de Droit, Université de Yaoundé',
-        items: ['Yaoundé, Cameroun', 'License en Droit Public']
+        title: `UNE POLITIQUE ÉTRANGÈRE DE POSITIONNEMENT`,
+        detail: 'politique-etrangere'
       },
       {
-        title: '1980 : Institut Européen des Hautes Etudes Internationales (IEHEI)',
-        items: ['Nice, France', `Diplôme des hautes études internationales et d’études supérieures des communautés européennes`],
+        title: `METTRE LA DIPLOMATIE AU SERVICE DE L’ECONOMIE`,
+        detail: 'diplomatie'
       },
       {
-        title: '1980 : Université de Nice, Faculté de Droit',
-        items: ['Nice, France', `Diplôme d’études approfondies de droit public fundamental`, `Diplôme d’études approfondies de droit international (1980).`],
+        title: `CREER UN ENVIRONNEMENT FAVORABLE AU « RETOUR DES CERVEAUX »`,
+        detail: 'retour-cerveaux'
       },
       {
-        title: '1982 : Institut d’Administration Publique',
-        items: ['Paris, France', `Diplôme option XXXX`],
+        title: `FAIRE LES REFORMES NECESSAIRES POUR IMPLIQUER LES CAMEROUNAIS DE L’ETRANGER DANS LA VIE POLITIQUE NATIONALE`,
+        detail: 'politique-national'
       },
       {
-        title: '1983 : Université de Nice, Faculté de Droit',
-        items: ['Nice, France', `Doctorat d’Etat en Droit`],
+        title: `CANALISER LE POTENTIEL EXCEPTIONNEL DE LA DIASPORA CAMEROUNAISE POUR LE METTRE AU SERVICE DU DEVELOPPEMENT NATIONAL`,
+        detail: 'developpement-national'
       },
-      {
-        title: '1988 : Prix de l’Académie des sciences d’outremer',
-        items: [],
-      },
-      {
-        title: '1988 : Agrége des Facultes de Droit.',
-        items: [],
-      }
     ];
-  }
-
-  private academicContent() {
-    this.docTitle = 'Academic';
-    return [{ title: 'Academic', items: [] }];
-  }
-
-  private administrationContent() {
-    this.docTitle = 'Administration';
-    return [{ title: 'Administration', items: [] }];
-  }
-
-  private internationalContent() {
-    this.docTitle = 'International';
-    return [{ title: 'International', items: [] }];
-  }
-
-  private distinctionContent() {
-    this.docTitle = 'distinction';
-    return [{ title: 'distinction', items: [] }];
   }
 }

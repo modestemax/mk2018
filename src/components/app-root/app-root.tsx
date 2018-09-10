@@ -1,10 +1,10 @@
 import '@ionic/core';
 
-import {Component, Element, Listen, Prop, State} from '@stencil/core';
-import {UserData} from '../../providers/user-data';
-import {Plugins} from '@capacitor/core';
+import { Component, Element, Listen, Prop, State } from '@stencil/core';
+import { UserData } from '../../providers/user-data';
+import { Plugins } from '@capacitor/core';
 
-const {SplashScreen} = Plugins;
+const { SplashScreen } = Plugins;
 
 @Component({
   tag: 'app-root',
@@ -17,7 +17,7 @@ export class AppRoot {
 
   @Element() el: HTMLElement;
 
-  @Prop({context: 'isServer'}) isServer: boolean;
+  @Prop({ context: 'isServer' }) isServer: boolean;
 
 
   appPages = [
@@ -82,42 +82,44 @@ export class AppRoot {
 
         <ion-route component="page-tabs">
           <ion-route url="/who-am-i" component="tab-who-am-i">
-            <ion-route component="page-who-am-i"></ion-route>
-            <ion-route url="/mon-cv/:docName" component="page-mon-cv" componentProps={{goback: '/who-am-i'}}></ion-route>
+            <ion-route component="page-who-am-i"/>
+            <ion-route url="/mon-cv/:docName" component="page-mon-cv" componentProps={{ goback: '/who-am-i' }}/>
           </ion-route>
 
-          <ion-route url="/my-project" component="tab-my-project">
-            <ion-route component="page-my-project"></ion-route>
-            <ion-route url="/chantier/:num" component="page-chantier" componentProps={{goback: '/my-project'}}></ion-route>
+          <ion-route url="/mon-projet" component="tab-mon-projet">
+            <ion-route component="page-mon-projet"/>
+            <ion-route url="/chantier/:num" component="page-chantier" componentProps={{ goback: '/mon-projet' }}/>
+            <ion-route url="/chantier/:num/detail/:detail" component="page-chantier-detail"
+  componentProps={{ goback: '/mon-projet/chantier' }}/>
           </ion-route>
 
           <ion-route url="/schedule" component="tab-schedule">
-            <ion-route component="page-schedule"></ion-route>
-            <ion-route url="/session/:sessionId" component="page-session" componentProps={{goback: '/schedule'}}></ion-route>
+            <ion-route component="page-schedule"/>
+            <ion-route url="/session/:sessionId" component="page-session" componentProps={{goback: '/schedule'}}/>
           </ion-route>
 
           <ion-route url="/speakers" component="tab-speaker">
-            <ion-route component="page-speaker-list"></ion-route>
-            <ion-route url="/session/:sessionId" component="page-session" componentProps={{goback: '/speakers'}}></ion-route>
-            <ion-route url="/:speakerId" component="page-speaker-detail"></ion-route>
+            <ion-route component="page-speaker-list"/>
+            <ion-route url="/session/:sessionId" component="page-session" componentProps={{goback: '/speakers'}}/>
+            <ion-route url="/:speakerId" component="page-speaker-detail"/>
           </ion-route>
 
-          <ion-route url="/map" component="page-map"></ion-route>
+          <ion-route url="/map" component="page-map"/>
 
-          <ion-route url="/about" component="page-about"></ion-route>
+          <ion-route url="/about" component="page-about"/>
         </ion-route>
-        <ion-route url="/enter" component="page-enter"></ion-route>
+        <ion-route url="/enter" component="page-enter"/>
 
         {/*<ion-route url="/tutorial" >*/}
-        <ion-route url="/tutorial" component="page-tutorial" componentProps={{lng: this.userLng}}></ion-route>
-        <ion-route url="/tutorial/fr" component="page-tutorial" componentProps={{lng: 'fr'}}></ion-route>
-        <ion-route url="tutorial/en" component="page-tutorial" componentProps={{lng: 'en'}}></ion-route>
+        <ion-route url="/tutorial" component="page-tutorial" componentProps={{lng: this.userLng}}/>
+        <ion-route url="/tutorial/fr" component="page-tutorial" componentProps={{lng: 'fr'}}/>
+        <ion-route url="tutorial/en" component="page-tutorial" componentProps={{lng: 'en'}}/>
         {/*</ion-route>*/}
 
-        <ion-route url="/login" component="page-login"></ion-route>
-        <ion-route url="/account" component="page-account"></ion-route>
-        <ion-route url="/signup" component="page-signup"></ion-route>
-        <ion-route url="/support" component="page-support"></ion-route>
+        <ion-route url="/login" component="page-login"/>
+        <ion-route url="/account" component="page-account"/>
+        <ion-route url="/signup" component="page-signup"/>
+        <ion-route url="/support" component="page-support"/>
       </ion-router>
     );
   }
@@ -139,7 +141,7 @@ export class AppRoot {
             {this.appPages.map((p) =>
               <ion-menu-toggle autoHide={false}>
                 <ion-item href={p.url}>
-                  <ion-icon slot="start" name={p.icon}></ion-icon>
+                  <ion-icon slot="start" name={p.icon}/>
                   <ion-label>
                     {p.title}
                   </ion-label>
@@ -173,7 +175,7 @@ export class AppRoot {
 
             <ion-menu-toggle autoHide={false}>
               <ion-item href="support" button>
-                <ion-icon slot="start" name="help"></ion-icon>
+                <ion-icon slot="start" name="help"/>
                 <ion-label>
                   Support
                 </ion-label>
@@ -205,7 +207,7 @@ export class AppRoot {
             </ion-list-header>
             <ion-menu-toggle autoHide={false}>
               <ion-item href="tutorial">
-                <ion-icon slot="start" name="hammer"></ion-icon>
+                <ion-icon slot="start" name="hammer"/>
                 <ion-label>Show Tutorial</ion-label>
               </ion-item>
             </ion-menu-toggle>
@@ -222,7 +224,7 @@ export class AppRoot {
         {this.renderRouter()}
         <ion-split-pane>
           {this.renderMenu()}
-          <ion-router-outlet animated={false} main></ion-router-outlet>
+          <ion-router-outlet animated={false} main/>
         </ion-split-pane>
       </ion-app>
     );

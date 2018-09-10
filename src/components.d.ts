@@ -26,6 +26,26 @@ export namespace Components {
     'onUserDidLogOut'?: (event: CustomEvent) => void;
   }
 
+  interface PageChantierDetail {
+    'detail': string;
+    'goback': string;
+    'num': number;
+  }
+  interface PageChantierDetailAttributes extends StencilHTMLAttributes {
+    'detail'?: string;
+    'goback'?: string;
+    'num'?: number;
+  }
+
+  interface PageChantier {
+    'goback': string;
+    'num': number;
+  }
+  interface PageChantierAttributes extends StencilHTMLAttributes {
+    'goback'?: string;
+    'num'?: number;
+  }
+
   interface PageEnter {}
   interface PageEnterAttributes extends StencilHTMLAttributes {}
 
@@ -37,14 +57,17 @@ export namespace Components {
   interface PageMap {}
   interface PageMapAttributes extends StencilHTMLAttributes {}
 
-  interface PageMyCv {
+  interface PageMonCv {
     'docName': string;
     'goback': string;
   }
-  interface PageMyCvAttributes extends StencilHTMLAttributes {
+  interface PageMonCvAttributes extends StencilHTMLAttributes {
     'docName'?: string;
     'goback'?: string;
   }
+
+  interface PageMonProjet {}
+  interface PageMonProjetAttributes extends StencilHTMLAttributes {}
 
   interface PageScheduleFilter {
     'excludedTracks': string[];
@@ -101,10 +124,13 @@ declare global {
     'PageAboutPopover': Components.PageAboutPopover;
     'PageAbout': Components.PageAbout;
     'PageAccount': Components.PageAccount;
+    'PageChantierDetail': Components.PageChantierDetail;
+    'PageChantier': Components.PageChantier;
     'PageEnter': Components.PageEnter;
     'PageLogin': Components.PageLogin;
     'PageMap': Components.PageMap;
-    'PageMyCv': Components.PageMyCv;
+    'PageMonCv': Components.PageMonCv;
+    'PageMonProjet': Components.PageMonProjet;
     'PageScheduleFilter': Components.PageScheduleFilter;
     'PageSchedule': Components.PageSchedule;
     'PageSession': Components.PageSession;
@@ -122,10 +148,13 @@ declare global {
     'page-about-popover': Components.PageAboutPopoverAttributes;
     'page-about': Components.PageAboutAttributes;
     'page-account': Components.PageAccountAttributes;
+    'page-chantier-detail': Components.PageChantierDetailAttributes;
+    'page-chantier': Components.PageChantierAttributes;
     'page-enter': Components.PageEnterAttributes;
     'page-login': Components.PageLoginAttributes;
     'page-map': Components.PageMapAttributes;
-    'page-my-cv': Components.PageMyCvAttributes;
+    'page-mon-cv': Components.PageMonCvAttributes;
+    'page-mon-projet': Components.PageMonProjetAttributes;
     'page-schedule-filter': Components.PageScheduleFilterAttributes;
     'page-schedule': Components.PageScheduleAttributes;
     'page-session': Components.PageSessionAttributes;
@@ -163,6 +192,18 @@ declare global {
     new (): HTMLPageAccountElement;
   };
 
+  interface HTMLPageChantierDetailElement extends Components.PageChantierDetail, HTMLStencilElement {}
+  var HTMLPageChantierDetailElement: {
+    prototype: HTMLPageChantierDetailElement;
+    new (): HTMLPageChantierDetailElement;
+  };
+
+  interface HTMLPageChantierElement extends Components.PageChantier, HTMLStencilElement {}
+  var HTMLPageChantierElement: {
+    prototype: HTMLPageChantierElement;
+    new (): HTMLPageChantierElement;
+  };
+
   interface HTMLPageEnterElement extends Components.PageEnter, HTMLStencilElement {}
   var HTMLPageEnterElement: {
     prototype: HTMLPageEnterElement;
@@ -181,10 +222,16 @@ declare global {
     new (): HTMLPageMapElement;
   };
 
-  interface HTMLPageMyCvElement extends Components.PageMyCv, HTMLStencilElement {}
-  var HTMLPageMyCvElement: {
-    prototype: HTMLPageMyCvElement;
-    new (): HTMLPageMyCvElement;
+  interface HTMLPageMonCvElement extends Components.PageMonCv, HTMLStencilElement {}
+  var HTMLPageMonCvElement: {
+    prototype: HTMLPageMonCvElement;
+    new (): HTMLPageMonCvElement;
+  };
+
+  interface HTMLPageMonProjetElement extends Components.PageMonProjet, HTMLStencilElement {}
+  var HTMLPageMonProjetElement: {
+    prototype: HTMLPageMonProjetElement;
+    new (): HTMLPageMonProjetElement;
   };
 
   interface HTMLPageScheduleFilterElement extends Components.PageScheduleFilter, HTMLStencilElement {}
@@ -252,10 +299,13 @@ declare global {
     'page-about-popover': HTMLPageAboutPopoverElement
     'page-about': HTMLPageAboutElement
     'page-account': HTMLPageAccountElement
+    'page-chantier-detail': HTMLPageChantierDetailElement
+    'page-chantier': HTMLPageChantierElement
     'page-enter': HTMLPageEnterElement
     'page-login': HTMLPageLoginElement
     'page-map': HTMLPageMapElement
-    'page-my-cv': HTMLPageMyCvElement
+    'page-mon-cv': HTMLPageMonCvElement
+    'page-mon-projet': HTMLPageMonProjetElement
     'page-schedule-filter': HTMLPageScheduleFilterElement
     'page-schedule': HTMLPageScheduleElement
     'page-session': HTMLPageSessionElement
@@ -273,10 +323,13 @@ declare global {
     'page-about-popover': HTMLPageAboutPopoverElement;
     'page-about': HTMLPageAboutElement;
     'page-account': HTMLPageAccountElement;
+    'page-chantier-detail': HTMLPageChantierDetailElement;
+    'page-chantier': HTMLPageChantierElement;
     'page-enter': HTMLPageEnterElement;
     'page-login': HTMLPageLoginElement;
     'page-map': HTMLPageMapElement;
-    'page-my-cv': HTMLPageMyCvElement;
+    'page-mon-cv': HTMLPageMonCvElement;
+    'page-mon-projet': HTMLPageMonProjetElement;
     'page-schedule-filter': HTMLPageScheduleFilterElement;
     'page-schedule': HTMLPageScheduleElement;
     'page-session': HTMLPageSessionElement;
