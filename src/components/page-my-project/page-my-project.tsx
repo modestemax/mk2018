@@ -100,7 +100,7 @@ export class PageMyProject {
                 <ion-row>
                   {docs.map(doc => (
                     <ion-col>
-                      <ion-item detail={false} href={`/who-am-i/my-cv/${doc.docName}`}>
+                      <ion-item detail={false} href={`/who-am-i/mon-cv/${doc.docName}`}>
                         <div>
                           <div>
                             <img src={doc.logo} alt="logo"/>

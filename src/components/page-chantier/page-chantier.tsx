@@ -3,8 +3,8 @@ import { Component, Prop, State } from '@stencil/core';
 // import { UserData } from '../../providers/user-data';
 
 @Component({
-  tag: 'page-my-cv',
-  styleUrl: 'page-my-cv.css',
+  tag: 'page-mon-cv',
+  styleUrl: 'page-mon-cv.css',
 })
 export class PageChantier {
 

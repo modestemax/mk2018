@@ -83,7 +83,7 @@ export class AppRoot {
         <ion-route component="page-tabs">
           <ion-route url="/who-am-i" component="tab-who-am-i">
             <ion-route component="page-who-am-i"></ion-route>
-            <ion-route url="/my-cv/:docName" component="page-my-cv" componentProps={{goback: '/who-am-i'}}></ion-route>
+            <ion-route url="/mon-cv/:docName" component="page-mon-cv" componentProps={{goback: '/who-am-i'}}></ion-route>
           </ion-route>
 
           <ion-route url="/my-project" component="tab-my-project">
