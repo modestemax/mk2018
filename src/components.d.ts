@@ -69,6 +69,9 @@ export namespace Components {
   interface PageMonProjet {}
   interface PageMonProjetAttributes extends StencilHTMLAttributes {}
 
+  interface PagePenalty {}
+  interface PagePenaltyAttributes extends StencilHTMLAttributes {}
+
   interface PageScheduleFilter {
     'excludedTracks': string[];
   }
@@ -131,6 +134,7 @@ declare global {
     'PageMap': Components.PageMap;
     'PageMonCv': Components.PageMonCv;
     'PageMonProjet': Components.PageMonProjet;
+    'PagePenalty': Components.PagePenalty;
     'PageScheduleFilter': Components.PageScheduleFilter;
     'PageSchedule': Components.PageSchedule;
     'PageSession': Components.PageSession;
@@ -155,6 +159,7 @@ declare global {
     'page-map': Components.PageMapAttributes;
     'page-mon-cv': Components.PageMonCvAttributes;
     'page-mon-projet': Components.PageMonProjetAttributes;
+    'page-penalty': Components.PagePenaltyAttributes;
     'page-schedule-filter': Components.PageScheduleFilterAttributes;
     'page-schedule': Components.PageScheduleAttributes;
     'page-session': Components.PageSessionAttributes;
@@ -234,6 +239,12 @@ declare global {
     new (): HTMLPageMonProjetElement;
   };
 
+  interface HTMLPagePenaltyElement extends Components.PagePenalty, HTMLStencilElement {}
+  var HTMLPagePenaltyElement: {
+    prototype: HTMLPagePenaltyElement;
+    new (): HTMLPagePenaltyElement;
+  };
+
   interface HTMLPageScheduleFilterElement extends Components.PageScheduleFilter, HTMLStencilElement {}
   var HTMLPageScheduleFilterElement: {
     prototype: HTMLPageScheduleFilterElement;
@@ -306,6 +317,7 @@ declare global {
     'page-map': HTMLPageMapElement
     'page-mon-cv': HTMLPageMonCvElement
     'page-mon-projet': HTMLPageMonProjetElement
+    'page-penalty': HTMLPagePenaltyElement
     'page-schedule-filter': HTMLPageScheduleFilterElement
     'page-schedule': HTMLPageScheduleElement
     'page-session': HTMLPageSessionElement
@@ -330,6 +342,7 @@ declare global {
     'page-map': HTMLPageMapElement;
     'page-mon-cv': HTMLPageMonCvElement;
     'page-mon-projet': HTMLPageMonProjetElement;
+    'page-penalty': HTMLPagePenaltyElement;
     'page-schedule-filter': HTMLPageScheduleFilterElement;
     'page-schedule': HTMLPageScheduleElement;
     'page-session': HTMLPageSessionElement;

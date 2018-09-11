@@ -16,42 +16,40 @@ export class PageWhoAmI {
   @Prop({context: 'config'}) config: Config;
 
   documents = [
-    [
-      {
-        color: 'blue',
-        docName: 'etat-civil',
-        logo: '/assets/img/ica-slidebox-img-2.png',
-        title: 'Etat Civil<br/>&nbsp;'
-      },
-      {
-        color: 'blue',
-        docName: 'academic',
-        logo: '/assets/img/ica-slidebox-img-2.png',
-        title: 'Parcours<br/>Academique'
-      }
-    ],
-    [
-      {
-        color: 'blue',
-        docName: 'administration',
-        logo: '/assets/img/ica-slidebox-img-2.png',
-        title: 'Fonctions<br/>Administratives'
-      },
-      {
-        color: 'blue',
-        docName: 'international',
-        logo: '/assets/img/ica-slidebox-img-2.png',
-        title: 'Activites<br/>Internationales'
-      }
-    ],
-    [
-      {
-        color: 'blue',
-        docName: 'distinction',
-        logo: '/assets/img/ica-slidebox-img-2.png',
-        title: 'Distinctions'
-      }
-    ],
+
+    {
+      color: 'blue',
+      docName: 'etat-civil',
+      logo: '/assets/img/ica-slidebox-img-2.png',
+      title: 'Etat Civil'
+    },
+    {
+      color: 'blue',
+      docName: 'academic',
+      logo: '/assets/img/ica-slidebox-img-2.png',
+      title: 'Parcours Academique'
+    }
+    ,
+    {
+      color: 'blue',
+      docName: 'administration',
+      logo: '/assets/img/ica-slidebox-img-2.png',
+      title: 'Fonctions Administratives'
+    },
+    {
+      color: 'blue',
+      docName: 'international',
+      logo: '/assets/img/ica-slidebox-img-2.png',
+      title: 'Activites Internationales'
+    }
+    ,
+    {
+      color: 'blue',
+      docName: 'distinction',
+      logo: '/assets/img/ica-slidebox-img-2.png',
+      title: 'Distinctions'
+    }
+
   ];
 
   componentWillLoad() {
@@ -76,7 +74,7 @@ export class PageWhoAmI {
           </ion-title>
 
           <ion-buttons slot="end">
-            <ion-menu-button></ion-menu-button>
+            <ion-menu-button/>
           </ion-buttons>
         </ion-toolbar>
       </ion-header>,
@@ -84,30 +82,35 @@ export class PageWhoAmI {
       <ion-content>
         <ion-list>
           <ion-item>
-            <img src="assets/img/ica-slidebox-img-1.png" alt="ionic logo"/>
+            <img src="/assets/img/ica-slidebox-img-1.png" alt="ionic logo"/>
           </ion-item>
 
           <ion-item-group>
             <ion-grid no-padding>
+              <ion-row>
+                {this.documents.map((doc) => (
 
-              {this.documents.map((docs) => (
-                <ion-row>
-                  {docs.map(doc => (
-                    <ion-col>
-                      <ion-item detail={false} href={`/who-am-i/mon-cv/${doc.docName}`}>
-                        <div>
-                          <div>
+                  // {docs.map(doc => (
+                  <ion-col>
+                    {/*<ion-item detail={false} href={`/who-am-i/mon-cv/${doc.docName}`}>*/}
+                    <ion-card>
+                      <ion-card-header>
+                        <ion-item>
+                          <ion-thumbnail>
                             <img src={doc.logo} alt="logo"/>
-                          </div>
+                          </ion-thumbnail>
+                        </ion-item>
+                      </ion-card-header>
+                      <ion-card-content>
+                        <span innerHTML={doc.title}/>
+                      </ion-card-content>
+                    </ion-card>
+                    {/*</ion-item>*/}
+                  </ion-col>
+                  // ))}
 
-                          <ion-label innerHTML={doc.title}/>
-                        </div>
-                      </ion-item>
-
-                    </ion-col>
-                  ))}
-                </ion-row>
-              ))}
+                ))}
+              </ion-row>
             </ion-grid>
           </ion-item-group>
         </ion-list>
