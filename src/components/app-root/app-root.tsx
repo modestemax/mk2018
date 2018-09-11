@@ -1,10 +1,10 @@
 import '@ionic/core';
 
-import { Component, Element, Listen, Prop, State } from '@stencil/core';
-import { UserData } from '../../providers/user-data';
-import { Plugins } from '@capacitor/core';
+import {Component, Element, Listen, Prop, State} from '@stencil/core';
+import {UserData} from '../../providers/user-data';
+import {Plugins} from '@capacitor/core';
 
-const { SplashScreen } = Plugins;
+const {SplashScreen} = Plugins;
 
 @Component({
   tag: 'app-root',
@@ -17,30 +17,52 @@ export class AppRoot {
 
   @Element() el: HTMLElement;
 
-  @Prop({ context: 'isServer' }) isServer: boolean;
+  @Prop({context: 'isServer'}) isServer: boolean;
 
 
-  appPages = [
-    {
-      title: 'Schedule',
-      url: '/schedule',
+  menus = [
+    [{
+      title: 'Qui suis-je',
+      url: '/who-am-i',
       icon: 'calendar'
     },
-    {
-      title: 'Speakers',
-      url: '/speakers',
-      icon: 'contacts'
+      {
+        title: 'Mon Projet pour le Cameroun',
+        url: '/mon-projet',
+        icon: 'contacts'
+      },
+      {
+        title: 'En route pour Etoudi',
+        url: '/map',
+        icon: 'map'
+      },
+      {
+        title: 'Le Penalty du 07 Octobre 2018',
+        url: '/penalty',
+        icon: 'information-circle'
+      }],
+    [{
+      title: 'Les Forces Alternance Urnes Paix',
+      url: '/who-am-i',
+      icon: 'calendar'
     },
-    {
-      title: 'Map',
-      url: '/map',
-      icon: 'map'
+      {
+        title: 'Vos Questions / Mes Réponses',
+        url: '/mon-projet',
+        icon: 'contacts'
+      },
+    ],
+    [{
+      title: 'Faites un don',
+      url: '/who-am-i',
+      icon: 'calendar'
     },
-    {
-      title: 'About',
-      url: '/about',
-      icon: 'information-circle'
-    }
+      {
+        title: 'Contacter l’Equipe de Campagne',
+        url: '/mon-projet',
+        icon: 'contacts'
+      },
+    ]
   ];
 
   async componentWillLoad() {
@@ -83,14 +105,14 @@ export class AppRoot {
         <ion-route component="page-tabs">
           <ion-route url="/who-am-i" component="tab-who-am-i">
             <ion-route component="page-who-am-i"/>
-            <ion-route url="/mon-cv/:docName" component="page-mon-cv" componentProps={{ goback: '/who-am-i' }}/>
+            <ion-route url="/mon-cv/:docName" component="page-mon-cv" componentProps={{goback: '/who-am-i'}}/>
           </ion-route>
 
           <ion-route url="/mon-projet" component="tab-mon-projet">
             <ion-route component="page-mon-projet"/>
-            <ion-route url="/chantier/:num" component="page-chantier" componentProps={{ goback: '/mon-projet' }}/>
+            <ion-route url="/chantier/:num" component="page-chantier" componentProps={{goback: '/mon-projet'}}/>
             <ion-route url="/chantier/:num/detail/:detail" component="page-chantier-detail"
-  componentProps={{ goback: '/mon-projet/chantier' }}/>
+                       componentProps={{goback: '/mon-projet/chantier'}}/>
           </ion-route>
           <ion-route url="/penalty" component="page-penalty"/>
 
@@ -131,88 +153,38 @@ export class AppRoot {
         <ion-header>
           <ion-toolbar>
             <ion-title>Menu</ion-title>
+
           </ion-toolbar>
         </ion-header>
         <ion-content forceOverscroll={false}>
-          <ion-list>
-            <ion-list-header>
-              Navigate
-            </ion-list-header>
 
-            {this.appPages.map((p) =>
-              <ion-menu-toggle autoHide={false}>
-                <ion-item href={p.url}>
-                  <ion-icon slot="start" name={p.icon}/>
-                  <ion-label>
-                    {p.title}
-                  </ion-label>
-                </ion-item>
-              </ion-menu-toggle>
-            )}
-          </ion-list>
+          {/*<ion-list-header>*/}
+          <ion-item>
+            <ion-thumbnail slot="start">
+              <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y"/>
+            </ion-thumbnail>
+            <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y"/>
+          </ion-item>
+          {/*</ion-list-header>*/}
 
-          <ion-list>
-            <ion-list-header>
-              Account
-            </ion-list-header>
 
-            {/* <ion-menu-toggle autoHide={false}>
-            {this.loggedIn
-              ? <ion-item href="account">
-                <ion-icon slot="start" name="person"></ion-icon>
-                <ion-label>
-                  Account
+          {this.menus.map((appPages) =>
+            <ion-list>
+              {/*<ion-list-header>*/}
+              {/*/!*Account*!/*/}
+              {/*</ion-list-header>*/}
+              {appPages.map((p) =>
+                <ion-menu-toggle autoHide={false}>
+                  <ion-item href={p.url}>
+                    <ion-icon slot="start" name={p.icon}/>
+                    <ion-label>
+                      {p.title}
                     </ion-label>
-              </ion-item>
-
-              : <ion-item href="login">
-                <ion-icon slot="start" name="log-in"></ion-icon>
-                <ion-label>
-                  Login
-                    </ion-label>
-              </ion-item>
-            }
-          </ion-menu-toggle> */}
-
-            <ion-menu-toggle autoHide={false}>
-              <ion-item href="support" button>
-                <ion-icon slot="start" name="help"/>
-                <ion-label>
-                  Support
-                </ion-label>
-              </ion-item>
-            </ion-menu-toggle>
-
-            {/* <ion-menu-toggle autoHide={false}>
-            {this.loggedIn
-              ? <ion-item onClick={() => this.logout()} button>
-                <ion-icon slot="start" name="log-out"></ion-icon>
-                <ion-label>
-                  Logout
-                    </ion-label>
-              </ion-item>
-
-              : <ion-item href="signup" button>
-                <ion-icon slot="start" name="person-add"></ion-icon>
-                <ion-label>
-                  Signup
-                    </ion-label>
-              </ion-item>
-            }
-          </ion-menu-toggle> */}
-          </ion-list>
-
-          <ion-list>
-            <ion-list-header>
-              Tutorial
-            </ion-list-header>
-            <ion-menu-toggle autoHide={false}>
-              <ion-item href="tutorial">
-                <ion-icon slot="start" name="hammer"/>
-                <ion-label>Show Tutorial</ion-label>
-              </ion-item>
-            </ion-menu-toggle>
-          </ion-list>
+                  </ion-item>
+                </ion-menu-toggle>
+              )}
+            </ion-list>
+          )}
         </ion-content>
       </ion-menu>
     );
