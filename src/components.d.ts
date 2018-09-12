@@ -46,8 +46,21 @@ export namespace Components {
     'num'?: number;
   }
 
+  interface PageContact {}
+  interface PageContactAttributes extends StencilHTMLAttributes {}
+
+  interface PageDon {
+    'goback': string;
+  }
+  interface PageDonAttributes extends StencilHTMLAttributes {
+    'goback'?: string;
+  }
+
   interface PageEnter {}
   interface PageEnterAttributes extends StencilHTMLAttributes {}
+
+  interface PageEtoudi {}
+  interface PageEtoudiAttributes extends StencilHTMLAttributes {}
 
   interface PageForcesDetail {
     'detail': string;
@@ -147,7 +160,10 @@ declare global {
     'PageAccount': Components.PageAccount;
     'PageChantierDetail': Components.PageChantierDetail;
     'PageChantier': Components.PageChantier;
+    'PageContact': Components.PageContact;
+    'PageDon': Components.PageDon;
     'PageEnter': Components.PageEnter;
+    'PageEtoudi': Components.PageEtoudi;
     'PageForcesDetail': Components.PageForcesDetail;
     'PageForces': Components.PageForces;
     'PageLogin': Components.PageLogin;
@@ -174,7 +190,10 @@ declare global {
     'page-account': Components.PageAccountAttributes;
     'page-chantier-detail': Components.PageChantierDetailAttributes;
     'page-chantier': Components.PageChantierAttributes;
+    'page-contact': Components.PageContactAttributes;
+    'page-don': Components.PageDonAttributes;
     'page-enter': Components.PageEnterAttributes;
+    'page-etoudi': Components.PageEtoudiAttributes;
     'page-forces-detail': Components.PageForcesDetailAttributes;
     'page-forces': Components.PageForcesAttributes;
     'page-login': Components.PageLoginAttributes;
@@ -231,10 +250,28 @@ declare global {
     new (): HTMLPageChantierElement;
   };
 
+  interface HTMLPageContactElement extends Components.PageContact, HTMLStencilElement {}
+  var HTMLPageContactElement: {
+    prototype: HTMLPageContactElement;
+    new (): HTMLPageContactElement;
+  };
+
+  interface HTMLPageDonElement extends Components.PageDon, HTMLStencilElement {}
+  var HTMLPageDonElement: {
+    prototype: HTMLPageDonElement;
+    new (): HTMLPageDonElement;
+  };
+
   interface HTMLPageEnterElement extends Components.PageEnter, HTMLStencilElement {}
   var HTMLPageEnterElement: {
     prototype: HTMLPageEnterElement;
     new (): HTMLPageEnterElement;
+  };
+
+  interface HTMLPageEtoudiElement extends Components.PageEtoudi, HTMLStencilElement {}
+  var HTMLPageEtoudiElement: {
+    prototype: HTMLPageEtoudiElement;
+    new (): HTMLPageEtoudiElement;
   };
 
   interface HTMLPageForcesDetailElement extends Components.PageForcesDetail, HTMLStencilElement {}
@@ -346,7 +383,10 @@ declare global {
     'page-account': HTMLPageAccountElement
     'page-chantier-detail': HTMLPageChantierDetailElement
     'page-chantier': HTMLPageChantierElement
+    'page-contact': HTMLPageContactElement
+    'page-don': HTMLPageDonElement
     'page-enter': HTMLPageEnterElement
+    'page-etoudi': HTMLPageEtoudiElement
     'page-forces-detail': HTMLPageForcesDetailElement
     'page-forces': HTMLPageForcesElement
     'page-login': HTMLPageLoginElement
@@ -373,7 +413,10 @@ declare global {
     'page-account': HTMLPageAccountElement;
     'page-chantier-detail': HTMLPageChantierDetailElement;
     'page-chantier': HTMLPageChantierElement;
+    'page-contact': HTMLPageContactElement;
+    'page-don': HTMLPageDonElement;
     'page-enter': HTMLPageEnterElement;
+    'page-etoudi': HTMLPageEtoudiElement;
     'page-forces-detail': HTMLPageForcesDetailElement;
     'page-forces': HTMLPageForcesElement;
     'page-login': HTMLPageLoginElement;

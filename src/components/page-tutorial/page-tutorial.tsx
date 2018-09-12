@@ -46,7 +46,7 @@ export class PageTutorial {
         <ion-toolbar class="tutorial-transparent">
           <ion-buttons slot="end">
             {this.showSkip
-              ? <ion-button color="primary" href="/schedule"> Skip </ion-button>
+              ? <ion-button color="primary" href="/who-am-i"> Skip </ion-button>
               : ''}
           </ion-buttons>
         </ion-toolbar>
@@ -65,7 +65,7 @@ export class PageTutorial {
           <ion-slide>
             <img src="assets/img/ica-slidebox-img-4.png" class="slide-image"/>
             <h2 class="slide-title">Ready to Play?</h2>
-            <ion-button fill="clear" href="/schedule">
+            <ion-button fill="clear" href="/who-am-i">
               Continue
               <ion-icon slot="end" name="arrow-forward"/>
             </ion-button>
