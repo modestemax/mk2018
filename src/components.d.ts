@@ -49,6 +49,24 @@ export namespace Components {
   interface PageEnter {}
   interface PageEnterAttributes extends StencilHTMLAttributes {}
 
+  interface PageForcesDetail {
+    'detail': string;
+    'forceId': string;
+    'goback': string;
+  }
+  interface PageForcesDetailAttributes extends StencilHTMLAttributes {
+    'detail'?: string;
+    'forceId'?: string;
+    'goback'?: string;
+  }
+
+  interface PageForces {
+    'goback': string;
+  }
+  interface PageForcesAttributes extends StencilHTMLAttributes {
+    'goback'?: string;
+  }
+
   interface PageLogin {}
   interface PageLoginAttributes extends StencilHTMLAttributes {
     'onUserDidLogIn'?: (event: CustomEvent) => void;
@@ -130,6 +148,8 @@ declare global {
     'PageChantierDetail': Components.PageChantierDetail;
     'PageChantier': Components.PageChantier;
     'PageEnter': Components.PageEnter;
+    'PageForcesDetail': Components.PageForcesDetail;
+    'PageForces': Components.PageForces;
     'PageLogin': Components.PageLogin;
     'PageMap': Components.PageMap;
     'PageMonCv': Components.PageMonCv;
@@ -155,6 +175,8 @@ declare global {
     'page-chantier-detail': Components.PageChantierDetailAttributes;
     'page-chantier': Components.PageChantierAttributes;
     'page-enter': Components.PageEnterAttributes;
+    'page-forces-detail': Components.PageForcesDetailAttributes;
+    'page-forces': Components.PageForcesAttributes;
     'page-login': Components.PageLoginAttributes;
     'page-map': Components.PageMapAttributes;
     'page-mon-cv': Components.PageMonCvAttributes;
@@ -213,6 +235,18 @@ declare global {
   var HTMLPageEnterElement: {
     prototype: HTMLPageEnterElement;
     new (): HTMLPageEnterElement;
+  };
+
+  interface HTMLPageForcesDetailElement extends Components.PageForcesDetail, HTMLStencilElement {}
+  var HTMLPageForcesDetailElement: {
+    prototype: HTMLPageForcesDetailElement;
+    new (): HTMLPageForcesDetailElement;
+  };
+
+  interface HTMLPageForcesElement extends Components.PageForces, HTMLStencilElement {}
+  var HTMLPageForcesElement: {
+    prototype: HTMLPageForcesElement;
+    new (): HTMLPageForcesElement;
   };
 
   interface HTMLPageLoginElement extends Components.PageLogin, HTMLStencilElement {}
@@ -313,6 +347,8 @@ declare global {
     'page-chantier-detail': HTMLPageChantierDetailElement
     'page-chantier': HTMLPageChantierElement
     'page-enter': HTMLPageEnterElement
+    'page-forces-detail': HTMLPageForcesDetailElement
+    'page-forces': HTMLPageForcesElement
     'page-login': HTMLPageLoginElement
     'page-map': HTMLPageMapElement
     'page-mon-cv': HTMLPageMonCvElement
@@ -338,6 +374,8 @@ declare global {
     'page-chantier-detail': HTMLPageChantierDetailElement;
     'page-chantier': HTMLPageChantierElement;
     'page-enter': HTMLPageEnterElement;
+    'page-forces-detail': HTMLPageForcesDetailElement;
+    'page-forces': HTMLPageForcesElement;
     'page-login': HTMLPageLoginElement;
     'page-map': HTMLPageMapElement;
     'page-mon-cv': HTMLPageMonCvElement;

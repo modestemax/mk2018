@@ -92,20 +92,34 @@ export class PageWhoAmI {
 
                   // {docs.map(doc => (
                   <ion-col>
-                    {/*<ion-item detail={false} href={`/who-am-i/mon-cv/${doc.docName}`}>*/}
-                    <ion-card>
-                      <ion-card-header>
-                        <ion-item>
-                          <ion-thumbnail>
+                    <ion-item detail={false} href={`/who-am-i/mon-cv/${doc.docName}`}>
+                    {/*<ion-card>*/}
+                      {/*<ion-card-header>*/}
+                        {/*<ion-item>*/}
+                          {/*<ion-thumbnail>*/}
+                            {/*<img src={doc.logo} alt="logo"/>*/}
+                          {/*</ion-thumbnail>*/}
+                        {/*</ion-item>*/}
+                      {/*</ion-card-header>*/}
+                      {/*<ion-card-content>*/}
+                        {/*<span innerHTML={doc.title}/>*/}
+                      {/*</ion-card-content>*/}
+                    {/*</ion-card>*/}
+                      <ion-grid>
+                        <ion-row>
+                          <ion-col text-center>
+                            <ion-thumbnail class="cv-picture">
                             <img src={doc.logo} alt="logo"/>
-                          </ion-thumbnail>
-                        </ion-item>
-                      </ion-card-header>
-                      <ion-card-content>
-                        <span innerHTML={doc.title}/>
-                      </ion-card-content>
-                    </ion-card>
-                    {/*</ion-item>*/}
+                            </ion-thumbnail>
+                          </ion-col>
+                        </ion-row>
+                        <ion-row>
+                          <ion-col text-center>
+                            <span innerHTML={doc.title}/>
+                          </ion-col>
+                        </ion-row>
+                      </ion-grid>
+                    </ion-item>
                   </ion-col>
                   // ))}
 
@@ -118,3 +132,31 @@ export class PageWhoAmI {
     ];
   }
 }
+//
+// <ion-item>
+//   <ion-grid>
+//     <ion-row>
+//       <ion-col text-center>
+//         <button>button 1</button>
+//       </ion-col>
+//     </ion-row>
+//     <ion-row>
+//       <ion-col text-center>
+//         <button>button 2</button>
+//       </ion-col>
+//     </ion-row>
+//   </ion-grid>
+//
+//   <ion-grid>
+//     <ion-row>
+//       <ion-col text-center>
+//         <button>button 1</button>
+//       </ion-col>
+//     </ion-row>
+//     <ion-row>
+//       <ion-col text-center>
+//         <button>button 2</button>
+//       </ion-col>
+//     </ion-row>
+//   </ion-grid>
+// </ion-item>

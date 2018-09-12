@@ -43,23 +43,23 @@ export class AppRoot {
       }],
     [{
       title: 'Les Forces Alternance Urnes Paix',
-      url: '/who-am-i',
+      url: '/others/forces',
       icon: 'calendar'
     },
       {
         title: 'Vos Questions / Mes Réponses',
-        url: '/mon-projet',
+        url: '/others/faq',
         icon: 'contacts'
       },
     ],
     [{
       title: 'Faites un don',
-      url: '/who-am-i',
+      url: '/others/don',
       icon: 'calendar'
     },
       {
         title: 'Contacter l’Equipe de Campagne',
-        url: '/mon-projet',
+        url: '/others/contact',
         icon: 'contacts'
       },
     ]
@@ -116,6 +116,14 @@ export class AppRoot {
           </ion-route>
           <ion-route url="/penalty" component="page-penalty"/>
 
+          <ion-route url="/others" component="tab-hidden">
+            <ion-route url="/forces" component="page-forces"/>
+            <ion-route url="/forces/:forceId" component="page-forces-detail" componentProps={{goback: '/forces'}}/>
+            <ion-route url="/faq" component="page-faq"/>
+            <ion-route url="/don" component="page-don"/>
+            <ion-route url="/contact" component="page-contact"/>
+          </ion-route>
+
           <ion-route url="/schedule" component="tab-schedule">
             <ion-route component="page-schedule"/>
             <ion-route url="/session/:sessionId" component="page-session" componentProps={{goback: '/schedule'}}/>
@@ -132,6 +140,7 @@ export class AppRoot {
           <ion-route url="/about" component="page-about"/>
         </ion-route>
         <ion-route url="/enter" component="page-enter"/>
+
 
         {/*<ion-route url="/tutorial" >*/}
         <ion-route url="/tutorial" component="page-tutorial" componentProps={{lng: this.userLng}}/>

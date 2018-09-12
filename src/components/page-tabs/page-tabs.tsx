@@ -17,10 +17,13 @@ export class PageTabs {
           <ion-nav/>
         </ion-tab>
         <ion-tab label="" icon="map" component="page-penalty"/>
+        <ion-tab label="" icon="map" name="tab-hidden" show={false}>
+          <ion-nav/>
+        </ion-tab>
 
         {/*-------------------------------------------------*/}
         <ion-tab label="Schedule" icon="calendar" name="tab-schedule">
-        <ion-nav/>
+          <ion-nav/>
         </ion-tab>
         <ion-tab label="Speakers" icon="contacts" name="tab-speaker">
           <ion-nav/>
