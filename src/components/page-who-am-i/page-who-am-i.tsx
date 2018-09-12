@@ -8,7 +8,7 @@ import {Component, Prop /*Element, Listen, , State */} from '@stencil/core';
 
 @Component({
   tag: 'page-who-am-i',
-  styleUrl: 'page-who-am-i.css',
+  styleUrl: 'page-who-am-i.scss',
 })
 export class PageWhoAmI {
 
@@ -20,33 +20,33 @@ export class PageWhoAmI {
     {
       color: 'blue',
       docName: 'etat-civil',
-      logo: '/assets/img/ica-slidebox-img-2.png',
+      logo: '/assets/img/familly.png',
       title: 'Etat Civil'
     },
     {
       color: 'blue',
       docName: 'academic',
-      logo: '/assets/img/ica-slidebox-img-2.png',
+      logo: '/assets/img/Graduation.png',
       title: 'Parcours Academique'
     }
     ,
     {
       color: 'blue',
       docName: 'administration',
-      logo: '/assets/img/ica-slidebox-img-2.png',
+      logo: '/assets/img/government.png',
       title: 'Fonctions Administratives'
     },
     {
       color: 'blue',
       docName: 'international',
-      logo: '/assets/img/ica-slidebox-img-2.png',
+      logo: '/assets/img/international-white.png',
       title: 'Activites Internationales'
     }
     ,
     {
       color: 'blue',
       docName: 'distinction',
-      logo: '/assets/img/ica-slidebox-img-2.png',
+      logo: '/assets/img/medal.png',
       title: 'Distinctions'
     }
 
@@ -80,36 +80,40 @@ export class PageWhoAmI {
       </ion-header>,
 
       <ion-content>
-        <ion-list>
-          <ion-item>
-            <img src="/assets/img/ica-slidebox-img-1.png" alt="ionic logo"/>
-          </ion-item>
+        <ion-grid no-padding>
+          <ion-row   class="picture">
+            <ion-col no-padding>
+              <ion-item no-padding>
+                <img src="/assets/img/who-am-i.jpg" alt="ionic logo"/>
+              </ion-item>
+            </ion-col>
+          </ion-row>
 
-          <ion-item-group>
+          <ion-row class="cv-item-group">
             <ion-grid no-padding>
-              <ion-row>
+              <ion-row >
                 {this.documents.map((doc) => (
 
                   // {docs.map(doc => (
-                  <ion-col>
-                    <ion-item detail={false} href={`/who-am-i/mon-cv/${doc.docName}`}>
-                    {/*<ion-card>*/}
+                  <ion-col no-padding class="cv-item">
+                    <ion-item   class="cv-item-inner" detail={false} href={`/who-am-i/mon-cv/${doc.docName}`}>
+                      {/*<ion-card>*/}
                       {/*<ion-card-header>*/}
-                        {/*<ion-item>*/}
-                          {/*<ion-thumbnail>*/}
-                            {/*<img src={doc.logo} alt="logo"/>*/}
-                          {/*</ion-thumbnail>*/}
-                        {/*</ion-item>*/}
+                      {/*<ion-item>*/}
+                      {/*<ion-thumbnail>*/}
+                      {/*<img src={doc.logo} alt="logo"/>*/}
+                      {/*</ion-thumbnail>*/}
+                      {/*</ion-item>*/}
                       {/*</ion-card-header>*/}
                       {/*<ion-card-content>*/}
-                        {/*<span innerHTML={doc.title}/>*/}
+                      {/*<span innerHTML={doc.title}/>*/}
                       {/*</ion-card-content>*/}
-                    {/*</ion-card>*/}
+                      {/*</ion-card>*/}
                       <ion-grid>
                         <ion-row>
                           <ion-col text-center>
-                            <ion-thumbnail class="cv-picture">
-                            <img src={doc.logo} alt="logo"/>
+                            <ion-thumbnail class="item-icon">
+                              <img src={doc.logo} alt="logo"/>
                             </ion-thumbnail>
                           </ion-col>
                         </ion-row>
@@ -126,12 +130,13 @@ export class PageWhoAmI {
                 ))}
               </ion-row>
             </ion-grid>
-          </ion-item-group>
-        </ion-list>
+          </ion-row>
+        </ion-grid>
       </ion-content>
     ];
   }
 }
+
 //
 // <ion-item>
 //   <ion-grid>
