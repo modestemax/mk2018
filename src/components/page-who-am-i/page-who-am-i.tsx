@@ -18,37 +18,34 @@ export class PageWhoAmI {
   documents = [
 
     {
-      color: 'blue',
       docName: 'etat-civil',
       logo: '/assets/img/familly.png',
       title: 'Etat Civil'
     },
     {
-      color: 'blue',
       docName: 'academic',
-      logo: '/assets/img/Graduation.png',
+      logo: '/assets/img/Graduation2.png',
       title: 'Parcours Academique'
     }
     ,
     {
-      color: 'blue',
       docName: 'administration',
       logo: '/assets/img/government.png',
       title: 'Fonctions Administratives'
     },
     {
-      color: 'blue',
       docName: 'international',
       logo: '/assets/img/international-white.png',
       title: 'Activites Internationales'
     }
     ,
     {
-      color: 'blue',
       docName: 'distinction',
       logo: '/assets/img/medal.png',
       title: 'Distinctions'
     }
+    ,
+    {}
 
   ];
 
@@ -80,50 +77,53 @@ export class PageWhoAmI {
       </ion-header>,
 
       <ion-content>
-        <ion-grid no-padding>
-          <ion-row   class="picture">
+        <ion-grid>
+          <ion-row class="picture">
             <ion-col no-padding>
-              <ion-item no-padding>
+              <div>
                 <img src="/assets/img/who-am-i.jpg" alt="ionic logo"/>
-              </ion-item>
+              </div>
             </ion-col>
           </ion-row>
 
           <ion-row class="cv-item-group">
-            <ion-grid no-padding>
-              <ion-row >
+            <ion-grid no-padding class="item-grid">
+              <ion-row class="item-row">
                 {this.documents.map((doc) => (
 
                   // {docs.map(doc => (
-                  <ion-col no-padding class="cv-item">
-                    <ion-item   class="cv-item-inner" detail={false} href={`/who-am-i/mon-cv/${doc.docName}`}>
-                      {/*<ion-card>*/}
-                      {/*<ion-card-header>*/}
-                      {/*<ion-item>*/}
-                      {/*<ion-thumbnail>*/}
-                      {/*<img src={doc.logo} alt="logo"/>*/}
-                      {/*</ion-thumbnail>*/}
-                      {/*</ion-item>*/}
-                      {/*</ion-card-header>*/}
-                      {/*<ion-card-content>*/}
-                      {/*<span innerHTML={doc.title}/>*/}
-                      {/*</ion-card-content>*/}
-                      {/*</ion-card>*/}
-                      <ion-grid>
-                        <ion-row>
-                          <ion-col text-center>
-                            <ion-thumbnail class="item-icon">
-                              <img src={doc.logo} alt="logo"/>
-                            </ion-thumbnail>
-                          </ion-col>
-                        </ion-row>
-                        <ion-row>
-                          <ion-col text-center>
-                            <span innerHTML={doc.title}/>
-                          </ion-col>
-                        </ion-row>
-                      </ion-grid>
-                    </ion-item>
+                  <ion-col class={`item-col ${doc.docName || 'empty'} `}>
+                    {/*<ion-item   class="item" detail={false} href={`/who-am-i/mon-cv/${doc.docName}`}>*/}
+                    {doc.docName
+                      ? <a class="item" href={`/who-am-i/mon-cv/${doc.docName}`}>
+                        {/* <ion-card>
+                        <ion-card-header>
+                        <ion-item>
+                        <ion-thumbnail>
+                        <img src={doc.logo} alt="logo"/>
+                        </ion-thumbnail>
+                        </ion-item>
+                        </ion-card-header>
+                        <ion-card-content>
+                        <span innerHTML={doc.title}/>
+                        </ion-card-content>
+                        </ion-card>*/}
+                        <ion-grid class="inner-item-grid">
+                          <ion-row>
+                            <ion-col text-center>
+                              <ion-thumbnail class="item-icon">
+                                <img src={doc.logo} alt="logo"/>
+                              </ion-thumbnail>
+                            </ion-col>
+                          </ion-row>
+                          <ion-row>
+                            <ion-col text-center>
+                              <ion-text color="light" innerHTML={doc.title}/>
+                            </ion-col>
+                          </ion-row>
+                        </ion-grid>
+                      </a>
+                      : ''}
                   </ion-col>
                   // ))}
 
