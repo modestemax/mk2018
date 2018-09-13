@@ -11,22 +11,42 @@ export class PageDon {
   @Prop() goback = '/';
   private forces = [
     {
-      name: 'crac',
-      logo: 'https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y',
-      summary: 'qsdq  qdsdqs dqsd'
+      name: 'Orange Money',
+      logo: '/assets/img/orange_4.png',
+      summary: '+237 655 81 94 84'
     },
     {
-      name: 'crac',
-      forceId: 'crac',
-      logo: 'https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y',
-      summary: 'qsdq  qdsdqs dqsd'
+      name: 'MTN Mobile Money',
+      logo: '/assets/img/mtnmoney5.png',
+      summary: '+237 653 79 10 38'
     },
     {
-      name: 'crac',
-      forceId: 'crac',
-      logo: 'https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y',
-      summary: 'qsdq  qdsdqs dqsd'
-    }
+      name: 'Afriland First Bank',
+      logo: '/assets/img/afriland.jpg',
+      summary: `CM21 10005 00001<br/>03458061001-74`
+    },
+    {
+      name: 'BICEC',
+      logo: '/assets/img/bicec.png',
+      summary: `ICL RCMCXXXX 10001 066864<br/>51963664001-47`
+    },
+    {
+      name: 'UBC',
+      logo: '/assets/img/UBC.png',
+      summary: `LICMACMCX 10023 00040<br/>00413014245-01`
+    },
+    {
+      name: 'Europe or America [CIC EST]',
+      logo: '/assets/img/cic.png',
+      summary: `IBAN: FR76 3008 7330 0100 0203<br/>3320 126 / BIC: CMCIFRPP`
+    },
+    {
+      name: 'Europe or America [PayPal]',
+      logo: '/assets/img/paypal.png',
+      summary: `contact@mrcparty.org`
+    },
+
+
   ];
 
   async componentWillLoad() {
@@ -53,20 +73,22 @@ export class PageDon {
 
       <ion-content>
 
-
+        <br/>
         <ion-list>
           {this.forces.map(({name, logo, summary}) => (
-            <ion-item>
+
+            [<ion-item>
               <ion-thumbnail slot="start">
                 <img src={logo}/>
               </ion-thumbnail>
-              <div>
-                <p>
-                  {name}
-                </p>
+              <ion-label>
+                <h2>  {name}</h2>
                 <p innerHTML={summary}/>
-              </div>
-            </ion-item>
+              </ion-label>
+            </ion-item>,
+
+              <hr/>
+            ]
           ))}
         </ion-list>
       </ion-content>

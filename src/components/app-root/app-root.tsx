@@ -173,12 +173,12 @@ export class AppRoot {
             <ion-thumbnail slot="start" class="photo">
               <img src="/assets/img/Kamto-photo.png"/>
             </ion-thumbnail>
-            <img src="/assets/img/kamto2018.png"/>
+            <img src="/assets/img/kamto2018.png" class="kamto2018"/>
           </ion-item>
           <hr class="menu-header-separator"/>
           {/*</ion-list-header>*/}
 
-
+          <br/>
           {this.menus.map((appPages) =>
             <ion-list>
               {/*<ion-list-header>*/}
