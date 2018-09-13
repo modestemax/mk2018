@@ -1,10 +1,10 @@
-import { Component, Prop, State } from '@stencil/core';
+import {Component, Prop, State} from '@stencil/core';
 // import { ConferenceData } from '../../providers/conference-data';
 // import { UserData } from '../../providers/user-data';
 
 @Component({
   tag: 'page-mon-cv',
-  styleUrl: 'page-mon-cv.css',
+  styleUrl: 'page-mon-cv.scss',
 })
 export class PageMonCv {
 
@@ -14,6 +14,7 @@ export class PageMonCv {
   @Prop() goback = '/';
   private docTitle;
   private content;
+  private logo;
 
   async componentWillLoad() {
     // this.session = await ConferenceData.getSession(this.docName);
@@ -41,42 +42,52 @@ export class PageMonCv {
       <ion-header>
         <ion-toolbar>
           <ion-buttons slot="start">
-            <ion-back-button defaultHref={this.goback}></ion-back-button>
+            <ion-back-button defaultHref={this.goback}/>
           </ion-buttons>
           <ion-title>
             {this.docTitle}
           </ion-title>
 
           <ion-buttons slot="end">
-            <ion-menu-button></ion-menu-button>
+            <ion-menu-button/>
           </ion-buttons>
         </ion-toolbar>
       </ion-header>,
 
       <ion-content>
-        <ion-list>
-          {this.content.map(item => (
-            <ion-item-group>
-              <ion-item-divider>
-                <ion-label>
-                  {item.title}
-                </ion-label>
-              </ion-item-divider>
-              {item.items.map(text => (
-                <ion-item>
-                  {text}
-                </ion-item>
+        <ion-card>
+          <ion-card-header class={`header ${this.docName} `}>
+            <div class="logo"><img src={this.logo} alt="logo"/></div>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-list>
+              {this.content.map(item => (
+                <ion-item-group>
+                  <ion-item-divider>
+                    <ion-text class="content-header">
+                      {item.title}
+                    </ion-text>
+                  </ion-item-divider>
+                  <ul>
+                  {item.items.map(text => (
+                    <li>
+                      <ion-text class="content-text">  {text}</ion-text>
+                    </li>
+                  ))}
+                  <br/>
+                  </ul>
+                </ion-item-group>
               ))}
-
-            </ion-item-group>
-          ))}
-        </ion-list>
+            </ion-list>
+          </ion-card-content>
+        </ion-card>
       </ion-content>
     ];
   }
 
   private etatCivilContent() {
     this.docTitle = 'Etat Civil';
+    this.logo = '/assets/img/familly.png';
     return [
       {
         title: '1979 : Faculté de Droit, Université de Yaoundé',
@@ -111,21 +122,21 @@ export class PageMonCv {
 
   private academicContent() {
     this.docTitle = 'Academic';
-    return [{ title: 'Academic', items: [] }];
+    return [{title: 'Academic', items: []}];
   }
 
   private administrationContent() {
     this.docTitle = 'Administration';
-    return [{ title: 'Administration', items: [] }];
+    return [{title: 'Administration', items: []}];
   }
 
   private internationalContent() {
     this.docTitle = 'International';
-    return [{ title: 'International', items: [] }];
+    return [{title: 'International', items: []}];
   }
 
   private distinctionContent() {
     this.docTitle = 'distinction';
-    return [{ title: 'distinction', items: [] }];
+    return [{title: 'distinction', items: []}];
   }
 }
