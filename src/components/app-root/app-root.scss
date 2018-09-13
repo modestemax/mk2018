@@ -1,0 +1,30 @@
+
+ion-content {
+  background-color: white;
+}
+
+.menu-header {
+  background-color: white;
+  .photo {
+    margin-right: auto;
+  }
+}
+
+.menu-header-separator {
+  height: 2px;
+  margin: auto;
+}
+
+.menu-item {
+
+  ion-icon {
+    //font-size: .9rem;
+    color: gray;
+  }
+
+  ion-label {
+    font-size: .87rem;
+    white-space: normal;
+  }
+
+}

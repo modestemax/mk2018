@@ -8,7 +8,7 @@ const {SplashScreen} = Plugins;
 
 @Component({
   tag: 'app-root',
-  styleUrl: 'app-root.css'
+  styleUrl: 'app-root.scss'
 })
 export class AppRoot {
   @State() loggedIn = false;
@@ -24,43 +24,43 @@ export class AppRoot {
     [{
       title: 'Qui suis-je',
       url: '/who-am-i',
-      icon: 'calendar'
+      icon: 'person'
     },
       {
         title: 'Mon Projet pour le Cameroun',
         url: '/mon-projet',
-        icon: 'contacts'
+        icon: 'folder-open'
       },
       {
         title: 'En route pour Etoudi',
         url: '/map',
-        icon: 'map'
+        icon: 'walk'
       },
       {
         title: 'Le Penalty du 07 Octobre 2018',
         url: '/penalty',
-        icon: 'information-circle'
+        icon: 'football'
       }],
     [{
       title: 'Les Forces Alternance Urnes Paix',
       url: '/others/forces',
-      icon: 'calendar'
+      icon: 'people'
     },
       {
         title: 'Vos Questions / Mes Réponses',
         url: '/others/faq',
-        icon: 'contacts'
+        icon: 'help-circle-outline'
       },
     ],
     [{
       title: 'Faites un don',
       url: '/others/don',
-      icon: 'calendar'
+      icon: 'gift'
     },
       {
         title: 'Contacter l’Equipe de Campagne',
         url: '/others/contact',
-        icon: 'contacts'
+        icon: 'mail-open'
       },
     ]
   ];
@@ -169,12 +169,13 @@ export class AppRoot {
         <ion-content forceOverscroll={false}>
 
           {/*<ion-list-header>*/}
-          <ion-item>
-            <ion-thumbnail slot="start">
-              <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y"/>
+          <ion-item class="menu-header">
+            <ion-thumbnail slot="start" class="photo">
+              <img src="/assets/img/Kamto-photo.png"/>
             </ion-thumbnail>
-            <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y"/>
+            <img src="/assets/img/kamto2018.png"/>
           </ion-item>
+          <hr class="menu-header-separator"/>
           {/*</ion-list-header>*/}
 
 
@@ -185,7 +186,7 @@ export class AppRoot {
               {/*</ion-list-header>*/}
               {appPages.map((p) =>
                 <ion-menu-toggle autoHide={false}>
-                  <ion-item href={p.url}>
+                  <ion-item href={p.url} class="menu-item">
                     <ion-icon slot="start" name={p.icon}/>
                     <ion-label>
                       {p.title}
