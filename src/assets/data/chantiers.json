@@ -51,17 +51,51 @@
       "details": [
         {
           "title": "UNE POLITIQUE ÉTRANGÈRE DE POSITIONNEMENT",
-          "detail": "politique-etrangere",
-          "color":"green"
+          "key": "politique-etrangere",
+          "color": "green",
+          "details": [
+            {
+              "title": "Affirmer le Cameroun sur la scène régionale, continentale et mondiale",
+              "items": [
+                "Action chiffrée promesse 1",
+                "Action chiffrée promesse 1",
+                "Action chiffrée promesse 1"
+              ]
+            },
+            {
+              "title": "Se positionner stratégiquement sur les grands dossiers internationaux",
+              "items": [
+                "Action chiffrée promesse 1",
+                "Action chiffrée promesse 1",
+                "Action chiffrée promesse 1"
+              ]
+            },
+            {
+              "title": "Etablir des alliances traduisant une bonne compréhension des enjeux internationaux et des intérêts du pays à court, à moyen et à long terme",
+              "items": [
+                "Action chiffrée promesse 1",
+                "Action chiffrée promesse 1",
+                "Action chiffrée promesse 1"
+              ]
+            },
+            {
+              "title": "Marquer notre fort attachement à la solidarité régionale et continentale africaine",
+              "items": [
+                "Action chiffrée promesse 1",
+                "Action chiffrée promesse 1",
+                "Action chiffrée promesse 1"
+              ]
+            }
+          ]
         },
         {
           "title": "METTRE LA DIPLOMATIE AU SERVICE DE L’ECONOMIE",
-          "detail": "diplomatie",
+          "key": "diplomatie",
           "color": "blue"
         },
         {
           "title": "CREER UN ENVIRONNEMENT FAVORABLE AU « RETOUR DES CERVEAUX »",
-          "detail": "retour-cerveaux",
+          "key": "retour-cerveaux",
           "color": "black"
         },
         {
@@ -71,7 +105,7 @@
         },
         {
           "title": "CANALISER LE POTENTIEL EXCEPTIONNEL DE LA DIASPORA CAMEROUNAISE POUR LE METTRE AU SERVICE DU DEVELOPPEMENT NATIONAL",
-          "detail": "developpement-national",
+          "key": "developpement-national",
           "color": "red"
         }
       ]

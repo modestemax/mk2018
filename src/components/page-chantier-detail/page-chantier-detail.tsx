@@ -1,41 +1,31 @@
 import {Component, Prop} from '@stencil/core';
+import {chantierData} from "../../providers/chantier-data";
 // import { ConferenceData } from '../../providers/conference-data';
 // import { UserData } from '../../providers/user-data';
 
 @Component({
   tag: 'page-chantier-detail',
-  styleUrl: 'page-chantier-detail.css',
+  styleUrl: 'page-chantier-detail.scss',
 })
 export class PageChantierDetail {
 
   @Prop() goback = '/';
-  @Prop() num = 5;
-  @Prop() detail = 'politique-etrangere';
-  private content;
-  private docTitle;
+  @Prop() num: number;
+  @Prop() detail: string;
   private gobackUrl;
 
-  async componentWillLoad() {
-    // this.session = await ConferenceData.getSession(this.docName);
-    this.content = this.getContent() || [];
+  data: any;
+  sousDetails: any;
+
+  componentWillLoad() {
     this.gobackUrl = `${this.goback}/${this.num}`;
-    console.log('go back', this.gobackUrl);
+    return this.loadData();
+
   }
 
-  getContent() {
-    switch (this.num) {
-      case 1:
-        return this.chantier1DetailContent();
-      case 2:
-        return this.chantier2DetailContent();
-      case 3:
-        return this.chantier3DetailContent();
-      case 4:
-        return this.chantier4DetailContent();
-      case 5:
-        return this.chantier5DetailContent();
-
-    }
+  async loadData() {
+    this.data = await chantierData.getChantier(this.num);
+    this.sousDetails = this.data.details.find(d => d.key === this.detail);
   }
 
   render() {
@@ -46,31 +36,61 @@ export class PageChantierDetail {
             <ion-back-button defaultHref={this.gobackUrl}></ion-back-button>
           </ion-buttons>
           <ion-title>
-            {this.docTitle}
+            {this.data.pageTitle}
           </ion-title>
 
           <ion-buttons slot="end">
-            <ion-menu-button></ion-menu-button>
+            <ion-menu-button/>
           </ion-buttons>
         </ion-toolbar>
       </ion-header>,
 
       <ion-content>
         <ion-list>
-          {this.content.map(item => (
-            <ion-item-group>
+          <ion-list-header no-padding>
+
+            <ion-card class="header">
+              <ion-card-header>
+                <ion-thumbnail class="img-wrapper"><img src={`/assets/img/${this.data.logo}`} class="slide-image"/>
+                </ion-thumbnail>
+              </ion-card-header>
+              <ion-card-content class="center-text">
+                <ion-label>
+                  <p innerHTML={this.data.label}/>
+                </ion-label>
+                <ion-label><h2 class="slide-title" innerHTML={this.data.title}/></ion-label>
+                <p innerHTML={this.data.text}/>
+
+              </ion-card-content>
+            </ion-card>
+          </ion-list-header>
+
+
+          <ion-card class="chantier-detail" style={{borderLeftColor: this.sousDetails.color}}>
+            <ion-card-content>
+              <ion-item>
+                <ion-text> {this.sousDetails.title}</ion-text>
+              </ion-item>
+            </ion-card-content>
+          </ion-card>
+
+        </ion-list>
+
+        <ion-list class="sub-detail-list">
+          {this.sousDetails.details.map(item => (
+            <ion-item-group class="sub-detail-group">
               <ion-item-divider>
-                <a id={`${item.anchor || ''}`}>
-                  <ion-label>
-                    <p> {item.title}</p>
-                  </ion-label>
-                </a>
+                <ion-label>
+                  <p class="sub-detail-title" style={{color: this.sousDetails.color}}> {item.title}</p>
+                </ion-label>
               </ion-item-divider>
+              <ul>
               {item.items.map(text => (
-                <ion-item>
+                <li>
                   {text}
-                </ion-item>
+                </li>
               ))}
+              </ul>
             </ion-item-group>
           ))}
         </ion-list>
@@ -78,69 +98,4 @@ export class PageChantierDetail {
     ];
   }
 
-  private chantier1DetailContent() {
-  }
-
-  private chantier2DetailContent() {
-  }
-
-  private chantier3DetailContent() {
-  }
-
-  private chantier4DetailContent() {
-  }
-
-  private chantier5DetailContent() {
-    switch (this.detail) {
-      case 'politique-etrangere':
-        return this.politiqueEtrangereContent();
-      case 'diplomatie':
-        return this.diplomatieContent();
-      case 'retour-cerveaux':
-        return this.retourCerveauxContent();
-      case 'politique-national':
-        return this.politiqueNationalContent();
-      case 'developpement-national':
-        return this.developpementNationalContent();
-    }
-  }
-
-  private politiqueEtrangereContent() {
-    this.docTitle = `UNE POLITIQUE ÉTRANGÈRE DE POSITIONNEMENT`;
-    return [
-      {
-        title: `Affirmer le Cameroun sur la scène régionale, continentale et mondiale`,
-        items: [`Action chiffrée promesse 1`, `Action chiffrée promesse 1`, `Action chiffrée promesse 1`,]
-      },
-      {
-        title: `Se positionner stratégiquement sur les grands dossiers internationaux`,
-        items: [`Action chiffrée promesse 1`, `Action chiffrée promesse 1`, `Action chiffrée promesse 1`,]
-      },
-      {
-        title: `Etablir des alliances traduisant une bonne compréhension des enjeux internationaux et des intérêts du pays à court, à moyen et à long terme`,
-        items: [`Action chiffrée promesse 1`, `Action chiffrée promesse 1`, `Action chiffrée promesse 1`,]
-      },
-      {
-        title: `Marquer notre fort attachement à la solidarité régionale et continentale africaine`,
-        anchor: 'aa',
-        items: [`Action chiffrée promesse 1`, `Action chiffrée promesse 1`, `Action chiffrée promesse 1`,]
-      },
-    ];
-  }
-
-  private diplomatieContent() {
-
-  }
-
-  private retourCerveauxContent() {
-
-  }
-
-  private politiqueNationalContent() {
-
-  }
-
-  private developpementNationalContent() {
-
-  }
 }
