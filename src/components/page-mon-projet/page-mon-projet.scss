@@ -1,0 +1,33 @@
+ion-content {
+  background-color: white !important;
+
+  ion-slides {
+    background-color: white;
+    ion-card {
+      margin: auto;
+      ion-card-header {
+        .img-wrapper {
+          height: 187px;
+          margin: auto;
+          width: fit-content;
+          img {
+            width: 100%;
+          }
+        }
+        ion-label {
+          margin: auto !important;
+        }
+      }
+      ion-card-content {
+        .slide-title {
+          font-weight: 600;
+          white-space: normal;
+        }
+        .show-detail-button {
+          text-transform: none;
+        }
+      }
+
+    }
+  }
+}

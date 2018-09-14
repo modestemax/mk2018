@@ -62,7 +62,7 @@ export class PageDon {
 
           </ion-buttons>
           <ion-title>
-            Les Forces pour l’Alternance Urnes Paix
+            Faites un don
           </ion-title>
 
           <ion-buttons slot="end">
@@ -73,8 +73,7 @@ export class PageDon {
 
       <ion-content>
 
-        <br/>
-        <ion-list class="bank-list">
+         <ion-list class="bank-list">
           {this.forces.map(({name, logo, summary}) => (
             [
               <ion-item>
