@@ -166,7 +166,7 @@ export class AppRoot {
 
           </ion-toolbar>
         </ion-header>
-        <ion-content forceOverscroll={false}>
+        <ion-content forceOverscroll={false} class="menu-content">
 
           {/*<ion-list-header>*/}
           <ion-item class="menu-header">

@@ -76,16 +76,16 @@ export class PageDon {
         <br/>
         <ion-list>
           {this.forces.map(({name, logo, summary}) => (
-
-            [<ion-item>
-              <ion-thumbnail slot="start">
-                <img src={logo}/>
-              </ion-thumbnail>
-              <ion-label>
-                <h2>  {name}</h2>
-                <p innerHTML={summary}/>
-              </ion-label>
-            </ion-item>,
+            [
+              <ion-item>
+                <ion-thumbnail slot="start">
+                  <img src={logo}/>
+                </ion-thumbnail>
+                <ion-label>
+                  <h3 class="don-name">  {name}</h3>
+                  <p class="don-summary" innerHTML={summary}/>
+                </ion-label>
+              </ion-item>,
 
               <hr/>
             ]

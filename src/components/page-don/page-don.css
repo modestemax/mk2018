@@ -8,3 +8,11 @@ hr{
   height: 1px;
   margin: 5px 17px;
 }
+
+.don-summary{
+  font-size: small !important;
+}
+
+.don-name{
+  margin-bottom: 5px;
+}

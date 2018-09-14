@@ -1,0 +1,24 @@
+
+.penalty-item {
+  min-width: 210px;
+  margin-bottom: 13px;
+
+  .penalty-card {
+    margin: auto;
+    .img-container {
+      margin: auto;
+      height: 225px;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .list-header {
+      font-weight: 500;
+      color: black;
+      ul {
+        padding-left: 32px;
+      }
+    }
+  }
+}

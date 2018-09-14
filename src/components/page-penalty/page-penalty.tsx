@@ -3,7 +3,7 @@ import {Component, Prop} from '@stencil/core';
 
 @Component({
   tag: 'page-penalty',
-  styleUrl: 'page-penalty.css'
+  styleUrl: 'page-penalty.scss'
 })
 export class PagePenalty {
 
@@ -16,7 +16,7 @@ export class PagePenalty {
   async componentWillLoad() {
     this.penaltySteps = [
       {
-        logo: '/assets/img/ica-slidebox-img-1.png',
+        logo: '/assets/img/Penalty1.jpg',
         title: 'Faisons basculer le destin du Cameroun',
         details: [
           `Afin que soit révélé notre si grand potentiel longtemps étouffé`,
@@ -27,7 +27,7 @@ export class PagePenalty {
         ]
       },
       {
-        logo: '/assets/img/ica-slidebox-img-1.png',
+        logo: '/assets/img/Penalty1.jpg',
         title: 'Pourquoi KAMTO',
         details: [
           `Je me suis préparé assidument pendant 6 ans`,
@@ -57,29 +57,25 @@ export class PagePenalty {
           <ion-grid>
             <ion-row align-items-stretch>
               {this.penaltySteps.map(({logo, title, details}) => (
-                <ion-col col-7 align-self-stretch>
-                  <ion-item>
-                    <ion-card class="speaker-card">
-                      <ion-card-header>
-                        <ion-item detail-none>
-                          {/*<ion-avatar slot="start">*/}
-                          <img src={logo} alt="Speaker profile pic"/>
-                          {/*</ion-avatar>*/}
-                        </ion-item>
-                        <ion-item><h2>   {title} </h2></ion-item>
-                      </ion-card-header>
+                <ion-col no-padding col-7 align-self-stretch class="penalty-item">
 
-                      <ion-card-content>
-                        <ion-list>
+                  <ion-card class="penalty-card">
+                    <ion-card-header no-padding>
+                      <ion-label class="img-container"><img src={logo} alt="Speaker profile pic"/></ion-label>
+                    </ion-card-header>
+
+                    <ion-card-content>
+                      <ion-list>
+                        <ion-list-header class="list-header"><h2>  {title}  </h2></ion-list-header>
+                        <ul>
                           {details.map(detail => (
-                            <ion-item>
-                              <h3>{detail}</h3>
-                            </ion-item>
+                            <li>{detail}</li>
                           ))}
-                        </ion-list>
-                      </ion-card-content>
-                    </ion-card>
-                  </ion-item>
+                        </ul>
+                      </ion-list>
+                    </ion-card-content>
+                  </ion-card>
+
                 </ion-col>
               ))}
             </ion-row>
