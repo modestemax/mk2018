@@ -53,9 +53,9 @@ export class PagePenalty {
       </ion-header>,
 
       <ion-content class="outer-content">
-        <ion-list>
-          <ion-grid>
-            <ion-row align-items-stretch>
+        <ion-list class="penalty-items">
+          <ion-grid no-padding >
+            <ion-row class="penalty-items-row" align-items-stretch>
               {this.penaltySteps.map(({logo, title, details}) => (
                 <ion-col no-padding col-7 align-self-stretch class="penalty-item">
 
@@ -65,7 +65,7 @@ export class PagePenalty {
                     </ion-card-header>
 
                     <ion-card-content>
-                      <ion-list>
+                      <ion-list class="content-list">
                         <ion-list-header class="list-header"><h2>  {title}  </h2></ion-list-header>
                         <ul>
                           {details.map(detail => (

@@ -4,7 +4,7 @@ import {Component, Prop} from '@stencil/core';
 
 @Component({
   tag: 'page-don',
-  styleUrl: 'page-don.css',
+  styleUrl: 'page-don.scss',
 })
 export class PageDon {
 
@@ -74,7 +74,7 @@ export class PageDon {
       <ion-content>
 
         <br/>
-        <ion-list>
+        <ion-list class="bank-list">
           {this.forces.map(({name, logo, summary}) => (
             [
               <ion-item>
@@ -82,8 +82,8 @@ export class PageDon {
                   <img src={logo}/>
                 </ion-thumbnail>
                 <ion-label>
-                  <h3 class="don-name">  {name}</h3>
-                  <p class="don-summary" innerHTML={summary}/>
+                  <h3 class="bank-name">  {name}</h3>
+                  <p class="bank-summary" innerHTML={summary}/>
                 </ion-label>
               </ion-item>,
 
