@@ -1,6 +1,9 @@
+ion-content{
+  background-color: white!important;
+}
 
-ion-card {
-  margin: auto;
+ion-card.header {
+  //margin: auto;
 
   ion-card-header {
 
@@ -29,9 +32,18 @@ ion-card {
     .show-detail-button {
       text-transform: none;
     }
-
+    &.center-text {
+      text-align: center;
+    }
   }
 
 }
 
+.chantier-detail {
+  border-left-width: 2px;
+  border-left-style: solid;
+  ion-text {
+    font-size: .9rem;
+  }
+}
 

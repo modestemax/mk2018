@@ -19,7 +19,7 @@ export class PageChantierDetail {
     // this.session = await ConferenceData.getSession(this.docName);
     this.content = this.getContent() || [];
     this.gobackUrl = `${this.goback}/${this.num}`;
-    console.log('go back',this.gobackUrl);
+    console.log('go back', this.gobackUrl);
   }
 
   getContent() {
@@ -60,16 +60,17 @@ export class PageChantierDetail {
           {this.content.map(item => (
             <ion-item-group>
               <ion-item-divider>
-                <ion-label>
-                  {item.title}
-                </ion-label>
+                <a id={`${item.anchor || ''}`}>
+                  <ion-label>
+                    <p> {item.title}</p>
+                  </ion-label>
+                </a>
               </ion-item-divider>
               {item.items.map(text => (
                 <ion-item>
                   {text}
                 </ion-item>
               ))}
-
             </ion-item-group>
           ))}
         </ion-list>
@@ -121,6 +122,7 @@ export class PageChantierDetail {
       },
       {
         title: `Marquer notre fort attachement à la solidarité régionale et continentale africaine`,
+        anchor: 'aa',
         items: [`Action chiffrée promesse 1`, `Action chiffrée promesse 1`, `Action chiffrée promesse 1`,]
       },
     ];

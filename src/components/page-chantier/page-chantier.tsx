@@ -41,13 +41,14 @@ export class PageChantier {
 
       <ion-content>
         <ion-list>
-          <ion-item>
+          <ion-list-header no-padding>
 
-            <ion-card>
+            <ion-card class="header">
               <ion-card-header>
-                <ion-thumbnail class="img-wrapper"><img src={`/assets/img/${this.data.logo}`} class="slide-image"/></ion-thumbnail>
+                <ion-thumbnail class="img-wrapper"><img src={`/assets/img/${this.data.logo}`} class="slide-image"/>
+                </ion-thumbnail>
               </ion-card-header>
-              <ion-card-content>
+              <ion-card-content class="center-text">
                 <ion-label>
                   <p innerHTML={this.data.label}/>
                 </ion-label>
@@ -55,14 +56,17 @@ export class PageChantier {
                 <p innerHTML={this.data.text}/>
 
               </ion-card-content>
-
             </ion-card>
+          </ion-list-header>
 
-          </ion-item>
-          {this.data.details.map(({title, detail}) => (
-            <ion-item href={`/mon-projet/chantier/${this.data.numChantier}/detail/${detail}`}>
-              {title}
-            </ion-item>
+          {this.data.details.map(({title, detail, color}) => (
+            <ion-card class="chantier-detail" style={{borderLeftColor: color}}>
+              <ion-card-content>
+                <ion-item href={`/mon-projet/chantier/${this.data.numChantier}/detail/${detail}`}>
+                  <ion-text> {title}</ion-text>
+                  </ion-item>
+              </ion-card-content>
+            </ion-card>
           ))}
         </ion-list>
       </ion-content>
