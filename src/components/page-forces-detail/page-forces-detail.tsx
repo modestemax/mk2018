@@ -4,7 +4,7 @@ import { Component, Prop } from '@stencil/core';
 
 @Component({
   tag: 'page-forces-detail',
-  styleUrl: 'page-forces-detail.css',
+  styleUrl: 'page-forces-detail.scss',
 })
 export class PageForcesDetail {
 
@@ -38,31 +38,28 @@ export class PageForcesDetail {
           </ion-title>
 
           <ion-buttons slot="end">
-            <ion-menu-button></ion-menu-button>
+            <ion-menu-button/>
           </ion-buttons>
         </ion-toolbar>
       </ion-header>,
 
       <ion-content>
-        <ion-list>
-          {this.content ?
-            <ion-list>
-              <ion-list-header>
-                <ion-label>
+        <ion-list class="list">
+
+              <ion-list-header class="header">
+                <ion-label class="title">
                   {this.content.title}
                 </ion-label>
               </ion-list-header>
               <ion-item>
                 <ion-thumbnail>
-                  <img/>
+                  <img src={`/assets/img/${this.content.logo}`}/>
                 </ion-thumbnail>
               </ion-item>
               <ion-item>
-                <p innerHTML={this.content.desc}/>
+                <p class="text" innerHTML={this.content.desc}/>
               </ion-item>
 
-            </ion-list>
-            : ''}
         </ion-list>
       </ion-content>
     ];
@@ -73,7 +70,7 @@ export class PageForcesDetail {
 
     return {
       title: 'Croire Au Cameroun [CRAC]',
-      logo: 'https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y',
+      logo: 'mtnmoney5.png',
       desc: `<p>
 Le CRAC est un parti politique reconnu par
 l’arrêté N°00000250/D/MINATD/DAP/SDE/SPP

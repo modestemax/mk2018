@@ -4,7 +4,7 @@ import {Component, Prop} from '@stencil/core';
 
 @Component({
   tag: 'page-forces',
-  styleUrl: 'page-forces.css',
+  styleUrl: 'page-forces.scss',
 })
 export class PageForces {
 
@@ -13,19 +13,19 @@ export class PageForces {
     {
       name: 'crac',
       forceId: 'crac',
-      logo: 'https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y',
+      logo: 'orange_4.png',
       summary: 'qsdq  qdsdqs dqsd'
     },
     {
       name: 'crac',
       forceId: 'crac',
-      logo: 'https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y',
+      logo: 'orange_4.png',
       summary: 'qsdq  qdsdqs dqsd'
     },
     {
       name: 'crac',
       forceId: 'crac',
-      logo: 'https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y',
+      logo: 'orange_4.png',
       summary: 'qsdq  qdsdqs dqsd'
     }
   ];
@@ -47,7 +47,7 @@ export class PageForces {
           </ion-title>
 
           <ion-buttons slot="end">
-            <ion-menu-button></ion-menu-button>
+            <ion-menu-button/>
           </ion-buttons>
         </ion-toolbar>
       </ion-header>,
@@ -55,21 +55,24 @@ export class PageForces {
       <ion-content>
 
 
-        <ion-list>
+        <ion-list class="bank-list">
           {this.forces.map(({name, forceId, logo, summary}) => (
-            <ion-item href={`/others/forces/${forceId}`}>
-              <ion-thumbnail slot="start">
-                <img src={logo}/>
-              </ion-thumbnail>
-              <div>
-                <p>
-                  {name}
-                </p>
-                <p innerHTML={summary}/>
-              </div>
-            </ion-item>
+            [
+              <ion-item href={`/others/forces/${forceId}`}>
+                <ion-thumbnail slot="start">
+                  <img src={`/assets/img/${logo}`}/>
+                </ion-thumbnail>
+                <ion-label>
+                  <h3 class="bank-name">  {name}</h3>
+                  <p class="bank-summary" innerHTML={summary}/>
+                </ion-label>
+              </ion-item>,
+
+              <hr/>
+            ]
           ))}
         </ion-list>
+
       </ion-content>
     ];
   }

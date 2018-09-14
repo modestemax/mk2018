@@ -9,7 +9,7 @@ import {Component, Prop} from '@stencil/core';
 export class PageDon {
 
   @Prop() goback = '/';
-  private forces = [
+  private banks = [
     {
       name: 'Orange Money',
       logo: '/assets/img/orange_4.png',
@@ -74,7 +74,7 @@ export class PageDon {
       <ion-content>
 
          <ion-list class="bank-list">
-          {this.forces.map(({name, logo, summary}) => (
+          {this.banks.map(({name, logo, summary}) => (
             [
               <ion-item>
                 <ion-thumbnail slot="start">
