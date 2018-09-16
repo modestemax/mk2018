@@ -1,5 +1,5 @@
 import {Component, Prop} from '@stencil/core';
-import {chantierData} from "../../providers/chantier-data";
+import {ChantierData} from "../../providers/chantier-data";
 // import { ConferenceData } from '../../providers/conference-data';
 // import { UserData } from '../../providers/user-data';
 
@@ -24,7 +24,7 @@ export class PageChantierDetail {
   }
 
   async loadData() {
-    this.data = await chantierData.getChantier(this.num);
+    this.data = await ChantierData.getChantier(this.num);
     this.sousDetails = this.data.details.find(d => d.key === this.detail);
   }
 
@@ -85,11 +85,11 @@ export class PageChantierDetail {
                 </ion-label>
               </ion-item-divider>
               <ul>
-              {item.items.map(text => (
-                <li>
-                  {text}
-                </li>
-              ))}
+                {item.items.map(text => (
+                  <li>
+                    {text}
+                  </li>
+                ))}
               </ul>
             </ion-item-group>
           ))}

@@ -20,7 +20,7 @@ export class PageTutorial {
   }
 
   async loadData() {
-    this.slides = await TutorialData.load();
+    this.slides = await TutorialData.loadSlides();
   }
 
   componentDidLoad() {

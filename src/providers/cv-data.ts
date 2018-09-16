@@ -1,8 +1,6 @@
-import {UserData} from './user-data';
+import { Data } from './data';
 
-export class CVData {
-  private static data: any;
-
+export class CVData extends Data {
   static async getDoc(docName: string = null): Promise<any> {
     await this.load();
     return docName
@@ -11,13 +9,8 @@ export class CVData {
 
   }
 
-  private static async load() {
-    if (this.data) {
-      return this.data;
-    } else {
-      const rsp = await fetch(`/assets/data/cv.${UserData.lng}.json`);
-      const json = await rsp.json();
-      return (this.data = json);
-    }
+  protected static getUrl(lng: string) {
+    return `/assets/data/cv.${lng}.json`;
   }
+
 }

@@ -1,7 +1,6 @@
-import {UserData} from './user-data';
+import { Data } from './data';
 
-export class ForceAlternanceData {
-  private static data: any;
+export class ForceAlternanceData extends Data {
 
   static async getData(key: string = null): Promise<any> {
     await this.load();
@@ -10,13 +9,7 @@ export class ForceAlternanceData {
       : this.data.forces;
   }
 
-  private static async load() {
-    if (this.data) {
-      return this.data;
-    } else {
-      const rsp = await fetch(`/assets/data/force-alternance.${UserData.lng}.json`);
-      const json = await rsp.json();
-      return (this.data = json);
-    }
+  protected static getUrl(lng: string) {
+    return `/assets/data/force-alternance.${lng}.json`;
   }
 }

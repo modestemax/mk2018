@@ -80,12 +80,10 @@ export namespace Components {
   interface PageEtoudiAttributes extends StencilHTMLAttributes {}
 
   interface PageForcesDetail {
-    'detail': string;
     'forceId': string;
     'goback': string;
   }
   interface PageForcesDetailAttributes extends StencilHTMLAttributes {
-    'detail'?: string;
     'forceId'?: string;
     'goback'?: string;
   }

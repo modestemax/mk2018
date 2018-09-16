@@ -3,10 +3,12 @@ import {get, remove, set} from './storage';
 const HAS_LOGGED_IN = 'hasLoggedIn';
 const HAS_SEEN_TUTORIAL = 'hasSeenTutorial';
 const LANG = 'lng';
+const DEFAULT_LANG = 'fr';
 
 export class UserDataController {
   private favorites = new Set<string>();
-  public lng = 'fr';
+
+  public lng = DEFAULT_LANG;
 
   hasFavorite(sessionName: string): boolean {
     return this.favorites.has(sessionName);
@@ -64,7 +66,7 @@ export class UserDataController {
   }
 
   async getLng(): Promise<string> {
-    return (this.lng = await get(LANG));
+    return (this.lng = (await get(LANG) || DEFAULT_LANG));
   }
 
   async setLng(lng): Promise<string> {

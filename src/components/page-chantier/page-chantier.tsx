@@ -1,5 +1,5 @@
-import { Component, Prop } from '@stencil/core';
-import { chantierData } from '../../providers/chantier-data';
+import {Component, Prop} from '@stencil/core';
+import {ChantierData} from '../../providers/chantier-data';
 // import { ConferenceData } from '../../providers/conference-data';
 // import { UserData } from '../../providers/user-data';
 
@@ -18,7 +18,7 @@ export class PageChantier {
   }
 
   async loadData() {
-    this.data = await chantierData.getChantier(this.num);
+    this.data = await ChantierData.getChantier(this.num);
   }
 
   render() {
@@ -26,7 +26,7 @@ export class PageChantier {
       <ion-header>
         <ion-toolbar>
           <ion-buttons slot="start">
-            <ion-back-button defaultHref={this.goback}></ion-back-button>
+            <ion-back-button defaultHref={this.goback}/>
           </ion-buttons>
           <ion-title>
             {this.data.pageTitle}
@@ -58,8 +58,8 @@ export class PageChantier {
             </ion-card>
           </ion-list-header>
 
-          {this.data.details.map(({ title, key, color }) => (
-            <ion-card class="chantier-detail" style={{ borderLeftColor: color }}>
+          {this.data.details.map(({title, key, color}) => (
+            <ion-card class="chantier-detail" style={{borderLeftColor: color}}>
               <ion-card-content>
                 <ion-item href={`/mon-projet/chantier/${this.data.numChantier}/detail/${key}`}>
                   <ion-text> {title}</ion-text>

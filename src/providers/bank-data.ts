@@ -1,19 +1,14 @@
-import {UserData} from './user-data';
+import { Data } from './data';
 
-export class BankData {
-  private static data: any;
+export class BankData extends Data {
+
 
   static async getBanks(): Promise<any> {
     return this.load();
   }
 
-  private static async load() {
-    if (this.data) {
-      return this.data;
-    } else {
-      const rsp = await fetch(`/assets/data/banks.${UserData.lng}.json`);
-      const json = await rsp.json();
-      return (this.data = json);
-    }
+
+  protected static getUrl(lng: string) {
+   return `/assets/data/banks.${lng}.json`;
   }
 }

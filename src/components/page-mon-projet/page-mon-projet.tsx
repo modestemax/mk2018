@@ -1,7 +1,7 @@
-import {Config} from '@ionic/core';
-import {Component, Prop /*Element, Listen, , State */} from '@stencil/core';
-import {chantierData} from '../../providers/chantier-data';
-import {__} from '../../providers/i18n';
+import { Config } from '@ionic/core';
+import { Component, Prop /*Element, Listen, , State */ } from '@stencil/core';
+import { __ } from '../../providers/i18n';
+import { ChantierData } from '../../providers/chantier-data';
 
 // import { ConferenceData } from '../../providers/conference-data';
 //
@@ -15,19 +15,16 @@ import {__} from '../../providers/i18n';
 export class PageMonProjet {
 
 
-  @Prop({context: 'config'}) config: Config;
+  @Prop({ context: 'config' }) config: Config;
 
   data: any;
-  EXPLORER: any;
-  PAGE_TITLE: any;
-
 
   async componentWillLoad() {
     return this.loadData();
   }
 
   async loadData() {
-    this.data = await chantierData.load();
+    this.data = await ChantierData.loadChantiers();
   }
 
   componentDidLoad() {
@@ -50,7 +47,7 @@ export class PageMonProjet {
 
       <ion-content scrollY={false}>
         <ion-slides pager={true}>
-          {this.data.chantiers.map(({numChantier, logo, label, title, text}) =>
+          {this.data.chantiers.map(({ numChantier, logo, label, title, text }) =>
             (<ion-slide>
                 <ion-card>
                   <ion-card-header>

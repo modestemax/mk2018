@@ -1,26 +1,18 @@
-import { UserData } from './user-data';
+import {Data} from './data';
 
-class ChantierData {
-  data: any;
+export class ChantierData extends Data {
 
-  constructor() {
+  protected static getUrl(lng: string) {
+    return `/assets/data/chantiers.${lng}.json`;
   }
 
-
-  async load() {
-    if (this.data) {
-      return this.data;
-    } else {
-      const rsp = await fetch(`/assets/data/chantiers.${UserData.lng}.json`);
-      const json = await rsp.json();
-      return (this.data = json);
-    }
-  }
-
-  async getChantier(num) {
+  static async getChantier(num) {
     const data = await this.load();
     return data.chantiers.find(c => c.numChantier === num);
   }
+
+  static loadChantiers() {
+    return this.load();
+  }
 }
 
-export const chantierData = new ChantierData();
