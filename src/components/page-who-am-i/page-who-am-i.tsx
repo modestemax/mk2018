@@ -1,9 +1,7 @@
 import {Config} from '@ionic/core';
 import {Component, Prop /*Element, Listen, , State */} from '@stencil/core';
-
-// import { ConferenceData } from '../../providers/conference-data';
-//
-// import { UserData } from '../../providers/user-data';
+import {CVData} from "../../providers/cv-data";
+import {__} from "../../providers/i18n";
 
 
 @Component({
@@ -15,59 +13,26 @@ export class PageWhoAmI {
 
   @Prop({context: 'config'}) config: Config;
 
-  documents = [
+  documents = [];
 
-    {
-      docName: 'etat-civil',
-      logo: '/assets/img/familly.png',
-      title: 'Etat Civil'
-    },
-    {
-      docName: 'academic',
-      logo: '/assets/img/Graduation2.png',
-      title: 'Parcours Academique'
-    }
-    ,
-    {
-      docName: 'administration',
-      logo: '/assets/img/government.png',
-      title: 'Fonctions Administratives'
-    },
-    {
-      docName: 'international',
-      logo: '/assets/img/international-white.png',
-      title: 'Activites Internationales'
-    }
-    ,
-    {
-      docName: 'distinction',
-      logo: '/assets/img/medal.png',
-      title: 'Distinctions'
-    }
-    ,
-    {}
-
-  ];
 
   componentWillLoad() {
-    // this.updateSchedule();
+    return this.loadData();
   }
 
-  componentDidLoad() {
-    // this.scheduleList = this.el.querySelector('#scheduleList');
-    // this.fab = this.el.querySelector('#socialFab');
+  async loadData() {
+    this.documents = await CVData.getDoc();
   }
 
 
   render() {
-    // const mode = this.config.get('mode');
 
     return [
       <ion-header>
         <ion-toolbar>
 
           <ion-title>
-            Qui suis-je
+            {__('QUI_SUIS_JE')}
           </ion-title>
 
           <ion-buttons slot="end">
@@ -91,41 +56,27 @@ export class PageWhoAmI {
               <ion-row class="item-row">
                 {this.documents.map((doc) => (
 
-                  // {docs.map(doc => (
-                  <ion-col class={`item-col ${doc.docName || 'empty'} `}>
-                    {/*<ion-item   class="item" detail={false} href={`/who-am-i/mon-cv/${doc.docName}`}>*/}
-                    {doc.docName
-                      ? <a class="item" href={`/who-am-i/mon-cv/${doc.docName}`}>
-                        {/* <ion-card>
-                        <ion-card-header>
-                        <ion-item>
-                        <ion-thumbnail>
-                        <img src={doc.logo} alt="logo"/>
-                        </ion-thumbnail>
-                        </ion-item>
-                        </ion-card-header>
-                        <ion-card-content>
-                        <span innerHTML={doc.title}/>
-                        </ion-card-content>
-                        </ion-card>*/}
+                  <ion-col class={`item-col ${doc.key || 'empty'} `}>
+                    {doc.key
+                      ? <a class="item" href={`/who-am-i/mon-cv/${doc.key}`}>
+
                         <ion-grid class="inner-item-grid">
                           <ion-row>
                             <ion-col text-center>
                               <ion-thumbnail class="item-icon">
-                                <img src={doc.logo} alt="logo"/>
+                                <img src={`/assets/img/${doc.img}`} alt="logo"/>
                               </ion-thumbnail>
                             </ion-col>
                           </ion-row>
                           <ion-row>
                             <ion-col text-center>
-                              <ion-text color="light" innerHTML={doc.title}/>
+                              <ion-text color="light" innerHTML={doc.section}/>
                             </ion-col>
                           </ion-row>
                         </ion-grid>
                       </a>
                       : ''}
                   </ion-col>
-                  // ))}
 
                 ))}
               </ion-row>
@@ -136,32 +87,3 @@ export class PageWhoAmI {
     ];
   }
 }
-
-//
-// <ion-item>
-//   <ion-grid>
-//     <ion-row>
-//       <ion-col text-center>
-//         <button>button 1</button>
-//       </ion-col>
-//     </ion-row>
-//     <ion-row>
-//       <ion-col text-center>
-//         <button>button 2</button>
-//       </ion-col>
-//     </ion-row>
-//   </ion-grid>
-//
-//   <ion-grid>
-//     <ion-row>
-//       <ion-col text-center>
-//         <button>button 1</button>
-//       </ion-col>
-//     </ion-row>
-//     <ion-row>
-//       <ion-col text-center>
-//         <button>button 2</button>
-//       </ion-col>
-//     </ion-row>
-//   </ion-grid>
-// </ion-item>

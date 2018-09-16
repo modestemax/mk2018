@@ -1,6 +1,7 @@
 import {Component, Prop} from '@stencil/core';
-// import { ConferenceData } from '../../providers/conference-data';
-// import { UserData } from '../../providers/user-data';
+import {__} from "../../providers/i18n";
+import {ForceAlternanceData} from "../../providers/force-alternance";
+
 
 @Component({
   tag: 'page-forces',
@@ -9,29 +10,14 @@ import {Component, Prop} from '@stencil/core';
 export class PageForces {
 
   @Prop() goback = '/';
-  private forces = [
-    {
-      name: 'crac',
-      forceId: 'crac',
-      logo: 'orange_4.png',
-      summary: 'qsdq  qdsdqs dqsd'
-    },
-    {
-      name: 'crac',
-      forceId: 'crac',
-      logo: 'orange_4.png',
-      summary: 'qsdq  qdsdqs dqsd'
-    },
-    {
-      name: 'crac',
-      forceId: 'crac',
-      logo: 'orange_4.png',
-      summary: 'qsdq  qdsdqs dqsd'
-    }
-  ];
+  private forces;
 
-  async componentWillLoad() {
+  componentWillLoad() {
+    return this.loadData();
+  }
 
+  async loadData() {
+    this.forces = await ForceAlternanceData.getData();
   }
 
 
@@ -43,7 +29,7 @@ export class PageForces {
 
           </ion-buttons>
           <ion-title>
-            Les Forces pour l’Alternance Urnes Paix
+            {__('LES_FORCES_POUR_L_ALTERNANCE_URNES_PAIX')}
           </ion-title>
 
           <ion-buttons slot="end">
@@ -56,11 +42,11 @@ export class PageForces {
 
 
         <ion-list class="bank-list">
-          {this.forces.map(({name, forceId, logo, summary}) => (
+          {this.forces.map(({name, key, img, summary}) => (
             [
-              <ion-item href={`/others/forces/${forceId}`}>
+              <ion-item href={`/others/forces/${key}`}>
                 <ion-thumbnail slot="start">
-                  <img src={`/assets/img/${logo}`}/>
+                  <img src={`/assets/img/${img}`}/>
                 </ion-thumbnail>
                 <ion-label>
                   <h3 class="bank-name">  {name}</h3>
@@ -72,7 +58,6 @@ export class PageForces {
             ]
           ))}
         </ion-list>
-
 
 
       </ion-content>

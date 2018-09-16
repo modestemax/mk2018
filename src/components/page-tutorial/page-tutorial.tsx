@@ -1,6 +1,8 @@
 import {Component, Prop, State} from '@stencil/core';
 
 import {UserData} from '../../providers/user-data';
+import {TutorialData} from "../../providers/tutorial-data";
+import {__} from "../../providers/i18n";
 
 @Component({
   tag: 'page-tutorial',
@@ -9,30 +11,17 @@ import {UserData} from '../../providers/user-data';
 export class PageTutorial {
 
   @Prop() lng = 'fr';
-  @State()  showSkip = true;
+  @State() showSkip = true;
 
-  slides = [
-    {
-      src: '/assets/img/ica-slidebox-img-1.png',
-      title: `Welcome to the <b>ICA</b>`,
-      text: `The <b>ionic conference app</b> is a practical preview of the
-              ionic framework in action, and a demonstration of proper code use.`
-    },
-    {
-      src: '/assets/img/ica-slidebox-img-2.png',
-      title: `What is Ionic?`,
-      text: `<b>Ionic Pro</b> is a powerful set of services and features built
-              on top of Ionic Framework that brings a totally new level of app
-              development agility to mobile dev teams.`
-    },
-    {
-      src: '/assets/img/ica-slidebox-img-3.png',
-      title: `What is Ionic Pro?`,
-      text: `<b>Ionic Pro</b> is a powerful set of services and features built
-              on top of Ionic Framework that brings a totally new level of app
-              development agility to mobile dev teams.`
-    }
-  ];
+  slides = [];
+
+  componentWillLoad() {
+    return this.loadData();
+  }
+
+  async loadData() {
+    this.slides = await TutorialData.load();
+  }
 
   componentDidLoad() {
     UserData.hasSeenTutorial(true);
@@ -54,19 +43,18 @@ export class PageTutorial {
 
       <ion-content scrollY={false}>
         <ion-slides onIonSlideReachEnd={() => this.showSkip = false} pager={true}>
-          {this.slides.map(({src, title, text}) =>
+          {this.slides.map(({img, title, text}) =>
             (<ion-slide>
-                <img src={src} class="slide-image"/>
+                <img src={`/assets/img/${img}`} class="slide-image"/>
                 <h2 class="slide-title" innerHTML={title}/>
                 <p innerHTML={text}/>
               </ion-slide>
             ))}
-
           <ion-slide>
             <img src="assets/img/ica-slidebox-img-4.png" class="slide-image"/>
-            <h2 class="slide-title">Ready to Play?</h2>
+            <h2 class="slide-title">{__('READY_TO_PLAY_Q')}</h2>
             <ion-button fill="clear" href="/who-am-i">
-              Continue
+              {__('CONTINUE')}
               <ion-icon slot="end" name="arrow-forward"/>
             </ion-button>
           </ion-slide>

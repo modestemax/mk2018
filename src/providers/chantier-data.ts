@@ -1,3 +1,5 @@
+import { UserData } from './user-data';
+
 class ChantierData {
   data: any;
 
@@ -9,15 +11,15 @@ class ChantierData {
     if (this.data) {
       return this.data;
     } else {
-      const rsp = await fetch('/assets/data/chantiers.json');
+      const rsp = await fetch(`/assets/data/chantiers.${UserData.lng}.json`);
       const json = await rsp.json();
       return (this.data = json);
     }
   }
 
   async getChantier(num) {
-    let data = await this.load();
-    return data.chantiers.find(c => c.numChantier == num);
+    const data = await this.load();
+    return data.chantiers.find(c => c.numChantier === num);
   }
 }
 

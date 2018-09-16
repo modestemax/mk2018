@@ -1,4 +1,4 @@
-const DEFAULT_LNG = 'FR';
+const DEFAULT_LNG = 'fr';
 
 class Text {
   onLngChanged: any = [];

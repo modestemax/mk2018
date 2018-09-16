@@ -15,7 +15,6 @@ export class PageChantier {
 
   componentWillLoad() {
     return this.loadData();
-
   }
 
   async loadData() {

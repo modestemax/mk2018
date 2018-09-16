@@ -2,9 +2,11 @@ import {get, remove, set} from './storage';
 
 const HAS_LOGGED_IN = 'hasLoggedIn';
 const HAS_SEEN_TUTORIAL = 'hasSeenTutorial';
+const LANG = 'lng';
 
 export class UserDataController {
   private favorites = new Set<string>();
+  public lng = 'fr';
 
   hasFavorite(sessionName: string): boolean {
     return this.favorites.has(sessionName);
@@ -62,11 +64,12 @@ export class UserDataController {
   }
 
   async getLng(): Promise<string> {
-    return get('lng');
+    return (this.lng = await get(LANG));
   }
 
-  async setLng(lng): Promise<void> {
-    await set('lng', lng);
+  async setLng(lng): Promise<string> {
+    await set(LANG, lng);
+    return this.getLng();
   }
 }
 

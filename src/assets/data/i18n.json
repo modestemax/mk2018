@@ -1,6 +1,12 @@
 {
-  "FR": {
+  "fr": {
     "EXPLORER": "Explorer",
-    "MON_PROJET_POUR_LE_CAMEROUN": "Mon Projet pour le Cameroun"
+    "MON_PROJET_POUR_LE_CAMEROUN": "Mon Projet pour le Cameroun",
+    "READY_TO_PLAY_Q": "Ready to play?",
+    "CONTINUE": "Continuer",
+    "QUI_SUIS_JE": "Qui suis-je",
+    "LE_PENALTY_DU_07_OCTOBRE_2018": "Le Penalty du 07 Octobre 2018",
+    "LES_FORCES_POUR_L_ALTERNANCE_URNES_PAIX": "Les Forces pour l’Alternance Urnes Paix",
+    "FAITES_UN_DON":"Faites un don"
   }
 }

@@ -1,4 +1,6 @@
-import {Component, Prop} from '@stencil/core';
+import {Component} from '@stencil/core';
+import {PenaltyData} from '../../providers/penalty-data';
+import {__} from '../../providers/i18n';
 
 
 @Component({
@@ -7,39 +9,15 @@ import {Component, Prop} from '@stencil/core';
 })
 export class PagePenalty {
 
-  mode!: string;
+  private penaltySteps: any = [];
 
-  penaltySteps: any[] = [];
-  @Prop({connect: 'ion-action-sheet-controller'}) actionSheetCtrl: HTMLIonActionSheetControllerElement;
-
-
-  async componentWillLoad() {
-    this.penaltySteps = [
-      {
-        logo: '/assets/img/Penalty1.jpg',
-        title: 'Faisons basculer le destin du Cameroun',
-        details: [
-          `Afin que soit révélé notre si grand potentiel longtemps étouffé`,
-          `Pour la fusion de nos différences et plus de jamais de division tribale`,
-          `Ouvrons ensemble une nouvelle ère pour l’épanouissement de tous`,
-          `L’équipe sortante doit passer le témoin, elle a donné ce qu’elle a pu pendant 36 ans`,
-          `Changeons d’avenir par les urnes et dans la paix`
-        ]
-      },
-      {
-        logo: '/assets/img/Penalty1.jpg',
-        title: 'Pourquoi KAMTO',
-        details: [
-          `Je me suis préparé assidument pendant 6 ans`,
-          `J’ai de tout temps eu des convictions constantes sur notre pays`,
-          `Pour mes réalisations nationales et internationales`,
-          `Je veux réconcilier les Camerounais et impulser l’invention d’une nouvelle nation`,
-          `Je ne vous trahirai jamais`
-        ]
-      },
-    ];
+  componentWillLoad() {
+    return this.loadData();
   }
 
+  async loadData() {
+    this.penaltySteps = await PenaltyData.getData();
+  }
 
   render() {
     return [
@@ -48,25 +26,25 @@ export class PagePenalty {
           <ion-buttons slot="end">
             <ion-menu-button/>
           </ion-buttons>
-          <ion-title>Le Penalty du 07 Octobre 2018</ion-title>
+          <ion-title>{__('LE_PENALTY_DU_07_OCTOBRE_2018')}</ion-title>
         </ion-toolbar>
       </ion-header>,
 
       <ion-content class="outer-content">
         <ion-list class="penalty-items">
-          <ion-grid no-padding >
+          <ion-grid no-padding>
             <ion-row class="penalty-items-row" align-items-stretch>
-              {this.penaltySteps.map(({logo, title, details}) => (
+              {this.penaltySteps.map(({img, title, details}) => (
                 <ion-col no-padding col-7 align-self-stretch class="penalty-item">
 
                   <ion-card class="penalty-card">
                     <ion-card-header no-padding>
-                      <ion-label class="img-container"><img src={logo} alt="Speaker profile pic"/></ion-label>
+                      <ion-label class="img-container"><img src={`/assets/img/${img}`} alt=""/></ion-label>
                     </ion-card-header>
 
                     <ion-card-content>
                       <ion-list class="content-list">
-                        <ion-list-header class="list-header"><h2>  {title}  </h2></ion-list-header>
+                        <ion-list-header class="list-header"><h2>{title}</h2></ion-list-header>
                         <ul>
                           {details.map(detail => (
                             <li>{detail}</li>

@@ -1,0 +1,39 @@
+{
+  "banks": [
+    {
+      "name": "Orange Money",
+      "img": "orange_4.png",
+      "summary": "+237 655 81 94 84"
+    },
+    {
+      "name": "MTN Mobile Money",
+      "img": "mtnmoney5.png",
+      "summary": "+237 653 79 10 38"
+    },
+    {
+      "name": "Afriland First Bank",
+      "img": "afriland.jpg",
+      "summary": "CM21 10005 00001<br/>03458061001-74"
+    },
+    {
+      "name": "BICEC",
+      "img": "bicec.png",
+      "summary": "ICL RCMCXXXX 10001 066864<br/>51963664001-47"
+    },
+    {
+      "name": "UBC",
+      "img": "UBC.png",
+      "summary": "LICMACMCX 10023 00040<br/>00413014245-01"
+    },
+    {
+      "name": "Europe or America [CIC EST]",
+      "img": "cic.png",
+      "summary": "IBAN: FR76 3008 7330 0100 0203<br/>3320 126 / BIC: CMCIFRPP"
+    },
+    {
+      "name": "Europe or America [PayPal]",
+      "img": "paypal.png",
+      "summary": "contact@mrcparty.org"
+    }
+  ]
+}
