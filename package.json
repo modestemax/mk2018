@@ -9,6 +9,7 @@
   "scripts": {
     "build": "stencil build",
     "dev": "stencil build --dev --watch --serve",
+    "prod": "stencil build --prod  --watch --serve",
     "start": "npm run dev",
     "serve": "stencil serve --root www",
     "test": "jest",

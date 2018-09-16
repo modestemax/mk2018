@@ -7,11 +7,9 @@ module.exports = {
 
     // First application
     {
-      name      : 'API',
-      script    : 'app.js',
-      env: {
-        COMMON_VARIABLE: 'true'
-      },
+      name: 'mk2018',
+      script: 'start.sh',
+      env: {},
       env_production: {
         NODE_ENV: 'production'
       }
@@ -35,18 +33,7 @@ module.exports = {
       ref: 'origin/master',
       repo: 'https://github.com/modestemax/mk2018.git',
       path: '/home/ubuntu/mk2018',
-      'post-deploy': 'npm install && npm start'
-    },
-    dev: {
-      // user: 'node',
-      // host: '212.83.163.1',
-      // ref: 'origin/master',
-      // repo: 'git@github.com:repo.git',
-      // path: '/var/www/development',
-      // 'post-deploy': 'npm run install && pm2 reload ecosystem.config.js --env dev',
-      // env: {
-      //   NODE_ENV: 'dev'
-      // }
+      'post-deploy': 'npm install && && pm2 reload ecosystem.config.js --env dev'
     }
   }
 };
