@@ -33,7 +33,7 @@ module.exports = {
       "key": "/home/max/.ssh/id_rsa",
       host: '142.44.246.201',
       ref: 'origin/remote',
-      repo: 'git@github.com:modestemax/mk2018.git',
+      repo: 'https://github.com/modestemax/mk2018.git',
       path: '/home/ubuntu/mk2018',
       'post-deploy': 'npm install && npm start'
     },
