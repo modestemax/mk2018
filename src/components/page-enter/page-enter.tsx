@@ -1,4 +1,4 @@
-import { Component } from '@stencil/core';
+import {Component} from '@stencil/core';
 
 @Component({
   tag: 'page-enter',
@@ -9,7 +9,7 @@ export class PageAbout {
     return [
       <ion-content class="mk_photo">
         {/*<div class="about-header">*/}
-          {/*<img src="assets/img/mk-enter.png" alt="ionic logo" />*/}
+        {/*<img src="assets/img/mk-enter.png" alt="ionic logo" />*/}
         {/*</div>*/}
       </ion-content>,
       <ion-footer>
