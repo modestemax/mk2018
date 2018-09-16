@@ -4,6 +4,10 @@ import {sass} from '@stencil/sass';
 export const config: Config = {
   globalStyle: 'src/global.css',
   plugins: [
-    sass()
+    sass({
+      injectGlobalPaths: [
+        'src/global/variables.scss'
+      ]
+    })
   ]
 };
