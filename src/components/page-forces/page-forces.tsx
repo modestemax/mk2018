@@ -73,6 +73,8 @@ export class PageForces {
           ))}
         </ion-list>
 
+
+
       </ion-content>
     ];
   }

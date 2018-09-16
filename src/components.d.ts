@@ -15,6 +15,23 @@ export namespace Components {
   interface AppRoot {}
   interface AppRootAttributes extends StencilHTMLAttributes {}
 
+  interface LazyIframe {
+    'frameBorder': string;
+    'height': string;
+    'name': string;
+    'scrolling': string;
+    'src': string;
+    'width': string;
+  }
+  interface LazyIframeAttributes extends StencilHTMLAttributes {
+    'frameBorder'?: string;
+    'height'?: string;
+    'name'?: string;
+    'scrolling'?: string;
+    'src'?: string;
+    'width'?: string;
+  }
+
   interface PageAboutPopover {}
   interface PageAboutPopoverAttributes extends StencilHTMLAttributes {}
 
@@ -155,6 +172,7 @@ export namespace Components {
 declare global {
   interface StencilElementInterfaces {
     'AppRoot': Components.AppRoot;
+    'LazyIframe': Components.LazyIframe;
     'PageAboutPopover': Components.PageAboutPopover;
     'PageAbout': Components.PageAbout;
     'PageAccount': Components.PageAccount;
@@ -185,6 +203,7 @@ declare global {
 
   interface StencilIntrinsicElements {
     'app-root': Components.AppRootAttributes;
+    'lazy-iframe': Components.LazyIframeAttributes;
     'page-about-popover': Components.PageAboutPopoverAttributes;
     'page-about': Components.PageAboutAttributes;
     'page-account': Components.PageAccountAttributes;
@@ -218,6 +237,12 @@ declare global {
   var HTMLAppRootElement: {
     prototype: HTMLAppRootElement;
     new (): HTMLAppRootElement;
+  };
+
+  interface HTMLLazyIframeElement extends Components.LazyIframe, HTMLStencilElement {}
+  var HTMLLazyIframeElement: {
+    prototype: HTMLLazyIframeElement;
+    new (): HTMLLazyIframeElement;
   };
 
   interface HTMLPageAboutPopoverElement extends Components.PageAboutPopover, HTMLStencilElement {}
@@ -378,6 +403,7 @@ declare global {
 
   interface HTMLElementTagNameMap {
     'app-root': HTMLAppRootElement
+    'lazy-iframe': HTMLLazyIframeElement
     'page-about-popover': HTMLPageAboutPopoverElement
     'page-about': HTMLPageAboutElement
     'page-account': HTMLPageAccountElement
@@ -408,6 +434,7 @@ declare global {
 
   interface ElementTagNameMap {
     'app-root': HTMLAppRootElement;
+    'lazy-iframe': HTMLLazyIframeElement;
     'page-about-popover': HTMLPageAboutPopoverElement;
     'page-about': HTMLPageAboutElement;
     'page-account': HTMLPageAccountElement;

@@ -61,6 +61,11 @@ export class PageForcesDetail {
               </ion-item>
 
         </ion-list>
+
+        <lazy-iframe src="https://www.youtube.com/embed/UfD-k7aHkQE" width="100%" height="auto"
+                     title="Ionic team at Polymer Summit video"/>
+
+
       </ion-content>
     ];
   }
