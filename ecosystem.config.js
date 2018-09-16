@@ -33,7 +33,7 @@ module.exports = {
       ref: 'origin/master',
       repo: 'https://github.com/modestemax/mk2018.git',
       path: '/home/ubuntu/mk2018',
-      'post-deploy': 'npm install && && pm2 reload ecosystem.config.js --env dev'
+      'post-deploy': 'npm install && pm2 reload ecosystem.config.js --env dev'
     }
   }
 };
