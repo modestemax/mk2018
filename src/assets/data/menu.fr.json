@@ -1,0 +1,55 @@
+{
+  "menu": [
+    [
+      {
+        "title": "Qui suis-je",
+        "url": "/who-am-i",
+        "icon": "person"
+      },
+      {
+        "title": "Mon Projet pour le Cameroun",
+        "url": "/mon-projet",
+        "icon": "folder-open"
+      },
+      {
+        "title": "Mes Engagements",
+        "url": "/others/mes-engagements",
+        "icon": "clipboard"
+      },
+      {
+        "title": "En route pour Etoudi",
+        "url": "/etoudi",
+        "icon": "walk"
+      }
+    ],
+    [
+      {
+        "title": "Le Penalty du 07 Octobre 2018",
+        "url": "/penalty",
+        "icon": "football"
+      },
+      {
+        "title": "Les Forces pour l'Alternance par les Urnes et dans la Paix",
+        "url": "/others/forces",
+        "icon": "people"
+      }
+    ],
+    [
+      {
+        "title": "Galerie de la Renaissance",
+        "url": "/others/galerie",
+        "icon": "Images"
+      },
+      {
+        "title": "Faites un don",
+        "url": "/others/don",
+        "icon": "gift"
+      },
+      {
+        "title": "Contacter l’Equipe de Campagne",
+        "url": "/others/contact",
+        "icon": "mail-open"
+      }
+    ]
+  ]
+}

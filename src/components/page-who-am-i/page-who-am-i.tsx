@@ -1,7 +1,7 @@
-import {Config} from '@ionic/core';
-import {Component, Prop /*Element, Listen, , State */} from '@stencil/core';
-import {CVData} from "../../providers/cv-data";
-import {__} from "../../providers/i18n";
+import { Config } from '@ionic/core';
+import { Component, Prop /*Element, Listen, , State */ } from '@stencil/core';
+import { CVData } from '../../providers/cv-data';
+import { __ } from '../../providers/i18n';
 
 
 @Component({
@@ -11,7 +11,7 @@ import {__} from "../../providers/i18n";
 export class PageWhoAmI {
 
 
-  @Prop({context: 'config'}) config: Config;
+  @Prop({ context: 'config' }) config: Config;
 
   documents = [];
 

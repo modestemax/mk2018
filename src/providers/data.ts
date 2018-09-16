@@ -1,10 +1,12 @@
-import { UserData } from './user-data';
+import {UserData} from './user-data';
 
 export class Data {
   protected static data: any;
+  protected static lng;
 
   protected static async load() {
     await UserData.getLng();
+    this.lng = UserData.lng;
 
     if (this.data) {
       return this.data;

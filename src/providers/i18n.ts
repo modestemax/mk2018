@@ -1,63 +1,14 @@
+import { Data } from './data';
+
 const DEFAULT_LNG = 'fr';
 
-class Text {
-  onLngChanged: any = [];
+export class Text extends Data {
+  static onLngChanged: any = [];
 
-  loadMenu(): any {
-    return [
-      [{
-        title: 'Qui suis-je',
-        url: '/who-am-i',
-        icon: 'person'
-      },
-        {
-          title: 'Mon Projet pour le Cameroun',
-          url: '/mon-projet',
-          icon: 'folder-open'
-        },
-        {
-          title: 'En route pour Etoudi',
-          url: '/map',
-          icon: 'walk'
-        },
-        {
-          title: 'Le Penalty du 07 Octobre 2018',
-          url: '/penalty',
-          icon: 'football'
-        }],
-      [{
-        title: 'Les Forces Alternance Urnes Paix',
-        url: '/others/forces',
-        icon: 'people'
-      },
-        {
-          title: 'Vos Questions / Mes Réponses',
-          url: '/others/faq',
-          icon: 'help-circle-outline'
-        },
-      ],
-      [{
-        title: 'Faites un don',
-        url: '/others/don',
-        icon: 'gift'
-      },
-        {
-          title: 'Contacter l’Equipe de Campagne',
-          url: '/others/contact',
-          icon: 'mail-open'
-        },
-      ]
-    ];
-  }
+  static text: any;
+  static lng = DEFAULT_LNG;
 
-  text: any;
-  lng = DEFAULT_LNG;
-
-  constructor() {
-    this.load();
-  }
-
-  async load() {
+  static async load() {
     if (this.text) {
       return this.text;
     } else {
@@ -67,14 +18,13 @@ class Text {
     }
   }
 
-  async setLng(lng) {
+  static async setLng(lng) {
     this.lng = lng || this.lng;
   }
 
-  getText(key) {
+  static getText(key) {
     return (this.text[this.lng] && this.text[this.lng][key]) || this.text[DEFAULT_LNG][key];
   }
 }
 
-export const text = new Text();
-export const __ = text.getText.bind(text);
+export const __ = Text.getText.bind(Text);

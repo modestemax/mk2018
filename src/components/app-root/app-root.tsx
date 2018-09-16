@@ -1,11 +1,12 @@
 import '@ionic/core';
 
-import {Component, Element, Listen, Prop, State} from '@stencil/core';
-import {UserData} from '../../providers/user-data';
-import {Plugins} from '@capacitor/core';
-import {text} from '../../providers/i18n';
+import {Component, Element, Prop, State,} from '@stencil/core';
+import { UserData } from '../../providers/user-data';
+import { Plugins } from '@capacitor/core';
+import { Menu } from '../../providers/menu-data';
+import { Text } from '../../providers/i18n';
 
-const {SplashScreen} = Plugins;
+const { SplashScreen } = Plugins;
 
 @Component({
   tag: 'app-root',
@@ -18,17 +19,17 @@ export class AppRoot {
 
   @Element() el: HTMLElement;
 
-  @Prop({context: 'isServer'}) isServer: boolean;
+  @Prop({ context: 'isServer' }) isServer: boolean;
 
 
-  menus: any;
+  @State() menus: any;
 
   async componentWillLoad() {
 
-    this.menus = await text.loadMenu();
+    this.menus = await Menu.getMenu();
 
-    text.onLngChanged.push(() => {
-      this.menus = text.loadMenu();
+    Text.onLngChanged.push(async () => {
+      this.menus = await Menu.getMenu();
     });
 
     this.hasSeenTutorial = this.isServer
@@ -38,7 +39,6 @@ export class AppRoot {
   }
 
   async componentDidLoad() {
-    this.checkLoginStatus();
     try {
       await SplashScreen.hide();
     } catch {
@@ -46,21 +46,6 @@ export class AppRoot {
     }
   }
 
-  async checkLoginStatus() {
-    const loggedIn = this.loggedIn = await UserData.isLoggedIn();
-    return loggedIn;
-  }
-
-  async logout() {
-    await UserData.logout();
-    this.loggedIn = false;
-  }
-
-  @Listen('userDidLogIn')
-  @Listen('userDidLogOut')
-  updateLoggedInStatus(loggedEvent) {
-    this.loggedIn = loggedEvent.detail.loginStatus;
-  }
 
   renderRouter() {
     return (
@@ -70,21 +55,21 @@ export class AppRoot {
         <ion-route component="page-tabs">
           <ion-route url="/who-am-i" component="tab-who-am-i">
             <ion-route component="page-who-am-i"/>
-            <ion-route url="/mon-cv/:docName" component="page-mon-cv" componentProps={{goback: '/who-am-i'}}/>
+            <ion-route url="/mon-cv/:docName" component="page-mon-cv" componentProps={{ goback: '/who-am-i' }}/>
           </ion-route>
 
           <ion-route url="/mon-projet" component="tab-mon-projet">
             <ion-route component="page-mon-projet"/>
-            <ion-route url="/chantier/:num" component="page-chantier" componentProps={{goback: '/mon-projet'}}/>
+            <ion-route url="/chantier/:num" component="page-chantier" componentProps={{ goback: '/mon-projet' }}/>
             <ion-route url="/chantier/:num/detail/:detail" component="page-chantier-detail"
-                       componentProps={{goback: '/mon-projet/chantier'}}/>
+                       componentProps={{ goback: '/mon-projet/chantier' }}/>
           </ion-route>
           <ion-route url="/etoudi" component="page-etoudi"/>
           <ion-route url="/penalty" component="page-penalty"/>
 
           <ion-route url="/others" component="tab-hidden">
             <ion-route url="/forces" component="page-forces"/>
-            <ion-route url="/forces/:forceId" component="page-forces-detail" componentProps={{goback: '/others/forces'}}/>
+            <ion-route url="/forces/:forceId" component="page-forces-detail" componentProps={{ goback: '/others/forces' }}/>
             <ion-route url="/faq" component="page-faq"/>
             <ion-route url="/don" component="page-don"/>
             <ion-route url="/contact" component="page-contact"/>
@@ -92,12 +77,12 @@ export class AppRoot {
 
           <ion-route url="/schedule" component="tab-schedule">
             <ion-route component="page-schedule"/>
-            <ion-route url="/session/:sessionId" component="page-session" componentProps={{goback: '/schedule'}}/>
+            <ion-route url="/session/:sessionId" component="page-session" componentProps={{ goback: '/schedule' }}/>
           </ion-route>
 
           <ion-route url="/speakers" component="tab-speaker">
             <ion-route component="page-speaker-list"/>
-            <ion-route url="/session/:sessionId" component="page-session" componentProps={{goback: '/speakers'}}/>
+            <ion-route url="/session/:sessionId" component="page-session" componentProps={{ goback: '/speakers' }}/>
             <ion-route url="/:speakerId" component="page-speaker-detail"/>
           </ion-route>
 
@@ -109,9 +94,9 @@ export class AppRoot {
 
 
         {/*<ion-route url="/tutorial" >*/}
-        <ion-route url="/tutorial" component="page-tutorial" componentProps={{lng: this.userLng}}/>
-        <ion-route url="/tutorial/fr" component="page-tutorial" componentProps={{lng: 'fr'}}/>
-        <ion-route url="tutorial/en" component="page-tutorial" componentProps={{lng: 'en'}}/>
+        <ion-route url="/tutorial" component="page-tutorial" componentProps={{ lng: this.userLng }}/>
+        <ion-route url="/tutorial/fr" component="page-tutorial" componentProps={{ lng: 'fr' }}/>
+        <ion-route url="tutorial/en" component="page-tutorial" componentProps={{ lng: 'en' }}/>
         {/*</ion-route>*/}
 
         <ion-route url="/login" component="page-login"/>
