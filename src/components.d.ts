@@ -86,6 +86,9 @@ export namespace Components {
     'goback'?: string;
   }
 
+  interface PageEngagements {}
+  interface PageEngagementsAttributes extends StencilHTMLAttributes {}
+
   interface PageEnter {}
   interface PageEnterAttributes extends StencilHTMLAttributes {}
 
@@ -192,6 +195,7 @@ declare global {
     'PageChantier': Components.PageChantier;
     'PageContact': Components.PageContact;
     'PageDon': Components.PageDon;
+    'PageEngagements': Components.PageEngagements;
     'PageEnter': Components.PageEnter;
     'PageEtoudi': Components.PageEtoudi;
     'PageForcesDetail': Components.PageForcesDetail;
@@ -224,6 +228,7 @@ declare global {
     'page-chantier': Components.PageChantierAttributes;
     'page-contact': Components.PageContactAttributes;
     'page-don': Components.PageDonAttributes;
+    'page-engagements': Components.PageEngagementsAttributes;
     'page-enter': Components.PageEnterAttributes;
     'page-etoudi': Components.PageEtoudiAttributes;
     'page-forces-detail': Components.PageForcesDetailAttributes;
@@ -304,6 +309,12 @@ declare global {
   var HTMLPageDonElement: {
     prototype: HTMLPageDonElement;
     new (): HTMLPageDonElement;
+  };
+
+  interface HTMLPageEngagementsElement extends Components.PageEngagements, HTMLStencilElement {}
+  var HTMLPageEngagementsElement: {
+    prototype: HTMLPageEngagementsElement;
+    new (): HTMLPageEngagementsElement;
   };
 
   interface HTMLPageEnterElement extends Components.PageEnter, HTMLStencilElement {}
@@ -431,6 +442,7 @@ declare global {
     'page-chantier': HTMLPageChantierElement
     'page-contact': HTMLPageContactElement
     'page-don': HTMLPageDonElement
+    'page-engagements': HTMLPageEngagementsElement
     'page-enter': HTMLPageEnterElement
     'page-etoudi': HTMLPageEtoudiElement
     'page-forces-detail': HTMLPageForcesDetailElement
@@ -463,6 +475,7 @@ declare global {
     'page-chantier': HTMLPageChantierElement;
     'page-contact': HTMLPageContactElement;
     'page-don': HTMLPageDonElement;
+    'page-engagements': HTMLPageEngagementsElement;
     'page-enter': HTMLPageEnterElement;
     'page-etoudi': HTMLPageEtoudiElement;
     'page-forces-detail': HTMLPageForcesDetailElement;

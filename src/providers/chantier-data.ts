@@ -1,4 +1,4 @@
-import {Data} from './data';
+import { Data } from './data';
 
 export class ChantierData extends Data {
 
@@ -15,4 +15,3 @@ export class ChantierData extends Data {
     return this.load();
   }
 }
-
