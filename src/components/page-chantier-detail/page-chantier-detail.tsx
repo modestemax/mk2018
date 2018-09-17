@@ -66,15 +66,15 @@ export class PageChantierDetail {
             </ion-card>
           </ion-list-header>
 
-
-          <ion-card class="chantier-detail" style={{ borderLeftColor: this.data.color }}>
+          <chantier-sous-titre color={this.data.color} text={this.sousDetails.title} />
+          {/*<ion-card class="chantier-detail" style={{ borderLeftColor: this.data.color }}>
             <ion-card-content>
               <ion-item>
                 <ion-text> {this.sousDetails.title}</ion-text>
               </ion-item>
             </ion-card-content>
           </ion-card>
-
+*/}
         </ion-list>
 
         <ion-list class="sub-detail-list">
