@@ -15,6 +15,19 @@ export namespace Components {
   interface AppRoot {}
   interface AppRootAttributes extends StencilHTMLAttributes {}
 
+  interface ChantierSousTitre {
+    'color': any;
+    'key': any;
+    'numChantier': any;
+    'text': any;
+  }
+  interface ChantierSousTitreAttributes extends StencilHTMLAttributes {
+    'color'?: any;
+    'key'?: any;
+    'numChantier'?: any;
+    'text'?: any;
+  }
+
   interface LazyIframe {
     'frameBorder': string;
     'height': string;
@@ -170,6 +183,7 @@ export namespace Components {
 declare global {
   interface StencilElementInterfaces {
     'AppRoot': Components.AppRoot;
+    'ChantierSousTitre': Components.ChantierSousTitre;
     'LazyIframe': Components.LazyIframe;
     'PageAboutPopover': Components.PageAboutPopover;
     'PageAbout': Components.PageAbout;
@@ -201,6 +215,7 @@ declare global {
 
   interface StencilIntrinsicElements {
     'app-root': Components.AppRootAttributes;
+    'chantier-sous-titre': Components.ChantierSousTitreAttributes;
     'lazy-iframe': Components.LazyIframeAttributes;
     'page-about-popover': Components.PageAboutPopoverAttributes;
     'page-about': Components.PageAboutAttributes;
@@ -235,6 +250,12 @@ declare global {
   var HTMLAppRootElement: {
     prototype: HTMLAppRootElement;
     new (): HTMLAppRootElement;
+  };
+
+  interface HTMLChantierSousTitreElement extends Components.ChantierSousTitre, HTMLStencilElement {}
+  var HTMLChantierSousTitreElement: {
+    prototype: HTMLChantierSousTitreElement;
+    new (): HTMLChantierSousTitreElement;
   };
 
   interface HTMLLazyIframeElement extends Components.LazyIframe, HTMLStencilElement {}
@@ -401,6 +422,7 @@ declare global {
 
   interface HTMLElementTagNameMap {
     'app-root': HTMLAppRootElement
+    'chantier-sous-titre': HTMLChantierSousTitreElement
     'lazy-iframe': HTMLLazyIframeElement
     'page-about-popover': HTMLPageAboutPopoverElement
     'page-about': HTMLPageAboutElement
@@ -432,6 +454,7 @@ declare global {
 
   interface ElementTagNameMap {
     'app-root': HTMLAppRootElement;
+    'chantier-sous-titre': HTMLChantierSousTitreElement;
     'lazy-iframe': HTMLLazyIframeElement;
     'page-about-popover': HTMLPageAboutPopoverElement;
     'page-about': HTMLPageAboutElement;

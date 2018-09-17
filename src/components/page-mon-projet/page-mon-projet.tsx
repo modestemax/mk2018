@@ -1,7 +1,7 @@
-import { Config } from '@ionic/core';
-import { Component, Prop /*Element, Listen, , State */ } from '@stencil/core';
-import { __ } from '../../providers/i18n';
-import { ChantierData } from '../../providers/chantier-data';
+import {Config} from '@ionic/core';
+import {Component, Prop /*Element, Listen, , State */} from '@stencil/core';
+import {__} from '../../providers/i18n';
+import {ChantierData} from '../../providers/chantier-data';
 
 // import { ConferenceData } from '../../providers/conference-data';
 //
@@ -15,7 +15,7 @@ import { ChantierData } from '../../providers/chantier-data';
 export class PageMonProjet {
 
 
-  @Prop({ context: 'config' }) config: Config;
+  @Prop({context: 'config'}) config: Config;
 
   data: any;
 
@@ -47,12 +47,13 @@ export class PageMonProjet {
 
       <ion-content scrollY={false}>
         <ion-slides pager={true}>
-          {this.data.chantiers.map(({ numChantier, logo, label, title, text }) =>
+          {this.data.chantiers.map(({numChantier, color, img, label, title, text}) =>
             (<ion-slide>
                 <ion-card>
                   <ion-card-header>
-                    <ion-thumbnail class="img-wrapper"><img src={`/assets/img/${logo}`} class="slide-image"/></ion-thumbnail>
+                    <ion-thumbnail class="img-wrapper"><img src={`/assets/img/${img}`} class="slide-image"/></ion-thumbnail>
                   </ion-card-header>
+                  <hr class="thematique" style={{height: '15px', backgroundColor: color}}/>
                   <ion-card-content>
                     <ion-label>
                       <p innerHTML={label}/>

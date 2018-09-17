@@ -1,5 +1,5 @@
-import {Component, Prop} from '@stencil/core';
-import {ChantierData} from "../../providers/chantier-data";
+import { Component, Prop } from '@stencil/core';
+import { ChantierData } from '../../providers/chantier-data';
 // import { ConferenceData } from '../../providers/conference-data';
 // import { UserData } from '../../providers/user-data';
 
@@ -33,7 +33,7 @@ export class PageChantierDetail {
       <ion-header>
         <ion-toolbar>
           <ion-buttons slot="start">
-            <ion-back-button defaultHref={this.gobackUrl}></ion-back-button>
+            <ion-back-button defaultHref={this.gobackUrl}/>
           </ion-buttons>
           <ion-title>
             {this.data.pageTitle}
@@ -51,9 +51,10 @@ export class PageChantierDetail {
 
             <ion-card class="header">
               <ion-card-header>
-                <ion-thumbnail class="img-wrapper"><img src={`/assets/img/${this.data.logo}`} class="slide-image"/>
+                <ion-thumbnail class="img-wrapper"><img src={`/assets/img/${this.data.img}`} class="slide-image"/>
                 </ion-thumbnail>
               </ion-card-header>
+              <hr class="thematique" style={{height: '15px', backgroundColor:this.data. color}}/>
               <ion-card-content class="center-text">
                 <ion-label>
                   <p innerHTML={this.data.label}/>
@@ -66,7 +67,7 @@ export class PageChantierDetail {
           </ion-list-header>
 
 
-          <ion-card class="chantier-detail" style={{borderLeftColor: this.sousDetails.color}}>
+          <ion-card class="chantier-detail" style={{ borderLeftColor: this.data.color }}>
             <ion-card-content>
               <ion-item>
                 <ion-text> {this.sousDetails.title}</ion-text>
@@ -81,7 +82,7 @@ export class PageChantierDetail {
             <ion-item-group class="sub-detail-group">
               <ion-item-divider>
                 <ion-label>
-                  <p class="sub-detail-title" style={{color: this.sousDetails.color}}> {item.title}</p>
+                  <p class="sub-detail-title" style={{ color: this.data.color }}> {item.title}</p>
                 </ion-label>
               </ion-item-divider>
               <ul>
