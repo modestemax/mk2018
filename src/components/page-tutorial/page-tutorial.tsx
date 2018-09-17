@@ -51,7 +51,7 @@ export class PageTutorial {
               </ion-slide>
             ))}
           <ion-slide>
-            <img src="assets/img/ica-slidebox-img-4.png" class="slide-image"/>
+            <img src="/assets/img/ica-slidebox-img-4.png" class="slide-image"/>
             <h2 class="slide-title">{__('READY_TO_PLAY_Q')}</h2>
             <ion-button fill="clear" href="/who-am-i">
               {__('CONTINUE')}

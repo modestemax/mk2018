@@ -1,4 +1,4 @@
-import { Data } from './data';
+import {Data} from './data';
 
 export class TutorialData extends Data {
 
@@ -7,7 +7,8 @@ export class TutorialData extends Data {
     return `/assets/data/tutorial.${lng}.json`;
   }
 
-  static loadSlides() {
-    return this.load();
+  static async loadSlides() {
+    await this.load();
+    return this.data.slides
   }
 }
