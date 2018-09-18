@@ -86,6 +86,15 @@ export namespace Components {
     'goback'?: string;
   }
 
+  interface PageEngagementsDetail {
+    'goback': string;
+    'numero': number;
+  }
+  interface PageEngagementsDetailAttributes extends StencilHTMLAttributes {
+    'goback'?: string;
+    'numero'?: number;
+  }
+
   interface PageEngagements {}
   interface PageEngagementsAttributes extends StencilHTMLAttributes {}
 
@@ -195,6 +204,7 @@ declare global {
     'PageChantier': Components.PageChantier;
     'PageContact': Components.PageContact;
     'PageDon': Components.PageDon;
+    'PageEngagementsDetail': Components.PageEngagementsDetail;
     'PageEngagements': Components.PageEngagements;
     'PageEnter': Components.PageEnter;
     'PageEtoudi': Components.PageEtoudi;
@@ -228,6 +238,7 @@ declare global {
     'page-chantier': Components.PageChantierAttributes;
     'page-contact': Components.PageContactAttributes;
     'page-don': Components.PageDonAttributes;
+    'page-engagements-detail': Components.PageEngagementsDetailAttributes;
     'page-engagements': Components.PageEngagementsAttributes;
     'page-enter': Components.PageEnterAttributes;
     'page-etoudi': Components.PageEtoudiAttributes;
@@ -309,6 +320,12 @@ declare global {
   var HTMLPageDonElement: {
     prototype: HTMLPageDonElement;
     new (): HTMLPageDonElement;
+  };
+
+  interface HTMLPageEngagementsDetailElement extends Components.PageEngagementsDetail, HTMLStencilElement {}
+  var HTMLPageEngagementsDetailElement: {
+    prototype: HTMLPageEngagementsDetailElement;
+    new (): HTMLPageEngagementsDetailElement;
   };
 
   interface HTMLPageEngagementsElement extends Components.PageEngagements, HTMLStencilElement {}
@@ -442,6 +459,7 @@ declare global {
     'page-chantier': HTMLPageChantierElement
     'page-contact': HTMLPageContactElement
     'page-don': HTMLPageDonElement
+    'page-engagements-detail': HTMLPageEngagementsDetailElement
     'page-engagements': HTMLPageEngagementsElement
     'page-enter': HTMLPageEnterElement
     'page-etoudi': HTMLPageEtoudiElement
@@ -475,6 +493,7 @@ declare global {
     'page-chantier': HTMLPageChantierElement;
     'page-contact': HTMLPageContactElement;
     'page-don': HTMLPageDonElement;
+    'page-engagements-detail': HTMLPageEngagementsDetailElement;
     'page-engagements': HTMLPageEngagementsElement;
     'page-enter': HTMLPageEnterElement;
     'page-etoudi': HTMLPageEtoudiElement;

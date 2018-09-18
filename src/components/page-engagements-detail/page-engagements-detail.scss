@@ -1,0 +1,29 @@
+.list {
+  margin: 5px !important;
+  .text {
+    font-size: 16px !important;
+    padding-bottom: 14px;
+  }
+  .content-header {
+    margin-bottom: auto;
+    color: black;
+    .title {
+      font-weight: 600;
+      font-size: 1rem;
+      margin-top: 25px;
+      white-space: normal;
+    }
+
+  }
+  .resource {
+    margin-bottom: 27px;
+
+    .res-image {
+      height: auto;
+      width: 100%;
+    }
+    .res-video {
+
+    }
+  }
+}

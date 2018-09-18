@@ -47,7 +47,7 @@ export class PageEngagements {
 
                 {details.map(({numero, title, text}) => (
 
-                  <ion-item detail-push class="engagement-text" href={text ? `/others/mes-engagements/${numero}` : '/toto'}>
+                  <ion-item detail-push class="engagement-text" href={text ? `/others/mes-engagements/${numero}` : '#'}>
                     <ion-text class="numero"> {numero}.</ion-text>
                     {title}
                     {/*<ion-icon name="rose" item-end></ion-icon>*/}
