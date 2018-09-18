@@ -1,6 +1,6 @@
-import {Component, Prop} from '@stencil/core';
-import {__} from "../../providers/i18n";
-import {ForceAlternanceData} from "../../providers/force-alternance";
+import { Component, Prop } from '@stencil/core';
+import { __ } from '../../providers/i18n';
+import { ForceAlternanceData } from '../../providers/force-alternance';
 
 
 @Component({
@@ -42,7 +42,7 @@ export class PageForces {
 
 
         <ion-list class="bank-list">
-          {this.forces.map(({name, key, img, summary}) => (
+          {this.forces.map(({ name, key, img, summary }) => (
             [
               <ion-item href={`/others/forces/${key}`}>
                 <ion-thumbnail slot="start">
@@ -63,5 +63,7 @@ export class PageForces {
       </ion-content>
     ];
   }
+
+
 
 }

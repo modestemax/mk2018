@@ -1,29 +1,35 @@
-.list {
-  margin: 5px !important;
-  .text {
-    font-size: 16px !important;
-    padding-bottom: 14px;
-  }
-  .content-header {
-    margin-bottom: auto;
-    color: black;
-    .title {
-      font-weight: 600;
-      font-size: 1rem;
-      margin-top: 25px;
-      white-space: normal;
+page-engagements-detail {
+  .list {
+    margin: 5px !important;
+    .text {
+      font-size: 16px !important;
+      padding-bottom: 14px;
+    }
+    .content-header {
+      margin-bottom: auto;
+      color: black;
+      .title {
+        font-weight: 600;
+        font-size: 1rem;
+        margin-top: 25px;
+        white-space: normal;
+      }
+
     }
 
   }
-  .resource {
-    margin-bottom: 27px;
+  .resources {
+    padding: 0 16px !important;
+    .resource {
+      margin-bottom: 27px;
 
-    .res-image {
-      height: auto;
-      width: 100%;
-    }
-    .res-video {
+      .res-image {
+        height: auto;
+        width: 100%;
+      }
+      .res-video {
 
+      }
     }
   }
 }

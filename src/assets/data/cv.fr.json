@@ -2,6 +2,7 @@
   "sections": [
     {
       "key": "etat-civil",
+      "color":"rgb(197,90,17)",
       "section": "Etat Civil",
       "img": "familly.png",
       "content": [
@@ -53,6 +54,7 @@
     },
     {
       "key": "academic",
+      "color": "rgb(30, 130, 76)",
       "section": "Academic",
       "img": "familly.png",
       "content": [
@@ -64,6 +66,7 @@
     },
     {
       "key": "administration",
+      "color": "rgb(30, 139, 195)",
       "section": "Administration",
       "img": "familly.png",
       "content": [
@@ -75,6 +78,7 @@
     },
     {
       "key": "international",
+      "color": "rgb(145, 61, 136)",
       "section": "International",
       "img": "familly.png",
       "content": [
@@ -86,6 +90,7 @@
     },
     {
       "key": "distinction",
+      "color": "rgb(150, 40, 27)",
       "section": "Distinction",
       "img": "familly.png",
       "content": [
@@ -94,6 +99,33 @@
           "items": []
         }
       ]
+    },
+    {
+      "key": "distinction",
+      "color": "rgb(150, 40, 27)",
+      "section": "Distinction",
+      "img": "familly.png",
+      "content": [
+        {
+          "title": "distinction",
+          "items": []
+        }
+      ]
+    },
+    {
+      "key": "distinction",
+      "color": "rgb(150, 40, 27)",
+      "section": "Distinction",
+      "img": "familly.png",
+      "content": [
+        {
+          "title": "distinction",
+          "items": []
+        }
+      ]
+    },
+    {
+
     }
   ]
 }

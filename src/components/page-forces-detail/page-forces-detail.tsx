@@ -58,15 +58,28 @@ export class PageForcesDetail {
 
         </ion-list>
 
-        {this.content.resources.map(r => (
-          r.type === 'img'
-            ? <img src={r.src_internet ? r.src : `/assets/img/${r.src}`} alt=""/>
-            : <lazy-iframe src={r.src} width="100%" height="auto" title={r.title}/>
-        ))}
+
+        <ion-list class="resources">
+          {this.content.resources.map(({img, video}) => (
+            <div no-padding class="resource">
+              {this.getResourceContent({img, video})}
+              <br/>
+            </div>
+          ))}
+        </ion-list>
 
 
       </ion-content>
     ];
+  }
+
+  private getResourceContent({img, video}) {
+    if (img) {
+      return (<img class="res-image" src={`/assets/img/${img}`} alt=""/>);
+    }
+    if (video) {
+      return (<lazy-iframe src={video} width="100%" height="auto" title={this.content.title}/>);
+    }
   }
 
 

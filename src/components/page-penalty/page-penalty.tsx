@@ -44,10 +44,12 @@ export class PagePenalty {
 
                     <ion-card-content>
                       <ion-list class="content-list">
-                        <ion-list-header class="list-header"><h2>{title}</h2></ion-list-header>
+                        <ion-list-header class="list-header">
+                          <h2 class="title">{title}</h2>
+                        </ion-list-header>
                         <ul>
                           {details.map(detail => (
-                            <li>{detail}</li>
+                            <li class="detail">{detail}</li>
                           ))}
                         </ul>
                       </ion-list>

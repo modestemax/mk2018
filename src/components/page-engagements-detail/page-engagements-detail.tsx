@@ -53,7 +53,7 @@ export class PageEngagementsDetail {
 
         </ion-list>
 
-        <ion-list>
+        <ion-list class="resources">
           {this.data.resources.map(({img, video}) => (
             <div no-padding class="resource">
               {this.getResourceContent({img, video})}

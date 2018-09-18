@@ -1,7 +1,7 @@
-import { Config } from '@ionic/core';
-import { Component, Prop /*Element, Listen, , State */ } from '@stencil/core';
-import { CVData } from '../../providers/cv-data';
-import { __ } from '../../providers/i18n';
+import {Config} from '@ionic/core';
+import {Component, Prop /*Element, Listen, , State */} from '@stencil/core';
+import {CVData} from '../../providers/cv-data';
+import {__} from '../../providers/i18n';
 
 
 @Component({
@@ -11,7 +11,7 @@ import { __ } from '../../providers/i18n';
 export class PageWhoAmI {
 
 
-  @Prop({ context: 'config' }) config: Config;
+  @Prop({context: 'config'}) config: Config;
 
   documents = [];
 
@@ -56,7 +56,7 @@ export class PageWhoAmI {
               <ion-row class="item-row">
                 {this.documents.map((doc) => (
 
-                  <ion-col class={`item-col ${doc.key || 'empty'} `}>
+                  <ion-col class={`item-col ${doc.key || 'empty'} `} style={{backgroundColor: doc.color}}>
                     {doc.key
                       ? <a class="item" href={`/who-am-i/mon-cv/${doc.key}`}>
 

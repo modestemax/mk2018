@@ -43,8 +43,8 @@ export class PageMonCv {
 
       <ion-content>
         <ion-card class="content-detail">
-          <ion-card-header class={`header ${this.docName} `}>
-            <div class="logo"><img src={`assets/img/${this.data.img}`} alt="logo"/></div>
+          <ion-card-header class={`header ${this.docName} `} style={{backgroundColor: this.data.color}}>
+            <div class="logo"><img src={`/assets/img/${this.data.img}`} alt="logo"/></div>
           </ion-card-header>
           <ion-card-content>
             <ion-list>
