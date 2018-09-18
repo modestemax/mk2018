@@ -1,0 +1,23 @@
+
+.engagement-list {
+  margin: 5px !important;
+
+  .group-header {
+
+    .title {
+      font-weight: bold;
+      color: white;
+      margin: auto;
+    }
+  }
+
+  .engagement-text {
+    //border-bottom-color: #f1f1f1;
+    //border-bottom-style: solid;
+    //border-bottom-width: 1px;
+    .numero {
+      min-width: 28px;
+      //margin-bottom: auto;
+    }
+  }
+}

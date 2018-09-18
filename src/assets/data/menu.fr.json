@@ -7,7 +7,7 @@
         "icon": "person"
       },
       {
-        "title": "Mon Programme",
+        "title": "Mon Programme pour la Renaissance",
         "url": "/mon-projet",
         "icon": "folder-open"
       },
@@ -36,8 +36,8 @@
     ],
     [
       {
-        "title": "Galerie de la Renaissance",
-        "url": "/others/galerie",
+        "title": "Galeries Photos et Videos",
+        "url": "/others/galeries",
         "icon": "Images"
       },
       {

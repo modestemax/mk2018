@@ -120,6 +120,9 @@ export namespace Components {
     'goback'?: string;
   }
 
+  interface PageGalerie {}
+  interface PageGalerieAttributes extends StencilHTMLAttributes {}
+
   interface PageLogin {}
   interface PageLoginAttributes extends StencilHTMLAttributes {
     'onUserDidLogIn'?: (event: CustomEvent) => void;
@@ -210,6 +213,7 @@ declare global {
     'PageEtoudi': Components.PageEtoudi;
     'PageForcesDetail': Components.PageForcesDetail;
     'PageForces': Components.PageForces;
+    'PageGalerie': Components.PageGalerie;
     'PageLogin': Components.PageLogin;
     'PageMap': Components.PageMap;
     'PageMonCv': Components.PageMonCv;
@@ -244,6 +248,7 @@ declare global {
     'page-etoudi': Components.PageEtoudiAttributes;
     'page-forces-detail': Components.PageForcesDetailAttributes;
     'page-forces': Components.PageForcesAttributes;
+    'page-galerie': Components.PageGalerieAttributes;
     'page-login': Components.PageLoginAttributes;
     'page-map': Components.PageMapAttributes;
     'page-mon-cv': Components.PageMonCvAttributes;
@@ -358,6 +363,12 @@ declare global {
     new (): HTMLPageForcesElement;
   };
 
+  interface HTMLPageGalerieElement extends Components.PageGalerie, HTMLStencilElement {}
+  var HTMLPageGalerieElement: {
+    prototype: HTMLPageGalerieElement;
+    new (): HTMLPageGalerieElement;
+  };
+
   interface HTMLPageLoginElement extends Components.PageLogin, HTMLStencilElement {}
   var HTMLPageLoginElement: {
     prototype: HTMLPageLoginElement;
@@ -465,6 +476,7 @@ declare global {
     'page-etoudi': HTMLPageEtoudiElement
     'page-forces-detail': HTMLPageForcesDetailElement
     'page-forces': HTMLPageForcesElement
+    'page-galerie': HTMLPageGalerieElement
     'page-login': HTMLPageLoginElement
     'page-map': HTMLPageMapElement
     'page-mon-cv': HTMLPageMonCvElement
@@ -499,6 +511,7 @@ declare global {
     'page-etoudi': HTMLPageEtoudiElement;
     'page-forces-detail': HTMLPageForcesDetailElement;
     'page-forces': HTMLPageForcesElement;
+    'page-galerie': HTMLPageGalerieElement;
     'page-login': HTMLPageLoginElement;
     'page-map': HTMLPageMapElement;
     'page-mon-cv': HTMLPageMonCvElement;
