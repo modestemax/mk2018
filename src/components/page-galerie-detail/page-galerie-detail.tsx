@@ -38,21 +38,23 @@ export class PageGalerieDetail {
       </ion-header>,
 
       <ion-content>
-        <ion-list class="list">
+        <ion-list class="group-list">
 
           <ion-list-header no-padding class="content-header">
             <ion-label class="title">
               {this.data.title}
             </ion-label>
           </ion-list-header>
-          <ion-item_group class="resources">
+          <ion-item-group class="resources">
             {this.data.resources.map(({img, video, desc}) => (
-              <div no-padding class="resource">
-                <img-video img={img} video={video} title={this.data.title}/>
-                <ion-label>{desc}</ion-label>
-              </div>
+              <ion-item no-padding class="resource">
+                <ion-label>
+                  <img-video img={img} video={video} title={this.data.title}/>
+                  <ion-text>   {desc}</ion-text>
+                  </ion-label>
+              </ion-item>
             ))}
-          </ion-item_group>
+          </ion-item-group>
 
         </ion-list>
       </ion-content>
