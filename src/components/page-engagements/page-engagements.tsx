@@ -36,7 +36,7 @@ export class PageEngagements {
       <ion-content>
 
 
-        <ion-list class="engagement-list" lines="full" mode="ios">
+        <ion-list class="engagement-list" lines="full" >
 
           {this.data.engagements.map(({color, sousEngagements}) => (
             sousEngagements.map(({title, details}) => (
