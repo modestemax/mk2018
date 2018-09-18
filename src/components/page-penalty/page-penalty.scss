@@ -16,6 +16,9 @@ page-penalty {
       .penalty-card {
         margin: auto;
         background-color: white;
+        ion-card-header {
+          padding: 16px 16px 0 16px;
+        }
         .img-container {
           margin: auto;
           height: 225px;
@@ -28,9 +31,9 @@ page-penalty {
           font-weight: 500;
           color: black;
 
-         /* ul {
-            padding-left: 32px;
-          }*/
+          /* ul {
+             padding-left: 32px;
+           }*/
         }
       }
       .content-list {
@@ -42,11 +45,11 @@ page-penalty {
     }
 
   }
-  .list-header{
-    .title{
+  .list-header {
+    .title {
       font-size: 18px;
-      font-weight:500;
-      color:black;
+      font-weight: bold;
+      color: black;
     }
   }
 }
