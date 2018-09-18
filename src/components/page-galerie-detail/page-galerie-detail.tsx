@@ -50,7 +50,7 @@ export class PageGalerieDetail {
               <ion-item no-padding class="resource">
                 <ion-label>
                   <img-video img={img} video={video} title={this.data.title}/>
-                  <ion-text>   {desc}</ion-text>
+                  <ion-label>   {desc}</ion-label>
                   </ion-label>
               </ion-item>
             ))}
