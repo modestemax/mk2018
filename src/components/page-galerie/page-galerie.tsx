@@ -1,6 +1,6 @@
-import {Component} from '@stencil/core';
-import {GaleriesData} from '../../providers/galeries-data';
-import {__} from "../../providers/i18n";
+import { Component } from '@stencil/core';
+import { GaleriesData } from '../../providers/galeries-data';
+import { __ } from '../../providers/i18n';
 
 @Component({
   tag: 'page-galerie',
@@ -39,16 +39,16 @@ export class PageGalerie {
 
         <ion-list class="galerie-list" lines="full">
 
-          {this.data.galeries.map(({title, details}) => (
+          {this.data.galeries.map(({ title, details }) => (
             <ion-item-group>
               <ion-item-divider no-padding class="group-header">
-                <ion-item><h6 class="title">{title}</h6></ion-item>
+                <ion-item>  <ion-text class="title">{title}</ion-text></ion-item>
               </ion-item-divider>
 
-              {details.map(({numero, title}) => (
+              {details.map(({ numero, title }) => (
 
                 <ion-item detail-push class="galerie-text" href={`/others/galerie/${numero}`}>
-                  {title}
+                  <ion-text> {title}</ion-text>
                 </ion-item>
 
               ))}

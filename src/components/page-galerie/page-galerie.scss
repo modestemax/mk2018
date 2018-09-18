@@ -1,23 +1,20 @@
 
-.engagement-list {
+.galerie-list {
   margin: 5px !important;
 
   .group-header {
-
+    background-color: #f2f2f2;
     .title {
       font-weight: bold;
-      color: white;
+      //color: white;
       margin: auto;
     }
   }
 
-  .engagement-text {
-    //border-bottom-color: #f1f1f1;
-    //border-bottom-style: solid;
-    //border-bottom-width: 1px;
-    .numero {
-      min-width: 28px;
-      //margin-bottom: auto;
-    }
+  .galerie-text {
+
+  }
+  ion-text {
+    padding-left: 17px;
   }
 }
