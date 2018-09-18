@@ -1,12 +1,16 @@
 page-engagements-detail {
-  .list {
-    margin: 5px !important;
+  .group-all{
+    margin: 5px!important;
+  }
+  .group-text {
+    margin: 0px !important;
     .text {
       font-size: 16px !important;
       padding-bottom: 14px;
     }
     .content-header {
-      margin-bottom: auto;
+      //margin-bottom: auto;
+      margin-bottom: 9px;
       color: black;
       .title {
         font-weight: 600;

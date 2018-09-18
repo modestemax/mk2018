@@ -39,28 +39,32 @@ export class PageEngagementsDetail {
       </ion-header>,
 
       <ion-content>
-        <ion-list class="list">
 
-          <ion-list-header class="content-header">
-            <ion-label class="title">
-              {this.data.title}
-            </ion-label>
-          </ion-list-header>
-          <ion-item>
-            <div class="text" innerHTML={this.data.text}/>
-            <br/>
-          </ion-item>
+        <ion-list class="group-all">
+          <ion-item-group class="group-text">
 
-        </ion-list>
-
-        <ion-list class="resources">
-          {this.data.resources.map(({img, video}) => (
-            <div no-padding class="resource">
-              <img-video img={img} video={video} title={this.data.title}/>
+            <ion-item-divider class="content-header">
+              <ion-label class="title">
+                {this.data.title}
+              </ion-label>
+            </ion-item-divider>
+            <ion-item>
+              <div class="text" innerHTML={this.data.text}/>
               <br/>
-            </div>
-          ))}
+            </ion-item>
+
+          </ion-item-group>
+
+          <ion-item-group class="resources">
+            {this.data.resources.map(({img, video}) => (
+              <div no-padding class="resource">
+                <img-video img={img} video={video} title={this.data.title}/>
+                <br/>
+              </div>
+            ))}
+          </ion-item-group>
         </ion-list>
+
 
       </ion-content>
     ];

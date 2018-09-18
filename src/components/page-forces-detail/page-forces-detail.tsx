@@ -40,6 +40,7 @@ export class PageForcesDetail {
       </ion-header>,
 
       <ion-content>
+
         <ion-list class="list">
 
           <ion-list-header class="header">
@@ -55,20 +56,15 @@ export class PageForcesDetail {
           <ion-item>
             <p class="text" innerHTML={this.content.desc}/>
           </ion-item>
-
+          <ion-group-item class="resources">
+            {this.content.resources.map(({img, video}) => (
+              <div no-padding class="resource">
+                <img-video img={img} video={video} title={this.content.title}/>
+                <br/>
+              </div>
+            ))}
+          </ion-group-item>
         </ion-list>
-
-
-        <ion-list class="resources">
-          {this.content.resources.map(({img, video}) => (
-            <div no-padding class="resource">
-              <img-video img={img} video={video} title={this.content.title}/>
-              <br/>
-            </div>
-          ))}
-        </ion-list>
-
-
       </ion-content>
     ];
   }

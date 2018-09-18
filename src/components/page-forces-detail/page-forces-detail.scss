@@ -5,6 +5,12 @@ page-forces-detail {
       font-size: .9rem;
     }
     .header {
+      border-bottom-style: solid;
+      border-bottom-width: 1px;
+      margin-bottom: 34px;
+      border-bottom-color: #ddd;
+      font-weight: bold;
+      color: black;
       .title {
         font-weight: 600;
         font-size: 1rem;
@@ -18,7 +24,7 @@ page-forces-detail {
     padding: 0 16px !important;
     .resource {
       margin-bottom: 27px;
-
+      padding: 0 16px;
       .res-image {
         height: auto;
         width: 100%;
