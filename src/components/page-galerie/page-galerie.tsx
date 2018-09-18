@@ -47,7 +47,7 @@ export class PageGalerie {
 
               {details.map(({ numero, title }) => (
 
-                <ion-item detail-push class="galerie-text" href={`/others/galerie/${numero}`}>
+                <ion-item detail-push class="galerie-text" href={`/others/galeries/${numero}`}>
                   <ion-text> {title}</ion-text>
                 </ion-item>
 

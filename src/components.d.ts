@@ -28,6 +28,21 @@ export namespace Components {
     'text'?: any;
   }
 
+  interface ImgVideo {
+    'height': string;
+    'img': string;
+    'title': string;
+    'video': string;
+    'width': string;
+  }
+  interface ImgVideoAttributes extends StencilHTMLAttributes {
+    'height'?: string;
+    'img'?: string;
+    'title'?: string;
+    'video'?: string;
+    'width'?: string;
+  }
+
   interface LazyIframe {
     'frameBorder': string;
     'height': string;
@@ -120,6 +135,15 @@ export namespace Components {
     'goback'?: string;
   }
 
+  interface PageGalerieDetail {
+    'goback': string;
+    'numero': number;
+  }
+  interface PageGalerieDetailAttributes extends StencilHTMLAttributes {
+    'goback'?: string;
+    'numero'?: number;
+  }
+
   interface PageGalerie {}
   interface PageGalerieAttributes extends StencilHTMLAttributes {}
 
@@ -199,6 +223,7 @@ declare global {
   interface StencilElementInterfaces {
     'AppRoot': Components.AppRoot;
     'ChantierSousTitre': Components.ChantierSousTitre;
+    'ImgVideo': Components.ImgVideo;
     'LazyIframe': Components.LazyIframe;
     'PageAboutPopover': Components.PageAboutPopover;
     'PageAbout': Components.PageAbout;
@@ -213,6 +238,7 @@ declare global {
     'PageEtoudi': Components.PageEtoudi;
     'PageForcesDetail': Components.PageForcesDetail;
     'PageForces': Components.PageForces;
+    'PageGalerieDetail': Components.PageGalerieDetail;
     'PageGalerie': Components.PageGalerie;
     'PageLogin': Components.PageLogin;
     'PageMap': Components.PageMap;
@@ -234,6 +260,7 @@ declare global {
   interface StencilIntrinsicElements {
     'app-root': Components.AppRootAttributes;
     'chantier-sous-titre': Components.ChantierSousTitreAttributes;
+    'img-video': Components.ImgVideoAttributes;
     'lazy-iframe': Components.LazyIframeAttributes;
     'page-about-popover': Components.PageAboutPopoverAttributes;
     'page-about': Components.PageAboutAttributes;
@@ -248,6 +275,7 @@ declare global {
     'page-etoudi': Components.PageEtoudiAttributes;
     'page-forces-detail': Components.PageForcesDetailAttributes;
     'page-forces': Components.PageForcesAttributes;
+    'page-galerie-detail': Components.PageGalerieDetailAttributes;
     'page-galerie': Components.PageGalerieAttributes;
     'page-login': Components.PageLoginAttributes;
     'page-map': Components.PageMapAttributes;
@@ -277,6 +305,12 @@ declare global {
   var HTMLChantierSousTitreElement: {
     prototype: HTMLChantierSousTitreElement;
     new (): HTMLChantierSousTitreElement;
+  };
+
+  interface HTMLImgVideoElement extends Components.ImgVideo, HTMLStencilElement {}
+  var HTMLImgVideoElement: {
+    prototype: HTMLImgVideoElement;
+    new (): HTMLImgVideoElement;
   };
 
   interface HTMLLazyIframeElement extends Components.LazyIframe, HTMLStencilElement {}
@@ -361,6 +395,12 @@ declare global {
   var HTMLPageForcesElement: {
     prototype: HTMLPageForcesElement;
     new (): HTMLPageForcesElement;
+  };
+
+  interface HTMLPageGalerieDetailElement extends Components.PageGalerieDetail, HTMLStencilElement {}
+  var HTMLPageGalerieDetailElement: {
+    prototype: HTMLPageGalerieDetailElement;
+    new (): HTMLPageGalerieDetailElement;
   };
 
   interface HTMLPageGalerieElement extends Components.PageGalerie, HTMLStencilElement {}
@@ -462,6 +502,7 @@ declare global {
   interface HTMLElementTagNameMap {
     'app-root': HTMLAppRootElement
     'chantier-sous-titre': HTMLChantierSousTitreElement
+    'img-video': HTMLImgVideoElement
     'lazy-iframe': HTMLLazyIframeElement
     'page-about-popover': HTMLPageAboutPopoverElement
     'page-about': HTMLPageAboutElement
@@ -476,6 +517,7 @@ declare global {
     'page-etoudi': HTMLPageEtoudiElement
     'page-forces-detail': HTMLPageForcesDetailElement
     'page-forces': HTMLPageForcesElement
+    'page-galerie-detail': HTMLPageGalerieDetailElement
     'page-galerie': HTMLPageGalerieElement
     'page-login': HTMLPageLoginElement
     'page-map': HTMLPageMapElement
@@ -497,6 +539,7 @@ declare global {
   interface ElementTagNameMap {
     'app-root': HTMLAppRootElement;
     'chantier-sous-titre': HTMLChantierSousTitreElement;
+    'img-video': HTMLImgVideoElement;
     'lazy-iframe': HTMLLazyIframeElement;
     'page-about-popover': HTMLPageAboutPopoverElement;
     'page-about': HTMLPageAboutElement;
@@ -511,6 +554,7 @@ declare global {
     'page-etoudi': HTMLPageEtoudiElement;
     'page-forces-detail': HTMLPageForcesDetailElement;
     'page-forces': HTMLPageForcesElement;
+    'page-galerie-detail': HTMLPageGalerieDetailElement;
     'page-galerie': HTMLPageGalerieElement;
     'page-login': HTMLPageLoginElement;
     'page-map': HTMLPageMapElement;

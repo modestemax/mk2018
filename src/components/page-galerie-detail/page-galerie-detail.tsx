@@ -1,16 +1,15 @@
 import {Component, Prop} from '@stencil/core';
-import {EngagementsData} from '../../providers/engagements-data';
+import {GaleriesData} from '../../providers/galeries-data';
 
 @Component({
-  tag: 'page-engagements-detail',
-  styleUrl: 'page-engagements-detail.scss',
+  tag: 'page-galerie-detail',
+  styleUrl: 'page-galerie-detail.scss',
 })
-export class PageEngagementsDetail {
+export class PageGalerieDetail {
 
   @Prop() goback = '/';
   @Prop() numero: number;
   private data;
-
 
   componentWillLoad() {
     return this.loadData();
@@ -18,7 +17,7 @@ export class PageEngagementsDetail {
   }
 
   async loadData() {
-    this.data = await EngagementsData.getEngagement(this.numero);
+    this.data = await GaleriesData.getGalerie(this.numero);
   }
 
   render() {
@@ -41,29 +40,22 @@ export class PageEngagementsDetail {
       <ion-content>
         <ion-list class="list">
 
-          <ion-list-header class="content-header">
+          <ion-list-header no-padding class="content-header">
             <ion-label class="title">
               {this.data.title}
             </ion-label>
           </ion-list-header>
-          <ion-item>
-            <div class="text" innerHTML={this.data.text}/>
-            <br/>
-          </ion-item>
+          <ion-item_group class="resources">
+            {this.data.resources.map(({img, video, desc}) => (
+              <div no-padding class="resource">
+                <img-video img={img} video={video} title={this.data.title}/>
+                <ion-label>{desc}</ion-label>
+              </div>
+            ))}
+          </ion-item_group>
 
         </ion-list>
-
-        <ion-list class="resources">
-          {this.data.resources.map(({img, video}) => (
-            <div no-padding class="resource">
-              <img-video img={img} video={video} title={this.data.title}/>
-              <br/>
-            </div>
-          ))}
-        </ion-list>
-
       </ion-content>
     ];
   }
-
 }

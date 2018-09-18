@@ -1,0 +1,42 @@
+page-galerie-detail {
+  .list {
+    margin: 5px !important;
+    padding: 0 16px;
+    .text {
+      font-size: 16px !important;
+      padding-bottom: 14px;
+    }
+    .content-header {
+      margin-bottom: auto;
+      color: black;
+      .title {
+        font-weight: 600;
+        font-size: 1rem;
+        margin-top: 25px;
+        white-space: normal;
+      }
+
+    }
+
+  }
+  .resources {
+    padding: 0 16px !important;
+    .resource {
+      margin-bottom: 45px;
+      border-bottom-style: solid;
+      border-bottom-width: 1px;
+      border-bottom-color: #ddd;
+      font-size: 14px;
+      ion-label {
+        white-space: normal;
+      }
+      .res-image {
+        height: auto;
+        width: 100%;
+      }
+      .res-video {
+
+      }
+    }
+  }
+}

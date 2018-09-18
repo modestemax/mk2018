@@ -57,6 +57,7 @@ export class LazyIframe {
       <div>
         <iframe
           frameBorder="0"
+          style={{ border: '0' }}
           title={this.name}
           allowFullScreen={true}
           src={this.realSrc}

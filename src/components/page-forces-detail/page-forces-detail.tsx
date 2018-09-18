@@ -62,7 +62,7 @@ export class PageForcesDetail {
         <ion-list class="resources">
           {this.content.resources.map(({img, video}) => (
             <div no-padding class="resource">
-              {this.getResourceContent({img, video})}
+              <img-video img={img} video={video} title={this.content.title}/>
               <br/>
             </div>
           ))}
@@ -72,15 +72,5 @@ export class PageForcesDetail {
       </ion-content>
     ];
   }
-
-  private getResourceContent({img, video}) {
-    if (img) {
-      return (<img class="res-image" src={`/assets/img/${img}`} alt=""/>);
-    }
-    if (video) {
-      return (<lazy-iframe src={video} width="100%" height="auto" title={this.content.title}/>);
-    }
-  }
-
 
 }
