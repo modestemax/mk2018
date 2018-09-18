@@ -1,14 +1,14 @@
-import { Data } from './data';
-import { Text, __ } from './i18n';
+import {Data} from './data';
+import {Text, __} from './i18n';
 
 export class Menu extends Data {
   static async loadTabs(): Promise<any> {
     await Text.load();
     return [
-      { label: __('QUI_SUIS_JE'), 'icon': 'person', tabName: 'tab-who-am-i' },
-      { label: __('MON_PROJET'), 'icon': 'folder-open', tabName: 'tab-mon-projet' },
-      { label: __('VERS_ETOUDI'), 'icon': 'walk', tabName: 'page-etoudi' },
-      { label: __('LE_PENALTY'), 'icon': 'football', tabName: 'page-penalty' },
+      {label: 'Kamto', 'icon': 'person', tabName: 'tab-who-am-i'},
+      {label: __('PROGRAMME'), 'icon': 'folder-open', tabName: 'tab-mon-projet'},
+      {label: __('ACTUALITÉS'), 'icon': 'megaphone', tabName: 'page-etoudi'},
+      {label: __('07_OCTOBRE'), 'icon': 'football', tabName: 'page-penalty'},
     ];
   }
 

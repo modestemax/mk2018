@@ -7,7 +7,7 @@
         "icon": "person"
       },
       {
-        "title": "Mon Projet pour le Cameroun",
+        "title": "Mon Programme",
         "url": "/mon-projet",
         "icon": "folder-open"
       },
@@ -17,9 +17,9 @@
         "icon": "clipboard"
       },
       {
-        "title": "En route pour Etoudi",
+        "title": "Actualités de Campagne",
         "url": "/etoudi",
-        "icon": "walk"
+        "icon": "megaphone"
       }
     ],
     [

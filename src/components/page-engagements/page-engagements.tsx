@@ -1,5 +1,6 @@
 import {Component} from '@stencil/core';
 import {EngagementsData} from '../../providers/engagements-data';
+import {__} from "../../providers/i18n";
 
 @Component({
   tag: 'page-engagements',
@@ -24,7 +25,7 @@ export class PageEngagements {
       <ion-header>
         <ion-toolbar>
           <ion-title>
-            Mes Engagements
+            {__('MES_ENGAGEMENTS')}
           </ion-title>
 
           <ion-buttons slot="end">
