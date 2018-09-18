@@ -58,7 +58,7 @@ export class PageEngagementsDetail {
           <ion-item-group class="resources">
             {this.data.resources.map(({img, video}) => (
               <div no-padding class="resource">
-                <img-video img={img} video={video} title={this.data.title}/>
+                <img-video img={img} video={video} vtitle={this.data.title}/>
                 <br/>
               </div>
             ))}

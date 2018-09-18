@@ -59,7 +59,7 @@ export class PageForcesDetail {
           <ion-group-item class="resources">
             {this.content.resources.map(({img, video}) => (
               <div no-padding class="resource">
-                <img-video img={img} video={video} title={this.content.title}/>
+                <img-video img={img} video={video} vtitle={this.content.title}/>
                 <br/>
               </div>
             ))}

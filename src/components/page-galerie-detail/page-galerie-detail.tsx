@@ -49,7 +49,7 @@ export class PageGalerieDetail {
             {this.data.resources.map(({img, video, desc}) => (
               <ion-item no-padding class="resource">
                 <ion-label>
-                  <img-video img={img} video={video} title={this.data.title}/>
+                  <img-video img={img} video={video} vtitle={this.data.title}/>
                   <ion-label>   {desc}</ion-label>
                 </ion-label>
               </ion-item>

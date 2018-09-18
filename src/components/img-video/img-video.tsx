@@ -10,7 +10,7 @@ export class ImgVideo {
   @Prop() height = '300px';
   @Prop() img: string;
   @Prop() video: string;
-  @Prop() title: string;
+  @Prop() vtitle: string;
 
 
   render() {
@@ -18,7 +18,7 @@ export class ImgVideo {
       return (<img class="res-image" src={`/assets/img/${this.img}`} alt=""/>);
     }
     if (this.video) {
-      return (<lazy-iframe src={this.video} width={this.width} height={this.height} title={this.title}/>);
+      return (<lazy-iframe src={this.video} width={this.width} height={this.height} title={this.vtitle}/>);
     }
   }
 }
