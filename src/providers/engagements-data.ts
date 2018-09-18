@@ -1,5 +1,5 @@
 // import {map, snakeCase} from 'lodash';
-import {Data} from './data';
+import { Data } from './data';
 
 export class EngagementsData extends Data {
   protected static getUrl(lng: string) {
@@ -8,15 +8,18 @@ export class EngagementsData extends Data {
 
   static async getData() {
     const data = await this.load();
-    data.engagements = data.engagements.map(({sousEngagements, ...args}) => {
+    let numero = 1;
+
+    data.engagements = data.engagements.map(({ sousEngagements, ...args }) => {
       return {
         ...args,
-        sousEngagements: sousEngagements.map(({details, ...args}) => {
+        sousEngagements: sousEngagements.map(({ details, ...args }) => {
           return {
             ...args,
-            details: details.map(({title, ...args}) => {
+            details: details.map(({ title, ...args }) => {
               return {
                 ...args, title,
+                numero: numero++,
                 titleKey: encodeURIComponent(title)
               };
             })

@@ -36,25 +36,30 @@ export class PageEngagements {
       <ion-content>
 
 
-        <ion-list class="">
+        <ion-list class="engagement-list" lines="full" mode="ios">
+
           {this.data.engagements.map(({color, sousEngagements}) => (
             sousEngagements.map(({title, details}) => (
-              <ion-list>
-                <ion-list-header style={{backgroundColor: color}}>
-                  <ion-label>{title}</ion-label>
-                </ion-list-header>
-                <ol>
-                  {details.map(({title, text, titleKey}) => (
-                    <li>
-                      <ion-item href={text ? `/others/mes-engagements/${titleKey}` : '#'}>
-                        {title}
-                      </ion-item>
-                    </li>
-                  ))}
-                </ol>
-              </ion-list>
+              <ion-item-group >
+                <ion-item-divider no-padding class="group-header" style={{backgroundColor: color}}>
+                  <ion-item>  <h6 class="title">{title}</h6></ion-item>
+                </ion-item-divider>
+
+                {details.map(({numero, title, text}) => (
+
+                  <ion-item detail-push class="engagement-text" href={text ? `/others/mes-engagements/${numero}` : '/toto'}>
+                    <ion-text class="numero"> {numero}.</ion-text>
+                    {title}
+                    {/*<ion-icon name="rose" item-end></ion-icon>*/}
+                    {/*<ion-icon class="item-detail-icon"  ></ion-icon>*/}
+                    </ion-item>
+
+                ))}
+
+              </ion-item-group>
             ))
           ))}
+
         </ion-list>
       </ion-content>
     ];
