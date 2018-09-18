@@ -1,73 +1,22 @@
-import {Component,} from '@stencil/core';
-// import { ConferenceData } from '../../providers/conference-data';
-// import { UserData } from '../../providers/user-data';
+import { Component } from '@stencil/core';
+import { ContactsData } from '../../providers/contact-data';
 
 @Component({
   tag: 'page-contact',
-  styleUrl: 'page-contact.css',
+  styleUrl: 'page-contact.scss',
 })
 export class PageContact {
+  private contacts = [];
 
-  // private session: any;
-  private bureaux = [
-    {
-      name: 'Bureau National',
-      members: [
-        {
-          title: 'Secrétariat du Président National',
-          href: '#'
-        },
-        {
-          title: 'Secrétariat du Président National',
-          href: '#'
-        },
-        {
-          title: 'Secrétariat du Président National',
-          href: '#'
-        },
-      ]
-    },
-    {
-      name: 'Bureau National',
-      members: [
-        {
-          title: 'Secrétariat du Président National',
-          href: '#'
-        },
-        {
-          title: 'Secrétariat du Président National',
-          href: '#'
-        },
-        {
-          title: 'Secrétariat du Président National',
-          href: '#'
-        },
-      ]
-    },
-    {
-      name: 'Bureau National',
-      members: [
-        {
-          title: 'Secrétariat du Président National',
-          href: '#'
-        },
-        {
-          title: 'Secrétariat du Président National',
-          href: '#'
-        },
-        {
-          title: 'Secrétariat du Président National',
-          href: '#'
-        },
-      ]
-    },
-  ]
 
-  async componentWillLoad() {
-    // this.session = await ConferenceData.getSession(this.docName);
+  componentWillLoad() {
+    return this.loadData();
 
   }
 
+  async loadData() {
+    this.contacts = await ContactsData.getContacts();
+  }
 
   render() {
     return [
@@ -85,22 +34,15 @@ export class PageContact {
       </ion-header>,
 
       <ion-content>
-        <ion-list>
-          {this.bureaux.map(({name, members}) => (
-            <ion-item-group>
-              <ion-item-divider>
-                <ion-label>
-                  {name}
-                </ion-label>
-              </ion-item-divider>
-              {members.map(({title, href}) => (
-                <ion-item href={href ? href : '#'}>
-                  {title}
-                </ion-item>
-              ))}
-
-            </ion-item-group>
-          ))}
+        <ion-list class="group-list">
+          {this.contacts.map(({ text }, index) => [<ion-item>
+            <ion-label class="content-text">
+              <p class="contact-text" innerHTML={text}/>
+            </ion-label>
+            <ion-icon slot="end" name="mail" class="mail-icon"/>
+          </ion-item>,
+                                                   index + 1 === this.contacts.length ? '' : <hr class="separator"/>
+          ])}
         </ion-list>
       </ion-content>
     ];

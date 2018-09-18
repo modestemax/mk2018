@@ -1,0 +1,23 @@
+page-contact {
+  .group-list {
+    margin: 5px !important;
+
+    .mail-icon {
+      color: #6600cc;
+    }
+
+    .contact-text{
+      white-space: normal;
+    }
+    .contact-text{
+      border-right: 1px solid #d6dce5;
+      padding-right: 14px;
+      color: black;
+    }
+    .separator{
+      background: #424242;
+      height: 5px;
+      margin: auto;
+    }
+  }
+}
