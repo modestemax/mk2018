@@ -13,7 +13,7 @@
     {
       "numChantier": 1,
       "color": "rgb(198,90,17)",
-      "img": "ica-slidebox-img-2.png",
+      "img": "ideology5.jpg",
       "label": "Chantier No 1",
       "title": "MODERNISATION POLITIQUE ET INSTITUTIONNELLE",
       "text": "Organiser le vivre ensemble et moderniser les Institutions de la République.",
@@ -22,7 +22,7 @@
     {
       "numChantier": 2,
       "color": "rgb(30,130,76)",
-      "img": "ica-slidebox-img-2.png",
+      "img": "ideology5.jpg",
       "label": "Chantier No 2",
       "title": "MODERNISATION DE L'ECONOMIE, L'AMENAGEMENT DU TERRITOIRE ET LE DEVELOPPEMENT DURABLE",
       "text": "Le Cameroun un havre de paix et de prospérité.",
@@ -31,7 +31,7 @@
     {
       "numChantier": 3,
       "color": "rgb(30,139,195)",
-      "img": "ica-slidebox-img-2.png",
+      "img": "ideology5.jpg",
       "label": "Chantier No 3",
       "title": "MODERNISATION DE L'EDUCATION ET DU SYSTEME SOCIAL, LE STATUT DE LA FEMME",
       "text": "Des Camerounais bien formés, solidaires et en bonne santé",
@@ -40,7 +40,7 @@
     {
       "numChantier": 4,
       "color": "rgb(145,61,136)",
-      "img": "ica-slidebox-img-2.png",
+      "img": "ideology5.jpg",
       "label": "Chantier No 4",
       "title": "MODERNISATION DE LA CULTURE, LE TOURISME ET LE DEVELOPPEMENT SPORTIF",
       "text": "Mieux faire connaitre le Cameroun, Afrique en miniature.",
@@ -50,7 +50,7 @@
       "numChantier": 5,
       "color": "rgb(150, 35, 35)",
       "pageTitle": "ETRANGER - DIPLOMATIE - DIASPORA",
-      "img": "ica-slidebox-img-2.png",
+      "img": "ideology5.jpg",
       "label": "Chantier No 5",
       "title": "LA MODERNISATION DE LA POLITIQUE ETRANGERE ET DE LA DIPLOMATIE, PLACE DE LA DIASPORA",
       "text": "Une diplomatie de présence avec forte implication de la diaspora.",
@@ -109,6 +109,17 @@
           "title": "CANALISER LE POTENTIEL EXCEPTIONNEL DE LA DIASPORA CAMEROUNAISE POUR LE METTRE AU SERVICE DU DEVELOPPEMENT NATIONAL",
           "key": "developpement-national"
         }
+      ]
+    },
+    {
+      "numChantier": 6,
+      "color": "rgb(150, 35, 35)",
+      "pageTitle": "FINANCE DU PROGRAMME",
+      "img": "ideology5.jpg",
+      "label": "Financement",
+      "title": "PLAN DE FINANCEMENT DU PROGRAMME DE LA RENAISSANCE",
+      "text": "Nous n'avons rien laissé au hazard.",
+      "details": [
       ]
     }
   ]

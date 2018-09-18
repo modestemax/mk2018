@@ -30,7 +30,7 @@ export class PageForcesDetail {
             <ion-back-button defaultHref={this.goback}/>
           </ion-buttons>
           <ion-title>
-            {__('LES_FORCES_POUR_L_ALTERNANCE_URNES_PAIX')}
+            {__('LA_COALITION_FAUP')}
           </ion-title>
 
           <ion-buttons slot="end">

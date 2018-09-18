@@ -51,7 +51,7 @@ export class PageGalerieDetail {
                 <ion-label>
                   <img-video img={img} video={video} title={this.data.title}/>
                   <ion-label>   {desc}</ion-label>
-                  </ion-label>
+                </ion-label>
               </ion-item>
             ))}
           </ion-item-group>
