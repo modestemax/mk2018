@@ -91,6 +91,9 @@ export namespace Components {
     'num'?: number;
   }
 
+  interface PageContactForm {}
+  interface PageContactFormAttributes extends StencilHTMLAttributes {}
+
   interface PageContact {}
   interface PageContactAttributes extends StencilHTMLAttributes {}
 
@@ -230,6 +233,7 @@ declare global {
     'PageAccount': Components.PageAccount;
     'PageChantierDetail': Components.PageChantierDetail;
     'PageChantier': Components.PageChantier;
+    'PageContactForm': Components.PageContactForm;
     'PageContact': Components.PageContact;
     'PageDon': Components.PageDon;
     'PageEngagementsDetail': Components.PageEngagementsDetail;
@@ -267,6 +271,7 @@ declare global {
     'page-account': Components.PageAccountAttributes;
     'page-chantier-detail': Components.PageChantierDetailAttributes;
     'page-chantier': Components.PageChantierAttributes;
+    'page-contact-form': Components.PageContactFormAttributes;
     'page-contact': Components.PageContactAttributes;
     'page-don': Components.PageDonAttributes;
     'page-engagements-detail': Components.PageEngagementsDetailAttributes;
@@ -347,6 +352,12 @@ declare global {
   var HTMLPageChantierElement: {
     prototype: HTMLPageChantierElement;
     new (): HTMLPageChantierElement;
+  };
+
+  interface HTMLPageContactFormElement extends Components.PageContactForm, HTMLStencilElement {}
+  var HTMLPageContactFormElement: {
+    prototype: HTMLPageContactFormElement;
+    new (): HTMLPageContactFormElement;
   };
 
   interface HTMLPageContactElement extends Components.PageContact, HTMLStencilElement {}
@@ -509,6 +520,7 @@ declare global {
     'page-account': HTMLPageAccountElement
     'page-chantier-detail': HTMLPageChantierDetailElement
     'page-chantier': HTMLPageChantierElement
+    'page-contact-form': HTMLPageContactFormElement
     'page-contact': HTMLPageContactElement
     'page-don': HTMLPageDonElement
     'page-engagements-detail': HTMLPageEngagementsDetailElement
@@ -546,6 +558,7 @@ declare global {
     'page-account': HTMLPageAccountElement;
     'page-chantier-detail': HTMLPageChantierDetailElement;
     'page-chantier': HTMLPageChantierElement;
+    'page-contact-form': HTMLPageContactFormElement;
     'page-contact': HTMLPageContactElement;
     'page-don': HTMLPageDonElement;
     'page-engagements-detail': HTMLPageEngagementsDetailElement;

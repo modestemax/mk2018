@@ -166,6 +166,7 @@ export class AppRoot {
           {this.renderMenu()}
           <ion-router-outlet animated={false} main/>
         </ion-split-pane>
+        <ion-modal-controller/>
       </ion-app>
     );
   }
