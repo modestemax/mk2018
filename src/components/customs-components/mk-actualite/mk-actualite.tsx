@@ -1,4 +1,4 @@
-import { Component, Prop, } from '@stencil/core';
+import {Component, Prop,} from '@stencil/core';
 // import { ConferenceData } from '../../providers/conference-data';
 // import { UserData } from '../../providers/user-data';
 
@@ -9,22 +9,34 @@ import { Component, Prop, } from '@stencil/core';
 export class MkActualite {
 
   // private session: any;
+  @Prop() actualite_id: any;
   @Prop() date: string;
   @Prop() title: string;
   @Prop() text = '';
   @Prop() img: string;
+  @Prop() full = false;
+
+  private actualiteUrl = '/actualites';
   private shortText;
+  private router;
 
   async componentWillLoad() {
     // this.session = await ConferenceData.getSession(this.docName);
-    const word = this.text.slice(0, 140).split(' ');
-    word.pop();
-    this.shortText = word.join(' ');
+    this.shortText = this.text;
+    if (!this.full) {
+      const word = this.text.slice(0, 140).split(' ');
+      word.pop();
+      this.shortText = word.join(' ');
+    }
+    this.router = document.querySelector('ion-router');
   }
 
+  showFull() {
+    this.full || this.router.push(`${this.actualiteUrl}/${this.actualite_id}`);
+  }
 
   render() {
-    const { date, title, shortText, img } = this;
+    const {date, title, shortText, img} = this;
     return (
       <ion-card class="card-article">
 
@@ -34,10 +46,10 @@ export class MkActualite {
 
         <img src={img}/>
 
-        <ion-card-content>
+        <ion-card-content onClick={this.showFull.bind(this)}>
           <h2 class="article-title">{title}</h2>
           <p>{shortText}
-            <ion-text class="read-more">[...]</ion-text>
+            <ion-text class="read-more">{this.full ? '' : '[...]'}</ion-text>
           </p>
         </ion-card-content>
 

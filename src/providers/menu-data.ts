@@ -5,10 +5,10 @@ export class Menu extends Data {
   static async loadTabs(): Promise<any> {
     await Text.load();
     return [
-      {label: 'Kamto', 'icon': 'person', tabName: 'tab-who-am-i'},
-      {label: __('PROGRAMME'), 'icon': 'folder-open', tabName: 'tab-mon-projet'},
-      {label: __('ACTUALITÉS'), 'icon': 'megaphone', tabName: 'page-actualites'},
-      {label: __('07_OCTOBRE'), 'icon': 'football', tabName: 'page-penalty'},
+      {label: 'Kamto', 'icon': 'person', name: 'tab-who-am-i'},
+      {label: __('PROGRAMME'), 'icon': 'folder-open', name: 'tab-mon-projet'},
+      {label: __('ACTUALITÉS'), 'icon': 'megaphone', name: 'tab-actualites'},
+      {label: __('07_OCTOBRE'), 'icon': 'football', component: 'page-penalty'},
     ];
   }
 

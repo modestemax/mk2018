@@ -1,6 +1,5 @@
-import { Component } from '@stencil/core';
-import { Menu } from '../../providers/menu-data';
-
+import {Component} from '@stencil/core';
+import {Menu} from '../../providers/menu-data';
 
 
 @Component({
@@ -17,14 +16,21 @@ export class PageTabs {
   render() {
     return [
       <ion-tabs>
-        <ion-tab label={this.tabs[0].label} icon={this.tabs[0].icon} name={this.tabs[0].tabName}>
+
+        <ion-tab  {...this.tabs[0]}>
           <ion-nav/>
         </ion-tab>
-        <ion-tab label={this.tabs[1].label} icon={this.tabs[1].icon} name={this.tabs[1].tabName}>
+
+        <ion-tab  {...this.tabs[1]}>
           <ion-nav/>
         </ion-tab>
-        <ion-tab label={this.tabs[2].label} icon={this.tabs[2].icon} component={this.tabs[2].tabName}/>
-        <ion-tab label={this.tabs[3].label} icon={this.tabs[3].icon} component={this.tabs[3].tabName}/>
+
+        <ion-tab  {...this.tabs[2]}>
+          <ion-nav/>
+        </ion-tab>
+
+        <ion-tab  {...this.tabs[3]}/>
+
         <ion-tab label="" icon="map" name="tab-hidden" show={false}>
           <ion-nav/>
         </ion-tab>

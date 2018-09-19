@@ -61,13 +61,17 @@ export namespace Components {
   }
 
   interface MkActualite {
+    'actualite_id': any;
     'date': string;
+    'full': boolean;
     'img': string;
     'text': string;
     'title': string;
   }
   interface MkActualiteAttributes extends StencilHTMLAttributes {
+    'actualite_id'?: any;
     'date'?: string;
+    'full'?: boolean;
     'img'?: string;
     'text'?: string;
     'title'?: string;
@@ -82,6 +86,13 @@ export namespace Components {
   interface PageAccount {}
   interface PageAccountAttributes extends StencilHTMLAttributes {
     'onUserDidLogOut'?: (event: CustomEvent) => void;
+  }
+
+  interface PageActualite {
+    'goback': string;
+  }
+  interface PageActualiteAttributes extends StencilHTMLAttributes {
+    'goback'?: string;
   }
 
   interface PageActualites {}
@@ -245,6 +256,7 @@ declare global {
     'PageAboutPopover': Components.PageAboutPopover;
     'PageAbout': Components.PageAbout;
     'PageAccount': Components.PageAccount;
+    'PageActualite': Components.PageActualite;
     'PageActualites': Components.PageActualites;
     'PageContactForm': Components.PageContactForm;
     'PageContact': Components.PageContact;
@@ -284,6 +296,7 @@ declare global {
     'page-about-popover': Components.PageAboutPopoverAttributes;
     'page-about': Components.PageAboutAttributes;
     'page-account': Components.PageAccountAttributes;
+    'page-actualite': Components.PageActualiteAttributes;
     'page-actualites': Components.PageActualitesAttributes;
     'page-contact-form': Components.PageContactFormAttributes;
     'page-contact': Components.PageContactAttributes;
@@ -361,6 +374,12 @@ declare global {
   var HTMLPageAccountElement: {
     prototype: HTMLPageAccountElement;
     new (): HTMLPageAccountElement;
+  };
+
+  interface HTMLPageActualiteElement extends Components.PageActualite, HTMLStencilElement {}
+  var HTMLPageActualiteElement: {
+    prototype: HTMLPageActualiteElement;
+    new (): HTMLPageActualiteElement;
   };
 
   interface HTMLPageActualitesElement extends Components.PageActualites, HTMLStencilElement {}
@@ -540,6 +559,7 @@ declare global {
     'page-about-popover': HTMLPageAboutPopoverElement
     'page-about': HTMLPageAboutElement
     'page-account': HTMLPageAccountElement
+    'page-actualite': HTMLPageActualiteElement
     'page-actualites': HTMLPageActualitesElement
     'page-contact-form': HTMLPageContactFormElement
     'page-contact': HTMLPageContactElement
@@ -579,6 +599,7 @@ declare global {
     'page-about-popover': HTMLPageAboutPopoverElement;
     'page-about': HTMLPageAboutElement;
     'page-account': HTMLPageAccountElement;
+    'page-actualite': HTMLPageActualiteElement;
     'page-actualites': HTMLPageActualitesElement;
     'page-contact-form': HTMLPageContactFormElement;
     'page-contact': HTMLPageContactElement;

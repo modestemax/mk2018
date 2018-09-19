@@ -1,4 +1,4 @@
-import {Component,} from '@stencil/core';
+import { Component, } from '@stencil/core';
 // import { ConferenceData } from '../../providers/conference-data';
 // import { UserData } from '../../providers/user-data';
 
@@ -10,11 +10,9 @@ export class PageActualites {
 
   // private session: any;
 
-
   async componentWillLoad() {
     // this.session = await ConferenceData.getSession(this.docName);
-
-  }
+   }
 
 
   render() {
@@ -32,6 +30,20 @@ export class PageActualites {
       </ion-header>,
 
       <ion-content class="cards-bg social-cards">
+        <mk-actualite  date="November 5, 1955" title="Mon titre" actualite_id="1"
+                      img="/assets/img/advance-card-bttf.png" text={`Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a
+            DeLorean?! Whoa. This is heavy. Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a
+            DeLorean?! Whoa. This is heavy. Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a
+            DeLorean?! Whoa. This is heavy. Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a
+            DeLorean?! Whoa. This is heavy. Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a
+            DeLorean?! Whoa. This is heavy. Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a
+            DeLorean?! Whoa. This is heavy. Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a
+            DeLorean?! Whoa. This is heavy. Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a
+            DeLorean?! Whoa. This is heavy. Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a
+            DeLorean?! Whoa. This is heavy. Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a
+            DeLorean?! Whoa. This is heavy. Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a
+            DeLorean?! Whoa. This is heavy. Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a
+            DeLorean?! Whoa. This is heavy.`}/>
         <mk-actualite date="November 5, 1955" title="Mon titre" img="/assets/img/advance-card-bttf.png" text={`Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a
             DeLorean?! Whoa. This is heavy. Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a
             DeLorean?! Whoa. This is heavy. Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a
@@ -45,14 +57,20 @@ export class PageActualites {
             DeLorean?! Whoa. This is heavy. Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a
             DeLorean?! Whoa. This is heavy. Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a
             DeLorean?! Whoa. This is heavy.`}/>
-        <mk-actualite/>
-        <mk-actualite/>
-        <mk-actualite/>
-        <mk-actualite/>
-        <mk-actualite/>
-        <mk-actualite/>
-        <mk-actualite/>
-        <mk-actualite/>
+        <mk-actualite date="November 5, 1955" title="Mon titre" img="/assets/img/advance-card-bttf.png" text={`Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a
+            DeLorean?! Whoa. This is heavy. Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a
+            DeLorean?! Whoa. This is heavy. Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a
+            DeLorean?! Whoa. This is heavy. Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a
+            DeLorean?! Whoa. This is heavy. Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a
+            DeLorean?! Whoa. This is heavy. Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a
+            DeLorean?! Whoa. This is heavy. Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a
+            DeLorean?! Whoa. This is heavy. Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a
+            DeLorean?! Whoa. This is heavy. Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a
+            DeLorean?! Whoa. This is heavy. Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a
+            DeLorean?! Whoa. This is heavy. Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a
+            DeLorean?! Whoa. This is heavy. Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a
+            DeLorean?! Whoa. This is heavy.`}/>
+
       </ion-content>
     ];
   }
