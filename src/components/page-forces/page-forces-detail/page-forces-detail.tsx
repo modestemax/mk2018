@@ -1,6 +1,6 @@
 import {Component, Prop} from '@stencil/core';
-import {ForceAlternanceData} from '../../providers/force-alternance';
-import {__} from '../../providers/i18n';
+import {ForceAlternanceData} from '../../../providers/force-alternance';
+import {__} from '../../../providers/i18n';
 
 @Component({
   tag: 'page-forces-detail',

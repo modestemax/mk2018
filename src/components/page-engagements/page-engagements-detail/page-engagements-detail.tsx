@@ -1,5 +1,5 @@
 import {Component, Prop} from '@stencil/core';
-import {EngagementsData} from '../../providers/engagements-data';
+import {EngagementsData} from '../../../providers/engagements-data';
 
 @Component({
   tag: 'page-engagements-detail',

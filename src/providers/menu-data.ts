@@ -7,7 +7,7 @@ export class Menu extends Data {
     return [
       {label: 'Kamto', 'icon': 'person', tabName: 'tab-who-am-i'},
       {label: __('PROGRAMME'), 'icon': 'folder-open', tabName: 'tab-mon-projet'},
-      {label: __('ACTUALITÉS'), 'icon': 'megaphone', tabName: 'page-etoudi'},
+      {label: __('ACTUALITÉS'), 'icon': 'megaphone', tabName: 'page-actualites'},
       {label: __('07_OCTOBRE'), 'icon': 'football', tabName: 'page-penalty'},
     ];
   }

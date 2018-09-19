@@ -1,5 +1,5 @@
 import { Component, Prop } from '@stencil/core';
-import { ChantierData } from '../../providers/chantier-data';
+import { ChantierData } from '../../../../providers/chantier-data';
 // import { ConferenceData } from '../../providers/conference-data';
 // import { UserData } from '../../providers/user-data';
 

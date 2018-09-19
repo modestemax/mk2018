@@ -64,7 +64,7 @@ export class AppRoot {
             <ion-route url="/chantier/:num/detail/:detail" component="page-chantier-detail"
                        componentProps={{ goback: '/mon-projet/chantier' }}/>
           </ion-route>
-          <ion-route url="/etoudi" component="page-etoudi"/>
+          <ion-route url="/actualites" component="page-actualites"/>
           <ion-route url="/penalty" component="page-penalty"/>
 
           <ion-route url="/others" component="tab-hidden">

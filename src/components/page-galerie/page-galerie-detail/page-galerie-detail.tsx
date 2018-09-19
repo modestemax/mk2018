@@ -1,5 +1,5 @@
 import {Component, Prop} from '@stencil/core';
-import {GaleriesData} from '../../providers/galeries-data';
+import {GaleriesData} from '../../../providers/galeries-data';
 
 @Component({
   tag: 'page-galerie-detail',

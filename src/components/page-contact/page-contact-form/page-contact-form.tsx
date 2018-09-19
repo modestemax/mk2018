@@ -1,5 +1,5 @@
 import {Component} from '@stencil/core';
-import {ContactsData} from '../../providers/contact-data';
+import {ContactsData} from '../../../providers/contact-data';
 
 @Component({
   tag: 'page-contact-form',

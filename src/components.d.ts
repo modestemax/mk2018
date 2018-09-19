@@ -60,6 +60,19 @@ export namespace Components {
     'width'?: string;
   }
 
+  interface MkActualite {
+    'date': string;
+    'img': string;
+    'text': string;
+    'title': string;
+  }
+  interface MkActualiteAttributes extends StencilHTMLAttributes {
+    'date'?: string;
+    'img'?: string;
+    'text'?: string;
+    'title'?: string;
+  }
+
   interface PageAboutPopover {}
   interface PageAboutPopoverAttributes extends StencilHTMLAttributes {}
 
@@ -71,25 +84,8 @@ export namespace Components {
     'onUserDidLogOut'?: (event: CustomEvent) => void;
   }
 
-  interface PageChantierDetail {
-    'detail': string;
-    'goback': string;
-    'num': number;
-  }
-  interface PageChantierDetailAttributes extends StencilHTMLAttributes {
-    'detail'?: string;
-    'goback'?: string;
-    'num'?: number;
-  }
-
-  interface PageChantier {
-    'goback': string;
-    'num': number;
-  }
-  interface PageChantierAttributes extends StencilHTMLAttributes {
-    'goback'?: string;
-    'num'?: number;
-  }
+  interface PageActualites {}
+  interface PageActualitesAttributes extends StencilHTMLAttributes {}
 
   interface PageContactForm {}
   interface PageContactFormAttributes extends StencilHTMLAttributes {}
@@ -118,9 +114,6 @@ export namespace Components {
 
   interface PageEnter {}
   interface PageEnterAttributes extends StencilHTMLAttributes {}
-
-  interface PageEtoudi {}
-  interface PageEtoudiAttributes extends StencilHTMLAttributes {}
 
   interface PageForcesDetail {
     'forceId': string;
@@ -158,13 +151,24 @@ export namespace Components {
   interface PageMap {}
   interface PageMapAttributes extends StencilHTMLAttributes {}
 
-  interface PageMonCv {
-    'docName': string;
+  interface PageChantierDetail {
+    'detail': string;
     'goback': string;
+    'num': number;
   }
-  interface PageMonCvAttributes extends StencilHTMLAttributes {
-    'docName'?: string;
+  interface PageChantierDetailAttributes extends StencilHTMLAttributes {
+    'detail'?: string;
     'goback'?: string;
+    'num'?: number;
+  }
+
+  interface PageChantier {
+    'goback': string;
+    'num': number;
+  }
+  interface PageChantierAttributes extends StencilHTMLAttributes {
+    'goback'?: string;
+    'num'?: number;
   }
 
   interface PageMonProjet {}
@@ -218,6 +222,15 @@ export namespace Components {
     'lng'?: string;
   }
 
+  interface PageMonCv {
+    'docName': string;
+    'goback': string;
+  }
+  interface PageMonCvAttributes extends StencilHTMLAttributes {
+    'docName'?: string;
+    'goback'?: string;
+  }
+
   interface PageWhoAmI {}
   interface PageWhoAmIAttributes extends StencilHTMLAttributes {}
 }
@@ -228,25 +241,25 @@ declare global {
     'ChantierSousTitre': Components.ChantierSousTitre;
     'ImgVideo': Components.ImgVideo;
     'LazyIframe': Components.LazyIframe;
+    'MkActualite': Components.MkActualite;
     'PageAboutPopover': Components.PageAboutPopover;
     'PageAbout': Components.PageAbout;
     'PageAccount': Components.PageAccount;
-    'PageChantierDetail': Components.PageChantierDetail;
-    'PageChantier': Components.PageChantier;
+    'PageActualites': Components.PageActualites;
     'PageContactForm': Components.PageContactForm;
     'PageContact': Components.PageContact;
     'PageDon': Components.PageDon;
     'PageEngagementsDetail': Components.PageEngagementsDetail;
     'PageEngagements': Components.PageEngagements;
     'PageEnter': Components.PageEnter;
-    'PageEtoudi': Components.PageEtoudi;
     'PageForcesDetail': Components.PageForcesDetail;
     'PageForces': Components.PageForces;
     'PageGalerieDetail': Components.PageGalerieDetail;
     'PageGalerie': Components.PageGalerie;
     'PageLogin': Components.PageLogin;
     'PageMap': Components.PageMap;
-    'PageMonCv': Components.PageMonCv;
+    'PageChantierDetail': Components.PageChantierDetail;
+    'PageChantier': Components.PageChantier;
     'PageMonProjet': Components.PageMonProjet;
     'PagePenalty': Components.PagePenalty;
     'PageScheduleFilter': Components.PageScheduleFilter;
@@ -258,6 +271,7 @@ declare global {
     'PageSupport': Components.PageSupport;
     'PageTabs': Components.PageTabs;
     'PageTutorial': Components.PageTutorial;
+    'PageMonCv': Components.PageMonCv;
     'PageWhoAmI': Components.PageWhoAmI;
   }
 
@@ -266,25 +280,25 @@ declare global {
     'chantier-sous-titre': Components.ChantierSousTitreAttributes;
     'img-video': Components.ImgVideoAttributes;
     'lazy-iframe': Components.LazyIframeAttributes;
+    'mk-actualite': Components.MkActualiteAttributes;
     'page-about-popover': Components.PageAboutPopoverAttributes;
     'page-about': Components.PageAboutAttributes;
     'page-account': Components.PageAccountAttributes;
-    'page-chantier-detail': Components.PageChantierDetailAttributes;
-    'page-chantier': Components.PageChantierAttributes;
+    'page-actualites': Components.PageActualitesAttributes;
     'page-contact-form': Components.PageContactFormAttributes;
     'page-contact': Components.PageContactAttributes;
     'page-don': Components.PageDonAttributes;
     'page-engagements-detail': Components.PageEngagementsDetailAttributes;
     'page-engagements': Components.PageEngagementsAttributes;
     'page-enter': Components.PageEnterAttributes;
-    'page-etoudi': Components.PageEtoudiAttributes;
     'page-forces-detail': Components.PageForcesDetailAttributes;
     'page-forces': Components.PageForcesAttributes;
     'page-galerie-detail': Components.PageGalerieDetailAttributes;
     'page-galerie': Components.PageGalerieAttributes;
     'page-login': Components.PageLoginAttributes;
     'page-map': Components.PageMapAttributes;
-    'page-mon-cv': Components.PageMonCvAttributes;
+    'page-chantier-detail': Components.PageChantierDetailAttributes;
+    'page-chantier': Components.PageChantierAttributes;
     'page-mon-projet': Components.PageMonProjetAttributes;
     'page-penalty': Components.PagePenaltyAttributes;
     'page-schedule-filter': Components.PageScheduleFilterAttributes;
@@ -296,6 +310,7 @@ declare global {
     'page-support': Components.PageSupportAttributes;
     'page-tabs': Components.PageTabsAttributes;
     'page-tutorial': Components.PageTutorialAttributes;
+    'page-mon-cv': Components.PageMonCvAttributes;
     'page-who-am-i': Components.PageWhoAmIAttributes;
   }
 
@@ -324,6 +339,12 @@ declare global {
     new (): HTMLLazyIframeElement;
   };
 
+  interface HTMLMkActualiteElement extends Components.MkActualite, HTMLStencilElement {}
+  var HTMLMkActualiteElement: {
+    prototype: HTMLMkActualiteElement;
+    new (): HTMLMkActualiteElement;
+  };
+
   interface HTMLPageAboutPopoverElement extends Components.PageAboutPopover, HTMLStencilElement {}
   var HTMLPageAboutPopoverElement: {
     prototype: HTMLPageAboutPopoverElement;
@@ -342,16 +363,10 @@ declare global {
     new (): HTMLPageAccountElement;
   };
 
-  interface HTMLPageChantierDetailElement extends Components.PageChantierDetail, HTMLStencilElement {}
-  var HTMLPageChantierDetailElement: {
-    prototype: HTMLPageChantierDetailElement;
-    new (): HTMLPageChantierDetailElement;
-  };
-
-  interface HTMLPageChantierElement extends Components.PageChantier, HTMLStencilElement {}
-  var HTMLPageChantierElement: {
-    prototype: HTMLPageChantierElement;
-    new (): HTMLPageChantierElement;
+  interface HTMLPageActualitesElement extends Components.PageActualites, HTMLStencilElement {}
+  var HTMLPageActualitesElement: {
+    prototype: HTMLPageActualitesElement;
+    new (): HTMLPageActualitesElement;
   };
 
   interface HTMLPageContactFormElement extends Components.PageContactForm, HTMLStencilElement {}
@@ -390,12 +405,6 @@ declare global {
     new (): HTMLPageEnterElement;
   };
 
-  interface HTMLPageEtoudiElement extends Components.PageEtoudi, HTMLStencilElement {}
-  var HTMLPageEtoudiElement: {
-    prototype: HTMLPageEtoudiElement;
-    new (): HTMLPageEtoudiElement;
-  };
-
   interface HTMLPageForcesDetailElement extends Components.PageForcesDetail, HTMLStencilElement {}
   var HTMLPageForcesDetailElement: {
     prototype: HTMLPageForcesDetailElement;
@@ -432,10 +441,16 @@ declare global {
     new (): HTMLPageMapElement;
   };
 
-  interface HTMLPageMonCvElement extends Components.PageMonCv, HTMLStencilElement {}
-  var HTMLPageMonCvElement: {
-    prototype: HTMLPageMonCvElement;
-    new (): HTMLPageMonCvElement;
+  interface HTMLPageChantierDetailElement extends Components.PageChantierDetail, HTMLStencilElement {}
+  var HTMLPageChantierDetailElement: {
+    prototype: HTMLPageChantierDetailElement;
+    new (): HTMLPageChantierDetailElement;
+  };
+
+  interface HTMLPageChantierElement extends Components.PageChantier, HTMLStencilElement {}
+  var HTMLPageChantierElement: {
+    prototype: HTMLPageChantierElement;
+    new (): HTMLPageChantierElement;
   };
 
   interface HTMLPageMonProjetElement extends Components.PageMonProjet, HTMLStencilElement {}
@@ -504,6 +519,12 @@ declare global {
     new (): HTMLPageTutorialElement;
   };
 
+  interface HTMLPageMonCvElement extends Components.PageMonCv, HTMLStencilElement {}
+  var HTMLPageMonCvElement: {
+    prototype: HTMLPageMonCvElement;
+    new (): HTMLPageMonCvElement;
+  };
+
   interface HTMLPageWhoAmIElement extends Components.PageWhoAmI, HTMLStencilElement {}
   var HTMLPageWhoAmIElement: {
     prototype: HTMLPageWhoAmIElement;
@@ -515,25 +536,25 @@ declare global {
     'chantier-sous-titre': HTMLChantierSousTitreElement
     'img-video': HTMLImgVideoElement
     'lazy-iframe': HTMLLazyIframeElement
+    'mk-actualite': HTMLMkActualiteElement
     'page-about-popover': HTMLPageAboutPopoverElement
     'page-about': HTMLPageAboutElement
     'page-account': HTMLPageAccountElement
-    'page-chantier-detail': HTMLPageChantierDetailElement
-    'page-chantier': HTMLPageChantierElement
+    'page-actualites': HTMLPageActualitesElement
     'page-contact-form': HTMLPageContactFormElement
     'page-contact': HTMLPageContactElement
     'page-don': HTMLPageDonElement
     'page-engagements-detail': HTMLPageEngagementsDetailElement
     'page-engagements': HTMLPageEngagementsElement
     'page-enter': HTMLPageEnterElement
-    'page-etoudi': HTMLPageEtoudiElement
     'page-forces-detail': HTMLPageForcesDetailElement
     'page-forces': HTMLPageForcesElement
     'page-galerie-detail': HTMLPageGalerieDetailElement
     'page-galerie': HTMLPageGalerieElement
     'page-login': HTMLPageLoginElement
     'page-map': HTMLPageMapElement
-    'page-mon-cv': HTMLPageMonCvElement
+    'page-chantier-detail': HTMLPageChantierDetailElement
+    'page-chantier': HTMLPageChantierElement
     'page-mon-projet': HTMLPageMonProjetElement
     'page-penalty': HTMLPagePenaltyElement
     'page-schedule-filter': HTMLPageScheduleFilterElement
@@ -545,6 +566,7 @@ declare global {
     'page-support': HTMLPageSupportElement
     'page-tabs': HTMLPageTabsElement
     'page-tutorial': HTMLPageTutorialElement
+    'page-mon-cv': HTMLPageMonCvElement
     'page-who-am-i': HTMLPageWhoAmIElement
   }
 
@@ -553,25 +575,25 @@ declare global {
     'chantier-sous-titre': HTMLChantierSousTitreElement;
     'img-video': HTMLImgVideoElement;
     'lazy-iframe': HTMLLazyIframeElement;
+    'mk-actualite': HTMLMkActualiteElement;
     'page-about-popover': HTMLPageAboutPopoverElement;
     'page-about': HTMLPageAboutElement;
     'page-account': HTMLPageAccountElement;
-    'page-chantier-detail': HTMLPageChantierDetailElement;
-    'page-chantier': HTMLPageChantierElement;
+    'page-actualites': HTMLPageActualitesElement;
     'page-contact-form': HTMLPageContactFormElement;
     'page-contact': HTMLPageContactElement;
     'page-don': HTMLPageDonElement;
     'page-engagements-detail': HTMLPageEngagementsDetailElement;
     'page-engagements': HTMLPageEngagementsElement;
     'page-enter': HTMLPageEnterElement;
-    'page-etoudi': HTMLPageEtoudiElement;
     'page-forces-detail': HTMLPageForcesDetailElement;
     'page-forces': HTMLPageForcesElement;
     'page-galerie-detail': HTMLPageGalerieDetailElement;
     'page-galerie': HTMLPageGalerieElement;
     'page-login': HTMLPageLoginElement;
     'page-map': HTMLPageMapElement;
-    'page-mon-cv': HTMLPageMonCvElement;
+    'page-chantier-detail': HTMLPageChantierDetailElement;
+    'page-chantier': HTMLPageChantierElement;
     'page-mon-projet': HTMLPageMonProjetElement;
     'page-penalty': HTMLPagePenaltyElement;
     'page-schedule-filter': HTMLPageScheduleFilterElement;
@@ -583,6 +605,7 @@ declare global {
     'page-support': HTMLPageSupportElement;
     'page-tabs': HTMLPageTabsElement;
     'page-tutorial': HTMLPageTutorialElement;
+    'page-mon-cv': HTMLPageMonCvElement;
     'page-who-am-i': HTMLPageWhoAmIElement;
   }
 

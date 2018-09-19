@@ -1,7 +1,5 @@
-import {Component, Prop, State} from '@stencil/core';
-import {CVData} from "../../providers/cv-data";
-// import { ConferenceData } from '../../providers/conference-data';
-// import { UserData } from '../../providers/user-data';
+import { Component, Prop, State } from '@stencil/core';
+import { CVData } from '../../../providers/cv-data';
 
 @Component({
   tag: 'page-mon-cv',
@@ -43,7 +41,7 @@ export class PageMonCv {
 
       <ion-content>
         <ion-card class="content-detail">
-          <ion-card-header class={`header ${this.docName} `} style={{backgroundColor: this.data.color}}>
+          <ion-card-header class={`header ${this.docName} `} style={{ backgroundColor: this.data.color }}>
             <div class="logo"><img src={`/assets/img/${this.data.img}`} alt="logo"/></div>
           </ion-card-header>
           <ion-card-content>
