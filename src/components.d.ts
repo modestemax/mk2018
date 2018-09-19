@@ -31,15 +31,15 @@ export namespace Components {
   interface ImgVideo {
     'height': string;
     'img': string;
-    'title': string;
     'video': string;
+    'vtitle': string;
     'width': string;
   }
   interface ImgVideoAttributes extends StencilHTMLAttributes {
     'height'?: string;
     'img'?: string;
-    'title'?: string;
     'video'?: string;
+    'vtitle'?: string;
     'width'?: string;
   }
 
