@@ -35,14 +35,14 @@ export class PageTutorial {
         <ion-toolbar class="tutorial-transparent">
           <ion-buttons slot="end">
             {this.showSkip
-              ? <ion-button color="primary" href="/who-am-i"> Skip </ion-button>
+              ? <ion-button color="light" href="/who-am-i"> Skip </ion-button>
               : ''}
           </ion-buttons>
         </ion-toolbar>
       </ion-header>,
 
       <ion-content scrollY={false}>
-        <ion-slides onIonSlideReachEnd={() => this.showSkip = false} pager={true}>
+        <ion-slides onIonSlideReachEnd={() => this.showSkip = false} onIonSlidePrevStart={() => this.showSkip = true} pager={true}>
           {this.slides.map(({img, color, text}) =>
             (<ion-slide>
                 <ion-card class="slide-card" style={{backgroundColor: color}}>

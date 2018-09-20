@@ -7,7 +7,7 @@
       "img": "ideology5.jpg",
       "label": "Notre Idéologie",
       "title": "LE SOCIAL LIBERALISME",
-      "text": "Afin de mettre chaque Camerounais au cœur de l'action politique pour la modernisation de notre pays",
+      "text": "Afin de mettre chaque Camerounais au cœur de l'action politique pour la modernisation de notre pays.",
       "details": []
     },
     {
@@ -15,17 +15,316 @@
       "color": "rgb(198,90,17)",
       "img": "ideology5.jpg",
       "label": "Chantier No 1",
-      "title": "MODERNISATION POLITIQUE ET INSTITUTIONNELLE",
+      "title": "CHANTIER INSTITUTIONNEL ET POLITIQUE",
       "text": "Organiser le vivre ensemble et moderniser les Institutions de la République.",
-      "details": []
+      "details": [
+        {
+          "title": "REFORMES INSTITUTIONNELLES",
+          "key": "reformes-institutionnelles",
+          "details": [
+            {
+              "title": "Modernisation des institutions",
+              "items": [
+                "Limitation du nombre de mandats présidentiels à un mandat renouvelable une seule fois",
+                "Election présidentielle à deux tours",
+                "Abaissement de la majorité électorale de 20 ans à 18 ans",
+                "Rééquilibrage des pouvoirs entre l'Exécutif et le Parlement",
+                "Diminution de l'influence de l'Exécutif sur le fonctionnement des institutions judiciaires",
+                "Création d'une langue nationale camerounaise",
+                "Définition d’une nouvelle politique foncière pour la réalisation aisée des projets collectifs.",
+                "Organisation des Assises nationales de la citoyenneté et de la fraternité",
+                "Lutte méthodique et déterminée contre le tribalisme et le népotisme"
+              ]
+            },
+            {
+              "title": "L’Etat de droit et la justice",
+              "items": [
+                "La restauration de l’Etat de droit et l’inscription de la liberté d’expression, la protection des journalistes et de leurs sources d’information ainsi que la liberté d’association dans une charte de la démocratie",
+                "La garantie que la loi soit juste, largement diffusée et appliquée sans discrimination aucune à tous, Etat et citoyens quels qu’ils soient.",
+                "Le renforcement de la sécurité juridique et judiciaire. En particulier il sera institué des commissions d'évaluation des magistrats auprès des juridictions d'instance et des cours d'appel, composées de magistrats et de personnalités de la société civile.",
+                "La réforme de la Chambre des Comptes de la Cour suprême, afin notamment de lui conférer un pouvoir de sanction des ordonnateurs et des comptables.",
+                "La création d'une école de droit parfaitement bilingue (Cameroon Law School/Institut d'Etudes Judiciaires) pour la formation des auxiliaires de Justice (Avocats, Notaires, Huissiers de Justice). Elle sera gérée en concertation avec les ordres professionnels qui en seront des animateurs pédagogiques à part entière. Il pourra en être créée plus d'une dans différentes parties du pays.",
+                "La garantie à tout citoyen camerounais, tout investisseur national ou étranger que la même loi sera appliquée à tous.",
+                "La préférence et l'encouragement du dialogue comme outil de concertation entre les divers partenaires sociaux, notamment entre le patronat et les syndicats."
+              ]
+            },
+            {
+              "title": "Un Code électoral consensuel",
+              "items": [
+                "Instauration du bulletin unique",
+                "Prise en compte de la révision constitutionnelle instaurant les élections à deux tours,",
+                "Même force probante à tous les procès-verbaux du dépouillement des élections dans un bureau de vote remis aux représentants des candidats et à ELECAM : tous les procès-verbaux feront également foi;",
+                "Réforme d’ELECAM, en particulier sa composition, pour y inclure les représentants des partis politiques et les modalités de désignation de ses dirigeants;",
+                "Prise en compte de la révision constitutionnelle instaurant le vote à 18 ans;",
+                "Instauration du vote obligatoire au Cameroun"
+              ]
+            },
+            {
+              "title": "Une police repensée",
+              "items": [
+                "Réformer la police en commençant par sa doctrine programmatique, sa philosophie du maintien de l’ordre public qui se confond aujourd'hui avec le maintien de l’ordre politique héritée de l’administration coloniale. Il sera mis en place un maillage intelligent et modulable de la société et du territoire.",
+                "Renforcer les compétences et les équipements de nos forces de sécurité en matière de police judiciaire, de police scientifique, d’enquêtes économiques."
+              ]
+            },
+            {
+              "title": "Redéfinir le statut et le rôle des autorités traditionnelles",
+              "items": [
+                "Créer une Assemblée des Chefs traditionnels parmi les institutions régionales ou fédérées",
+                "Lui conférer un pouvoir consultatif sur les questions générales de développement de la Région (ou de l'Etat fédéré)",
+                "Lui conférer un pouvoir délibérant sur les questions relevant des us et coutumes traditionnels ou en rapport avec eux.",
+                "Cette Assemblée participera par ailleurs au suivi des projets de développement de la Région (ou de l'Etat fédéré)"
+              ]
+            },
+            {
+              "title": "Accroitre les moyens des Communes et des Régions (ou entités fédérées)",
+              "items": [
+                "Réformer le régime financier dans le cadre de la décentralisation (ou du fédéralisme)",
+                "Allouer ainsi plus de moyens financiers aux Communes et aux Régions (ou entités fédérées)."
+              ]
+            },
+            {
+              "title": "Rationaliser les institutions publiques",
+              "items": [
+                "Limitater le nombre de départements ministériels a 25 tout au plus",
+                "Supprimer le Conseil économique et social, institution désuète non adaptée au contexte de l'Etat nouveau qui sera organisé sur une base régionale ou fédérale."
+              ]
+            }
+          ]
+        },
+        {
+          "title": "LA QUESTION ANGLOPHONE",
+          "key": "question-anglophone",
+          "details": [
+            {
+              "title": "La question anglophone",
+              "items": [
+                "Accorder une attention particulière à la situation de la communauté anglophone en tant que réalité spécifique non assimilable au problème des ethnies",
+                "Examiner avec la communauté anglophone les voies et moyens les plus appropriés pour y apporter les réponses adéquates"
+              ]
+            },
+            {
+              "title": "Organiser un dialogue national ouvert et sincère pour régler en profondeur la crise anglophone",
+              "items": [
+                "Mettre en place un CADRE DE DIALOGUE ouvert et sincère dans lequel la sécession ne sera pas une option",
+                "Nos compatriotes anglophones devront y être représentés par leurs leaders légitimes",
+                "Sauver la paix"
+              ]
+            },
+            {
+              "title": "Envoi d’une délégation politique, porteuse d’un message de paix et de compassion",
+              "items": [
+                "Ma première sortie politique sera dans les régions du Nord-Ouest et du Sud-Ouest en prélude à l’organisation du dialogue national",
+                "Y porter un message de paix et de compassion à nos compatriotes, frères et sœurs de la partie anglophone de notre pays",
+                "Leur faire comprendre que la Nation, dont ils font partie intégrante, a entendu leurs pleurs et qu’elle est venue essuyer leurs larmes"
+              ]
+            },
+            {
+              "title": "Des mesures de désescalade",
+              "items": [
+                "Mise en liberté sans conditions des personnes arrêtées dans le cadre de cette crise anglophone et arrêt des poursuites",
+                "Organiser le retour des exilés et des réfugiés",
+                "Reconstruction des installations et édifices détruits lors de ce conflit fratricide",
+                "Exiger un cessez-le feu indispensable à la tenue sereine du Dialogue National Inclusif et Sincère.",
+                "Dialoguer et dégager ensemble des solutions approuvées par les uns et les autres et permettant de résoudre une fois pour toute le problème anglophone dans le cadre d’un Cameroun réconcilié et fort dans son unité"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "LE VIVRE-ENSEMBLE",
+          "key": "vivre-ensemble",
+          "details": [
+            {
+              "title": "Bâtir le vivre-ensemble",
+              "items": [
+                "Constater que la gouvernance réduite au memoranda et autres revendications ethno-régionales.",
+                "Constater la désintégration/désunion nationale entretenues par le discours officiel théâtralisé autour de la distribution de prébendes entre régions et ethnies",
+                "Constater les limites de la politique actuelle de juxtaposition de ces langues locales, toutes enseignées en même temps et qui ne contribue ni à la pérennisation de ces langues qui tendent à disparaitre, ni au renforcement de l’identité nationale"
+              ]
+            },
+            {
+              "title": "Les assises nationales de la citoyenneté et de la fraternité",
+              "items": [
+                "Lutter contre le tribalisme par l'éducation à la citoyenneté, à la connaissance du pays dans la diversité de ses populations, le brassage de celles-ci, la richesse de nos différentes cultures et l'extraordinaire potentiel de fécondation dont sont porteuses les différentes communautés si elles sont mises en confiance les unes les autres",
+                "Organiser les Assises nationales de la citoyenneté et de la fraternité",
+                "Aborder la question de la réhabilitation de nos héros nationaux et célébrer nos mémoires plurielles blessées",
+                "Mettre en place un Comité d'historiens et des personnalités chargées de procéder à une identification objective desdits héros sur la base des critères à définir",
+                "Créer et édifier un monument (La Grande Coupole des Mémoires et du Souvenir) qui leur sera dédié"
+              ]
+            },
+            {
+              "title": "Une langue nationale pour le Cameroun",
+              "items": [
+                "Créer une langue nationale camerounaise, non pas à partir de rien, mais des langues locales existantes",
+                "Créer une Académie nationale camerounaise chargée entre autres de promouvoir notre langue nationale et d'y veiller"
+              ]
+            },
+            {
+              "title": "Une identité pour tous et un fichier national informatisé de la population",
+              "items": [
+                "Offrirons un numéro d’identité unique conservable à vie à tout individu né au Cameroun ",
+                "Etablir pour cela un fichier de l’état civil complet et fiable et régulièrement mis à jour",
+                "Mettre en place un système informatisé de collecte des données d’état civil dans l’ensemble du pays",
+                "Organiser l’identification des individus dès la naissance dans les centres de santé de base et dans les hôpitaux",
+                "Définir une procédure de déclaration de naissance basée sur le témoignage de la famille auprès du chef de village ou du chef de quartier pour les nombreux camerounais qui naissent encore en dehors de toute structure hospitalière, particulièrement dans l’arrière-pays",
+                "Appliquer cette procédure de déclaration simplifiée pendant une période transitoire de 5 ans pour les nombreux camerounais qui aujourd’hui n’ont pas d’identité (acte de naissance, carte d’identité, …)",
+                "Mettre à disposition des commis chargés d’établir des déclarations de naissance ou d’identité un outil informatique très simple mais très sécurisé qui permettra d’enregistrer l’information directement dans le fichier national de la population",
+                "Aucune information relative à l’ethnie et à la tribu ne figurera dans une base de données officielle ni sur une pièce officielle."
+              ]
+            }
+          ]
+        },
+        {
+          "title": "LA BONNE GOUVERNANCE",
+          "key": "bonne-gouvernance",
+          "details": [
+            {
+              "title": "Une administration publique performante",
+              "items": [
+                "Rationaliser l’administration publique qui doit être le principal levier du développement du pays et soucieux de participer de façon avantageuse à la compétition économique dans un monde globalisé",
+                "Rendre le bilinguisme obligatoire. Nul n'aura de place dans la Fonction publique s'il ne maîtrise l'anglais et le français, et à terme la langue nationale et ces deux langues étrangères",
+                "Accorder un véritable statut juridique au personnel communal et des Régions ou des entités fédérées en tant que corps à part entière",
+                "Définir une politique d’accès à la fonction publique en créant les conditions pour une intégration progressive des talents venant du secteur privé dans l’administration publique",
+                "Maîtriser les effectifs par l’assainissement du fichier des agents de l’Etat afin de parvenir à la maîtrise du nombre exact des employés de l’Etat et de sa masse salariale",
+                "Mettre en place d'une politique des ressources humaines permettant la définition des emplois et des compétences ainsi que des critères objectifs de gestion des carrières",
+                "Mettre en œuvre l’ensemble des modules de l’application SIGIPES pour parvenir à une déconcentration totale de la gestion des personnels de l’Etat et une automatisation intégrale des opérations liées à la gestion de la solde",
+                "Encourager la formation continue tout au long de sa carrière pour tout agent, voire la rendre obligatoire dans les fonctions techniques et les fonctions en lien avec les nouvelles technologies",
+                "Définir des objectifs liés à chaque poste de travail devrait être rendue obligatoire pour toutes les administrations, pour ce qui est de la performance"
+              ]
+            },
+            {
+              "title": "Mettre en œuvre l’e-gouvernance L’E-Gouvernance (gouvernance électronique)",
+              "items": [
+                "L’e-administration, impliquant la gestion informatisée des opérations dans divers ministères et organismes publics.",
+                "Les e-services qui se veulent être la plateforme permettant la mise à disposition des citoyens des informations et des services par les administrations publiques",
+                "L’e-démocratie permettant aux citoyens et aux acteurs politiques de participer à la prise de décision grâce aux TIC"
+              ]
+            },
+            {
+              "title": "Rétablir la confiance entre le peuple et les dirigeants",
+              "items": [
+                "Désacraliser l'homme politique, tout comme d'ailleurs tout détenteur de pouvoir public (fonctionnaire, policier, militaire, ...) sans sombrer dans la vulgarité",
+                "Mettre en place un ensemble de règles de bonne gouvernance pour rétablir la confiance entre les citoyens et les dirigeants",
+                "Rémunérer les dirigeants à leur juste valeur",
+                "Réduire les dépenses relatives aux véhicules de fonction",
+                "Limiter le logement de fonction",
+                "Conditionner la rémunération des parlementaires à leur présence effective lors des travaux en session du Parlement"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "LA LUTTE CONTRE LA CORRUPTION",
+          "key": "lutte-contre-corruption",
+          "details": [
+            {
+              "title": "La prévention et une lutte impitoyable contre toutes les formes de corruption",
+              "items": [
+                "Signature prioritaire du decret sur la loi d'application de l'article 66 de la Constitution sur la déclaration des biens et avoirs",
+                "Application immédiate de l'article 66 à nous-mêmes",
+                "Apporter des réponses appropriées à la corruption intra-administration, inter-administration et administration-administré en combinant  répression et prévention",
+                "Ramener la corruption à son plus bas niveau en 10 ans par une combinaison de nombreuses mesures",
+                "Rendre effectif le dispositif de mise en œuvre de l’article 66 de la Constitution sur la déclaration des biens pour les dirigeants de l’administration et les respon-sables publics.",
+                "Faire adopter par le Parlement une loi sur l'enrichissement illicite",
+                "Mettre progressivement en place l’e-administration et les e-services tout en visant leur généralisation au terme de 5 ans, afin de limiter les contacts entre les agents de l'Etat et les usagers de l'administration",
+                "Renforcer la collaboration internationale pour la lutte contre la corruption",
+                "Revaloriser de manière substantielle les salaires du personnel de l’Etat sur la base des économies réalisées sur les dépenses publiques d’une part, et encourager des en-treprises du secteur productif à relever les salaires de leur personnel sur la base de l’évolution de l’indice du coût de la vie, d’autre part"
+              ]
+            },
+            {
+              "title": "La société civile et les médias, un maillon essentiel dans la lutte contre la corruption",
+              "items": [
+                "Promouvoir les acteurs de la société civile et les médias qui œuvrent pour plus de transparence dans la société",
+                "Leur assurer à ce titre d'une protection juridique adéquate"
+              ]
+            },
+            {
+              "title": "Prévenir la corruption",
+              "items": [
+                "Simplifier et publier les procédures administratives",
+                "Informatiser le système de passation des marchés publics afin d'en accroître la transparence et de réduire au strict nécessaire les contacts avec les soumissionnaires",
+                "Limiter les contacts entre l'administration et les administrés, grâce notamment à l'e-gouvernance",
+                "Supprimer progressivement les paiements en espèce dans les administrations",
+                "Sensibiliser la population sur les dégâts de la corruption dans le pays",
+                "Muter très régulièrement les fonctionnaires"
+              ]
+            },
+            {
+              "title": "Sanctionner les actes de corruption",
+              "items": [
+                "Poursuivre systématiquement devant les tribunaux le corrompu et le corrupteur conformément à la loi ",
+                "Placer sous séquestre les biens soupçonnés d'être les produits de la corruption le temps de la procédure de sorte qu’en cas de condamnation judiciaire, l'Etat puisse recouvrer les biens mal acquis. La règle en la matière sera que ni le coupable ni les siens ne doivent jouir des fruits de la corruption",
+                "Creatin d'une Agence Nationale Anti-corruption et pour la Bonne Gouvernance (ANABG). Placée sous l’autorité du Président de la République",
+                "Maintien du TCS avec une capacité d’action et des moyens accrus",
+                ""
+              ]
+            },
+            {
+              "title": "Réformer les institutions en charge de la lutte contre la corruption",
+              "items": [
+                "Remplacer l’ensemble des institutions en charge de la lutte contre la corruption par deux institutions",
+                "Instituer une Unité anti-corruption et pour la bonne gouvernance au sein de chaque institution ou administration publique, en remplacement des actuelles cellules de lutte contre la corruption.",
+                "Chaque Unité réalisera ses missions en étroite collaboration avec l’ANBG à qui elle transmettra un rapport mensuel d’activités"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "LA SECURITE NATIONALE",
+          "key": "securite-nationale",
+          "details": [
+            {
+              "title": "Le renforcement des capacités civiles et militaires",
+              "items": [
+                "Permettre au Cameroun d’assumer dans les meilleurs délais ses responsabilités dans une démarche centrée sur le respect des principes démocratiques et de l'Etat de droit"
+              ]
+            },
+            {
+              "title": "Le renforcement de l’image des Forces de défense",
+              "items": [
+                "Implication accrue et déterminante du Génie militaire dans les plans de développe-ment des campagnes",
+                "Elimination des mauvaises pratiques dans les rangs des FMO au profit des contrôles plus respectueux et plus responsables des usagers"
+              ]
+            },
+            {
+              "title": "une élimination des mauvaises pratiques dans les rangs des FMO au profit des contrôles plus respectueux et plus responsables des usagers",
+              "items": [
+                "Casernement et le logement adéquats des militaires et des personnels de la sûreté nationale",
+                "Monument national à Yaoundé tel un « Arc de la République » où seront régulièrement célébrés nos vaillants soldats tombés pour la Nation ",
+                "Monument dans chaque Chef lieu de Région où des honneurs seront localement rendus lors des grands évènements nationaux aux soldats morts pour la Patrie",
+                "Réalisation des maisons de combattants dans la Capitale à Yaoundé et dans les chefs-lieux de Régions",
+                "Création d’une structure en charge des pupilles de la Nation. Elle aura pour mission de recenser les enfants des soldats morts pour la Nation, en vue de leur prise en charge"
+              ]
+            },
+            {
+              "title": "La professionnalisation et la modernisation effectives des Forces de Défense",
+              "items": [
+                "Définition, la clarification et la mise en place effective dans les meilleurs délais d’un profil de carrière pour l’ensemble des militaires",
+                "Dépolitisation des grades dans l’Armée et la valorisation de l’expression des compétences pour la professionnalisation effective des Armées",
+                "Recomposition de la pyramide militaire en adéquation avec les modèles structurels militaires conventionnels. La pyramide actuelle est renversée, car les plus gradés sont plus nombreux que les hommes de troupe",
+                "Elaboration d'une doctrine d'emploi des forces permettant une programmation à court ou à moyen termes des activités des Forces (Terre-Air-Mer) en vue de mieux les préparer à l’accomplissement de leurs missions régaliennes."
+              ]
+            },
+            {
+              "title": "La réinsertion des militaires en fin de carrière",
+              "items": [
+                "Règlement dans les meilleurs délais de la pension des militaires après leur départ à la retraite",
+                "Orienter la défense civile par une approche stratégique intégrée dans la loi portant organisation générale de la Défense",
+                "Protection civile effective sur le terrain",
+                "Rétablissement du service militaire pour les fonctionnaires et les volontaires des administrations privées"
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "numChantier": 2,
       "color": "rgb(30,130,76)",
       "img": "ideology5.jpg",
       "label": "Chantier No 2",
-      "title": "MODERNISATION DE L'ECONOMIE, L'AMENAGEMENT DU TERRITOIRE ET LE DEVELOPPEMENT DURABLE",
-      "text": "Le Cameroun un havre de paix et de prospérité.",
+      "title": "CHANTIER JEUNESSE ET ÉDUCATION",
+      "text": "Des Camerounais bien formés et aptes à la compétition internationale.",
       "details": []
     },
     {
@@ -33,8 +332,8 @@
       "color": "rgb(30,139,195)",
       "img": "ideology5.jpg",
       "label": "Chantier No 3",
-      "title": "MODERNISATION DE L'EDUCATION ET DU SYSTEME SOCIAL, LE STATUT DE LA FEMME",
-      "text": "Des Camerounais bien formés, solidaires et en bonne santé",
+      "title": "CHANTIER ECONOMIE ET PRODUCTION",
+      "text": "Le Cameroun un havre de paix et de prospérité.",
       "details": []
     },
     {
@@ -42,8 +341,8 @@
       "color": "rgb(145,61,136)",
       "img": "ideology5.jpg",
       "label": "Chantier No 4",
-      "title": "MODERNISATION DE LA CULTURE, LE TOURISME ET LE DEVELOPPEMENT SPORTIF",
-      "text": "Mieux faire connaitre le Cameroun, Afrique en miniature.",
+      "title": "CHANTIER SOCIAL ET DE SOLIDARITÉ",
+      "text": "Santé pour tous, valorisation les artistes et promotion du développement sportif.",
       "details": []
     },
     {
@@ -52,8 +351,8 @@
       "pageTitle": "ETRANGER - DIPLOMATIE - DIASPORA",
       "img": "ideology5.jpg",
       "label": "Chantier No 5",
-      "title": "LA MODERNISATION DE LA POLITIQUE ETRANGERE ET DE LA DIPLOMATIE, PLACE DE LA DIASPORA",
-      "text": "Une diplomatie de présence avec forte implication de la diaspora.",
+      "title": "CHANTIER DES RELATIONS EXTÉRIEURES",
+      "text": "Une diplomatie de présence, Le levier Diaspora pleinement activé.",
       "details": [
         {
           "title": "UNE POLITIQUE ÉTRANGÈRE DE POSITIONNEMENT",
@@ -119,8 +418,7 @@
       "label": "Financement",
       "title": "PLAN DE FINANCEMENT DU PROGRAMME DE LA RENAISSANCE",
       "text": "Nous n'avons rien laissé au hazard.",
-      "details": [
-      ]
+      "details": []
     }
   ]
 }
