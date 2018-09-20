@@ -26,7 +26,7 @@ export class PageTutorial {
   componentDidLoad() {
     UserData.hasSeenTutorial(true);
     UserData.setLng(this.lng);
-   }
+  }
 
   render() {
 
@@ -42,7 +42,8 @@ export class PageTutorial {
       </ion-header>,
 
       <ion-content scrollY={false}>
-        <ion-slides onIonSlideReachEnd={() => this.showSkip = false} onIonSlidePrevStart={() => this.showSkip = true} pager={true}>
+        <ion-slides onIonSlideReachEnd={() => this.showSkip = false} onIonSlidePrevStart={() => this.showSkip = true}
+                    pager={true}>
           {this.slides.map(({img, color, text}) =>
             (<ion-slide>
                 <ion-card class="slide-card" style={{backgroundColor: color}}>
@@ -54,12 +55,15 @@ export class PageTutorial {
               </ion-slide>
             ))}
           <ion-slide>
-            <img src="/assets/img/ica-slidebox-img-4.png" class="slide-image"/>
-            <h2 class="slide-title">{__('READY_TO_PLAY_Q')}</h2>
-            <ion-button fill="clear" href="/who-am-i">
-              {__('CONTINUE')}
-              <ion-icon slot="end" name="arrow-forward"/>
-            </ion-button>
+            <ion-card>
+              <img src="/assets/img/ica-slidebox-img-4.png" class="slide-image"/>
+              <ion-card-content><h2 class="slide-title">{__('READY_TO_PLAY_Q')}</h2>
+                <ion-button fill="clear" href="/who-am-i">
+                  {__('CONTINUE')}
+                  <ion-icon slot="end" name="arrow-forward"/>
+                </ion-button>
+              </ion-card-content>
+            </ion-card>
           </ion-slide>
         </ion-slides>
       </ion-content>
