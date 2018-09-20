@@ -1,4 +1,5 @@
-import {Component, Prop,} from '@stencil/core';
+import { Component, Prop, } from '@stencil/core';
+import { ActualitesData } from '../../../providers/actualites-data';
 // import { ConferenceData } from '../../providers/conference-data';
 // import { UserData } from '../../providers/user-data';
 
@@ -11,9 +12,16 @@ export class PageActualite {
   // private session: any;
   @Prop() goback = '/';
 
-  async componentWillLoad() {
-    // this.session = await ConferenceData.getSession(this.docName);
+  private actualite: any;
+  @Prop() actualite_id: any;
 
+
+  componentWillLoad() {
+    return this.loadData();
+  }
+
+  async loadData() {
+    this.actualite = await ActualitesData.getById(this.actualite_id);
   }
 
 
@@ -35,19 +43,8 @@ export class PageActualite {
       </ion-header>,
 
       <ion-content class="cards-bg social-cards">
-        <mk-actualite full date="November 5, 1955" title="Mon titre" img="/assets/img/advance-card-bttf.png" text={`Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a
-            DeLorean?! Whoa. This is heavy. Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a
-            DeLorean?! Whoa. This is heavy. Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a
-            DeLorean?! Whoa. This is heavy. Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a
-            DeLorean?! Whoa. This is heavy. Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a
-            DeLorean?! Whoa. This is heavy. Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a
-            DeLorean?! Whoa. This is heavy. Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a
-            DeLorean?! Whoa. This is heavy. Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a
-            DeLorean?! Whoa. This is heavy. Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a
-            DeLorean?! Whoa. This is heavy. Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a
-            DeLorean?! Whoa. This is heavy. Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a
-            DeLorean?! Whoa. This is heavy. Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a
-            DeLorean?! Whoa. This is heavy.`}/>
+
+        <mk-actualite full {...this.actualite} />
 
       </ion-content>
     ];

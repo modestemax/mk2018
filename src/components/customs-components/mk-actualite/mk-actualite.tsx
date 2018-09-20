@@ -17,17 +17,10 @@ export class MkActualite {
   @Prop() full = false;
 
   private actualiteUrl = '/actualites';
-  private shortText;
   private router;
 
   async componentWillLoad() {
     // this.session = await ConferenceData.getSession(this.docName);
-    this.shortText = this.text;
-    if (!this.full) {
-      const word = this.text.slice(0, 140).split(' ');
-      word.pop();
-      this.shortText = word.join(' ');
-    }
     this.router = document.querySelector('ion-router');
   }
 
@@ -35,8 +28,20 @@ export class MkActualite {
     this.full || this.router.push(`${this.actualiteUrl}/${this.actualite_id}`);
   }
 
+  private getText() {
+
+    if (!this.full) {
+      const word = this.text.slice(0, 140).split(' ');
+      word.pop();
+      return word.join(' ') + `<ion-text className="read-more">[...]</ion-text>`;
+    }
+    return this.text;
+  }
+
   render() {
-    const {date, title, shortText, img} = this;
+    const {date, title, img} = this;
+    const text = this.getText();
+
     return (
       <ion-card class="card-article">
 
@@ -48,9 +53,7 @@ export class MkActualite {
 
         <ion-card-content onClick={this.showFull.bind(this)}>
           <h2 class="article-title">{title}</h2>
-          <p>{shortText}
-            <ion-text class="read-more">{this.full ? '' : '[...]'}</ion-text>
-          </p>
+          <p innerHTML={text}/>
         </ion-card-content>
 
       </ion-card>

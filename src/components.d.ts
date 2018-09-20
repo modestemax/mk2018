@@ -89,9 +89,11 @@ export namespace Components {
   }
 
   interface PageActualite {
+    'actualite_id': any;
     'goback': string;
   }
   interface PageActualiteAttributes extends StencilHTMLAttributes {
+    'actualite_id'?: any;
     'goback'?: string;
   }
 
