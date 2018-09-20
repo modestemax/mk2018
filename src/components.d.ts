@@ -62,19 +62,19 @@ export namespace Components {
 
   interface MkActualite {
     'actualite_id': any;
+    'actualite_title': string;
     'date': string;
     'full': boolean;
     'img': string;
     'text': string;
-    'title': string;
   }
   interface MkActualiteAttributes extends StencilHTMLAttributes {
     'actualite_id'?: any;
+    'actualite_title'?: string;
     'date'?: string;
     'full'?: boolean;
     'img'?: string;
     'text'?: string;
-    'title'?: string;
   }
 
   interface PageAboutPopover {}

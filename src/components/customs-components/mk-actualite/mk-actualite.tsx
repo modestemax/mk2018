@@ -11,7 +11,7 @@ export class MkActualite {
   // private session: any;
   @Prop() actualite_id: any;
   @Prop() date: string;
-  @Prop() title: string;
+  @Prop() actualite_title: string;
   @Prop() text = '';
   @Prop() img: string;
   @Prop() full = false;
@@ -39,7 +39,7 @@ export class MkActualite {
   }
 
   render() {
-    const {date, title, img} = this;
+    const {date, actualite_title, img} = this;
     const text = this.getText();
 
     return (
@@ -52,7 +52,7 @@ export class MkActualite {
         <img src={img}/>
 
         <ion-card-content onClick={this.showFull.bind(this)}>
-          <h2 class="article-title">{title}</h2>
+          <h2 class="article-title">{actualite_title}</h2>
           <p innerHTML={text}/>
         </ion-card-content>
 

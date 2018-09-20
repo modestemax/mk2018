@@ -3,7 +3,7 @@
     {
       "numChantier": 0,
       "color": "rgb(132,151,176)",
-      "pageTitle": "aaa",
+      "pageTitle": "Idéologie",
       "img": "ideology5.jpg",
       "label": "Notre Idéologie",
       "title": "LE SOCIAL LIBERALISME",
@@ -13,6 +13,7 @@
     {
       "numChantier": 1,
       "color": "rgb(198,90,17)",
+      "pageTitle": "Politique et Institutions",
       "img": "ideology5.jpg",
       "label": "Chantier No 1",
       "title": "CHANTIER INSTITUTIONNEL ET POLITIQUE",
@@ -321,6 +322,7 @@
     {
       "numChantier": 2,
       "color": "rgb(30,130,76)",
+      "pageTitle": "Jeunesse et Education",
       "img": "ideology5.jpg",
       "label": "Chantier No 2",
       "title": "CHANTIER JEUNESSE ET ÉDUCATION",
@@ -330,6 +332,7 @@
     {
       "numChantier": 3,
       "color": "rgb(30,139,195)",
+      "pageTitle": "Economie et Production",
       "img": "ideology5.jpg",
       "label": "Chantier No 3",
       "title": "CHANTIER ECONOMIE ET PRODUCTION",
@@ -339,6 +342,7 @@
     {
       "numChantier": 4,
       "color": "rgb(145,61,136)",
+      "pageTitle": "Social et Solidarité",
       "img": "ideology5.jpg",
       "label": "Chantier No 4",
       "title": "CHANTIER SOCIAL ET DE SOLIDARITÉ",
@@ -348,7 +352,7 @@
     {
       "numChantier": 5,
       "color": "rgb(150, 35, 35)",
-      "pageTitle": "ETRANGER - DIPLOMATIE - DIASPORA",
+      "pageTitle": "Relations Extérieures",
       "img": "ideology5.jpg",
       "label": "Chantier No 5",
       "title": "CHANTIER DES RELATIONS EXTÉRIEURES",
@@ -413,7 +417,7 @@
     {
       "numChantier": 6,
       "color": "rgb(150, 35, 35)",
-      "pageTitle": "FINANCE DU PROGRAMME",
+      "pageTitle": "Financement du Programme",
       "img": "ideology5.jpg",
       "label": "Financement",
       "title": "PLAN DE FINANCEMENT DU PROGRAMME DE LA RENAISSANCE",

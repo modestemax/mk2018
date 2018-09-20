@@ -37,7 +37,7 @@ export class PageProgramme {
       <ion-header>
         <ion-toolbar>
           <ion-title>
-            {__('MON_PROJET_POUR_LE_CAMEROUN')}
+            {__('PROGRAMME_DE_GOUVERNANCE')}
           </ion-title>
           <ion-buttons slot="end">
             <ion-menu-button/>
