@@ -58,7 +58,7 @@ export class PageWhoAmI {
 
                   <ion-col class={`item-col ${doc.key || 'empty'} `} style={{backgroundColor: doc.color}}>
                     {doc.key
-                      ? <a class="item" href={`/who-am-i/mon-cv/${doc.key}`}>
+                      ? <a class="item" href={`/who-am-i/${doc.key}`}>
 
                         <ion-grid class="inner-item-grid">
                           <ion-row>

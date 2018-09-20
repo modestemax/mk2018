@@ -1,16 +1,16 @@
 import {Component} from '@stencil/core';
 
 @Component({
-  tag: 'page-enter',
-  styleUrl: 'page-enter.css'
+  tag: 'page-acceuil',
+  styleUrl: 'page-acceuil.css'
 })
-export class PageAbout {
+export class PageAcceuil {
   render() {
     return [
       <ion-content class="mk_photo">
-        {/*<div class="about-header">*/}
-        {/*<img src="assets/img/mk-enter.png" alt="ionic logo" />*/}
-        {/*</div>*/}
+        <div class="about-header">
+          <img src="/assets/img/mk-enter.png" alt="ionic logo"/>
+        </div>
       </ion-content>,
       <ion-footer>
         <ion-toolbar>

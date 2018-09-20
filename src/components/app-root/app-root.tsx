@@ -50,20 +50,26 @@ export class AppRoot {
   renderRouter() {
     return (
       <ion-router useHash={false}>
-        <ion-route-redirect from="/" to={this.hasSeenTutorial ? '/who-am-i' : '/enter'}/>
+        <ion-route-redirect from="/" to={this.hasSeenTutorial ? '/who-am-i' : '/acceuil'}/>
 
         <ion-route component="page-tabs">
           <ion-route url="/who-am-i" component="tab-who-am-i">
             <ion-route component="page-who-am-i"/>
-            <ion-route url="/mon-cv/:docName" component="page-mon-cv" componentProps={{goback: '/who-am-i'}}/>
+            <ion-route url="/:docName" component="page-mon-cv" componentProps={{goback: '/who-am-i'}}/>
           </ion-route>
 
-          <ion-route url="/mon-projet" component="tab-mon-projet">
-            <ion-route component="page-mon-projet"/>
-            <ion-route url="/chantier/:num" component="page-chantier" componentProps={{goback: '/mon-projet'}}/>
+          <ion-route url="/programme" component="tab-programme">
+            <ion-route component="page-programme"/>
+            <ion-route url="/chantier/:num" component="page-chantier" componentProps={{goback: '/programme'}}/>
             <ion-route url="/chantier/:num/detail/:detail" component="page-chantier-detail"
-                       componentProps={{goback: '/mon-projet/chantier'}}/>
+                       componentProps={{goback: '/programme/chantier'}}/>
           </ion-route>
+
+          <ion-route url="/engagements" component="tab-engagements">
+            <ion-route component="page-engagements"/>
+            <ion-route url="/:numero" component="page-engagements-detail" componentProps={{goback: '/engagements'}}/>
+          </ion-route>
+
           <ion-route url="/actualites" component="tab-actualites">
             <ion-route component="page-actualites"/>
             <ion-route url="/:actualite_id" component="page-actualite" componentProps={{goback: '/actualites'}}/>
@@ -78,9 +84,6 @@ export class AppRoot {
             <ion-route url="/faq" component="page-faq"/>
             <ion-route url="/don" component="page-don"/>
             <ion-route url="/contact" component="page-contact"/>
-            <ion-route url="/mes-engagements" component="page-engagements"/>
-            <ion-route url="/mes-engagements/:numero" component="page-engagements-detail"
-                       componentProps={{goback: '/others/mes-engagements'}}/>
             <ion-route url="/galeries" component="page-galerie"/>
             <ion-route url="/galeries/:numero" component="page-galerie-detail"
                        componentProps={{goback: '/others/galeries'}}/>
@@ -101,7 +104,7 @@ export class AppRoot {
 
           <ion-route url="/about" component="page-about"/>
         </ion-route>
-        <ion-route url="/enter" component="page-enter"/>
+        <ion-route url="/acceuil" component="page-acceuil"/>
 
 
         {/*<ion-route url="/tutorial" >*/}

@@ -83,6 +83,9 @@ export namespace Components {
   interface PageAbout {}
   interface PageAboutAttributes extends StencilHTMLAttributes {}
 
+  interface PageAcceuil {}
+  interface PageAcceuilAttributes extends StencilHTMLAttributes {}
+
   interface PageAccount {}
   interface PageAccountAttributes extends StencilHTMLAttributes {
     'onUserDidLogOut'?: (event: CustomEvent) => void;
@@ -125,9 +128,6 @@ export namespace Components {
   interface PageEngagements {}
   interface PageEngagementsAttributes extends StencilHTMLAttributes {}
 
-  interface PageEnter {}
-  interface PageEnterAttributes extends StencilHTMLAttributes {}
-
   interface PageForcesDetail {
     'forceId': string;
     'goback': string;
@@ -164,6 +164,9 @@ export namespace Components {
   interface PageMap {}
   interface PageMapAttributes extends StencilHTMLAttributes {}
 
+  interface PagePenalty {}
+  interface PagePenaltyAttributes extends StencilHTMLAttributes {}
+
   interface PageChantierDetail {
     'detail': string;
     'goback': string;
@@ -184,11 +187,8 @@ export namespace Components {
     'num'?: number;
   }
 
-  interface PageMonProjet {}
-  interface PageMonProjetAttributes extends StencilHTMLAttributes {}
-
-  interface PagePenalty {}
-  interface PagePenaltyAttributes extends StencilHTMLAttributes {}
+  interface PageProgramme {}
+  interface PageProgrammeAttributes extends StencilHTMLAttributes {}
 
   interface PageScheduleFilter {
     'excludedTracks': string[];
@@ -257,6 +257,7 @@ declare global {
     'MkActualite': Components.MkActualite;
     'PageAboutPopover': Components.PageAboutPopover;
     'PageAbout': Components.PageAbout;
+    'PageAcceuil': Components.PageAcceuil;
     'PageAccount': Components.PageAccount;
     'PageActualite': Components.PageActualite;
     'PageActualites': Components.PageActualites;
@@ -265,17 +266,16 @@ declare global {
     'PageDon': Components.PageDon;
     'PageEngagementsDetail': Components.PageEngagementsDetail;
     'PageEngagements': Components.PageEngagements;
-    'PageEnter': Components.PageEnter;
     'PageForcesDetail': Components.PageForcesDetail;
     'PageForces': Components.PageForces;
     'PageGalerieDetail': Components.PageGalerieDetail;
     'PageGalerie': Components.PageGalerie;
     'PageLogin': Components.PageLogin;
     'PageMap': Components.PageMap;
+    'PagePenalty': Components.PagePenalty;
     'PageChantierDetail': Components.PageChantierDetail;
     'PageChantier': Components.PageChantier;
-    'PageMonProjet': Components.PageMonProjet;
-    'PagePenalty': Components.PagePenalty;
+    'PageProgramme': Components.PageProgramme;
     'PageScheduleFilter': Components.PageScheduleFilter;
     'PageSchedule': Components.PageSchedule;
     'PageSession': Components.PageSession;
@@ -297,6 +297,7 @@ declare global {
     'mk-actualite': Components.MkActualiteAttributes;
     'page-about-popover': Components.PageAboutPopoverAttributes;
     'page-about': Components.PageAboutAttributes;
+    'page-acceuil': Components.PageAcceuilAttributes;
     'page-account': Components.PageAccountAttributes;
     'page-actualite': Components.PageActualiteAttributes;
     'page-actualites': Components.PageActualitesAttributes;
@@ -305,17 +306,16 @@ declare global {
     'page-don': Components.PageDonAttributes;
     'page-engagements-detail': Components.PageEngagementsDetailAttributes;
     'page-engagements': Components.PageEngagementsAttributes;
-    'page-enter': Components.PageEnterAttributes;
     'page-forces-detail': Components.PageForcesDetailAttributes;
     'page-forces': Components.PageForcesAttributes;
     'page-galerie-detail': Components.PageGalerieDetailAttributes;
     'page-galerie': Components.PageGalerieAttributes;
     'page-login': Components.PageLoginAttributes;
     'page-map': Components.PageMapAttributes;
+    'page-penalty': Components.PagePenaltyAttributes;
     'page-chantier-detail': Components.PageChantierDetailAttributes;
     'page-chantier': Components.PageChantierAttributes;
-    'page-mon-projet': Components.PageMonProjetAttributes;
-    'page-penalty': Components.PagePenaltyAttributes;
+    'page-programme': Components.PageProgrammeAttributes;
     'page-schedule-filter': Components.PageScheduleFilterAttributes;
     'page-schedule': Components.PageScheduleAttributes;
     'page-session': Components.PageSessionAttributes;
@@ -372,6 +372,12 @@ declare global {
     new (): HTMLPageAboutElement;
   };
 
+  interface HTMLPageAcceuilElement extends Components.PageAcceuil, HTMLStencilElement {}
+  var HTMLPageAcceuilElement: {
+    prototype: HTMLPageAcceuilElement;
+    new (): HTMLPageAcceuilElement;
+  };
+
   interface HTMLPageAccountElement extends Components.PageAccount, HTMLStencilElement {}
   var HTMLPageAccountElement: {
     prototype: HTMLPageAccountElement;
@@ -420,12 +426,6 @@ declare global {
     new (): HTMLPageEngagementsElement;
   };
 
-  interface HTMLPageEnterElement extends Components.PageEnter, HTMLStencilElement {}
-  var HTMLPageEnterElement: {
-    prototype: HTMLPageEnterElement;
-    new (): HTMLPageEnterElement;
-  };
-
   interface HTMLPageForcesDetailElement extends Components.PageForcesDetail, HTMLStencilElement {}
   var HTMLPageForcesDetailElement: {
     prototype: HTMLPageForcesDetailElement;
@@ -462,6 +462,12 @@ declare global {
     new (): HTMLPageMapElement;
   };
 
+  interface HTMLPagePenaltyElement extends Components.PagePenalty, HTMLStencilElement {}
+  var HTMLPagePenaltyElement: {
+    prototype: HTMLPagePenaltyElement;
+    new (): HTMLPagePenaltyElement;
+  };
+
   interface HTMLPageChantierDetailElement extends Components.PageChantierDetail, HTMLStencilElement {}
   var HTMLPageChantierDetailElement: {
     prototype: HTMLPageChantierDetailElement;
@@ -474,16 +480,10 @@ declare global {
     new (): HTMLPageChantierElement;
   };
 
-  interface HTMLPageMonProjetElement extends Components.PageMonProjet, HTMLStencilElement {}
-  var HTMLPageMonProjetElement: {
-    prototype: HTMLPageMonProjetElement;
-    new (): HTMLPageMonProjetElement;
-  };
-
-  interface HTMLPagePenaltyElement extends Components.PagePenalty, HTMLStencilElement {}
-  var HTMLPagePenaltyElement: {
-    prototype: HTMLPagePenaltyElement;
-    new (): HTMLPagePenaltyElement;
+  interface HTMLPageProgrammeElement extends Components.PageProgramme, HTMLStencilElement {}
+  var HTMLPageProgrammeElement: {
+    prototype: HTMLPageProgrammeElement;
+    new (): HTMLPageProgrammeElement;
   };
 
   interface HTMLPageScheduleFilterElement extends Components.PageScheduleFilter, HTMLStencilElement {}
@@ -560,6 +560,7 @@ declare global {
     'mk-actualite': HTMLMkActualiteElement
     'page-about-popover': HTMLPageAboutPopoverElement
     'page-about': HTMLPageAboutElement
+    'page-acceuil': HTMLPageAcceuilElement
     'page-account': HTMLPageAccountElement
     'page-actualite': HTMLPageActualiteElement
     'page-actualites': HTMLPageActualitesElement
@@ -568,17 +569,16 @@ declare global {
     'page-don': HTMLPageDonElement
     'page-engagements-detail': HTMLPageEngagementsDetailElement
     'page-engagements': HTMLPageEngagementsElement
-    'page-enter': HTMLPageEnterElement
     'page-forces-detail': HTMLPageForcesDetailElement
     'page-forces': HTMLPageForcesElement
     'page-galerie-detail': HTMLPageGalerieDetailElement
     'page-galerie': HTMLPageGalerieElement
     'page-login': HTMLPageLoginElement
     'page-map': HTMLPageMapElement
+    'page-penalty': HTMLPagePenaltyElement
     'page-chantier-detail': HTMLPageChantierDetailElement
     'page-chantier': HTMLPageChantierElement
-    'page-mon-projet': HTMLPageMonProjetElement
-    'page-penalty': HTMLPagePenaltyElement
+    'page-programme': HTMLPageProgrammeElement
     'page-schedule-filter': HTMLPageScheduleFilterElement
     'page-schedule': HTMLPageScheduleElement
     'page-session': HTMLPageSessionElement
@@ -600,6 +600,7 @@ declare global {
     'mk-actualite': HTMLMkActualiteElement;
     'page-about-popover': HTMLPageAboutPopoverElement;
     'page-about': HTMLPageAboutElement;
+    'page-acceuil': HTMLPageAcceuilElement;
     'page-account': HTMLPageAccountElement;
     'page-actualite': HTMLPageActualiteElement;
     'page-actualites': HTMLPageActualitesElement;
@@ -608,17 +609,16 @@ declare global {
     'page-don': HTMLPageDonElement;
     'page-engagements-detail': HTMLPageEngagementsDetailElement;
     'page-engagements': HTMLPageEngagementsElement;
-    'page-enter': HTMLPageEnterElement;
     'page-forces-detail': HTMLPageForcesDetailElement;
     'page-forces': HTMLPageForcesElement;
     'page-galerie-detail': HTMLPageGalerieDetailElement;
     'page-galerie': HTMLPageGalerieElement;
     'page-login': HTMLPageLoginElement;
     'page-map': HTMLPageMapElement;
+    'page-penalty': HTMLPagePenaltyElement;
     'page-chantier-detail': HTMLPageChantierDetailElement;
     'page-chantier': HTMLPageChantierElement;
-    'page-mon-projet': HTMLPageMonProjetElement;
-    'page-penalty': HTMLPagePenaltyElement;
+    'page-programme': HTMLPageProgrammeElement;
     'page-schedule-filter': HTMLPageScheduleFilterElement;
     'page-schedule': HTMLPageScheduleElement;
     'page-session': HTMLPageSessionElement;

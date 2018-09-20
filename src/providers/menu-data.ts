@@ -6,9 +6,9 @@ export class Menu extends Data {
     await Text.load();
     return [
       {label: 'Kamto', 'icon': 'person', name: 'tab-who-am-i'},
-      {label: __('PROGRAMME'), 'icon': 'folder-open', name: 'tab-mon-projet'},
-      {label: __('ACTUALITÉS'), 'icon': 'megaphone', name: 'tab-actualites'},
-      {label: __('07_OCTOBRE'), 'icon': 'football', component: 'page-penalty'},
+      {label: __('CHANTIERS'), 'icon': 'construct', name: 'tab-programme'},
+      {label: __('ENGAGEMENTS'), 'icon': 'clipboard', name: 'tab-engagements'},
+      {label: __('ACTUALITÉS'), 'icon': 'megaphone', name: 'tab-actualites'}
     ];
   }
 

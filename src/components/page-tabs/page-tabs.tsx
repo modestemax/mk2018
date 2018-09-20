@@ -16,20 +16,18 @@ export class PageTabs {
   render() {
     return [
       <ion-tabs>
-
-        <ion-tab  {...this.tabs[0]}>
-          <ion-nav/>
-        </ion-tab>
-
-        <ion-tab  {...this.tabs[1]}>
-          <ion-nav/>
-        </ion-tab>
-
-        <ion-tab  {...this.tabs[2]}>
-          <ion-nav/>
-        </ion-tab>
-
-        <ion-tab  {...this.tabs[3]}/>
+        {this.tabs.map(tab => {
+          if ('component' in tab) {
+            return (
+              <ion-tab  {...tab}/>
+            );
+          } else {
+            return (
+              <ion-tab  {...tab}>
+                <ion-nav/>
+              </ion-tab>);
+          }
+        })}
 
         <ion-tab label="" icon="map" name="tab-hidden" show={false}>
           <ion-nav/>

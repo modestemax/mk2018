@@ -2,31 +2,26 @@
   "menu": [
     [
       {
+        "title": "Accueil",
+        "url": "/acceuil",
+        "icon": "home"
+      }
+    ],
+    [
+      {
         "title": "Qui suis-je",
         "url": "/who-am-i",
         "icon": "person"
       },
       {
-        "title": "Mon Programme pour la Renaissance",
-        "url": "/mon-projet",
-        "icon": "folder-open"
+        "title": "Mon Programme de Gouvernance",
+        "url": "/programme",
+        "icon": "construct"
       },
       {
         "title": "Mes Engagements",
-        "url": "/others/mes-engagements",
+        "url": "/engagements",
         "icon": "clipboard"
-      },
-      {
-        "title": "Actualités de Campagne",
-        "url": "/actualites",
-        "icon": "megaphone"
-      }
-    ],
-    [
-      {
-        "title": "Le Penalty du 07 Octobre 2018",
-        "url": "/penalty",
-        "icon": "football"
       },
       {
         "title": "La Coalition FAUP",
@@ -36,10 +31,17 @@
     ],
     [
       {
+        "title": "Actualités de Campagne",
+        "url": "/actualites",
+        "icon": "megaphone"
+      },
+      {
         "title": "Galeries Photos et Videos",
         "url": "/others/galeries",
         "icon": "Images"
-      },
+      }
+    ],
+    [
       {
         "title": "Faites un don",
         "url": "/others/don",
