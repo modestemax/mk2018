@@ -1,5 +1,8 @@
 import {Component} from '@stencil/core';
 import {ContactsData} from '../../../providers/contact-data';
+// import {Plugins} from '@capacitor/core';
+
+// const {Toast, Share} = Plugins;
 
 @Component({
   tag: 'page-contact-form',
@@ -8,14 +11,30 @@ import {ContactsData} from '../../../providers/contact-data';
 export class PageContactForm {
   private contacts = [];
 
+  // async show() {
+  //   await Toast.show({
+  //     text: 'Hello!'
+  //   });
+  // }
+
   dismiss() {
+    // this.show();
+    // let shareRet = await
+    // Share.share({
+    //   title: 'See cool stuff',
+    //   text: 'Really awesome thing you need to see right meow',
+    //   url: 'http://ionicframework.com/',
+    //   dialogTitle: 'Share with buddies'
+    // });
+
+
     const modalController: any = document.querySelector('ion-modal-controller');
     modalController.dismiss()
   }
 
   sendMessage() {
     const modalController: any = document.querySelector('ion-modal-controller');
-    modalController.dismiss()
+    modalController.dismiss();
   }
 
   componentWillLoad() {
@@ -75,7 +94,7 @@ export class PageContactForm {
       <ion-footer>
         <ion-toolbar color="light">
           <ion-buttons slot="start">
-              <ion-button onClick={this.sendMessage.bind(this)} color="primary">Envoyer</ion-button>
+            <ion-button onClick={this.sendMessage.bind(this)} color="primary">Envoyer</ion-button>
           </ion-buttons>
           <ion-buttons slot="end">
             <ion-button onClick={this.dismiss.bind(this)} color="dark">Annuler</ion-button>
