@@ -6,7 +6,7 @@ import {__} from "../../providers/i18n";
 
 @Component({
   tag: 'page-tutorial',
-  styleUrl: 'page-tutorial.css'
+  styleUrl: 'page-tutorial.scss'
 })
 export class PageTutorial {
 
@@ -26,7 +26,7 @@ export class PageTutorial {
   componentDidLoad() {
     UserData.hasSeenTutorial(true);
     UserData.setLng(this.lng);
-  }
+   }
 
   render() {
 
@@ -43,11 +43,14 @@ export class PageTutorial {
 
       <ion-content scrollY={false}>
         <ion-slides onIonSlideReachEnd={() => this.showSkip = false} pager={true}>
-          {this.slides.map(({img, title, text}) =>
+          {this.slides.map(({img, color, text}) =>
             (<ion-slide>
-                <img src={`/assets/img/${img}`} class="slide-image"/>
-                <h2 class="slide-title" innerHTML={title}/>
-                <p innerHTML={text}/>
+                <ion-card class="slide-card" style={{backgroundColor: color}}>
+                  <img src={`/assets/img/${img}`} class="slide-image"/>
+                  <ion-card-content class="slide-text">
+                    <h2 class="slide-text-inner" innerHTML={text}/>
+                  </ion-card-content>
+                </ion-card>
               </ion-slide>
             ))}
           <ion-slide>

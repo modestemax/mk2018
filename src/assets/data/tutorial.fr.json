@@ -1,19 +1,24 @@
 {
   "slides": [
     {
-      "img": "ica-slidebox-img-1.png",
-      "title": "Welcome to the <b>ICA</b>",
-      "text": "The <b>ionic conference app</b> is a practical preview of the ionic framework in action, and a demonstration of proper code use."
+      "color":"rgb(30, 130, 76)",
+      "img": "Penalty_debout_cameroun.jpg",
+      "text": "Le 07 octobre 2018, nous avons rendez-vous avec l'histoire"
     },
     {
-      "img": "ica-slidebox-img-2.png",
-      "title": "What is Ionic?",
-      "text": "<b>Ionic Pro</b> is a powerful set of services and features built on top of Ionic Framework that brings a totally new level of app\n              development agility to mobile dev teams."
+      "color":"rgb(150, 35, 35)",
+      "img": "cameroun_nouveau.jpg",
+      "text": "Ensemble, un nouveau Cameroun juste et rayonnant est possible"
     },
     {
-      "img": "ica-slidebox-img-3.png",
-      "title": "What is Ionic Pro?",
-      "text": "<b>Ionic Pro</b> is a powerful set of services and features built on top of Ionic Framework that brings a totally new level of app\n              development agility to mobile dev teams."
+      "color":"rgb(30,139,195)",
+      "img": "Penalty_pose_ballon.jpg",
+      "text": "Debout peuple fier, libre et souverain, provoquons ce changement"
+    },
+    {
+      "color":"rgb(145,61,136)",
+      "img": "Penalty_but.jpg",
+      "text": "Je vais marquer ce penalty historique; mon pied ne tremblera pas"
     }
   ]
 }
