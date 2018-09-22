@@ -1,4 +1,4 @@
-import {Component, Prop,} from '@stencil/core';
+import { Component, Prop, } from '@stencil/core';
 // import { ConferenceData } from '../../providers/conference-data';
 // import { UserData } from '../../providers/user-data';
 
@@ -9,9 +9,9 @@ import {Component, Prop,} from '@stencil/core';
 export class MkActualite {
 
   // private session: any;
-  @Prop() actualite_id: any;
+  @Prop() _id: any;
   @Prop() date: string;
-  @Prop() actualite_title: string;
+  @Prop() titre: string;
   @Prop() text = '';
   @Prop() img: string;
   @Prop() full = false;
@@ -25,7 +25,7 @@ export class MkActualite {
   }
 
   showFull() {
-    this.full || this.router.push(`${this.actualiteUrl}/${this.actualite_id}`);
+    this.full || this.router.push(`${this.actualiteUrl}/${this._id}`);
   }
 
   private getText() {
@@ -39,7 +39,7 @@ export class MkActualite {
   }
 
   render() {
-    const {date, actualite_title, img} = this;
+    const { date, titre, img } = this;
     const text = this.getText();
 
     return (
@@ -52,7 +52,7 @@ export class MkActualite {
         <img src={img}/>
 
         <ion-card-content onClick={this.showFull.bind(this)}>
-          <h2 class="article-title">{actualite_title}</h2>
+          <h2 class="article-title">{titre}</h2>
           <p innerHTML={text}/>
         </ion-card-content>
 

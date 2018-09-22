@@ -1,44 +1,44 @@
 {
   "actualites": [
     {
-      "actualite_id": 1,
+      "_id": 1,
       "date": "1er Janvier",
-      "actualite_title": "Mon premier article",
+      "titre": "Mon premier article",
       "img": "/assets/img/advance-card-bttf.png",
       "text": "<p>When <b>submitting</b> applications to the app stores we need to supply an icon for the application that is used to display the application on the user’s home screen or applications menu, and a splash screen that is displayed when the app launches.</p><p>That doesn’t sound like too much of a task, but there are a variety of different devices out there with different splash screen and icon sizes, so we need to create a ton of assets to satisfy all of these requirements.</p>"
     },
     {
-      "actualite_id": 2,
+      "_id": 2,
       "date": "2 Janvier",
-      "actualite_title": "Mon premier article",
+      "titre": "Mon premier article",
       "img": "/assets/img/advance-card-bttf.png",
       "text": "<p>When <b>submitting</b> applications to the app stores we need to supply an icon for the application that is used to display the application on the user’s home screen or applications menu, and a splash screen that is displayed when the app launches.</p><p>That doesn’t sound like too much of a task, but there are a variety of different devices out there with different splash screen and icon sizes, so we need to create a ton of assets to satisfy all of these requirements.</p>"
     },
     {
-      "actualite_id": 3,
+      "_id": 3,
       "date": "3 Janvier",
-      "actualite_title": "Mon premier article",
+      "titre": "Mon premier article",
       "img": "/assets/img/advance-card-bttf.png",
       "text": "<p>When <b>submitting</b> applications to the app stores we need to supply an icon for the application that is used to display the application on the user’s home screen or applications menu, and a splash screen that is displayed when the app launches.</p><p>That doesn’t sound like too much of a task, but there are a variety of different devices out there with different splash screen and icon sizes, so we need to create a ton of assets to satisfy all of these requirements.</p>"
     },
     {
-      "actualite_id": 4,
+      "_id": 4,
       "date": "4 Janvier",
-      "actualite_title": "Mon premier article",
+      "titre": "Mon premier article",
       "img": "/assets/img/advance-card-bttf.png",
       "text": "<p>When <b>submitting</b> applications to the app stores we need to supply an icon for the application that is used to display the application on the user’s home screen or applications menu, and a splash screen that is displayed when the app launches.</p><p>That doesn’t sound like too much of a task, but there are a variety of different devices out there with different splash screen and icon sizes, so we need to create a ton of assets to satisfy all of these requirements.</p>"
     },
     {
-      "actualite_id": 5,
+      "_id": 5,
       "date": "5 Janvier",
-      "actualite_title": "Mon premier article",
+      "titre": "Mon premier article",
       "img": "/assets/img/advance-card-bttf.png",
       "text": "<p>When <b>submitting</b> applications to the app stores we need to supply an icon for the application that is used to display the application on the user’s home screen or applications menu, and a splash screen that is displayed when the app launches.</p><p>That doesn’t sound like too much of a task, but there are a variety of different devices out there with different splash screen and icon sizes, so we need to create a ton of assets to satisfy all of these requirements.</p>"
     },
     {
-      "actualite_id": 6,
+      "_id": 6,
       "date": "6 Janvier",
-      "actualite_title": "Mon premier article",
+      "titre": "Mon premier article",
       "img": "/assets/img/advance-card-bttf.png",
       "text": "<p>When <b>submitting</b> applications to the app stores we need to supply an icon for the application that is used to display the application on the user’s home screen or applications menu, and a splash screen that is displayed when the app launches.</p><p>That doesn’t sound like too much of a task, but there are a variety of different devices out there with different splash screen and icon sizes, so we need to create a ton of assets to satisfy all of these requirements.</p>"
     }

@@ -61,20 +61,20 @@ export namespace Components {
   }
 
   interface MkActualite {
-    'actualite_id': any;
-    'actualite_title': string;
+    '_id': any;
     'date': string;
     'full': boolean;
     'img': string;
     'text': string;
+    'titre': string;
   }
   interface MkActualiteAttributes extends StencilHTMLAttributes {
-    'actualite_id'?: any;
-    'actualite_title'?: string;
+    '_id'?: any;
     'date'?: string;
     'full'?: boolean;
     'img'?: string;
     'text'?: string;
+    'titre'?: string;
   }
 
   interface PageAboutPopover {}
@@ -92,11 +92,11 @@ export namespace Components {
   }
 
   interface PageActualite {
-    'actualite_id': any;
+    '_id': any;
     'goback': string;
   }
   interface PageActualiteAttributes extends StencilHTMLAttributes {
-    'actualite_id'?: any;
+    '_id'?: any;
     'goback'?: string;
   }
 

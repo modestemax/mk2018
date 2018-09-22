@@ -5,6 +5,7 @@ import {UserData} from '../../providers/user-data';
 import {Plugins} from '@capacitor/core';
 import {Menu} from '../../providers/menu-data';
 import {Text} from '../../providers/i18n';
+import {Firebase} from "../../providers/firebase";
 
 const {SplashScreen} = Plugins;
 
@@ -25,6 +26,7 @@ export class AppRoot {
   @State() menus: any;
 
   async componentWillLoad() {
+    await Firebase.initialize();
     await Text.load();
     this.menus = await Menu.getMenu();
 
@@ -73,7 +75,7 @@ export class AppRoot {
 
           <ion-route url="/actualites" component="tab-actualites">
             <ion-route component="page-actualites"/>
-            <ion-route url="/:actualite_id" component="page-actualite" componentProps={{goback: '/actualites'}}/>
+            <ion-route url="/:_id" component="page-actualite" componentProps={{goback: '/actualites'}}/>
           </ion-route>
 
 

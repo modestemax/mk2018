@@ -21,7 +21,7 @@ export class PageContact {
 
   async openContactForm() {
     console.log('contact');
-    //debugger;
+
     const modalController: any = document.querySelector('ion-modal-controller');
     await modalController.componentOnReady();
     const form = document.createElement('page-contact-form')

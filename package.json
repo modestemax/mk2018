@@ -21,6 +21,7 @@
     "@capacitor/core": "^1.0.0-beta.7",
     "@capacitor/ios": "^1.0.0-beta.7",
     "@ionic/core": "4.0.0-beta.8",
+    "firebase": "^5.5.1",
     "lodash": "latest"
   },
   "devDependencies": {

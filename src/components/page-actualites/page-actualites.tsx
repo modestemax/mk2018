@@ -1,19 +1,20 @@
-import { Component, } from '@stencil/core';
-import { ActualitesData } from '../../providers/actualites-data';
+import {Component, State,} from '@stencil/core';
+import {ActualitesData} from '../../providers/actualites-data';
 // import { ConferenceData } from '../../providers/conference-data';
 // import { UserData } from '../../providers/user-data';
+import {News} from '../../providers/news';
 
 @Component({
   tag: 'page-actualites',
   styleUrl: 'page-actualites.scss',
 })
 export class PageActualites {
-  private actualites = [];
+  @State() actualites = [];
 
 
   componentWillLoad() {
-    return this.loadData();
-
+    console.log(News);
+    News.onChange(actualites => this.actualites = actualites);
   }
 
   async loadData() {

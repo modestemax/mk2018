@@ -10,8 +10,8 @@ export class ActualitesData extends Data {
     return data.actualites.slice(0, limit);
   }
 
-  static async getById(actualite_id: any) {
+  static async getById(_id: any) {
     const data = await this.load();
-    return data.actualites.find(actualite => actualite.actualite_id == actualite_id);
+    return data.actualites.find(actualite => actualite._id == _id);
   }
 }

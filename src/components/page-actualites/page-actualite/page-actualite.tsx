@@ -1,5 +1,6 @@
-import { Component, Prop, } from '@stencil/core';
-import { ActualitesData } from '../../../providers/actualites-data';
+import {Component, Prop,} from '@stencil/core';
+// import {ActualitesData} from '../../../providers/actualites-data';
+import {News} from "../../../providers/news";
 // import { ConferenceData } from '../../providers/conference-data';
 // import { UserData } from '../../providers/user-data';
 
@@ -13,7 +14,7 @@ export class PageActualite {
   @Prop() goback = '/';
 
   private actualite: any;
-  @Prop() actualite_id: any;
+  @Prop() _id: any;
 
 
   componentWillLoad() {
@@ -21,7 +22,7 @@ export class PageActualite {
   }
 
   async loadData() {
-    this.actualite = await ActualitesData.getById(this.actualite_id);
+    this.actualite = await News.get(this._id);
   }
 
 
