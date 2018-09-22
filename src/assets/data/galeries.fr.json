@@ -1,119 +1,120 @@
-{
-  "galeries": [
-    {
-      "title": "Politique & Institutions",
-      "details": [
-        {
-          "title": "Résoudre la crise anglophone en 3 mois",
-          "resources": [
-            {
-              "img": "Penalty2.jpg",
-              "desc": "KAMTO sur l’affaire des 14 milliard et la"
-            },
-            {
-              "video": "https://www.youtube.com/embed/69nxF_wMjr4",
-              "desc": "ashmi ashma"
-            },
-            {
-              "img": "Penalty2.jpg",
-              "desc": "KAMTO sur l’affaire des 14 milliard et la"
-            },
-            {
-              "video": "https://www.youtube.com/embed/69nxF_wMjr4",
-              "desc": "ashmi ashma"
-            }
-          ]
-        },
-        {
-          "title": "Résoudre la crise anglophone en 3 mois",
-          "resources": [
-            {
-              "img": "Penalty2.jpg",
-              "desc": "KAMTO sur l’affaire des 14 milliard et la"
-            },
-            {
-              "video": "https://www.youtube.com/embed/69nxF_wMjr4",
-              "desc": "ashmi ashma"
-            },
-            {
-              "img": "Penalty2.jpg",
-              "desc": "KAMTO sur l’affaire des 14 milliard et la"
-            },
-            {
-              "video": "https://www.youtube.com/embed/69nxF_wMjr4",
-              "desc": "ashmi ashma"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Politique & Institutions",
-      "details": [
-        {
-          "title": "Résoudre la crise anglophone en 3 mois",
-          "resources": [
-            {
-              "img": "Penalty2.jpg",
-              "desc": "KAMTO sur l’affaire des 14 milliard et la"
-            },
-            {
-              "video": "https://www.youtube.com/embed/69nxF_wMjr4",
-              "desc": "ashmi ashma"
-            },
-            {
-              "img": "Penalty2.jpg",
-              "desc": "KAMTO sur l’affaire des 14 milliard et la"
-            },
-            {
-              "video": "https://www.youtube.com/embed/69nxF_wMjr4",
-              "desc": "ashmi ashma"
-            }
-          ]
-        },
-        {
-          "title": "Résoudre la crise anglophone en 3 mois",
-          "resources": [
-            {
-              "img": "Penalty2.jpg",
-              "desc": "KAMTO sur l’affaire des 14 milliard et la"
-            },
-            {
-              "video": "https://www.youtube.com/embed/69nxF_wMjr4",
-              "desc": "ashmi ashma"
-            },
-            {
-              "img": "Penalty2.jpg",
-              "desc": "KAMTO sur l’affaire des 14 milliard et la"
-            },
-            {
-              "video": "https://www.youtube.com/embed/69nxF_wMjr4",
-              "desc": "ashmi ashma"
-            }
-          ]
-        },
-        {
-          "title": "Résoudre la crise anglophone en 3 mois",
-          "resources": [
-            {
-              "img": "Penalty2.jpg",
-              "desc": "KAMTO sur l’affaire des 14 milliard et la"
-            },
-            {
-              "video": "https://www.youtube.com/embed/69nxF_wMjr4",
-              "desc": "ashmi ashma"
-            },
-            {
-              "img": "Penalty2.jpg",
-              "desc": "KAMTO sur l’affaire des 14 milliard et la"
-            },
-            {
-              "video": "https://www.youtube.com/embed/69nxF_wMjr4",
-              "desc": "ashmi ashma"
-            }
-          ]
-        }
-      ]
-    }
-  ]
-}
+[
+  {
+    "_id":"Politique_Institutions",
+    "title": "Politique & Institutions",
+    "details": [
+      {
+        "title": "Résoudre la crise anglophone en 3 mois",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          },
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      },
+      {
+        "title": "Résoudre la crise anglophone en 3 mois",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          },
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "Politique_Institutions_2",
+    "title": "Politique & Institutions",
+    "details": [
+      {
+        "title": "Résoudre la crise anglophone en 3 mois",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          },
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      },
+      {
+        "title": "Résoudre la crise anglophone en 3 mois",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          },
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      },
+      {
+        "title": "Résoudre la crise anglophone en 3 mois",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          },
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      }
+    ]
+  }
+]
+

@@ -86,6 +86,13 @@ export namespace Components {
   interface PageAcceuil {}
   interface PageAcceuilAttributes extends StencilHTMLAttributes {}
 
+  interface PageTutorial {
+    'lng': string;
+  }
+  interface PageTutorialAttributes extends StencilHTMLAttributes {
+    'lng'?: string;
+  }
+
   interface PageAccount {}
   interface PageAccountAttributes extends StencilHTMLAttributes {
     'onUserDidLogOut'?: (event: CustomEvent) => void;
@@ -228,13 +235,6 @@ export namespace Components {
   interface PageTabs {}
   interface PageTabsAttributes extends StencilHTMLAttributes {}
 
-  interface PageTutorial {
-    'lng': string;
-  }
-  interface PageTutorialAttributes extends StencilHTMLAttributes {
-    'lng'?: string;
-  }
-
   interface PageMonCv {
     'docName': string;
     'goback': string;
@@ -258,6 +258,7 @@ declare global {
     'PageAboutPopover': Components.PageAboutPopover;
     'PageAbout': Components.PageAbout;
     'PageAcceuil': Components.PageAcceuil;
+    'PageTutorial': Components.PageTutorial;
     'PageAccount': Components.PageAccount;
     'PageActualite': Components.PageActualite;
     'PageActualites': Components.PageActualites;
@@ -284,7 +285,6 @@ declare global {
     'PageSpeakerList': Components.PageSpeakerList;
     'PageSupport': Components.PageSupport;
     'PageTabs': Components.PageTabs;
-    'PageTutorial': Components.PageTutorial;
     'PageMonCv': Components.PageMonCv;
     'PageWhoAmI': Components.PageWhoAmI;
   }
@@ -298,6 +298,7 @@ declare global {
     'page-about-popover': Components.PageAboutPopoverAttributes;
     'page-about': Components.PageAboutAttributes;
     'page-acceuil': Components.PageAcceuilAttributes;
+    'page-tutorial': Components.PageTutorialAttributes;
     'page-account': Components.PageAccountAttributes;
     'page-actualite': Components.PageActualiteAttributes;
     'page-actualites': Components.PageActualitesAttributes;
@@ -324,7 +325,6 @@ declare global {
     'page-speaker-list': Components.PageSpeakerListAttributes;
     'page-support': Components.PageSupportAttributes;
     'page-tabs': Components.PageTabsAttributes;
-    'page-tutorial': Components.PageTutorialAttributes;
     'page-mon-cv': Components.PageMonCvAttributes;
     'page-who-am-i': Components.PageWhoAmIAttributes;
   }
@@ -376,6 +376,12 @@ declare global {
   var HTMLPageAcceuilElement: {
     prototype: HTMLPageAcceuilElement;
     new (): HTMLPageAcceuilElement;
+  };
+
+  interface HTMLPageTutorialElement extends Components.PageTutorial, HTMLStencilElement {}
+  var HTMLPageTutorialElement: {
+    prototype: HTMLPageTutorialElement;
+    new (): HTMLPageTutorialElement;
   };
 
   interface HTMLPageAccountElement extends Components.PageAccount, HTMLStencilElement {}
@@ -534,12 +540,6 @@ declare global {
     new (): HTMLPageTabsElement;
   };
 
-  interface HTMLPageTutorialElement extends Components.PageTutorial, HTMLStencilElement {}
-  var HTMLPageTutorialElement: {
-    prototype: HTMLPageTutorialElement;
-    new (): HTMLPageTutorialElement;
-  };
-
   interface HTMLPageMonCvElement extends Components.PageMonCv, HTMLStencilElement {}
   var HTMLPageMonCvElement: {
     prototype: HTMLPageMonCvElement;
@@ -561,6 +561,7 @@ declare global {
     'page-about-popover': HTMLPageAboutPopoverElement
     'page-about': HTMLPageAboutElement
     'page-acceuil': HTMLPageAcceuilElement
+    'page-tutorial': HTMLPageTutorialElement
     'page-account': HTMLPageAccountElement
     'page-actualite': HTMLPageActualiteElement
     'page-actualites': HTMLPageActualitesElement
@@ -587,7 +588,6 @@ declare global {
     'page-speaker-list': HTMLPageSpeakerListElement
     'page-support': HTMLPageSupportElement
     'page-tabs': HTMLPageTabsElement
-    'page-tutorial': HTMLPageTutorialElement
     'page-mon-cv': HTMLPageMonCvElement
     'page-who-am-i': HTMLPageWhoAmIElement
   }
@@ -601,6 +601,7 @@ declare global {
     'page-about-popover': HTMLPageAboutPopoverElement;
     'page-about': HTMLPageAboutElement;
     'page-acceuil': HTMLPageAcceuilElement;
+    'page-tutorial': HTMLPageTutorialElement;
     'page-account': HTMLPageAccountElement;
     'page-actualite': HTMLPageActualiteElement;
     'page-actualites': HTMLPageActualitesElement;
@@ -627,7 +628,6 @@ declare global {
     'page-speaker-list': HTMLPageSpeakerListElement;
     'page-support': HTMLPageSupportElement;
     'page-tabs': HTMLPageTabsElement;
-    'page-tutorial': HTMLPageTutorialElement;
     'page-mon-cv': HTMLPageMonCvElement;
     'page-who-am-i': HTMLPageWhoAmIElement;
   }

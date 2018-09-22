@@ -1,139 +1,139 @@
-{
-  "engagements": [
-    {
-      "color": "red",
-      "sousEngagements": [
-        {
-          "title": "Politique & Institutions",
-          "details": [
-            {
-              "title": "Résoudre la crise anglophone en 3 mois",
-              "text": "<p>No femmes et meres ne mourrons plus faute de moyens pour une cesarienne</p><p>La cesarienne cessera d’etre un moyen d’arnaque pour extorquer des fond a des femmes qui peivent accoucher normalement</p>",
-              "resources": [
-                {
-                  "img": "Penalty2.jpg"
-                },
-                {
-                  "video": "https://www.youtube.com/embed/69nxF_wMjr4"
-                }
-              ]
-            },
-            {
-              "title": "Résoudre la crise anglophone en 3 mois",
-              "text": "",
-              "resources": [
-                {
-                  "img": "*.png"
-                },
-                {
-                  "video": "http://"
-                }
-              ]
-            },
-            {
-              "title": "Résoudre la crise anglophone en 3 mois",
-              "text": "",
-              "resources": [
-                {
-                  "img": "*.png"
-                },
-                {
-                  "video": "http://"
-                }
-              ]
-            },
-            {
-              "title": "Résoudre la crise anglophone en 3 mois",
-              "text": "",
-              "resources": [
-                {
-                  "img": "*.png"
-                },
-                {
-                  "video": "http://"
-                }
-              ]
-            },
-            {
-              "title": "Résoudre la crise anglophone en 3 mois",
-              "text": "",
-              "resources": [
-                {
-                  "img": "*.png"
-                },
-                {
-                  "video": "http://"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "title": "Politique & Institutions",
-          "details": [
-            {
-              "title": "Résoudre la crise anglophone en 3 mois",
-              "text": "",
-              "resources": [
-                {
-                  "img": "*.png"
-                },
-                {
-                  "video": "http://"
-                }
-              ]
-            },
-            {
-              "title": "Résoudre la crise anglophone en 3 mois",
-              "text": "",
-              "resources": [
-                {
-                  "img": "*.png"
-                },
-                {
-                  "video": "http://"
-                }
-              ]
-            },
-            {
-              "title": "Résoudre la crise anglophone en 3 mois",
-              "text": "",
-              "resources": [
-                {
-                  "img": "*.png"
-                },
-                {
-                  "video": "http://"
-                }
-              ]
-            },
-            {
-              "title": "Résoudre la crise anglophone en 3 mois",
-              "text": "",
-              "resources": [
-                {
-                  "img": "*.png"
-                },
-                {
-                  "video": "http://"
-                }
-              ]
-            },
-            {
-              "title": "Résoudre la crise anglophone en 3 mois",
-              "text": "",
-              "resources": [
-                {
-                  "img": "*.png"
-                },
-                {
-                  "video": "http://"
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    }
-  ]
-}
+[
+  {
+    "_id":"rouge",
+    "color": "red",
+    "sousEngagements": [
+      {
+        "title": "Politique & Institutions",
+        "details": [
+          {
+            "title": "Résoudre la crise anglophone en 3 mois",
+            "text": "<p>No femmes et meres ne mourrons plus faute de moyens pour une cesarienne</p><p>La cesarienne cessera d’etre un moyen d’arnaque pour extorquer des fond a des femmes qui peivent accoucher normalement</p>",
+            "resources": [
+              {
+                "img": "Penalty2.jpg"
+              },
+              {
+                "video": "https://www.youtube.com/embed/69nxF_wMjr4"
+              }
+            ]
+          },
+          {
+            "title": "Résoudre la crise anglophone en 3 mois",
+            "text": "",
+            "resources": [
+              {
+                "img": "*.png"
+              },
+              {
+                "video": "http://"
+              }
+            ]
+          },
+          {
+            "title": "Résoudre la crise anglophone en 3 mois",
+            "text": "",
+            "resources": [
+              {
+                "img": "*.png"
+              },
+              {
+                "video": "http://"
+              }
+            ]
+          },
+          {
+            "title": "Résoudre la crise anglophone en 3 mois",
+            "text": "",
+            "resources": [
+              {
+                "img": "*.png"
+              },
+              {
+                "video": "http://"
+              }
+            ]
+          },
+          {
+            "title": "Résoudre la crise anglophone en 3 mois",
+            "text": "",
+            "resources": [
+              {
+                "img": "*.png"
+              },
+              {
+                "video": "http://"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Politique & Institutions",
+        "details": [
+          {
+            "title": "Résoudre la crise anglophone en 3 mois",
+            "text": "",
+            "resources": [
+              {
+                "img": "*.png"
+              },
+              {
+                "video": "http://"
+              }
+            ]
+          },
+          {
+            "title": "Résoudre la crise anglophone en 3 mois",
+            "text": "",
+            "resources": [
+              {
+                "img": "*.png"
+              },
+              {
+                "video": "http://"
+              }
+            ]
+          },
+          {
+            "title": "Résoudre la crise anglophone en 3 mois",
+            "text": "",
+            "resources": [
+              {
+                "img": "*.png"
+              },
+              {
+                "video": "http://"
+              }
+            ]
+          },
+          {
+            "title": "Résoudre la crise anglophone en 3 mois",
+            "text": "",
+            "resources": [
+              {
+                "img": "*.png"
+              },
+              {
+                "video": "http://"
+              }
+            ]
+          },
+          {
+            "title": "Résoudre la crise anglophone en 3 mois",
+            "text": "",
+            "resources": [
+              {
+                "img": "*.png"
+              },
+              {
+                "video": "http://"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
+

@@ -1,33 +1,32 @@
-{
-  "forces": [
-    {
-      "key": "crac",
-      "name": "crac",
-      "img": "orange_4.png",
-      "title": "Croire Au Cameroun [CRAC]",
-      "summary": "qsdq  qdsdqs dqsd",
-      "desc": "<p>Le CRAC est un parti politique reconnu par l’arrêté N°00000250/D/MINATD/DAP/SDE/SPP du 15 juillet 2014</p><p>Son projet place le secteur agropastoral au cœur du développement socio-économique du Cameroun. </p> <p>Bernard Njonga B.P.: 6203 Yaoundé GSM: +237 679 19 81 93 / 695 89 50 36 Email: croireaucameroun1@gmail.com Web: www.croireaucameroun.net</p>",
-      "resources": [
-        {
-          "img": "orange_4.png"
-        },
-        {
-          "video": "https://www.youtube.com/embed/UfD-k7aHkQE",
-          "title": "tittre de la video"
-        }
-      ]
-    },
-    {
-      "key": "crac",
-      "name": "crac",
-      "img": "orange_4.png",
-      "summary": "qsdq  qdsdqs dqsd"
-    },
-    {
-      "key": "crac",
-      "name": "crac",
-      "img": "orange_4.png",
-      "summary": "qsdq  qdsdqs dqsd"
-    }
-  ]
-}
+[
+  {
+    "_id": "crac",
+    "name": "crac",
+    "img": "orange_4.png",
+    "title": "Croire Au Cameroun [CRAC]",
+    "summary": "qsdq  qdsdqs dqsd",
+    "desc": "<p>Le CRAC est un parti politique reconnu par l’arrêté N°00000250/D/MINATD/DAP/SDE/SPP du 15 juillet 2014</p><p>Son projet place le secteur agropastoral au cœur du développement socio-économique du Cameroun. </p> <p>Bernard Njonga B.P.: 6203 Yaoundé GSM: +237 679 19 81 93 / 695 89 50 36 Email: croireaucameroun1@gmail.com Web: www.croireaucameroun.net</p>",
+    "resources": [
+      {
+        "img": "orange_4.png"
+      },
+      {
+        "video": "https://www.youtube.com/embed/UfD-k7aHkQE",
+        "title": "tittre de la video"
+      }
+    ]
+  },
+  {
+    "_id": "crac",
+    "name": "crac",
+    "img": "orange_4.png",
+    "summary": "qsdq  qdsdqs dqsd"
+  },
+  {
+    "_id": "crac",
+    "name": "crac",
+    "img": "orange_4.png",
+    "summary": "qsdq  qdsdqs dqsd"
+  }
+]
+

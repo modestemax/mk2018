@@ -15,9 +15,9 @@ export class PageAcceuil {
       <ion-footer>
         <ion-toolbar color="light">
           <div text-center>
-            <ion-anchor href="/tutorial/fr">FRANCAIS</ion-anchor>
+            <ion-anchor href="/acceuil/tutorial/fr">FRANCAIS</ion-anchor>
             <ion-anchor href="#"> | </ion-anchor>
-            <ion-anchor href="/tutorial/en">ENGLISH</ion-anchor>
+            <ion-anchor href="/acceuil/tutorial/en">ENGLISH</ion-anchor>
           </div>
         </ion-toolbar>
       </ion-footer>

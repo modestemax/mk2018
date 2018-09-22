@@ -52,7 +52,7 @@ export class AppRoot {
   renderRouter() {
     return (
       <ion-router useHash={false}>
-        <ion-route-redirect from="/" to={this.hasSeenTutorial ? '/tutorial' : '/acceuil'}/>
+        <ion-route-redirect from="/" to={this.hasSeenTutorial ? '/acceuil/tutorial' : '/acceuil'}/>
 
         <ion-route component="page-tabs">
 
@@ -111,10 +111,10 @@ export class AppRoot {
         <ion-route url="/acceuil" component="page-acceuil"/>
 
 
-        {/*<ion-route url="/tutorial" >*/}
-        <ion-route url="/tutorial" component="page-tutorial" componentProps={{lng: this.userLng}}/>
-        <ion-route url="/tutorial/fr" component="page-tutorial" componentProps={{lng: 'fr'}}/>
-        <ion-route url="tutorial/en" component="page-tutorial" componentProps={{lng: 'en'}}/>
+        {/*<ion-route url="/acceuil/tutorial" >*/}
+        <ion-route url="/acceuil/tutorial" component="page-tutorial" componentProps={{lng: this.userLng}}/>
+        <ion-route url="/acceuil/tutorial/fr" component="page-tutorial" componentProps={{lng: 'fr'}}/>
+        <ion-route url="/acceuil/tutorial/en" component="page-tutorial" componentProps={{lng: 'en'}}/>
         {/*</ion-route>*/}
 
         <ion-route url="/login" component="page-login"/>

@@ -36,7 +36,7 @@ export class Firebase {
 
 
   static async getNewsdb() {
-    await this.initialize();
+    await this.initialize();debugger
     return this.firestore.collection('news');
   }
 }

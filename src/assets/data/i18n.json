@@ -1,5 +1,6 @@
-{
-  "fr": {
+[
+  {
+    "_id": "fr",
     "EXPLORER": "Explorer",
     "MON_PROJET_POUR_LE_CAMEROUN": "Mon Projet pour le Cameroun",
     "PROGRAMME_DE_GOUVERNANCE": "Programme de Gouvernance",
@@ -19,7 +20,7 @@
     "ACTUALITÉS": "Actualités",
     "07_OCTOBRE": "07 Octobre",
     "MES_ENGAGEMENTS": "Mes Engagements",
-    "GALERIES":"Galeries",
-    "GALERIES_PHOTOS_ET_VIDEOS":"Galeries Photos et Videos"
+    "GALERIES": "Galeries",
+    "GALERIES_PHOTOS_ET_VIDEOS": "Galeries Photos et Videos"
   }
-}
+]

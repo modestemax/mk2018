@@ -1,0 +1,61 @@
+[
+  {
+    "_id": "fr",
+    "items": [
+      [
+        {
+          "title": "Accueil",
+          "url": "/acceuil",
+          "icon": "home"
+        }
+      ],
+      [
+        {
+          "title": "Qui suis-je",
+          "url": "/who-am-i",
+          "icon": "person"
+        },
+        {
+          "title": "Mon Programme de Gouvernance",
+          "url": "/programme",
+          "icon": "construct"
+        },
+        {
+          "title": "Mes Engagements",
+          "url": "/engagements",
+          "icon": "clipboard"
+        },
+        {
+          "title": "La Coalition FAUP",
+          "url": "/others/forces",
+          "icon": "people"
+        }
+      ],
+      [
+        {
+          "title": "Actualités de Campagne",
+          "url": "/actualites",
+          "icon": "megaphone"
+        },
+        {
+          "title": "Galeries Photos et Videos",
+          "url": "/others/galeries",
+          "icon": "Images"
+        }
+      ],
+      [
+        {
+          "title": "Faites un don",
+          "url": "/others/don",
+          "icon": "gift"
+        },
+        {
+          "title": "Contacter l’Equipe de Campagne",
+          "url": "/others/contact",
+          "icon": "mail-open"
+        }
+      ]
+    ]
+  }
+]
+

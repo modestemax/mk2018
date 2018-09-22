@@ -1,131 +1,134 @@
-{
-  "sections": [
-    {
-      "key": "etat-civil",
-      "color":"rgb(197,90,17)",
-      "section": "Etat Civil",
-      "img": "familly.png",
-      "content": [
-        {
-          "title": "1979 : Faculté de Droit, Université de Yaoundé",
-          "items": [
-            "Yaoundé, Cameroun",
-            "License en Droit Public"
-          ]
-        },
-        {
-          "title": "1980 : Institut Européen des Hautes Etudes Internationales (IEHEI)",
-          "items": [
-            "Nice, France",
-            "Diplôme des hautes études internationales et d’études supérieures des communautés européennes"
-          ]
-        },
-        {
-          "title": "1980 : Université de Nice, Faculté de Droit",
-          "items": [
-            "Nice, France",
-            "Diplôme d’études approfondies de droit public fundamental",
-            "Diplôme d’études approfondies de droit international (1980)."
-          ]
-        },
-        {
-          "title": "1982 : Institut d’Administration Publique",
-          "items": [
-            "Paris, France",
-            "Diplôme option XXXX"
-          ]
-        },
-        {
-          "title": "1983 : Université de Nice, Faculté de Droit",
-          "items": [
-            "Nice, France",
-            "Doctorat d’Etat en Droit"
-          ]
-        },
-        {
-          "title": "1988 : Prix de l’Académie des sciences d’outremer",
-          "items": []
-        },
-        {
-          "title": "1988 : Agrége des Facultes de Droit.",
-          "items": []
-        }
-      ]
-    },
-    {
-      "key": "academic",
-      "color": "rgb(30, 130, 76)",
-      "section": "Academic",
-      "img": "familly.png",
-      "content": [
-        {
-          "title": "Academic",
-          "items": []
-        }
-      ]
-    },
-    {
-      "key": "administration",
-      "color": "rgb(30, 139, 195)",
-      "section": "Administration",
-      "img": "familly.png",
-      "content": [
-        {
-          "title": "Administration",
-          "items": []
-        }
-      ]
-    },
-    {
-      "key": "international",
-      "color": "rgb(145, 61, 136)",
-      "section": "International",
-      "img": "familly.png",
-      "content": [
-        {
-          "title": "International",
-          "items": []
-        }
-      ]
-    },
-    {
-      "key": "distinction",
-      "color": "rgb(150, 40, 27)",
-      "section": "Distinction",
-      "img": "familly.png",
-      "content": [
-        {
-          "title": "distinction",
-          "items": []
-        }
-      ]
-    },
-    {
-      "key": "distinction",
-      "color": "rgb(150, 40, 27)",
-      "section": "Distinction",
-      "img": "familly.png",
-      "content": [
-        {
-          "title": "distinction",
-          "items": []
-        }
-      ]
-    },
-    {
-      "key": "distinction",
-      "color": "rgb(150, 40, 27)",
-      "section": "Distinction",
-      "img": "familly.png",
-      "content": [
-        {
-          "title": "distinction",
-          "items": []
-        }
-      ]
-    },
-    {
+[
+  {
+    "_id": "etat-civil",
+    "position": 1,
+    "color": "rgb(197,90,17)",
+    "section": "Etat Civil",
+    "img": "familly.png",
+    "content": [
+      {
+        "title": "1979 : Faculté de Droit, Université de Yaoundé",
+        "items": [
+          "Yaoundé, Cameroun",
+          "License en Droit Public"
+        ]
+      },
+      {
+        "title": "1980 : Institut Européen des Hautes Etudes Internationales (IEHEI)",
+        "items": [
+          "Nice, France",
+          "Diplôme des hautes études internationales et d’études supérieures des communautés européennes"
+        ]
+      },
+      {
+        "title": "1980 : Université de Nice, Faculté de Droit",
+        "items": [
+          "Nice, France",
+          "Diplôme d’études approfondies de droit public fundamental",
+          "Diplôme d’études approfondies de droit international (1980)."
+        ]
+      },
+      {
+        "title": "1982 : Institut d’Administration Publique",
+        "items": [
+          "Paris, France",
+          "Diplôme option XXXX"
+        ]
+      },
+      {
+        "title": "1983 : Université de Nice, Faculté de Droit",
+        "items": [
+          "Nice, France",
+          "Doctorat d’Etat en Droit"
+        ]
+      },
+      {
+        "title": "1988 : Prix de l’Académie des sciences d’outremer",
+        "items": []
+      },
+      {
+        "title": "1988 : Agrége des Facultes de Droit.",
+        "items": []
+      }
+    ]
+  },
+  {
+    "_id": "academic",
+    "position": 2,
+    "color": "rgb(30, 130, 76)",
+    "section": "Academic",
+    "img": "familly.png",
+    "content": [
+      {
+        "title": "Academic",
+        "items": []
+      }
+    ]
+  },
+  {
+    "_id": "administration",
+    "position": 3,
+    "color": "rgb(30, 139, 195)",
+    "section": "Administration",
+    "img": "familly.png",
+    "content": [
+      {
+        "title": "Administration",
+        "items": []
+      }
+    ]
+  },
+  {
+    "_id": "international",
+    "position": 4,
+    "color": "rgb(145, 61, 136)",
+    "section": "International",
+    "img": "familly.png",
+    "content": [
+      {
+        "title": "International",
+        "items": []
+      }
+    ]
+  },
+  {
+    "_id": "distinction",
+    "position": 5,
+    "color": "rgb(150, 40, 27)",
+    "section": "Distinction",
+    "img": "familly.png",
+    "content": [
+      {
+        "title": "distinction",
+        "items": []
+      }
+    ]
+  },
+  {
+    "_id": "distinction",
+    "position": 6,
+    "color": "rgb(150, 40, 27)",
+    "section": "Distinction",
+    "img": "familly.png",
+    "content": [
+      {
+        "title": "distinction",
+        "items": []
+      }
+    ]
+  },
+  {
+    "_id": "distinction",
+    "position": 7,
+    "color": "rgb(150, 40, 27)",
+    "section": "Distinction",
+    "img": "familly.png",
+    "content": [
+      {
+        "title": "distinction",
+        "items": []
+      }
+    ]
+  }
+]
 
-    }
-  ]
-}
