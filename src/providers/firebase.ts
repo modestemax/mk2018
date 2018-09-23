@@ -73,7 +73,6 @@ export abstract class Firebase {
       this.filter(collection)
         .onSnapshot((snapshot) => {
           snapshot.query.get().then(snapshot => {
-            debugger;
             callback(this.formatDocs(snapshot.docs));
           });
         });

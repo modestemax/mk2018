@@ -17,7 +17,7 @@ import {Firebase} from './firebase';
 
 export class TutorialData extends Firebase {
 
-  static getCollectionName(lng) {debugger
+  static getCollectionName(lng) {
     return 'tutorial_' + lng;
   }
 

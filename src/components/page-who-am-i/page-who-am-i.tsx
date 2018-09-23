@@ -15,7 +15,8 @@ export class PageWhoAmI {
 
   @State() documents = [];
 
-  componentWillLoad() {
+  async componentWillLoad() {
+    this.documents = await CVData.getAll();
     CVData.onChange(documents => this.documents = documents);
   }
 
@@ -48,23 +49,23 @@ export class PageWhoAmI {
           <ion-row class="cv-item-group">
             <ion-grid no-padding class="item-grid">
               <ion-row class="item-row">
-                {this.documents.map((doc) => (
+                {this.documents.map(({_id, color, img, section}) => (
 
-                  <ion-col class={`item-col ${doc.key || 'empty'} `} style={{ backgroundColor: doc.color }}>
-                    {doc.key
-                      ? <ion-item class="item" href={`/who-am-i/${doc.key}`}>
+                  <ion-col class={`item-col ${_id || 'empty'} `} style={{ backgroundColor: color }}>
+                    {_id
+                      ? <ion-item class="item" href={`/who-am-i/${_id}`}>
 
                         <ion-grid class="inner-item-grid">
                           <ion-row>
                             <ion-col text-center>
                               <ion-thumbnail class="item-icon">
-                                <img src={`/assets/img/${doc.img}`} alt="logo"/>
+                                <img src={`/assets/img/${img}`} alt="logo"/>
                               </ion-thumbnail>
                             </ion-col>
                           </ion-row>
                           <ion-row>
                             <ion-col text-center>
-                              <ion-text color="light" innerHTML={doc.section}/>
+                              <ion-text color="light" innerHTML={section}/>
                             </ion-col>
                           </ion-row>
                         </ion-grid>
