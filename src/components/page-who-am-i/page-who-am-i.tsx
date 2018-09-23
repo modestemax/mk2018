@@ -1,5 +1,5 @@
-import {Config} from '@ionic/core';
-import {Component, Prop /*Element, Listen, , State */} from '@stencil/core';
+import { Config } from '@ionic/core';
+import { Component, Prop, State /*Element, Listen, , State */ } from '@stencil/core';
 import { CVData } from '../../providers/cv-data';
 import { __ } from '../../providers/i18n';
 
@@ -11,19 +11,13 @@ import { __ } from '../../providers/i18n';
 export class PageWhoAmI {
 
 
-  @Prop({context: 'config'}) config: Config;
+  @Prop({ context: 'config' }) config: Config;
 
-  documents = [];
-
+  @State() documents = [];
 
   componentWillLoad() {
-    return this.loadData();
+    CVData.onChange(documents => this.documents = documents);
   }
-
-  async loadData() {
-    this.documents = await CVData.getDoc();
-  }
-
 
   render() {
 

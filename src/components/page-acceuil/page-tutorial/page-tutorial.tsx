@@ -1,8 +1,8 @@
-import { Component, Prop, State } from '@stencil/core';
+import {Component, Prop, State} from '@stencil/core';
 
-import { UserData } from '../../../providers/user-data';
-import { TutorialData } from '../../../providers/tutorial-data';
-import { __ } from '../../../providers/i18n';
+import {UserData} from '../../../providers/user-data';
+import {TutorialData} from '../../../providers/tutorial-data';
+import {__} from '../../../providers/i18n';
 
 @Component({
   tag: 'page-tutorial',
@@ -13,14 +13,12 @@ export class PageTutorial {
   @Prop() lng = 'fr';
   @State() showSkip = true;
 
-  slides = [];
+  @State() slides = [];
 
-  componentWillLoad() {
-    return this.loadData();
-  }
-
-  async loadData() {
-    this.slides = await TutorialData.loadSlides();
+  async componentWillLoad() {
+    debugger;
+    this.slides = await TutorialData.getAll();
+    TutorialData.onChange(slides => this.slides = slides);
   }
 
   componentDidLoad() {
@@ -44,9 +42,9 @@ export class PageTutorial {
       <ion-content scrollY={false}>
         <ion-slides onIonSlideReachEnd={() => this.showSkip = false} onIonSlidePrevStart={() => this.showSkip = true}
                     pager={true}>
-          {this.slides.map(({ img, color, text }) =>
+          {this.slides.map(({img, color, text}) =>
             (<ion-slide>
-                <ion-card class="slide-card" style={{ backgroundColor: color }}>
+                <ion-card class="slide-card" style={{backgroundColor: color}}>
                   <img src={`/assets/img/${img}`} class="slide-image"/>
                   <ion-card-content class="slide-text">
                     <h2 class="slide-text-inner" innerHTML={text}/>

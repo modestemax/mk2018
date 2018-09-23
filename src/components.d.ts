@@ -236,11 +236,11 @@ export namespace Components {
   interface PageTabsAttributes extends StencilHTMLAttributes {}
 
   interface PageMonCv {
-    'docName': string;
+    '_id': string;
     'goback': string;
   }
   interface PageMonCvAttributes extends StencilHTMLAttributes {
-    'docName'?: string;
+    '_id'?: string;
     'goback'?: string;
   }
 

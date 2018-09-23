@@ -17,11 +17,7 @@ export class PageActualite {
   @Prop() _id: any;
 
 
-  componentWillLoad() {
-    return this.loadData();
-  }
-
-  async loadData() {
+  async componentWillLoad() {
     this.actualite = await News.get(this._id);
   }
 

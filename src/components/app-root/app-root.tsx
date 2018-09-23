@@ -4,8 +4,9 @@ import {Component, Element, Prop, State,} from '@stencil/core';
 import {UserData} from '../../providers/user-data';
 import {Plugins} from '@capacitor/core';
 import {Menu} from '../../providers/menu-data';
-import {Text} from '../../providers/i18n';
-import {Firebase} from "../../providers/firebase";
+import {I18nData} from '../../providers/i18n';
+import {Firebase} from '../../providers/firebase';
+
 
 const {SplashScreen} = Plugins;
 
@@ -23,21 +24,28 @@ export class AppRoot {
   @Prop({context: 'isServer'}) isServer: boolean;
 
 
-  @State() menus: any;
+  @State() menus: any = [];
+
 
   async componentWillLoad() {
+    this.userLng = (await UserData.getLng()) || this.userLng;
     await Firebase.initialize();
-    await Text.load();
+
+    await I18nData.loadStrings();
     this.menus = await Menu.getMenu();
 
-    Text.onLngChanged.push(async () => {
+    Menu.onChange(async () => {
+      this.menus = await Menu.getMenu()
+    });
+
+    I18nData.onLngChanged.push(async () => {
       this.menus = await Menu.getMenu();
     });
 
     this.hasSeenTutorial = this.isServer
       ? true
       : await UserData.checkHasSeenTutorial();
-    this.userLng = (await UserData.getLng()) || this.userLng;
+
   }
 
   async componentDidLoad() {
@@ -58,7 +66,7 @@ export class AppRoot {
 
           <ion-route url="/who-am-i" component="tab-who-am-i">
             <ion-route component="page-who-am-i"/>
-            <ion-route url="/:docName" component="page-mon-cv" componentProps={{goback: '/who-am-i'}}/>
+            <ion-route url="/:_id" component="page-mon-cv" componentProps={{goback: '/who-am-i'}}/>
           </ion-route>
 
           <ion-route url="/programme" component="tab-programme">

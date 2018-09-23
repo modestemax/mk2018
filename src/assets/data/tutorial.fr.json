@@ -1,24 +1,32 @@
 [
   {
     "_id": "slide_1",
+    "publish":true,
+    "position":1,
     "color": "rgb(30, 130, 76)",
     "img": "Penalty_debout_cameroun.jpg",
     "text": "Le 07 octobre 2018, nous avons rendez-vous avec l'histoire"
   },
   {
     "_id": "slide_2",
+    "publish": true,
+    "position": 2,
     "color": "rgb(150, 35, 35)",
     "img": "cameroun_nouveau.jpg",
     "text": "Ensemble, un nouveau Cameroun juste et rayonnant est possible"
   },
   {
     "_id": "slide_3",
+    "publish": true,
+    "position": 3,
     "color": "rgb(30,139,195)",
     "img": "Penalty_pose_ballon.jpg",
     "text": "Debout peuple fier, libre et souverain, provoquons ce changement"
   },
   {
     "_id": "slide_4",
+    "publish": true,
+    "position": 4,
     "color": "rgb(145,61,136)",
     "img": "Penalty_but.jpg",
     "text": "Je vais marquer ce penalty historique; mon pied ne tremblera pas"

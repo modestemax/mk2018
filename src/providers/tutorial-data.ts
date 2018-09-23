@@ -1,14 +1,28 @@
-import {Data} from './data';
+// import {Data} from './data';
+//
+// export class TutorialData extends Data {
+//
+//
+//   protected static getUrl(lng: string) {
+//     return `/assets/data/tutorial.${lng}.json`;
+//   }
+//
+//   static async loadSlides() {
+//     await this.load();
+//     return this.data.slides
+//   }
+// }
 
-export class TutorialData extends Data {
+import {Firebase} from './firebase';
 
+export class TutorialData extends Firebase {
 
-  protected static getUrl(lng: string) {
-    return `/assets/data/tutorial.${lng}.json`;
+  static getCollectionName(lng) {debugger
+    return 'tutorial_' + lng;
   }
 
-  static async loadSlides() {
-    await this.load();
-    return this.data.slides
+  static filter(collection) {
+    return collection.where('publish', '==', true)
+      .orderBy('position', 'asc')
   }
 }
