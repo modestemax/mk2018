@@ -7,7 +7,7 @@ import { Component, Prop } from '@stencil/core';
 export class ChantierSousTitre {
   @Prop() color: any;
   @Prop() text: any;
-  @Prop() numChantier: any;
+  @Prop() _id: any;
   @Prop() key: any;
 
 
@@ -16,7 +16,7 @@ export class ChantierSousTitre {
       <ion-card class="chantier-detail" style={{ borderLeftColor: this.color }}>
         <ion-card-content>
           <ion-item-group>
-            <ion-item href={this.key ? `/programme/chantier/${this.numChantier}/detail/${this.key}` : '#'}>
+            <ion-item href={this.key ? `/programme/chantier/${this._id}/detail/${this.key}` : '#'}>
               <ion-text> {this.text}</ion-text>
               {this.key
                 ? <ion-item>

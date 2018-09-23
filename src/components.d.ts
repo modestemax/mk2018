@@ -16,15 +16,15 @@ export namespace Components {
   interface AppRootAttributes extends StencilHTMLAttributes {}
 
   interface ChantierSousTitre {
+    '_id': any;
     'color': any;
     'key': any;
-    'numChantier': any;
     'text': any;
   }
   interface ChantierSousTitreAttributes extends StencilHTMLAttributes {
+    '_id'?: any;
     'color'?: any;
     'key'?: any;
-    'numChantier'?: any;
     'text'?: any;
   }
 
@@ -175,23 +175,23 @@ export namespace Components {
   interface PagePenaltyAttributes extends StencilHTMLAttributes {}
 
   interface PageChantierDetail {
+    '_id': string;
     'detail': string;
     'goback': string;
-    'num': number;
   }
   interface PageChantierDetailAttributes extends StencilHTMLAttributes {
+    '_id'?: string;
     'detail'?: string;
     'goback'?: string;
-    'num'?: number;
   }
 
   interface PageChantier {
+    '_id': any;
     'goback': string;
-    'num': number;
   }
   interface PageChantierAttributes extends StencilHTMLAttributes {
+    '_id'?: any;
     'goback'?: string;
-    'num'?: number;
   }
 
   interface PageProgramme {}

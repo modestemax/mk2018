@@ -1,4 +1,4 @@
-import { Component, Prop } from '@stencil/core';
+import { Component, Prop, State } from '@stencil/core';
 import { ChantierData } from '../../../providers/chantier-data';
 // import { ConferenceData } from '../../providers/conference-data';
 // import { UserData } from '../../providers/user-data';
@@ -10,15 +10,11 @@ import { ChantierData } from '../../../providers/chantier-data';
 export class PageChantier {
 
   @Prop() goback = '/';
-  @Prop() num = 5;
-  data: any;
+  @Prop() _id;
+  @State() data: any;
 
-  componentWillLoad() {
-    return this.loadData();
-  }
-
-  async loadData() {
-    this.data = await ChantierData.getChantier(this.num);
+  async componentWillLoad() {
+    this.data = await ChantierData.get(this._id);
   }
 
   render() {
@@ -60,7 +56,7 @@ export class PageChantier {
           </ion-list-header>
 
           {this.data.details.map(({ title, key }) => (
-            <chantier-sous-titre color={this.data.color} text={title} numChantier={this.data.numChantier} key={key}/>
+            <chantier-sous-titre color={this.data.color} text={title} _id={this.data._id} key={key}/>
           ))}
         </ion-list>
       </ion-content>

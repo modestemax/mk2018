@@ -1,5 +1,5 @@
-import { Component, Prop } from '@stencil/core';
-import { ChantierData } from '../../../../providers/chantier-data';
+import {Component, Prop} from '@stencil/core';
+import {ChantierData} from '../../../../providers/chantier-data';
 // import { ConferenceData } from '../../providers/conference-data';
 // import { UserData } from '../../providers/user-data';
 
@@ -10,7 +10,7 @@ import { ChantierData } from '../../../../providers/chantier-data';
 export class PageChantierDetail {
 
   @Prop() goback = '/';
-  @Prop() num: number;
+  @Prop() _id: string;
   @Prop() detail: string;
   private gobackUrl;
 
@@ -18,14 +18,15 @@ export class PageChantierDetail {
   sousDetails: any;
 
   componentWillLoad() {
-    this.gobackUrl = `${this.goback}/${this.num}`;
+    this.gobackUrl = `${this.goback}/${this._id}`;
     return this.loadData();
 
   }
 
   async loadData() {
-    this.data = await ChantierData.getChantier(this.num);
+    this.data = await ChantierData.get(this._id);
     this.sousDetails = this.data.details.find(d => d.key === this.detail);
+    this.sousDetails.details = this.sousDetails.details || [];
   }
 
   render() {
@@ -54,7 +55,7 @@ export class PageChantierDetail {
                 <ion-thumbnail class="img-wrapper"><img src={`/assets/img/${this.data.img}`} class="slide-image"/>
                 </ion-thumbnail>
               </ion-card-header>
-              <hr class="thematique" style={{height: '15px', backgroundColor:this.data. color}}/>
+              <hr class="thematique" style={{height: '15px', backgroundColor: this.data.color}}/>
               <ion-card-content class="center-text">
                 <ion-label>
                   <p innerHTML={this.data.label}/>
@@ -66,7 +67,7 @@ export class PageChantierDetail {
             </ion-card>
           </ion-list-header>
 
-          <chantier-sous-titre color={this.data.color} text={this.sousDetails.title} />
+          <chantier-sous-titre color={this.data.color} text={this.sousDetails.title}/>
           {/*<ion-card class="chantier-detail" style={{ borderLeftColor: this.data.color }}>
             <ion-card-content>
               <ion-item>
@@ -82,7 +83,7 @@ export class PageChantierDetail {
             <ion-item-group class="sub-detail-group">
               <ion-item-divider>
                 <ion-label>
-                  <p class="sub-detail-title" style={{ color: this.data.color }}> {item.title}</p>
+                  <p class="sub-detail-title" style={{color: this.data.color}}> {item.title}</p>
                 </ion-label>
               </ion-item-divider>
               <ul>

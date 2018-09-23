@@ -35,6 +35,7 @@ export abstract class Firebase {
   }
 
   static get(id) {
+    id = decodeURIComponent(id);
     return this.getCollection().then(collection => {
       const doc = collection.doc(id);
       return doc.get().then(doc => {
