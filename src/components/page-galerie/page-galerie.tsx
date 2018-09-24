@@ -1,6 +1,6 @@
-import { Component } from '@stencil/core';
-import { GaleriesData } from '../../providers/galeries-data';
-import { __ } from '../../providers/i18n';
+import {Component, State} from '@stencil/core';
+import {GaleriesData} from '../../providers/galeries-data';
+import {__} from '../../providers/i18n';
 
 @Component({
   tag: 'page-galerie',
@@ -9,19 +9,17 @@ import { __ } from '../../providers/i18n';
 export class PageGalerie {
 
 
-  data: any;
+  @State() galeries: any = [];
 
   componentWillLoad() {
-    return this.loadData();
+    GaleriesData.onChange(galeries => this.galeries = galeries);
+
 
   }
 
-  async loadData() {
-    this.data = await GaleriesData.getData();
-  }
 
   render() {
-    return [
+     return [
       <ion-header>
         <ion-toolbar>
           <ion-title>
@@ -39,15 +37,17 @@ export class PageGalerie {
 
         <ion-list class="galerie-list" lines="full">
 
-          {this.data.galeries.map(({ title, details }) => (
+          {this.galeries.map(({title,_id, details}) => (
             <ion-item-group>
               <ion-item-divider no-padding class="group-header">
-                <ion-item>  <ion-text class="title">{title}</ion-text></ion-item>
+                <ion-item>
+                  <ion-text class="title">{title}</ion-text>
+                </ion-item>
               </ion-item-divider>
 
-              {details.map(({ numero, title }) => (
+              {details.map(({title}) => (
 
-                <ion-item detail-push class="galerie-text" href={`/others/galeries/${numero}`}>
+                <ion-item detail-push class="galerie-text" href={`/others/galeries/${_id}/${title}`}>
                   <ion-text> {title}</ion-text>
                 </ion-item>
 

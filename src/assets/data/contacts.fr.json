@@ -1,22 +1,27 @@
-{
-  "contacts": [
-    {
-      "text": "ICL RCMCXXXX 10001 066864<br/>5196366"
-    },
-    {
-      "text": "ICL RCMCXXXX 10001 066864<br/>5196366"
-    },
-    {
-      "text": "ICL RCMCXXXX 10001 066864<br/>5196366"
-    },
-    {
-      "text": "ICL RCMCXXXX 10001 066864<br/>5196366"
-    },
-    {
-      "text": "ICL RCMCXXXX 10001 066864<br/>5196366"
-    },
-    {
-      "text": "ICL RCMCXXXX 10001 066864<br/>5196366"
-    }
-  ]
-}
+[
+  {
+    "_id": "contacts",
+    "publish": true,
+    "position": 1,
+    "contacts": [
+      {
+        "text": "ICL RCMCXXXX 10001 066864<br/>5196366"
+      },
+      {
+        "text": "ICL RCMCXXXX 10001 066864<br/>5196366"
+      },
+      {
+        "text": "ICL RCMCXXXX 10001 066864<br/>5196366"
+      },
+      {
+        "text": "ICL RCMCXXXX 10001 066864<br/>5196366"
+      },
+      {
+        "text": "ICL RCMCXXXX 10001 066864<br/>5196366"
+      },
+      {
+        "text": "ICL RCMCXXXX 10001 066864<br/>5196366"
+      }
+    ]
+  }
+]

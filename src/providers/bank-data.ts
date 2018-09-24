@@ -1,15 +1,29 @@
-import {Data} from './data';
+// import {Data} from './data';
+//
+// export class BankData extends Data {
+//
+//
+//   static async getBanks(): Promise<any> {
+//     await this.load();
+//     return this.data.banks
+//   }
+//
+//
+//   protected static getUrl(lng: string) {
+//     return `/assets/data/banks.${lng}.json`;
+//   }
+// }
 
-export class BankData extends Data {
+import {Firebase} from './firebase';
 
+export class BankData extends Firebase {
 
-  static async getBanks(): Promise<any> {
-    await this.load();
-    return this.data.banks
+  static getCollectionName(/*lng*/) {
+    return 'banks';
   }
 
-
-  protected static getUrl(lng: string) {
-    return `/assets/data/banks.${lng}.json`;
+  static filter(collection) {
+    return collection.where('publish', '==', true)
+      .orderBy('position', 'asc')
   }
 }

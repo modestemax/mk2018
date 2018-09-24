@@ -7,6 +7,7 @@
     "ENGAGEMENTS": "Engagements",
     "READY_TO_PLAY_Q": "Ready to play?",
     "CONTINUE": "Continuer",
+    "SKIP": "Passer",
     "QUI_SUIS_JE": "Qui suis-je",
     "MON_PROJET": "Mon Projet",
     "VERS_ETOUDI": "Vers Etoudi",
@@ -15,12 +16,25 @@
     "LES_FORCES_POUR_L_ALTERNANCE_URNES_PAIX": "Les Forces pour l’Alternance Urnes Paix",
     "LA_COALITION_FAUP": "La Coalition FAUP",
     "FAITES_UN_DON": "Faites un don",
+    "CONTACTEZ_NOUS": "Contactez-Nous",
     "PROGRAMME": "Programme",
     "CHANTIERS": "Chantiers",
     "ACTUALITÉS": "Actualités",
     "07_OCTOBRE": "07 Octobre",
     "MES_ENGAGEMENTS": "Mes Engagements",
     "GALERIES": "Galeries",
-    "GALERIES_PHOTOS_ET_VIDEOS": "Galeries Photos et Videos"
+    "GALERIES_PHOTOS_ET_VIDEOS": "Galeries Photos et Videos",
+    "VOUS_SOUHAITEZ_INTÉGRER_UNE_UNITÉ_MRC": "Vous souhaitez intégrer une unité MRC",
+    "NOM_PRÉNOM": "Nom & Prénom",
+    "TEL_MOBILE_WHATSAPP": "Tel Mobile (WhatsApp)",
+    "EMAIL": "Email",
+    "MESSAGE": "Message",
+    "ENVOYER": "Envoyer",
+    "ANNULER": "Annuler",
+    "VILLE_DE_RESIDENCE": "Ville de residence"
+  },
+  {
+    "_id": "en",
+    "ENVOYER": "Send"
   }
 ]

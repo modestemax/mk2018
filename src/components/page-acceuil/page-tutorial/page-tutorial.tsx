@@ -33,7 +33,7 @@ export class PageTutorial {
         <ion-toolbar class="tutorial-transparent">
           <ion-buttons slot="end">
             {this.showSkip
-              ? <ion-button color="light" href="/who-am-i"> Skip </ion-button>
+              ? <ion-button color="light" href="/who-am-i">     {__('SKIP')} </ion-button>
               : ''}
           </ion-buttons>
         </ion-toolbar>

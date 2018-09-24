@@ -1,5 +1,5 @@
 import {Component} from '@stencil/core';
-import {ContactsData} from '../../../providers/contact-data';
+import {__} from "../../../providers/i18n";
 // import {Plugins} from '@capacitor/core';
 
 // const {Toast, Share} = Plugins;
@@ -9,8 +9,7 @@ import {ContactsData} from '../../../providers/contact-data';
   styleUrl: 'page-contact-form.scss',
 })
 export class PageContactForm {
-  private contacts = [];
-
+  subject;
   // async show() {
   //   await Toast.show({
   //     text: 'Hello!'
@@ -37,15 +36,6 @@ export class PageContactForm {
     modalController.dismiss();
   }
 
-  componentWillLoad() {
-    return this.loadData();
-
-  }
-
-  async loadData() {
-    this.contacts = await ContactsData.getContacts();
-    console.log(this.contacts)
-  }
 
   render() {
     return [
@@ -53,7 +43,7 @@ export class PageContactForm {
         <ion-toolbar>
 
           <ion-title>
-            Contacter-Nous
+            {__('CONTACTEZ_NOUS')}
           </ion-title>
 
           <ion-buttons slot="end">
@@ -66,27 +56,27 @@ export class PageContactForm {
 
         <ion-list class="form">
           <ion-list-header class="en-tete">
-            Vous souhaitez intégrer une unité MRC
+            {__('VOUS_SOUHAITEZ_INTÉGRER_UNE_UNITÉ_MRC')}
           </ion-list-header>
           <ion-item>
-            <ion-label position="floating">Nom & Prénom</ion-label>
-            <ion-input></ion-input>
+            <ion-label position="floating"> {__('NOM_PRÉNOM')}</ion-label>
+            <ion-input/>
           </ion-item>
           <ion-item>
-            <ion-label position="floating">Tel Mobile (WhatsApp)</ion-label>
-            <ion-input></ion-input>
+            <ion-label position="floating">{__('TEL_MOBILE_WHATSAPP')}</ion-label>
+            <ion-input/>
           </ion-item>
           <ion-item>
-            <ion-label position="floating">Email</ion-label>
-            <ion-input></ion-input>
+            <ion-label position="floating">{__('EMAIL')}</ion-label>
+            <ion-input/>
           </ion-item>
           <ion-item>
-            <ion-label position="floating">Ville de residence</ion-label>
-            <ion-input></ion-input>
+            <ion-label position="floating">{__('VILLE_DE_RESIDENCE')}</ion-label>
+            <ion-input/>
           </ion-item>
           <ion-item>
-            <ion-label position="floating">Message</ion-label>
-            <ion-textarea></ion-textarea>
+            <ion-label position="floating">{__('MESSAGE')}</ion-label>
+            <ion-textarea/>
           </ion-item>
 
         </ion-list>
@@ -94,10 +84,10 @@ export class PageContactForm {
       <ion-footer>
         <ion-toolbar color="light">
           <ion-buttons slot="start">
-            <ion-button onClick={this.sendMessage.bind(this)} color="primary">Envoyer</ion-button>
+            <ion-button onClick={this.sendMessage.bind(this)} color="primary">{__('ENVOYER')}</ion-button>
           </ion-buttons>
           <ion-buttons slot="end">
-            <ion-button onClick={this.dismiss.bind(this)} color="dark">Annuler</ion-button>
+            <ion-button onClick={this.dismiss.bind(this)} color="dark">{__('ANNULER')}</ion-button>
           </ion-buttons>
         </ion-toolbar>
       </ion-footer>

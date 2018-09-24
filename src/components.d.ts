@@ -156,12 +156,14 @@ export namespace Components {
   }
 
   interface PageGalerieDetail {
+    '_id': any;
+    '_title': any;
     'goback': string;
-    'numero': number;
   }
   interface PageGalerieDetailAttributes extends StencilHTMLAttributes {
+    '_id'?: any;
+    '_title'?: any;
     'goback'?: string;
-    'numero'?: number;
   }
 
   interface PageGalerie {}

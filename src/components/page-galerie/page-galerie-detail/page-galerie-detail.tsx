@@ -8,8 +8,10 @@ import {GaleriesData} from '../../../providers/galeries-data';
 export class PageGalerieDetail {
 
   @Prop() goback = '/';
-  @Prop() numero: number;
-  private data;
+  @Prop() _id: any;
+  @Prop() _title: any;
+  private galeries;
+  private galerie;
 
   componentWillLoad() {
     return this.loadData();
@@ -17,8 +19,11 @@ export class PageGalerieDetail {
   }
 
   async loadData() {
-    this.data = await GaleriesData.getGalerie(this.numero);
-    this.data.resources= this.data.resources||[]
+    const galeries = await GaleriesData.get(this._id);
+    const galerie = galeries && galeries.details.find(d => d.title === decodeURIComponent(this._title));
+    this.galeries = galeries || {};
+    this.galerie = galerie || {};
+    this.galerie.resources = this.galerie.resources || [];
   }
 
   render() {
@@ -29,7 +34,7 @@ export class PageGalerieDetail {
             <ion-back-button defaultHref={this.goback}/>
           </ion-buttons>
           <ion-title>
-            {this.data.groupTitle}
+            {this.galeries.title}
           </ion-title>
 
           <ion-buttons slot="end">
@@ -43,15 +48,15 @@ export class PageGalerieDetail {
 
           <ion-list-header no-padding class="content-header">
             <ion-label class="title">
-              {this.data.title}
+              {this.galerie.title}
             </ion-label>
           </ion-list-header>
           <ion-item-group class="resources">
-            {this.data.resources.map(({img, video, desc}) => (
+            {this.galerie.resources.map(({img, video, desc}) => (
               <ion-item no-padding class="resource">
                 <ion-label>
-                  <img-video img={img} video={video} vtitle={this.data.title}/>
-                  <ion-label>   {desc}</ion-label>
+                  <img-video img={img} video={video} vtitle={this.galerie.title}/>
+                  <ion-label>{desc}</ion-label>
                 </ion-label>
               </ion-item>
             ))}

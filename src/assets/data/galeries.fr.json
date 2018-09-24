@@ -1,6 +1,8 @@
 [
   {
-    "_id":"Politique_Institutions",
+    "_id": "Politique_Institutions",
+    "position": 1,
+    "publish": true,
     "title": "Politique & Institutions",
     "details": [
       {
@@ -49,6 +51,8 @@
   },
   {
     "_id": "Politique_Institutions_2",
+    "position": 2,
+    "publish": true,
     "title": "Politique & Institutions",
     "details": [
       {

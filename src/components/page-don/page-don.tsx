@@ -1,4 +1,4 @@
-import {Component, Prop} from '@stencil/core';
+import {Component, Prop, State} from '@stencil/core';
 
 import {BankData} from '../../providers/bank-data';
 import {__} from '../../providers/i18n';
@@ -10,17 +10,14 @@ import {__} from '../../providers/i18n';
 export class PageDon {
 
   @Prop() goback = '/';
-  private banks = [];
+  @State() banks = [];
 
 
   componentWillLoad() {
-    return this.loadData();
+    BankData.onChange(banks => this.banks = banks);
 
   }
 
-  async loadData() {
-    this.banks = await BankData.getBanks();
-  }
 
   render() {
     return [

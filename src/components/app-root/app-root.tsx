@@ -96,7 +96,7 @@ export class AppRoot {
             <ion-route url="/don" component="page-don"/>
             <ion-route url="/contact" component="page-contact"/>
             <ion-route url="/galeries" component="page-galerie"/>
-            <ion-route url="/galeries/:numero" component="page-galerie-detail"
+            <ion-route url="/galeries/:_id/:_title" component="page-galerie-detail"
                        componentProps={{goback: '/others/galeries'}}/>
           </ion-route>
 

@@ -1,5 +1,6 @@
-import { Component } from '@stencil/core';
-import { ContactsData } from '../../providers/contact-data';
+import {Component, State} from '@stencil/core';
+import {ContactsData} from '../../providers/contact-data';
+import {__} from "../../providers/i18n";
 
 
 @Component({
@@ -7,19 +8,16 @@ import { ContactsData } from '../../providers/contact-data';
   styleUrl: 'page-contact.scss',
 })
 export class PageContact {
-  private contacts = [];
+  @State() contacts = [];
 
 
   componentWillLoad() {
-    return this.loadData();
+    ContactsData.onChange(([contact]) => this.contacts = contact.contacts);
 
   }
 
-  async loadData() {
-    this.contacts = await ContactsData.getContacts();
-  }
 
-  async openContactForm() {
+  async openContactForm(subject) {
     console.log('contact');
 
     const modalController: any = document.querySelector('ion-modal-controller');
@@ -28,7 +26,7 @@ export class PageContact {
 
     const modal = await modalController.create({
       component: form,
-      componentProps: { value: 123 }
+      componentProps: {subject}
     });
     return modal.present();
   }
@@ -39,7 +37,7 @@ export class PageContact {
         <ion-toolbar>
 
           <ion-title>
-            Contacter-Nous
+            {__('CONTACTEZ_NOUS')}
           </ion-title>
 
           <ion-buttons slot="end">
@@ -50,13 +48,13 @@ export class PageContact {
 
       <ion-content>
         <ion-list class="group-list">
-          {this.contacts.map(({ text }, index) => [<ion-item>
+          {this.contacts.map(({text}, index) => [<ion-item>
             <ion-label class="content-text">
               <p class="contact-text" innerHTML={text}/>
             </ion-label>
-            <ion-icon onClick={this.openContactForm.bind(this)} slot="end" name="mail" class="mail-icon"/>
+            <ion-icon onClick={() => this.openContactForm(text)} slot="end" name="mail" class="mail-icon"/>
           </ion-item>,
-                                                 index + 1 === this.contacts.length ? '' : <hr class="separator"/>
+            index + 1 === this.contacts.length ? '' : <hr class="separator"/>
           ])}
         </ion-list>
       </ion-content>

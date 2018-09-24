@@ -42,6 +42,8 @@ function collectionsConfig() {
     ['penalty_en', '/assets/data/penalty.fr.json'],
     ['tutorial_fr', '/assets/data/tutorial.fr.json'],
     ['tutorial_en', '/assets/data/tutorial.fr.json'],
+    ['contacts_fr', '/assets/data/contacts.fr.json'],
+    ['contacts_en', '/assets/data/contacts.fr.json'],
 
   ];
 }
