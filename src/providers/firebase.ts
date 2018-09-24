@@ -1,13 +1,14 @@
 import firebase from 'firebase/app';
 import 'firebase/firestore';
-import {config} from '../app-settings/firebase';
+import { config } from '../app-settings/firebase';
 // import {loadDefaultData, initialData} from './firebase-init';
-import {loadDefaultDataByCollection, pushDefaultData} from './firebase-init';
-import {UserData} from './user-data';
+import { loadDefaultDataByCollection, pushDefaultData } from './firebase-init';
+import { UserData } from './user-data';
 
 
 export abstract class Firebase {
   static firestore: any;
+  static data;
 
   static async initialize() {
     if (!firebase.apps.length) {
@@ -44,16 +45,18 @@ export abstract class Firebase {
   }
 
   static async loadDefaultData() {
-    debugger
     // return initialData[this.getCollectionName('fr')]
     const lng = await UserData.getLng();
-    return loadDefaultDataByCollection(this.getCollectionName(lng));
-
+    this.data = await loadDefaultDataByCollection(this.getCollectionName(lng));
+    return [...this.data];
     // return loadDefaultDataByCollection(this.firestore, this.getCollectionName(lng));
   }
 
   static get(id) {
     id = decodeURIComponent(id);
+    if (this.data && this.data.find) {
+      return this.formatDoc({ ...this.data.find(item => item._id == id) });
+    }
     return this.getCollection().then(collection => {
       const doc = collection.doc(id);
       return doc.get().then(doc => {
@@ -92,6 +95,7 @@ export abstract class Firebase {
       this.filter(collection)
         .onSnapshot((snapshot) => {
           snapshot.query.get().then(snapshot => {
+            this.data = snapshot.docs.map(d => d.data());
             callback(this.formatDocs(snapshot.docs));
           });
         });
@@ -103,7 +107,7 @@ export abstract class Firebase {
   }
 
   static formatDoc(doc: any) {
-    const data = doc.data();
+    const data = typeof doc.data === 'function' ? doc.data() : doc;
     return {
       ...data,
       _id: doc.id, ...this.formatDates(data)

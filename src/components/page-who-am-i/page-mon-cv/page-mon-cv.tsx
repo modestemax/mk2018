@@ -13,7 +13,7 @@ export class PageMonCv {
   private data;
 
 
-  async componentWillLoad() {
+  async componentWillLoad() {;
     this.data = await CVData.get(this._id);
   }
 
