@@ -20,6 +20,7 @@ export class PageForcesDetail {
 
   async loadData() {
     this.content = await ForceAlternanceData.getData(this.forceId);
+    this.content.resources= this.content.resources||[]
   }
 
   render() {

@@ -78,7 +78,7 @@ export class AppRoot {
 
           <ion-route url="/engagements" component="tab-engagements">
             <ion-route component="page-engagements"/>
-            <ion-route url="/:numero" component="page-engagements-detail" componentProps={{goback: '/engagements'}}/>
+            <ion-route url="/:_id/:type_title/:_title" component="page-engagements-detail" componentProps={{goback: '/engagements'}}/>
           </ion-route>
 
           <ion-route url="/actualites" component="tab-actualites">

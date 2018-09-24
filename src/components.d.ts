@@ -124,12 +124,16 @@ export namespace Components {
   }
 
   interface PageEngagementsDetail {
+    '_id': any;
+    '_title': any;
     'goback': string;
-    'numero': number;
+    'type_title': any;
   }
   interface PageEngagementsDetailAttributes extends StencilHTMLAttributes {
+    '_id'?: any;
+    '_title'?: any;
     'goback'?: string;
-    'numero'?: number;
+    'type_title'?: any;
   }
 
   interface PageEngagements {}

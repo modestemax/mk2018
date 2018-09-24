@@ -1,11 +1,13 @@
 [
   {
     "_id":"rouge",
+    "position":1,
+    "publish":true,
     "color": "red",
-    "sousEngagements": [
+    "types": [
       {
         "title": "Politique & Institutions",
-        "details": [
+        "engagements": [
           {
             "title": "Résoudre la crise anglophone en 3 mois",
             "text": "<p>No femmes et meres ne mourrons plus faute de moyens pour une cesarienne</p><p>La cesarienne cessera d’etre un moyen d’arnaque pour extorquer des fond a des femmes qui peivent accoucher normalement</p>",
@@ -70,7 +72,7 @@
       },
       {
         "title": "Politique & Institutions",
-        "details": [
+        "engagements": [
           {
             "title": "Résoudre la crise anglophone en 3 mois",
             "text": "",

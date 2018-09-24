@@ -1,6 +1,6 @@
-import {Component} from '@stencil/core';
+import {Component, State} from '@stencil/core';
 import {EngagementsData} from '../../providers/engagements-data';
-import {__} from "../../providers/i18n";
+import {__} from '../../providers/i18n';
 
 @Component({
   tag: 'page-engagements',
@@ -9,18 +9,14 @@ import {__} from "../../providers/i18n";
 export class PageEngagements {
 
 
-  data: any;
+  @State() data: any = [];
 
   componentWillLoad() {
-    return this.loadData();
-
-  }
-
-  async loadData() {
-    this.data = await EngagementsData.getData();
+    EngagementsData.onChange(data => this.data = data);
   }
 
   render() {
+    let numero = 1;
     return [
       <ion-header>
         <ion-toolbar>
@@ -37,23 +33,23 @@ export class PageEngagements {
       <ion-content>
 
 
-        <ion-list class="engagement-list" lines="full" >
+        <ion-list class="engagement-list" lines="full">
 
-          {this.data.engagements.map(({color, sousEngagements}) => (
-            sousEngagements.map(({title, details}) => (
-              <ion-item-group >
+          {this.data.map(({color, _id, types}) => (
+            types.map(({title: type_title, engagements}) => (
+              <ion-item-group>
                 <ion-item-divider no-padding class="group-header" style={{backgroundColor: color}}>
-                  <ion-item>  <h6 class="title">{title}</h6></ion-item>
+                  <ion-item><h6 class="title">{type_title}</h6></ion-item>
                 </ion-item-divider>
 
-                {details.map(({numero, title, text}) => (
+                {engagements.map(({title, text}) => (
 
-                  <ion-item detail-push class="engagement-text" href={text ? `/engagements/${numero}` : '#'}>
-                    <ion-text class="numero"> {numero}.</ion-text>
+                  <ion-item detail-push class="engagement-text" href={text ? `/engagements/${_id}/${type_title}/${title}` : '#'}>
+                    <ion-text class="numero"> {numero++}.</ion-text>
                     {title}
                     {/*<ion-icon name="rose" item-end></ion-icon>*/}
                     {/*<ion-icon class="item-detail-icon"  ></ion-icon>*/}
-                    </ion-item>
+                  </ion-item>
 
                 ))}
 

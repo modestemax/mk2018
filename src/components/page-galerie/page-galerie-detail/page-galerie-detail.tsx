@@ -18,6 +18,7 @@ export class PageGalerieDetail {
 
   async loadData() {
     this.data = await GaleriesData.getGalerie(this.numero);
+    this.data.resources= this.data.resources||[]
   }
 
   render() {
