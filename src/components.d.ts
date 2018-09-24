@@ -140,11 +140,11 @@ export namespace Components {
   interface PageEngagementsAttributes extends StencilHTMLAttributes {}
 
   interface PageForcesDetail {
-    'forceId': string;
+    '_id': string;
     'goback': string;
   }
   interface PageForcesDetailAttributes extends StencilHTMLAttributes {
-    'forceId'?: string;
+    '_id'?: string;
     'goback'?: string;
   }
 

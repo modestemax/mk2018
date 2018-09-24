@@ -1,6 +1,8 @@
 [
   {
     "_id": "crac",
+    "position":1,
+    "publish":true,
     "name": "crac",
     "img": "orange_4.png",
     "title": "Croire Au Cameroun [CRAC]",
@@ -17,13 +19,17 @@
     ]
   },
   {
-    "_id": "crac",
+    "_id": "crac2",
+    "position": 2,
+    "publish": true,
     "name": "crac",
     "img": "orange_4.png",
     "summary": "qsdq  qdsdqs dqsd"
   },
   {
-    "_id": "crac",
+    "_id": "crac3",
+    "position": 3,
+    "publish": true,
     "name": "crac",
     "img": "orange_4.png",
     "summary": "qsdq  qdsdqs dqsd"

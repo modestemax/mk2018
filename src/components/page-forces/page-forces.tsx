@@ -1,4 +1,4 @@
-import { Component, Prop } from '@stencil/core';
+import { Component, Prop, State } from '@stencil/core';
 import { __ } from '../../providers/i18n';
 import { ForceAlternanceData } from '../../providers/force-alternance';
 
@@ -10,14 +10,10 @@ import { ForceAlternanceData } from '../../providers/force-alternance';
 export class PageForces {
 
   @Prop() goback = '/';
-  private forces;
+  @State() forces=[];
 
   componentWillLoad() {
-    return this.loadData();
-  }
-
-  async loadData() {
-    this.forces = await ForceAlternanceData.getData();
+    ForceAlternanceData.onChange(forces => this.forces = forces);
   }
 
 
@@ -42,9 +38,9 @@ export class PageForces {
 
 
         <ion-list class="bank-list">
-          {this.forces.map(({ name, key, img, summary }) => (
+          {this.forces.map(({ name, _id, img, summary }) => (
             [
-              <ion-item href={`/others/forces/${key}`}>
+              <ion-item href={`/others/forces/${_id}`}>
                 <ion-thumbnail slot="start">
                   <img src={`/assets/img/${img}`}/>
                 </ion-thumbnail>
@@ -63,7 +59,6 @@ export class PageForces {
       </ion-content>
     ];
   }
-
 
 
 }

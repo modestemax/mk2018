@@ -1,6 +1,6 @@
-import {Component, Prop} from '@stencil/core';
-import {ForceAlternanceData} from '../../../providers/force-alternance';
-import {__} from '../../../providers/i18n';
+import { Component, Prop } from '@stencil/core';
+import { ForceAlternanceData } from '../../../providers/force-alternance';
+import { __ } from '../../../providers/i18n';
 
 @Component({
   tag: 'page-forces-detail',
@@ -9,19 +9,17 @@ import {__} from '../../../providers/i18n';
 export class PageForcesDetail {
 
   @Prop() goback = '/';
-  @Prop() forceId = '';
+  @Prop() _id = '';
   private content;
 
 
-  componentWillLoad() {
-    return this.loadData();
+  async componentWillLoad() {
+    this.content = await ForceAlternanceData.get(this._id);
+    this.content.resources = this.content.resources || [];
+
 
   }
 
-  async loadData() {
-    this.content = await ForceAlternanceData.getData(this.forceId);
-    this.content.resources= this.content.resources||[]
-  }
 
   render() {
     return [
@@ -58,7 +56,7 @@ export class PageForcesDetail {
             <p class="text" innerHTML={this.content.desc}/>
           </ion-item>
           <ion-group-item class="resources">
-            {this.content.resources.map(({img, video}) => (
+            {this.content.resources.map(({ img, video }) => (
               <div no-padding class="resource">
                 <img-video img={img} video={video} vtitle={this.content.title}/>
                 <br/>

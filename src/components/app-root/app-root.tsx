@@ -91,7 +91,7 @@ export class AppRoot {
 
           <ion-route url="/others" component="tab-hidden">
             <ion-route url="/forces" component="page-forces"/>
-            <ion-route url="/forces/:forceId" component="page-forces-detail" componentProps={{goback: '/others/forces'}}/>
+            <ion-route url="/forces/:_id" component="page-forces-detail" componentProps={{goback: '/others/forces'}}/>
             <ion-route url="/faq" component="page-faq"/>
             <ion-route url="/don" component="page-don"/>
             <ion-route url="/contact" component="page-contact"/>
