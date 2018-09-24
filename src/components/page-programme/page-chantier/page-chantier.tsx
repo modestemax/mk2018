@@ -1,5 +1,5 @@
-import { Component, Prop, State } from '@stencil/core';
-import { ChantierData } from '../../../providers/chantier-data';
+import {Component, Prop, State} from '@stencil/core';
+import {ChantierData} from '../../../providers/chantier-data';
 // import { ConferenceData } from '../../providers/conference-data';
 // import { UserData } from '../../providers/user-data';
 
@@ -10,7 +10,7 @@ import { ChantierData } from '../../../providers/chantier-data';
 export class PageChantier {
 
   @Prop() goback = '/';
-  @Prop() _id;
+  @Prop() _id: any;
   @State() data: any;
 
   async componentWillLoad() {
@@ -43,7 +43,7 @@ export class PageChantier {
                 <ion-thumbnail class="img-wrapper"><img src={`/assets/img/${this.data.img}`} class="slide-image"/>
                 </ion-thumbnail>
               </ion-card-header>
-              <hr class="thematique" style={{ height: '15px', backgroundColor: this.data.color }}/>
+              <hr class="thematique" style={{height: '15px', backgroundColor: this.data.color}}/>
               <ion-card-content class="center-text">
                 <ion-label>
                   <p innerHTML={this.data.label}/>
@@ -55,7 +55,7 @@ export class PageChantier {
             </ion-card>
           </ion-list-header>
 
-          {this.data.details.map(({ title, key }) => (
+          {this.data.details.map(({title, key}) => (
             <chantier-sous-titre color={this.data.color} text={title} _id={this.data._id} key={key}/>
           ))}
         </ion-list>
