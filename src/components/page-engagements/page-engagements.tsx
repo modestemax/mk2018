@@ -11,8 +11,14 @@ export class PageEngagements {
 
   @State() data: any = [];
 
-  componentWillLoad() {
+
+  async componentWillLoad() {
+    this.data = await EngagementsData.loadDefaultData();
+  }
+
+  componentDidLoad() {
     EngagementsData.onChange(data => this.data = data);
+
   }
 
   render() {

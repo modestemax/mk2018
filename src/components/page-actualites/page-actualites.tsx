@@ -1,7 +1,6 @@
-import { Component, State, } from '@stencil/core';
-// import { ConferenceData } from '../../providers/conference-data';
-// import { UserData } from '../../providers/user-data';
-import { News } from '../../providers/news';
+import {Component, State,} from '@stencil/core';
+import {News} from '../../providers/news';
+import {__} from "../../providers/i18n";
 
 @Component({
   tag: 'page-actualites',
@@ -10,17 +9,22 @@ import { News } from '../../providers/news';
 export class PageActualites {
   @State() actualites = [];
 
-
-  componentWillLoad() {
-    News.onChange(actualites => this.actualites = actualites);
+  async componentWillLoad() {
+    this.actualites = await News.loadDefaultData();
   }
+
+  componentDidLoad() {
+    News.onChange(actualites => this.actualites = actualites);
+
+  }
+
 
   render() {
     return [
       <ion-header>
         <ion-toolbar>
           <ion-title>
-            Actualités
+            {__('ACTUALITÉS')}
           </ion-title>
 
           <ion-buttons slot="end">

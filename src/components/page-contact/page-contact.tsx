@@ -11,7 +11,11 @@ export class PageContact {
   @State() contacts = [];
 
 
-  componentWillLoad() {
+  async componentWillLoad() {
+    this.contacts = await ContactsData.loadDefaultData();
+  }
+
+  componentDidLoad() {
     ContactsData.onChange(([contact]) => this.contacts = contact.contacts);
 
   }

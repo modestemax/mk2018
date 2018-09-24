@@ -11,15 +11,18 @@ export class PageGalerie {
 
   @State() galeries: any = [];
 
-  componentWillLoad() {
-    GaleriesData.onChange(galeries => this.galeries = galeries);
 
+  async componentWillLoad() {
+    this.galeries = await GaleriesData.loadDefaultData();
+  }
+
+  componentDidLoad() {
+    GaleriesData.onChange(galeries => this.galeries = galeries);
 
   }
 
-
   render() {
-     return [
+    return [
       <ion-header>
         <ion-toolbar>
           <ion-title>
@@ -37,7 +40,7 @@ export class PageGalerie {
 
         <ion-list class="galerie-list" lines="full">
 
-          {this.galeries.map(({title,_id, details}) => (
+          {this.galeries.map(({title, _id, details}) => (
             <ion-item-group>
               <ion-item-divider no-padding class="group-header">
                 <ion-item>

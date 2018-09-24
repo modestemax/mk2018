@@ -12,8 +12,13 @@ export class PageForces {
   @Prop() goback = '/';
   @State() forces=[];
 
-  componentWillLoad() {
+  async componentWillLoad() {
+    this.forces = await ForceAlternanceData.loadDefaultData();
+  }
+
+  componentDidLoad() {
     ForceAlternanceData.onChange(forces => this.forces = forces);
+
   }
 
 

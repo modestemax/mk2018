@@ -12,12 +12,14 @@ export class PageDon {
   @Prop() goback = '/';
   @State() banks = [];
 
+  async componentWillLoad() {
+    this.banks = await BankData.loadDefaultData();
+  }
 
-  componentWillLoad() {
+  componentDidLoad() {
     BankData.onChange(banks => this.banks = banks);
 
   }
-
 
   render() {
     return [

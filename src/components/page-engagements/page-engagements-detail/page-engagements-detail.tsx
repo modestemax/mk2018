@@ -21,9 +21,8 @@ export class PageEngagementsDetail {
   }
 
   async loadData() {
-    debugger;
     const data = await EngagementsData.get(this._id);
-    const type_engagement:any = data && data.types.find(type => type.title === decodeURIComponent(this.type_title));
+    const type_engagement: any = data && data.types.find(type => type.title === decodeURIComponent(this.type_title));
     const engagement = type_engagement && type_engagement.engagements.find(e => e.title === decodeURIComponent(this._title));
     this.type_engagement = type_engagement || {};
     this.engagement = engagement || {};

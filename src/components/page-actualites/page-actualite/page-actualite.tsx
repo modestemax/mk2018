@@ -17,7 +17,7 @@ export class PageActualite {
   @Prop() _id: any;
 
 
-  async componentWillLoad() {
+  async componentWillLoad() {debugger
     this.actualite = await News.get(this._id);
   }
 
