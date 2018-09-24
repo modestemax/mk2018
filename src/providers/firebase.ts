@@ -1,7 +1,8 @@
 import firebase from 'firebase/app';
 import 'firebase/firestore';
 import {config} from '../app-settings/firebase';
-import {loadDefaultData} from './firebase-init';
+// import {loadDefaultData, initialData} from './firebase-init';
+import {loadDefaultDataByCollection, pushDefaultData} from './firebase-init';
 import {UserData} from './user-data';
 
 
@@ -15,7 +16,7 @@ export abstract class Firebase {
       this.firestore.settings({
         timestampsInSnapshots: true
       });
-      firebase.firestore().enablePersistence()
+      await firebase.firestore().enablePersistence()
         .catch(err => {
           if (err.code === 'failed-precondition') {
             // Multiple tabs open, persistence can only be enabled
@@ -28,10 +29,27 @@ export abstract class Firebase {
           }
           // throw err;
         });
-      await loadDefaultData(this.firestore);
+      // return  loadDefaultData;
+      // await loadDefaultData(this.firestore);
     } else {
       this.firestore = firebase.firestore();
     }
+  }
+
+  static async pushDefaultData() {
+    // return initialData[this.getCollectionName('fr')]
+    pushDefaultData(this.firestore);
+    // const lng = await UserData.getLng();
+    // return loadDefaultDataByCollection(this.firestore, this.getCollectionName(lng));
+  }
+
+  static async loadDefaultData() {
+    debugger
+    // return initialData[this.getCollectionName('fr')]
+    const lng = await UserData.getLng();
+    return loadDefaultDataByCollection(this.getCollectionName(lng));
+
+    // return loadDefaultDataByCollection(this.firestore, this.getCollectionName(lng));
   }
 
   static get(id) {
@@ -61,7 +79,7 @@ export abstract class Firebase {
     return this.firestore.collection(this.getCollectionName(lng));
   }
 
-  static getCollectionName(lng) {
+  static getCollectionName(lng): string {
     throw new Error('Not Implemented ' + lng);
   }
 

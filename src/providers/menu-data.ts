@@ -1,5 +1,5 @@
 // import {Data} from './data';
-import {I18nData, __} from './i18n';
+import { /*I18nData,*/ __ } from './i18n';
 import _ from 'lodash';
 //
 // export class Menu extends Data {
@@ -24,8 +24,8 @@ import _ from 'lodash';
 // }
 
 
-import {Firebase} from './firebase';
-import {UserData} from './user-data';
+import { Firebase } from './firebase';
+import { UserData } from './user-data';
 
 export class Menu extends Firebase {
 
@@ -38,18 +38,23 @@ export class Menu extends Firebase {
     return this.get(lng);
   }
 
+  static async getDefaultMenu() {
+    const menus = await this.loadDefaultData();
+    return _.values(_.groupBy(menus[0].items, 'group'));
+  }
+
   static formatDoc(doc: any) {
     const menu: any = super.formatDoc(doc);
     return _.values(_.groupBy(menu.items, 'group'));
   }
 
   static async loadTabs(): Promise<any> {
-    await I18nData.loadStrings();
+    // await I18nData.loadStrings();
     return [
-      {label: 'Kamto', 'icon': 'person', name: 'tab-who-am-i'},
-      {label: __('CHANTIERS'), 'icon': 'construct', name: 'tab-programme'},
-      {label: __('ENGAGEMENTS'), 'icon': 'clipboard', name: 'tab-engagements'},
-      {label: __('ACTUALITÉS'), 'icon': 'megaphone', name: 'tab-actualites'}
+      { label: 'Kamto', 'icon': 'person', name: 'tab-who-am-i' },
+      { label: __('CHANTIERS'), 'icon': 'construct', name: 'tab-programme' },
+      { label: __('ENGAGEMENTS'), 'icon': 'clipboard', name: 'tab-engagements' },
+      { label: __('ACTUALITÉS'), 'icon': 'megaphone', name: 'tab-actualites' }
     ];
   }
 }

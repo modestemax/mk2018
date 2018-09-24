@@ -25,22 +25,20 @@ export class AppRoot {
 
 
   @State() menus: any = [];
+  @State() strings: any = [];
 
 
   async componentWillLoad() {
     this.userLng = (await UserData.getLng()) || this.userLng;
     await Firebase.initialize();
+    // ---debug only
+    // await Firebase.pushDefaultData();
+    // --------------
 
-    await I18nData.loadStrings();
-    this.menus = await Menu.getMenu();
+    await I18nData.loadDefaultStrings();
 
-    Menu.onChange(async () => {
-      this.menus = await Menu.getMenu()
-    });
+    this.menus = await Menu.getDefaultMenu();
 
-    I18nData.onLngChanged.push(async () => {
-      this.menus = await Menu.getMenu();
-    });
 
     this.hasSeenTutorial = this.isServer
       ? true
@@ -52,8 +50,16 @@ export class AppRoot {
     try {
       await SplashScreen.hide();
     } catch {
-      return;
+      // return;
     }
+    Menu.onChange(async () => {
+      this.menus = await Menu.getMenu();
+    });
+    I18nData.onChange(strings => this.strings = strings);
+
+    // I18nData.onLngChanged.push(async () => {
+    //   this.menus = await Menu.getMenu();
+    // });
   }
 
 
@@ -78,7 +84,8 @@ export class AppRoot {
 
           <ion-route url="/engagements" component="tab-engagements">
             <ion-route component="page-engagements"/>
-            <ion-route url="/:_id/:type_title/:_title" component="page-engagements-detail" componentProps={{goback: '/engagements'}}/>
+            <ion-route url="/:_id/:type_title/:_title" component="page-engagements-detail"
+                       componentProps={{goback: '/engagements'}}/>
           </ion-route>
 
           <ion-route url="/actualites" component="tab-actualites">

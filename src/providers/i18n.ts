@@ -36,14 +36,19 @@ const DEFAULT_LNG = 'fr';
 export class I18nData extends Firebase {
   static strings: any;
   static lng = DEFAULT_LNG
-  static onLngChanged: any = [];
+  // static onLngChanged: any = [];
 
   static getCollectionName() {
     return 'i18n';
   }
 
-  static async loadStrings() {
-    this.strings = this.strings || await this.getAll();
+  // static async loadStrings() {
+  //   this.strings = this.strings || await this.getAll();
+  // }
+
+  static async loadDefaultStrings() {
+    const strings = await this.loadDefaultData();
+    this.strings = _.mapValues(_.groupBy(strings, '_id'), list => list[0]);
   }
 
   static formatDocs(docs: any) {
