@@ -1,23 +1,23 @@
 [
   {
-    "_id": "notre_ideologie",
     "position": 0,
-    "publish": true,
+    "_id": "Idéologie",
+    "publish":true,
     "color": "rgb(132,151,176)",
     "pageTitle": "Idéologie",
-    "img": "ideology5.jpg",
+    "img": "ideologie.jpg",
     "label": "Notre Idéologie",
     "title": "LE SOCIAL LIBERALISME",
     "text": "Afin de mettre chaque Camerounais au cœur de l'action politique pour la modernisation de notre pays.",
     "details": []
   },
   {
-    "_id": "Politique_Institutions",
     "position": 1,
+    "_id": "Politique_Institutions",
     "publish": true,
     "color": "rgb(198,90,17)",
     "pageTitle": "Politique et Institutions",
-    "img": "ideology5.jpg",
+    "img": "chantier1.jpg",
     "label": "Chantier No 1",
     "title": "CHANTIER INSTITUTIONNEL ET POLITIQUE",
     "text": "Organiser le vivre ensemble et moderniser les Institutions de la République.",
@@ -323,119 +323,1751 @@
     ]
   },
   {
-    "_id": "Jeunesse_Education",
     "position": 2,
+    "_id": "Jeunesse_Education",
     "publish": true,
     "color": "rgb(30,130,76)",
     "pageTitle": "Jeunesse et Education",
-    "img": "ideology5.jpg",
+    "img": "chantier2.jpg",
     "label": "Chantier No 2",
     "title": "CHANTIER JEUNESSE ET ÉDUCATION",
     "text": "Des Camerounais bien formés et aptes à la compétition internationale.",
-    "details": []
-  },
-  {
-    "_id": "Economie_Production",
-    "position": 3,
-    "publish": true,
-    "color": "rgb(30,139,195)",
-    "pageTitle": "Economie et Production",
-    "img": "ideology5.jpg",
-    "label": "Chantier No 3",
-    "title": "CHANTIER ECONOMIE ET PRODUCTION",
-    "text": "Le Cameroun un havre de paix et de prospérité.",
-    "details": []
-  },
-  {
-    "_id": "Social_Solidarité",
-    "position": 4,
-    "publish": true,
-    "color": "rgb(145,61,136)",
-    "pageTitle": "Social et Solidarité",
-    "img": "ideology5.jpg",
-    "label": "Chantier No 4",
-    "title": "CHANTIER SOCIAL ET DE SOLIDARITÉ",
-    "text": "Santé pour tous, valorisation les artistes et promotion du développement sportif.",
-    "details": []
-  },
-  {
-    "_id": "Relations_Extérieures",
-    "position": 5,
-    "publish": true,
-    "color": "rgb(150, 35, 35)",
-    "pageTitle": "Relations Extérieures",
-    "img": "ideology5.jpg",
-    "label": "Chantier No 5",
-    "title": "CHANTIER DES RELATIONS EXTÉRIEURES",
-    "text": "Une diplomatie de présence, Le levier Diaspora pleinement activé.",
     "details": [
       {
-        "title": "UNE POLITIQUE ÉTRANGÈRE DE POSITIONNEMENT",
-        "key": "politique-etrangere",
+        "title": "EDUCATION",
+        "key": "education",
         "details": [
           {
-            "title": "Affirmer le Cameroun sur la scène régionale, continentale et mondiale",
+            "title": "EDUCATION - Option prioritaire pour la formation scientifique et technique et l’innovation permanente",
             "items": [
-              "Action chiffrée promesse 1",
-              "Action chiffrée promesse 1",
-              "Action chiffrée promesse 1"
-            ]
-          },
-          {
-            "title": "Se positionner stratégiquement sur les grands dossiers internationaux",
-            "items": [
-              "Action chiffrée promesse 1",
-              "Action chiffrée promesse 1",
-              "Action chiffrée promesse 1"
-            ]
-          },
-          {
-            "title": "Etablir des alliances traduisant une bonne compréhension des enjeux internationaux et des intérêts du pays à court, à moyen et à long terme",
-            "items": [
-              "Action chiffrée promesse 1",
-              "Action chiffrée promesse 1",
-              "Action chiffrée promesse 1"
-            ]
-          },
-          {
-            "title": "Marquer notre fort attachement à la solidarité régionale et continentale africaine",
-            "items": [
-              "Action chiffrée promesse 1",
-              "Action chiffrée promesse 1",
-              "Action chiffrée promesse 1"
+              "Réformer complètement le système éducatif pour l'orienter vers une éducation entièrement tournée vers des objectifs de développement en amenant très tôt nos jeunes écoliers au raisonnement scientifique, à l'éveil de leur intérêt pour les objets matériels créés par l'esprit humain et l'innovation.",
+              "Faire participer les jeunes écoliers dès le cycle secondaire à un projet technologique de leur niveau (sous l'encadrement de leur enseignant), dont la pertinence et la qualité entreront pour beaucoup dans leur évaluation annuelle.",
+              "Rendre obligatoire l’enseignement primaire et secondaire jusqu’à la fin de 1er cycle du secondaire",
+              "Assurer la gratuité de la scolarité jusqu’à la fin du 2nd cycle secondaire dans les collèges et lycées publics",
+              "Supprimer les frais exigibles et les frais d'APEE (associations de parents d’élèves et d'enseignants) dans l’ensemble du territoire. ",
+              "Intégrer dans la Fonction publique tous les enseignants vacataires (instituteurs et professeurs de lycées) qui désirent faire carrière dans l'enseignement",
+              "Combler le déficit dans le corps des enseignants en recrutant massivement chaque année de nouveauxenseignants et en les affecter prioritairement dans l'arrière-pays",
+              "Revoir le programme scolaire afin de mettre l’accent sur l’enseignement technique et professionnel",
+              "Familiariser les enfants dès la maternelle à l'outil informatique et développer leur capacité à rechercher l'information sur les réseaux en toute sécurité",
+              "Réduire les filières généralistes, des sciences humaines et sociales dans les universités existantes, au profit des filières techniques et technologiques qui seront choisies et renouvelées en tant que de besoin en fonction des ambitions de développement du pays",
+              "Orienter les travaux de recherche vers la résolution des problèmes auxquels le pays et la société sont directement confrontés et la fourniture aux filières industrielles stratégiques que notre gouvernement mettra en place, des ingénieurs et techniciens qualifiés dont elles auront besoin",
+              "Doter chaque commune d’au moins une école primaire publique disposant d’une salle informatique et d’un lycée d’enseignement technique et technologique ayant au moins un laboratoire scientifique et un laboratoire d’informatique",
+              "Doter chaque Région (ou entité fédérée) du pays d'au moins une Université des sciences et technologies comportant des établissements universitaires en rapport avec le potentiel agricole, les ressources minières et les opportunités industrielles et technologiques identifiées dans cette région (ou entité fédérée)",
+              "Encourager l’excellence en permettant que tout examen ou concours officiel à quelque niveau que ce soit, soit régi par le principe de la méritocratie. Les règles de réussite seront les mêmes pour tous les camerounais quelles que soient leurs origines",
+              "Mettre en place des programmes spéciaux pour accompagner des groupes de populations défavorisées afin qu’elles accèdent aussi aux standards d’excellence nationaux dans tous les domaines"
             ]
           }
         ]
       },
       {
-        "title": "METTRE LA DIPLOMATIE AU SERVICE DE L’ECONOMIE",
-        "key": "diplomatie"
+        "title": "FORMATION",
+        "key": "formation",
+        "details": [
+          {
+            "title": "Offrir à tout jeune, diplômé ou non, une chance d’accéder à un métier",
+            "items": [
+              "Créer dans chaque Région (ou entité fédérée) des Instituts de formation professionnelle et technologique qui permettront à celui qui est nanti d'un diplôme et qui ne trouve pas d'emploi ou qui voudrait changer de métier, de suivre une formation à un métier précis pour une durée pouvant aller de 6 à 24 mois au maximum",
+              "Confier la gestion de ces Instituts à la Région (ou l'entité fédérée) en partenariat avec le secteur privé,  sous la tutelle provisoire de l'Etat (pendant une période de 5 à 10 ans) qui veillera à l'atteinte des objectifs fixé dans le cadre de la lutte contre le chômage des jeunes",
+              "Créer dans chaque Commune des Centres de métiers qui permettront à un jeune non diplômé de faire l'apprentissage d'un métier en rapport avec ses aptitudes par le compagnonnage d'anciens expérimentés intervenant dans ces Centres",
+              "Confier la gestion de ces Centres aux Communes en partenariat avec le secteur privé, sous la tutelle provisoire de l'Etat (pendant une période de 5 à 10 ans), qui veillera à l'atteinte des objectifs fixés dans le cadre de la lutte contre le chômage des jeunes",
+              "Les jeunes sortis des Instituts de formation et des Centres de métiers qui ont des projets pertinents pour s'installer à leur propre compte recevront des accompagnements de l'Etat combinés à ceux des Régions (ou entités fédérées) ou des municipalités, selon le cas",
+              "Décerner annuellement un Prix aux meilleurs apprentis",
+              "Organiser une campagne nationale de formation populaire, pour les jeunes ou les moins jeunes qui n’ont pas eu l’occasion d’aller à l’école, qui permettra à tout camerounais d’acquérir un minimum de connaissance pour avoir une certaine autonomie dans la société"
+            ]
+          }
+        ]
       },
       {
-        "title": "CREER UN ENVIRONNEMENT FAVORABLE AU « RETOUR DES CERVEAUX »",
-        "key": "retour-cerveaux"
+        "title": "RECHECHE et INNOVATION",
+        "key": "recheche-innovation",
+        "details": [
+          {
+            "title": "Offrir un encadrement institutionnel et financier aux jeunes scientifiques et techniciens",
+            "items": [
+              "Créer des pôles d’excellence spécialisés pour la recherche, équipés de laboratoires de niveau international",
+              "Faire rêver les jeunes camerounais, en les mettant dans les conditions idoines pour faire éclore leurs talents",
+              "Créer une Académie Nationale Camerounaise (ANC) comprenant notamment une Section Sciences et une Section Arts et Lettres. Celle-ci aura pour rôle notamment : pour la section Sciences, de définir les axes de la recherche scientifique et technologique prioritaire dont le suivi sera assuré par l’ANRI et de promouvoir cette recherche par la distinction des chercheurs; pour la section Arts et Lettres, de veiller au respect des normes de la langue nationale camerounaise, de promouvoir la création artistique et littéraire camerounaises notamment par l'institution des distinctions et autres récompenses",
+              "Créerons une Agence Nationale de la Recherche et de l'Innovation (ANRI) qui sera chargée de la coordination de la recherche et de l’innovation permanente dans le pays",
+              "Signer des conventions de projets avec chaque structure publique de recherche ou de formation technique pour la mise au point d'un produit précis dans un délai déterminé",
+              "Décerner chaque année des prix nationaux de la Recherche et de l’Inovation"
+            ]
+          }
+        ]
       },
       {
-        "title": "FAIRE LES REFORMES NECESSAIRES POUR IMPLIQUER LES CAMEROUNAIS DE L’ETRANGER DANS LA VIE POLITIQUE NATIONALE",
-        "detail": "politique-national"
+        "title": "DEMUNIS et EXCELLENCE",
+        "key": "demunis-excellence",
+        "details": [
+          {
+            "title": "Soutien à l'éducation des plus démunis et à l'excellence",
+            "items": [
+              "Offrir les fournitures scolaires aux jeunes Camerounais issus de familles nécessiteuses dans le cycle secondaire, sur la base de l'enquête sociale.",
+              "Octroyer des bourses d'excellence aux jeunes Camerounais issus de familles modestes (sur la base de l'enquête sociale) ayant fait montre d'excellence scolaire, afin de leur permettre de poursuivre leurs études supérieures",
+              "Octroyer des bourses spéciales aux jeunes Camerounais ayant fait montre d'excellence scolaire, pour faire des études dans des domaines stratégiques déterminés par les pouvoirs publics",
+              "Octroyer des bourses d'études aux jeunes Camerounais vivant avec un handicap issus de familles modestes tant dans le cycle secondaire que dans le cycle supérieur, sur la base d'une enquête sociale"
+            ]
+          }
+        ]
       },
       {
-        "title": "CANALISER LE POTENTIEL EXCEPTIONNEL DE LA DIASPORA CAMEROUNAISE POUR LE METTRE AU SERVICE DU DEVELOPPEMENT NATIONAL",
-        "key": "developpement-national"
+        "title": "JEUNESSE ET PANAFRICANISME",
+        "key": "jeunesse-panafricanisme",
+        "details": [
+          {
+            "title": "Jeunesse et Panafricanisme",
+            "items": [
+              "Appeler au lancement dès que possible d'un mouvement Jeunesse Fédéraliste d’Afrique Centrale pour la construction de la Fédération d'Afrique Centrale, étape pragmatique vers les Etats-Unis d'Afrique"
+            ]
+          }
+        ]
       }
     ]
   },
   {
-    "_id": "Financement_Programme",
+    "position": 3,
+    "_id": "Economie_Production",
+    "publish": true,
+    "color": "rgb(30,139,195)",
+    "pageTitle": "Economie et Production",
+    "img": "chantier3.jpg",
+    "label": "Chantier No 3",
+    "title": "CHANTIER ECONOMIE ET PRODUCTION",
+    "text": "Le Cameroun un havre de paix et de prospérité.",
+    "details": [
+      {
+        "title": "ÉCONOMIE",
+        "key": "economie",
+        "details": [
+          {
+            "title": "LION ÉCONOMIQUE - Faire du Cameroun, le Lion économique d'Afrique",
+            "items": [
+              "Accroître la production et la productivité dans tous les secteurs de la production (notamment agriculture, élevage, industrie)",
+              "Atteindre une croissance à deux chiffres",
+              "Entrer dans le Top 50 du Doing Business et être parmi les 10 premiers pays africains qui attirent le plus d'investissements directs étrangers (IDE)"
+            ]
+          },
+          {
+            "title": "LION ÉCONOMIQUE - Un environnement économique attractif et compétitif",
+            "items": [
+              "Rendre l’environnement économique camerounais attractif pour les investisseurs nationaux et étrangers",
+              "Établir un plan national pour la croissance",
+              "Augmenter considérablement le nombre d’entreprises camerounaises parallèlement à la formalisation progressive du secteur informel",
+              "Renforcer et développer la Bourse de valeurs du Cameroun (DSX) pour en faire un véritable instrument du financement de l’économie nationale de niveau continental",
+              "Mobiliser l’épargne nationale et de la diaspora camerounaise pour le financement de l’économie",
+              "Revoir les accords internationaux qui pourraient constituer des entraves au développement économique du pays",
+              ""
+            ]
+          },
+          {
+            "title": "LION ÉCONOMIQUE - Entrer dans le Top 50 des meilleurs environnements économiques de DOING BUSINESS à travers plusieurs mesures",
+            "items": [
+              "Lutte impitoyable contre la corruption",
+              "Bonne gouvernance",
+              "Réduction de la part de la monnaie scripturale dans l’économie",
+              "Encouragement et le renforcement des échanges électroniques pour la facturation et les paiements",
+              "Simplification de la fiscalité en vue de la rendre plus lisible",
+              "Mise en place d’une politique foncière pour permettre un accès sécurisé à la propriété foncière",
+              "Définition d’une stratégie d’aménagement du territoire",
+              "Création des infrastructures et des équipements requis pour le décollage économique du pays",
+              "Réforme du système éducatif en vue de mettre l’accent sur l’enseignement technique et la formation professionnelle",
+              "Introduction d’une véritable sécurité sociale avec une assurance santé minimum pour tous",
+              "Accroissement de la productivité dans nos entreprises et dans nos administrations",
+              "Modernisation de la gouvernance économique"
+            ]
+          },
+          {
+            "title": "ORGANISATION, TRAVAIL, DISCIPLINE - De l’informel au formel",
+            "items": [
+              "Encourager et stimuler la création et l’essor des PME et des TPE pour en faire les principaux pourvoyeurs d’emplois",
+              "Valoriser les expériences ayant montré leur capacité à générer des emplois stables et rémunérateurs. Encourager ainsi les jeunes du secteur informel à s’y lancer, l’objectif étant de leur permettre d'avoir une activité stable et rémunératrice",
+              "Structurer le secteur informel de facon concertée, d'une part, par l'identification des acteurs du secteur, afin de leur fournir l'accompagnement nécessaire à leur développement, d'autre part, par la mise en place d’une fiscalité adaptée",
+              "Mettre effectivement en place le système préconisé par l’OHADA notamment l’introduction du Système Minimal de Trésorerie pour les très petites entreprises",
+              "Créer le statut de travailleur indépendant pour les patrons d’entreprises afin de leur ouvrir le droit à la sécurité sociale",
+              "Améliorer le niveau de performance et de productivité des TPE et des PE par des formations professionnelles ciblées pour qu’elles puissent créer au moins un à deux nouveaux emplois dans une période de deux à cinq ans",
+              ""
+            ]
+          },
+          {
+            "title": "CADRE INSTITUTIONNEL POUR LE FINANCEMENT - Douala – le Manhattan de l’Afrique Centrale",
+            "items": [
+              "Faire de Douala la place financière du Cameroun et le Manhattan de l’Afrique Centrale",
+              "Faire du plateau de Joss l’épicentre de cette capitale financière qui devra drainer les capitaux pour la reconstruction du Cameroun"
+            ]
+          },
+          {
+            "title": "CADRE INSTITUTIONNEL POUR LE FINANCEMENT - Le fonds souverain d’investissement (FSI)",
+            "items": [
+              "Constituer un fonds souverain pour impulser l’investissement dans les secteurs stratégiques vers lesquels le secteur privé ne peut investir ou ne trouve pas un intérêt immédiat à investir aujourd’hui",
+              "Fonds consititué des réserves mises de côté en vue, non seulement de se prémunir contre les incertitudes du futur, mais également et surtout de garantir un avenir plus radieux aux générations futures",
+              "Fonds résultant dans un premier temps de la réforme de la SNI et alimenté progressivement par de nouvelles recettes tirées de l’exploitation des ressources naturelles et d’autres types de participations à définir"
+            ]
+          },
+          {
+            "title": "ACCORDS INTERNATIONAUX JUSTES ET ÉQUITABLES - Le FCFA",
+            "items": [
+              "Sortir du Fcfa à travers une marche bien préparée",
+              "Décider de la voie à suivre : créer une monnaie propre avec les 15 Etats membres de la Zone franc d'Afrique centrale et d'Afrique de l'Ouest ? Créer une monnaie propre aux 6 Etats membres de la BEAC ? Créer une monnaie nationale propre au Cameroun ?",
+              "Confier l'examen des différentes options à un Comité d'experts pour obtenir les avis autorisés sur chacune des options, afin de prendre la meilleure décision possible dans l'intérêt de notre pays"
+            ]
+          },
+          {
+            "title": "ACCORDS INTERNATIONAUX JUSTES ET ÉQUITABLES - Les APE",
+            "items": [
+              "APE (Accord de Partenariat Economique entre le Cameroun et l’Union Européenne)  = un libre accès au marché européen pour quelques produits du Cameroun (pour l'essentiel forestiers et agricoles), contre le démantèlement progressif des barrières douanières au profit des importations de produits provenant de l’Union Européenne",
+              "Réexaminé cet accord fortement déséquilibré et qui ne permet pas l'essor industriel du Cameroun"
+            ]
+          },
+          {
+            "title": "Politique de l’emploi",
+            "items": [
+              "RÉSORBER LE CHÔMAGE DE MASSE - Mettre l’accent en premier lieu sur le secteur primaire, agricole, afin d’augmenter la production et la productivité : l’agriculture représente le premier gisement d’emplois qui sera soutenu, tant du côté de l'agriculture familiale avec la petite mécanisation, que de celui de l'agriculture des grandes exploitations avec la grande mécanisation",
+              "RÉSORBER LE CHÔMAGE DE MASSE - Développer le secteur secondaire pour le rendre en mesure d’absorber la production du secteur primaire ainsi que l’excédent de main d’œuvre qui s’y dégagera progressivement suite à l’accroissement de sa productivité",
+              "RÉSORBER LE CHÔMAGE DE MASSE - Encourager, soutenir l’essor et l’inventivité du secteur tertiaire pour lui permettre de fournir aux deux autres secteurs les outils d’optimisation de leurs exploitations tout en procurant toujours plus de services utiles aux populations : les services relevant du secteur de la santé et d’aide aux personnes, les artistes et sportifs, les enseignants seront des gisements d’emplois à soutenir",
+              "UNE APPROCHE SOCIALE LIBÉRALE - L’innovation ressort fondamental de la croissance et du progrès par les changements qu’elle apporte",
+              "UNE APPROCHE SOCIALE LIBÉRALE - L’entrepreneur Acteur central",
+              "UNE APPROCHE SOCIALE LIBÉRALE - Les entreprises (le secteur privé) appellé à créer et de développer de plus en plus d’activités pourvoyeuses d’emplois puisque les capacités d’embauche de l’Etat lui-même sont limitées",
+              "UNE APPROCHE SOCIALE LIBÉRALE - Rôle de l’Etat = créer et entretenir les conditions d’épanouissement desdites entreprises (infrastructures, fiscalité, législation)",
+              "UNE APPROCHE SOCIALE LIBÉRALE - L’Etat fournira également quelques outils et informations qui font défaut à nos entrepreneurs, par exemple en les dotant des qualités managériales (amourde l’innovation et aptitudes managériales) qui feront d’eux de véritables capitaines d’industrie dans 5 ou 10 ans",
+              "UNE APPROCHE SOCIALE LIBÉRALE - Création massive d'emplois dans toutes les régions du pays en s'appuyant sur les efforts complémentaires des collectivités territoriales décentralisées (ou des Etats fédérés), qui maîtrisent mieux les réalités de leurs territoires et de leurs populations",
+              "UNE APPROCHE SOCIALE LIBÉRALE - Cooperation des autorités et institutions centrales avec les autorités des collectivités décentralisées (ou des entités fédérées)  jouissant d'une large autonomie, en vue de la création et l’accompagnement des activités pourvoyeuses d'emplois au niveau des terroirs",
+              "UNE APPROCHE SOCIALE LIBÉRALE - Prendre (l’Etat) une part d’initiative, dans les filières stratégiques et les projets structurants, en y investissant, à travers le fonds souverain d’investissement (FSI), pour rassurer et encourager les entrepreneurs à le suivre",
+              "UNE APPROCHE SOCIALE LIBÉRALE - Généralisation de la formation professionnelle, réforme de certaines entreprises et organismes relevant du portefeuille de l’Etat ou création de nouveaux organismes seront les principaux leviers à actionner",
+              "UNE APPROCHE SOCIALE LIBÉRALE - Transformer le FNE en une AGENCE NATIONALE POUR L'EMPLOI ET LA REINSERTION PROFESSIONNELLE (ANERP) qui n'aura plus de mission de formation, mais celles d'animation du marché de l'emploi, de la collecte des données sur l'emploi et d'accompagnement des jeunes sortis des Instituts de Formation professionnelle et Technologique et des Centres de métiers dans l'auto-emploi"
+            ]
+          },
+          {
+            "title": "Formation professionnelle",
+            "items": [
+              "Les jeunes (diplômés ou non), n’ont souvent pas les qualifications professionnelles requises pour rentrer dans le monde du travail formel",
+              "Venir à bout du chômage des jeunes en leur donnant les clés d'accès dans le monde du travail par le biais des passerelles de formations techniques et pratiques ciblées, telles qu'exposées dans le chantier éducatif",
+              "Fournir les savoir-faire à ces jeunes en financant, à travers une réforme du FEICOM, la construction et l’équipement des Instituts de formation professionnelle et technologiques dans tous les départements, et des Centres de métiers dans toutes les communes du Cameroun, au lieu de continuer à construire et équiper les somptueux hôtels de ville à l’utilité contestable dans les villages"
+            ]
+          },
+          {
+            "title": "Optimisation des recettes et réduction des dépenses de l’Etat",
+            "items": [
+              "Compenser les pertes financières de l’Etat dues à l’affectation d’une partie de ses recettes pétrolières et gazières à l’exportation en engeant un certain nombre d’actions",
+              "Elargir de l’assiette fiscale",
+              "Améliorer l'administration de l’impôt à travers une nécessaire réforme fiscale et douanière",
+              "Poursuivre l’assainissement du fichier solde de l’Etat",
+              "Eradiquer les commandes et marchés fictifs et/ou surfacturés",
+              "Restreindre les évacuations sanitaires des hauts responsables et autres privilégiés du régime",
+              "Rationaliser les missions à l’étranger et les véhicules administratifs"
+            ]
+          },
+          {
+            "title": "Objectifs chiffrés en termes de création d’emplois",
+            "items": [
+              "Objectifs pour un mandat: création d'au moins 1 million d'emplois",
+              "100.000 postes d’enseignants et formateurs supplémentaires dans le chantier de l’éducation et la formation",
+              "500 000 emplois salariés dans le chantier de la production, dont 400 000 emplois dans l’agriculture et l'agro-industrie et 100 000 emplois dans les filières industrielles autres qu’agro-industrielles",
+              "40.000 emplois salariés dans le chantier social, culturel et de la solidarité nationale",
+              "100. 000 emplois dans les secteurs de la santé, de la défense et de la sécurité",
+              "160.000 emplois dans le secteur du tourisme et du loisir, de l'économie sociale et artisanale",
+              "100.000 emplois dans l'administration centrale de l'Etat et dans les administrations et services techniques des collectivités décentralisées (ou des Etats fédérés)"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "RÉFORME FISCALE ET BUDGÉTAIRE",
+        "key": "reforme-fiscale-budgetaire",
+        "details": [
+          {
+            "title": "Sur le plan budgétaire",
+            "items": [
+              "Porter le budget du Cameroun de 4689,5 Mds en 2018 à environ 5500 Mds dès 2019",
+              "Réduire les dépenses de fonctionnement et le train de vie de l'Etat de 25 % en un mandat",
+              "Porter la part du budget d'investissement public de 29,57 % à 60 % environ en un mandat"
+            ]
+          },
+          {
+            "title": "SUR LE PLAN FISCAL - Le passage d'une fiscalité confiscatoire à une fiscalité incitative pour l’investissement",
+            "items": [
+              "La Grande Réforme Fiscale et Budgétaire : Une nécessité pour un Cameroun économiquement compétitif et une sécurité sociale garantie à tous les citoyens",
+              "Réduction progressive du taux d’imposition des sociétés (de 33 % à 25 % sur 5 ans)",
+              "Mettre en place des mécanismes fiscaux d’incitation des entreprises à l’investissement (abat-tements fiscaux pour création de nouveaux emplois, abattements fiscaux pour création de nouvelles filiales,…) ",
+              "Possibilité pour les entreprises de déduire sur une durée réduite le prix d’acquisition de certains actifs amortissables au lieu de les amortir sur leur durée de vie",
+              "Fiscalité allégée pour les revenus de capitaux mobiliers et la fortune immobilière (taux d’imposition unique de 25 %); taux réduit à 18 % lorsque le bénéficiaire s’engage à réinvestir 40 % de ses revenus de capitaux mobiliers dans une activité économique au niveau national",
+              "Augmentation de l’assiette de l’impôt (juste répartition de la charge publique dans le res-pect des capacités contributives de chaque citoyen)",
+              "Augmentation du SMIG à 55. 000 FCFA (ce montant peut être revu à la hausse au cours du mandat suivant les performances de l'économie)",
+              "Exonération d’impôt sur le revenu pour les résidents fiscaux qui perçoivent un salaire infé-rieur ou égal à 55 000 FCFA",
+              "Création d'une Sécurité sociale nationale: Assujettissement équitable et universel de tous les travailleurs et indépendants à la Grande Taxe de Solidarité Sociale, afin de financer le budget de la sécurité sociale et garantir une couverture maladie universelle minimum à chaque citoyen (principe de solidarité fiscale)",
+              "Mise en place d’un mécanisme d’abattement fiscal pour les opérations de transmission du patrimoine entre personnes physiques vivantes au sein d’un groupe familial (réduc-tion du poids fiscal des départs à la retraite et encouragement des reprises d’entreprises)"
+            ]
+          },
+          {
+            "title": "SUR LE PLAN FISCAL - La mise en place d’une fiscalité de sécurité",
+            "items": [
+              "Assurer la sécurité et la stabilité fiscale par la non augmentation des différents impôts et taxes sur le moyen terme (3 ans minimum) afin d'assurer la visibilité pour l'investisseur"
+            ]
+          },
+          {
+            "title": "SUR LE PLAN FISCAL - L’aménagement d’une fiscalité « Attraction internationale – Protection nationale »",
+            "items": [
+              "Attraction fiscale internationale conditionnée par le mécanisme des exonérations partielles d’impôts : aménagement d’un système fiscal qui facilite l’implantation des investisseurs interna-tionaux au Cameroun sous réserve du respect d’une contrepartie",
+              "Fiscalité attractive pour les résidents fiscaux (personnes physiques) camerounais qui souhaitent rapatrier des dividendes, intérêts et autres redevances de sources étrangères sur le territoire na-tional",
+              "Exonération totale des dividendes reçus par les sociétés camerounaises de leurs filiales étran-gères à condition pour elles de réinvestir, sur 24 mois, 30 % de ces dividendes dans la création de nouveaux emplois au Cameroun",
+              "Adoption d'un dispositif anti-abus qui aura pour objet d'assurer une imposition minimum au Cameroun des sociétés qui effectuent certains paiements considérés comme «érosifs» au profit d'entités étrangères qui leur sont liées",
+              "Imposer à l’Etat et aux Régions (ou entités fédérées) d’accorder au moins 40 % de grands Mar-chés nationaux d’appels d’offres aux entreprises de droit camerounais"
+            ]
+          },
+          {
+            "title": "SUR LE PLAN FISCAL - La mise en place d’une péréquation fiscale entre les régions (ou les entités fédérées)",
+            "items": [
+              "Enumération limitative de deux grands blocs d’impôts et taxes, et répartition constitutionnellement encadrée du budget national entre l’Etat et les Régions (ou entités fédérées)",
+              "Bloc national : Impôt sur les sociétés, Droits de douanes ; Impôt sur le revenu des personnes physiques, TVA, Grande Taxe de Solidarité Sociale",
+              "Bloc local : Taxe foncière, Taxe d’habitation, Contribution des Entreprises au déve-loppement local"
+            ]
+          },
+          {
+            "title": "SUR LE PLAN FISCAL - La nouvelle dynamique fiscale communautaire et internationale",
+            "items": [
+              "NIVEAU COMMUNAUTAIRE - Renforcer les pouvoirs de la Commission de la CEMAC",
+              "NIVEAU COMMUNAUTAIRE - Garantir davantage les grandes libertés économiques pour faciliter la libre circulation des capitaux et des biens",
+              "NIVEAU COMMUNAUTAIRE - Convaincre les autres États membres de la nécessité d’harmoniser le taux d’imposition des entreprises afin d’éviter un dumping fiscal dans l’espace CEMAC",
+              "Faire adopter une Directive Mère-Filiale afin de garantir l’exonération de retenues à la source lors des distributions des dividendes intracommunautaires et éliminer les doubles im-positions",
+              "NIVEAU INTERNATIONAL - Renforcer la législation de qualité en matière de lutte contre la fraude et l’évasion fiscales internationales"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "AMÉNAGEMENT DU TERRITOIRE, INFRASTRUCTURES ET URBANISME",
+        "key": "amenagement-territoire-infrastructures-urbanisme",
+        "details": [
+          {
+            "title": "Etablir une véritable politique d’aménagement du territoire",
+            "items": [
+              "Définir une véritable politique d’aménagement du territoire à l’échelon national en conciliant compétitivité économique et création d’emplois",
+              "Valoriser les potentiels locaux et tirerons parti des potentialités régionales tout en mettant un terme à la concurrence néfaste entre Douala, Kribi et Limbe en ce qui concerne les activités portuaires",
+              "Nous mènerons une politique d’aménagement rural axée sur la structuration de l’espace rural et sur l’Empowerment des populations rurales"
+            ]
+          },
+          {
+            "title": "Régler la question de gestion de l'espace",
+            "items": [
+              "Organiser un grand débat national sur l’aménagement du territoire devant aboutir à une Charte Nationale de l’Aménagement du Territoire",
+              "Organiser les Assises nationales du foncier avec une pleine implication des autorités traditionnelles afin de redéfinir les meilleurs modalités d'accès à la terre dans le respect des intérêts des communautés coutumières tant pour les infrastructures et autres ouvrages publics que pour le développement de l'agriculture",
+              "Elaborer un Schéma national d’Aménagement du Territoire (SNAT) qui sera par la suite décliné en schémas directeurs régionaux (ou des entités fédérées) d'aménagement",
+              "Définir un plan d’affectation des sols qui précisera les zones agricoles, les zones industrielles, les réserves naturelles, les couloirs réservés aux infrastructures de transport (chemins de fer, routes et autoroutes), et les zones d’habitation",
+              "Décliner, enfin, toutes les dispositions convenues dans une loi sur le régime foncier"
+            ]
+          },
+          {
+            "title": "Coordonner l'élaboration des plans de développement des Régions (ou entités fédérées)",
+            "items": [
+              "Veiller à ce que chaque Région (ou entité fédérée) soit dotée d'un Plan de développement régional (ou de l’entité fédérée) élaboré le cas échéant avec l'assistance des services techniques compétents de l'Etat",
+              "Assurer la coordination des plans régionaux (ou des entités fédérées) afin de préserver la cohérence des perspectives de développement global du pays"
+            ]
+          },
+          {
+            "title": "Procéder à un cadastre numérique de toutes les parcelles pour la sécurisation de la propriété",
+            "items": [
+              "Réaliser un cadastre informatisé et hautement sécurisé, l’immatriculation de tous les terrains des particuliers en milieux urbain et rural ainsi que toutes les parcelles incorporées au domaine privé de l’Etat ou relevant des collectivités territoriales (ou des entités fédérées)",
+              "Réviser la politique foncière en vue de réduire la spéculation foncière. Dans cette perspective, nous mettrons en place une politique de concession de l’aménagement foncier urbain à des opérateurs privés pour une production des terrains équipés. La commercialisation de ces terrains s’effectuera dès lors sous leur contrôle",
+              "Renforcer les missions de la MAETUR dans la constitution et la gestion des réserves foncières nécessaires au développement des villes et des communes",
+              "Baisser l’impôt foncier sur les terrains bâtis et non bâtis et cet impôt sera mieux recouvré"
+            ]
+          },
+          {
+            "title": "Mener une politique urbaine imaginative et ambitieuse",
+            "items": [
+              "La croissance urbaine est une donnée objective et porteuse de potentialités pour une accélération du développement de notre pays",
+              "Une politique urbaine avec ura pour pilier central l’orientation de la croissance urbaine vers les villes secondaires, de manière à juguler la croissance urbaine de Douala et de Yaoundé",
+              "Donner aux villes secondaires les moyens d’absorber l’importante croissance urbaine à laquelle le pays fait face. Il s’agira de créer et maintenir dans les villes secondaires des conditions de vie plus harmonieuses, mais aussi des incitations économiques permettant la création de richesses et d’emplois"
+            ]
+          },
+          {
+            "title": "Assigner une fonction particulière aux entités urbaines",
+            "items": [
+              "Créer une grande VILLE NOUVELLE, VILLE DU FUTUR dans le centre du pays à la limite sud de l'Adamaoua et le nord du Mbam-et-Kim, dans une zone très peu peuplée",
+              "Cette ville nouvelle, lieu de l'innovation par excellence, sera une ville du futur, le lieu où le Cameroun fera découvrir les talents et notre projection vers l’avenir technologique. Elle sera située sur l’axe du chemin de fer reliant le Sud au Nord du pays, et sera reliée aux autres grandes métropoles du pays comme Douala ou Yaoundé par des autoroutes",
+              "Reconvertir Douala et reporter l’essentiel de l’activité portuaire vers Kribi. Le port de Douala sera transformé en un port de plaisance et un petit port de cabotage. Nous ferons surtout de Douala la capitale financière et d’affaires, le Manhattan de l’Afrique Centrale. Le plateau Joss deviendra l’épicentre de cette capitale financière qui devra drainer les capitaux, notamment boursiers, pour la reconstruction du Cameroun",
+              "L’aéroport de Douala sera maintenu comme aéroport dans sa capacité actuelle, aménagé mais qui ne s’agrandira plus",
+              "Les industries de Douala seront progressivement déplacées vers Edéa faisant place à des entrepôts qui pourront être reconvertis en centres logistiques ou en centres d’incubation pour les entreprises de la nouvelle économie financière, numérique et biotechnologique qui se développera à Douala. Edéa deviendra donc la principale plateforme industrielle du sud camerounais vers laquelle seront transférées les industries de Douala",
+              "Yaoundé gardera son statut de capitale politique et deviendra véritablement la capitale culturelle. À ce titre, y seront construits une grande bibliothèque du monde noir et de la diaspora africaine, un opéra de classe internationale et une académie nationale des arts et de la culture",
+              "Une deuxième plateforme industrielle sera construite entre la VILLE DU FUTUR et Ngaoundéré qui deviendra la principale plateforme industrielle dans le septentrion camerounais. Ngaoundéré sera, par conséquent, ce carrefour à partir duquel les produits camerounais iront vers le Nord et le Tchad, vers l’Est et vers la République Centrafricaine, vers l'Ouest au Nigeria",
+              "Une troisième plateforme industrielle sera développée dans le bassin agricole situé entre Foumbot, Bafoussam et Bamenda",
+              "Les capitales régionales deviendront des métropoles d’équilibre. Nous transformerons ces villes en de véritables points d’application de la politique de décentralisation de l’administration, mais aussi de secteurs comme l’université ou l’industrie et les services",
+              "À côté des trois métropoles nationales et des métropoles d’équilibre, les villes de taille moyenne auront un rôle essentiel dans l’absorption de la croissance urbaine, mais surtout d’interface avec le monde rural",
+              "Nous mettrons en place un Programme spécial d’aménagement des villes frontalières (PSAVF) (telles que Kousseri, Eyumedjock, Kié-Osi, Amchidé, Garoua Boulaï etc.) et nous les connecterons aux capitales régionales. Dans le cadre de notre politique de coopération avec les pays voisins, nous participerons à la construction de voies transnationales pour favoriser la dynamique d’ouverture vers l’extérieur"
+            ]
+          },
+          {
+            "title": "Collecter et traiter les eaux usées et les déchets ménagers",
+            "items": [
+              "Assainir nos villes par un meilleur traitement des déchets en remplaçant la politique actuelle de ramassage sans traitement par une logique d'économie circulaire",
+              "ECONOMIE CIRCULAIRE - Les communes doivent former les ménages camerounais au tri sélectif des ordures avant de les jeter. Cela permettra de séparer les articles biodégradables, des produits non-biodégradables (verre, plastique, aluminium, acier, papier)",
+              "ECONOMIE CIRCULAIRE - Mettre en place dans nos communes des petites unités de tris des produits non-biodégradables et leur classement selon leurs destinations aux unités de recyclages",
+              "ECONOMIE CIRCULAIRE - Les déchets biodégradables pourront être traités dans une unité de compostage (comme celle de la ville de Dschang) pour produire les engrais biologiques, les biogaz et l’électricité",
+              "ECONOMIE CIRCULAIRE - Le financement pourra être assuré par la récupération des quelques 30 milliards payés par an pour le ramassage des ordures urbaines",
+              "Mettre en place dans les principales villes un réseau d’égouttage pour la collecte de toutes les eaux usées. Celles-ci seront traitées dans des bassins d’épuration avant leur rejet dans les cours d’eau. Doterons chaque grande ville de stations d’épuration modernes dont les boues résultant du traitement des eaux seront valorisées soit comme composte pour les agriculteurs, soit comme combustibles pour les ménages et les entreprises",
+              "Dans les campagnes, l’utilisation de mini-stations d’épuration des eaux sera obligatoire là où l’habitat dispersé ne permet pas la collecte des eaux via un réseau d’égouttage",
+              "Les communes ayant une densité de population suffisantes devront mettre en place un réseau d’égouttage et de petites stations d’épuration pour la collecte et le traitement des eaux usées",
+              "Introduire le principe du pollueur-payeur pour la propreté et la collecte des déchets dans nos villes. Tous les produits de consommation courante livrés dans des emballages non-dégradables seront soumis à une taxe de recyclage. Une partie de cette taxe sera reversée au consommateur si celui-ci rapporte l’emballage non-dégradable dans un point de collecte approprié",
+              "Les déchets industriels solides feront l’objet d’une réglementation renforcée basée sur l’obligation des acteurs industriels et acteurs hospitaliers pour une collecte et un traitement spécialisé (tri, recyclage en vue de la valorisation matière, ou incinération en vue d’une valorisation énergétique)",
+              "La collecte et le traitement des déchets industriels liquides feront l’objet d’un contrôle renforcé afin de prévenir que des substances nuisibles à la santé humaine, à la faune et à la flore ne soient répandues dans l’environnement"
+            ]
+          },
+          {
+            "title": "Consentir des efforts pour mettre les infrastructures socio-économiques au niveau requis pour le décollage économique",
+            "items": [
+              "Les infrastructures socio-économiques recouvrent les routes, les ports, les aéroports, les ponts et les voies ferrées, les écoles, les hôpitaux, les marchés, les bâtiments administratifs, les cités et amphithéâtres universitaires, les tribunaux et les prisons, le réseau d’approvisionnement et de distribution en eau potable, le réseau d’assainissement, le réseau de distribution de l’énergie électrique, le réseau d’éclairage public et les infrastructures pour la protection de l’environnement.",
+              "Faire de ces infrastructures un levier important de la croissance. Réunir toutes les parties prenantes (ministères concernés, collectivités locales, associations patronales, ordres professionnels, syndicats des PME, banques et assurances, etc…) en vue de convenir d'un schéma directeur national pour la création, l’exploitation et la gestion des infrastructures socio-économiques prioritaires",
+              "Mettre chaque habitant de nos villes à un maximum de 5 min de marche à pied (500 m) d’une route bitumée",
+              "Les programmes régionaux (route transafricaine Lagos-Mombassa et réseau d’Afrique Centrale) seront poursuivis et renforcés. Les liaisons transversales à l’échelle du pays et celles permettant d’ouvrir au reste du pays de vastes étendues disposant d’un potentiel certain (département du Nkam, région de Yoko, etc.) seront développées",
+              "Dans le but de renforcer l’unité territoriale du pays, une dorsale sera construite, sous la forme d’une autoroute ou d’une route à trois voies fois deux entre Yaoundé et Kousseri, ainsi qu’un réseau routier approprié dans les régions du Nord-Ouest et du Sud-ouest",
+              "Réformer la gestion de l’entretien routier en faisant sortir cette activité du MINTP pour la confier à une Agence Nationale d’Entretien Routier disposant d’une autonomie décisionnelle",
+              "Décentraliser l’entretien des routes rurales. Au regard de leur éloignement des centres de décisions nationaux, les pistes rurales feront l’objet d’une gestion locale assurée par les Régions (ou entités fédérées) et surtout les Communes"
+            ]
+          },
+          {
+            "title": "Politique générale de financement des infrastructures",
+            "items": [
+              "Mobiliser les institutions financières nationales et les organisations multilatérales (OML), mobiliser l’épargne et les financements privés nationaux, mobiliser les apports de la diaspora en complément des budgets publics pour financer les équipements d’infrastructure",
+              "Le principe de partenariat sera institué et encouragé : partenariat privé/privé, partenariat privé/public qui prendront les formes de contrats de performance, contrats d'affermages, contrats de gestion, contrats d’exploitation et maintenance (E&M), co-entreprises, contrats axés sur le rendement, concessions et sous-traitances, contrats BOT (construction, exploitation et transfert), BOOT (construction, propriété, exploitation et transfert), DBFO (conception, construction, financement et exploitation), DCMF (conception, construction, gestion et financement), PEI (producteur d’électricité indépendant) et BOO (construction, propriété et exploitation)",
+              "Les contrats de partenariat, applicables à tous les équipements d’infrastructures et des prestations de service aux populations (telles que la distribution d’électricité, la distribution d’eau potable, l’éclairage public), en faisant appel aux capitaux privés, permettront à l’Etat d’apporter le service public aux citoyens maintenant, au lieu d’attendre de nombreuses années durant pour insuffisances de ressources publiques"
+            ]
+          },
+          {
+            "title": "Infrastructures routières",
+            "items": [
+              "Construire 2800 km de routes et 700 km d'autoroutes à 1200 Mds/an",
+              "Désenclaver des bassins de production agricole, soit 800 km par an : 200 Mds/an",
+              "Relier chaque chef-lieu de Département au chef-lieu de la région par une route bitumée, soit 1200 km par an : 300 Mds/an",
+              "Bitumer les routes urbaines notamment dans les 10 chefs-lieux de régions, soit 1600 km : 400 Mds/an",
+              "Construire un réseau d'autoroutes. Première phase : (Yaoundé-Douala (Limbe)-Bafoussam (Bamenda)-Yaoundé, soit environ 1000 km : 300 Mds/an pour l'apport initial («Down Payment»): construit essentiellement sur BOT"
+            ]
+          },
+          {
+            "title": "Ramener le cout du bitumage des routes a des prix raisonnables correspondant aux standards internationaux",
+            "items": [
+              "Le km de route bitumée coûte 150 millions au Ghana contre 250 millions au Cameroun. Prendre les mesures suivantes pour baisser le coût du km de route bitumée ou revêtue",
+              "Créer d'une Société nationale ayant le monopole des études de faisabilité des projets d'infrastructures, notamment routières",
+              "Réhabilitation du MATGENIE",
+              "Création de plusieurs unités de concassage de gravier et de la pouzzolane",
+              "Industrialiser de l'extraction du sable de mer et des fleuves",
+              "Assurer le traçage linéaire des routes",
+              "Revêtir certaines routes et rues par des pavés et des bordures en béton aux normes techniques les plus élevées",
+              "Avec un tel dispositif, nous pourrons construire environ 700 Km d'autoroutes à 2 Mds/km contre 1 Md/km en Afrique du Sud par exemple"
+            ]
+          },
+          {
+            "title": "La création d'une Société nationale d'étude et contrôle des travaux publics (SNECT)",
+            "items": [
+              "Créer une société d'Etat à caractère industriel et commercial chargée entre autres de la réalisation, seule ou en partenariat, des études et du contrôle de toutes les infrastructures et ouvrages publics au Cameroun (missions qui furent assurées par la SEDA par le passé)"
+            ]
+          },
+          {
+            "title": "Un entretien routier intégral et décentralisé (au niveau des régions ou entités fédérées)",
+            "items": [
+              "Intervenir sur l’ensemble du réseau routier, en différenciant les niveaux d’intervention, au regard des contraintes financières, le niveau minimum étant d’éviter un isolement de longue durée aux populations.",
+              "L’action ne se limitera pas à un transfert des ressources; elle prendra aussi la forme des contrats-plans signés avec l’Etat et contenant des objectifs précis en termes de service rendu aux populations"
+            ]
+          },
+          {
+            "title": "Une complémentarité des activités portuaires",
+            "items": [
+              "Mettre en place une communauté portuaire à travers la révision du schéma directeur portuaire dans une logique de complémentarité entre les différents ports",
+              "Revoir à la hausse les objectifs en ce qui concerne le port de Kribi, qui devra subir des travaux pour l’augmentation de son tirant d’eau en vue d’accueillir de grands bateaux"
+            ]
+          },
+          {
+            "title": "Le transport : un déterminant pour la politique économique et sociale de la nation",
+            "items": [
+              "Désenclaver toutes les zones du pays qui souffrent encore d’isolement saisonnier ou permanent, ce qui limite d’autant leur développement. À ce titre, réduire l’isolement afin de «faire respirer» les régions en améliorant l’état des routes et en utilisant les potentialités du transport fluvial sur certains cours d’eau pour des filièresdéjà existantes, notamment dans la partie méridionale du pays (Nkam, Kadey, Moungo, Dibamba, Sanaga, etc.)",
+              "Améliorer la connectivité en reliant le pays au reste de l’Afrique par une route de bonne qualité sur les sections nationales des itinéraires internationaux convenus",
+              "Relier les métropoles d’équilibre et les capitales régionales par des routes bitumées, et porter à 100 % la proportion de la population rurale vivant à au plus 2 km d’une route praticable en toute saison, tout en se rapprochant des standards internationaux en termes de tarif et de durée des déplacements des marchandises, qui sont un des facteurs clés de la compétitivité économique"
+            ]
+          },
+          {
+            "title": "Transport urbain et interurbain",
+            "items": [
+              "Mettre sur pied un mode de transport innovant à la portée de la plupart des ménages : des bus avec couloirs spécialisés",
+              "Expérimenter le développement d’un transport urbain sur voie ferrée de type métro ou tramway à Douala dans un premier temps",
+              "À Yaoundé, faire circuler sur la voie ferrée existante des trains navettes qui pourront très rapidement transporter les usagers de la périphérie vers le centre de la ville et vice-versa",
+              "Professionnaliser le transport interurbain. Dans cette perspective, la formation du personnel à bord des autocars à la prévention routière sera exigée et le contrôle renforcé, en vue de limiter drastiquement le nombre des accidents de circulation trop fréquents ces dernières années",
+              "Développer un pôle touristique au départ de l’aérogare de Garoua qui s’étendra sur un périmètre à définir de concert avec la Région du Nord (ou l'entité fédérée) en mettant l’accent sur l’utilité économique ou sociale tirée des activités et l’objectif final sera de lutter contre la pauvreté, et surtout de réduire les déséquilibres"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "AGRICULTURE",
+        "key": "agriculture",
+        "details": [
+          {
+            "title": "Transformer radicalement notre agriculture",
+            "items": [
+              "Une politique agricole permettant d’assurer la sécurité alimentaire du pays tout en procurant des revenus aux producteurs. À ce titre, faire du Cameroun un exportateur net des produits agricoles, et de l’agriculture biologique un moteur de la croissance et de l’amélioration de l’efficacité de notre secteur agricole et agroalimentaire",
+              "Créer une Agence d'aménagement des terres agricoles. Elle procèdera aux aménagements en tenant compte de l’environnement, réalisera l’irrigation, et versera une rente aux communautés autochtones pour la mise en disponibilité de leurs terres. Les parcelles disponibles seront publiées sur le site internet de l'Agence et seront louées aux potentiels investisseurs avec un cahier de charge précis. Aménager 1 million d'hectares de terres agricoles en un mandat",
+              "Transformer certains lycées d’enseignement général en lycée d’enseignement des techniques agricoles, agroalimentaires et d’élevage et en créer de nouveaux. L'objectif est de créer un lycée des techniques agricoles et d'élevage par département soit 60 environ (Cela s'intègre dans le programme de lutte contre le non emploi des jeunes. A raison de 10 Lycées par an à 2 milliards par Lycée, le coût total sera de 20 milliards par an). De la 6ème au CAP (Former un ouvrier agricole qualifié). De la seconde en Terminale (Former un technicien agricole). En cycle BTS (former des techniciens de l’industrie agroalimentaire, l’industrie des semences, l’industrie des intrants agricoles, avicoles et d’élevage, les laboratoires d’analyse biologiques et de qualité des aliments)",
+              "Rendre opérationnel l'idée de mécanisation agricole par la création des coopératives de mécanisation agricole. Une coopérative par bassin agricole ou par arrondissement. Chaque coopérative acquerra avec une ligne de crédit mis à disposition par l’Etat, des vaches et les charrues, les petits laboureurs motorisés, un tracteur avec son labour, sa niveleuse, la pelle excavatrice et ses accessoires. Tous ces équipements de qualité coûteront au maximum 50 millions, soit environ 8 milliards pour le coût total. Ils seront financés par des crédits au taux zéro remboursables sur 5 ans. Le paysan paiera pour la location du matériel. La coopérative sera gérée par ses membres",
+              "Mettre en œuvre une politique prioritaire de désenclavement systématique des bassins de production",
+              "Promouvroir une meilleure organisation et l’accroissement de l’efficacité des exploitations familiales qui demeurent les plus nombreuses dans la structure agraire de notre pays et qui contribuent à la construction d’écosystèmes durables et diversifiés",
+              "Promouvroir également le développement d’une agriculture moderne des grandes plantations de production aussi bien des produits traditionnels de rente que des produits vivriers destinés au marché international",
+              "Introduire de nouvelles variétés de produits agricoles en fonction des aires agro-écologiques, telles que l'anacardier (qui produit la noix de cajou) dans la partie septentrionale du pays",
+              "Nous promouvrons le développement des chaines de valeurs qui relient la demande des consommateurs aux petits producteurs ainsi que la maitrise des techniques agricoles qui favorisent l’agrosystème, la biodiversité, les activités biologiques des sols et les cycles biologiques"
+            ]
+          },
+          {
+            "title": "Principaux objectifs de production quantitative",
+            "items": [
+              "Porter la production cacaoyère d'environ 200.000 t à 700.000 t en 2025",
+              "Porter la production caféière d'environ 40.000 t à 100.000 t en 2025",
+              "Porter la production du maïs d'environ 2.150.000 t à 5.000.000 t en 2025",
+              "Porter la production du riz d'environ 150.000 t à 500. 000 t en 2025",
+              "Porter la production du mil/sorgho d'environ 1.200.000 t à 2.500.000 t en 2025",
+              "Porter la production de l'huile de palme d'environ 400.000 t à 800.000 t en 2025",
+              "Porter la production du coton d'environ 250.000 t à 350.000 t en 2025",
+              "Porter la production des noix d'anacarde d'environ 33 t à 50. 000 t en 2025",
+              "Porter la production du manioc d'environ 4.000.000 t à 10.000.000 t en 2025",
+              "Porter la production du soja d'environ 15.000 t à 50.000 t en 2025",
+              "Porter la production de la tomate d'environ 1.000.000 t à 5000.000 t en 2025",
+              "Porter la production d'oignon d'environ 70.000 t à 150.000 t en 2025",
+              "Porter la production de la banane plantain d'environ 3.500.000 t à 6.000.000 t en 2025"
+            ]
+          },
+          {
+            "title": "Un accès sécurisé à la propriété foncière",
+            "items": [
+              "Définir très précisément les règles d’accès à la propriété foncière par une nouvelle politique foncière du Cameroun, matérialisée dans le plan d’aménagement du territoire, pour garantir davantage un usage rationnel qui tient compte des impératifs de la défense ou des options économiques de la nation",
+              "Sécuriser ainsi l’accès à la propriété foncière afin d’augmenter non seulement le nombre d’agriculteurs, petits et grands mais aussi la totalité des surfaces cultivées"
+            ]
+          },
+          {
+            "title": "Une grande exploitation couplée à un réseau de petites exploitations",
+            "items": [
+              "Encourager la création de grandes exploitations d’au moins 100 ha avec autour d’elles un réseau de petites exploitations. La grande exploitation sera dotée d'entrepôts de stockage, et de petites unités de transformation. Elle sera le client privilégié des petites exploitations",
+              "Encourager les petits agriculteurs à se regrouper en coopérative et prendre une participation dans les grandes exploitations",
+              "Favoriser la mécanisation des grandes exploitations mais aussi des petites afin de diminuer la pénibilité du travail des agriculteurs en vue d’accroître les rendements",
+              "Encourager la production locale des machines destinées à la petite mécanisation",
+              "Mettre à contribution nos universités, nos centres de recherche et nos industries pour le développement de matériels agricoles adapté aux besoins et aux moyens des agriculteurs",
+              "Apporter un soutien à la petite mécanisation par l’octroi des crédits aux coopératives via les banques avec une garantie de l’Etat",
+              "Amèner les petits agriculteurs à mutualiser leurs moyens en vue d’acquérir des petites machines et les utiliser collectivement.",
+              "Encourager l’assemblage puis la fabrication au Cameroun des engins qui seront utilisés pour la grande mécanisation indispensable aux grandes exploitations"
+            ]
+          },
+          {
+            "title": "Des intrants agricoles disponibles en permanence",
+            "items": [
+              "Faciliter l’accès aux facteurs de production permettant d’améliorer la productivité, notamment à travers la mise en place d’un semencier national, la création de structures de production et/ou de fourniture des engrais et des produits phytosanitaires à des prix raisonnables et le développement d’engrais naturels",
+              "Mettre en place un véritable système de prévision météorologique pour aider nos agriculteurs à planifier efficacement leur production. Ce système de météo sera disponible sur Internet et sera aussi accessible gratuitement sur les téléphones portables",
+              "Utiliser l’eau de la Sanaga et des autres cours d’eaux du pays pour irriguer les exploitations le long de leurs bassins en vue de parvenir à une agriculture plus soutenue"
+            ]
+          },
+          {
+            "title": "Une agriculture biologique sous label et un secteur agro-industriel intégré",
+            "items": [
+              "Analyser le marché pour identifier des niches pour lesquelles nous développerons une agriculture biologique. Dans cet ordre d'idées, nous développerons la production dans le cadre de filières structurées autour d’un label biologique made in Cameroun",
+              "Mettre en place des agropoles spécialisés suivant les bassins de production",
+              "Soutenir le développement des grandes et petites unités de transformation des produits pour permettre au Cameroun de bénéficier des valeurs ajoutées et des emplois qui seront générés par les activités de transformation des produits agricoles. Dans cette perspective, au moins une culture phare sera identifiée et soutenue par Région (ou entité fédérée)",
+              "Ramener le Cameroun à sa position de deuxième producteur mondial de Cacao en 10 ans. Dans cette perspective, nous comptons à l’instar d'autres pays africains producteurs de cacao, développer une véritable industrie locale de production de chocolat à partir du cacao que nous produisons",
+              "Renforcer la production de maïs pour couvrir dans les 10 prochaines années la consommation nationale",
+              "Créer des mécanismes de financement appropriés, en distinguant les structures de financements des grandes exploitations de celles de financement des exploitations familiales"
+            ]
+          },
+          {
+            "title": "Appui à la formation et établissement des normes de qualité et la traçabilité",
+            "items": [
+              "Renforcer la formation et la vulgarisation des techniques agricoles principalement pour les produits que nous aurons choisi de soutenir",
+              "Ouvrirons des sections à la formation et la recherche relatives aux produits phares de la région (ou entité fédérée) dans chaque université régionale (ou d’entité fédérée)",
+              "Equiper nos centres de formation et de métier",
+              "Définir les normes de qualité à appliquer pour nos produits",
+              "Organiser et assurer une plus grande traçabilité des produits"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "L’ÉLEVAGE",
+        "key": "elevage",
+        "details": [
+          {
+            "title": "Dans le domaine de l'élevage",
+            "items": [
+              "Mettre en place des unités de croisement des bovins, caprins et ovins pour produire des races améliorées",
+              "Inciter à la création d'entreprises de production des aliments pour animaux à partir de la paille de riz, des céréales comme le soja et des tubercules comme le manioc",
+              "Encourager de la culture fourragère",
+              "Inciter à la création d'entreprises de production des poussins d’un jour pour tous types de volailles (dinde, poulet, pintade)",
+              "Inciter à la création de nouveaux abattoirs industriels",
+              "Développer une filière cuir et peau et manufactures industrielles de chaussures et autres produits industriels à base de peaux",
+              "Développer de LANAVET pour en faire une usine de production des vaccins animaux pour les besoins locaux et l'exportation"
+            ]
+          },
+          {
+            "title": "Dans le domaine de la pisciculture",
+            "items": [
+              "Développer pisciculture industrielle océanique et continentale, avec pour objectif de diminuer de 50% d'importation certaines variétés de poissons de grande consommation",
+              "Former à la pisciculture dans les Lycées agricoles et les centres de métiers"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "L’INDUSTRIE",
+        "key": "industrie",
+        "details": [
+          {
+            "title": "Des filières industrielles stratégiques et totalement maîtrisées",
+            "items": [
+              "L'énergie",
+              "L’agro-industrie",
+              "Les industries extractives (fer, bauxite, cobalt/nickel, diamant, or) avec une politique de première voire de seconde transformation locale (fonderies, aciéries etc.) d’une partie des ressources exploitées",
+              "Les industries du bois",
+              "Les hydrocarbures et la pétrochimie",
+              "Les industries mécaniques, électriques et électroniques",
+              "Les industries pharmaceutiques",
+              "Les industries chimiques",
+              "Les industries des matériaux de construction",
+              "La biotechnologie",
+              "Les technologies de l’information et de la communication (TIC)",
+              "L’artisanat et le tourisme"
+            ]
+          },
+          {
+            "title": "Les préalables au redéploiement de nos filières stratégiques",
+            "items": [
+              "Une refonte du système éducatif pour revaloriser la formation technique",
+              "Une énergie abondante et au coût raisonnable, voire moins cher",
+              "Un renforcement des infrastructures économiques et des moyens de communication (transport, énergie, internet haut débit,…)",
+              "Une réglementation fiscale et un taux d’imposition des entreprises des plus adaptés",
+              "La lutte impitoyable contre la corruption et l’amélioration de l’environnement des affaires et la compétitivité en général",
+              "Travailler de concert avec les experts de chaque secteur pour déterminer tous les segments qu’il faut maîtriser pour avoir une filière complète de la production jusqu’à la commercialisation"
+            ]
+          },
+          {
+            "title": "Lever les freins qui plombent l’essor et la compétitivité de l’industrie camerounaise",
+            "items": [
+              "Mener une politique qui permette d’élargir le marché intérieur en réduisant le coût des produits manufacturés et en incitant à la consommation locale",
+              "Augmenter les capitaux disponibles en encourageant l’épargne intérieure",
+              "Veiller à une répartition équitable des industries sur le territoire national afin de désengorger les principales villes (Douala, Yaoundé, Garoua) où est concentré l’essentiel du tissu industriel actuel",
+              "Procéderons à l’accélération des démarches administratives et mènerons une lutte sans merci contre les pratiques de corruption qui découragent la création et l’installation des unités industrielles",
+              "Promouvoir le développement de la transformation locale dans les filières des industries extractives en vue de réaliser des plus-values au lieu d’exporter uniquement nos matières premières et pierres précieuses. À cet égard, nous mènerons une politique incitative pour la 2e et la 3e transformation des matières premières, notamment du bois",
+              "Veiller à l’application d’une politique des prix qui supprime des distorsions entre les produits locaux et les produits exportés (dont les prix bénéficient souvent des subventions de leurs pays d’origine)"
+            ]
+          },
+          {
+            "title": "La modernisation de l'industrie camerounaise, condition de sa compétitivité et de la création d'emplois industriels",
+            "items": [
+              "Développer du crédit-bail destiné au financement de l'acquisition des machines et autres équipements neufs : une ligne de crédit de 50 Mds/an y sera allouée et sera gérée par une commission paritaire composée notamment par la Chambre de Commerce et de l'industrie, le Syndustricam, le GICAM, l’ECAM, etc. Les PME éligibles pourront bénéficier d'un apport de l'Etat de 33 %",
+              "Financer un programme de mise à niveau à hauteur de 5 Mds, dont 2 Mds par l'Etat et 3 Mds par les bailleurs de fonds. Ce financement permettra de payer les prestations des ingénieurs-conseils aux entreprises industrielles",
+              "Construire des zones industrielles par des partenaires privés avec des incitations de l'Etat (aménagement des zones industrielles; construction d'un immobilier industriel financé par les réserves techniques des compagnies d'assurance, les bailleurs de fonds et les investisseurs privés)",
+              "Créer une Agence Nationale de l'Industrie et de l'Innovation (ANII) pour faciliter la réalisation de nouveaux projets industriels",
+              "Créer une Banque Nationale de Développement Agricole et Industriel (BNDAI)"
+            ]
+          },
+          {
+            "title": "Mettre en place des pôles intégrés de production et de transformation des produits agricoles",
+            "items": [
+              "Mettre en place des agropoles spécialisés suivant les bassins de production. Il s’agira de filières agro-industrielles complètes, allant de la production des produits agricoles primaires à leurs transformations industrielles par des unités de productions articulées aux bassins de productions",
+              "Moderniser l’élevage et la pisciculture, afin de conforter la place du Cameroun dans la production animale et de réduire la dépendance vis-à-vis des produits halieutiques importés"
+            ]
+          },
+          {
+            "title": "Les industries des matériaux de construction et du bois : évoluer vers la standardisation",
+            "items": [
+              "Nous disposons d’énormes ressources de matières premières qui peuvent être transformées en matériaux de construction. Tout en gardant l’objectif de produire des matériaux locaux de construction, nous mettrons l’accent sur une évolution des productions actuelles vers plus de standardisation : standardisation des formats, des prescriptions techniques et des normes de produits, puis des normes pour la construction. La finalité est d’aboutir à la mise en place, après 5 ans, d’un tissu industriel dense constitué de PME et d’usines de taille moyenne. La standardisation favorisera l’émergence de plusieurs filières d’industries de matériaux de construction, notamment l’industrie de la préfabrication des produits en béton et de revêtement des sols ; cette émergence de plusieurs filières génèrera de nombreux emplois, tirera la qualité vers le haut, dynamisera l’économie et permettra de résorber significativement le déficit en logements et en infrastructures routières et équipements de base (écoles, hôpitaux, infrastructures sportives, etc…)",
+              "Augmenter de la gamme de produits de construction standardisés respectant des normes de qualité permettra de réaliser de nombreuses économies d’échelle en réduisant les coûts des matériaux, ce qui favorisera la production de nombreux logements et équipements bon marché",
+              "Promouvoir en fonction des localités et des ressources disponibles, les matériaux courants fabriqués sur la base des technologies peu coûteuses",
+              "Engager un dialogue avec les opérateurs de l’industrie cimentière nationale en vue d’aboutir à des mesures à même d'abonder le marché de la construction avec une offre suffisante en ciments à bas prix. En effet, il est universellement reconnu que le ciment occupe une part non négligeable dans le coût des constructions et il est présent à tous les stades de la construction (gros-œuvre, second-œuvre, finitions). Toute mesure qui favoriserait donc la baisse du prix du ciment engendrerait un regain de consommation de ciment et un effet multiplicateur de grande échelle en termes d’augmentation des chantiers de construction"
+            ]
+          },
+          {
+            "title": "Les industries du textile, de l’artisanat et du tourisme",
+            "items": [
+              "Développer une filière industrielle du textile couvrant la production du coton, sa transformation et la commercialisation sur le marché national et international. Nous visons de porter la transformation du coton de 2 % actuellement à 35 % d’abord en 10 ans puis à 80 % en 20 ans",
+              "Développer la filature et le tissage via un partenariat public/privé en encourageant l’arrivée de nombreux acteurs dans ce segment de la filière",
+              "Apporter un soutien aux entreprises locales pour la production de tissus, jeans, T-shirts",
+              "Promouvoir des écolabels qui porteront en particulier sur certains produits du terroir à fort potentiel d’exportation, qu’il s’agisse de certains produits agricoles ou des épices et autres produits forestiers non ligneux",
+              "Promouvoir l’écotourisme, le Cameroun disposant dans ce domaine de nombreux avantages comparatifs de par la diversité de ses écosystèmes, de ses populations et de ses cultures"
+            ]
+          },
+          {
+            "title": "Développer et soutenir l'industrie de bois",
+            "items": [
+              "Appliquer rigoureusement la législation nationale sur l'exportation des produits forestiers ligneux et non ligneux: Aucune exportation de billes de bois brut sans au moins la première transformation",
+              "Mettre en place des incitations progressives pour la deuxième et la troisième transformation locale du bois",
+              "Oeuvrer à la mise en place en concertation avec les professionnels du secteur d’une filière intégrée allant de la coupe du bois à sa transformation en produits finis pour le marché local et l'exportation",
+              "Donner la priorité aux produits de l'industrie locale du bois dans la commande publique : l'Etat n'importera plus que les produits qui ne sont pas fabriqués ou ne peuvent être fabriqués sur place",
+              "Fixer un pourcentage d'utilisation de matériaux locaux forestiers dans la réalisation des ouvrages publics"
+            ]
+          },
+          {
+            "title": "Un programme de normalisation amélioré",
+            "items": [
+              "Renforcer les missions de l’Agence nationale des normes et de la qualité (ANOR)",
+              "Mettre en place un programme de normalisation et de développement participatif impliquant les experts nationaux et internationaux",
+              "Donner aux entrepreneurs, aux opérateurs sociaux, politiques voire culturels ainsi qu’aux acteurs civils, aux usagers et consommateurs divers, des outils rationnels utiles qui se rapportent à la qualité et à la normalisation liée à leur domaine (au travers des formations, partages d’expérience, plans et programmes, etc.). Ces outils leur permettront de booster leurs activités respectives, d’augmenter leur notoriété et d’être plus compétitifs non seulement sur leur marché mais aussi sur la scène internationale"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "ÉNERGIE ET ÉLECTRICITÉ POUR TOUS EN 10 ANS",
+        "key": "energie",
+        "details": [
+          {
+            "title": "Le Cameroun, une puissance énergétique : Électricité disponible pour tous et 80 % de ménages connectés en un mandat",
+            "items": [
+              "Fournir de l’électricité de manière constante et régulière à tous les ménages et toutes les entreprises du Cameroun où qu’ils se trouvent. Nous mettrons en place un système efficace de production et de distribution de l’électricité dans l’ensemble du pays avec pour objectif d’approvisionner de façon efficiente tous les ménages et entreprises du pays dans les 10 prochaines années. Dans tous les cas, 80 % des ménages camerounais seront branchés à l'électricité à la fin du mandat",
+              "Améliorer le réseau de distribution de l’électricité dans les grandes villes pour réduire les risques liés à la vétusté du réseau et aux branchements anarchiques",
+              "Bâtir le décollage énergétique du Cameroun sur un mix entre différentes sources d’énergie en augmentant notamment la part des énergies renouvelables",
+              "Rendre effective la libéralisation de la production de l’électricité au Cameroun",
+              "Approvisionner efficacement les ménages en gaz de ville",
+              "Développer à terme des alternatives au bois de chauffage dans les campagnes, et dans l’intervalle, optimiser les techniques de cuisson au bois afin de réduire drastiquement la consommation d’énergie-bois tout en utilisant des foyers améliorés",
+              "Développer des parcs ou ‘fermes’ de panneaux photovoltaïques dans les régions Nord et Extrême-Nord où l’ensoleillement est une source abondante et disponible pendant une grande partie de l’année",
+              "Développer des parcs éoliens le long des axes routiers et des localités où le vent est fréquent, notamment dans les régions de la dorsale Ouest du Cameroun",
+              "Généraliser, lorsque cela est possible, l’utilisation de l’énergie solaire en vue de l’éclairage public (urbain, rural, interurbain)"
+            ]
+          },
+          {
+            "title": "Préalables",
+            "items": [
+              "Etablir un cadastre rigoureux de la situation énergétique du pays en organisant des Etats Généraux de l’énergie associant différents ministères et en actualisant le Schéma Directeur de l’Électricité en particulier et de l’énergie en général",
+              "Réaliser un maillage efficace du territoire pour réduire les délestages",
+              "Organiser la fourniture de l’électricité dans nos grandes villes pour que chaque ménage et chaque entreprise puissent se connecter au réseau électrique en moins de 48 h",
+              "Privilégier, pour la distribution de l’électricité dans les grandes villes, le câblage souterrain au câblage aérien. La mise en place progressive de ce réseau souterrain de câbles d’électricité pourrait se faire en même temps que l’installation du réseau d’égouttage",
+              "Améliorer le cadre réglementaire et le rendrons incitatif au développement de la production indépendante d’électricité et de l’investissement privé dans les réseaux de transport de l’électricité",
+              "Matérialiser les dispositions des décrets et arrêté existants régissant les activités du secteur de l’électricité en ouvrant effectivement le transport de l’énergie des sites de production vers les lieux de consommation aux investisseurs privés. Toutefois, le réseau final de connexion des ménages restera sous le contrôle des communautés locales ou des régions (ou entités fédérées) afin d’assurer la couverture des régions reculées",
+              "Favoriser l’émergence d’un marché national de l’électricité avec la multiplication des acteurs aussi bien dans la production que dans la distribution"
+            ]
+          },
+          {
+            "title": "Valoriser les sources d’énergies renouvelables",
+            "items": [
+              "Les investissements à participation publique pour l’exploitation de l’énergie solaire seront encouragés dans la partie septentrionale du pays où le soleil constitue un gisement inépuisable. Dans cette perspective, l’Etat participera aux projets Partenariat Public/Privé (PPP) pour l’installation des parcs ou ‘fermes’ de panneaux photovoltaïques dont les études de faisabilité se révèleront bénéfiques pour une injection et connexion au réseau électrique",
+              "Nous généraliserons, partout où cela est possible, l’utilisation de l’énergie solaire en vue de l’éclairage public (urbain, rural, interurbain)",
+              "Les investissements à participation publique pour l’exploitation de l’énergie éolienne seront encouragés le long des axes routiers et dans les localités de dorsale Ouest du pays où le vent constitue un gisement à très haut potentiel. Dans cette perspective, l’Etat participera aux projets PPP pour l’installation des parcs d’éoliens dont les études de faisabilité se révèleront bénéfiques pour une injection et connexion au réseau électrique",
+              "La politique de construction de mini barrages hydroélectriques sera développée et généralisée sur les cours d'eau afin d'approvisionner les zones rurales et les villes de petite taille ou de taille moyenne",
+              "La politique d’investissements pour la construction et l’exploitation des barrages (énergie hydroélectrique) le long des fleuves Nachtigal et Sanaga sera renforcée lorsque les besoins en industries seront clairement identifiés et convenus pour les régions Centre, Adamaoua et Est",
+              "Les investissements à participation publique pour l’exploitation de l’énergie biomasse issue de la transformation des ordures ménagères seront encouragés dans les grandes villes, en commençant par Douala et Yaoundé. Dans cette perspective, l’Etat et/ou les Régions (ou entités fédérées) participera aux projets PPP pour la création de 2 centrales thermiques (dont 1 pour Douala et 1 pour Yaoundé) exploitant l’énergie générée par l’incinération des ordures ménagères de ces agglomérations"
+            ]
+          },
+          {
+            "title": "Une agence pour l’efficacité énergétique",
+            "items": [
+              "Pour parvenir à satisfaire au plus vite les besoins énergétiques des ménages et des entreprises, nous améliorerons nos capacités de production, l’efficacité de notre système de transport, mais aussi et surtout réduirons les besoins en consommant juste ce qui est nécessaire",
+              "Créer une agence pour l’efficacité énergétique",
+              "MISSION DE L'AGENCE: Identifier les barrières à la dissémination des technologies plus efficaces en énergie au Cameroun et définir les axes d’intervention (politique, régulation, formations) d’une agence/direction dédiée à l’efficacité énergétique",
+              "MISSION DE L'AGENCE: Développer un cadre réglementaire et incitatif au développement des programmes d’efficacité énergétique dans les industries, le secteur tertiaire, le résidentiel et l’éclairage public",
+              "MISSION DE L'AGENCE: Promouvoir la réflexion au niveau régional en vue d’adopter des règles et normes communes devant faciliter la mise en place des centrales d’achats ou d’unités de production pour satisfaire les besoins du marché de l’Afrique centrale",
+              "MISSION DE L'AGENCE: Accompagner les entreprises dans la réduction de leur consommation en énergie et par ricochet de leur facture énergétique",
+              "MISSION DE L'AGENCE: Promouvoir l’utilisation des technologies plus efficaces en énergie"
+            ]
+          },
+          {
+            "title": "Exploiter le gaz issu de la production pétrolière",
+            "items": [
+              "Mettre en place une politique plus concertée qui permettra, lorsque c’est économiquement et environnementalement justifié, de définir les conditions de prise en compte, dans les permis d’exploitation des plateformes pétrolières et gazières, des clauses de valorisation des gaz associés pour la production d’électricité et ainsi accroître la disponibilité en énergie électrique du Cameroun"
+            ]
+          },
+          {
+            "title": "Développer une sous-filière de production des matériaux et équipements de production et de transport d'électricité",
+            "items": [
+              "Encourager et accompagner le secteur privé à investir dans les usines de production des matériaux et équipements de production et de transport d'électricité (câbles électriques, compteurs, transformateurs)"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "L’EAU SOURCE DE VIE PRODUCTION ET ASSAINISSEMENT",
+        "key": "tic",
+        "details": [
+          {
+            "title": "Une eau potable pour tous",
+            "items": [
+              "Offrir un accès à l’eau potable pour tous dans les 10 ans en zones urbaines et, dans les 15 ans en zones rurales",
+              "Dans les zones urbaines, mettre systématiquement en place le réseau d’adduction d’eau potable lors de la construction d’un réseau d’égouts",
+              "Exiger l’installation effective d’un réseau parcellaire d’adduction d’eau potable comme un préalable à l’octroi d’un permis de bâtir pour les nouveaux lotissements",
+              "Créer des zones dans lesquelles des bornes fontaines semi-publiques seront installées dans les quartiers dits à habitat spontané où il est difficile d’installer des canalisations d’eau dans tous les ménages",
+              "Dans les zones rurales, veiller à ce que chaque ménage se trouve à moins de 1km d’une borne fontaine semi-publique lorsque l’habitat n’est pas très dispersé",
+              "Dans les zones à habitat fortement dispersé, les solutions individuelles seront envisagées en fonction de l’hydrométrie de la zone"
+            ]
+          },
+          {
+            "title": "Établir un cadastre de l’accès à l’eau",
+            "items": [
+              "Réaliser un cadastre de la production et de l’accès à l’eau sur l’ensemble du territoire. Ce cadastre nous permettra non seulement d’identifier clairement nos besoins mais aussi et surtout d’orienter nos politiques en priorité vers les zones où la situation est la plus critique",
+              "Mettre régulièrement à jour ce cadastre informatisé et centralisé au Ministère de l’Énergie et de l’Eau (MINEE). À cet effet, tous les acteurs de la chaine de la production et de l’accès à l’eau sur l’ensemble du territoire seront sollicités"
+            ]
+          },
+          {
+            "title": "Production de l’eau dans les grandes villes",
+            "items": [
+              "L’approvisionnement en eau des grandes villes telles que Yaoundé, Douala et les capitales régionales restera sous le contrôle de la Camwater dont les missions seront recentrées essentiellement sur la production et le transport de l’eau",
+              "Les procédures de passation de marchés de la Camwater seront revues et améliorées pour permettre un meilleur taux d’exécution des financements obtenus"
+            ]
+          },
+          {
+            "title": "Production de l’eau dans les villes secondaires et les zones rurales",
+            "items": [
+              "Doter chaque région d’une agence régionale en charge de la production de l’’eau potable",
+              "MISSION DE L'AGENCE: Ajuster la politique régionale en matière de production, de transport et de gestion des eaux par rapport à la politique définie au niveau du MINEE",
+              "MISSION DE L'AGENCE: Concilier la gestion de l’eau avec le développement économique et le respect de l’environnement",
+              "MISSION DE L'AGENCE: Assurer le transport de cette eau jusqu’aux points de distribution dans les villes à partir desquelles les communes prendront le relai",
+              "L’agence régionale aura aussi la latitude d’ouvrir le secteur de la production à des sociétés privées comme la CdE",
+              "Encourager dans les zones rurales un partenariat entre les communes et des partenaires privés pour la production, le transport et la gestion de l’eau potable vers les zones occupées"
+            ]
+          },
+          {
+            "title": "Assainissement et drainage",
+            "items": [
+              "Créer au sein du MINEE deux directions spécialisées et entièrement responsables, l’une consacrée à la politique de traitement des eaux usées et l’autre responsable du drainage des eaux pluviales",
+              "Construire le réseau d’assainissement et de drainage sera assurée par l’Etat et les régions. Les communes auront pour responsabilité d’assurer le suivi de la connexion de tous les ménages et entreprises à un réseau d’égouttage",
+              "Réaliser et exploiter des stations d’épuration des eaux usées dans les grandes villes feront l’objet d’un partenariat public/privé"
+            ]
+          },
+          {
+            "title": "Une stratégie d’assainissement suivant le niveau de structuration de l’espace, de l’occupation des sols et du relief",
+            "items": [
+              "Pour la protection de notre environnement, l’amélioration de l’hygiène et la salubrité dans nos grandes cités, nous réaliserons un système d’égouts pour la collecte des eaux usées. Ce réseau d’égouttage sera entièrement construit avec des matériaux et produits locaux",
+              "LE RESEAU D'EGOUTTAGE:  Va créer de nombreux emplois à la fois dans la production de matériaux et dans la réalisation de ces ouvrages",
+              "LE RESEAU D'EGOUTTAGE:  Va éviter la pollution des nappes phréatiques qui alimentent les puits dans lesquels les populations privées de sources d’eau potable s’approvisionnent",
+              "Adopter une stratégie d’assainissement suivant le niveau de structuration de l’espace, de l’occupation des sols et du relief. À cet effet, nous distinguerons sur plusieurs zone",
+              "Zone A: Les « zones structurées » qui se caractérisent par un important réseau de voirie et une faible densité d’habitat : c’est le cas des quartiers résidentiels et des lotissements",
+              "Zone B. Les « zones sous-structurées » qui sont le résultat d’une occupation anarchique et désordonnée, se caractérisent par une faible densité du réseau de voirie et une accessibilité difficile des parcelles par des véhicules",
+              "Zone C. Les « zones péri-urbaines » qui sont situées à la périphérie des villes, et se caractérisent par une occupation des sols transitoires, à la limite du rural et de l’urbain : les densités d’occupation des sols dans ces zones sont encore très faibles, tout comme la densité des voiries",
+              "Zone D. Les « zones rurales » qui se caractérisent par un habitat dispersé et de vastes parcelles",
+              "Zone E. Les « zones littorales » qui se caractérisent par un relief relativement plat, de faible altitude proche du niveau de la mer. Dans ces zones, la nappe phréatique affleure et complique davantage la situation de l’assainissement",
+              "Pour les zones A et C, des réseaux d’égouttage ou systèmes de collecte et de traitement des eaux usées (domestiques, zones commerciales, industrielles) ainsi que la construction des usines de traitement de ces eaux usées seront mis en place",
+              "Pour les zones B, D et E, des micro-stations d’épuration des eaux constituées par des latrines publiques (dans les écoles, les hôpitaux, les marchés et autres lieux publics), les latrines individuelles et les fosses septiques individuelles ainsi que l’organisation de la filière d’évacuation et de traitement des boues de vidange seront privilégiées lorsque la densité de la population, le niveau des eaux souterraines ou la composition des sols le permettent et rendent les solutions micro-stations viables ; autrement, c’est un système d’assainissement semi-collectif qui sera mis en place"
+            ]
+          },
+          {
+            "title": "Construire un réseau d’égouttage dans les grandes métropoles",
+            "items": [
+              "Nous réaliserons des études de faisabilité pour la mise en place d’un réseau d’égouttage séparé du réseau d’évacuation des eaux pluviales et de surface dans les entités territoriales de plus de 100 000 habitants",
+              "Action 1 : Réaliser 10 études de faisabilité, en collaboration avec les institutions universitaires locales, pour la mise en place d’un réseau d’égouttage collectif dans 10 villes-tests choisies par l’Etat",
+              "Action 2 : Réaliser 5 études de faisabilité pour la mise en place soit d’une station d’épuration classique soit d’une station d’épuration par lagunage en bout du réseau d’égouttage collectif en fonction du bassin de vie et des types d’habitat",
+              "Action 3 : Monter, sur base des recommandations issues des études de faisabilité, 2 projets structurants de réseau d’égouttage collectif (des drains de collecte reliés aux constructions jusqu’à la station d’épuration appropriée) relevant du chantier urbain"
+            ]
+          },
+          {
+            "title": "Établir un cadastre des projets",
+            "items": [
+              "Nous établirons un cadastre de tous les projets et programmes d’assainissement en cours sur l’ensemble du territoire national. ",
+              "Action 1 : Identifier les systèmes collectifs de collecte et traitement existants en vigueur dans les lotissements (zones d’habitat planifié du type A)",
+              "Action 1a. : Répertorier les types de drains utilisés (tuyaux en béton, tuyaux en plastique, tuyaux en grès) et la capacité des stations d’épuration",
+              "Action 1b. : Vérifier l’adaptabilité de ces drains par rapport aux capacités de charge prévues au dimensionnement du lotissement, et le cas échéant, remplacer lesdits drains par des tuyaux appropriés en matériaux locaux réalisés avec les matériaux qui respectent l’environnement",
+              "Action 1c. : Vérifier l’adaptabilité des stations d’épuration par rapport aux capacités de charge prévues au dimensionnement du lotissement, et le cas échéant, renforcer leurs capacités",
+              "Action 2 : Répertorier toutes les stations de traitement des boues d’épuration existantes en vue d’organiser leurs filières de collecte et d’exploitation"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "LES TECHNOLOGIES DE L’INFORMATION ET DE LA COMMUNICATION",
+        "key": "tic",
+        "details": [
+          {
+            "title": "Libérer la créativité et encourager l’innovation dans les nouvelles technologies pour faire du Cameroun un «champion de l’électronique et du logiciel»",
+            "items": [
+              "Mettre l’accent sur la production de composants électroniques qui sont aujourd’hui omniprésents dans la société et participent à la fabrication des outils et supports des technologies de l’information et de la communication. Faire du Cameroun un « lion de l’électronique »",
+              "Soutenir la production de logiciels pour la mise en place de la gouvernance électronique et la modernisation de la gestion de nos entreprises"
+            ]
+          },
+          {
+            "title": "Les TIC pour tous",
+            "items": [
+              "Démocratiser l’accès aux TIC, à l’aide des plusieurs mesures",
+              "MESURE 1 : Engager les réformes nécessaires pour permettre le développement des infrastructures de télécommunications et de radiodiffusion sonore et télévisuelle",
+              "MESURE 2 : Faire du respect de la propriété intellectuelle une priorité afin de permettre l’essor de logiciels non-ouverts produits par des Camerounais et de rassurer les entreprises étrangères désireuses d’out-sourcer le développement de leurs logiciels au Cameroun",
+              "MESURE 3 : Mettre à la disposition de chaque communauté d’une zone géographique socialement moins favorisée, des télés services (téléphone, télécopie, Internet)",
+              "MESURE 4 : Mettre la fibre optique à la portée de toutes les entreprises dans les zones industrielles",
+              "MESURE 5 : Donner un accès à Internet dans toutes nos écoles et lycées d’enseignement public",
+              "MESURE 6 : Donner un accès internet gratuit à tous dans les lieux publics",
+              "MESURE 7 : Simplifier l’accès au domaine « .cm. » afin d’encourager les entreprises camerounaises à pratiquer l’e-commerce tout en promouvant l’image de notre pays dans le cyberespace",
+              "MESURE 8 : Créer une agence spatiale camerounaise par une mutation de l’ART actuelle",
+              "MISSION DE L'AGENCE: Promouvoir, encourager et réguler l’utilisation de l’espace comme moyen de communication au Cameroun",
+              "MISSION DE L'AGENCE: Produire les données géo spatiales indispensables à un développement efficace, harmonieux et eco-responsable de notre pays",
+              "MISSION DE L'AGENCE: Géo-localiser les ménages et les entreprises sur l’ensemble du territoire",
+              "MISSION DE L'AGENCE: Assister les autorités de la sécurité civile dans la prévention des catastrophes naturelles et industrielles"
+            ]
+          },
+          {
+            "title": "Produire les composants électroniques de demain",
+            "items": [
+              "Encourager et soutenir les PME qui sont créées et tournées vers la production du logiciel d’une part, et vers la production des composants électroniques d’autre part. L’objectif visé est de faire du Cameroun, une sorte de « siliconvalley pour les solutions logicielles et les composants électroniques » en Afrique centrale",
+              "Renforcer considérablement nos capacités dans l’ingénierie et la conception des composants électroniques et des logiciels en agissant sur la formation initiale et continue",
+              "Mettre en place une stratégie progressive pour la maîtrise des technologies de production de composants électroniques au Cameroun",
+              "Créé un fonds pour l’innovation en électronique et en informatique sera  en vue de fournir des incitants à cette industrie. Outre les subsides accordés aux entreprises innovatrices, ce fonds financera un prix accordé aux meilleures innovations dans le domaine de l’électronique au niveau universitaire et entrepreneurial",
+              "Elaborer une stratégie de la qualité, des campagnes de sensibilisation pour encourager et faciliter l’adoption de normes et de certifications internationales qui permettront aux PME du secteur des TIC de moderniser leurs capacités pour passer à des activités à forte valeur ajoutée"
+            ]
+          },
+          {
+            "title": "Produire les logiciels pour nos administrations et nos entreprises et placer la signature électronique au cœur de la révolution numérique",
+            "items": [
+              "Soutenir et encourager la création d’entreprises locales tournées vers la production de logiciels tant pour nos administrations que pour nos entreprises",
+              "Renforcer la formation pratique en matière de développement de logiciels en accordant un subside aux entreprises qui prennent des étudiants en stage",
+              "Encourager les administrations à travailler avec les entreprises locales pour la fourniture en logiciel sur mesure",
+              "Promouvoir un label « Made in Cameroon » pour les logiciels produits localement",
+              "Encourager nos administrations et entreprises à utiliser les logiciels labélisés « made in Cameroun »",
+              "Vulgariser et généraliser l’utilisation de la signature électronique",
+              "SIGNATURE ELECTRONIQUE : Fiabiliser et sécuriser les échanges économiques via l’utilisation de la facture électronique",
+              "SIGNATURE ELECTRONIQUE : Faciliter et promouvoir l’échange sécurisé de documents électroniques entre les administrations",
+              "SIGNATURE ELECTRONIQUE : Mettre en place un système de e-gouvernement où la population interagit avec l’administration via des portails sécurisés",
+              "Nous soutiendrons la création de dessins animés et de jeux vidéos au Cameroun. Il s’agit en effet d’un secteur culturel en plein essor dans lequel notre pays est totalement absent"
+            ]
+          },
+          {
+            "title": "Développer les entreprises de nouvelles technologies",
+            "items": [
+              "Développer le Silicon Mountain de Buea et créerons d'autres pôles des technologies du numérique. Doter la ville de Buea d’un centre d’incubation, permettant aux starts up de s’installer et démarrer. (Coût de construction 5 milliards maximum)",
+              "Mettre en place une fiscalité incitative permettant au capital-risque camerounais de lever les capitaux. Par exemple, les compagnies d’assurance vie, les sociétés de jeux, les groupes industriels seront exonérés de 5 % du montant total de l’impôt sur les sociétés à payer, s’ils investissent 50 % de leurs bénéfices dans un fonds de capital risque pour 10 ans. L'objectif est d'encourager les grandes entreprises à investir dans la nouvelle économie et ou-vrir la voie à d’autres"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "BIOTECHNOLOGIES",
+        "key": "biotechnologies",
+        "details": [
+          {
+            "title": "Le Cameroun, un Champion des biotechnologies",
+            "items": [
+              "Faire du Cameroun un « lion des biotechnologies »",
+              "Renforcer le développement des biotechnologies pour consolider l’agriculture, l’élevage, la pêche, l’aquaculture",
+              "Développer les biotechnologies pour une gestion durable des forêts",
+              "Développer les biotechnologies pour la transformation et la sécurité sanitaire des aliments",
+              "Développer les biotechnologies pour la production dans le domaine de la santé"
+            ]
+          },
+          {
+            "title": "Les préalables",
+            "items": [
+              "Améliorer les infrastructures et équiper les laboratoires (équipements de pointe)",
+              "Faciliter l’accès à l’information et à la documentation autant dans les centres de recherche que dans les universités et écoles de formation (livres, articles, revues et journaux scientifiques)",
+              "Bonifier conséquemment le budget alloué au financement du fonctionnement des instituts de recherche, au salaire des chercheurs, au financement des projets de recherche",
+              "Améliorer la qualité de la formation post-secondaire actuellement essentiellement théorique en insistant sur les connaissances pratiques",
+              "Améliorer les conditions des chercheurs (salaires, autonomie, bureaux, laboratoires, subventions gouvernementales et non pas étrangères octroyées sur une base compétitive et équitable)",
+              "Améliorer les conditions des étudiants (bourses de recherche et de mobilité)",
+              "Établir des accords avec les éditeurs de livres, journaux et revues scientifiques au bénéfice des chercheurs et étudiants"
+            ]
+          },
+          {
+            "title": "Un programme national de recherche en biotechnologie",
+            "items": [
+              "Elaborer un programme national de recherche qui précisera chaque année les priorités de recherche en biotechnologie. Ce programme sera accompagné d’une politique qui mettra le chercheur, des institutions spécialisées, des Universités et écoles de formation, les producteurs et les industriels au cœur des enjeux. Ceux-ci devraient travailler de concert pour identifier les problématiques, élaborer des projets innovants portés vers le développement avec des objectifs clairement identifiés et des échéanciers précis",
+              "Mettre sur pied un fonds de recherche gouvernemental pour promouvoir et soutenir financièrement la recherche en biotechnologie, la vulgarisation des résultats, la formation des chercheurs et étudiants (bourses de recherche, perfectionnement), la création des PME ou start-up en biotechnologie",
+              "Encourager les regroupements de chercheurs en pôle d’excellence sur des domaines spécifiques, ainsi que les associations de producteurs et de transformateurs du secteur. Ces associations de producteurs et transformateurs devront apporter leurs contributions au financement des projets de recherches en fonction de leurs intérêts et des problématiques soulevées, et codirigeront l’Agence nationale des biotechnologies avec un droit de regard sur la gestion du fonds de recherche en biotechnologie dûment créé",
+              "Créer une Agence nationale des biotechnologies (ANB)",
+              "MISSION DE L'AGENCE : Etablir le génome des plantes",
+              "MISSION DE L'AGENCE : Définir les grandes orientations en matière de biotechnologie ; coordonner les travaux de recherches dans les universités et veiller à l’industrialisation des résultats qui en résultent",
+              "MISSION DE L'AGENCE : Gérer le fonds de recherche en biotechnologie"
+            ]
+          },
+          {
+            "title": "Les biotechnologies pour une agriculture efficace et durable",
+            "items": [
+              "Améliorer ation de la productivité des cultures locales",
+              "Réduction de l’utilisation des pesticides",
+              "Protection des cultures contre les ravageurs et les pertes post-récoltes",
+              "Amélioration de la qualité nutritionnelle",
+              "Les techniques biotechnologiques seront utilisées pour créer un semencier national pour ainsi conduire à la production des plantes qui répondront de mieux en mieux aux contraintes sociales ou environnementales ainsi qu'à l'accroissement du rendement"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "PROTECTION DE L’ENVIRONNEMENT ET TOURISME",
+        "key": "environnement-tourisme",
+        "details": [
+          {
+            "title": "Un environnement vert et durable",
+            "items": [
+              "Engager nos entreprises sur la voie du développement durable",
+              "Développer les filières pour la collecte et le traitement des déchets ménagers et industriels",
+              "Développer l’agriculture biologique",
+              "Maitriser la consommation d’énergie dans nos ménages et nos entreprises",
+              "Développer la production d’énergies vertes",
+              "Veiller à une exploitation rationnelle et durable des produits forestiers ligneux. À cet égard, chaque arbre coupé par un exploitant, national ou étranger, devra être replacé par ce dernier ou à sa charge par la plantation d'un nouvel",
+              "Veiller à la préservation de nos espèces protégées ou menacées d'extinction",
+              "Assurer le parachèvement du recensement de notre patrimoine faunique et floristique et veillerons à une exploitation rationnelle et durable des produits forestiers non ligneux",
+              "Au plan sociétal, nous veillerons au respect de la dignité des travailleurs, le développement d’un climat de travail propice à la créativité, la promotion de l’égalité hommes-femmes dans l'emploi, la santé et la sécurité au travail",
+              "Nous veillerons également à ce que chaque entreprise soit préoccupée par le souci de respecter et de protéger l'environnement, en particulier contre différentes formes de pollution",
+              "Nous encouragerons les syndicats à jouer à cet égard leur rôle de vigile des valeurs d'entreprise et des valeurs sociales et collectives dans l'intérêt primordial des travailleurs qu'ils représentent"
+            ]
+          },
+          {
+            "title": "Promouvoir le tourisme en exploitant au mieux le patrimoine disponible",
+            "items": [
+              "Mettre en valeur les sites exceptionnels du pays",
+              "Développer le tourisme ornithologique, des parcs et réserves animaliers (gorilles, éléphants, buffles, girafes, lions etc.)",
+              "Développer le tourisme historique",
+              "Créer des infrastructures pour le tourisme des congrès, le tourisme balnéaire et le tourisme des montagnes"
+            ]
+          },
+          {
+            "title": "Mettre en valeur les sites exceptionnels du pays",
+            "items": [
+              "Développer un éco-tourisme dans les nombreux sites exceptionnels dont regorge notre pays",
+              "Les missions du Ministère du tourisme seront renforcées pour la promotion d’un tourisme respectueux de notre écosystème",
+              "Les villageois seront intégrés dans la gestion de l’environnement. Nous leur apprendrons à protéger les zones touristiques",
+              "Mettre en valeur les mangroves de Bakassi",
+              "Les gorilles dans la zone des forêts de Deng-Deng feront l’objet d’une attention particulière",
+              "Le parc de Kalamaolé sera réhabilité",
+              "Encourager les investisseurs à créer des parcs",
+              "Faire de Bimbia la nouvelle ‘‘Gorée’’ par une réhabilitation sur des bases historiques et sa promotion au niveau national et international",
+              "Organiser la découverte des bois tropicaux",
+              "Etablir un circuit touristique sur la présence des Allemands au Cameroun : avec des villes comme Buea (avec le Palais du Gouverneur), Yaoundé, Lolodorf (avec la résidence de Zinker à restaurer), des sites dans le Nyong-Ekele (collège Marie Emberg), la ville de Dschang (avec le Centre climatique), etc"
+            ]
+          },
+          {
+            "title": "Une infrastructure pour le tourisme",
+            "items": [
+              "Encourager les projets de construction ou d’exploitation des hôtels, maisons d’hôtes, restaurants conformes aux standards internationaux sur l’ensemble du territoire, en proposant de tels projets bons pour financement, aux publics intéressés, et en soutenant l’accès des promoteurs au crédit à taux réduit du Crédit foncier ou de la BPME, facilité actuellement réservée uniquement aux projets d’habitats",
+              "Soutenir la création d’agences de tourisme voués à la promotion de destinations dans l’ensemble du pays et l’organisation de voyages et séjours dans ces destinations, en coopération avec les compagnies de transport, les hôtels et les maisons d’hôtes. Cette dynamique génèrera assurement de nombreux emplois notamment dans la construction des hôtels, la gestion des hébergements, la restauration, les transports"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "position": 4,
+    "_id": "Social_Solidarité",
+    "publish": true,
+    "color": "rgb(145,61,136)",
+    "pageTitle": "Social et Solidarité",
+    "img": "chantier4.jpg",
+    "label": "Chantier No 4",
+    "title": "CHANTIER SOCIAL ET DE SOLIDARITÉ",
+    "text": "Santé pour tous, valorisation les artistes et promotion du développement sportif.",
+    "details": [
+      {
+        "title": "La Femme",
+        "key": "femme",
+        "details": [
+          {
+            "title": "Marcher sur ses deux pieds : faire jouer pleinement à la femme son rôle dans notre pays (Women empowerment)",
+            "items": [
+              "Concevoir les politiques publiques adéquates pour permettre à la femme camerounaise d’obtenir toute sa place et de jouer pleinement son rôle dans la société nouvelle que nous proposons",
+              "Permettre à la femme de participer aux avant-postes à la construction du Cameroun nouveau",
+              "Redresser une situation absurde d’infériorisation où la femme est encore maintenue",
+              "Permettre à la femme de recouvrer la plénitude de ses droits pour favoriser une accélération de la croissance économique"
+            ]
+          },
+          {
+            "title": "Egalité homme femme, un principe inviolable",
+            "items": [
+              "Rendre effectif l’égalité des droits entre les femmes et les hommes",
+              "Donner les mêmes chances aux jeunes femmes et aux jeunes hommes sur le plan éducatif",
+              "Traduire dans les faits l’égalité des salaires entre les femmes et les hommes",
+              "Favoriser et mieux traiter la maternité de la femme qui est une responsabilité au bénéfice de la collectivité"
+            ]
+          },
+          {
+            "title": "Émancipation de la femme par l’éducation",
+            "items": [
+              "Assurer l’émancipation de la femme par l’éducation",
+              "Mettre en place une politique vigoureuse de scolarisation des jeunes Camerounaises de toutes les régions du pays, les spécificités culturelles ne pouvant en rien constituer un obstacle acceptable à cette politique",
+              "Scolarité obligatoire pour tous les jeunes hommes et femmes jusqu’à l’âge de 16 ans au moins. Nous lutterons ainsi contre les mariages précoces qui sont si dommageables à la femme",
+              "Mettre en place le planning familial, et mener des campagnes dans les milieux scolaires pour informer les jeunes des risques des grossesses précoces. À ce propos les cours d’éducation sexuelle seront introduits suffisamment tôt dans le cursus scolaire pour former les jeunes filles à la connaissance de leur corps",
+              "Renforcer les campagnes de sensibilisation des jeunes femmes et hommes aux techniques de contraception afin de réduire le nombre de grossesses non désirées"
+            ]
+          },
+          {
+            "title": "La maternité, une responsabilité primordiale au bénéfice de la société",
+            "items": [
+              "Engagement ferme pour la gratuité de la césarienne afin que plus jamais aucune femme ne meure en couche dans notre pays, ou ne perde son bébé faute de moyens lui permettant de s’offrir les soins nécessaires",
+              "Introduire le congé de paternité pour encourager les hommes à soutenir leurs épouses après un accouchement, afin que la femme ne soit pas seule pour la prise en charge des petits enfants",
+              "Mettre en place une politique de garde des enfants pour permettre à la femme d’aller plus librement au travail"
+            ]
+          },
+          {
+            "title": "Une promotion des activités de la femme",
+            "items": [
+              "Mettre en place une politique de promotion des activités de la femme consistant à créer, dans les zones rurales les plus reculées et dans les zones urbaines à forte densité de population, des structures de micro-banque de développement rural ou de microfinance urbaine",
+              "Encourager nos femmes, très nombreuses aujourd’hui dans le secteur dit informel, à s’inscrire dans un cadre légal qui leur permettra de bénéficier de la sécurité sociale",
+              "Mettre en place des programmes pour aider nos femmes à professionnaliser la gestion de leurs petites activités qui aujourd’hui fournissent l’essentiel des revenus de nombreuses familles",
+              "Mettre en place les soutiens techniques et financiers appropriés pour l’épanouissement de la femme dans les circuits de l’industrie et les secteurs tertiaires"
+            ]
+          },
+          {
+            "title": "Un rôle de premier plan dans la société",
+            "items": [
+              "Former les femmes pour qu’elles jouent un rôle de premier plan dans la société dans tous les secteurs : politique, affaires, industrie, recherches et innovations, etc.",
+              "Augmenter le nombre de femmes dans le gouvernement, à des postes qui ne sont pas dédiés ou seulement symboliques",
+              "Augmenter le nombre de femmes au parlement, à divers niveaux de la hiérarchie administrative, et à la tête des entreprises publiques"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "La santé",
+        "key": "sante",
+        "details": [
+          {
+            "title": "Repenser le système de santé",
+            "items": [
+              "Organiser des états généraux de la santé pour préparer les bases de l’élaboration d’un projet de loi-programme relatif à l`organisation du système de santé et la formalisation des principaux axes",
+              "Établir une véritable carte nationale de santé au Cameroun ",
+              "Augmenter la part de la santé dans le budget de l’Etat : Passer de 6% actuellement à 15% (objectif fixé par l’Union Africaine à Abuja)",
+              "Réformer le système de santé",
+              "OBJECTIF DE LA REFORME : Rendre des soins de santé de base accessibles gratuitement à tous et éradiquer les grandes endémies",
+              "OBJECTIF DE LA REFORME : Faire du Cameroun un pôle d’excellence en soins de santé dans certaines disciplines et faire en sorte que le pays devienne une destination pour le tourisme de santé",
+              "Redéfinir la politique de construction et de gestion des infrastructures sanitaires en explicitant les rôles respectifs de l`État, de la Région et du secteur privé",
+              "Viser la réalisation des Objectifs du Millénaire du Développement (OMD) liés au paludisme en 10 ans",
+              "Recruter massivement des médecins et infirmiers et les affecter en priorité dans les zones où il y a pénurie"
+            ]
+          },
+          {
+            "title": "Des hôpitaux de proximité sur tout le territoire",
+            "items": [
+              "Créer des hôpitaux en fonction des besoins des populations et de leur répartition sur le territoire et non en fonction des motifs politiques",
+              "Construire à travers le pays, des centres de santé de première nécessité, de sorte que chaque ménage se trouve au plus à 5 km d’un tel centre",
+              "Construire par maillage des hôpitaux dans les arrondissements ou les départements",
+              "Construire dans chaque capitale régionale (ou d'entité fédérée) un hôpital de référence, doté des principaux services, de spécialités complémentaires, et des équipements et plateaux techniques adéquats"
+            ]
+          },
+          {
+            "title": "Des hôpitaux de référence à Douala et à Yaoundé",
+            "items": [
+              "Renforcer l’attractivité des centres hospitaliers des grandes villes en y ouvrant des services de pointe",
+              "Renforcer les hôpitaux de référence des villes de Yaoundé et Douala et les aligner aux meilleurs standards",
+              "Favoriser la contribution des médecins actifs au sein de la diaspora aux hôpitaux camerounais"
+            ]
+          },
+          {
+            "title": "Une agence pour le contrôle des médicaments",
+            "items": [
+              "Créer une agence nationale pour le contrôle des médicaments",
+              "Renforcer la loi sur le commerce illicite de médicaments",
+              "Réduire le coût des médicaments en préférant l’importation de médicaments génériques",
+              "Des programmes de soutien seront mis en place pour encourager les pharmaciens et industriels camerounais à investir dans la production locale de médicaments",
+              "Renforcer la collaboration avec les pays de l’Afrique Centrale pour le contrôle de la circulation des médicaments"
+            ]
+          },
+          {
+            "title": "Un Institut national de recherche et de production des médicaments",
+            "items": [
+              "Cet Institut résultera de la transformation de l'actuel Institut national des Plantes médicinales. Sa mission ira au-delà du recensement desdites plantes pour s'étendre, d'une part à la mise au point de médicaments notamment à partir de la pharmacopée camerounaise, d'autre part au contrôle-qualité des médicaments importés",
+              "Le Cameroun développera ses propres normes de mises sur le marché des médicaments développés par l'Institut",
+              "L'Etat s'impliquera, par le biais de la SNI, à la création d'un bras industriel de l'Institut, chargé de la production industrielle des médicaments mis au point"
+            ]
+          },
+          {
+            "title": "Du matériel de soins à la portée des centres de santé",
+            "items": [
+              "Mettre l’accent sur la création d’entreprises de production de matériel de soins de santé de base tel que l’oxygène, les pansements, les tubulures de perfusions, les cathéters, les produits de désinfection"
+            ]
+          },
+          {
+            "title": "Des médecins généralistes pour tous",
+            "items": [
+              "Encourager et inciter les médecins généralistes à s’installer dans toutes les communes"
+            ]
+          },
+          {
+            "title": "Une rémunération décente pour le corps médical",
+            "items": [
+              "Revoir à la hausse la grille salariale des médecins dans les structures publiques",
+              "Renforcer le contrôle des prestations des médecins et infirmiers des hôpitaux et centres de santé publics"
+            ]
+          },
+          {
+            "title": "Une formation de qualité",
+            "items": [
+              "Pourvoir les établissements universitaires d’équipements modernes",
+              "Assurer une formation de qualité pour tout le personnel requis",
+              "Adosser les facultés de médecine aux hôpitaux régionaux",
+              "Nouer des rapports privilégiés avec la Diaspora pour renforcer la formation des médecins"
+            ]
+          },
+          {
+            "title": "Une agence pour le contrôle alimentaire",
+            "items": [
+              "Créer une agence pour le contrôle alimentaire",
+              "MISSION : Contrôler les industries agro-alimentaires locales",
+              "MISSION : Contrôler les importations de produits alimentaires",
+              "MISSION : Collaborer avec les pays de l’Afrique centrale pour établir la traçabilité des produits alimentaires circulant dans la zone"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Sécurité sociale",
+        "key": "securite-sociale",
+        "details": [
+          {
+            "title": "La sécurité sociale pour tous",
+            "items": [
+              "Créer les conditions pour que tous les camerounais et camerounaises aient accès à la sécurité sociale dans les 10 prochaines années",
+              "Une sécurité sociale de base identique pour tous",
+              "",
+              "Une institutionnalisation de la solidarité : on ne cotise pas uniquement pour soi car il y a des transferts entre les catégories sociales",
+              "Un cadre légal pour une assurance complémentaire",
+              "Une gestion paritaire de la sécurité sociale entre l’Etat, les organisations syndicales et patronales",
+              "Une réforme de la CNPS en vue de permettre la désignation de ses dirigeants par les syndicats des travailleurs, les syndicats patronaux et les représentants des travailleurs indépendants et non par l’Etat comme c’est le cas actuellement",
+              "Une revalorisation des salaires à travers l’adoption des conventions collectives dans les secteurs d’activités qui en sont dépourvues (secteurs de l’enseignement et de la santé par exemple) afin d’assurer",
+              "Une bonne sécurité sociale aux travailleurs de ces secteurs",
+              "Sécurité sociale inclusive et ouverte à l’ensemble de la population jeunes, moins jeunes, personnes âgées, fonctionnaires, travailleurs du privé et du secteur informel, travailleurs indépendants et militaires",
+              "Sécurité sociale offrant les principales prestations attendues d’une sécurité sociale moderne",
+              "PRESTATION : Les prestations maladies",
+              "PRESTATION : Les allocations familiales",
+              "PRESTATION : La pension retraite",
+              "PRESTATION : L’allocation d’invalidité"
+            ]
+          },
+          {
+            "title": "Un véritable statut pour les travailleurs indépendants",
+            "items": [
+              "Les dirigeants non-employés des grandes, petites et moyennes entreprises, la Bayam-Sallam, le vendeur à la sauvette, la vendeuse de beignet-haricot, la vendeuse de poisson braisé, toutes ces catégories de personnes qui prennent le risque de créer de l’emploi pour d’autres ou pour eux-mêmes auront accès au statut de travailleur indépendant",
+              "Le régime de travailleur indépendant géré par la CNPS, qui accorde déjà aux travailleurs indépendants affiliés la pension retraite, leur donnera également droit aux autres prestations accordées aux salariés, hormis celles qui sont étroitement liées au contrat de travail telles que les allocations familiales, toutefois avec un taux de cotisation différent"
+            ]
+          },
+          {
+            "title": "L’assurance complémentaire",
+            "items": [
+              "Outre la sécurité sociale de base obligatoire pour tous, nous définirons un cadre légal pour une assurance complémentaire qui permettra à ceux qui disposent de plus de moyens ou qui sont plus enclin à l’épargne de prendre des garanties supplémentaires pour leur avenir. Cette assurance complémentaire sera ouverte non-seulement aux individus mais aussi aux entreprises qui pourront l’offrir comme avantages à leurs employés"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Solidarité",
+        "key": "solidarite",
+        "details": [
+          {
+            "title": "Solidarité entre les régions",
+            "items": [
+              "Organiser une solidarité entre les différentes Régions du Cameroun",
+              "Organiser la péréquation des ressources générées et des impôts collectés",
+              "Rendre égalitaire l’accès à la sécurité sociale",
+              "Partager les expériences réussies entre les régions et encourager les transferts des compétences"
+            ]
+          },
+          {
+            "title": "Solidarité avec les personnes vulnérables",
+            "items": [
+              "Porter une attention particulière aux personnes vulnérables : personnes vivant avec un handicap, personnes âgées, orphelins sans aucun soutien, enfants abandonnés ou en délicatesse avec la loi, personnes à la retraite",
+              "Les édifices publics devront prévoir des rampes d'accès pour faciliter l'accès aux personnes vivant avec un handicap",
+              "5% des places seront réservées aux personnes vivant avec un handicap dans les concours administratifs"
+            ]
+          },
+          {
+            "title": "PERSONNES VULNÉRABLES  - Renforcer la sécurité sociale.",
+            "items": [
+              "Déterminer les filières professionnelles ou l’insertion des personnes les plus vulnérables sera la plus aisée",
+              "Mettre en place des mécanismes spécifiques d’appui aux initiatives entrepreneuriales de ces personnes",
+              "Reformer le système actuel de retraite et élargir la base des retraités",
+              "Étendre la retraite à 60 ans au moins pour tous et l’ajuster en fonction de la pénibilité des métiers",
+              "Créer une allocation spéciale équivalente au SMIC pour les personnes âgées qui aujourd’hui ne bénéficient d’aucun appui formel de l’Etat",
+              "Organiser pour les personnes âgées des campagnes de dépistage de certaines maladies chroniques et mettre en place leur prise en charge"
+            ]
+          },
+          {
+            "title": "PERSONNES VULNÉRABLES  - L’école sous l’arbre encadrée par les jeunes",
+            "items": [
+              "Remettre au goût du jour dans les centres de formation le principe de l’école sous l’arbre lancé au Cameroun en 1961 pour réduire l’analphabétisme et qui a été abandonné entre 1967-1970",
+              "Fournir les bases de lecture, du calcul et de l’utilisation des outils de communication moderne à toute personne (jeune ou âgée) qui n’a pas eu l’occasion d’aller à l’école",
+              "Les jeunes de tous niveaux seront mis à contribution pendant les périodes de congé, les week-ends ou en fonction de leurs disponibilités"
+            ]
+          },
+          {
+            "title": "PERSONNES VULNÉRABLES  - Les retraités pour transmettre le métier aux jeunes",
+            "items": [
+              "Les retraités disposent d’un précieux savoir-faire dans le métier auquel ils ont consacré leur vie active. Ils seront donc mis à contribution dans les Centres de métier pour la formation et l’encadrement des jeunes"
+            ]
+          },
+          {
+            "title": "Solidarité avec les générations futures",
+            "items": [
+              "Organiser la protection de l’écosystème et de notre environnement immédiat",
+              "Chaque arbre coupé devra être remplacé",
+              "Mettre en place des mesures antipollution et de traitement les déchets industriels",
+              "Interdire les engrais chimiques et les pesticides"
+            ]
+          },
+          {
+            "title": "Un Service National des Volontaires de la Solidarité (SNVS)",
+            "items": [
+              "Créer un Service National des Volontaires de la Solidarité (SNVS). Ce service dont les prestations seront entièrement à la charge de l’État sera constitué d’une réserve de jeunes de toutes les régions du pays qui devront consacrer six mois de leur vie à des activités au service de la collectivité dans une région du pays avant d'entrer dans leur vie professionnelle. Ils auront en outre pour mission d’intervenir en cas de crise (catastrophe naturelle, accident grave) au Cameroun ou dans un pays africain"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "La sécurité routière",
+        "key": "securite-routiere",
+        "details": [
+          {
+            "title": "Remédier à (80% de morts en moins sur nos routes en 30 ans)",
+            "items": [
+              "Renforcer les contrôles techniques des voitures avec des sanctions exemplaires pour ceux qui se laisseront corrompre",
+              "Améliorer les entretiens routiers et la sécurisation de certains axes accidentogènes",
+              "Des sanctions exemplaires de l’incivisme routier",
+              "La réorganisation et une meilleure règlementation de l’utilisation des motos taxi. L’objectif de 80% de morts en moins sur nos routes en 30 ans est de tendre vers une situation où le décès par accident sur nos routes devient une exception et non pas la norme comme c’est le cas aujourd’hui au Cameroun",
+              "Cet objectif structurant sera discuté avec tous les acteurs de la sécurité et de la santé",
+              "Des états généraux de la sécurité routière seront organisés et les résultats seront actés par une loi",
+              "Porter les efforts de sensibilisation sur les éléments techniques et répressifs mais aussi culturels et psychologiques"
+            ]
+          },
+          {
+            "title": "Une Agence Nationale pour la Sécurité Routière (ANSR)",
+            "items": [
+              "Pour réaliser l’objectif zéro mort sur nos routes",
+              "La définition de la politique nationale en matière de sécurité routière",
+              "La coordination de l’action des différents acteurs administratifs nationaux et régionaux. Chaque région sera dotée d’une agence pour la sécurité routière qui aura pour mission",
+              "D’implémenter en étroite collaboration avec l’ANSR, les régions et les communautés locales, la politique nationale de sécurité routière en adéquation avec les réalités locales",
+              "De coordonner l’action des acteurs locaux dans le domaine de la sécurité routière"
+            ]
+          },
+          {
+            "title": "Des véhicules modernes et fiables sur nos routes",
+            "items": [
+              "Améliorer continuellement la qualité des véhicules présents sur nos routes pour tirer parti au maximum des améliorations techniques réalisées ces dernières années sur les véhicule en matière de tenue de route, de sécurité active (en mouvement) et passive (résistance aux chocs)",
+              "Définir et faire respecter un standard minimum de qualité aux véhicules en circulation sur nos routes et dans les centres de contrôle technique",
+              "Réaliser un contrôle technique de véhicules importés",
+              "Développer une filière de reconditionnement de vieux véhicules pour les porter au standard minimum exigé",
+              "Développer la production locale de véhicule pour que des véhicules de qualité soient à la portée des ménages et des entreprises"
+            ]
+          },
+          {
+            "title": "Des routes sûres",
+            "items": [
+              "Nous organiserons un entretien fréquent de nos routes pour les rendre plus sûres",
+              "Passer du cantonnage manuel pour aller progressivement à la petite mécanisation basée sur des outils créés par nos jeunes dans nos universités et industries",
+              "Soutenir le développement d’un véritable secteur local pour la réfection des routes",
+              "Améliorer les revêtements et la signalisation routière",
+              "Établir systématiquement des barrières pour séparer les voies et les pistes cyclables des routes empruntées par les automobiles"
+            ]
+          },
+          {
+            "title": "Sensibilisation, formation et éducation",
+            "items": [
+              "Nous travaillerons à un changement radical de culture et de mentalité",
+              "Conscientiser les citoyens sur le fait que la sécurité des citoyens sur la route est bien plus importante que le fait de se déplacer très vite d'un endroit à l'autre",
+              "Mettre en place des programmes de formation pour faire de la culture de la sécurité le guide des comportements individuels",
+              "Introduire dès l’école maternelle et primaire, une éducation à la sécurité routière dans toutes les langues du pays"
+            ]
+          },
+          {
+            "title": "Contrôle et répression",
+            "items": [
+              "Nous renforcerons l’efficacité des contrôles routiers en éradiquant la corruption au sein des corps chargés de ces contrôles d’une part et d’autre part en utilisant les possibilités que nous offrent aujourd’hui les TIC",
+              "L’ANSR développera en collaboration avec nos universités, centres de recherches et industries des techniques modernes et innovantes pour le contrôle routier",
+              "Mener une lutte impitoyable contre l’alcool au volant",
+              "Rendre le port du casque obligatoire pour ceux qui roulent en moto",
+              "Les examinateurs pour le permis de conduire seront assermentés et tout acte de corruption dans leur chef sera considéré comme une atteinte à la vie humaine et sera pénalement répréhensible"
+            ]
+          },
+          {
+            "title": "Diminuer le nombre de mototaxis sur nos routes",
+            "items": [
+              "Nous réduirons progressivement la part de la moto comme moyen de transport dans les grandes villes et les campagnes"
+            ]
+          },
+          {
+            "title": "Réforme de la procédure d’obtention d’un permis de conduire",
+            "items": [
+              "Nous reformerons la procédure d’obtention du permis de conduire pour la rendre plus exigeante. Cette mutation ira de pair avec l’amélioration de la signalisation sur nos routes",
+              "Les auto écoles devront obtenir un agrément auprès des agences pour la sécurité routière et devront respecter un cahier des charges très strict en termes de qualité des véhicules utilisés et de la qualité de leurs formateurs"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Le logement social",
+        "key": "logement-social",
+        "details": [
+          {
+            "title": "Un logement pour tous",
+            "items": [
+              "Développer des programmes de construction des logements sociaux et d’amélioration de l’habitat",
+              "Offrir à chaque camerounais l’accès à un logement décent et la possibilité d’être propriétaire de son logement s’il le souhaite"
+            ]
+          },
+          {
+            "title": "Un accès à une propriété foncière sécurisée dans les villes",
+            "items": [
+              "Nous devrions permettre l’accession du plus grand nombre de ménages à une propriété foncière sécurisée",
+              "Recentrer les tâches de l’Etat dans la régulation et la révision en profondeur de la politique de construction des logements",
+              "Impulser et renforcer l’action du secteur privé et l’inciter à intervenir dans la promotion, la réalisation de lotissements et des programmes de logements ",
+              "Réduire la spéculation foncière en mettant en place une politique de concession d’aménagement foncier urbain à des opérateurs privés pour une production des terrains équipés dont la commercialisation s’effectuera sous le contrôle de l’Etat",
+              "Renforcer les missions de la MAETUR dans la constitution, la gestion des réserves foncières et le développement des villes",
+              "Baisser et mieux recouvrer les impôts fonciers sur les terrains bâtis et non bâtis",
+              "Réduire de manière drastique les habitations spontanées"
+            ]
+          },
+          {
+            "title": "Un logement social basé sur les matériaux locaux",
+            "items": [
+              "Améliorer les techniques existantes en privilégiant les matériaux locaux. À titre d’exemple, nous avons : la brique de terre à l’Ouest, la planche dans le Littoral, la terre et le bois dans le centre et le Sud, la terre dans le Nord, la pierre dans les régions montagneuses du Sud-Ouest",
+              "Pour promouvoir l’utilisation des matériaux locaux dans la construction",
+              "Élaborer des techniques de construction adaptées à chaque région du pays en collaboration avec nos universités régionales",
+              "Renforcer les capacités de la Mission de Promotion des Matériaux Locaux (MIPROMALO)",
+              "Proposer aux populations en collaboration avec les architectes des techniques permettant de produire à un coût modeste des logements confortables et respectueux de l’environnement"
+            ]
+          },
+          {
+            "title": "Des logements sociaux d’abord dans les campagnes",
+            "items": [
+              "Nous entendrons inverser la courbe de l’exode rural par la transformation ou l’amélioration de l’habitat et du cadre de vie en milieu rural, la dotation des populations vivant dans ces zones de ressources initiales pour le démarrage ou le développement d’activités génératrices de revenus",
+              "Intensifier la construction des logements sociaux destinés aux ménages à revenus modestes",
+              "Réguler les loyers dans les logements sociaux pour mettre fin à la spéculation"
+            ]
+          },
+          {
+            "title": "Réduire l’étalement de nos villes",
+            "items": [
+              "Dans les grandes cités, le logement sera repensé pour éviter un trop grand étalement qui rend extrêmement difficile et couteux, la mise en place d’équipements de base tels que l’eau, l’électricité, et les transports en commun",
+              "Faire la promotion de logement de taille raisonnable sur des parcelles ayant en moyenne 150m2",
+              "Encourager la construction d’habitations en hauteur permettant de bâtir sur une assise au sol d’environ 80m2, une maison ayant un living, une cuisine moderne, deux salles d’eaux et 3 à 4 chambres",
+              "Engager nos architectes à proposer une utilisation efficace et harmonieuse de cet espace pour faire cohabiter de petites cultures maraichères et des habitations modernes et très fonctionnelles"
+            ]
+          },
+          {
+            "title": "Renforcer les missions du crédit foncier pour le logement social",
+            "items": [
+              "Des prêts à taux d’intérêt modéré seront accordés pour la construction populaire. Les modalités d’accès à ces prêts seront simples et les garanties faciles à donner, l’Etat intervenant en dernière instance en cas de défaillance de ces garanties",
+              "Fusionner le Crédit Foncier avec le Feicom afin de créer une Banque de l'Habitat et de Dé-veloppement Communal (BHDC) dont la mission sera de financer la construction des lo-gements sociaux et les infrastructures économiques des communes (marchés, centres commerciaux, Zone industrielle etc.)",
+              "Les prêts de la BHDC seront accordés à 80% aux promoteurs immobiliers afin de construire en masse les logements sociaux à Douala et Yaoundé (100 logements /ha) dans le cadre d’un projet présidentiel soit 30000 logements par métropole et par an, avec des maté-riaux locaux, soit 300000 logements entre Douala et Yaoundé en 6 ans",
+              "Réaliser un nouveau plan directeur des villes de Douala et Yaoundé par Société nationale d'étude et de contrôle desTravaux (SNECT) en privilégiant des routes droites et plus large, les échangeurs et round points pour réduire les embouteillages"
+            ]
+          },
+          {
+            "title": "Encourager la promotion immobilière pour les logements destinés à la classe moyenne",
+            "items": [
+              "Créer un produit d’habitat nouveau d’une valeur globale ne dépassant pas 5 000 000 FCFA, notamment dans les grandes villes et les villes moyennes",
+              "Rendre solvable la classe moyenne à travers des mécanismes de financements bancaires adaptés"
+            ]
+          },
+          {
+            "title": "Relancer une politique active de construction de logements",
+            "items": [
+              "Nous voudrions accroître la production de logements urbains avec le concours du secteur privé pour satisfaire les besoins estimés à 80 000 logements par an, dont 30 000 pour chacune des villes de Douala et Yaoundé",
+              "Entreprendre des programmes de construction avec le secteur privé pour résorber le stock cumulé de demandes de logements qui est estimé à 600 000 unités",
+              "Pourvoir l’habitat rural de dotations importantes au titre du Fonds Social pour l’Habitat",
+              "Utiliser autant que faire se peut sur le plan technique les matériaux locaux pour réduire le coût de construction des logements"
+            ]
+          },
+          {
+            "title": "Une nouvelle réglementation pour le logement",
+            "items": [
+              "Nous réformerons l’ensemble du dispositif institutionnel et réglementaire concernant le logement, y compris les professions du secteur (géomètres, urbanistes, promoteurs immobiliers, etc.)",
+              "Par la simplification des procédures",
+              "La mise en place des incitations pour les promoteurs et autres investisseurs privés",
+              "La mise sur pied des dispositifs d’accompagnement des populations",
+              "Le repositionnement de l’ensemble des acteurs publics du secteur du logement"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Culture",
+        "key": "culture",
+        "details": [
+          {
+            "title": "Valoriser notre patrimoine culturel et artistique",
+            "items": [
+              "Nous avons pour ambition d'œuvrer à l'émergence d'une identité culturelle camerounaise et d'organiser et financer l’enseignement, l’expression artistique et culturelle, l’appropriation des arts et de la culture pour en faire un vecteur de la croissance et du développement",
+              "Protection et valorisation effective du patrimoine national, élément essentiel d’identification des peuples",
+              "PROTECTION et VALORISATION : Restaurer les sites historiques (Mbimbia, Buea, Douala, Foumban, Lolodorf etc.)",
+              "PROTECTION et VALORISATION : Valoriser l’architecture locale",
+              "PROTECTION et VALORISATION : Construire un musée national de niveau international",
+              "PROTECTION et VALORISATION : Créer une bibliothèque nationale et une Bibliothèque des Mondes Noirs",
+              "PROTECTION et VALORISATION : Oeuvrer à l'émergence d'une identité culturelle nationale et faire du Cameroun une puissance culturelle et artistique"
+            ]
+          },
+          {
+            "title": "Structurer la culture et son rayonnement national et international",
+            "items": [
+              "Adopter le statut de l’artiste",
+              "Susciter et organiser les corps de métiers artistiques et culturels",
+              "Lutter avec détermination contre la piraterie des œuvres artistiques et la contrefaçon",
+              "Constituer un Fonds National de Soutien à la Création et à la Promotion des Arts et de la Cul-ture (FNSCPAC)",
+              "Laisser aux artistes la gestion des sociétés des droits d'auteur",
+              "Construire un Centre culturel dans chaque arrondissement",
+              "[Initié par les collectivités locales, ce centre sera le lieu d’expression culturelle des jeunes à tra-vers la pratique de la musique, du théâtre, l’exposition locale de leurs créations.]",
+              "Construire un Complexe artistique et culturel dans chaque chef-lieu de région",
+              "Créer dans chaque chef-lieu de région du pays des maisons de la culture ou complexes artistiques disposant",
+              "[D’une école de musique, de danse et de la création artistique]",
+              "[De studios convenablement équipés pour la création musicale]",
+              "[De salles de spectacle pour la projection cinématographique, le théâtre, l’opéra et les danses]"
+            ]
+          },
+          {
+            "title": "Des salles d’exposition pour mettre en lumière les créations de nos artistes",
+            "items": [
+              "Former dans ces complexes artistiques, aux arts et techniques culturels traditionnels et modernes ou contemporains à la faveur de la création des infrastructures appropriées à cette fin",
+              "Ces structures au niveau de la région seront établies avec l’aide de l’état central"
+            ]
+          },
+          {
+            "title": "Créer une Académie nationale des arts et de la culture",
+            "items": [
+              "Haut lieu de distinctions des camerounais, elle sera dotée :",
+              "[D’une école nationale de musique pour la formation et la présentation des performances musicales des meilleurs musiciens ou orchestres]",
+              "[D’un orchestre philharmonique qui devra créer notre propre musique instrumentale à partir de nos propres sonorités]",
+              "Cette Académie Nationale des Arts et de la Culture aura aussi pour mission:",
+              "[De réaliser un inventaire exhaustif du patrimoine culturel matériel et immatériel du pays]",
+              "[D’encourager la promotion par l’exposition et/ou l’exportation des produits culturels réalisés aux standards internationaux]"
+            ]
+          },
+          {
+            "title": "Une Bibliothèque des Mondes noirs",
+            "items": [
+              "Créer, à Yaoundé, une Bibliothèque des Mondes Noirs (BMN) qui sera un lieu unique où l’on pourra trouver le maximum des fonds d’ouvrages, d’archives, de documents, de photographies, des musiques et des bandes de films sur les mondes noirs de tous les continents"
+            ]
+          },
+          {
+            "title": "Des musées, vitrines de notre riche production artistique",
+            "items": [
+              "Créer, à Yaoundé, un Musée National de niveau international, vitrine authentique de la riche production artistique camerounaise traditionnelle et contemporaine",
+              "Nous créerons des Musées régionaux (pour la valorisation des arts régionaux et des artistes de la Région, grâce à une association de l’État et des Régions (ou entités fédérées))"
+            ]
+          },
+          {
+            "title": "Faire du Cameroun une Référence Culturelle",
+            "items": [
+              "Développer les industries de la culture",
+              "Mettre en place une véritable politique de développement des industries de la culture. Dans cette perspective, l’industrie du cinéma et des films-vidéos sera encouragée et soutenue. Ce-ci permettra non seulement à nos jeunes d’exprimer leurs talents mais aussi à notre identité nationale de se révéler et de se diffuser",
+              "Promouvoir un cinéma camerounais de niveau international notamment à travers la formation des comédiens et la construction d’un studio de tournage",
+              "Promouvoir un art camerounais de la cuisine et de la table aux standards internationaux",
+              "Créer des prix littéraires et artistiques de haut niveau afin de faire de Yaoundé une capitale africaine des arts et de la culture",
+              "Créer des festivals de niveau international dans le domaine des arts et de la culture (musique, cinéma, mode, littérature etc.)",
+              "Créer une Académie Nationale Camerounaise (ANC) comportant plusieurs sections, no-tamment les sections : Science, Lettres, Sciences morales et politiques",
+              "Introduire l’enseignement des arts et de la culture dans les programmes scolaires",
+              "Développer une offre artistique dans les établissements scolaires",
+              "Introduire l’enseignement de la musique dans les programmes scolaires",
+              "Créer un conservatoire national"
+            ]
+          },
+          {
+            "title": "Introduire l’enseignement des arts et de la culture dans les programmes scolaires",
+            "items": [
+              "Développer une offre artistique dans les établissements scolaires",
+              "Introduire l’enseignement de la musique dans les programmes scolaires",
+              "Créer un conservatoire national"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Sport",
+        "key": "sport",
+        "details": [
+          {
+            "title": "Le Cameroun un grand pays de sport",
+            "items": [
+              "Repenser l’organisation et la gestion du sport au Cameroun",
+              "Revoir les relations entre les pouvoirs publics et les fédérations sportives qui ont mission de service public en rationalisant leur fonctionnement, en définissant et en contrôlant leurs missions",
+              "Revisiter le contenu des programmes de formation des sportifs",
+              "Doter le pays des cadres de haut niveau dans les domaines de l’administration du sport, l’entrainement sportif et la formation d’enseignants d’EPS hautement qualifiés",
+              "Relever les défis de l’animation sportive dans les établissements scolaires"
+            ]
+          },
+          {
+            "title": "Refonte des institutions en charge des sports",
+            "items": [
+              "Veiller à l’application stricte du programme d’Éducation Physique et Sportive sur toute l’étendue du territoire",
+              "Signer des contrats de performance avec les fédérations sportives incluant l’organisation régulière des compétitions nationales et d’un événement international majeur au Cameroun",
+              "Transformer l’INJS (Institut National de la Jeunesse et des Sports) en École Supérieure de Management des Organisations Sportives (ESMOS) pour en faire une référence au niveau national et international (Droit, Gestion, Marketing du Sport, management des organisations sportives, etc.)",
+              "Former des responsables de développement et de planification du sport dans les collectivités décentralisées",
+              "Délivrerdes diplômes de troisième cycle ouverts aux titulaires de Masters professionnels ESTAPS",
+              "Ouvrir l’École des Sciences et Techniques des Activités Physiques et Sportives (ESTAPS)",
+              "Ouvrir l’École des Sciences et Techniques d’Animation Sociale (ESTAS)"
+            ]
+          },
+          {
+            "title": "Allier sport et études",
+            "items": [
+              "Créer entre le collège, le lycée et le premier cycle de l’enseignement supérieur des sections de formation Sport et études destinées aux espoirs sportifs de haut niveau"
+            ]
+          },
+          {
+            "title": "Repenser l’environnement infrastructurel du sport",
+            "items": [
+              "Faire des investissements intelligents dans les équipements et les infrastructures",
+              "Permettre au plus grand nombre et sur toute l’étendue du territoire national de pratiquer le sport dans de bonnes conditions",
+              "Adopter un budget de minimum 100 milliards pour 5 ans pour doter les 360 communes du Cameroun d’une infrastructure sportive minimale devant permettre la pratique décente du sport (Stades en plein air, gymnases, etc.)",
+              "Obliger chaque établissement de formation scolaire de se doter au moins d’une infrastructure sportive (Stade, gymnase, etc.)"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "position": 5,
+    "_id": "Relations_Extérieures",
+    "publish": true,
+    "color": "rgb(150, 35, 35)",
+    "pageTitle": "Relations Extérieures",
+    "img": "chantier5.jpg",
+    "label": "Chantier No 5",
+    "title": "CHANTIER DES RELATIONS EXTÉRIEURES ET DIAPORA",
+    "text": "Une diplomatie de présence, Le levier Diaspora pleinement activé.",
+    "details": [
+      {
+        "title": "FAIRE DE LA DIASPORA CAMEROUNAISE UN ACTEUR MAJEUR DU DÉVELOPPEMENT NATIONAL",
+        "key": "diaspora",
+        "details": [
+          {
+            "title": "Le pacte patriotique et stratégique avec la diaspora",
+            "items": [
+              "Construire avec les Camerounais de l'étranger une alliance stratégique pour le développement de notre pays",
+              "Créer un environnement favorable (mise en place ou renforcement des institutions appropriées, réformes juridiques nécessaires) pour le retour des cerveaux et la mise en capacité de ceux qui désirent rentrer au pays",
+              "Créer une Agence Nationale des Camerounais de l’étranger (ANCE) qui aura pour mission de mettre en œuvre le pacte stratégique avec la diaspora"
+            ]
+          },
+          {
+            "title": "Camerounais tu nais et tu le resteras",
+            "items": [
+              "Réforme du Code de la nationalité en vue d’apporter une réponse adéquate à la question de la double nationalité. Les camerounais et camerounaises d’origine auront d’office droit à la double nationalité",
+              "Réforme politique permettant aux Camerounais de l’étranger d’une part, d’être électeurs à toutes les élections nationales (présidentielle et législatives), et d’autre part, d’être représentés au Parlement en élisant leurs députés à l’Assemblée nationale"
+            ]
+          },
+          {
+            "title": "Susciter, encourager et encadrer les retours au pays",
+            "items": [
+              "Nous procéderons à l’implication de la diaspora sous diverses formes telles que les réseaux de scientifiques et de technologues, le retour virtuel ou partiel de Camerounais de l’étranger sous forme de leur implication dans l’enseignement, la mise sur pied et l’animation des laboratoires de recherche et des structures d’innovation technologique"
+            ]
+          },
+          {
+            "title": "Servir son pays depuis l’étranger",
+            "items": [
+              "Créer dans les représentations diplomatiques auprès des pays abritant une forte communauté de personnes d’origine camerounaise un service spécial chargé de la diaspora",
+              "A travers nos ambassades, établir des relations fortes avec ceux de nos compatriotes qui auront choisis de rester à l’étranger leur permettant d’être des ambassadeurs du Cameroun auprès de leurs collègues, auprès d’entreprises et institutions de leur pays d’accueil. Ces ambassadeurs économiques, sociaux et culturels auront pour mission de faire venir des investisseurs au Cameroun",
+              "Les enfants de la diaspora camerounaise connaissent mieux que nous les rouages de leur pays d’origine. Ils y sont nés, ils y ont grandi, ils y ont étudié et très souvent connaissent à peine le Cameroun. Nous permettrons aux fils du Cameroun nés à l’Etranger de se former à la diplomatie Camerounaise à l’IRIC afin d’occuper des postes de diplomates dans les représentations diplomatiques du Cameroun dans leurs pays de naissance"
+            ]
+          },
+          {
+            "title": "Un fonds d'investissement de la diaspora Cameroon Diaspora Investment Fund",
+            "items": [
+              "Mobiliser les ressources de la diaspora en vue de créer un fonds d'investissement spécifique",
+              "[Financer des projets relevant d'une part des secteurs de l'innovation, d'autre part, des secteurs, jusqu’ici inexplorés ou délaissés tant par les pouvoirs publics que par les opérateurs privés nationaux, qui concourent à créer le bien-être et à améliorer les conditions de vie d’une frange importante de la population en difficulté]",
+              "[Financer les projets portés par nos compatriotes de la diaspora en accordant une priorité à ceux qui auront contribué à la constitution de ce fonds]"
+            ]
+          },
+          {
+            "title": "Une Agence Nationale des Camerounais de l’étranger (ANCE)",
+            "items": [
+              "Créer une Agence Nationale des Camerounais de l’étranger (ANCE) ou un Office des Camerounais de l’étranger (OCE). Cette agence aura pour mission de mettre en œuvre le pacte stratégique avec la diaspora"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "POLITIQUE ÉTRANGÈRE",
+        "key": "politique-etrangere",
+        "details": [
+          {
+            "title": "Redonner au Cameroun sa place dans le concert des nations et le positionner pour une diplomatie économique",
+            "items": [
+              "Affirmer le Cameroun sur la scène régionale, continentale et mondiale, par un positionnement stratégique sur les grands dossiers internationaux et l’établissement des alliances traduisant une bonne compréhension des enjeux internationaux et des intérêts du pays à court, à moyen et à long terme"
+            ]
+          },
+          {
+            "title": "Consolider nos relations, établir de nouveaux partenariats et développer notre capacité d’autoprotection",
+            "items": [
+              "Toute notre action se situera dans le contexte du monde global dans lequel nous vivons. Il s’agira d’entretenir avec nos partenaires des relations qui tiennent compte des intérêts mutuels",
+              "Explorer de nouvelles possibilités de relations avec de nouveaux partenaires en Afrique et dans le monde ayant des convergences d'intérêts économiques et stratégiques avec notre pays, en particulier les pays les plus dynamiques et innovants",
+              "Affirmer notre ambition de rayonnement et développerons notre capacité d'autoprotection. Celle-ci passe par un renforcement de notre arsenal sécuritaire tant au plan militaire pour la défense de l’intégrité de notre territoire et notre population, qu’au plan alimentaire et économique"
+            ]
+          },
+          {
+            "title": "Une coopération au service de l’intérêt national",
+            "items": [
+              "Promouvoir une coopération économique, technologique et culturel au service de l'intérêt national",
+              "Mobiliser l’action diplomatique dans le sens à promouvoir la croissance économique de notre pays. Celle-ci nous amène à placer la Région Afrique centrale en particulier et l’Afrique en général au centre de nos préoccupations stratégiques. Toutes nos démarches et nos actions auront en premier lieu pour rayon d’action ces entités géographiques afin d’élargir le marché potentiel pour les produits made in Cameroon",
+              "La conquête des marchés européens, américains et asiatiques passera par une coopération intelligente que nous tisserons avec les pays partenaires grâce à nos compatriotes de la diaspora présents dans ces pays qui seront nos meilleurs atouts et « ambassadeurs » pour le relais et le suivi sur ces marchés. Il est reconnu que pour vendre nos produits sur le marché international, ces produits doivent répondre à des normes contraignantes. Certains de nos compatriotes de la diaspora, actifs dans différents secteurs, sont rompus à l’élaboration et l’utilisation de ces normes internationales et leur expertise sur ces sujets sera bénéfique pour le secteur productif national",
+              "Mettre en place une diplomatie culturelle de présence, d'affirmation et de rayonnement. Avec l’adoption et l’institution de la double nationalité, nos valeureux artistes et sportifs ayant acquis une autre nationalité des pays d’accueil déjà présents un peu partout dans le monde et qui rayonnent de leur art seront mis à contribution pour cette promotion",
+              "Travailler à l’avènement des Etats-Unis d’Afrique Centrale (EUAC) commencerons avec tout Etat de la sous-région qui sera prêt",
+              "Participer au projet de la communauté Africaine pour la construction d’un réseau de train à grande vitesse pour interconnecter les différentes régions d’Afrique. Le Nigéria joue déjà un rôle clé dans ce projet avec la construction d’une ligne de train à grande vitesse (TGV) entre Abuja et Kaduna dans le Nord du Nigéria sur une distance de 200 km. La construction de notre réseau interne telle que nous l’avons exposé au chapitre Aménagement du Territoire s’intégrera dans ce projet régional et continental"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
     "position": 6,
+    "_id": "Financement_Programme",
     "publish": true,
     "color": "rgb(150, 35, 35)",
     "pageTitle": "Financement du Programme",
-    "img": "ideology5.jpg",
+    "img": "financement.jpg",
     "label": "Financement",
-    "title": "PLAN DE FINANCEMENT DU PROGRAMME DE LA RENAISSANCE",
-    "text": "Nous n'avons rien laissé au hazard.",
-    "details": []
+    "title": "FINANCEMENT",
+    "text": "Plan de financement détaillé",
+    "details": [
+      {
+        "title": "SOURCES DE FINANCEMENT",
+        "key": "",
+        "details": [
+          {
+            "title": "Sources de Financement",
+            "items": [
+              "1. Recettes du Fonds Routier [200.000 Millions FCFA]",
+              "2. Activité du Bureau de Gestion du Fret Terrestre [150.000 Millions FCFA]",
+              "3. Réduction de la fraude des produits pétroliers [50.000 Millions FCFA]",
+              "4. 10% des 4000 Mds des recettes budgétaires [400.000 Millions FCFA]",
+              "5. Prélèvement sur les 4000 Mds octroyés au Cameroun par les bailleurs de fonds mais non décaissés [200.000 Millions FCFA]",
+              "6. Bailleurs de fonds multilatéraux [100.000 Millions FCFA]",
+              "7. Bailleurs de fonds bilatéraux [100.000 Millions FCFA]",
+              "8. Economies budgétaires [4.343.775 Millions FCFA]",
+              "9. Croissance de l'économie [202.000 Millions FCFA]",
+              "Total [5.745.775 Millions FCFA]"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "COUTS GLOBAUX",
+        "key": "",
+        "details": [
+          {
+            "title": "Couts Globaux",
+            "items": [
+              "1. Chantier Institutionnel et Politique [243.287 Millions FCFA /  4,23 %]",
+              "2. Chantier Jeunesse et Education [221.435 Millions FCFA /  3,85 %]",
+              "3. Chantier Economie et Production [1.228.264 Millions FCFA /  21,38 %]",
+              "4. Chantier Social et de Solidarité [4.049.239 Millions FCFA /  70,47 %]",
+              "5. Chantier des Relations Extérieures [3.550 Millions FCFA /  0,06 %]",
+              "Total [5.745.775 Millions FCFA /  100 %]"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "position": 7,
+    "_id": "Téléchargements",
+    "publish": true,
+    "color": "rgb(1, 50, 67)",
+    "pageTitle": "Téléchargements",
+    "img": "download.jpg",
+    "label": "Télécharger le Programme",
+    "title": "PROGRAMME FULL - RESUME PROGRAMME",
+    "text": "Télécharger et faire large diffucion",
+    "details": [
+      {
+        "title": "PROGRAMME DE GOUVERNANCE - FRANCAIS",
+        "key": "",
+        "details": []
+      },
+      {
+        "title": "PROGRAMME DE GOUVERNANCE - ANGLAIS",
+        "key": "",
+        "details": []
+      },
+      {
+        "title": "PROJET DE SOCIETE - FRANCAIS",
+        "key": "",
+        "details": []
+      },
+      {
+        "title": "PROJET DE SOCIETE - ANGLAIS",
+        "key": "",
+        "details": []
+      }
+    ]
   }
 ]
+
 
