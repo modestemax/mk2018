@@ -26,6 +26,7 @@ export class PageEngagementsDetail {
     const engagement = type_engagement && type_engagement.engagements.find(e => e.title === decodeURIComponent(this._title));
     this.type_engagement = type_engagement || {};
     this.engagement = engagement || {};
+    this.engagement.items = this.engagement.items || [];
     this.engagement.resources = this.engagement.resources || [];
   }
 
@@ -60,7 +61,15 @@ export class PageEngagementsDetail {
               <div class="text" innerHTML={this.engagement.text}/>
               <br/>
             </ion-item>
-
+            <ion-item>
+              <ul>
+                {this.engagement.items.map(text => (
+                  <li>
+                    {text}
+                  </li>
+                ))}
+              </ul>
+            </ion-item>
           </ion-item-group>
 
           <ion-item-group class="resources">

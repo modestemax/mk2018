@@ -861,10 +861,10 @@
             ],
             "resources": [
               {
-                "img": "*.png"
+                "img": ""
               },
               {
-                "video": "http://"
+                "video": ""
               }
             ]
           },
