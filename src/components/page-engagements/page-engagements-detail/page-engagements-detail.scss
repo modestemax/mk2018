@@ -8,13 +8,18 @@ page-engagements-detail {
       font-size: 16px !important;
       padding-bottom: 14px;
     }
+    ul{
+      li.engagement-item{
+        margin: 10px 0;
+      }
+    }
     .content-header {
       //margin-bottom: auto;
       margin-bottom: 9px;
       color: black;
       .title {
         font-weight: 600;
-        font-size: 1rem;
+        font-size: 16px;
         margin-top: 25px;
         white-space: normal;
       }

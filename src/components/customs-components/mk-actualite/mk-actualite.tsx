@@ -54,7 +54,7 @@ export class MkActualite {
 
         <ion-card-content onClick={this.showFull.bind(this)}>
           <h2 class="article-title">{titre}</h2>
-          <p innerHTML={text}/>
+          <p class="article-text" innerHTML={text}/>
         </ion-card-content>
 
       </ion-card>

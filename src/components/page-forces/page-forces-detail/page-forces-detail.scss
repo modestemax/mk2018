@@ -2,7 +2,7 @@ page-forces-detail {
   .list {
     margin: 5px !important;
     .text {
-      font-size: .9rem;
+      //font-size: .9rem;
     }
     .header {
       border-bottom-style: solid;
@@ -13,8 +13,10 @@ page-forces-detail {
       color: black;
       .title {
         font-weight: 600;
-        font-size: 1rem;
+        font-size: 16px;
         margin-top: 25px;
+
+        white-space: normal;
       }
     }
 

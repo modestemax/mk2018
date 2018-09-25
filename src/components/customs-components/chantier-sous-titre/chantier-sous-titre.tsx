@@ -1,4 +1,4 @@
-import { Component, Prop } from '@stencil/core';
+import {Component, Prop} from '@stencil/core';
 
 @Component({
   tag: 'chantier-sous-titre',
@@ -29,14 +29,19 @@ export class ChantierSousTitre {
     // }
 
     return [
-      <ion-card class="chantier-detail" style={{ borderLeftColor: this.color }}>
+      <ion-card class="chantier-detail" style={{borderLeftColor: this.color}}>
         <ion-card-content>
           <ion-item-group>
-            <ion-item href={href}>
-              <ion-text> {this.text}</ion-text>
-              {this.key ? <ion-icon class="more" slot="end" name="arrow-forward"/> : ''}
-            </ion-item>
-
+            {/^http/.test(href) ?
+              <a href={href} target="_blank">
+                <ion-text> {this.text}</ion-text>
+              </a>
+              :
+              <ion-item href={href}>
+                <ion-text> {this.text}</ion-text>
+                {this.key ? <ion-icon class="more" slot="end" name="arrow-forward"/> : ''}
+              </ion-item>
+            }
           </ion-item-group>
         </ion-card-content>
       </ion-card>

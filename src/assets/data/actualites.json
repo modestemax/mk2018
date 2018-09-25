@@ -1,6 +1,7 @@
 [
   {
     "_id": "lancement_officiel_de_la_campagne",
+    "publish":true,
     "date": "2018-09-25T08:18:10.355Z",
     "titre": "Lancement officiel de la campagne du candidat MAURICE KAMTO",
     "img": "Kamto-photo.png",

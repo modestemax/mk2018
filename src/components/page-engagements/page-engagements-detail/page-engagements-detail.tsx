@@ -64,7 +64,7 @@ export class PageEngagementsDetail {
             <ion-item>
               <ul>
                 {this.engagement.items.map(text => (
-                  <li>
+                  <li class="engagement-item">
                     {text}
                   </li>
                 ))}
