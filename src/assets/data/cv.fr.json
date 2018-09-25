@@ -5,7 +5,38 @@
     "publish": true,
     "color": "rgb(197,90,17)",
     "section": "Etat Civil",
-    "img": "familly.png",
+    "img": "family.png",
+    "content": [
+      {
+        "title": "Date et Lieu de naisance",
+        "items": [
+          "né le 15 Février 1954",
+          " À Bafoussam"
+        ]
+      },
+      {
+        "title": "Pere",
+        "items": [
+          "TABUGUIA Joseph",
+          "Commerçant"
+        ]
+      },
+      {
+        "title": "Mere",
+        "items": [
+          "METCHUNCHE Madeleine",
+          "Cultivatrice"
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "academic",
+    "position": 2,
+    "publish": true,
+    "color": "rgb(30, 130, 76)",
+    "section": "Parcours Académique",
+    "img": "academics.png",
     "content": [
       {
         "title": "1979 : Faculté de Droit, Université de Yaoundé",
@@ -33,37 +64,42 @@
         "title": "1982 : Institut d’Administration Publique",
         "items": [
           "Paris, France",
-          "Diplôme option XXXX"
+          "Diplômé, option Economie et Finances"
         ]
       },
       {
         "title": "1983 : Université de Nice, Faculté de Droit",
         "items": [
           "Nice, France",
-          "Doctorat d’Etat en Droit"
+          "Doctorat d’Etat en Droit",
+          "Prix de thèse de la Faculté de Droit de Nice"
         ]
       },
       {
-        "title": "1988 : Prix de l’Académie des sciences d’outremer",
-        "items": []
+        "title": "1988 : Facultés Françaises de Droit",
+        "items": [
+          "France",
+          "Agrégé des Facultés Françaises de Droit"
+        ]
       },
       {
-        "title": "1988 : Agrége des Facultes de Droit.",
-        "items": []
-      }
-    ]
-  },
-  {
-    "_id": "academic",
-    "position": 2,
-    "publish": true,
-    "color": "rgb(30, 130, 76)",
-    "section": "Academic",
-    "img": "familly.png",
-    "content": [
+        "title": "1988 : Académie des Sciences d’Outre-mer",
+        "items": [
+          "France",
+          "Prix de l’Académie des Sciences d’Outre-mer"
+        ]
+      },
       {
-        "title": "Academic",
-        "items": []
+        "title": "Depuis le 02 Février 1988",
+        "items": [
+          "Professeur à l’université de Yaoundé",
+          "Professeur à l’université de Yaoundé II",
+          "Professeur à l’université de N’Gaoundéré",
+          "Professeur à l’Institut des Relations Internationales du Cameroun (IRIC)",
+          "Professeur à l’École nationale d’administration et de magistrature (ENAM)",
+          "Membre du jury du concours d’entrées de plusieurs institutions",
+          "Professeur Invité par plusieurs universités occidentales et africaines"
+        ]
       }
     ]
   },
@@ -72,12 +108,22 @@
     "position": 3,
     "publish": true,
     "color": "rgb(30, 139, 195)",
-    "section": "Administration",
-    "img": "familly.png",
+    "section": "Fonctions Administratives",
+    "img": "administration.png",
     "content": [
       {
-        "title": "Administration",
-        "items": []
+        "title": "1999-2004 : Université de Yaoundé 2",
+        "items": [
+          "Yaoundé, Cameroun",
+          "Doyen de la Faculté des Sciences Juridiques et Politiques"
+        ]
+      },
+      {
+        "title": "2004-2011 : Etat du Cameroun",
+        "items": [
+          "Yaoundé, Cameroun",
+          "Ministre Délégué auprès du Vice Premier Ministre, Ministre de la Justice"
+        ]
       }
     ]
   },
@@ -87,11 +133,55 @@
     "publish": true,
     "color": "rgb(145, 61, 136)",
     "section": "International",
-    "img": "familly.png",
+    "img": "international.png",
     "content": [
       {
-        "title": "International",
-        "items": []
+        "title": "2011-2012: Nations Unies",
+        "items": [
+          "Président de la Commission du Droit International"
+        ]
+      },
+      {
+        "title": "2004-2016: Nations Unies",
+        "items": [
+          "Rapporteur Spécial de la Commission du Droit International (C.D.I.) sur le sujet : « Expulsion des étrangers »"
+        ]
+      },
+      {
+        "title": "1999–2016: Nations Unies",
+        "items": [
+          "Membre de la Commission du droit international"
+        ]
+      },
+      {
+        "title": "1994-2002: Cameroun contre Nigeria; Guinée Equatoriale intervenant",
+        "items": [
+          "Co-agent, Conseil et Avocat du Cameroun devant la Cour internationale de Justice (C.I.J.) dans l’affaire de la Frontière terrestre et maritime entre le Cameroun et le Nigeria"
+        ]
+      },
+      {
+        "title": "2003-2005: République du Bénin/République du Niger",
+        "items": [
+          "Conseil de la Guinée (Conakry) dans l’affaire Diallo"
+        ]
+      },
+      {
+        "title": "2003-2005: Guinée contre République Démocratique du Congo",
+        "items": [
+          "Conseil et Avocat de la République du Niger devant la C.I.J. dans l’affaire de la Frontière terrestre"
+        ]
+      },
+      {
+        "title": "2010-2012: Burkina Faso/Niger",
+        "items": [
+          "Conseil et Avocat de la République du Niger devant la C.I.J. dans l’affaire du Différend frontalier"
+        ]
+      },
+      {
+        "title": "Curatorium de l’Académie de Droit International de la Haye",
+        "items": [
+          "Membre de cette academie"
+        ]
       }
     ]
   },
@@ -101,41 +191,158 @@
     "publish": true,
     "color": "rgb(150, 40, 27)",
     "section": "Distinction",
-    "img": "familly.png",
+    "img": "distinction.png",
     "content": [
       {
-        "title": "distinction",
-        "items": []
+        "title": "République du Cameroun",
+        "items": [
+          "Chevalier de l’Ordre de la Valeur",
+          "Officier de l’Ordre de la Valeur",
+          "Commandeur de l’Ordre de la Valeur"
+        ]
+      },
+      {
+        "title": "République du Niger",
+        "items": [
+          "Commandeur de l’Ordre de la Valeur"
+        ]
+      },
+      {
+        "title": "Conseil Africain et Malgache de l’Enseignement Supérieur (CAMES)",
+        "items": [
+          "Chevalier des Palmes académiques"
+        ]
+      },
+      {
+        "title": "Université de Yaoundé II",
+        "items": [
+          "Doyen Honoraire de la Faculté de Droit et des Sciences économiques"
+        ]
       }
     ]
   },
   {
-    "_id": "distinction",
+    "_id": "politique",
     "position": 6,
     "publish": true,
-    "color": "rgb(150, 40, 27)",
-    "section": "Distinction",
-    "img": "familly.png",
+    "color": "rgb(1, 50, 67)",
+    "section": "Histoire Politique",
+    "img": "politician.png",
     "content": [
       {
-        "title": "distinction",
+        "title": "15 Janvier 1971: Bafoussam",
+        "items": [
+          "J'assiste à l'Assassinat de Ernest Ouandié et de ses camarades Gabriel Tabeu AKA alis WANBO LE COURANT et Raphael Fotsing",
+          "Je suis alors élève au Lycee Classique de Bafoussam",
+          "J'ai encore le souvenir de ses dernieres paroles: «Mourir pour la liberté de mon peuple est un honneur. Etre exécuté ici à Bafoussam pour que mon sang coule jusqu'aux rivières les plus lointaines du Cameroun est un honneur. Apres moi d'autres continueront le combat et ce jusqu'a la victoire final. Que vive le Cameroun a jamais libre»",
+          "Évenement dramatique, j'ai été choqué puis j'ai ressenti une certaine empathie pour ce heros mort pour la cause du peuple Camerounais",
+          "J'ai alors meme inconsciemment integré que l'on pouvait se battre pour les autres et sacrifier sa vie. Cet empreinte constitue sans doute une semence de mon engagement politique"
+        ]
+      },
+      {
+        "title": "Université de Yaoundé",
+        "items": [
+          "Revendications estudiantines suite à la réforme Ndam Njoya modifiant le régime des licences au Cameroun",
+          "Réforme faisant passer le nombre d'années passant de 4 à 3 pour la licence en faculté de droit et sciences économiques, alors que la duree en faculté de lettre et sciences restait à 4 ans",
+          "Je suis en 4e annee de droit public et la réforme fait des frustrés chez nos cadets de lettres et scienes économiques qui s'indignent de cette discrimination sachant que les diplomés des 2 facultés se présenteront aux mêmes concours",
+          "Je prend la tete du mouvement contestataire bien que n'étant pas aftecté, pour exiger l'application du meme régime de 3 ans à toutes les 2 facultés"
+        ]
+      },
+      {
+        "title": "Affaire Mono Dzana",
+        "items": [
+          "Le confrere ayant commis un ouvrage intitule «L'idee Sociale chez Paul Biya» m'a invité par en rendre compte",
+          "Mon analyse libre de cet ouvrage me vaudra une arrestation et une séquestration dans les services de la célèbre BMM",
+          "Le Professeur Joseph Marie Mbipoun Woum alors président du jury pour des soutenances de fin d’études a l'IRIC, refuse de présider des soutenances en l'absence du directeur de mémoire que j’étais",
+          "Ayant sous ma direction des etudiants etrangers ces derniers se plaignent aupres de leur ambassade de leur impossibilite de soutenir et boucler leurs etudes",
+          "C'est probablement sous la pression de ces reprsentations que je suis libere pour participer aux soutenances"
+        ]
+      },
+      {
+        "title": "1991: L'urgence de la pensée",
+        "items": [
+          "Paru aux Editions Mandara",
+          "Réflexions sur une précondition du développement en Afrique"
+        ]
+      },
+      {
+        "title": "Quelques chroniques dans la presse ecrite",
+        "items": [
+          "Je signe le premier article de la rubrique FORUM dans le Messager, intitulé n’Enchaînons pas Paul Biya",
+          "Je fais partie du conseil editorial du Journal Mutations duquel je demissionne en 2004",
+          "Je rédige également des chroniques dans le journal Mutations"
+        ]
+      },
+      {
+        "title": "1992: Elections Presidentielles",
+        "items": [
+          "Je rejoins la coalition des forces pour le changement autour du candidat John Fru Ndi",
+          "Je m'y investit en tant que memebre de la société civile"
+        ]
+      },
+      {
+        "title": "2004: Entrée au GGouvernement",
+        "items": [
+          "Je fais mon entrée au gouvernement en tant Ministre Délégué aupres du Vice Premier Ministre, Ministre de la Justice",
+          "Ce statut facilite mon implication dans la mise en oeuvre de l'arret de la Cour Internationale de Justice (CIJ) au sujet du differend frontalier de Bakassi entre le Cameroun et le Nigeria, aux cotés du représentant de la partie Nigériane qui lui a rang de Ministre"
+        ]
+      },
+      {
+        "title": "2012: Démission du Gouvernement",
+        "items": [
+          "7 ans passées au gouvernement en tant Ministre Délégué auprès du Vice Premier Ministre, Ministre de la Justice",
+          "Je démissionne pour servir mon pays autrement"
+        ]
+      },
+      {
+        "title": "2012: MRC",
+        "items": [
+          "Suis investit à la tête du MRC le 30 Septembre 2012",
+          "Notre parti alors embryonnaire pour un coup d'essai, réussi l'exploit de réaliser un score singulier lors des éléctions législatives et municipales de 2013"
+        ]
+      },
+      {
+        "title": "13, 14 et 15  Avril 2018: MRC",
+        "items": [
+          "Tenue de la 2e Convention du MRC a Yaoundé",
+          "Je suis investi pour mon parti comme candidat a l'election presidentielle de 2018"
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "hobby",
+    "position": 7,
+    "publish": true,
+    "color": "rgb(99, 110, 114)",
+    "section": "Hobbies",
+    "img": "hobby.png",
+    "content": [
+      {
+        "title": "Lectures",
+        "items": []
+      },
+      {
+        "title": "Musique",
+        "items": []
+      },
+      {
+        "title": "Sport",
+        "items": []
+      },
+      {
+        "title": "Vacances",
         "items": []
       }
     ]
   },
   {
-    "_id": "distinction",
-    "position": 7,
+    "_id": "empty",
+    "position": 8,
     "publish": true,
-    "color": "rgb(150, 40, 27)",
-    "section": "Distinction",
-    "img": "familly.png",
-    "content": [
-      {
-        "title": "distinction",
-        "items": []
-      }
-    ]
+    "color": "rgb(232, 67, 147)",
+    "section": "",
+    "img": "",
+    "content": []
   }
 ]
-
