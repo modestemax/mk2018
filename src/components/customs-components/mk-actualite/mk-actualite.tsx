@@ -15,6 +15,7 @@ export class MkActualite {
   @Prop() titre: string;
   @Prop() text = '';
   @Prop() img: string;
+  @Prop() video: string;
   @Prop() full = false;
 
   private actualiteUrl = '/actualites';
@@ -40,7 +41,7 @@ export class MkActualite {
   }
 
   render() {
-    const { date, titre, img } = this;
+    const { date, titre, img , video} = this;
     const text = this.getText();
 
     return (
@@ -49,7 +50,7 @@ export class MkActualite {
         <ion-item>
           <p>{date}</p>
         </ion-item>
-        <img-video img={img}/>
+        <img-video img={img} video={video}/>
 
         <ion-card-content onClick={this.showFull.bind(this)}>
           <h2 class="article-title">{titre}</h2>

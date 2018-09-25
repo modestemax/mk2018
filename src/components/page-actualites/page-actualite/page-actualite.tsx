@@ -1,6 +1,7 @@
 import {Component, Prop,} from '@stencil/core';
 // import {ActualitesData} from '../../../providers/actualites-data';
 import {News} from "../../../providers/news";
+import {__} from "../../../providers/i18n";
 // import { ConferenceData } from '../../providers/conference-data';
 // import { UserData } from '../../providers/user-data';
 
@@ -17,7 +18,7 @@ export class PageActualite {
   @Prop() _id: any;
 
 
-  async componentWillLoad() {debugger
+  async componentWillLoad() {
     this.actualite = await News.get(this._id);
   }
 
@@ -30,7 +31,7 @@ export class PageActualite {
             <ion-back-button defaultHref={this.goback}/>
           </ion-buttons>
           <ion-title>
-            Actualité
+            {__('ACTUALITÉ')}
           </ion-title>
 
           <ion-buttons slot="end">

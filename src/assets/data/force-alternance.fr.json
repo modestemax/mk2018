@@ -1,38 +1,296 @@
 [
   {
-    "_id": "crac",
-    "position":1,
-    "publish":true,
-    "name": "crac",
-    "img": "orange_4.png",
-    "title": "Croire Au Cameroun [CRAC]",
-    "summary": "qsdq  qdsdqs dqsd",
-    "desc": "<p>Le CRAC est un parti politique reconnu par l’arrêté N°00000250/D/MINATD/DAP/SDE/SPP du 15 juillet 2014</p><p>Son projet place le secteur agropastoral au cœur du développement socio-économique du Cameroun. </p> <p>Bernard Njonga B.P.: 6203 Yaoundé GSM: +237 679 19 81 93 / 695 89 50 36 Email: croireaucameroun1@gmail.com Web: www.croireaucameroun.net</p>",
+    "publish": true,
+    "position": 1,
+    "_id": "mpcn",
+    "name": "MPCN",
+    "img": "https://kamto-2018.firebaseapp.com/mpcn.png",
+    "title": "Mouvement Patriotique pour un Cameroun Nouveau [MPCN]",
+    "summary": "Le Cameroun avant tout!",
+    "desc": "<p>L’action du MPCN est inspirée par l’humanisme. Ainsi affirmé, l’amour de l’être humain et le souci constant de le protéger face à tous les aléas de la vie guident son action. Nous considérons en effet que le but ultime de la politique est le bien-être moral psychologique économique et social de l’homme.</p><b>Paul Eric Kingue</b></br>34789 Deido, rue des palmiers, CA, 94048, Cameroun</br>Tel:  +237.655 430 957 - 693 167 357</br>E-mail: info@mpcn.cm</br>",
     "resources": [
       {
-        "img": "orange_4.png"
+        "img": "https://kamto-2018.firebaseapp.com/kamto-pek.png"
       },
       {
-        "video": "https://www.youtube.com/embed/UfD-k7aHkQE",
-        "title": "tittre de la video"
+        "img": "https://kamto-2018.firebaseapp.com/mpcn-people.png"
+      },
+      {
+        "video": "https://youtu.be/PNDTFlhbtXk",
+        "title": "Soutien a Maurice KAMTO"
+      },
+      {
+        "video": "",
+        "title": "Appel a la coalition"
       }
     ]
   },
   {
-    "_id": "crac2",
-    "position": 2,
     "publish": true,
-    "name": "crac",
-    "img": "orange_4.png",
-    "summary": "qsdq  qdsdqs dqsd"
+    "position": 2,
+    "_id": "agir_act",
+    "name": "AGIR/ACT",
+    "img": "https://kamto-2018.firebaseapp.com/agir.jpg",
+    "title": "AGIR/ACT",
+    "summary": "Prenons notre destin en main",
+    "desc": "<p><p>L’action d’AGIR vise fondamentalement à transformer les mentalités des citoyens, à libérer leurs capacités créatrices, de manière à ce qu’ils soient debout et aptes à se prendre en charge, à devenir maîtres de leur destin. Dans cette optique, cette action doit  renforcer leurs capacités et leurs libertés pour une plus grande confiance en eux-mêmes.</p><b>Christian Penda Ekoka</b></br>https://www.agir-act.org</br>Email : info@agir-act.org</br>Yaounde</br>Tel +237 696 653 869</br>",
+    "resources": [
+      {
+        "img": "https://kamto-2018.firebaseapp.com/penda-kamto.jpg"
+      },
+      {
+        "img": "https://kamto-2018.firebaseapp.com/penda.jpg"
+      },
+      {
+        "video": "https://youtu.be/D3L_AHLLovY",
+        "title": "Soutien a Maurice KAMTO"
+      },
+      {
+        "video": "",
+        "title": "Appel a la jeunesse"
+      }
+    ]
   },
   {
-    "_id": "crac3",
-    "position": 3,
     "publish": true,
-    "name": "crac",
-    "img": "orange_4.png",
-    "summary": "qsdq  qdsdqs dqsd"
+    "position": 3,
+    "_id": "drn",
+    "name": "DRN",
+    "img": "https://kamto-2018.firebaseapp.com/logo.png",
+    "title": "Dynamique pour la Renaissance Nationale",
+    "summary": "Dynamique pour la Renaissance Nationale",
+    "desc": "<p>Fondateur: <b>Albert Dzongang</bp></p><p>Il a été adjoint au maire de Douala 3ième. Il est élu à Douala comme membre du RDPC, parti au pouvoir de 1992 à 1997. Il démissionne du RDPC pour crée son parti: Dynamique pour la Renaissance Nationale. Il perd par la suite contre Françoise Foning. Il est co-fondateur du Lah Kam.</p><p>Albert Dzongang est expert automobile après avoir été fonctionnaire. En effet, après un première affectation à Akonolinga, Albert Dzongang est licencié après avoir participé à violenter le préfet2. Le ministère lui fournit une mise en disponibilité et une autorisation de sortie du Cameroun qui lui permettent de se former à l’expertise automobile -spécialité incendie - en France</p>Web :</br>Email : </br>Tel : </br>",
+    "resources": [
+      {
+        "img": ""
+      },
+      {
+        "img": ""
+      },
+      {
+        "video": "",
+        "title": ""
+      }
+    ]
+  },
+  {
+    "publish": true,
+    "position": 4,
+    "_id": "fsn",
+    "name": "FSN",
+    "img": "https://kamto-2018.firebaseapp.com/logo.png",
+    "title": "Front de Solidarité Nationale",
+    "summary": "Front de Solidarité Nationale",
+    "desc": "<p>Président Pami</p>Web :</br>Email : </br>Tel : </br>",
+    "resources": [
+      {
+        "img": ""
+      },
+      {
+        "img": ""
+      },
+      {
+        "video": "",
+        "title": ""
+      }
+    ]
+  },
+  {
+    "publish": true,
+    "position": 5,
+    "_id": "ld",
+    "name": "LD",
+    "img": "https://kamto-2018.firebaseapp.com/logo.png",
+    "title": "La Ligue Démocrate",
+    "summary": "La Ligue Démocrate",
+    "desc": "<p>Président Fabien Nvondo</p>Web :</br>Email : </br>Tel : </br>",
+    "resources": [
+      {
+        "img": ""
+      },
+      {
+        "img": ""
+      },
+      {
+        "video": "",
+        "title": ""
+      }
+    ]
+  },
+  {
+    "publish": true,
+    "position": 6,
+    "_id": "rddr",
+    "name": "RDDR",
+    "img": "https://kamto-2018.firebaseapp.com/logo.png",
+    "title": "Le Rassemblement Démocratique pour la Défense de la République",
+    "summary": "Le RDDR",
+    "desc": "<p>Président Yapolé Dieudonné</p>Web :</br>Email : </br>Tel : </br>",
+    "resources": [
+      {
+        "img": ""
+      },
+      {
+        "img": ""
+      },
+      {
+        "video": "",
+        "title": ""
+      }
+    ]
+  },
+  {
+    "publish": true,
+    "position": 7,
+    "_id": "pld",
+    "name": "PLD",
+    "img": "https://kamto-2018.firebaseapp.com/logo.png",
+    "title": "Le Parti Libéral Démocrate",
+    "summary": "Le PLD",
+    "desc": "<p>Monsieur Yapoué Jean Robert</p>Web :</br>Email : </br>Tel : </br>",
+    "resources": [
+      {
+        "img": ""
+      },
+      {
+        "img": ""
+      },
+      {
+        "video": "",
+        "title": ""
+      }
+    ]
+  },
+  {
+    "publish": true,
+    "position": 8,
+    "_id": "paddec",
+    "name": "PADDEC",
+    "img": "https://kamto-2018.firebaseapp.com/logo.png",
+    "title": "PDDEC",
+    "summary": "Base Militante du PADDEC",
+    "desc": "<p>Patriotes Démocrates pour le Développement du Cameroun</p>Web :</br>Email : </br>Tel : </br>",
+    "resources": [
+      {
+        "img": ""
+      },
+      {
+        "img": ""
+      },
+      {
+        "video": "",
+        "title": ""
+      }
+    ]
+  },
+  {
+    "publish": true,
+    "position": 9,
+    "_id": "upc_ouest",
+    "name": "UPC - OUEST",
+    "img": "https://kamto-2018.firebaseapp.com/upc.png",
+    "title": "Union des populations du Cameroun (UPC)",
+    "summary": "Parti de l'Independance",
+    "desc": "<p><p><p>Parti politique camerounais, fondé le 10 avril 1948. Ses pères fondateurs (Jacques Ngom, Charles Assalé, Joseph Raymond Etoundi, Léopold Moumé Etia, Raymond Etoundi pour ne citer que ceux-là) comptent aujourd’hui parmi les grandes figures de l’histoire du Cameroun.</p><p>Révolutionnaire, l’UPC comptera parmi ses membres, plusieurs des acteurs majeurs de la lutte pour l’indépendance de notre pays tels que Félix Roland Moumié (qui en fut le tout premier président) Ernest Ouandié et Abel Kingué (tous les deux vice-présidents), Castor Osende Afana, Ruben Um Nyobè qui en deviendra le 2e Secrétaire Général à partir de novembre 1948 et bien d’autres.</p>Web :</br>Email : </br>Tel : </br>",
+    "resources": [
+      {
+        "img": "https://kamto-2018.firebaseapp.com/heros.jpg"
+      },
+      {
+        "img": "https://kamto-2018.firebaseapp.com/Independance.jpg"
+      },
+      {
+        "video": "https://youtu.be/tiKpHFNUZZU",
+        "title": "Um Nyobe"
+      }
+    ]
+  },
+  {
+    "publish": true,
+    "position": 10,
+    "_id": "upc_littoral",
+    "name": "UPC - LITTORAL",
+    "img": "https://kamto-2018.firebaseapp.com/upc.png",
+    "title": "Union des populations du Cameroun (UPC)",
+    "summary": "Parti de l'Independance",
+    "desc": "<p><p><p>Parti politique camerounais, fondé le 10 avril 1948. Ses pères fondateurs (Jacques Ngom, Charles Assalé, Joseph Raymond Etoundi, Léopold Moumé Etia, Raymond Etoundi pour ne citer que ceux-là) comptent aujourd’hui parmi les grandes figures de l’histoire du Cameroun.</p><p>Révolutionnaire, l’UPC comptera parmi ses membres, plusieurs des acteurs majeurs de la lutte pour l’indépendance de notre pays tels que Félix Roland Moumié (qui en fut le tout premier président) Ernest Ouandié et Abel Kingué (tous les deux vice-présidents), Castor Osende Afana, Ruben Um Nyobè qui en deviendra le 2e Secrétaire Général à partir de novembre 1948 et bien d’autres.</p>Web :</br>Email : </br>Tel : </br>",
+    "resources": [
+      {
+        "img": "https://kamto-2018.firebaseapp.com/heros.jpg"
+      },
+      {
+        "img": "https://kamto-2018.firebaseapp.com/Independance.jpg"
+      },
+      {
+        "video": "https://youtu.be/tiKpHFNUZZU",
+        "title": "Um Nyobe"
+      }
+    ]
+  },
+  {
+    "publish": true,
+    "position": 11,
+    "_id": "celestin_djamen",
+    "name": "",
+    "img": "https://kamto-2018.firebaseapp.com/logo.png",
+    "title": "Célestin Djamen",
+    "summary": "Une bonne représentation du SDF",
+    "desc": "<p>Célestin Djamen</p>Web :</br>Email : </br>Tel : </br>",
+    "resources": [
+      {
+        "img": ""
+      },
+      {
+        "img": ""
+      },
+      {
+        "video": "",
+        "title": ""
+      }
+    ]
+  },
+  {
+    "publish": true,
+    "position": 12,
+    "_id": "conseiller_municipal_jean_claude_fezeu",
+    "name": "",
+    "img": "https://kamto-2018.firebaseapp.com/logo.png",
+    "title": "Conseiller Municipal Jean Claude Fezeu",
+    "summary": "Une fraction de l'AFP",
+    "desc": "<p>Jean Claude Fezeu</p>Web :</br>Email : </br>Tel : </br>",
+    "resources": [
+      {
+        "img": ""
+      },
+      {
+        "img": ""
+      },
+      {
+        "video": "",
+        "title": ""
+      }
+    ]
+  },
+  {
+    "publish": true,
+    "position": 13,
+    "_id": "celebre_combattant_blaise_essama",
+    "name": "",
+    "img": "https://kamto-2018.firebaseapp.com/logo.png",
+    "title": "Célèbre combattant Blaise ESSAMA.",
+    "summary": "Personnalité de la société civile",
+    "desc": "<p>Combattant Blaise ESSAMA</p>Web :</br>Email : </br>Tel : </br>",
+    "resources": [
+      {
+        "img": ""
+      },
+      {
+        "img": ""
+      },
+      {
+        "video": "",
+        "title": ""
+      }
+    ]
   }
 ]
-

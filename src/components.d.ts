@@ -67,6 +67,7 @@ export namespace Components {
     'img': string;
     'text': string;
     'titre': string;
+    'video': string;
   }
   interface MkActualiteAttributes extends StencilHTMLAttributes {
     '_id'?: any;
@@ -75,6 +76,7 @@ export namespace Components {
     'img'?: string;
     'text'?: string;
     'titre'?: string;
+    'video'?: string;
   }
 
   interface PageAcceuil {}

@@ -1,45 +1,11 @@
 [
   {
-    "_id": "iden_tifiant_1",
-    "date": "1er Janvier",
-    "titre": "Mon premier article",
-    "img": "/assets/img/advance-card-bttf.png",
-    "text": "<p>When <b>submitting</b> applications to the app stores we need to supply an icon for the application that is used to display the application on the user’s home screen or applications menu, and a splash screen that is displayed when the app launches.</p><p>That doesn’t sound like too much of a task, but there are a variety of different devices out there with different splash screen and icon sizes, so we need to create a ton of assets to satisfy all of these requirements.</p>"
-  },
-  {
-    "_id": "iden_tifiant_2",
-    "date": "2 Janvier",
-    "titre": "Mon premier article",
-    "img": "/assets/img/advance-card-bttf.png",
-    "text": "<p>When <b>submitting</b> applications to the app stores we need to supply an icon for the application that is used to display the application on the user’s home screen or applications menu, and a splash screen that is displayed when the app launches.</p><p>That doesn’t sound like too much of a task, but there are a variety of different devices out there with different splash screen and icon sizes, so we need to create a ton of assets to satisfy all of these requirements.</p>"
-  },
-  {
-    "_id": "iden_tifiant_3",
-    "date": "3 Janvier",
-    "titre": "Mon premier article",
-    "img": "/assets/img/advance-card-bttf.png",
-    "text": "<p>When <b>submitting</b> applications to the app stores we need to supply an icon for the application that is used to display the application on the user’s home screen or applications menu, and a splash screen that is displayed when the app launches.</p><p>That doesn’t sound like too much of a task, but there are a variety of different devices out there with different splash screen and icon sizes, so we need to create a ton of assets to satisfy all of these requirements.</p>"
-  },
-  {
-    "_id": "iden_tifiant_4",
-    "date": "4 Janvier",
-    "titre": "Mon premier article",
-    "img": "/assets/img/advance-card-bttf.png",
-    "text": "<p>When <b>submitting</b> applications to the app stores we need to supply an icon for the application that is used to display the application on the user’s home screen or applications menu, and a splash screen that is displayed when the app launches.</p><p>That doesn’t sound like too much of a task, but there are a variety of different devices out there with different splash screen and icon sizes, so we need to create a ton of assets to satisfy all of these requirements.</p>"
-  },
-  {
-    "_id": "iden_tifiant_5",
-    "date": "5 Janvier",
-    "titre": "Mon premier article",
-    "img": "/assets/img/advance-card-bttf.png",
-    "text": "<p>When <b>submitting</b> applications to the app stores we need to supply an icon for the application that is used to display the application on the user’s home screen or applications menu, and a splash screen that is displayed when the app launches.</p><p>That doesn’t sound like too much of a task, but there are a variety of different devices out there with different splash screen and icon sizes, so we need to create a ton of assets to satisfy all of these requirements.</p>"
-  },
-  {
-    "_id": "iden_tifiant_6",
-    "date": "6 Janvier",
-    "titre": "Mon premier article",
-    "img": "/assets/img/advance-card-bttf.png",
-    "text": "<p>When <b>submitting</b> applications to the app stores we need to supply an icon for the application that is used to display the application on the user’s home screen or applications menu, and a splash screen that is displayed when the app launches.</p><p>That doesn’t sound like too much of a task, but there are a variety of different devices out there with different splash screen and icon sizes, so we need to create a ton of assets to satisfy all of these requirements.</p>"
+    "_id": "lancement_officiel_de_la_campagne",
+    "date": "2018-09-25T08:18:10.355Z",
+    "titre": "Lancement officiel de la campagne du candidat MAURICE KAMTO",
+    "img": "Kamto-photo.png",
+    "video": "",
+    "text": "<p>En date (...)2018, le Mouvement pour la Renaissance du Cameroun (MRC), quatrième force politique du pays selon le MINATD,  remettait démocratique sa confiance à Maurice Kamto à l'issue de sa deuxième convention au Parti au Palais de Congrès de Yaoundé. Confiant, serein et visible prêt pour le challenge du 07/10/2018, le désormais candidat  Maurice Kamto se fixait une série d'objectifs precampagnes notamment, toucher du doigt les problèmes du peuple qu'il aspire à diriger, rassembler toutes les forces vives du changement afin que renaisse le Cameroun sur tous les plans.</p>\n \n<p>Des paroles à l'acte, Maurice Kamto a entrepris depuis son élection à la têtes de son parti le MRC, de visiter l'ensemble des 360 département du Cameroun. Du nord au sud, de l'est à l'ouest, le candidat du MRC a fait le tour du Cameroun. Mettant parfois a rude épreuve sa condition physique et mentale, mais une seule motivation : les cris incessants d'un peuple en quête d'un changement asservi par la misère. Comment résoudre les problèmes  dont ignore ? Quelle sont réellement les souffrances du peuple camerounais ? Sans avoir au moins  effleurer cette réalité, il n'est possible de comprendre. Voilà l'élément motivateur du candidat Kamto. Chose promise, chose dûe, Maurice Kamto a lui-même causé avec son peuple qui lui a révélé ses souffrance, sa frustration et présenté ses doléances. A ce stade, on dirait mission accomplie. </p>\n\n<p>L'autre aspect de l'engagement solennel de Maurice Kamto, c'était de rassembler toutes les forces vives du changement, y compris celles du RDPC.</p>\n\n<p>Le chantier du rassemblement est aussi titanesque que celui de la conquête territoriale du Cameroun. Réunion, ou du moins coaliser avec d'autres  formations n'est pas un pari gagné d'avance quand on connait les échecs consécutifs aux noyautage de l'opposition qui très souvent se sont soldées avec la victoire haut la main du président Biya, perpétuant l'hégémonie RDPC. Du coup, la suspicion est le premier palis qu'il faut annihiler pour démarrer sur un piédestal de confiance. Depuis lors, Maurice Kamto n'a cessé d'appeler les autres chapelles politiques. Quelques unes ont repondu à cet appel insistant du leader du MRC à l'instar du Mouvement Patriotique pour un Cameroun Nouveau (MPCN) et nommer son leader Paul Éric Kinguè comme directeur de Campagne, le PADDEC, les groupes syndicats et plusieurs membres de la société civile.</p>"
   }
 ]
 
