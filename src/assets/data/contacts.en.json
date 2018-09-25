@@ -1,0 +1,31 @@
+[
+  {
+    "_id": "contacts",
+    "publish": true,
+    "position": 1,
+    "contacts": [
+      {
+        "text": "Should you wish to donate for our campaign"
+      },
+      {
+        "text": "Should you wish to join our voluntary team on this campaign"
+      },
+      {
+        "text": "Should you wish to represent us  polling stations"
+      },
+      {
+        "text": "Should you wish to join a vote monitoring squad"
+      },
+      {
+        "text": "Should you wish to susbcribe for CRM membership"
+      },
+      {
+        "text": "Should you wish to report an abuse you have suffered due to your pro-CRM political convictions"
+      },
+      {
+        "text": "Should you wish  to contact us for any other reason"
+      }
+    ]
+  }
+]
+

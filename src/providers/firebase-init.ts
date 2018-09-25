@@ -59,9 +59,9 @@ function collectionsConfig() {
     'penalty_fr': '/assets/data/penalty.fr.json',
     'penalty_en': '/assets/data/penalty.fr.json',
     'tutorial_fr': '/assets/data/tutorial.fr.json',
-    'tutorial_en': '/assets/data/tutorial.fr.json',
+    'tutorial_en': '/assets/data/tutorial.en.json',
     'contacts_fr': '/assets/data/contacts.fr.json',
-    'contacts_en': '/assets/data/contacts.fr.json'
+    'contacts_en': '/assets/data/contacts.en.json'
   };
 }
 

@@ -1,8 +1,12 @@
 .chantier-detail {
   border-left-width: 4px;
   border-left-style: solid;
-  ion-card-content{
+  ion-card-content {
     padding-right: 0;
+    ion-icon.more {
+      color: #8383ca;
+      font-size: medium;
+    }
   }
   ion-text {
     font-size: .9rem;

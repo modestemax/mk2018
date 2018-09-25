@@ -1,4 +1,4 @@
-import {Component, Prop} from '@stencil/core';
+import { Component, Prop } from '@stencil/core';
 
 @Component({
   tag: 'chantier-sous-titre',
@@ -20,19 +20,21 @@ export class ChantierSousTitre {
         href = `/programme/chantier/${this._id}/detail/${this.key}`;
       }
     }
-
+    // {
+    //   this.key
+    //     ? <ion-item>
+    //       <ion-icon src="/assets/icon/_ionicons_svg_ios-more.svg" slot="end"/>
+    //     </ion-item>
+    //     : ''
+    // }
 
     return [
-      <ion-card class="chantier-detail" style={{borderLeftColor: this.color}}>
+      <ion-card class="chantier-detail" style={{ borderLeftColor: this.color }}>
         <ion-card-content>
           <ion-item-group>
             <ion-item href={href}>
               <ion-text> {this.text}</ion-text>
-              {this.key
-                ? <ion-item>
-                  <ion-icon src="/assets/icon/_ionicons_svg_ios-more.svg" slot="end"/>
-                </ion-item>
-                : ''}
+              {this.key ? <ion-icon class="more" slot="end" name="arrow-forward"/> : ''}
             </ion-item>
 
           </ion-item-group>

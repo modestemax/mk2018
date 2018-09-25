@@ -5,7 +5,7 @@
     "position": 1,
     "color": "rgb(30, 130, 76)",
     "img": "Penalty_debout_cameroun.jpg",
-    "text": "Le 07 octobre 2018, nous avons rendez-vous avec l'histoire"
+    "text": "Octobre 7th presidential elections is defenitely a historic moment"
   },
   {
     "_id": "slide_2",
@@ -13,7 +13,7 @@
     "position": 2,
     "color": "rgb(150, 35, 35)",
     "img": "cameroun_nouveau.jpg",
-    "text": "Ensemble, un nouveau Cameroun juste et rayonnant est possible"
+    "text": "Together, a new Cameroon, fair and radiant is possible"
   },
   {
     "_id": "slide_3",
@@ -21,7 +21,7 @@
     "position": 3,
     "color": "rgb(30,139,195)",
     "img": "Penalty_pose_ballon.jpg",
-    "text": "Debout peuple fier, libre et souverain, provoquons ce changement"
+    "text": "Stand-up proud people, all power is yours, let's make it happen"
   },
   {
     "_id": "slide_4",
@@ -29,23 +29,24 @@
     "position": 4,
     "color": "rgb(145,61,136)",
     "img": "vote.jpg",
-    "text": "Allez, votez, sécurisez et défendez votre vote seul gage de changement"
-  },
+    "text": "Go, Vote, Secure and defend your Vote, only then will change happen"
+  }
   {
     "_id": "slide_5",
     "publish": true,
-    "position": 5,
-    "color": "rgb(1, 50, 67))",
+    "position": 4,
+    "color": "rgb(1, 50, 67)",
     "img": "Penalty_but.jpg",
-    "text": "Je vais marquer ce penalty historique; mon pied ne tremblera pas"
+    "text": "With your support, I will score this penalty, my foot will not shake"
   },
   {
     "_id": "slide_6",
     "publish": true,
-    "position": 6,
+    "position": 4,
     "color": "(99, 110, 114)",
     "img": "chef.jpg",
-    "text": "Président, je serai dévoué à la tâche et ne trahirai jamais votre confiance"
+    "text": "As 3rd President, I'll be devoted to the task and will never betray your trust"
   }
 ]
 
+  
