@@ -26,4 +26,11 @@ export class ContactsData extends Firebase {
       .orderBy('position', 'asc')
       .limit(1)
   }
+
+  static sendMail(mail: { name: string; phone: string; email: string; city: string; message: string; subject: any }) {
+    const batch = this.firestore.batch();
+    const doc = this.firestore.collection('contact-us-messages').doc();
+    batch.set(doc, mail);
+    return batch.commit();
+  }
 }

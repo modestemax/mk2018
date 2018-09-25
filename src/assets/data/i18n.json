@@ -32,6 +32,8 @@
     "MESSAGE": "Message",
     "ENVOYER": "Envoyer",
     "ANNULER": "Annuler",
+    "REMPLIR_CHAMPS_SVP": "Bien vouloir remplir tous les champs",
+    "EMAIL_SENT": "Merci, un Ami Politique vous contactera.",
     "VILLE_DE_RESIDENCE": "Ville de residence"
   },
   {

@@ -1,8 +1,10 @@
 import {Component} from '@stencil/core';
 import {__} from "../../../providers/i18n";
-// import {Plugins} from '@capacitor/core';
+import {ContactsData} from "../../../providers/contact-data";
 
-// const {Toast, Share} = Plugins;
+import {Plugins} from '@capacitor/core';
+
+const {Toast, /*Share*/} = Plugins;
 
 @Component({
   tag: 'page-contact-form',
@@ -10,11 +12,15 @@ import {__} from "../../../providers/i18n";
 })
 export class PageContactForm {
   subject;
-  // async show() {
-  //   await Toast.show({
-  //     text: 'Hello!'
-  //   });
-  // }
+  private name: HTMLInputElement;
+  private phone: HTMLInputElement;
+  private email: HTMLInputElement;
+  private city: HTMLInputElement;
+  private message: HTMLInputElement;
+
+  async show(text) {
+    await Toast.show({text});
+  }
 
   dismiss() {
     // this.show();
@@ -31,9 +37,22 @@ export class PageContactForm {
     modalController.dismiss()
   }
 
-  sendMessage() {
+  sendMessage() {debugger
     const modalController: any = document.querySelector('ion-modal-controller');
-    modalController.dismiss();
+    if (this.name.value && this.email.value && this.message.value) {
+      ContactsData.sendMail({
+        name: this.name.value,
+        phone: this.phone.value,
+        email: this.email.value,
+        city: this.city.value,
+        message: this.message.value,
+        subject: this.subject,
+      });
+      this.show(__('EMAIL_SENT'));
+      modalController.dismiss();
+    } else {
+      this.show(__('REMPLIR_CHAMPS_SVP'));
+    }
   }
 
 
@@ -60,23 +79,23 @@ export class PageContactForm {
           </ion-list-header>
           <ion-item>
             <ion-label position="floating"> {__('NOM_PRÉNOM')}</ion-label>
-            <ion-input/>
+            <ion-input ref={(el: HTMLInputElement) => this.name = el}/>
           </ion-item>
           <ion-item>
             <ion-label position="floating">{__('TEL_MOBILE_WHATSAPP')}</ion-label>
-            <ion-input/>
+            <ion-input ref={(el: HTMLInputElement) => this.phone = el}/>
           </ion-item>
           <ion-item>
             <ion-label position="floating">{__('EMAIL')}</ion-label>
-            <ion-input/>
+            <ion-input ref={(el: HTMLInputElement) => this.email = el}/>
           </ion-item>
           <ion-item>
             <ion-label position="floating">{__('VILLE_DE_RESIDENCE')}</ion-label>
-            <ion-input/>
+            <ion-input ref={(el: HTMLInputElement) => this.city = el}/>
           </ion-item>
           <ion-item>
             <ion-label position="floating">{__('MESSAGE')}</ion-label>
-            <ion-textarea/>
+            <ion-textarea ref={(el: HTMLInputElement) => this.message = el}/>
           </ion-item>
 
         </ion-list>
