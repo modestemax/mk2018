@@ -1,21 +1,13 @@
 [
   {
-    "_id": "Politique_Institutions",
+    "_id": "campagne_electorale",
     "position": 1,
     "publish": true,
-    "title": "Politique & Institutions",
+    "title": "Campagne Electorale",
     "details": [
       {
-        "title": "Résoudre la crise anglophone en 3 mois",
+        "title": "Programme de Gouvernance",
         "resources": [
-          {
-            "img": "Penalty2.jpg",
-            "desc": "KAMTO sur l’affaire des 14 milliard et la"
-          },
-          {
-            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
-            "desc": "ashmi ashma"
-          },
           {
             "img": "Penalty2.jpg",
             "desc": "KAMTO sur l’affaire des 14 milliard et la"
@@ -27,7 +19,7 @@
         ]
       },
       {
-        "title": "Résoudre la crise anglophone en 3 mois",
+        "title": "Equipe de Campagne",
         "resources": [
           {
             "img": "Penalty2.jpg",
@@ -36,7 +28,38 @@
           {
             "video": "https://www.youtube.com/embed/69nxF_wMjr4",
             "desc": "ashmi ashma"
+          }
+        ]
+      },
+      {
+        "title": "Meeting DOUALA",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
           },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      },
+      {
+        "title": "",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      },
+      {
+        "title": "",
+        "resources": [
           {
             "img": "Penalty2.jpg",
             "desc": "KAMTO sur l’affaire des 14 milliard et la"
@@ -50,22 +73,14 @@
     ]
   },
   {
-    "_id": "Politique_Institutions_2",
+    "_id": "meetings_extreme_nord",
     "position": 2,
     "publish": true,
-    "title": "Politique & Institutions",
+    "title": "Meetings - EXTREME NORD",
     "details": [
       {
-        "title": "Résoudre la crise anglophone en 3 mois",
+        "title": "LOGONE ET CHARI - KOUSSERI",
         "resources": [
-          {
-            "img": "Penalty2.jpg",
-            "desc": "KAMTO sur l’affaire des 14 milliard et la"
-          },
-          {
-            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
-            "desc": "ashmi ashma"
-          },
           {
             "img": "Penalty2.jpg",
             "desc": "KAMTO sur l’affaire des 14 milliard et la"
@@ -77,16 +92,8 @@
         ]
       },
       {
-        "title": "Résoudre la crise anglophone en 3 mois",
+        "title": "MAYO-SAVA - MORA",
         "resources": [
-          {
-            "img": "Penalty2.jpg",
-            "desc": "KAMTO sur l’affaire des 14 milliard et la"
-          },
-          {
-            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
-            "desc": "ashmi ashma"
-          },
           {
             "img": "Penalty2.jpg",
             "desc": "KAMTO sur l’affaire des 14 milliard et la"
@@ -98,7 +105,7 @@
         ]
       },
       {
-        "title": "Résoudre la crise anglophone en 3 mois",
+        "title": "MAYO-TSANAGA - KOZA",
         "resources": [
           {
             "img": "Penalty2.jpg",
@@ -107,7 +114,1580 @@
           {
             "video": "https://www.youtube.com/embed/69nxF_wMjr4",
             "desc": "ashmi ashma"
+          }
+        ]
+      },
+      {
+        "title": "DIAMARÉ - MAROUA",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
           },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      },
+      {
+        "title": "MAYO-KANI - TOKOMBÉRÉ",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      },
+      {
+        "title": "MAYO-KANI - DZIGUILAO",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      },
+      {
+        "title": "MAYO-KANI - GUIDIGUIS",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      },
+      {
+        "title": "MAYO-KANI - MOULVOUDAYE",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      },
+      {
+        "title": "MAYO-DANEY - KALFOU",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      },
+      {
+        "title": "MAYO-DANEY - VÊLÉ",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      },
+      {
+        "title": "MAYO-DANEY - YAGOUA",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      },
+      {
+        "title": "DIAMARÉ - DOUKOULA",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      },
+      {
+        "title": "MAYO-KANI - KAÉLÉ",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "meetings_nord",
+    "position": 3,
+    "publish": true,
+    "title": "Meetings - NORD",
+    "details": [
+      {
+        "title": "FARO / POLI",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      },
+      {
+        "title": "MAYO-LOUTI / MAYO OULO",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      },
+      {
+        "title": "MAYO-LOUTI / FIGUIL",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      },
+      {
+        "title": "MAYO-LOUTI / GUIDER",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      },
+      {
+        "title": "MAYO-REY / TCHOLIRE",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      },
+      {
+        "title": "BÉNOUÉ / LAGDO",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      },
+      {
+        "title": "BÉNOUÉ / NGONG",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      },
+      {
+        "title": "BÉNOUÉ / BADANKALI",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      },
+      {
+        "title": "BÉNOUÉ / PITOA",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      },
+      {
+        "title": "BÉNOUÉ / ADOUMRI",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      },
+      {
+        "title": "BÉNOUÉ / BIBEMI",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      },
+      {
+        "title": "BÉNOUÉ / BASCHEBO",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      },
+      {
+        "title": "BÉNOUÉ / DEMBO",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      },
+      {
+        "title": "BÉNOUÉ / GASCHIGA",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      },
+      {
+        "title": "BÉNOUÉ / GAROUA",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      },
+      {
+        "title": "MAYO-REY / TOUBORO",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "meetings_adamaoua",
+    "position": 4,
+    "publish": true,
+    "title": "Meetings ADAMAOUA",
+    "details": [
+      {
+        "title": "MAYO-BANYO / BANKIM",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      },
+      {
+        "title": "MAYO-BANYO / BANYO",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      },
+      {
+        "title": "MAYO-BANYO / MAYO DARLE",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      },
+      {
+        "title": "MBÉRÉ / MBÉRÉ / DIR",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      },
+      {
+        "title": "MBÉRÉ / MEIGANGA",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      },
+      {
+        "title": "DJÉREM / TIBATI",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      },
+      {
+        "title": "DJÉREM / NGAOUNDAL",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      },
+      {
+        "title": "MBÉRÉ / DJOHONG ET NGAOUI",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      },
+      {
+        "title": "VINA / NYAMBAKA",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      },
+      {
+        "title": "VINA / BELEL",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      },
+      {
+        "title": "VINA / GANHA'A",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      },
+      {
+        "title": "FARO ET DÉO / TIGNERE",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      },
+      {
+        "title": "FARO ET DÉO / GALIM-TIGNERE",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      },
+      {
+        "title": "FARO ET DÉO / KONTCHA ET MAYO BALEO",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      },
+      {
+        "title": "VINA / MARTAP",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      },
+      {
+        "title": "VINA / MBE",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      },
+      {
+        "title": "VINA / NGAOUNDÉRÉ",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "meetings_est",
+    "position": 5,
+    "publish": true,
+    "title": "Meetings - EST",
+    "details": [
+      {
+        "title": "LOM ET DJÉREM / GAROUA-BOULAÏ",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      },
+      {
+        "title": "BOUMBA  ET NGOKO / YOKADOUMA",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      },
+      {
+        "title": "HAUT-NYONG / ABONG-BANG",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      },
+      {
+        "title": "KADEY / BATOURI",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      },
+      {
+        "title": "LOM ET DJÉREM / BERTOUA",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "meetings_centre",
+    "position": 6,
+    "publish": true,
+    "title": "Meetings - CENTRE",
+    "details": [
+      {
+        "title": "MBAM-ET-KIM / NTUI",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      },
+      {
+        "title": "MBAM-ET-KIM / MBANGASSINA",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      },
+      {
+        "title": "LEKIÉ / SA'A",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      },
+      {
+        "title": "HAUTE-SANAGA / MBANDJOCK",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      },
+      {
+        "title": "LEKIÉ / EBEBDA",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      },
+      {
+        "title": "MBAM ET INOUBOU / MAKENENE",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      },
+      {
+        "title": "MBAM ET INOUBOU / KON-YAMBETA",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      },
+      {
+        "title": "MBAM ET INOUBOU / BOKITO",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      },
+      {
+        "title": "MBAM ET INOUBOU / NDIKI",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      },
+      {
+        "title": "MBAM ET INOUBOU / OMBESSA",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      },
+      {
+        "title": "HAUTE-SANAGA / BIBEY",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      },
+      {
+        "title": "HAUTE-SANAGA / NANGA-EBOKO",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      },
+      {
+        "title": "HAUTE-SANAGA / NKOTENG",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      },
+      {
+        "title": "LEKIÉ / OBALA",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      },
+      {
+        "title": "MBAM ET INOUBOU / BAFIA",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      },
+      {
+        "title": "MEFOU ET AKONO / NGOUMOU",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      },
+      {
+        "title": "MEFOU ET AFAMBA / MFOU",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "meetings_ouest",
+    "position": 7,
+    "publish": true,
+    "title": "Meetings - OUEST",
+    "details": [
+      {
+        "title": "KOUNG-KHI / BANDJOUN",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      },
+      {
+        "title": "HAUTS-PLATEAUX / BAHAM",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      },
+      {
+        "title": "NOUN / MAGBA",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      },
+      {
+        "title": "NOUN / MALANTOUEN",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      },
+      {
+        "title": "NOUN / FOUNBAN",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      },
+      {
+        "title": "NOUN / KOUTABA",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      },
+      {
+        "title": "NOUN / FOUMBOT",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      },
+      {
+        "title": "HAUT-NKAM / BAFANG",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      },
+      {
+        "title": "NDE / BANGANGTE",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      },
+      {
+        "title": "BAMBOUTOS / MBOUDA",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      },
+      {
+        "title": "MENOUA / DSCHANG",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      },
+      {
+        "title": "MIFI / BAFOUSSAM",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "meetings_sud",
+    "position": 8,
+    "publish": true,
+    "title": "Meetings - SUD",
+    "details": [
+      {
+        "title": "DJA ET LOBO / DJOUM",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      },
+      {
+        "title": "DJA ET LOBO / SANGMELIMA",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      },
+      {
+        "title": "MVILA / EBOLOWA",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "meetings_littoral",
+    "position": 9,
+    "publish": true,
+    "title": "Meetings - LITTORAL",
+    "details": [
+      {
+        "title": "LITTORAL 1",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      },
+      {
+        "title": "LITTORAL 2",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      },
+      {
+        "title": "LITTORAL 3",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "mouvements_et_support",
+    "position": 10,
+    "publish": true,
+    "title": "Mouvements et Support",
+    "details": [
+      {
+        "title": "Jeunes femmes conscientes",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      },
+      {
+        "title": "C'est le Moment!",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      },
+      {
+        "title": "Task Force MK 2018",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      },
+      {
+        "title": "Jeunesse Engagée",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      },
+      {
+        "title": "Nous sommes prêts",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "medias_tv",
+    "position": 11,
+    "publish": true,
+    "title": "Médias TV",
+    "details": [
+      {
+        "title": "VoxAfrica",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      },
+      {
+        "title": "Equinoxe TV",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      },
+      {
+        "title": "Canal 2",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      },
+      {
+        "title": "STV",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      },
+      {
+        "title": "TV5 AFRIQUE",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "medias_web",
+    "position": 12,
+    "publish": true,
+    "title": "Médias WEB",
+    "details": [
+      {
+        "title": "AAW",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      },
+      {
+        "title": "JMTV",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      },
+      {
+        "title": "AFRIK-INFORM",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      },
+      {
+        "title": "DIAF TV",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      },
+      {
+        "title": "LTM",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "medias_radio",
+    "position": 13,
+    "publish": true,
+    "title": "Médias RADIO",
+    "details": [
+      {
+        "title": "Radio Balafon",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      },
+      {
+        "title": "Radio Siantou",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      },
+      {
+        "title": "RFI",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      },
+      {
+        "title": "AFRICA No1",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "convention_mrc",
+    "position": 14,
+    "publish": true,
+    "title": "Convention MRC",
+    "details": [
+      {
+        "title": "Ouverture",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      },
+      {
+        "title": "Travaux",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      },
+      {
+        "title": "Elections",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      },
+      {
+        "title": "Investiture",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "mrc",
+    "position": 15,
+    "publish": true,
+    "title": "MRC",
+    "details": [
+      {
+        "title": "Accouchement Difficile",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      },
+      {
+        "title": "Le Directoire",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      },
+      {
+        "title": "Les Regions",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      },
+      {
+        "title": "Les femmes",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      },
+      {
+        "title": "Les Jeunes",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "nouvelle_galerie_nouvelle",
+    "position": 16,
+    "publish": true,
+    "title": "NOUVELLE GALERIE NOUVELLE GALERIE NOUVELLE GALERIE NOUVELLE GALERIE NOUVELLE GALERIE ",
+    "details": [
+      {
+        "title": "",
+        "resources": [
+          {
+            "img": "Penalty2.jpg",
+            "desc": "KAMTO sur l’affaire des 14 milliard et la"
+          },
+          {
+            "video": "https://www.youtube.com/embed/69nxF_wMjr4",
+            "desc": "ashmi ashma"
+          }
+        ]
+      },
+      {
+        "title": "",
+        "resources": [
           {
             "img": "Penalty2.jpg",
             "desc": "KAMTO sur l’affaire des 14 milliard et la"
@@ -121,4 +1701,3 @@
     ]
   }
 ]
-
