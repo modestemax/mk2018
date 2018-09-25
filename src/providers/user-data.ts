@@ -9,6 +9,7 @@ export class UserDataController {
   private favorites = new Set<string>();
 
   public lng = DEFAULT_LANG;
+  private lngChangedHandlers: any = [];
 
   hasFavorite(sessionName: string): boolean {
     return this.favorites.has(sessionName);
@@ -71,7 +72,12 @@ export class UserDataController {
 
   async setLng(lng): Promise<string> {
     await set(LANG, lng);
+    this.lngChangedHandlers.map(h => h(lng))
     return this.getLng();
+  }
+
+  onLangChanged(handler) {
+    this.lngChangedHandlers.push(handler);
   }
 }
 

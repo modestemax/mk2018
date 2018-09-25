@@ -57,6 +57,64 @@
         "icon": "mail-open"
       }
     ]
+  },
+  {
+    "_id": "en",
+    "items": [
+      {
+        "group": "A",
+        "title": "Welcome",
+        "url": "/acceuil",
+        "icon": "home"
+      },
+      {
+        "group": "B",
+        "title": "Who am I",
+        "url": "/who-am-i",
+        "icon": "person"
+      },
+      {
+        "group": "B",
+        "title": "My Governance Programme",
+        "url": "/programme",
+        "icon": "construct"
+      },
+      {
+        "group": "B",
+        "title": "My Commitments",
+        "url": "/engagements",
+        "icon": "clipboard"
+      },
+      {
+        "group": "B",
+        "title": "The FPCBB",
+        "url": "/others/forces",
+        "icon": "people"
+      },
+      {
+        "group": "C",
+        "title": "Campaign News",
+        "url": "/actualites",
+        "icon": "megaphone"
+      },
+      {
+        "group": "C",
+        "title": "Photos et Videos Gallery",
+        "url": "/others/galeries",
+        "icon": "Images"
+      },
+      {
+        "group": "D",
+        "title": "Donate",
+        "url": "/others/don",
+        "icon": "gift"
+      },
+      {
+        "group": "D",
+        "title": "Contact the Campaign Team",
+        "url": "/others/contact",
+        "icon": "mail-open"
+      }
+    ]
   }
 ]
-

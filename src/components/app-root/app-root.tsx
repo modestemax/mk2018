@@ -57,9 +57,10 @@ export class AppRoot {
     });
     I18nData.onChange(strings => this.strings = strings);
 
-    // I18nData.onLngChanged.push(async () => {
-    //   this.menus = await Menu.getMenu();
-    // });
+    UserData.onLangChanged(async () => {
+      this.menus = await Menu.getMenu();
+      this.strings = await I18nData.getAll();
+    });
   }
 
 
