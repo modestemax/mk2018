@@ -33,20 +33,23 @@
 //}
 
 page-tutorial {
-  .slide-card {
-    margin: 70px 28px;
-    img {
-      border: 5px solid white;
-      margin-top: auto;
-      width: 100%;
-    }
-    .slide-text{
-      color: white;
-      padding: 36px;
-      background-color: transparent;
-      .slide-text-inner{
-        font-weight: bold;
-        font-size: 1.5rem;
+  ion-content {
+    background-color: white;
+    .slide-card {
+      margin: 28px 28px;
+      img {
+        border: 5px solid white;
+        margin-top: auto;
+        width: 100%;
+      }
+      .slide-text {
+        color: white;
+        padding: 36px;
+        background-color: transparent;
+        .slide-text-inner {
+          font-weight: bold;
+          font-size: 1.5rem;
+        }
       }
     }
   }
