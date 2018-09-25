@@ -25,7 +25,8 @@ export class PageTabs {
             return (
               <ion-tab  {...tab}>
                 <ion-nav/>
-              </ion-tab>);
+              </ion-tab>
+            );
           }
         })}
 
@@ -33,16 +34,6 @@ export class PageTabs {
           <ion-nav/>
         </ion-tab>
 
-        -------------------------------------------------
-        {/* <ion-tab label="Schedule" icon="calendar" name="tab-schedule">
-          <ion-nav/>
-        </ion-tab>
-        <ion-tab label="Speakers" icon="contacts" name="tab-speaker">
-          <ion-nav/>
-        </ion-tab>
-
-        <ion-tab label="Map" icon="map" component="page-map"/>
-        <ion-tab label="About" icon="information-circle" component="page-about"/>*/}
       </ion-tabs>
     ];
   }

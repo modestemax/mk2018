@@ -1,4 +1,5 @@
 import { Component, Prop, } from '@stencil/core';
+import {__} from "../../../providers/i18n";
 // import { ConferenceData } from '../../providers/conference-data';
 // import { UserData } from '../../providers/user-data';
 
@@ -33,7 +34,7 @@ export class MkActualite {
     if (!this.full) {
       const word = this.text.slice(0, 140).split(' ');
       word.pop();
-      return word.join(' ') + `<ion-text className="read-more">[...]</ion-text>`;
+      return `${word.join(' ')}<ion-text class="read-more">[${__('LIRE')} ...]</ion-text>`;
     }
     return this.text;
   }
@@ -48,8 +49,7 @@ export class MkActualite {
         <ion-item>
           <p>{date}</p>
         </ion-item>
-
-        <img src={img}/>
+        <img-video img={img}/>
 
         <ion-card-content onClick={this.showFull.bind(this)}>
           <h2 class="article-title">{titre}</h2>

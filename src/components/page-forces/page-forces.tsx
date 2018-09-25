@@ -47,7 +47,7 @@ export class PageForces {
             [
               <ion-item href={`/others/forces/${_id}`}>
                 <ion-thumbnail slot="start">
-                  <img src={`/assets/img/${img}`}/>
+                  <img-video img={img}/>
                 </ion-thumbnail>
                 <ion-label>
                   <h3 class="bank-name">  {name}</h3>

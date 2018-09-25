@@ -48,7 +48,9 @@ export class PageProgramme {
             (<ion-slide>
                 <ion-card>
                   <ion-card-header>
-                    <ion-thumbnail class="img-wrapper"><img src={`/assets/img/${img}`} class="slide-image"/></ion-thumbnail>
+                    <ion-thumbnail class="img-wrapper">
+                      <img-video img={img} class="slide-image"/>
+                      </ion-thumbnail>
                   </ion-card-header>
                   <hr class="thematique" style={{height: '15px', backgroundColor: color}}/>
                   <ion-card-content>

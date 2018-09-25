@@ -1,7 +1,7 @@
-import { Config } from '@ionic/core';
-import { Component, Prop, State /*Element, Listen, , State */ } from '@stencil/core';
-import { CVData } from '../../providers/cv-data';
-import { __ } from '../../providers/i18n';
+// import { Config } from '@ionic/core';
+import {Component, State /*Element, Listen, , State */} from '@stencil/core';
+import {CVData} from '../../providers/cv-data';
+import {__} from '../../providers/i18n';
 
 
 @Component({
@@ -11,7 +11,7 @@ import { __ } from '../../providers/i18n';
 export class PageWhoAmI {
 
 
-  @Prop({ context: 'config' }) config: Config;
+  // @Prop({ context: 'config' }) config: Config;
 
   @State() documents = [];
 
@@ -44,7 +44,7 @@ export class PageWhoAmI {
           <ion-row class="picture">
             <ion-col no-padding>
               <div>
-                <img src="/assets/img/who-am-i.jpg" alt="ionic logo"/>
+                <img-video img={'who-am-i.jpg'}/>
               </div>
             </ion-col>
           </ion-row>
@@ -52,9 +52,9 @@ export class PageWhoAmI {
           <ion-row class="cv-item-group">
             <ion-grid no-padding class="item-grid">
               <ion-row class="item-row">
-                {this.documents.map(({ _id, color, img, section }) => (
+                {this.documents.map(({_id, color, img, section}) => (
 
-                  <ion-col class={`item-col ${_id || 'empty'} `} style={{ backgroundColor: color }}>
+                  <ion-col class={`item-col ${_id || 'empty'} `} style={{backgroundColor: color}}>
                     {_id
                       ? <ion-item class="item" href={`/who-am-i/${_id}`}>
 
@@ -62,7 +62,7 @@ export class PageWhoAmI {
                           <ion-row>
                             <ion-col text-center>
                               <ion-thumbnail class="item-icon">
-                                <img src={`/assets/img/${img}`} alt="logo"/>
+                                <img-video img={img}/>
                               </ion-thumbnail>
                             </ion-col>
                           </ion-row>

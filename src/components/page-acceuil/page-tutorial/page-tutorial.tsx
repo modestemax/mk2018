@@ -46,7 +46,7 @@ export class PageTutorial {
           {this.slides.map(({ img, color, text }) =>
             (<ion-slide>
                 <ion-card class="slide-card" style={{ backgroundColor: color }}>
-                  <img src={`/assets/img/${img}`} class="slide-image"/>
+                  <img-video img={img} class="slide-image"/>
                   <ion-card-content class="slide-text">
                     <h2 class="slide-text-inner" innerHTML={text}/>
                   </ion-card-content>
@@ -55,7 +55,7 @@ export class PageTutorial {
             ))}
           <ion-slide>
             <ion-card>
-              <img src="/assets/img/ica-slidebox-img-4.png" class="slide-image"/>
+              <img-video img={'ica-slidebox-img-4.png'} class="slide-image"/>
               <ion-card-content><h2 class="slide-title">{__('READY_TO_PLAY_Q')}</h2>
                 <ion-button fill="clear" href="/who-am-i">
                   {__('CONTINUE')}

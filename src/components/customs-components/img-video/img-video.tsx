@@ -1,4 +1,4 @@
-import { Component, Prop} from '@stencil/core';
+import {Component, Prop} from '@stencil/core';
 
 @Component({
   tag: 'img-video',
@@ -15,6 +15,9 @@ export class ImgVideo {
 
   render() {
     if (this.img) {
+      if (/^http/.test(this.img)) {
+        return (<img class="res-image" src={`${this.img}`} alt=""/>);
+      }
       return (<img class="res-image" src={`/assets/img/${this.img}`} alt=""/>);
     }
     if (this.video) {

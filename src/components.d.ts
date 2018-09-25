@@ -77,12 +77,6 @@ export namespace Components {
     'titre'?: string;
   }
 
-  interface PageAboutPopover {}
-  interface PageAboutPopoverAttributes extends StencilHTMLAttributes {}
-
-  interface PageAbout {}
-  interface PageAboutAttributes extends StencilHTMLAttributes {}
-
   interface PageAcceuil {}
   interface PageAcceuilAttributes extends StencilHTMLAttributes {}
 
@@ -91,11 +85,6 @@ export namespace Components {
   }
   interface PageTutorialAttributes extends StencilHTMLAttributes {
     'lng'?: string;
-  }
-
-  interface PageAccount {}
-  interface PageAccountAttributes extends StencilHTMLAttributes {
-    'onUserDidLogOut'?: (event: CustomEvent) => void;
   }
 
   interface PageActualite {
@@ -169,11 +158,6 @@ export namespace Components {
   interface PageGalerie {}
   interface PageGalerieAttributes extends StencilHTMLAttributes {}
 
-  interface PageLogin {}
-  interface PageLoginAttributes extends StencilHTMLAttributes {
-    'onUserDidLogIn'?: (event: CustomEvent) => void;
-  }
-
   interface PageMap {}
   interface PageMapAttributes extends StencilHTMLAttributes {}
 
@@ -203,41 +187,6 @@ export namespace Components {
   interface PageProgramme {}
   interface PageProgrammeAttributes extends StencilHTMLAttributes {}
 
-  interface PageScheduleFilter {
-    'excludedTracks': string[];
-  }
-  interface PageScheduleFilterAttributes extends StencilHTMLAttributes {
-    'excludedTracks'?: string[];
-  }
-
-  interface PageSchedule {}
-  interface PageScheduleAttributes extends StencilHTMLAttributes {}
-
-  interface PageSession {
-    'goback': string;
-    'sessionId': string;
-  }
-  interface PageSessionAttributes extends StencilHTMLAttributes {
-    'goback'?: string;
-    'sessionId'?: string;
-  }
-
-  interface PageSignup {}
-  interface PageSignupAttributes extends StencilHTMLAttributes {}
-
-  interface PageSpeakerDetail {
-    'speakerId': string;
-  }
-  interface PageSpeakerDetailAttributes extends StencilHTMLAttributes {
-    'speakerId'?: string;
-  }
-
-  interface PageSpeakerList {}
-  interface PageSpeakerListAttributes extends StencilHTMLAttributes {}
-
-  interface PageSupport {}
-  interface PageSupportAttributes extends StencilHTMLAttributes {}
-
   interface PageTabs {}
   interface PageTabsAttributes extends StencilHTMLAttributes {}
 
@@ -261,11 +210,8 @@ declare global {
     'ImgVideo': Components.ImgVideo;
     'LazyIframe': Components.LazyIframe;
     'MkActualite': Components.MkActualite;
-    'PageAboutPopover': Components.PageAboutPopover;
-    'PageAbout': Components.PageAbout;
     'PageAcceuil': Components.PageAcceuil;
     'PageTutorial': Components.PageTutorial;
-    'PageAccount': Components.PageAccount;
     'PageActualite': Components.PageActualite;
     'PageActualites': Components.PageActualites;
     'PageContactForm': Components.PageContactForm;
@@ -277,19 +223,11 @@ declare global {
     'PageForces': Components.PageForces;
     'PageGalerieDetail': Components.PageGalerieDetail;
     'PageGalerie': Components.PageGalerie;
-    'PageLogin': Components.PageLogin;
     'PageMap': Components.PageMap;
     'PagePenalty': Components.PagePenalty;
     'PageChantierDetail': Components.PageChantierDetail;
     'PageChantier': Components.PageChantier;
     'PageProgramme': Components.PageProgramme;
-    'PageScheduleFilter': Components.PageScheduleFilter;
-    'PageSchedule': Components.PageSchedule;
-    'PageSession': Components.PageSession;
-    'PageSignup': Components.PageSignup;
-    'PageSpeakerDetail': Components.PageSpeakerDetail;
-    'PageSpeakerList': Components.PageSpeakerList;
-    'PageSupport': Components.PageSupport;
     'PageTabs': Components.PageTabs;
     'PageMonCv': Components.PageMonCv;
     'PageWhoAmI': Components.PageWhoAmI;
@@ -301,11 +239,8 @@ declare global {
     'img-video': Components.ImgVideoAttributes;
     'lazy-iframe': Components.LazyIframeAttributes;
     'mk-actualite': Components.MkActualiteAttributes;
-    'page-about-popover': Components.PageAboutPopoverAttributes;
-    'page-about': Components.PageAboutAttributes;
     'page-acceuil': Components.PageAcceuilAttributes;
     'page-tutorial': Components.PageTutorialAttributes;
-    'page-account': Components.PageAccountAttributes;
     'page-actualite': Components.PageActualiteAttributes;
     'page-actualites': Components.PageActualitesAttributes;
     'page-contact-form': Components.PageContactFormAttributes;
@@ -317,19 +252,11 @@ declare global {
     'page-forces': Components.PageForcesAttributes;
     'page-galerie-detail': Components.PageGalerieDetailAttributes;
     'page-galerie': Components.PageGalerieAttributes;
-    'page-login': Components.PageLoginAttributes;
     'page-map': Components.PageMapAttributes;
     'page-penalty': Components.PagePenaltyAttributes;
     'page-chantier-detail': Components.PageChantierDetailAttributes;
     'page-chantier': Components.PageChantierAttributes;
     'page-programme': Components.PageProgrammeAttributes;
-    'page-schedule-filter': Components.PageScheduleFilterAttributes;
-    'page-schedule': Components.PageScheduleAttributes;
-    'page-session': Components.PageSessionAttributes;
-    'page-signup': Components.PageSignupAttributes;
-    'page-speaker-detail': Components.PageSpeakerDetailAttributes;
-    'page-speaker-list': Components.PageSpeakerListAttributes;
-    'page-support': Components.PageSupportAttributes;
     'page-tabs': Components.PageTabsAttributes;
     'page-mon-cv': Components.PageMonCvAttributes;
     'page-who-am-i': Components.PageWhoAmIAttributes;
@@ -366,18 +293,6 @@ declare global {
     new (): HTMLMkActualiteElement;
   };
 
-  interface HTMLPageAboutPopoverElement extends Components.PageAboutPopover, HTMLStencilElement {}
-  var HTMLPageAboutPopoverElement: {
-    prototype: HTMLPageAboutPopoverElement;
-    new (): HTMLPageAboutPopoverElement;
-  };
-
-  interface HTMLPageAboutElement extends Components.PageAbout, HTMLStencilElement {}
-  var HTMLPageAboutElement: {
-    prototype: HTMLPageAboutElement;
-    new (): HTMLPageAboutElement;
-  };
-
   interface HTMLPageAcceuilElement extends Components.PageAcceuil, HTMLStencilElement {}
   var HTMLPageAcceuilElement: {
     prototype: HTMLPageAcceuilElement;
@@ -388,12 +303,6 @@ declare global {
   var HTMLPageTutorialElement: {
     prototype: HTMLPageTutorialElement;
     new (): HTMLPageTutorialElement;
-  };
-
-  interface HTMLPageAccountElement extends Components.PageAccount, HTMLStencilElement {}
-  var HTMLPageAccountElement: {
-    prototype: HTMLPageAccountElement;
-    new (): HTMLPageAccountElement;
   };
 
   interface HTMLPageActualiteElement extends Components.PageActualite, HTMLStencilElement {}
@@ -462,12 +371,6 @@ declare global {
     new (): HTMLPageGalerieElement;
   };
 
-  interface HTMLPageLoginElement extends Components.PageLogin, HTMLStencilElement {}
-  var HTMLPageLoginElement: {
-    prototype: HTMLPageLoginElement;
-    new (): HTMLPageLoginElement;
-  };
-
   interface HTMLPageMapElement extends Components.PageMap, HTMLStencilElement {}
   var HTMLPageMapElement: {
     prototype: HTMLPageMapElement;
@@ -498,48 +401,6 @@ declare global {
     new (): HTMLPageProgrammeElement;
   };
 
-  interface HTMLPageScheduleFilterElement extends Components.PageScheduleFilter, HTMLStencilElement {}
-  var HTMLPageScheduleFilterElement: {
-    prototype: HTMLPageScheduleFilterElement;
-    new (): HTMLPageScheduleFilterElement;
-  };
-
-  interface HTMLPageScheduleElement extends Components.PageSchedule, HTMLStencilElement {}
-  var HTMLPageScheduleElement: {
-    prototype: HTMLPageScheduleElement;
-    new (): HTMLPageScheduleElement;
-  };
-
-  interface HTMLPageSessionElement extends Components.PageSession, HTMLStencilElement {}
-  var HTMLPageSessionElement: {
-    prototype: HTMLPageSessionElement;
-    new (): HTMLPageSessionElement;
-  };
-
-  interface HTMLPageSignupElement extends Components.PageSignup, HTMLStencilElement {}
-  var HTMLPageSignupElement: {
-    prototype: HTMLPageSignupElement;
-    new (): HTMLPageSignupElement;
-  };
-
-  interface HTMLPageSpeakerDetailElement extends Components.PageSpeakerDetail, HTMLStencilElement {}
-  var HTMLPageSpeakerDetailElement: {
-    prototype: HTMLPageSpeakerDetailElement;
-    new (): HTMLPageSpeakerDetailElement;
-  };
-
-  interface HTMLPageSpeakerListElement extends Components.PageSpeakerList, HTMLStencilElement {}
-  var HTMLPageSpeakerListElement: {
-    prototype: HTMLPageSpeakerListElement;
-    new (): HTMLPageSpeakerListElement;
-  };
-
-  interface HTMLPageSupportElement extends Components.PageSupport, HTMLStencilElement {}
-  var HTMLPageSupportElement: {
-    prototype: HTMLPageSupportElement;
-    new (): HTMLPageSupportElement;
-  };
-
   interface HTMLPageTabsElement extends Components.PageTabs, HTMLStencilElement {}
   var HTMLPageTabsElement: {
     prototype: HTMLPageTabsElement;
@@ -564,11 +425,8 @@ declare global {
     'img-video': HTMLImgVideoElement
     'lazy-iframe': HTMLLazyIframeElement
     'mk-actualite': HTMLMkActualiteElement
-    'page-about-popover': HTMLPageAboutPopoverElement
-    'page-about': HTMLPageAboutElement
     'page-acceuil': HTMLPageAcceuilElement
     'page-tutorial': HTMLPageTutorialElement
-    'page-account': HTMLPageAccountElement
     'page-actualite': HTMLPageActualiteElement
     'page-actualites': HTMLPageActualitesElement
     'page-contact-form': HTMLPageContactFormElement
@@ -580,19 +438,11 @@ declare global {
     'page-forces': HTMLPageForcesElement
     'page-galerie-detail': HTMLPageGalerieDetailElement
     'page-galerie': HTMLPageGalerieElement
-    'page-login': HTMLPageLoginElement
     'page-map': HTMLPageMapElement
     'page-penalty': HTMLPagePenaltyElement
     'page-chantier-detail': HTMLPageChantierDetailElement
     'page-chantier': HTMLPageChantierElement
     'page-programme': HTMLPageProgrammeElement
-    'page-schedule-filter': HTMLPageScheduleFilterElement
-    'page-schedule': HTMLPageScheduleElement
-    'page-session': HTMLPageSessionElement
-    'page-signup': HTMLPageSignupElement
-    'page-speaker-detail': HTMLPageSpeakerDetailElement
-    'page-speaker-list': HTMLPageSpeakerListElement
-    'page-support': HTMLPageSupportElement
     'page-tabs': HTMLPageTabsElement
     'page-mon-cv': HTMLPageMonCvElement
     'page-who-am-i': HTMLPageWhoAmIElement
@@ -604,11 +454,8 @@ declare global {
     'img-video': HTMLImgVideoElement;
     'lazy-iframe': HTMLLazyIframeElement;
     'mk-actualite': HTMLMkActualiteElement;
-    'page-about-popover': HTMLPageAboutPopoverElement;
-    'page-about': HTMLPageAboutElement;
     'page-acceuil': HTMLPageAcceuilElement;
     'page-tutorial': HTMLPageTutorialElement;
-    'page-account': HTMLPageAccountElement;
     'page-actualite': HTMLPageActualiteElement;
     'page-actualites': HTMLPageActualitesElement;
     'page-contact-form': HTMLPageContactFormElement;
@@ -620,19 +467,11 @@ declare global {
     'page-forces': HTMLPageForcesElement;
     'page-galerie-detail': HTMLPageGalerieDetailElement;
     'page-galerie': HTMLPageGalerieElement;
-    'page-login': HTMLPageLoginElement;
     'page-map': HTMLPageMapElement;
     'page-penalty': HTMLPagePenaltyElement;
     'page-chantier-detail': HTMLPageChantierDetailElement;
     'page-chantier': HTMLPageChantierElement;
     'page-programme': HTMLPageProgrammeElement;
-    'page-schedule-filter': HTMLPageScheduleFilterElement;
-    'page-schedule': HTMLPageScheduleElement;
-    'page-session': HTMLPageSessionElement;
-    'page-signup': HTMLPageSignupElement;
-    'page-speaker-detail': HTMLPageSpeakerDetailElement;
-    'page-speaker-list': HTMLPageSpeakerListElement;
-    'page-support': HTMLPageSupportElement;
     'page-tabs': HTMLPageTabsElement;
     'page-mon-cv': HTMLPageMonCvElement;
     'page-who-am-i': HTMLPageWhoAmIElement;

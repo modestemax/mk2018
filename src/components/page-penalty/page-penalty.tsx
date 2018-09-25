@@ -39,7 +39,9 @@ export class PagePenalty {
 
                   <ion-card class="penalty-card">
                     <ion-card-header no-padding>
-                      <ion-label class="img-container"><img src={`/assets/img/${img}`} alt=""/></ion-label>
+                      <ion-label class="img-container">
+                        <img-video img={img}/>
+                        </ion-label>
                     </ion-card-header>
 
                     <ion-card-content>

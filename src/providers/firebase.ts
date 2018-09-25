@@ -1,9 +1,9 @@
 import firebase from 'firebase/app';
 import 'firebase/firestore';
-import { config } from '../app-settings/firebase';
+import {config} from '../app-settings/firebase';
 // import {loadDefaultData, initialData} from './firebase-init';
-import { loadDefaultDataByCollection, pushDefaultData } from './firebase-init';
-import { UserData } from './user-data';
+import {loadDefaultDataByCollection, pushDefaultData} from './firebase-init';
+import {UserData} from './user-data';
 
 
 export abstract class Firebase {
@@ -55,7 +55,7 @@ export abstract class Firebase {
   static get(id) {
     id = decodeURIComponent(id);
     if (this.data && this.data.find) {
-      return this.formatDoc({ ...this.data.find(item => item._id == id) });
+      return this.formatDoc({...this.data.find(item => item._id == id)});
     }
     return this.getCollection().then(collection => {
       const doc = collection.doc(id);
@@ -95,7 +95,7 @@ export abstract class Firebase {
       this.filter(collection)
         .onSnapshot((snapshot) => {
           snapshot.query.get().then(snapshot => {
-            this.data = snapshot.docs.map(d => d.data());
+            this.data = snapshot.docs.map(d => ({_id: d.id, ...(d.data())}));
             callback(this.formatDocs(snapshot.docs));
           });
         });

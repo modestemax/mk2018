@@ -40,7 +40,8 @@ export class PageChantier {
 
             <ion-card class="header">
               <ion-card-header>
-                <ion-thumbnail class="img-wrapper"><img src={`/assets/img/${this.data.img}`} class="slide-image"/>
+                <ion-thumbnail class="img-wrapper">
+                  <img-video img={this.data.img} class="slide-image"/>
                 </ion-thumbnail>
               </ion-card-header>
               <hr class="thematique" style={{height: '15px', backgroundColor: this.data.color}}/>
@@ -56,7 +57,7 @@ export class PageChantier {
           </ion-list-header>
 
           {this.data.details.map(({title, key}) => (
-            <chantier-sous-titre color={this.data.color} text={title} _id={this.data._id} key={key}/>
+            <chantier-sous-titre color={this.data.color} text={title} _id={this._id} key={key}/>
           ))}
         </ion-list>
       </ion-content>

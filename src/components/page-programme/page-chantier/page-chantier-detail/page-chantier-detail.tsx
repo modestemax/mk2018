@@ -52,7 +52,8 @@ export class PageChantierDetail {
 
             <ion-card class="header">
               <ion-card-header>
-                <ion-thumbnail class="img-wrapper"><img src={`/assets/img/${this.data.img}`} class="slide-image"/>
+                <ion-thumbnail class="img-wrapper">
+                  <img-video img={this.data.img} class="slide-image"/>
                 </ion-thumbnail>
               </ion-card-header>
               <hr class="thematique" style={{height: '15px', backgroundColor: this.data.color}}/>

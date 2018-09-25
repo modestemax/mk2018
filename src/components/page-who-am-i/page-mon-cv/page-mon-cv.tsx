@@ -13,8 +13,9 @@ export class PageMonCv {
   private data;
 
 
-  async componentWillLoad() {;
-    this.data = await CVData.get(this._id);
+  async componentWillLoad() {
+    this.data = await CVData.get(this._id) || {};
+    this.data.content = this.data.content || []
   }
 
 
@@ -38,7 +39,9 @@ export class PageMonCv {
       <ion-content>
         <ion-card class="content-detail">
           <ion-card-header class={`header ${this._id} `} style={{backgroundColor: this.data.color}}>
-            <div class="logo"><img src={`/assets/img/${this.data.img}`} alt="logo"/></div>
+            <div class="logo">
+              <img-video img={this.data.img}/>
+            </div>
           </ion-card-header>
           <ion-card-content>
             <ion-list>

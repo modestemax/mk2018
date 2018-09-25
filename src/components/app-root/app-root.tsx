@@ -154,9 +154,9 @@ export class AppRoot {
           {/*<ion-list-header>*/}
           <ion-item class="menu-header">
             <ion-thumbnail slot="start" class="photo">
-              <img src="/assets/img/Kamto-photo.png"/>
+              <img-video img={'Kamto-photo.png'}/>
             </ion-thumbnail>
-            <img src="/assets/img/kamto2018.png" class="kamto2018"/>
+            <img-video img={'kamto2018.png'} class="kamto2018"/>
           </ion-item>
           <hr class="menu-header-separator"/>
           {/*</ion-list-header>*/}

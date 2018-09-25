@@ -49,7 +49,7 @@ export class PageForcesDetail {
           </ion-list-header>
           <ion-item>
             <ion-thumbnail>
-              <img src={`/assets/img/${this.content.img}`}/>
+              <img-video img={this.content.img}/>
             </ion-thumbnail>
           </ion-item>
           <ion-item>

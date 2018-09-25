@@ -9,7 +9,7 @@ export class PageAcceuil {
     return [
       <ion-content class="mk_photo">
         <p class="image-acceuil">
-          <img src="/assets/img/maurice_kamto_1.jpg" alt="ionic logo"/>
+          <img-video img={'maurice_kamto_1.jpg'}/>
         </p>
       </ion-content>,
       <ion-footer>
