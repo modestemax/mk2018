@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources>
-    <string name="app_name">MK2018</string>
-    <string name="title_activity_main">MK2018</string>
+    <string name="app_name">KAMTO\'18</string>
+    <string name="title_activity_main">KAMTO\'18</string>
     <string name="package_name">za.co.neema.mk2018</string>
     <string name="fileprovider_authority">za.co.neema.mk2018.fileprovider</string>
     <string name="custom_url_scheme">za.co.neema.mk2018</string>
