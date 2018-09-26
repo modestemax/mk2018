@@ -7,7 +7,7 @@ module.exports = {
 
     // First application
     {
-      name: 'mk2018',
+      name: "KAMTO'18",
       script: 'start.sh',
       env: {},
       env_production: {

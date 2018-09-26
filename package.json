@@ -1,8 +1,8 @@
 {
-  "name": "ionic-stencil-conference-app",
+  "name": "KAMTO'18",
   "private": true,
   "version": "0.0.1",
-  "description": "Stencil App Starter",
+  "description": "Vitrice du Candidat du MRC",
   "files": [
     "dist/"
   ],
@@ -17,7 +17,7 @@
     "test.watch": "jest --watch"
   },
   "dependencies": {
-    "@capacitor/android": "^1.0.0-beta.7",
+    "@capacitor/android": "^1.0.0-beta.8",
     "@capacitor/core": "^1.0.0-beta.7",
     "@capacitor/ios": "^1.0.0-beta.7",
     "@ionic/core": "4.0.0-beta.8",

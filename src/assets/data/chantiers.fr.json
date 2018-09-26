@@ -1073,7 +1073,7 @@
       },
       {
         "title": "L’EAU SOURCE DE VIE PRODUCTION ET ASSAINISSEMENT",
-        "key": "tic",
+        "key": "EAU_SOURCE_VIE_PRODUCTION_ASSAINISSEMENT",
         "details": [
           {
             "title": "Une eau potable pour tous",
@@ -1159,7 +1159,7 @@
       },
       {
         "title": "LES TECHNOLOGIES DE L’INFORMATION ET DE LA COMMUNICATION",
-        "key": "tic",
+        "key": "TECHNOLOGIES_INFORMATION_COMMUNICATION",
         "details": [
           {
             "title": "Libérer la créativité et encourager l’innovation dans les nouvelles technologies pour faire du Cameroun un «champion de l’électronique et du logiciel»",
@@ -1904,7 +1904,7 @@
     "details": [
       {
         "title": "FAIRE DE LA DIASPORA CAMEROUNAISE UN ACTEUR MAJEUR DU DÉVELOPPEMENT NATIONAL",
-        "key": "diaspora",
+        "key": "diaspora_ACTEUR_MAJEUR_DÉVELOPPEMENT",
         "details": [
           {
             "title": "Le pacte patriotique et stratégique avec la diaspora",
@@ -1997,7 +1997,7 @@
     "details": [
       {
         "title": "SOURCES DE FINANCEMENT",
-        "key": "",
+        "key": "SOURCES_FINANCEMENT",
         "details": [
           {
             "title": "Sources de Financement",
@@ -2018,7 +2018,7 @@
       },
       {
         "title": "COUTS GLOBAUX",
-        "key": "",
+        "key": "COUTS_GLOBAUX",
         "details": [
           {
             "title": "Couts Globaux",

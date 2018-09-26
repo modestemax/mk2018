@@ -272,7 +272,7 @@
     ]
   },
   {
-    "publish": true,
+    "publish": false,
     "position": 13,
     "_id": "celebre_combattant_blaise_essama",
     "name": "",

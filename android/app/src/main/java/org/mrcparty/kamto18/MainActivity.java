@@ -1,4 +1,4 @@
-package za.co.neema.mk2018;
+package org.mrcparty.kamto18;
 
 import android.os.Bundle;
 
