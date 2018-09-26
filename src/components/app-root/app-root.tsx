@@ -1,14 +1,14 @@
 import '@ionic/core';
 
-import {Component, Element, Prop, State,} from '@stencil/core';
-import {UserData} from '../../providers/user-data';
-import {Plugins} from '@capacitor/core';
-import {Menu} from '../../providers/menu-data';
-import {I18nData} from '../../providers/i18n';
-import {Firebase} from '../../providers/firebase';
+import { Component, Element, Prop, State, } from '@stencil/core';
+import { UserData } from '../../providers/user-data';
+import { Plugins } from '@capacitor/core';
+import { Menu } from '../../providers/menu-data';
+import { I18nData } from '../../providers/i18n';
+import { Firebase } from '../../providers/firebase';
 
 
-const {SplashScreen} = Plugins;
+const { SplashScreen } = Plugins;
 
 @Component({
   tag: 'app-root',
@@ -21,7 +21,8 @@ export class AppRoot {
 
   @Element() el: HTMLElement;
 
-  @Prop({context: 'isServer'}) isServer: boolean;
+  @Prop({ context: 'isServer' }) isServer: boolean;
+  // @Prop({connect: 'ion-router'}) router: any;
 
 
   @State() menus: any = [];
@@ -55,11 +56,13 @@ export class AppRoot {
     Menu.onChange(async () => {
       this.menus = await Menu.getMenu();
     });
+
     I18nData.onChange(strings => this.strings = strings);
 
     UserData.onLangChanged(async () => {
       this.menus = await Menu.getMenu();
       this.strings = await I18nData.getAll();
+      // document.location.reload()
     });
   }
 
@@ -73,25 +76,25 @@ export class AppRoot {
 
           <ion-route url="/who-am-i" component="tab-who-am-i">
             <ion-route component="page-who-am-i"/>
-            <ion-route url="/:_id" component="page-mon-cv" componentProps={{goback: '/who-am-i'}}/>
+            <ion-route url="/:_id" component="page-mon-cv" componentProps={{ goback: '/who-am-i' }}/>
           </ion-route>
 
           <ion-route url="/programme" component="tab-programme">
             <ion-route component="page-programme"/>
-            <ion-route url="/chantier/:_id" component="page-chantier" componentProps={{goback: '/programme'}}/>
+            <ion-route url="/chantier/:_id" component="page-chantier" componentProps={{ goback: '/programme' }}/>
             <ion-route url="/chantier/:_id/detail/:detail" component="page-chantier-detail"
-                       componentProps={{goback: '/programme/chantier'}}/>
+                       componentProps={{ goback: '/programme/chantier' }}/>
           </ion-route>
 
           <ion-route url="/engagements" component="tab-engagements">
             <ion-route component="page-engagements"/>
             <ion-route url="/:_id/:type_title/:_title" component="page-engagements-detail"
-                       componentProps={{goback: '/engagements'}}/>
+                       componentProps={{ goback: '/engagements' }}/>
           </ion-route>
 
           <ion-route url="/actualites" component="tab-actualites">
             <ion-route component="page-actualites"/>
-            <ion-route url="/:_id" component="page-actualite" componentProps={{goback: '/actualites'}}/>
+            <ion-route url="/:_id" component="page-actualite" componentProps={{ goback: '/actualites' }}/>
           </ion-route>
 
 
@@ -99,23 +102,23 @@ export class AppRoot {
 
           <ion-route url="/others" component="tab-hidden">
             <ion-route url="/forces" component="page-forces"/>
-            <ion-route url="/forces/:_id" component="page-forces-detail" componentProps={{goback: '/others/forces'}}/>
+            <ion-route url="/forces/:_id" component="page-forces-detail" componentProps={{ goback: '/others/forces' }}/>
             <ion-route url="/faq" component="page-faq"/>
             <ion-route url="/don" component="page-don"/>
             <ion-route url="/contact" component="page-contact"/>
             <ion-route url="/galeries" component="page-galerie"/>
             <ion-route url="/galeries/:_id/:_title" component="page-galerie-detail"
-                       componentProps={{goback: '/others/galeries'}}/>
+                       componentProps={{ goback: '/others/galeries' }}/>
           </ion-route>
 
           <ion-route url="/schedule" component="tab-schedule">
             <ion-route component="page-schedule"/>
-            <ion-route url="/session/:sessionId" component="page-session" componentProps={{goback: '/schedule'}}/>
+            <ion-route url="/session/:sessionId" component="page-session" componentProps={{ goback: '/schedule' }}/>
           </ion-route>
 
           <ion-route url="/speakers" component="tab-speaker">
             <ion-route component="page-speaker-list"/>
-            <ion-route url="/session/:sessionId" component="page-session" componentProps={{goback: '/speakers'}}/>
+            <ion-route url="/session/:sessionId" component="page-session" componentProps={{ goback: '/speakers' }}/>
             <ion-route url="/:speakerId" component="page-speaker-detail"/>
           </ion-route>
 
@@ -128,9 +131,9 @@ export class AppRoot {
 
 
         {/*<ion-route url="/acceuil/tutorial" >*/}
-        <ion-route url="/acceuil/tutorial" component="page-tutorial" componentProps={{lng: this.userLng}}/>
-        <ion-route url="/acceuil/tutorial/fr" component="page-tutorial" componentProps={{lng: 'fr'}}/>
-        <ion-route url="/acceuil/tutorial/en" component="page-tutorial" componentProps={{lng: 'en'}}/>
+        <ion-route url="/acceuil/tutorial" component="page-tutorial" componentProps={{ lng: this.userLng }}/>
+        <ion-route url="/acceuil/tutorial/fr" component="page-tutorial" componentProps={{ lng: 'fr' }}/>
+        <ion-route url="/acceuil/tutorial/en" component="page-tutorial" componentProps={{ lng: 'en' }}/>
         {/*</ion-route>*/}
 
         <ion-route url="/login" component="page-login"/>

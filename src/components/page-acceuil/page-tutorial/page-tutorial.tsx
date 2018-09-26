@@ -17,18 +17,17 @@ export class PageTutorial {
 
   async componentWillLoad() {
     // this.slides = await TutorialData.getAll();
+    await UserData.setLng(this.lng);
     this.slides = await TutorialData.loadDefaultData();
   }
 
   componentDidLoad() {
     UserData.hasSeenTutorial(true);
-    UserData.setLng(this.lng);
 
     TutorialData.onChange(slides => this.slides = slides);
   }
 
   render() {
-
     return [
       <ion-header no-border>
         <ion-toolbar class="tutorial-transparent">
@@ -60,15 +59,15 @@ export class PageTutorial {
               </ion-slide>
             ))}
           {/*<ion-slide>*/}
-            {/*<ion-card>*/}
-              {/*<img-video img={'ica-slidebox-img-4.png'} class="slide-image"/>*/}
-              {/*<ion-card-content><h2 class="slide-title">{__('READY_TO_PLAY_Q')}</h2>*/}
-                {/*<ion-button fill="clear" href="/who-am-i">*/}
-                  {/*{__('CONTINUE')}*/}
-                  {/*<ion-icon slot="end" name="arrow-forward"/>*/}
-                {/*</ion-button>*/}
-              {/*</ion-card-content>*/}
-            {/*</ion-card>*/}
+          {/*<ion-card>*/}
+          {/*<img-video img={'ica-slidebox-img-4.png'} class="slide-image"/>*/}
+          {/*<ion-card-content><h2 class="slide-title">{__('READY_TO_PLAY_Q')}</h2>*/}
+          {/*<ion-button fill="clear" href="/who-am-i">*/}
+          {/*{__('CONTINUE')}*/}
+          {/*<ion-icon slot="end" name="arrow-forward"/>*/}
+          {/*</ion-button>*/}
+          {/*</ion-card-content>*/}
+          {/*</ion-card>*/}
           {/*</ion-slide>*/}
         </ion-slides>
       </ion-content>

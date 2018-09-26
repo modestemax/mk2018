@@ -34,7 +34,7 @@
   {
     "_id": "slide_5",
     "publish": true,
-    "position": 4,
+    "position": 5,
     "color": "rgb(1, 50, 67)",
     "img": "Penalty_but.jpg",
     "text": "With your support, I will score this penalty, my foot will not shake"
@@ -42,8 +42,8 @@
   {
     "_id": "slide_6",
     "publish": true,
-    "position": 4,
-    "color": "(99, 110, 114)",
+    "position": 6,
+    "color": "rgb(99, 110, 114)",
     "img": "chef.jpg",
     "text": "As 3rd President, I'll be devoted to the task and will never betray your trust"
   }

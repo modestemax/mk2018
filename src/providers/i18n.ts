@@ -1,41 +1,13 @@
-// import { Data } from './data';
-//
-
-//
-// export class Text extends Data {
-//   static onLngChanged: any = [];
-//
-//   static text: any;
-//   static lng = DEFAULT_LNG;
-//
-//   static async load() {
-//     if (this.text) {
-//       return this.text;
-//     } else {
-//       const rsp = await fetch('/assets/data/i18n.json');
-//       const json = await rsp.json();
-//       return (this.text = json);
-//     }
-//   }
-//
-//   static async setLng(lng) {
-//     this.lng = lng || this.lng;
-//   }
-//
-//   static getText(key) {
-//     return (this.text[this.lng] && this.text[this.lng][key]) || this.text[DEFAULT_LNG][key];
-//   }
-// }
-//
-
 import {Firebase} from './firebase';
 import _ from 'lodash';
+import {UserData} from "./user-data";
 
 const DEFAULT_LNG = 'fr';
 
 export class I18nData extends Firebase {
   static strings: any;
   static lng = DEFAULT_LNG
+
   // static onLngChanged: any = [];
 
   static getCollectionName() {
@@ -62,5 +34,9 @@ export class I18nData extends Firebase {
 
 
 }
+
+UserData.onLangChanged(async (lng) => {
+  I18nData.lng = lng;
+});
 
 export const __ = I18nData.getText.bind(I18nData);

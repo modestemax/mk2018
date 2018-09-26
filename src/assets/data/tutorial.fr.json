@@ -35,7 +35,7 @@
     "_id": "slide_5",
     "publish": true,
     "position": 5,
-    "color": "rgb(1, 50, 67))",
+    "color": "rgb(1, 50, 67)",
     "img": "Penalty_but.jpg",
     "text": "Je vais marquer ce penalty historique; mon pied ne tremblera pas"
   },
@@ -43,7 +43,7 @@
     "_id": "slide_6",
     "publish": true,
     "position": 6,
-    "color": "(99, 110, 114)",
+    "color": "rgb(99, 110, 114)",
     "img": "chef.jpg",
     "text": "Président, je serai dévoué à la tâche et ne trahirai jamais votre confiance"
   }
