@@ -4,11 +4,11 @@ import { Component, Element, Prop, State, } from '@stencil/core';
 import { UserData } from '../../providers/user-data';
 import { Plugins } from '@capacitor/core';
 import { Menu } from '../../providers/menu-data';
-import { I18nData } from '../../providers/i18n';
+import { I18nData, __ } from '../../providers/i18n';
 import { Firebase } from '../../providers/firebase';
 
 
-const { SplashScreen } = Plugins;
+const { SplashScreen, Share } = Plugins;
 
 @Component({
   tag: 'app-root',
@@ -66,6 +66,14 @@ export class AppRoot {
     });
   }
 
+  async shareApp() {
+    await Share.share({
+      title: 'KAMTO\'18',
+      text: __('SHARE_APP_TEXT'),
+      url: __('SHARE_APP_URL'),
+      dialogTitle: __('SHARE_WITH_BUDDIES')
+    });
+  }
 
   renderRouter() {
     return (
@@ -168,9 +176,6 @@ export class AppRoot {
           <br/>
           {this.menus.map((appPages) =>
             <ion-list>
-              {/*<ion-list-header>*/}
-              {/*/!*Account*!/*/}
-              {/*</ion-list-header>*/}
               {appPages.map((p) =>
                 <ion-menu-toggle autoHide={false}>
                   <ion-item href={p.url} class="menu-item">
@@ -183,6 +188,16 @@ export class AppRoot {
               )}
             </ion-list>
           )}
+          <ion-list>
+            <ion-menu-toggle autoHide={false}>
+              <ion-item onClick={this.shareApp.bind(this)} class="menu-item">
+                <ion-icon slot="start" name="share"/>
+                <ion-label>
+                  {__('SHARE')}
+                </ion-label>
+              </ion-item>
+            </ion-menu-toggle>
+          </ion-list>
         </ion-content>
       </ion-menu>
     );

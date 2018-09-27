@@ -35,7 +35,10 @@
     "ANNULER": "Annuler",
     "REMPLIR_CHAMPS_SVP": "Bien vouloir remplir tous les champs",
     "EMAIL_SENT": "Merci, un Ami Politique vous contactera.",
-    "VILLE_DE_RESIDENCE": "Ville de residence"
+    "VILLE_DE_RESIDENCE": "Ville de residence",
+    "SHARE": "Partager",
+    "SHARE_APP_TEXT": "Really awesome thing you need to see right meow",
+    "SHARE_APP_URL": "http://ionicframework.com/"
   },
   {
     "_id": "en",
@@ -73,6 +76,8 @@
     "ANNULER": "Cancel",
     "REMPLIR_CHAMPS_SVP": "Kindly populate all fields",
     "EMAIL_SENT": "Thank You, our team will get in touch shortly.",
-    "VILLE_DE_RESIDENCE": "City of Residence"
+    "VILLE_DE_RESIDENCE": "City of Residence",
+    "SHARE":"Share",
+    "SHARE_APP_TEXT": "Really awesome thing you need to see right meow"
   }
 ]
