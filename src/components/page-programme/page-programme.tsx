@@ -44,13 +44,13 @@ export class PageProgramme {
 
       <ion-content scrollY={false}>
         <ion-slides pager={true}>
-          {this.data.map(({_id, color, img, label, title, text}) =>
+          {this.data.map(({_id, color, img, label, title, text, details}) =>
             (<ion-slide>
                 <ion-card>
                   <ion-card-header>
                     <ion-thumbnail class="img-wrapper">
                       <img-video img={img} class="slide-image"/>
-                      </ion-thumbnail>
+                    </ion-thumbnail>
                   </ion-card-header>
                   <hr class="thematique" style={{height: '15px', backgroundColor: color}}/>
                   <ion-card-content>
@@ -59,10 +59,13 @@ export class PageProgramme {
                     </ion-label>
                     <ion-label><h2 class="slide-title" innerHTML={title}/></ion-label>
                     <p innerHTML={text}/>
-                    <ion-button class="show-detail-button" fill="clear" href={`/programme/chantier/${_id}`}>
-                      {__('EXPLORER')}
-                      {/*<ion-icon slot="end" name="arrow-forward"/>*/}
-                    </ion-button>
+
+                    {details && details.length ?
+                      <ion-button class="show-detail-button" fill="clear" href={`/programme/chantier/${_id}`}>
+                        {__('EXPLORER')}
+                      </ion-button>
+                      : ''}
+                    {/*<ion-icon slot="end" name="arrow-forward"/>*/}
 
                   </ion-card-content>
 

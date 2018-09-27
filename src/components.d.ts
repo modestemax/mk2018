@@ -101,8 +101,12 @@ export namespace Components {
   interface PageActualites {}
   interface PageActualitesAttributes extends StencilHTMLAttributes {}
 
-  interface PageContactForm {}
-  interface PageContactFormAttributes extends StencilHTMLAttributes {}
+  interface PageContactForm {
+    'subject': any;
+  }
+  interface PageContactFormAttributes extends StencilHTMLAttributes {
+    'subject'?: any;
+  }
 
   interface PageContact {}
   interface PageContactAttributes extends StencilHTMLAttributes {}

@@ -2,7 +2,7 @@
   {
     "position": 0,
     "_id": "Idéologie",
-    "publish":true,
+    "publish": true,
     "color": "rgb(132,151,176)",
     "pageTitle": "Idéologie",
     "img": "ideologie.jpg",
@@ -21,6 +21,14 @@
     "label": "Chantier No 1",
     "title": "CHANTIER INSTITUTIONNEL ET POLITIQUE",
     "text": "Organiser le vivre ensemble et moderniser les Institutions de la République.",
+    "resources": [
+      {
+        "img": ""
+      },
+      {
+        "video": ""
+      }
+    ],
     "details": [
       {
         "title": "REFORMES INSTITUTIONNELLES",
@@ -332,6 +340,14 @@
     "label": "Chantier No 2",
     "title": "CHANTIER JEUNESSE ET ÉDUCATION",
     "text": "Des Camerounais bien formés et aptes à la compétition internationale.",
+    "resources": [
+      {
+        "img": ""
+      },
+      {
+        "video": ""
+      }
+    ],
     "details": [
       {
         "title": "EDUCATION",
@@ -433,6 +449,14 @@
     "label": "Chantier No 3",
     "title": "CHANTIER ECONOMIE ET PRODUCTION",
     "text": "Le Cameroun un havre de paix et de prospérité.",
+    "resources": [
+      {
+        "img": ""
+      },
+      {
+        "video": ""
+      }
+    ],
     "details": [
       {
         "title": "ÉCONOMIE",
@@ -1335,6 +1359,14 @@
     "label": "Chantier No 4",
     "title": "CHANTIER SOCIAL ET DE SOLIDARITÉ",
     "text": "Santé pour tous, valorisation les artistes et promotion du développement sportif.",
+    "resources": [
+      {
+        "img": ""
+      },
+      {
+        "video": ""
+      }
+    ],
     "details": [
       {
         "title": "La Femme",
@@ -1901,6 +1933,14 @@
     "label": "Chantier No 5",
     "title": "CHANTIER DES RELATIONS EXTÉRIEURES ET DIAPORA",
     "text": "Une diplomatie de présence, Le levier Diaspora pleinement activé.",
+    "resources": [
+      {
+        "img": ""
+      },
+      {
+        "video": ""
+      }
+    ],
     "details": [
       {
         "title": "FAIRE DE LA DIASPORA CAMEROUNAISE UN ACTEUR MAJEUR DU DÉVELOPPEMENT NATIONAL",
@@ -1994,6 +2034,14 @@
     "label": "Financement",
     "title": "FINANCEMENT",
     "text": "Plan de financement détaillé",
+    "resources": [
+      {
+        "img": ""
+      },
+      {
+        "video": ""
+      }
+    ],
     "details": [
       {
         "title": "SOURCES DE FINANCEMENT",
@@ -2045,6 +2093,14 @@
     "label": "Télécharger le Programme",
     "title": "PROGRAMME FULL - RESUME PROGRAMME",
     "text": "Télécharger et faire large diffucion",
+    "resources": [
+      {
+        "img": ""
+      },
+      {
+        "video": ""
+      }
+    ],
     "details": [
       {
         "title": "PROGRAMME DE GOUVERNANCE - FRANCAIS",

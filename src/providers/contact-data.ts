@@ -13,7 +13,7 @@
 // }
 
 
-import {Firebase} from './firebase';
+import { Firebase } from './firebase';
 
 export class ContactsData extends Firebase {
 
@@ -24,10 +24,10 @@ export class ContactsData extends Firebase {
   static filter(collection) {
     return collection.where('publish', '==', true)
       .orderBy('position', 'asc')
-      .limit(1)
+      .limit(1);
   }
 
-  static sendMail(mail: { name: string; phone: string; email: string; city: string; message: string; subject: any }) {
+  static sendMail(mail: { name: string; phone: string; email: string; city: string; message: string; subject: string, language: string }) {
     const batch = this.firestore.batch();
     const doc = this.firestore.collection('contact-us-messages').doc();
     batch.set(doc, mail);

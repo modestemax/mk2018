@@ -1,8 +1,9 @@
-import {Component} from '@stencil/core';
+import {Component, Prop} from '@stencil/core';
 import {__} from "../../../providers/i18n";
 import {ContactsData} from "../../../providers/contact-data";
 
 import {Plugins} from '@capacitor/core';
+import {UserData} from "../../../providers/user-data";
 
 const {Toast, /*Share*/} = Plugins;
 
@@ -11,7 +12,7 @@ const {Toast, /*Share*/} = Plugins;
   styleUrl: 'page-contact-form.scss',
 })
 export class PageContactForm {
-  subject;
+  @Prop() subject;
   private name: HTMLInputElement;
   private phone: HTMLInputElement;
   private email: HTMLInputElement;
@@ -37,18 +38,19 @@ export class PageContactForm {
     modalController.dismiss()
   }
 
-  sendMessage() {debugger
+  async sendMessage() {
     const modalController: any = document.querySelector('ion-modal-controller');
     if (this.name.value && this.email.value && this.message.value) {
-      ContactsData.sendMail({
+      await ContactsData.sendMail({
         name: this.name.value,
-        phone: this.phone.value,
+        phone: this.phone.value || '',
         email: this.email.value,
-        city: this.city.value,
+        city: this.city.value || '',
         message: this.message.value,
         subject: this.subject,
+        language: UserData.lng
       });
-      this.show(__('EMAIL_SENT'));
+      await this.show(__('EMAIL_SENT'));
       modalController.dismiss();
     } else {
       this.show(__('REMPLIR_CHAMPS_SVP'));
@@ -87,7 +89,7 @@ export class PageContactForm {
           </ion-item>
           <ion-item>
             <ion-label position="floating">{__('EMAIL')}</ion-label>
-            <ion-input ref={(el: HTMLInputElement) => this.email = el}/>
+            <ion-input ref={(el: HTMLInputElement) => this.email = el} type="email"/>
           </ion-item>
           <ion-item>
             <ion-label position="floating">{__('VILLE_DE_RESIDENCE')}</ion-label>

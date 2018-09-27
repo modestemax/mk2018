@@ -15,6 +15,8 @@ export class PageChantier {
 
   async componentWillLoad() {
     this.data = await ChantierData.get(this._id);
+    this.data.details = this.data.details || []
+    this.data.resources = this.data.resources || []
   }
 
   render() {
@@ -59,6 +61,13 @@ export class PageChantier {
           {this.data.details.map(({title, key}) => (
             <chantier-sous-titre color={this.data.color} text={title} _id={this._id} key={key}/>
           ))}
+          <ion-item-group class="resources">
+            {this.data.resources.map(({img, video}) => (
+                <ion-label class="resource">
+                  <img-video img={img} video={video}/>
+                </ion-label>
+            ))}
+          </ion-item-group>
         </ion-list>
       </ion-content>
     ];
