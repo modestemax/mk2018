@@ -1,9 +1,9 @@
 import {Component, Prop} from '@stencil/core';
-import {__} from "../../../providers/i18n";
-import {ContactsData} from "../../../providers/contact-data";
+import {__} from '../../../providers/i18n';
+import {ContactsData} from '../../../providers/contact-data';
 
 import {Plugins} from '@capacitor/core';
-import {UserData} from "../../../providers/user-data";
+import {UserData} from '../../../providers/user-data';
 
 const {Toast, /*Share*/} = Plugins;
 
@@ -20,22 +20,12 @@ export class PageContactForm {
   private message: HTMLInputElement;
 
   async show(text) {
-    await Toast.show({text});
+    await Toast.show({text, duration: 'long'});
   }
 
   dismiss() {
-    // this.show();
-    // let shareRet = await
-    // Share.share({
-    //   title: 'See cool stuff',
-    //   text: 'Really awesome thing you need to see right meow',
-    //   url: 'http://ionicframework.com/',
-    //   dialogTitle: 'Share with buddies'
-    // });
-
-
     const modalController: any = document.querySelector('ion-modal-controller');
-    modalController.dismiss()
+    modalController.dismiss();
   }
 
   async sendMessage() {
@@ -89,7 +79,8 @@ export class PageContactForm {
           </ion-item>
           <ion-item>
             <ion-label position="floating">{__('EMAIL')}</ion-label>
-            <ion-input ref={(el: HTMLInputElement) => this.email = el} type="email"/>
+            <ion-input ref={(el: HTMLInputElement) => this.email = el}/>
+            {/*<ion-input ref={(el: HTMLInputElement) => this.email = el} /!*type="email"*!//>*/}
           </ion-item>
           <ion-item>
             <ion-label position="floating">{__('VILLE_DE_RESIDENCE')}</ion-label>
