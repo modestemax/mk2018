@@ -67,7 +67,7 @@ export class PageContactForm {
 
         <ion-list class="form">
           <ion-list-header class="en-tete">
-            {__('VOUS_SOUHAITEZ_INTÉGRER_UNE_UNITÉ_MRC')}
+            {this.subject}
           </ion-list-header>
           <ion-item>
             <ion-label position="floating"> {__('NOM_PRÉNOM')}</ion-label>
