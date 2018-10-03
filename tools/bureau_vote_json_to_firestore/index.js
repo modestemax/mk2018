@@ -5,6 +5,8 @@ const _ = require('lodash');
 const admin = require('firebase-admin');
 
 const pollingStations = require('../csv_bureaux_votes_to_json');
+// const { rows, oldRows, newRows: pollingStations } = require('../csv_bureaux_votes_to_json');
+// const { rows, delRows: pollingStations, newRows } = require('../csv_bureaux_votes_to_json');
 const serviceAccount = require('../ballots-237-service-account');
 
 admin.initializeApp({
@@ -32,7 +34,7 @@ saveAll(stations).then(
 );
 
 async function saveAll(stations) {
-  return Promise.all(_.map(stations, (pollingStations, index) => {
+  const batchList = _.map(stations, (pollingStations, index) => {
     console.log('Processing batch' + index);
     const batch = db.batch();
     _.forEach(pollingStations, pollingStation => {
@@ -43,14 +45,28 @@ async function saveAll(stations) {
       // console.log(pollingStation.)
     });
     console.log('Saving batch' + index);
-    return batch.commit().then(()=> console.log(`Batch${index} OK`));
-  }));
+    return batch//.commit().then(()=> console.log(`Batch${index} OK`));
+  });
+  return commit(0);
+
+  function commit(i) {
+    const batch = batchList[i];
+    if (batch) {
+      return batch.commit().then(() => (console.log(`Batch${i} OK`), sleep(1e3).then(() => commit(++i))));
+    } else {
+      return console.log(`All Batches OK`)
+    }
+  }
+
+  function sleep(delay) {
+    return new Promise((resolve => setTimeout(resolve, delay)))
+  }
 }
 
 function saveRegion(batch, pollingStation) {
   if (pollingStation['REGION_NAME'] && !pollingStation['DIVISION_NAME'] && pollingStation['POLLING_STATIONS_COUNT']) {
     const doc = db.doc(`regions/${_.snakeCase(pollingStation['REGION_NAME']).toLowerCase()}`);
-    batch.set(doc, { name: pollingStation['REGION_NAME'], polling_stations_count: pollingStation['POLLING_STATIONS_COUNT'] })
+    batch.set(doc, { name: pollingStation['REGION_NAME'], polling_stations_count: +pollingStation['POLLING_STATIONS_COUNT'] })
   }
 }
 
@@ -60,7 +76,7 @@ function saveDivision(batch, pollingStation) {
     batch.set(doc, {
       region: pollingStation['REGION_NAME'],
       name: pollingStation['DIVISION_NAME'],
-      polling_stations_count: pollingStation['POLLING_STATIONS_COUNT']
+      polling_stations_count: +pollingStation['POLLING_STATIONS_COUNT']
     })
   }
 }
@@ -72,7 +88,7 @@ function saveCouncil(batch, pollingStation) {
       region: pollingStation['REGION_NAME'],
       division: pollingStation['DIVISION_NAME'],
       name: pollingStation['COUNCIL_NAME'],
-      polling_stations_count: pollingStation['POLLING_STATIONS_COUNT']
+      polling_stations_count: +pollingStation['POLLING_STATIONS_COUNT']
     })
   }
 }
@@ -80,6 +96,7 @@ function saveCouncil(batch, pollingStation) {
 function savePollingStation(batch, pollingStation) {
   if (pollingStation['REGION_NAME'] && pollingStation['DIVISION_NAME'] && pollingStation['COUNCIL_NAME'] && pollingStation['POLLING_STATION'] && pollingStation['POLLING_STATIONS_COUNT']) {
     const doc = db.doc(`regions/${_.snakeCase(pollingStation['REGION_NAME']).toLowerCase()}/divisions/${_.snakeCase(pollingStation['DIVISION_NAME']).toLowerCase()}/councils/${_.snakeCase(pollingStation['COUNCIL_NAME'])}/pooling_stations/${_.snakeCase(pollingStation['POLLING_STATION'])}`);
+    // batch.delete(doc)
     batch.set(doc, {
       region: pollingStation['REGION_NAME'],
       division: pollingStation['DIVISION_NAME'],
