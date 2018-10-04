@@ -55,6 +55,12 @@
         "title": "Contacter l’Equipe de Campagne",
         "url": "/others/contact",
         "icon": "mail-open"
+      },
+      {
+        "group": "E",
+        "title": "Elections",
+        "url": "/elections",
+        "icon": "flask"
       }
     ]
   },
@@ -114,6 +120,12 @@
         "title": "Contact the Campaign Team",
         "url": "/others/contact",
         "icon": "mail-open"
+      },
+      {
+        "group": "E",
+        "title": "Elections",
+        "url": "/elections",
+        "icon": "flask"
       }
     ]
   }

@@ -102,10 +102,10 @@ export namespace Components {
   interface PageActualitesAttributes extends StencilHTMLAttributes {}
 
   interface PageContactForm {
-    'subject': any;
+    'subject': string;
   }
   interface PageContactFormAttributes extends StencilHTMLAttributes {
-    'subject'?: any;
+    'subject'?: string;
   }
 
   interface PageContact {}
@@ -117,6 +117,18 @@ export namespace Components {
   interface PageDonAttributes extends StencilHTMLAttributes {
     'goback'?: string;
   }
+
+  interface PageElectionsForm {
+    '_id': string;
+    'goback': string;
+  }
+  interface PageElectionsFormAttributes extends StencilHTMLAttributes {
+    '_id'?: string;
+    'goback'?: string;
+  }
+
+  interface PageElections {}
+  interface PageElectionsAttributes extends StencilHTMLAttributes {}
 
   interface PageEngagementsDetail {
     '_id': any;
@@ -223,6 +235,8 @@ declare global {
     'PageContactForm': Components.PageContactForm;
     'PageContact': Components.PageContact;
     'PageDon': Components.PageDon;
+    'PageElectionsForm': Components.PageElectionsForm;
+    'PageElections': Components.PageElections;
     'PageEngagementsDetail': Components.PageEngagementsDetail;
     'PageEngagements': Components.PageEngagements;
     'PageForcesDetail': Components.PageForcesDetail;
@@ -252,6 +266,8 @@ declare global {
     'page-contact-form': Components.PageContactFormAttributes;
     'page-contact': Components.PageContactAttributes;
     'page-don': Components.PageDonAttributes;
+    'page-elections-form': Components.PageElectionsFormAttributes;
+    'page-elections': Components.PageElectionsAttributes;
     'page-engagements-detail': Components.PageEngagementsDetailAttributes;
     'page-engagements': Components.PageEngagementsAttributes;
     'page-forces-detail': Components.PageForcesDetailAttributes;
@@ -339,6 +355,18 @@ declare global {
   var HTMLPageDonElement: {
     prototype: HTMLPageDonElement;
     new (): HTMLPageDonElement;
+  };
+
+  interface HTMLPageElectionsFormElement extends Components.PageElectionsForm, HTMLStencilElement {}
+  var HTMLPageElectionsFormElement: {
+    prototype: HTMLPageElectionsFormElement;
+    new (): HTMLPageElectionsFormElement;
+  };
+
+  interface HTMLPageElectionsElement extends Components.PageElections, HTMLStencilElement {}
+  var HTMLPageElectionsElement: {
+    prototype: HTMLPageElectionsElement;
+    new (): HTMLPageElectionsElement;
   };
 
   interface HTMLPageEngagementsDetailElement extends Components.PageEngagementsDetail, HTMLStencilElement {}
@@ -438,6 +466,8 @@ declare global {
     'page-contact-form': HTMLPageContactFormElement
     'page-contact': HTMLPageContactElement
     'page-don': HTMLPageDonElement
+    'page-elections-form': HTMLPageElectionsFormElement
+    'page-elections': HTMLPageElectionsElement
     'page-engagements-detail': HTMLPageEngagementsDetailElement
     'page-engagements': HTMLPageEngagementsElement
     'page-forces-detail': HTMLPageForcesDetailElement
@@ -467,6 +497,8 @@ declare global {
     'page-contact-form': HTMLPageContactFormElement;
     'page-contact': HTMLPageContactElement;
     'page-don': HTMLPageDonElement;
+    'page-elections-form': HTMLPageElectionsFormElement;
+    'page-elections': HTMLPageElectionsElement;
     'page-engagements-detail': HTMLPageEngagementsDetailElement;
     'page-engagements': HTMLPageEngagementsElement;
     'page-forces-detail': HTMLPageForcesDetailElement;

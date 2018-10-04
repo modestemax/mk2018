@@ -12,7 +12,7 @@ const {Toast, /*Share*/} = Plugins;
   styleUrl: 'page-contact-form.scss',
 })
 export class PageContactForm {
-  @Prop() subject;
+  @Prop() subject: string;
   private name: HTMLInputElement;
   private phone: HTMLInputElement;
   private email: HTMLInputElement;

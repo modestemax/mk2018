@@ -38,7 +38,8 @@
     "VILLE_DE_RESIDENCE": "Ville de residence",
     "SHARE": "Partager",
     "SHARE_APP_TEXT": "Really awesome thing you need to see right meow",
-    "SHARE_APP_URL": "http://ionicframework.com/"
+    "SHARE_APP_URL": "http://ionicframework.com/",
+    "PRÉSIDENTIELLES_2018": "Présidentielles 2018"
   },
   {
     "_id": "en",
@@ -78,6 +79,7 @@
     "EMAIL_SENT": "Thank You, our team will get in touch shortly.",
     "VILLE_DE_RESIDENCE": "City of Residence",
     "SHARE":"Share",
-    "SHARE_APP_TEXT": "Really awesome thing you need to see right meow"
+    "SHARE_APP_TEXT": "Really awesome thing you need to see right meow",
+    "PRÉSIDENTIELLES_2018": ""
   }
 ]

@@ -1,0 +1,53 @@
+page-elections {
+  .cv-item {
+
+    .cv-item-inner {
+      background-color: #1f1aca;
+    }
+
+  }
+
+  .item-grid {
+    margin: -4px;
+    ion-row.item-row {
+      padding: 2px;
+      ion-col {
+        /* &.etat-civil{
+           background-color: rgb(197,90,17);
+         }
+         &.academic{
+           background-color: rgb(30, 130, 76);
+         }
+         &.administration{
+           background-color: rgb(30, 139, 195);
+         }
+         &.international{
+           background-color: rgb(145, 61, 136);
+         }
+         &.distinction{
+           background-color: rgb(150, 40, 27);
+         }
+         &.empty{
+           background-color: rgb(1, 50, 67);
+         }*/
+        &.item-col {
+          margin: 2px;
+          min-width: 120px;
+          max-height: 124px;
+          font-size: 0.8rem;
+          .item {
+            min-height: 100%;
+            .inner-item-grid {
+              //width: max-content;
+              ion-thumbnail {
+                margin: auto;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+}

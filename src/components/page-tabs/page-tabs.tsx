@@ -29,11 +29,6 @@ export class PageTabs {
             );
           }
         })}
-
-        <ion-tab label="" icon="map" name="tab-hidden" show={false}>
-          <ion-nav/>
-        </ion-tab>
-
       </ion-tabs>
     ];
   }

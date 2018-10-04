@@ -1,37 +1,48 @@
 import firebase from 'firebase/app';
 import 'firebase/firestore';
-import {config} from '../app-settings/firebase';
-// import {loadDefaultData, initialData} from './firebase-init';
+import {configBallots, configKamto18} from '../app-settings/firebase';
 import {loadDefaultDataByCollection, pushDefaultData} from './firebase-init';
 import {UserData} from './user-data';
 
 
 export abstract class Firebase {
   static firestore: any;
+  static firestoreBallots: any;
   static data;
+
+  static async initFirestore(db) {
+
+    db.settings({
+      timestampsInSnapshots: true,
+      // experimentalTabSynchronization: true
+    });
+    await db.enablePersistence()
+      .catch(err => {
+        if (err.code === 'failed-precondition') {
+          // Multiple tabs open, persistence can only be enabled
+          // in one tab at a a time.
+          // ...
+        } else if (err.code === 'unimplemented') {
+          // The current browser does not support all of the
+          // features required to enable persistence
+          // ...
+        }
+        // throw err;
+      });
+    // return  loadDefaultData;
+    // await loadDefaultData(this.firestore);
+  }
 
   static async initialize() {
     if (!firebase.apps.length) {
-      firebase.initializeApp(config);
+      firebase.initializeApp(configKamto18);
+      const ballots = firebase.initializeApp(configBallots, 'ballots');
       this.firestore = firebase.firestore();
-      this.firestore.settings({
-        timestampsInSnapshots: true
-      });
-      await firebase.firestore().enablePersistence()
-        .catch(err => {
-          if (err.code === 'failed-precondition') {
-            // Multiple tabs open, persistence can only be enabled
-            // in one tab at a a time.
-            // ...
-          } else if (err.code === 'unimplemented') {
-            // The current browser does not support all of the
-            // features required to enable persistence
-            // ...
-          }
-          // throw err;
-        });
-      // return  loadDefaultData;
-      // await loadDefaultData(this.firestore);
+      this.firestoreBallots = firebase.firestore(ballots);
+
+      this.initFirestore(this.firestore);
+      this.initFirestore(this.firestoreBallots);
+
     } else {
       this.firestore = firebase.firestore();
     }

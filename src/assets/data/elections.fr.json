@@ -1,0 +1,59 @@
+[
+  {
+    "_id": "scrutateurs",
+    "position": 1,
+    "publish": true,
+    "color": "rgb(197,90,17)",
+    "section": "Scrutateurs",
+    "img": "family.png"
+  },
+  {
+    "_id": "brigarde",
+    "position": 2,
+    "publish": true,
+    "color": "rgb(30, 130, 76)",
+    "section": "Brigarde",
+    "img": "academics.png"
+  },
+  {
+    "_id": "proces-verbaux",
+    "position": 3,
+    "publish": true,
+    "color": "rgb(30, 139, 195)",
+    "section": "Proces Verbaux",
+    "img": "administration.png"
+  },
+  {
+    "_id": "incidents",
+    "position": 4,
+    "publish": true,
+    "color": "rgb(145, 61, 136)",
+    "section": "Incidents",
+    "img": "international.png"
+  },
+  {
+    "_id": "monitoring",
+    "position": 5,
+    "publish": true,
+    "color": "rgb(150, 40, 27)",
+    "section": "Monitoring",
+    "img": "distinction.png"
+  },
+  {
+    "_id": "resultats",
+    "position": 6,
+    "publish": true,
+    "color": "rgb(1, 50, 67)",
+    "section": "Resultats",
+    "img": "politician.png"
+  },
+  {
+    "_id": "empty",
+    "position": 8,
+    "publish": false,
+    "color": "rgb(232, 67, 147)",
+    "section": "",
+    "img": "",
+    "content": []
+  }
+]

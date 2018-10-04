@@ -1,0 +1,46 @@
+page-mon-cv {
+  .header {
+    /*&.etat-civil {
+      background-color: rgb(197, 90, 17);
+    }
+    &.academic {
+      background-color: rgb(30, 130, 76);
+    }
+    &.administration {
+      background-color: rgb(30, 139, 195);
+    }
+    &.international {
+      background-color: rgb(145, 61, 136);
+    }
+    &.distinction {
+      background-color: rgb(150, 40, 27);
+    }
+  */
+    .logo {
+      margin: auto;
+      height: 50%;
+      width: 50%;
+
+      img {
+        max-width: 100%;
+        max-height: 100%;
+      }
+
+    }
+  }
+  .content-header {
+    white-space: normal;
+    font-size: 16px;
+  }
+  .content-text {
+    font-size: 16px;
+  }
+
+  ion-card-content {
+    background-color: white;
+  }
+
+  .content-detail {
+    margin: 5px;
+  }
+}
