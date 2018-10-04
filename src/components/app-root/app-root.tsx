@@ -89,7 +89,7 @@ export class AppRoot {
 
           <ion-route url="/elections" component="tab-elections">
             <ion-route component="page-elections"/>
-            <ion-route url="/:_id" component="page-elections-form" componentProps={{goback: '/elections'}}/>
+            <ion-route url="/scrutateur" component="form-scrutateur" componentProps={{goback: '/elections'}}/>
           </ion-route>
 
           <ion-route url="/programme" component="tab-programme">

@@ -1,28 +1,22 @@
 import {Component, Prop, State} from '@stencil/core';
-import {ElectionsData} from '../../../providers/elections-data';
-import {Ballots} from '../../../providers/ballots-data';
-import {__} from '../../../providers/i18n';
-import {validateEmail} from '../../../providers/tools';
+import {ElectionsData} from '../../../../providers/elections-data';
+import {Ballots} from '../../../../providers/ballots-data';
+import {__} from '../../../../providers/i18n';
+import {validateEmail} from '../../../../providers/tools';
 import {Plugins} from '@capacitor/core';
 import _ from 'lodash';
 
 const {Toast, /*Share*/} = Plugins;
 
 @Component({
-  tag: 'page-elections-form',
-  styleUrl: 'page-elections-form.scss',
+  tag: 'form-scrutateur',
+  styleUrl: 'form-scrutateur.scss',
 })
-export class PageElectionsForm {
+export class FormScrutateur {
 
-  // private session: any;
   @Prop() _id: string;
   @Prop() goback = '/';
   private data;
-  // private name: HTMLInputElement;
-  // private phone: HTMLInputElement;
-  // private email: HTMLInputElement;
-  // private city: HTMLInputElement;
-  // private message: HTMLInputElement;
   private region: HTMLInputElement;
   private regions: any = [];
   private division: HTMLInputElement;
@@ -112,7 +106,7 @@ export class PageElectionsForm {
             <ion-back-button defaultHref={this.goback}/>
           </ion-buttons>
           <ion-title>
-            {__('XXXXXXXX')}
+            {__('PRÉSIDENTIELLES_2018')}
           </ion-title>
 
           <ion-buttons slot="end">

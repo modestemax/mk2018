@@ -1,10 +1,10 @@
 [
   {
-    "_id": "scrutateurs",
+    "_id": "scrutateur",
     "position": 1,
     "publish": true,
     "color": "rgb(197,90,17)",
-    "section": "Scrutateurs",
+    "section": "Scrutateur",
     "img": "family.png"
   },
   {

@@ -118,11 +118,11 @@ export namespace Components {
     'goback'?: string;
   }
 
-  interface PageElectionsForm {
+  interface FormScrutateur {
     '_id': string;
     'goback': string;
   }
-  interface PageElectionsFormAttributes extends StencilHTMLAttributes {
+  interface FormScrutateurAttributes extends StencilHTMLAttributes {
     '_id'?: string;
     'goback'?: string;
   }
@@ -235,7 +235,7 @@ declare global {
     'PageContactForm': Components.PageContactForm;
     'PageContact': Components.PageContact;
     'PageDon': Components.PageDon;
-    'PageElectionsForm': Components.PageElectionsForm;
+    'FormScrutateur': Components.FormScrutateur;
     'PageElections': Components.PageElections;
     'PageEngagementsDetail': Components.PageEngagementsDetail;
     'PageEngagements': Components.PageEngagements;
@@ -266,7 +266,7 @@ declare global {
     'page-contact-form': Components.PageContactFormAttributes;
     'page-contact': Components.PageContactAttributes;
     'page-don': Components.PageDonAttributes;
-    'page-elections-form': Components.PageElectionsFormAttributes;
+    'form-scrutateur': Components.FormScrutateurAttributes;
     'page-elections': Components.PageElectionsAttributes;
     'page-engagements-detail': Components.PageEngagementsDetailAttributes;
     'page-engagements': Components.PageEngagementsAttributes;
@@ -357,10 +357,10 @@ declare global {
     new (): HTMLPageDonElement;
   };
 
-  interface HTMLPageElectionsFormElement extends Components.PageElectionsForm, HTMLStencilElement {}
-  var HTMLPageElectionsFormElement: {
-    prototype: HTMLPageElectionsFormElement;
-    new (): HTMLPageElectionsFormElement;
+  interface HTMLFormScrutateurElement extends Components.FormScrutateur, HTMLStencilElement {}
+  var HTMLFormScrutateurElement: {
+    prototype: HTMLFormScrutateurElement;
+    new (): HTMLFormScrutateurElement;
   };
 
   interface HTMLPageElectionsElement extends Components.PageElections, HTMLStencilElement {}
@@ -466,7 +466,7 @@ declare global {
     'page-contact-form': HTMLPageContactFormElement
     'page-contact': HTMLPageContactElement
     'page-don': HTMLPageDonElement
-    'page-elections-form': HTMLPageElectionsFormElement
+    'form-scrutateur': HTMLFormScrutateurElement
     'page-elections': HTMLPageElectionsElement
     'page-engagements-detail': HTMLPageEngagementsDetailElement
     'page-engagements': HTMLPageEngagementsElement
@@ -497,7 +497,7 @@ declare global {
     'page-contact-form': HTMLPageContactFormElement;
     'page-contact': HTMLPageContactElement;
     'page-don': HTMLPageDonElement;
-    'page-elections-form': HTMLPageElectionsFormElement;
+    'form-scrutateur': HTMLFormScrutateurElement;
     'page-elections': HTMLPageElectionsElement;
     'page-engagements-detail': HTMLPageEngagementsDetailElement;
     'page-engagements': HTMLPageEngagementsElement;
