@@ -29,7 +29,7 @@ export class I18nData extends Firebase {
   }
 
   static getText(key) {
-    return (this.strings[this.lng] && this.strings[this.lng][key]) || this.strings[DEFAULT_LNG][key];
+    return (this.strings[this.lng] && this.strings[this.lng][key]) || this.strings[DEFAULT_LNG][key] || `--${key}--`;
   }
 
 

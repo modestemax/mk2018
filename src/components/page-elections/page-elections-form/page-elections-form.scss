@@ -1,21 +1,6 @@
-page-mon-cv {
+page-elections-form {
   .header {
-    /*&.etat-civil {
-      background-color: rgb(197, 90, 17);
-    }
-    &.academic {
-      background-color: rgb(30, 130, 76);
-    }
-    &.administration {
-      background-color: rgb(30, 139, 195);
-    }
-    &.international {
-      background-color: rgb(145, 61, 136);
-    }
-    &.distinction {
-      background-color: rgb(150, 40, 27);
-    }
-  */
+
     .logo {
       margin: auto;
       height: 50%;
@@ -42,5 +27,12 @@ page-mon-cv {
 
   .content-detail {
     margin: 5px;
+  }
+
+  .form {
+    .in-item {
+      max-width: 100%;
+      width: 95%;
+    }
   }
 }
