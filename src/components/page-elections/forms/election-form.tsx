@@ -13,7 +13,7 @@ export class ElectionForm {
   // @State() entity: any;
   poolData: { region_id: string; division_id: string; council_id: string; pool_id: string; };
 
-  constructor($this) {debugger
+  constructor($this) {
     $this.formData = this.formData;
     $this.poolData = this.poolData;
     $this.componentWillLoad = this.componentWillLoad.bind($this);
@@ -72,7 +72,7 @@ export class ElectionForm {
             <ion-back-button defaultHref={this['goback']}/>
           </ion-buttons>
           <ion-title>
-            {this.formData.section}
+            {__('PRÉSIDENTIELLES_2018')}
           </ion-title>
 
           <ion-buttons slot="end">
@@ -84,12 +84,14 @@ export class ElectionForm {
       <ion-content>
         <ion-card class="content-detail">
           <ion-card-header style={{backgroundColor: this.formData.color}}>
-            <div class="logo">
-              <img-video img={this.formData.img} height="20%"/>
-            </div>
+            <ion-item>
+              <ion-thumbnail class="logo">
+                <img-video img={this.formData.img} height="20%"/>
+              </ion-thumbnail>
+              <ion-text color="light" class="page-title">{this.formData.section}</ion-text>
+            </ion-item>
           </ion-card-header>
           <ion-card-content>
-            {/*{this.formFilter()}*/}
             <pooling-station/>
             <hr/>
             {editMode ? this['editData']() : (entity ? this['displayData']() : '')}

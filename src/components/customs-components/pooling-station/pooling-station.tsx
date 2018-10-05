@@ -76,9 +76,9 @@ export class PoolingStation {
   render() {
     return (
       <ion-list class="form">
-        <ion-list-header class="en-tete">
+        {/*<ion-list-header class="en-tete">*/}
 
-        </ion-list-header>
+        {/*</ion-list-header>*/}
         <ion-item>
           <ion-label position="stacked">{__('REGION')}</ion-label>
           <ion-select onIonChange={this.onRegionChanged.bind(this)} ref={(el: HTMLInputElement) => this.region = el}
