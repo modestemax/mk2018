@@ -1,7 +1,6 @@
-import {Component, Listen, Prop, State} from '@stencil/core';
-import {Ballots} from '../../../../providers/ballots-data';
-import {__} from '../../../../providers/i18n';
-import {ElectionForm} from '../election-form';
+import { Component, Listen, Prop, State } from '@stencil/core';
+import { __ } from '../../../../providers/i18n';
+import { ElectionForm } from '../election-form';
 
 
 @Component({
@@ -35,7 +34,7 @@ export class FormProcesVerbal {
 
   @Listen('poolingStationChanged')
   async onPoolingStationChanged(event: CustomEvent) {
-    this['poolingStationChanged'](event)
+    this['poolingStationChanged'](event);
   }
 
 
@@ -170,7 +169,7 @@ export class FormProcesVerbal {
   }
 
 
-  isValid({/*lastName, /!*firstName,*!/ orange, mtn, nextel, camtel, email*/}) {
+  isValid({ /*lastName, /!*firstName,*!/ orange, mtn, nextel, camtel, email*/ }) {
     const error = '';
 
     // if (!_.trim(lastName)) {
@@ -189,10 +188,10 @@ export class FormProcesVerbal {
 
   buildEntity() {
     const [inscrits, votants, votes, nulls, blancs,
-      kamto, akere, matomba, ndifor, cabral, oshi, garga, ndam, biya] =
+           kamto, akere, matomba, ndifor, cabral, oshi, garga, ndam, biya] =
       [this.inscrits.value, this.votants.value, this.votes.value, this.nulls.value, this.blancs.value,
-        this.kamto.value, this.akere.value, this.matomba.value, this.ndifor.value,
-        this.cabral.value, this.oshi.value, this.garga.value, this.ndam.value, this.biya.value
+       this.kamto.value, this.akere.value, this.matomba.value, this.ndifor.value,
+       this.cabral.value, this.oshi.value, this.garga.value, this.ndam.value, this.biya.value
       ];
     return {
       inscrits, votants, votes, nulls, blancs,

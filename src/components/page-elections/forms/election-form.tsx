@@ -21,15 +21,20 @@ export class ElectionForm {
     $this.cancel = this.cancel.bind($this);
     $this.delete = this.delete.bind($this);
     $this.show = this.show.bind($this);
+    $this.save = this.save.bind($this);
     $this.render = this.render.bind($this);
+    $this.poolingStationChanged = this.poolingStationChanged.bind($this);
   }
 
   async poolingStationChanged(event) {
     this['poolData'] = event.detail.poolData;
-
-    const pool = await Ballots.getPool(this['poolData']);
-    this['entity'] = pool && pool.data()[this['entityName']];
-    this['editMode'] = !this['entity'];
+    if (event.detail.poolData.pool_id) {
+      const pool = await Ballots.getPool(this['poolData']);
+      this['entity'] = pool && pool.data()[this['entityName']];
+      this['editMode'] = !this['entity'];
+    } else {
+      this['editMode'] = false;
+    }
   }
 
   async componentWillLoad() {
