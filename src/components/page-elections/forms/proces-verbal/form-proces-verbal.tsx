@@ -1,6 +1,7 @@
-import { Component, Listen, Prop, State } from '@stencil/core';
-import { __ } from '../../../../providers/i18n';
-import { ElectionForm } from '../election-form';
+import {Component, Listen, Prop, State} from '@stencil/core';
+import {__} from '../../../../providers/i18n';
+import {ElectionForm} from '../election-form';
+import {CameraResultType, CameraSource, Plugins} from "@capacitor/core";
 
 
 @Component({
@@ -27,6 +28,7 @@ export class FormProcesVerbal {
   private garga: HTMLInputElement;
   private ndam: HTMLInputElement;
   private biya: HTMLInputElement;
+  private pvScan: string;
 
   constructor() {
     new ElectionForm(this);
@@ -98,6 +100,10 @@ export class FormProcesVerbal {
           <ion-col>Paul Biya</ion-col>
           <ion-col>:{this.entity.biya}</ion-col>
         </ion-row>
+        <ion-row>
+          <ion-col>{__('PROCES_VERBAL')}</ion-col>
+          <ion-col>{__('CLICK_TO_SHOW_PV')}</ion-col>
+        </ion-row>
       </ion-grid>
     );
   }
@@ -164,12 +170,34 @@ export class FormProcesVerbal {
         <ion-label position="floating"> Paul Biya</ion-label>
         <ion-input type="number" value={this.entity.biya} ref={(el: HTMLInputElement) => this.biya = el}/>
       </ion-item>
+      <ion-item>
+        <img-video img={this.pvScan}/>
+        <button onClick={this.takePicture.bind(this)} ion-button color="primary"> __('ATTACH_PV')
+          <ion-icon name="camera"></ion-icon>
+        </button>
+
+      </ion-item>
 
     </ion-list>);
   }
 
+  async takePicture() {
+    const {Camera} = Plugins;
 
-  isValid({ /*lastName, /!*firstName,*!/ orange, mtn, nextel, camtel, email*/ }) {
+    const image = await Camera.getPhoto({
+      quality: 90,
+      allowEditing: true,
+      resultType: CameraResultType.Base64,
+      source: CameraSource.Camera
+    });
+
+    // Example of using the Base64 return type. It's recommended to use CameraResultType.Uri
+    // instead for performance reasons when showing large, or a large amount of images.
+    this.pvScan = image && (image.base64Data);
+  }
+
+
+  isValid({/*lastName, /!*firstName,*!/ orange, mtn, nextel, camtel, email*/}) {
     const error = '';
 
     // if (!_.trim(lastName)) {
@@ -188,10 +216,10 @@ export class FormProcesVerbal {
 
   buildEntity() {
     const [inscrits, votants, votes, nulls, blancs,
-           kamto, akere, matomba, ndifor, cabral, oshi, garga, ndam, biya] =
+      kamto, akere, matomba, ndifor, cabral, oshi, garga, ndam, biya] =
       [this.inscrits.value, this.votants.value, this.votes.value, this.nulls.value, this.blancs.value,
-       this.kamto.value, this.akere.value, this.matomba.value, this.ndifor.value,
-       this.cabral.value, this.oshi.value, this.garga.value, this.ndam.value, this.biya.value
+        this.kamto.value, this.akere.value, this.matomba.value, this.ndifor.value,
+        this.cabral.value, this.oshi.value, this.garga.value, this.ndam.value, this.biya.value
       ];
     return {
       inscrits, votants, votes, nulls, blancs,

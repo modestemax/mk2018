@@ -17,13 +17,13 @@ export class ElectionForm {
     $this.formData = this.formData;
     $this.poolData = this.poolData;
     $this.componentWillLoad = this.componentWillLoad.bind($this);
-    $this.edit = this.edit.bind($this);
-    $this.cancel = this.cancel.bind($this);
-    $this.delete = this.delete.bind($this);
-    $this.show = this.show.bind($this);
-    $this.save = this.save.bind($this);
-    $this.render = this.render.bind($this);
-    $this.poolingStationChanged = this.poolingStationChanged.bind($this);
+    $this.edit = $this.edit || this.edit.bind($this);
+    $this.cancel = $this.cancel || this.cancel.bind($this);
+    $this.delete = $this.delete || this.delete.bind($this);
+    $this.show = $this.show || this.show.bind($this);
+    $this.save = $this.save || this.save.bind($this);
+    $this.render = $this.render || this.render.bind($this);
+    $this.poolingStationChanged = $this.poolingStationChanged || this.poolingStationChanged.bind($this);
   }
 
   async poolingStationChanged(event) {
@@ -66,8 +66,8 @@ export class ElectionForm {
         entity,
         entityName: this['entityName']
       });
-      this['show'](__('SAVE_SUCCESS'));
       this['editMode'] = false;
+      this['show'](__('SAVE_SUCCESS'));
     }
   }
 

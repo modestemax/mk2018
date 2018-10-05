@@ -45,7 +45,20 @@
     "publish": true,
     "color": "rgb(145, 61, 136)",
     "section": "Incidents",
-    "img": "incident2.png"
+    "img": "incident2.png",
+    "motifs": [
+      "Lieu non conforme (Caserne, Chefferie, ...)",
+      "Démarrage après 9h",
+      "Démarrage après 11h",
+      "Démarrage après 14h",
+      "Absence de Bulletin KAMTO",
+      "Influence d'une Elite Locale ou Autorité",
+      "Corruption d’Électeur",
+      "Vote multiple pour le même Électeur",
+      "Intimidation d’Électeur ou Bagarre",
+      "Bourrage des urnes",
+      "Autre"
+    ]
   },
   {
     "_id": "monitoring",

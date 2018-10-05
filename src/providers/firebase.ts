@@ -1,6 +1,6 @@
 import firebase from 'firebase/app';
 import 'firebase/firestore';
-import {configBallots, configKamto18} from '../app-settings/firebase';
+import {configBallots, configBallotsStats, configKamto18} from '../app-settings/firebase';
 import {loadDefaultDataByCollection, pushDefaultData} from './firebase-init';
 import {UserData} from './user-data';
 
@@ -8,15 +8,16 @@ import {UserData} from './user-data';
 export abstract class Firebase {
   static firestore: any;
   static firestoreBallots: any;
+  static firestoreBallotsStats: any;
   static data;
 
-  static async initFirestore(db) {
+  static async initFirestore(db, {offline = false} = {}) {
 
     db.settings({
       timestampsInSnapshots: true,
       // experimentalTabSynchronization: true
     });
-    await db.enablePersistence()
+    !offline && await db.enablePersistence()
       .catch(err => {
         if (err.code === 'failed-precondition') {
           // Multiple tabs open, persistence can only be enabled
@@ -37,10 +38,13 @@ export abstract class Firebase {
     if (!firebase.apps.length) {
       firebase.initializeApp(configKamto18);
       const ballots = firebase.initializeApp(configBallots, 'ballots');
+      const ballotsStats = firebase.initializeApp(configBallotsStats, 'ballotsStats');
       this.firestore = firebase.firestore();
       this.firestoreBallots = firebase.firestore(ballots);
+      this.firestoreBallotsStats = firebase.firestore(ballotsStats);
 
-      this.initFirestore(this.firestore);
+      this.initFirestore(this.firestore, {offline: true});
+      this.initFirestore(this.firestoreBallotsStats, {offline: true});
       this.initFirestore(this.firestoreBallots);
 
     } else {

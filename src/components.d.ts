@@ -126,6 +126,13 @@ export namespace Components {
     'goback'?: string;
   }
 
+  interface FormIncident {
+    'goback': string;
+  }
+  interface FormIncidentAttributes extends StencilHTMLAttributes {
+    'goback'?: string;
+  }
+
   interface FormProcesVerbal {
     'goback': string;
   }
@@ -249,6 +256,7 @@ declare global {
     'PageContactForm': Components.PageContactForm;
     'PageContact': Components.PageContact;
     'PageDon': Components.PageDon;
+    'FormIncident': Components.FormIncident;
     'FormProcesVerbal': Components.FormProcesVerbal;
     'FormScrutateur': Components.FormScrutateur;
     'PageElections': Components.PageElections;
@@ -282,6 +290,7 @@ declare global {
     'page-contact-form': Components.PageContactFormAttributes;
     'page-contact': Components.PageContactAttributes;
     'page-don': Components.PageDonAttributes;
+    'form-incident': Components.FormIncidentAttributes;
     'form-proces-verbal': Components.FormProcesVerbalAttributes;
     'form-scrutateur': Components.FormScrutateurAttributes;
     'page-elections': Components.PageElectionsAttributes;
@@ -378,6 +387,12 @@ declare global {
   var HTMLPageDonElement: {
     prototype: HTMLPageDonElement;
     new (): HTMLPageDonElement;
+  };
+
+  interface HTMLFormIncidentElement extends Components.FormIncident, HTMLStencilElement {}
+  var HTMLFormIncidentElement: {
+    prototype: HTMLFormIncidentElement;
+    new (): HTMLFormIncidentElement;
   };
 
   interface HTMLFormProcesVerbalElement extends Components.FormProcesVerbal, HTMLStencilElement {}
@@ -496,6 +511,7 @@ declare global {
     'page-contact-form': HTMLPageContactFormElement
     'page-contact': HTMLPageContactElement
     'page-don': HTMLPageDonElement
+    'form-incident': HTMLFormIncidentElement
     'form-proces-verbal': HTMLFormProcesVerbalElement
     'form-scrutateur': HTMLFormScrutateurElement
     'page-elections': HTMLPageElectionsElement
@@ -529,6 +545,7 @@ declare global {
     'page-contact-form': HTMLPageContactFormElement;
     'page-contact': HTMLPageContactElement;
     'page-don': HTMLPageDonElement;
+    'form-incident': HTMLFormIncidentElement;
     'form-proces-verbal': HTMLFormProcesVerbalElement;
     'form-scrutateur': HTMLFormScrutateurElement;
     'page-elections': HTMLPageElectionsElement;
