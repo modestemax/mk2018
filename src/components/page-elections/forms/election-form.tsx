@@ -13,6 +13,17 @@ export class ElectionForm {
   // @State() entity: any;
   poolData: { region_id: string; division_id: string; council_id: string; pool_id: string; };
 
+  constructor($this) {debugger
+    $this.formData = this.formData;
+    $this.poolData = this.poolData;
+    $this.componentWillLoad = this.componentWillLoad.bind($this);
+    $this.edit = this.edit.bind($this);
+    $this.cancel = this.cancel.bind($this);
+    $this.delete = this.delete.bind($this);
+    $this.show = this.show.bind($this);
+    $this.render = this.render.bind($this);
+  }
+
   async componentWillLoad() {
     this.formData = await ElectionsData.getProcesVerbalFormData() || {};
 

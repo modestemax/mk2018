@@ -1,11 +1,9 @@
-import { Component, Listen, Prop, State } from '@stencil/core';
-import { Ballots } from '../../../../providers/ballots-data';
-import { __ } from '../../../../providers/i18n';
-import { validateEmail } from '../../../../providers/tools';
+import {Component, Listen, Prop, State} from '@stencil/core';
+import {Ballots} from '../../../../providers/ballots-data';
+import {__} from '../../../../providers/i18n';
+import {validateEmail} from '../../../../providers/tools';
 import _ from 'lodash';
-import { ElectionForm } from '../election-form';
-
-
+import {ElectionForm} from '../election-form';
 
 
 @Component({
@@ -26,8 +24,7 @@ export class FormProcesVerbal {
   @State() entity: any;
 
   constructor() {
-    debugger
-    Object.assign(this, ElectionForm.prototype);
+    new ElectionForm(this);
   }
 
   @Listen('poolingStationChanged')
@@ -113,7 +110,7 @@ export class FormProcesVerbal {
   }
 
 
-  isValid({ lastName, /*firstName,*/ orange, mtn, nextel, camtel, email }) {
+  isValid({lastName, /*firstName,*/ orange, mtn, nextel, camtel, email}) {
     let error = '';
 
     if (!_.trim(lastName)) {
@@ -133,8 +130,8 @@ export class FormProcesVerbal {
     const [lastName, firstName, orange, mtn, nextel, camtel, email] =
       [this.lastName.value, this.firstName.value, this.orange.value, this.mtn.value, this.nextel.value, this.camtel.value, this.email.value];
 
-    if (this.isValid({ lastName, orange, mtn, nextel, camtel, email })) {
-      this.entity = { lastName, firstName, orange, mtn, nextel, camtel, email };
+    if (this.isValid({lastName, orange, mtn, nextel, camtel, email})) {
+      this.entity = {lastName, firstName, orange, mtn, nextel, camtel, email};
       await Ballots.saveScrutineer({
         ...this['poolData'] as  { region_id: string; division_id: string; council_id: string; pool_id: string; },
         scrutineer: this.entity
