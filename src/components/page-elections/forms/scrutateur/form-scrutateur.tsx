@@ -1,9 +1,9 @@
-import { Component, Listen, Prop, State } from '@stencil/core';
-import { Ballots } from '../../../../providers/ballots-data';
-import { __ } from '../../../../providers/i18n';
-import { validateEmail } from '../../../../providers/tools';
+import {Component, Listen, Prop, State} from '@stencil/core';
+import {Ballots} from '../../../../providers/ballots-data';
+import {__} from '../../../../providers/i18n';
+import {validateEmail} from '../../../../providers/tools';
 import _ from 'lodash';
-import { ElectionForm } from '../election-form';
+import {ElectionForm} from '../election-form';
 
 
 @Component({
@@ -13,6 +13,7 @@ import { ElectionForm } from '../election-form';
 export class FormScrutateur {
 
   formType = 'scrutateur';
+  entityName = 'scrutineer';
 
   private lastName: HTMLInputElement;
   private firstName: HTMLInputElement;
@@ -31,12 +32,7 @@ export class FormScrutateur {
 
   @Listen('poolingStationChanged')
   async onPoolingStationChanged(event: CustomEvent) {
-    this['poolData'] = event.detail.poolData;
-
-    const pool = await Ballots.getPool(this['poolData']);
-    this.entity = pool.data().scrutineer;
-
-    this.editMode = !this.entity;
+    this['poolingStationChanged'](event)
   }
 
   displayData() {
@@ -104,14 +100,14 @@ export class FormScrutateur {
       </ion-item>
       <ion-item>
         <ion-label position="floating">Email</ion-label>
-        <ion-input value={this.entity.email} ref={(el: HTMLInputElement) => this.email = el}/>
+        <ion-input type="email" value={this.entity.email} ref={(el: HTMLInputElement) => this.email = el}/>
       </ion-item>
 
     </ion-list>);
   }
 
 
-  isValid({ lastName, /*firstName,*/ orange, mtn, nextel, camtel, email }) {
+  isValid({lastName, /*firstName,*/ orange, mtn, nextel, camtel, email}) {
     let error = '';
 
     if (!_.trim(lastName)) {
@@ -127,19 +123,10 @@ export class FormScrutateur {
     return !error;
   }
 
-  async save() {
+  buildEntity() {
     const [lastName, firstName, orange, mtn, nextel, camtel, email] =
       [this.lastName.value, this.firstName.value, this.orange.value, this.mtn.value, this.nextel.value, this.camtel.value, this.email.value];
-
-    if (this.isValid({ lastName, orange, mtn, nextel, camtel, email })) {
-      this.entity = { lastName, firstName, orange, mtn, nextel, camtel, email };
-      await Ballots.saveScrutineer({
-        ...this['poolData'] as  { region_id: string; division_id: string; council_id: string; pool_id: string; },
-        scrutineer: this.entity
-      });
-      this['show'](__('SAVE_SUCCESS'));
-      this.editMode = false;
-    }
+    return {lastName, firstName, orange, mtn, nextel, camtel, email};
   }
 
 

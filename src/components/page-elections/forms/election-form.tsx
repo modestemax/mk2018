@@ -1,6 +1,6 @@
-import {ElectionsData} from "../../../providers/elections-data";
-import {Ballots} from "../../../providers/ballots-data";
-import {__} from "../../../providers/i18n";
+import {ElectionsData} from '../../../providers/elections-data';
+import {Ballots} from '../../../providers/ballots-data';
+import {__} from '../../../providers/i18n';
 import {Plugins} from '@capacitor/core';
 
 const {Toast, /*Share*/} = Plugins;
@@ -24,6 +24,14 @@ export class ElectionForm {
     $this.render = this.render.bind($this);
   }
 
+  async poolingStationChanged(event) {
+    this['poolData'] = event.detail.poolData;
+
+    const pool = await Ballots.getPool(this['poolData']);
+    this['entity'] = pool && pool.data()[this['entityName']];
+    this['editMode'] = !this['entity'];
+  }
+
   async componentWillLoad() {
     this.formData = await ElectionsData.getFormData(this['formType']) || {};
 
@@ -38,15 +46,25 @@ export class ElectionForm {
   }
 
   async delete() {
-    await Ballots.deleteScrutineer(this.poolData);
+    await Ballots.delete({poolData: this.poolData, entityName: this['entityName']});
     this['entity'] = null;
     this['editMode'] = true;
     this.show(__('DELETE_SUCCESS'));
   }
 
-  // async save() {
-  //
-  // }
+  async save() {
+    const entity = this['entity'] = this['buildEntity']();
+    if (this['isValid'](entity)) {
+
+      await Ballots.save({
+        poolData: this['poolData'], // as  { region_id: string; division_id: string; council_id: string; pool_id: string; },
+        entity,
+        entityName: this['entityName']
+      });
+      this['show'](__('SAVE_SUCCESS'));
+      this['editMode'] = false;
+    }
+  }
 
   async show(text) {
     await Toast.show({text, duration: 'long'});
