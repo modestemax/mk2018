@@ -1,0 +1,61 @@
+{
+  "elections_fr": {
+    "brigarde": {
+      "position": 2,
+      "section": "Brigarde",
+      "color": "rgb(30, 130, 76)",
+      "publish": true,
+      "_id": "brigarde",
+      "img": "academics.png"
+    },
+    "empty": {
+      "section": "",
+      "content": [],
+      "color": "rgb(232, 67, 147)",
+      "publish": false,
+      "_id": "empty",
+      "img": "",
+      "position": 8
+    },
+    "incidents": {
+      "color": "rgb(145, 61, 136)",
+      "publish": true,
+      "_id": "incidents",
+      "img": "international.png",
+      "position": 4,
+      "section": "Incidents"
+    },
+    "monitoring": {
+      "position": 5,
+      "section": "Monitoring",
+      "color": "rgb(150, 40, 27)",
+      "publish": true,
+      "_id": "monitoring",
+      "img": "distinction.png"
+    },
+    "proces-verbaux": {
+      "color": "rgb(30, 139, 195)",
+      "publish": true,
+      "_id": "proces-verbaux",
+      "img": "administration.png",
+      "position": 3,
+      "section": "Proces Verbaux"
+    },
+    "resultats": {
+      "position": 6,
+      "section": "Resultats",
+      "color": "rgb(1, 50, 67)",
+      "publish": true,
+      "_id": "resultats",
+      "img": "politician.png"
+    },
+    "scrutateurs": {
+      "color": "rgb(197,90,17)",
+      "publish": true,
+      "_id": "scrutateurs",
+      "img": "family.png",
+      "position": 1,
+      "section": "Scrutateurs"
+    }
+  }
+}

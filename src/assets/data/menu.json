@@ -57,7 +57,7 @@
         "icon": "mail-open"
       },
       {
-        "group": "E",
+        "group": "A",
         "title": "Elections",
         "url": "/elections",
         "icon": "flask"
@@ -122,7 +122,7 @@
         "icon": "mail-open"
       },
       {
-        "group": "E",
+        "group": "A",
         "title": "Elections",
         "url": "/elections",
         "icon": "flask"

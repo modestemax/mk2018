@@ -4,6 +4,9 @@ import {UserData} from '../../../providers/user-data';
 import {TutorialData} from '../../../providers/tutorial-data';
 import {__} from '../../../providers/i18n';
 
+// const HOME_PAGE = '/who-am-i';
+const HOME_PAGE = '/elections';
+
 @Component({
   tag: 'page-tutorial',
   styleUrl: 'page-tutorial.scss'
@@ -33,7 +36,7 @@ export class PageTutorial {
         <ion-toolbar class="tutorial-transparent">
           <ion-buttons slot="end">
             {this.showSkip
-              ? <ion-button color="light" href="/who-am-i">     {__('SKIP')} </ion-button>
+              ? <ion-button color="light" href={HOME_PAGE}>     {__('SKIP')} </ion-button>
               : ''}
           </ion-buttons>
         </ion-toolbar>
@@ -49,7 +52,7 @@ export class PageTutorial {
                   <ion-card-content class="slide-text">
                     <h2 class="slide-text-inner" innerHTML={text}/>
 
-                    {!this.showSkip ? <ion-button fill="clear" href="/who-am-i">
+                    {!this.showSkip ? <ion-button fill="clear" href={HOME_PAGE}>
                       {__('CONTINUE')}
                       <ion-icon slot="end" name="arrow-forward"/>
                     </ion-button> : ''}

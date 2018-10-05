@@ -10,4 +10,8 @@ export class ElectionsData extends Firebase {
     return collection.where('publish', '==', true)
       .orderBy('position', 'asc')
   }
+
+  static getScrutineer() {
+    return this.get('scrutateur')
+  }
 }

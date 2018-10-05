@@ -29,8 +29,8 @@ export class Menu extends Firebase {
   static async loadTabs(): Promise<any> {
     // await I18nData.loadStrings();
     return [
-      {label: 'Kamto', 'icon': 'person', name: 'tab-who-am-i'},
-      {label: 'Elections', 'icon': 'flask', name: 'tab-elections', show: false},
+      {label: 'Kamto', 'icon': 'person', name: 'tab-who-am-i', show: false},
+      {label: 'Elections', 'icon': 'key', name: 'tab-elections', show: true},
       {label: '', 'icon': '', name: 'tab-others', show: false},
       {label: __('CHANTIERS'), 'icon': 'construct', name: 'tab-programme'},
       {label: __('ENGAGEMENTS'), 'icon': 'clipboard', name: 'tab-engagements'},

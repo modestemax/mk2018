@@ -1,55 +1,71 @@
 [
   {
+    "_id": "bureau-vote",
+    "position": 10,
+    "publish": true,
+    "color": "rgb(0,112,134)",
+    "section": "Bureaux de Votes",
+    "img": "pollingstation2.png"
+  },
+  {
+    "_id": "consigne",
+    "position": 20,
+    "publish": true,
+    "color": "rgb(109,21,57)",
+    "section": "Consignes",
+    "img": "infoic2.png"
+  },
+  {
     "_id": "scrutateur",
-    "position": 1,
+    "position": 30,
     "publish": true,
     "color": "rgb(197,90,17)",
     "section": "Scrutateur",
-    "img": "family.png"
+    "img": "scrutateur2.png"
   },
   {
     "_id": "brigarde",
-    "position": 2,
+    "position": 40,
     "publish": true,
     "color": "rgb(30, 130, 76)",
     "section": "Brigarde",
-    "img": "academics.png"
+    "img": "brigarde_inv.png"
   },
   {
     "_id": "proces-verbaux",
-    "position": 3,
+    "position": 50,
     "publish": true,
     "color": "rgb(30, 139, 195)",
     "section": "Proces Verbaux",
-    "img": "administration.png"
+    "img": "pv2.png"
   },
   {
-    "_id": "incidents",
-    "position": 4,
+    "_id": "incident",
+    "position": 60,
     "publish": true,
     "color": "rgb(145, 61, 136)",
     "section": "Incidents",
-    "img": "international.png"
+    "img": "incident2.png"
   },
   {
     "_id": "monitoring",
-    "position": 5,
+    "position": 70,
     "publish": true,
     "color": "rgb(150, 40, 27)",
     "section": "Monitoring",
-    "img": "distinction.png"
+    "img": "monitoring3.png"
   },
   {
-    "_id": "resultats",
-    "position": 6,
+    "_id": "resultat",
+    "position": 80,
     "publish": true,
     "color": "rgb(1, 50, 67)",
     "section": "Resultats",
-    "img": "politician.png"
+    "img": "resultat2.png"
   },
   {
     "_id": "empty",
-    "position": 8,
+    "position": 90,
     "publish": false,
     "color": "rgb(232, 67, 147)",
     "section": "",

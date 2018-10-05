@@ -24,6 +24,12 @@ export class Ballots extends Firebase {
     return pools.docs;
   }
 
+  static async getPool({region_id, division_id, council_id, pool_id}: { region_id: string; division_id: string; council_id: string; pool_id: string }) {
+    const pool = await this.firestoreBallots.doc(
+      `regions/${region_id}/divisions/${division_id}/councils/${council_id}/pooling_stations/${pool_id}`).get();
+    return pool;
+  }
+
   static async saveScrutineer({region_id, division_id, council_id, pool_id, scrutineer}: { region_id: string; division_id: string; council_id: string; pool_id: string; scrutineer: any }) {
     const doc = this.firestoreBallots.doc(
       `regions/${region_id}/divisions/${division_id}/councils/${council_id}/pooling_stations/${pool_id}`);
@@ -35,4 +41,5 @@ export class Ballots extends Firebase {
       `regions/${region_id}/divisions/${division_id}/councils/${council_id}/pooling_stations/${pool_id}`);
     await doc.update({scrutineer: null});
   }
+
 }

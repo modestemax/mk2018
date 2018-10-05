@@ -37,8 +37,7 @@ export class FormScrutateur {
 
 
   async componentWillLoad() {
-    this.data = await ElectionsData.get(this._id) || {};
-    this.data.content = this.data.content || [];
+    this.data = await ElectionsData.getScrutineer() || {};
 
     this.regions = await Ballots.getRegions();
   }
@@ -74,11 +73,16 @@ export class FormScrutateur {
     this.pool.value = null;
   }
 
-  onPoolingStationChanged() {
+  async onPoolingStationChanged() {
 
     if (this.pool.value) {
-      const pool = this.pools.find(p => p.id === this.pool.value);
-      this.scrutineer = pool && pool.data().scrutineer;
+      const pool = await Ballots.getPool({
+        region_id: this.region.value,
+        division_id: this.division.value,
+        council_id: this.council.value,
+        pool_id: this.pool.value
+      });
+      this.scrutineer = pool.data().scrutineer;
 
       this.editMode = !this.scrutineer;
 
@@ -98,7 +102,6 @@ export class FormScrutateur {
       button2Text = __('CANCEL');
       button2Click = this.cancel.bind(this);
     }
-
     return [
       <ion-header>
         <ion-toolbar>
@@ -106,7 +109,7 @@ export class FormScrutateur {
             <ion-back-button defaultHref={this.goback}/>
           </ion-buttons>
           <ion-title>
-            {__('PRÉSIDENTIELLES_2018')}
+            {this.data.section}
           </ion-title>
 
           <ion-buttons slot="end">
@@ -117,11 +120,11 @@ export class FormScrutateur {
 
       <ion-content>
         <ion-card class="content-detail">
-          {/*<ion-card-header class={`header ${this._id} `} style={{backgroundColor: this.data.color}}>
+          <ion-card-header class={`header ${this._id} `} style={{backgroundColor: this.data.color}}>
             <div class="logo">
               <img-video img={this.data.img} height="20%"/>
             </div>
-          </ion-card-header>*/}
+          </ion-card-header>
           <ion-card-content>
             {this.formFilter()}
             <hr/>
