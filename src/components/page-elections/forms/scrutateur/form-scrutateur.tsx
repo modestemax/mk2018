@@ -39,11 +39,15 @@ export class FormScrutateur {
     this.poolData = event.detail.poolData;
 
     const pool = await Ballots.getPool(this.poolData);
-    this.scrutineer = pool.data().scrutineer;
+    this.scrutineer = pool.data().procesVerbal;
 
     this.editMode = !this.scrutineer;
   }
 
+
+  render1() {
+    return <h1>NANA</h1>;
+  }
 
   render() {
     let button1Text = __('UPDATE'), button1Click = this.edit.bind(this);
@@ -54,6 +58,7 @@ export class FormScrutateur {
       button2Text = __('CANCEL');
       button2Click = this.cancel.bind(this);
     }
+
     return [
       <ion-header>
         <ion-toolbar>

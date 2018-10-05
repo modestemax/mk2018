@@ -1,0 +1,38 @@
+form-scrutateur {
+  .header {
+
+    .logo {
+      margin: auto;
+      height: 50%;
+      width: 50%;
+
+      img {
+        max-width: 100%;
+        max-height: 100%;
+      }
+
+    }
+  }
+  .content-header {
+    white-space: normal;
+    font-size: 16px;
+  }
+  .content-text {
+    font-size: 16px;
+  }
+
+  ion-card-content {
+    background-color: white;
+  }
+
+  .content-detail {
+    margin: 5px;
+  }
+
+  .form {
+    .in-item {
+      max-width: 100%;
+      width: 95%;
+    }
+  }
+}

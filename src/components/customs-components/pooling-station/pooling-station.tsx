@@ -1,6 +1,6 @@
-import { Component, Event, EventEmitter, State } from '@stencil/core';
-import { __ } from '../../../providers/i18n';
-import { Ballots } from '../../../providers/ballots-data';
+import {Component, Event, EventEmitter, State} from '@stencil/core';
+import {__} from '../../../providers/i18n';
+import {Ballots} from '../../../providers/ballots-data';
 
 @Component({
   tag: 'pooling-station',
@@ -24,7 +24,7 @@ export class PoolingStation {
 
   async onRegionChanged() {
     if (this.region.value) {
-      this.divisions = await Ballots.getDivisions({ region_id: this.region.value });
+      this.divisions = await Ballots.getDivisions({region_id: this.region.value});
     } else {
       this.divisions = [];
     }
@@ -34,7 +34,7 @@ export class PoolingStation {
 
   async onDivisionChanged() {
     if (this.region.value && this.division.value) {
-      this.councils = await Ballots.getCouncils({ region_id: this.region.value, division_id: this.division.value });
+      this.councils = await Ballots.getCouncils({region_id: this.region.value, division_id: this.division.value});
     } else {
       this.councils = [];
     }

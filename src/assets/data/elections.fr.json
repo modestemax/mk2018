@@ -32,7 +32,7 @@
     "img": "brigarde_inv.png"
   },
   {
-    "_id": "proces-verbaux",
+    "_id": "proces-verbal",
     "position": 50,
     "publish": true,
     "color": "rgb(30, 139, 195)",

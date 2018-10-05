@@ -14,4 +14,8 @@ export class ElectionsData extends Firebase {
   static getScrutineerFormData() {
     return this.get('scrutateur')
   }
+
+  static getProcesVerbalFormData() {
+    return this.get('proces-verbal')
+  }
 }

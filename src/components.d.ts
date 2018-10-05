@@ -126,6 +126,13 @@ export namespace Components {
     'goback'?: string;
   }
 
+  interface FormProcesVerbal {
+    'goback': string;
+  }
+  interface FormProcesVerbalAttributes extends StencilHTMLAttributes {
+    'goback'?: string;
+  }
+
   interface FormScrutateur {
     '_id': string;
     'goback': string;
@@ -244,6 +251,7 @@ declare global {
     'PageContactForm': Components.PageContactForm;
     'PageContact': Components.PageContact;
     'PageDon': Components.PageDon;
+    'FormProcesVerbal': Components.FormProcesVerbal;
     'FormScrutateur': Components.FormScrutateur;
     'PageElections': Components.PageElections;
     'PageEngagementsDetail': Components.PageEngagementsDetail;
@@ -276,6 +284,7 @@ declare global {
     'page-contact-form': Components.PageContactFormAttributes;
     'page-contact': Components.PageContactAttributes;
     'page-don': Components.PageDonAttributes;
+    'form-proces-verbal': Components.FormProcesVerbalAttributes;
     'form-scrutateur': Components.FormScrutateurAttributes;
     'page-elections': Components.PageElectionsAttributes;
     'page-engagements-detail': Components.PageEngagementsDetailAttributes;
@@ -371,6 +380,12 @@ declare global {
   var HTMLPageDonElement: {
     prototype: HTMLPageDonElement;
     new (): HTMLPageDonElement;
+  };
+
+  interface HTMLFormProcesVerbalElement extends Components.FormProcesVerbal, HTMLStencilElement {}
+  var HTMLFormProcesVerbalElement: {
+    prototype: HTMLFormProcesVerbalElement;
+    new (): HTMLFormProcesVerbalElement;
   };
 
   interface HTMLFormScrutateurElement extends Components.FormScrutateur, HTMLStencilElement {}
@@ -483,6 +498,7 @@ declare global {
     'page-contact-form': HTMLPageContactFormElement
     'page-contact': HTMLPageContactElement
     'page-don': HTMLPageDonElement
+    'form-proces-verbal': HTMLFormProcesVerbalElement
     'form-scrutateur': HTMLFormScrutateurElement
     'page-elections': HTMLPageElectionsElement
     'page-engagements-detail': HTMLPageEngagementsDetailElement
@@ -515,6 +531,7 @@ declare global {
     'page-contact-form': HTMLPageContactFormElement;
     'page-contact': HTMLPageContactElement;
     'page-don': HTMLPageDonElement;
+    'form-proces-verbal': HTMLFormProcesVerbalElement;
     'form-scrutateur': HTMLFormScrutateurElement;
     'page-elections': HTMLPageElectionsElement;
     'page-engagements-detail': HTMLPageEngagementsDetailElement;
