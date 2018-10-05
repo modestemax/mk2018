@@ -11,7 +11,7 @@ import {ElectionForm} from '../election-form';
   styleUrl: 'form-proces-verbal.scss',
 })
 export class FormProcesVerbal {
-
+  formType = 'proces-verbal';
   private lastName: HTMLInputElement;
   private firstName: HTMLInputElement;
   private orange: HTMLInputElement;

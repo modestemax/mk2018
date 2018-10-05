@@ -8,14 +8,10 @@ export class ElectionsData extends Firebase {
 
   static filter(collection) {
     return collection.where('publish', '==', true)
-      .orderBy('position', 'asc')
+      .orderBy('position', 'asc');
   }
 
-  static getScrutineerFormData() {
-    return this.get('scrutateur')
-  }
-
-  static getProcesVerbalFormData() {
-    return this.get('proces-verbal')
+  static getFormData(forrmType: string) {
+    return this.get(forrmType);
   }
 }

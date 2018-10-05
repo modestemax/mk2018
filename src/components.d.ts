@@ -134,11 +134,9 @@ export namespace Components {
   }
 
   interface FormScrutateur {
-    '_id': string;
     'goback': string;
   }
   interface FormScrutateurAttributes extends StencilHTMLAttributes {
-    '_id'?: string;
     'goback'?: string;
   }
 

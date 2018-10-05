@@ -25,7 +25,7 @@ export class ElectionForm {
   }
 
   async componentWillLoad() {
-    this.formData = await ElectionsData.getProcesVerbalFormData() || {};
+    this.formData = await ElectionsData.getFormData(this['formType']) || {};
 
   }
 
