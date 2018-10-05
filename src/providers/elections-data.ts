@@ -11,7 +11,7 @@ export class ElectionsData extends Firebase {
       .orderBy('position', 'asc')
   }
 
-  static getScrutineer() {
+  static getScrutineerFormData() {
     return this.get('scrutateur')
   }
 }

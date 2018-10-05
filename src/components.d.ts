@@ -79,6 +79,14 @@ export namespace Components {
     'video'?: string;
   }
 
+  interface PoolingStation {}
+  interface PoolingStationAttributes extends StencilHTMLAttributes {
+    'onCouncilChanged'?: (event: CustomEvent) => void;
+    'onDivisionChanged'?: (event: CustomEvent) => void;
+    'onPoolingStationChanged'?: (event: CustomEvent) => void;
+    'onRegionChanged'?: (event: CustomEvent) => void;
+  }
+
   interface PageAcceuil {}
   interface PageAcceuilAttributes extends StencilHTMLAttributes {}
 
@@ -228,6 +236,7 @@ declare global {
     'ImgVideo': Components.ImgVideo;
     'LazyIframe': Components.LazyIframe;
     'MkActualite': Components.MkActualite;
+    'PoolingStation': Components.PoolingStation;
     'PageAcceuil': Components.PageAcceuil;
     'PageTutorial': Components.PageTutorial;
     'PageActualite': Components.PageActualite;
@@ -259,6 +268,7 @@ declare global {
     'img-video': Components.ImgVideoAttributes;
     'lazy-iframe': Components.LazyIframeAttributes;
     'mk-actualite': Components.MkActualiteAttributes;
+    'pooling-station': Components.PoolingStationAttributes;
     'page-acceuil': Components.PageAcceuilAttributes;
     'page-tutorial': Components.PageTutorialAttributes;
     'page-actualite': Components.PageActualiteAttributes;
@@ -313,6 +323,12 @@ declare global {
   var HTMLMkActualiteElement: {
     prototype: HTMLMkActualiteElement;
     new (): HTMLMkActualiteElement;
+  };
+
+  interface HTMLPoolingStationElement extends Components.PoolingStation, HTMLStencilElement {}
+  var HTMLPoolingStationElement: {
+    prototype: HTMLPoolingStationElement;
+    new (): HTMLPoolingStationElement;
   };
 
   interface HTMLPageAcceuilElement extends Components.PageAcceuil, HTMLStencilElement {}
@@ -459,6 +475,7 @@ declare global {
     'img-video': HTMLImgVideoElement
     'lazy-iframe': HTMLLazyIframeElement
     'mk-actualite': HTMLMkActualiteElement
+    'pooling-station': HTMLPoolingStationElement
     'page-acceuil': HTMLPageAcceuilElement
     'page-tutorial': HTMLPageTutorialElement
     'page-actualite': HTMLPageActualiteElement
@@ -490,6 +507,7 @@ declare global {
     'img-video': HTMLImgVideoElement;
     'lazy-iframe': HTMLLazyIframeElement;
     'mk-actualite': HTMLMkActualiteElement;
+    'pooling-station': HTMLPoolingStationElement;
     'page-acceuil': HTMLPageAcceuilElement;
     'page-tutorial': HTMLPageTutorialElement;
     'page-actualite': HTMLPageActualiteElement;

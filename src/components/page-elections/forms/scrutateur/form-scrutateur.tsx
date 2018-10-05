@@ -1,4 +1,4 @@
-import {Component, Prop, State} from '@stencil/core';
+import {Component, Listen, Prop, State} from '@stencil/core';
 import {ElectionsData} from '../../../../providers/elections-data';
 import {Ballots} from '../../../../providers/ballots-data';
 import {__} from '../../../../providers/i18n';
@@ -16,15 +16,8 @@ export class FormScrutateur {
 
   @Prop() _id: string;
   @Prop() goback = '/';
-  private data;
-  private region: HTMLInputElement;
-  private regions: any = [];
-  private division: HTMLInputElement;
-  @State() divisions: any = [];
-  private council: HTMLInputElement;
-  @State() councils: any = [];
-  private pool: HTMLInputElement;
-  @State() pools: any = [];
+  private formData;
+  private poolData: { region_id: string; division_id: string; council_id: string; pool_id: string; };
   @State() scrutineer: any;
   @State() editMode: boolean;
   private lastName: HTMLInputElement;
@@ -37,61 +30,20 @@ export class FormScrutateur {
 
 
   async componentWillLoad() {
-    this.data = await ElectionsData.getScrutineer() || {};
-
-    this.regions = await Ballots.getRegions();
-  }
-
-  async onRegionChanged() {
-    if (this.region.value) {
-      this.divisions = await Ballots.getDivisions({region_id: this.region.value});
-    } else {
-      this.divisions = [];
-    }
-    this.division.value = null;
-  }
-
-  async onDivisionChanged() {
-    if (this.region.value && this.division.value) {
-      this.councils = await Ballots.getCouncils({region_id: this.region.value, division_id: this.division.value});
-    } else {
-      this.councils = [];
-    }
-    this.council.value = null;
-  }
-
-  async onCouncilChanged() {
-    if (this.region.value && this.division.value && this.council.value) {
-      this.pools = await Ballots.getPools({
-        region_id: this.region.value,
-        division_id: this.division.value,
-        council_id: this.council.value
-      });
-    } else {
-      this.pools = [];
-    }
-    this.pool.value = null;
-  }
-
-  async onPoolingStationChanged() {
-
-    if (this.pool.value) {
-      const pool = await Ballots.getPool({
-        region_id: this.region.value,
-        division_id: this.division.value,
-        council_id: this.council.value,
-        pool_id: this.pool.value
-      });
-      this.scrutineer = pool.data().scrutineer;
-
-      this.editMode = !this.scrutineer;
-
-    } else {
-      this.scrutineer = null;
-      this.editMode = false;
-    }
+    this.formData = await ElectionsData.getScrutineerFormData() || {};
 
   }
+
+  @Listen('poolingStationChanged')
+  async onPoolingStationChanged(event: CustomEvent) {
+    this.poolData = event.detail.poolData;
+
+    const pool = await Ballots.getPool(this.poolData);
+    this.scrutineer = pool.data().scrutineer;
+
+    this.editMode = !this.scrutineer;
+  }
+
 
   render() {
     let button1Text = __('UPDATE'), button1Click = this.edit.bind(this);
@@ -109,7 +61,7 @@ export class FormScrutateur {
             <ion-back-button defaultHref={this.goback}/>
           </ion-buttons>
           <ion-title>
-            {this.data.section}
+            {this.formData.section}
           </ion-title>
 
           <ion-buttons slot="end">
@@ -120,13 +72,14 @@ export class FormScrutateur {
 
       <ion-content>
         <ion-card class="content-detail">
-          <ion-card-header class={`header ${this._id} `} style={{backgroundColor: this.data.color}}>
+          <ion-card-header class={`header ${this._id} `} style={{backgroundColor: this.formData.color}}>
             <div class="logo">
-              <img-video img={this.data.img} height="20%"/>
+              <img-video img={this.formData.img} height="20%"/>
             </div>
           </ion-card-header>
           <ion-card-content>
-            {this.formFilter()}
+            {/*{this.formFilter()}*/}
+            <pooling-station/>
             <hr/>
             {this.editMode ? this.formScrutineer() : (this.scrutineer ? this.displayScrutineer() : '')}
           </ion-card-content>
@@ -146,48 +99,48 @@ export class FormScrutateur {
     ];
   }
 
-  private formFilter() {
-    return (
-      <ion-list class="form">
-        <ion-list-header class="en-tete">
-
-        </ion-list-header>
-        <ion-item>
-          <ion-label position="stacked">{__('REGION')}</ion-label>
-          <ion-select onIonChange={this.onRegionChanged.bind(this)} ref={(el: HTMLInputElement) => this.region = el}
-                      interface="action-sheet">
-            {this.regions.map(region => (<ion-select-option value={region.id}>{region.data().name}</ion-select-option>))}
-          </ion-select>
-        </ion-item>
-        <ion-item>
-          <ion-label position="stacked">{__('DIVISION')}</ion-label>
-          <ion-select onIonChange={this.onDivisionChanged.bind(this)} ref={(el: HTMLInputElement) => this.division = el}
-                      interface="action-sheet">
-            {this.divisions.map(division => (
-              <ion-select-option value={division.id}>{division.data().name}</ion-select-option>))}
-          </ion-select>
-        </ion-item>
-        <ion-item>
-          <ion-label position="stacked">{__('COUNCIL')}</ion-label>
-          <ion-select onIonChange={this.onCouncilChanged.bind(this)} ref={(el: HTMLInputElement) => this.council = el}
-                      interface="action-sheet">
-            {this.councils.map(council => (
-              <ion-select-option value={council.id}>{council.data().name}</ion-select-option>))}
-          </ion-select>
-        </ion-item>
-        <ion-item>
-          <ion-label position="stacked">{__('POLLING_STATION')}</ion-label>
-          <ion-select onIonChange={this.onPoolingStationChanged.bind(this)} ref={(el: HTMLInputElement) => this.pool = el}
-                      interface="action-sheet">
-            {this.pools.map(poolingStation => (
-              <ion-select-option value={poolingStation.id}>{poolingStation.data().name}</ion-select-option>))}
-          </ion-select>
-        </ion-item>
-
-
-      </ion-list>
-    );
-  }
+// private formFilter() {
+//   return (
+//     <ion-list class="form">
+//       <ion-list-header class="en-tete">
+//
+//       </ion-list-header>
+//       <ion-item>
+//         <ion-label position="stacked">{__('REGION')}</ion-label>
+//         <ion-select onIonChange={this.onRegionChanged.bind(this)} ref={(el: HTMLInputElement) => this.region = el}
+//                     interface="action-sheet">
+//           {this.regions.map(region => (<ion-select-option value={region.id}>{region.data().name}</ion-select-option>))}
+//         </ion-select>
+//       </ion-item>
+//       <ion-item>
+//         <ion-label position="stacked">{__('DIVISION')}</ion-label>
+//         <ion-select onIonChange={this.onDivisionChanged.bind(this)} ref={(el: HTMLInputElement) => this.division = el}
+//                     interface="action-sheet">
+//           {this.divisions.map(division => (
+//             <ion-select-option value={division.id}>{division.data().name}</ion-select-option>))}
+//         </ion-select>
+//       </ion-item>
+//       <ion-item>
+//         <ion-label position="stacked">{__('COUNCIL')}</ion-label>
+//         <ion-select onIonChange={this.onCouncilChanged.bind(this)} ref={(el: HTMLInputElement) => this.council = el}
+//                     interface="action-sheet">
+//           {this.councils.map(council => (
+//             <ion-select-option value={council.id}>{council.data().name}</ion-select-option>))}
+//         </ion-select>
+//       </ion-item>
+//       <ion-item>
+//         <ion-label position="stacked">{__('POLLING_STATION')}</ion-label>
+//         <ion-select onIonChange={this.onPoolingStationChanged.bind(this)} ref={(el: HTMLInputElement) => this.pool = el}
+//                     interface="action-sheet">
+//           {this.pools.map(poolingStation => (
+//             <ion-select-option value={poolingStation.id}>{poolingStation.data().name}</ion-select-option>))}
+//         </ion-select>
+//       </ion-item>
+//
+//
+//     </ion-list>
+//   );
+// }
 
   displayScrutineer() {
     return (
@@ -264,10 +217,9 @@ export class FormScrutateur {
     await Toast.show({text, duration: 'long'});
   }
 
-  async save() {
+  isValid({lastName, /*firstName,*/ orange, mtn, nextel, camtel, email}) {
     let error = '';
-    const [lastName, firstName, orange, mtn, nextel, camtel, email] =
-      [this.lastName.value, this.firstName.value, this.orange.value, this.mtn.value, this.nextel.value, this.camtel.value, this.email.value];
+
     if (!_.trim(lastName)) {
       error = __('NAME_ERROR');
     } else if (!(_.trim(orange) || _.trim(mtn) || _.trim(nextel) || _.trim(camtel))) {
@@ -276,27 +228,28 @@ export class FormScrutateur {
       error = __('EMAIL_ERROR');
     }
     if (error) {
-      return this.show(error);
+      this.show(error);
     }
-    this.scrutineer = {lastName, firstName, orange, mtn, nextel, camtel, email};
-    await Ballots.saveScrutineer({
-      region_id: this.region.value,
-      division_id: this.division.value,
-      council_id: this.council.value,
-      pool_id: this.pool.value,
-      scrutineer: this.scrutineer
-    });
-    this.show(__('SAVE_SUCCESS'));
-    this.editMode = false;
+    return !error;
+  }
+
+  async save() {
+    const [lastName, firstName, orange, mtn, nextel, camtel, email] =
+      [this.lastName.value, this.firstName.value, this.orange.value, this.mtn.value, this.nextel.value, this.camtel.value, this.email.value];
+
+    if (this.isValid({lastName, orange, mtn, nextel, camtel, email})) {
+      this.scrutineer = {lastName, firstName, orange, mtn, nextel, camtel, email};
+      await Ballots.saveScrutineer({
+        ...this.poolData,
+        scrutineer: this.scrutineer
+      });
+      this.show(__('SAVE_SUCCESS'));
+      this.editMode = false;
+    }
   }
 
   async delete() {
-    await Ballots.deleteScrutineer({
-      region_id: this.region.value,
-      division_id: this.division.value,
-      council_id: this.council.value,
-      pool_id: this.pool.value,
-    });
+    await Ballots.deleteScrutineer(this.poolData);
     this.scrutineer = null;
     this.editMode = true;
     this.show(__('DELETE_SUCCESS'));
