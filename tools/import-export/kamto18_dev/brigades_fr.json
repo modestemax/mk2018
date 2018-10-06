@@ -1,0 +1,24 @@
+{
+  "centre": {
+    "publish": true,
+    "_id": "centre",
+    "zone": "Région du Centre",
+    "members": [
+      " MFOUNDI / EBALE NORBERT / 699562014/678951207",
+      "MEFOU ET AKONO / TIANI ANGOULA /699562014/678951207"
+    ],
+    "position": 1,
+    "__collections__": {}
+  },
+  "nord": {
+    "members": [
+      " MFOUNDI / EBALE NORBERT / 699562014/678951207",
+      "MEFOU ET AKONO / TIANI ANGOULA /699562014/678951207"
+    ],
+    "position": 2,
+    "publish": true,
+    "_id": "nord",
+    "zone": "Région du Nord",
+    "__collections__": {}
+  }
+}

@@ -33,7 +33,7 @@ export class AppRoot {
     this.userLng = (await UserData.getLng()) || this.userLng;
     await Firebase.initialize();
     // ---debug only
-    await Firebase.pushDefaultData();
+    // await Firebase.pushDefaultData();
     // --------------
 
     await I18nData.loadDefaultStrings();

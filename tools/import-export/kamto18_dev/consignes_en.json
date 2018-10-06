@@ -1,0 +1,24 @@
+{
+  "centre": {
+    "_id": "centre",
+    "position": 1,
+    "details": [
+      "MFOUNDI / EBALE NORBERT / 699562014/678951207",
+      "MEFOU ET AKONO / TIANI ANGOULA /699562014/678951207"
+    ],
+    "publish": true,
+    "etape": "Région du Centre",
+    "__collections__": {}
+  },
+  "nord": {
+    "_id": "nord",
+    "position": 2,
+    "details": [
+      "MFOUNDI / EBALE NORBERT / 699562014/678951207",
+      "MEFOU ET AKONO / TIANI ANGOULA /699562014/678951207"
+    ],
+    "publish": true,
+    "etape": "Région du Nord",
+    "__collections__": {}
+  }
+}

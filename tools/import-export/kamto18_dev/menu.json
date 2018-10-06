@@ -1,132 +1,134 @@
-[
-  {
-    "_id": "fr",
+{
+  "en": {
     "items": [
       {
         "group": "A",
-        "title": "Accueil",
         "url": "/acceuil",
-        "icon": "home"
+        "icon": "home",
+        "title": "Welcome"
       },
       {
         "group": "B",
-        "title": "Qui suis-je",
         "url": "/who-am-i",
-        "icon": "person"
+        "icon": "person",
+        "title": "Who am I"
       },
       {
         "group": "B",
-        "title": "Mon Programme de Gouvernance",
         "url": "/programme",
-        "icon": "construct"
+        "icon": "construct",
+        "title": "My Governance Programme"
       },
       {
         "group": "B",
-        "title": "Mes Engagements",
         "url": "/engagements",
-        "icon": "clipboard"
+        "icon": "clipboard",
+        "title": "My Commitments"
       },
       {
         "group": "B",
-        "title": "La Coalition FAUP",
         "url": "/others/forces",
-        "icon": "people"
+        "icon": "people",
+        "title": "The FPCBB"
       },
       {
         "group": "C",
-        "title": "Actualités de Campagne",
         "url": "/actualites",
-        "icon": "megaphone"
+        "icon": "megaphone",
+        "title": "Campaign News"
       },
       {
         "group": "C",
-        "title": "Galeries Photos et Videos",
         "url": "/others/galeries",
-        "icon": "Images"
+        "icon": "Images",
+        "title": "Photos et Videos Gallery"
       },
       {
         "group": "D",
-        "title": "Faites un don",
         "url": "/others/don",
-        "icon": "gift"
+        "icon": "gift",
+        "title": "Donate"
       },
       {
         "group": "D",
-        "title": "Contacter l’Equipe de Campagne",
         "url": "/others/contact",
-        "icon": "mail-open"
+        "icon": "mail-open",
+        "title": "Contact the Campaign Team"
       },
       {
-        "group": "A",
         "title": "Elections",
+        "group": "A",
         "url": "/elections",
         "icon": "key"
       }
-    ]
-  },
-  {
+    ],
     "_id": "en",
+    "__collections__": {}
+  },
+  "fr": {
     "items": [
       {
         "group": "A",
-        "title": "Welcome",
         "url": "/acceuil",
-        "icon": "home"
+        "icon": "home",
+        "title": "Accueil"
       },
       {
         "group": "B",
-        "title": "Who am I",
         "url": "/who-am-i",
-        "icon": "person"
+        "icon": "person",
+        "title": "Qui suis-je"
       },
       {
         "group": "B",
-        "title": "My Governance Programme",
         "url": "/programme",
-        "icon": "construct"
+        "icon": "construct",
+        "title": "Mon Programme de Gouvernance"
       },
       {
         "group": "B",
-        "title": "My Commitments",
         "url": "/engagements",
-        "icon": "clipboard"
+        "icon": "clipboard",
+        "title": "Mes Engagements"
       },
       {
+        "title": "La Coalition FAUP",
         "group": "B",
-        "title": "The FPCBB",
         "url": "/others/forces",
         "icon": "people"
       },
       {
         "group": "C",
-        "title": "Campaign News",
         "url": "/actualites",
-        "icon": "megaphone"
+        "icon": "megaphone",
+        "title": "Actualités de Campagne"
       },
       {
+        "title": "Galeries Photos et Videos",
         "group": "C",
-        "title": "Photos et Videos Gallery",
         "url": "/others/galeries",
         "icon": "Images"
       },
       {
         "group": "D",
-        "title": "Donate",
         "url": "/others/don",
-        "icon": "gift"
+        "icon": "gift",
+        "title": "Faites un don"
       },
       {
+        "title": "Contacter l’Equipe de Campagne",
         "group": "D",
-        "title": "Contact the Campaign Team",
         "url": "/others/contact",
         "icon": "mail-open"
       },
       {
         "group": "A",
-        "title": "Elections",
         "url": "/elections",
-        "icon": "key"
+        "icon": "key",
+        "title": "Elections"
       }
-    ]
+    ],
+    "_id": "fr",
+    "__collections__": {}
   }
-]
+}

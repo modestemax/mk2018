@@ -9,12 +9,12 @@
     "__collections__": {}
   },
   "brigarde": {
-    "_id": "brigarde",
-    "img": "brigarde_inv.png",
-    "position": 40,
     "section": "BRIGARDES A CONTACTER",
     "color": "rgb(30, 130, 76)",
     "publish": true,
+    "_id": "brigarde",
+    "img": "brigarde_inv.png",
+    "position": 40,
     "__collections__": {}
   },
   "bureau-vote": {
@@ -27,21 +27,21 @@
     "__collections__": {}
   },
   "bureaux-votes": {
-    "color": "rgb(0,112,134)",
-    "publish": true,
     "_id": "bureaux-votes",
     "img": "pollingstation2.png",
     "position": 10,
     "section": "Bureaux de Votes",
+    "color": "rgb(0,112,134)",
+    "publish": true,
     "__collections__": {}
   },
   "consigne": {
+    "color": "rgb(109,21,57)",
+    "publish": true,
     "_id": "consigne",
     "img": "infoic2.png",
     "position": 20,
     "section": "Consignes",
-    "color": "rgb(109,21,57)",
-    "publish": true,
     "__collections__": {}
   },
   "empty": {
@@ -55,9 +55,6 @@
     "__collections__": {}
   },
   "incident": {
-    "section": "Incidents",
-    "color": "rgb(145, 61, 136)",
-    "publish": true,
     "_id": "incident",
     "img": "incident2.png",
     "motifs": [
@@ -74,33 +71,36 @@
       "Autre"
     ],
     "position": 60,
-    "__collections__": {}
-  },
-  "incidents": {
-    "_id": "incidents",
-    "img": "international.png",
-    "position": 60,
     "section": "Incidents",
     "color": "rgb(145, 61, 136)",
     "publish": true,
     "__collections__": {}
   },
+  "incidents": {
+    "color": "rgb(145, 61, 136)",
+    "publish": true,
+    "_id": "incidents",
+    "img": "international.png",
+    "position": 60,
+    "section": "Incidents",
+    "__collections__": {}
+  },
   "monitoring": {
+    "color": "rgb(150, 40, 27)",
+    "publish": true,
     "_id": "monitoring",
     "img": "monitoring3.png",
     "position": 70,
     "section": "Monitoring",
-    "color": "rgb(150, 40, 27)",
-    "publish": true,
     "__collections__": {}
   },
   "proces-verbal": {
-    "section": "Proces Verbaux",
     "color": "rgb(30, 139, 195)",
     "publish": true,
     "_id": "proces-verbal",
     "img": "pv2.png",
     "position": 50,
+    "section": "Proces Verbaux",
     "__collections__": {}
   },
   "proces-verbaux": {
@@ -113,39 +113,39 @@
     "__collections__": {}
   },
   "resultat": {
-    "section": "Resultats",
-    "color": "rgb(1, 50, 67)",
-    "publish": true,
     "_id": "resultat",
     "img": "resultat2.png",
     "position": 80,
+    "section": "Resultats",
+    "color": "rgb(1, 50, 67)",
+    "publish": true,
     "__collections__": {}
   },
   "resultats": {
-    "color": "rgb(1, 50, 67)",
-    "publish": true,
     "_id": "resultats",
     "img": "politician.png",
     "position": 80,
     "section": "Resultats",
+    "color": "rgb(1, 50, 67)",
+    "publish": true,
     "__collections__": {}
   },
   "scrutateur": {
+    "color": "rgb(197,90,17)",
+    "publish": true,
     "_id": "scrutateur",
     "img": "scrutateur2.png",
     "position": 30,
     "section": "Scrutateur",
-    "color": "rgb(197,90,17)",
-    "publish": true,
     "__collections__": {}
   },
   "scrutateurs": {
-    "position": 1,
     "section": "Scrutateurs",
     "color": "rgb(197,90,17)",
     "publish": true,
     "_id": "scrutateurs",
     "img": "family.png",
+    "position": 1,
     "__collections__": {}
   }
 }
