@@ -1,9 +1,9 @@
-import {ElectionsData} from '../../../providers/elections-data';
-import {Ballots} from '../../../providers/ballots-data';
-import {__} from '../../../providers/i18n';
-import {Plugins} from '@capacitor/core';
+import { ElectionsData } from '../../../providers/elections-data';
+import { Ballots } from '../../../providers/ballots-data';
+import { __ } from '../../../providers/i18n';
+import { Plugins } from '@capacitor/core';
 
-const {Toast, /*Share*/} = Plugins;
+const { Toast, /*Share*/ } = Plugins;
 
 export class ElectionForm {
 
@@ -14,7 +14,7 @@ export class ElectionForm {
   poolData: { region_id: string; division_id: string; council_id: string; pool_id: string; };
   private options: any;
 
-  constructor($this, options = {pool_id: true, command: true}) {
+  constructor($this, options = { pool_id: true, command: true, cancel_select: false }) {
     $this.options = options;
     $this.formData = this.formData;
     $this.poolData = this.poolData;
@@ -53,7 +53,7 @@ export class ElectionForm {
   }
 
   async delete() {
-    await Ballots.delete({poolData: this.poolData, entityName: this['entityName']});
+    await Ballots.delete({ poolData: this.poolData, entityName: this['entityName'] });
     this['entity'] = null;
     this['editMode'] = true;
     this.show(__('DELETE_SUCCESS'));
@@ -74,7 +74,7 @@ export class ElectionForm {
   }
 
   async show(text) {
-    await Toast.show({text, duration: 'long'});
+    await Toast.show({ text, duration: 'long' });
   }
 
   render() {
@@ -106,18 +106,19 @@ export class ElectionForm {
         </ion-toolbar>
       </ion-header>,
 
-      <ion-content>
+      <ion-content class="elections-detail">
         <ion-card class="content-detail">
-          <ion-card-header style={{backgroundColor: this.formData.color}}>
+          <ion-card-header style={{ backgroundColor: this.formData.color }}>
             <ion-item>
               <ion-thumbnail class="logo">
                 <img-video img={this.formData.img} height="20%"/>
               </ion-thumbnail>
-              <ion-text color="light" class="page-title">{this.formData.section}</ion-text>
+              <ion-text color="light" class="page-title"
+                        style={{ 'font-size': '22px', 'margin-left': '17px' }}>{this.formData.section}</ion-text>
             </ion-item>
           </ion-card-header>
           <ion-card-content>
-            <pooling-station showPool={this.options.pool_id}/>
+            <pooling-station showPool={this.options.pool_id} cancelSelect={this.options.cancel_select}/>
             <hr/>
             {editMode ? this['editData']() : (entity ? this['displayData']() : '')}
           </ion-card-content>

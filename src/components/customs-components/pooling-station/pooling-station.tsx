@@ -22,6 +22,7 @@ export class PoolingStation {
   @Event() councilChanged: EventEmitter;
   @Event() poolingStationChanged: EventEmitter;
   @Prop() showPool = true;
+  @Prop() cancelSelect = false;
 
   async onRegionChanged() {
     if (this.region.value) {
@@ -96,6 +97,9 @@ export class PoolingStation {
   }
 
   render() {
+    const cancel = (el) => {
+      return this.cancelSelect ? <ion-button slot="end" onClick={() => el.value = null}>X</ion-button> : ''
+    };
     return (
       <ion-list class="form">
         {/*<ion-list-header class="en-tete">*/}
@@ -103,34 +107,46 @@ export class PoolingStation {
         {/*</ion-list-header>*/}
         <ion-item>
           <ion-label position="stacked">{__('REGION')}</ion-label>
-          <ion-select onIonChange={this.onRegionChanged.bind(this)} ref={(el: HTMLInputElement) => this.region = el}
-                      interface="action-sheet">
-            {this.regions.map(region => (<ion-select-option value={region.id}>{region.data().name}</ion-select-option>))}
-          </ion-select>
+          <ion-item style={{width: '100%'}}>
+            <ion-select onIonChange={this.onRegionChanged.bind(this)} ref={(el: HTMLInputElement) => this.region = el}
+                        interface="action-sheet">
+              {this.regions.map(region => (<ion-select-option value={region.id}>{region.data().name}</ion-select-option>))}
+            </ion-select>
+            {cancel(this.region)}
+          </ion-item>
         </ion-item>
         <ion-item>
           <ion-label position="stacked">{__('DIVISION')}</ion-label>
-          <ion-select onIonChange={this.onDivisionChanged.bind(this)} ref={(el: HTMLInputElement) => this.division = el}
-                      interface="action-sheet">
-            {this.divisions.map(division => (
-              <ion-select-option value={division.id}>{division.data().name}</ion-select-option>))}
-          </ion-select>
+          <ion-item style={{width: '100%'}}>
+            <ion-select onIonChange={this.onDivisionChanged.bind(this)} ref={(el: HTMLInputElement) => this.division = el}
+                        interface="action-sheet">
+              {this.divisions.map(division => (
+                <ion-select-option value={division.id}>{division.data().name}</ion-select-option>))}
+            </ion-select>
+            {cancel(this.division)}
+          </ion-item>
         </ion-item>
         <ion-item>
           <ion-label position="stacked">{__('COUNCIL')}</ion-label>
-          <ion-select onIonChange={this.onCouncilChanged.bind(this)} ref={(el: HTMLInputElement) => this.council = el}
-                      interface="action-sheet">
-            {this.councils.map(council => (
-              <ion-select-option value={council.id}>{council.data().name}</ion-select-option>))}
-          </ion-select>
+          <ion-item style={{width: '100%'}}>
+            <ion-select onIonChange={this.onCouncilChanged.bind(this)} ref={(el: HTMLInputElement) => this.council = el}
+                        interface="action-sheet">
+              {this.councils.map(council => (
+                <ion-select-option value={council.id}>{council.data().name}</ion-select-option>))}
+            </ion-select>
+            {cancel(this.council)}
+          </ion-item>
         </ion-item>
         <ion-item style={{visibility: this.showPool ? 'visible' : 'hidden'}}>
           <ion-label position="stacked">{__('POLLING_STATION')}</ion-label>
-          <ion-select onIonChange={this.onPoolingStationChanged.bind(this)} ref={(el: HTMLInputElement) => this.pool = el}
-                      interface="action-sheet">
-            {this.pools.map(poolingStation => (
-              <ion-select-option value={poolingStation.id}>{poolingStation.data().name}</ion-select-option>))}
-          </ion-select>
+          <ion-item style={{width: '100%'}}>
+            <ion-select onIonChange={this.onPoolingStationChanged.bind(this)} ref={(el: HTMLInputElement) => this.pool = el}
+                        interface="action-sheet">
+              {this.pools.map(poolingStation => (
+                <ion-select-option value={poolingStation.id}>{poolingStation.data().name}</ion-select-option>))}
+            </ion-select>
+            {cancel(this.pool)}
+          </ion-item>
         </ion-item>
 
 

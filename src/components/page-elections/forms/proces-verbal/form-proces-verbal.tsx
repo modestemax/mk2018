@@ -17,14 +17,14 @@ export class FormProcesVerbal {
   private inscrits: HTMLInputElement;
   private votants: HTMLInputElement;
   private votes: HTMLInputElement;
-  private nulls: HTMLInputElement;
+  private nuls: HTMLInputElement;
   private blancs: HTMLInputElement;
   private kamto: HTMLInputElement;
   private akere: HTMLInputElement;
   private matomba: HTMLInputElement;
   private ndifor: HTMLInputElement;
   private cabral: HTMLInputElement;
-  private oshi: HTMLInputElement;
+  private osih: HTMLInputElement;
   private garga: HTMLInputElement;
   private ndam: HTMLInputElement;
   private biya: HTMLInputElement;
@@ -56,8 +56,8 @@ export class FormProcesVerbal {
           <ion-col>:{this.entity.votes}</ion-col>
         </ion-row>
         <ion-row>
-          <ion-col>Nulls</ion-col>
-          <ion-col>:{this.entity.nulls}</ion-col>
+          <ion-col>Nuls</ion-col>
+          <ion-col>:{this.entity.nuls}</ion-col>
         </ion-row>
         <ion-row>
           <ion-col>Blancs</ion-col>
@@ -85,8 +85,8 @@ export class FormProcesVerbal {
           <ion-col>:{this.entity.cabral}</ion-col>
         </ion-row>
         <ion-row>
-          <ion-col>Joshua Oshi</ion-col>
-          <ion-col>:{this.entity.oshi}</ion-col>
+          <ion-col>Joshua Osih</ion-col>
+          <ion-col>:{this.entity.osih}</ion-col>
         </ion-row>
         <ion-row>
           <ion-col>Garga Aaman Adji</ion-col>
@@ -125,8 +125,8 @@ export class FormProcesVerbal {
         <ion-input type="number" value={this.entity.votes} ref={(el: HTMLInputElement) => this.votes = el}/>
       </ion-item>
       <ion-item>
-        <ion-label position="floating">{__('NULLS')}</ion-label>
-        <ion-input type="number" value={this.entity.nulls} ref={(el: HTMLInputElement) => this.nulls = el}/>
+        <ion-label position="floating">{__('NULS')}</ion-label>
+        <ion-input type="number" value={this.entity.nuls} ref={(el: HTMLInputElement) => this.nuls = el}/>
       </ion-item>
       <ion-item>
         <ion-label position="floating">{__('BLANCS')}</ion-label>
@@ -151,15 +151,15 @@ export class FormProcesVerbal {
         <ion-input type="number" value={this.entity.ndifor} ref={(el: HTMLInputElement) => this.ndifor = el}/>
       </ion-item>
       <ion-item>
-        <ion-label position="floating"> Cabral Libi Ngue</ion-label>
+        <ion-label position="floating"> Cabral Libii Li Ngue</ion-label>
         <ion-input type="number" value={this.entity.cabral} ref={(el: HTMLInputElement) => this.cabral = el}/>
       </ion-item>
       <ion-item>
-        <ion-label position="floating"> Joshua Oshi</ion-label>
-        <ion-input type="number" value={this.entity.oshi} ref={(el: HTMLInputElement) => this.oshi = el}/>
+        <ion-label position="floating"> Joshua Osih</ion-label>
+        <ion-input type="number" value={this.entity.osih} ref={(el: HTMLInputElement) => this.osih = el}/>
       </ion-item>
       <ion-item>
-        <ion-label position="floating"> Garga Aaman Adji</ion-label>
+        <ion-label position="floating"> Garga Haman Adji</ion-label>
         <ion-input type="number" value={this.entity.garga} ref={(el: HTMLInputElement) => this.garga = el}/>
       </ion-item>
       <ion-item>
@@ -215,15 +215,15 @@ export class FormProcesVerbal {
 
 
   buildEntity() {
-    const [inscrits, votants, votes, nulls, blancs,
-      kamto, akere, matomba, ndifor, cabral, oshi, garga, ndam, biya] =
-      [this.inscrits.value, this.votants.value, this.votes.value, this.nulls.value, this.blancs.value,
+    const [inscrits, votants, votes, nuls, blancs,
+      kamto, akere, matomba, ndifor, cabral, osih, garga, ndam, biya] =
+      [this.inscrits.value, this.votants.value, this.votes.value, this.nuls.value, this.blancs.value,
         this.kamto.value, this.akere.value, this.matomba.value, this.ndifor.value,
-        this.cabral.value, this.oshi.value, this.garga.value, this.ndam.value, this.biya.value
+        this.cabral.value, this.osih.value, this.garga.value, this.ndam.value, this.biya.value
       ];
     return {
-      inscrits, votants, votes, nulls, blancs,
-      kamto, akere, matomba, ndifor, cabral, oshi, garga, ndam, biya
+      inscrits, votants, votes, nuls, blancs,
+      kamto, akere, matomba, ndifor, cabral, osih, garga, ndam, biya
     };
   }
 

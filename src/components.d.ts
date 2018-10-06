@@ -80,9 +80,11 @@ export namespace Components {
   }
 
   interface PoolingStation {
+    'cancelSelect': boolean;
     'showPool': boolean;
   }
   interface PoolingStationAttributes extends StencilHTMLAttributes {
+    'cancelSelect'?: boolean;
     'onCouncilChanged'?: (event: CustomEvent) => void;
     'onDivisionChanged'?: (event: CustomEvent) => void;
     'onPoolingStationChanged'?: (event: CustomEvent) => void;
@@ -136,17 +138,17 @@ export namespace Components {
     'goback'?: string;
   }
 
-  interface PageConsigne {
-    'goback': string;
-  }
-  interface PageConsigneAttributes extends StencilHTMLAttributes {
-    'goback'?: string;
-  }
-
   interface BureauxVotes {
     'goback': string;
   }
   interface BureauxVotesAttributes extends StencilHTMLAttributes {
+    'goback'?: string;
+  }
+
+  interface PageConsigne {
+    'goback': string;
+  }
+  interface PageConsigneAttributes extends StencilHTMLAttributes {
     'goback'?: string;
   }
 
@@ -173,6 +175,13 @@ export namespace Components {
 
   interface PageElections {}
   interface PageElectionsAttributes extends StencilHTMLAttributes {}
+
+  interface ResultatsVote {
+    'goback': string;
+  }
+  interface ResultatsVoteAttributes extends StencilHTMLAttributes {
+    'goback'?: string;
+  }
 
   interface PageEngagementsDetail {
     '_id': any;
@@ -281,12 +290,13 @@ declare global {
     'PageContact': Components.PageContact;
     'PageDon': Components.PageDon;
     'PageBrigade': Components.PageBrigade;
-    'PageConsigne': Components.PageConsigne;
     'BureauxVotes': Components.BureauxVotes;
+    'PageConsigne': Components.PageConsigne;
     'FormIncident': Components.FormIncident;
     'FormProcesVerbal': Components.FormProcesVerbal;
     'FormScrutateur': Components.FormScrutateur;
     'PageElections': Components.PageElections;
+    'ResultatsVote': Components.ResultatsVote;
     'PageEngagementsDetail': Components.PageEngagementsDetail;
     'PageEngagements': Components.PageEngagements;
     'PageForcesDetail': Components.PageForcesDetail;
@@ -318,12 +328,13 @@ declare global {
     'page-contact': Components.PageContactAttributes;
     'page-don': Components.PageDonAttributes;
     'page-brigade': Components.PageBrigadeAttributes;
-    'page-consigne': Components.PageConsigneAttributes;
     'bureaux-votes': Components.BureauxVotesAttributes;
+    'page-consigne': Components.PageConsigneAttributes;
     'form-incident': Components.FormIncidentAttributes;
     'form-proces-verbal': Components.FormProcesVerbalAttributes;
     'form-scrutateur': Components.FormScrutateurAttributes;
     'page-elections': Components.PageElectionsAttributes;
+    'resultats-vote': Components.ResultatsVoteAttributes;
     'page-engagements-detail': Components.PageEngagementsDetailAttributes;
     'page-engagements': Components.PageEngagementsAttributes;
     'page-forces-detail': Components.PageForcesDetailAttributes;
@@ -425,16 +436,16 @@ declare global {
     new (): HTMLPageBrigadeElement;
   };
 
-  interface HTMLPageConsigneElement extends Components.PageConsigne, HTMLStencilElement {}
-  var HTMLPageConsigneElement: {
-    prototype: HTMLPageConsigneElement;
-    new (): HTMLPageConsigneElement;
-  };
-
   interface HTMLBureauxVotesElement extends Components.BureauxVotes, HTMLStencilElement {}
   var HTMLBureauxVotesElement: {
     prototype: HTMLBureauxVotesElement;
     new (): HTMLBureauxVotesElement;
+  };
+
+  interface HTMLPageConsigneElement extends Components.PageConsigne, HTMLStencilElement {}
+  var HTMLPageConsigneElement: {
+    prototype: HTMLPageConsigneElement;
+    new (): HTMLPageConsigneElement;
   };
 
   interface HTMLFormIncidentElement extends Components.FormIncident, HTMLStencilElement {}
@@ -459,6 +470,12 @@ declare global {
   var HTMLPageElectionsElement: {
     prototype: HTMLPageElectionsElement;
     new (): HTMLPageElectionsElement;
+  };
+
+  interface HTMLResultatsVoteElement extends Components.ResultatsVote, HTMLStencilElement {}
+  var HTMLResultatsVoteElement: {
+    prototype: HTMLResultatsVoteElement;
+    new (): HTMLResultatsVoteElement;
   };
 
   interface HTMLPageEngagementsDetailElement extends Components.PageEngagementsDetail, HTMLStencilElement {}
@@ -560,12 +577,13 @@ declare global {
     'page-contact': HTMLPageContactElement
     'page-don': HTMLPageDonElement
     'page-brigade': HTMLPageBrigadeElement
-    'page-consigne': HTMLPageConsigneElement
     'bureaux-votes': HTMLBureauxVotesElement
+    'page-consigne': HTMLPageConsigneElement
     'form-incident': HTMLFormIncidentElement
     'form-proces-verbal': HTMLFormProcesVerbalElement
     'form-scrutateur': HTMLFormScrutateurElement
     'page-elections': HTMLPageElectionsElement
+    'resultats-vote': HTMLResultatsVoteElement
     'page-engagements-detail': HTMLPageEngagementsDetailElement
     'page-engagements': HTMLPageEngagementsElement
     'page-forces-detail': HTMLPageForcesDetailElement
@@ -597,12 +615,13 @@ declare global {
     'page-contact': HTMLPageContactElement;
     'page-don': HTMLPageDonElement;
     'page-brigade': HTMLPageBrigadeElement;
-    'page-consigne': HTMLPageConsigneElement;
     'bureaux-votes': HTMLBureauxVotesElement;
+    'page-consigne': HTMLPageConsigneElement;
     'form-incident': HTMLFormIncidentElement;
     'form-proces-verbal': HTMLFormProcesVerbalElement;
     'form-scrutateur': HTMLFormScrutateurElement;
     'page-elections': HTMLPageElectionsElement;
+    'resultats-vote': HTMLResultatsVoteElement;
     'page-engagements-detail': HTMLPageEngagementsDetailElement;
     'page-engagements': HTMLPageEngagementsElement;
     'page-forces-detail': HTMLPageForcesDetailElement;

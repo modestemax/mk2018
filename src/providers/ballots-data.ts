@@ -103,7 +103,7 @@ export class Ballots extends Firebase {
   private static saveProcesVerbalStat({poolData, procesVerbal}: { poolData: { region_id: string; division_id: string; council_id: string; pool_id: string }; procesVerbal: any }) {
     const {region_id, division_id, council_id, pool_id} = poolData;
     const id = `${region_id}:${division_id}:${council_id}:${pool_id}`;
-    this.firestoreBallotsStats.doc(`proces-verbeaux/${id}`).set({
+    this.firestoreBallotsStats.doc(`proces-verbaux/${id}`).set({
       ...poolData,
       procesVerbal
     });
@@ -113,7 +113,16 @@ export class Ballots extends Firebase {
   private static deleteProcesVerbalStat({poolData}: { poolData: { region_id: string; division_id: string; council_id: string; pool_id: string } }) {
     const {region_id, division_id, council_id, pool_id} = poolData;
     const id = `${region_id}:${division_id}:${council_id}:${pool_id}`;
-    this.firestoreBallotsStats.doc(`proces-verbeaux/${id}`).delete();
+    this.firestoreBallotsStats.doc(`proces-verbaux/${id}`).delete();
   }
 
+  static async loadResult({region_id, division_id, council_id, pool_id}: { region_id: any; division_id: any; council_id: any; pool_id: any }) {
+    let results = this.firestoreBallotsStats.collection('proces-verbaux');
+    region_id && (results = results.where('region_id', '==', region_id));
+    division_id && (results = results.where('division_id', '==', division_id));
+    council_id && (results = results.where('council_id', '==', council_id));
+    pool_id && (results = results.where('pool_id', '==', pool_id));
+    const docs = await results.get();
+    return docs.docs;
+  }
 }

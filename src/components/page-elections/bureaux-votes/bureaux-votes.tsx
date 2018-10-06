@@ -1,8 +1,8 @@
 import {Component, Listen, Prop, State} from '@stencil/core';
-import {ElectionForm} from '../election-form';
-import {Ballots} from '../../../../providers/ballots-data';
+import {ElectionForm} from '../forms/election-form';
+import {Ballots} from '../../../providers/ballots-data';
 import _ from 'lodash';
-import {ElectionsData} from '../../../../providers/elections-data';
+import {ElectionsData} from '../../../providers/elections-data';
 
 @Component({
   tag: 'bureaux-votes',
@@ -19,7 +19,7 @@ export class BureauxVotes {
   @State() footDoc: any;
 
   constructor() {
-    new ElectionForm(this, {pool_id: false, command: false});
+    new ElectionForm(this, {pool_id: false, command: false, cancel_select: false});
     this.entity = {}
   }
 
