@@ -2,6 +2,7 @@ import {Component, Listen, Prop, State} from '@stencil/core';
 import {ElectionForm} from '../forms/election-form';
 import {Ballots} from '../../../providers/ballots-data';
 import {ElectionsData} from '../../../providers/elections-data';
+import _ from 'lodash';
 
 @Component({
   tag: 'resultats-vote',
@@ -14,6 +15,7 @@ export class ResultatsVote {
   @State() editMode: boolean;
   @State() entity: any;
   @State() result: any = {};
+  @State() sort: boolean;
 
   constructor() {
     new ElectionForm(this, {pool_id: true, command: false, cancel_select: true});
@@ -46,6 +48,11 @@ export class ResultatsVote {
     this.filterChanged(event);
   }
 
+  @Listen('poolingStationChanged')
+  async onPoolingStationChanged(event: CustomEvent) {
+    this.filterChanged(event);
+  }
+
   async filterChanged(event) {
     this['poolData'] = event.detail.poolData;
     await this.loadResults();
@@ -54,7 +61,7 @@ export class ResultatsVote {
   displayData() {
 
     const {kamto, akere, matomba, cabral, biya, ndam, ndifor, osih, garga, inscrits, votants, votes, blancs, nuls,} = this.result;
-    const candidats = [
+    let candidats = [
       {img: 'kamto.png', score: kamto, name: 'Maurice Kamto', party: 'MRC', color: 'red'},
       {img: 'akere.png', score: akere, name: 'Akere Muna', party: 'XXX', color: 'blue'},
       {img: 'matomba.png', score: matomba, name: 'Serge Espoir Matomba', party: 'PURS', color: 'blue'},
@@ -65,6 +72,9 @@ export class ResultatsVote {
       {img: 'osih.png', score: osih, name: 'Joshua Osih', party: 'SDF', color: 'blue'},
       {img: 'garga.png', score: garga, name: 'Garga Haman Adji', party: 'XXX', color: 'blue'},
     ];
+    if (this.sort) {
+      candidats = _.orderBy(candidats, 'score', 'desc');
+    }
     const electeurs = [
       {group: 'Inscrits', count: inscrits},
       {group: 'Votants', count: votants},
@@ -73,7 +83,12 @@ export class ResultatsVote {
       {group: 'Votes Nuls', count: nuls},
     ];
 
-    return [
+    return Object.keys(this.result).length === 0 ? '' : [
+      <ion-item>
+        <ion-label>Placer par Ordre</ion-label>
+        <ion-checkbox slot="end" color="primary" onIonChange={(e) =>{ this.sort = e.detail.checked}}></ion-checkbox>
+      </ion-item>,
+
       <ion-list>
         {candidats.map(({img, score, name, party, color}) => {
           const percentage = this.getPercentage(score);
