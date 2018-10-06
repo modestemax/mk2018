@@ -54,7 +54,17 @@
     "PHONE_ERROR": "Entrer un numéro de téléphone s'il vous plait",
     "EMAIL_ERROR": "Entrer une adresse émail valide s'il vous plait",
     "SAVE_SUCCESS": "Enregistré",
-    "DELETE_SUCCESS": "Supprimé"
+    "DELETE_SUCCESS": "Supprimé",
+    "MOTIF":"Motif",
+    "COMMENTAIRE":"Commentaire",
+    "ATTACH_PV":"Attacher le PV",
+    "PROCES_VERBAL":"Proces Verbal",
+    "CLICK_TO_SHOW_PV":"Montrer le PV",
+    "INSCRITS":"Inscrits",
+    "VOTANTS":"Votants",
+    "VOTES":"Votes Exprimés",
+    "NULS":"Votes Nuls",
+    "BLANCS":"Votes Blancs"
   },
   {
     "_id": "en",
