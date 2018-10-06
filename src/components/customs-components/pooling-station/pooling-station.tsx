@@ -1,4 +1,4 @@
-import {Component, Event, EventEmitter, State} from '@stencil/core';
+import {Component, Event, EventEmitter, Prop, State} from '@stencil/core';
 import {__} from '../../../providers/i18n';
 import {Ballots} from '../../../providers/ballots-data';
 
@@ -21,6 +21,7 @@ export class PoolingStation {
   @Event() divisionChanged: EventEmitter;
   @Event() councilChanged: EventEmitter;
   @Event() poolingStationChanged: EventEmitter;
+  @Prop() showPool = true;
 
   async onRegionChanged() {
     if (this.region.value) {
@@ -29,7 +30,14 @@ export class PoolingStation {
       this.divisions = [];
     }
     this.division.value = null;
-    this.regionChanged.emit(this.region.value);
+    this.regionChanged.emit({
+      poolData: {
+        region_id: this.region.value,
+        division_id: this.division.value,
+        council_id: this.council.value,
+        pool_id: this.pool.value,
+      }
+    });
   }
 
   async onDivisionChanged() {
@@ -39,7 +47,14 @@ export class PoolingStation {
       this.councils = [];
     }
     this.council.value = null;
-    this.divisionChanged.emit(this.division.value);
+    this.divisionChanged.emit({
+      poolData: {
+        region_id: this.region.value,
+        division_id: this.division.value,
+        council_id: this.council.value,
+        pool_id: this.pool.value,
+      }
+    });
   }
 
   async onCouncilChanged() {
@@ -53,7 +68,14 @@ export class PoolingStation {
       this.pools = [];
     }
     this.pool.value = null;
-    this.councilChanged.emit(this.council.value);
+    this.councilChanged.emit({
+      poolData: {
+        region_id: this.region.value,
+        division_id: this.division.value,
+        council_id: this.council.value,
+        pool_id: this.pool.value,
+      }
+    });
   }
 
   async onPoolingStationChanged() {
@@ -102,7 +124,7 @@ export class PoolingStation {
               <ion-select-option value={council.id}>{council.data().name}</ion-select-option>))}
           </ion-select>
         </ion-item>
-        <ion-item>
+        <ion-item style={{visibility: this.showPool ? 'visible' : 'hidden'}}>
           <ion-label position="stacked">{__('POLLING_STATION')}</ion-label>
           <ion-select onIonChange={this.onPoolingStationChanged.bind(this)} ref={(el: HTMLInputElement) => this.pool = el}
                       interface="action-sheet">

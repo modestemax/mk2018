@@ -79,12 +79,15 @@ export namespace Components {
     'video'?: string;
   }
 
-  interface PoolingStation {}
+  interface PoolingStation {
+    'showPool': boolean;
+  }
   interface PoolingStationAttributes extends StencilHTMLAttributes {
     'onCouncilChanged'?: (event: CustomEvent) => void;
     'onDivisionChanged'?: (event: CustomEvent) => void;
     'onPoolingStationChanged'?: (event: CustomEvent) => void;
     'onRegionChanged'?: (event: CustomEvent) => void;
+    'showPool'?: boolean;
   }
 
   interface PageAcceuil {}
@@ -137,6 +140,13 @@ export namespace Components {
     'goback': string;
   }
   interface PageConsigneAttributes extends StencilHTMLAttributes {
+    'goback'?: string;
+  }
+
+  interface BureauxVotes {
+    'goback': string;
+  }
+  interface BureauxVotesAttributes extends StencilHTMLAttributes {
     'goback'?: string;
   }
 
@@ -272,6 +282,7 @@ declare global {
     'PageDon': Components.PageDon;
     'PageBrigade': Components.PageBrigade;
     'PageConsigne': Components.PageConsigne;
+    'BureauxVotes': Components.BureauxVotes;
     'FormIncident': Components.FormIncident;
     'FormProcesVerbal': Components.FormProcesVerbal;
     'FormScrutateur': Components.FormScrutateur;
@@ -308,6 +319,7 @@ declare global {
     'page-don': Components.PageDonAttributes;
     'page-brigade': Components.PageBrigadeAttributes;
     'page-consigne': Components.PageConsigneAttributes;
+    'bureaux-votes': Components.BureauxVotesAttributes;
     'form-incident': Components.FormIncidentAttributes;
     'form-proces-verbal': Components.FormProcesVerbalAttributes;
     'form-scrutateur': Components.FormScrutateurAttributes;
@@ -417,6 +429,12 @@ declare global {
   var HTMLPageConsigneElement: {
     prototype: HTMLPageConsigneElement;
     new (): HTMLPageConsigneElement;
+  };
+
+  interface HTMLBureauxVotesElement extends Components.BureauxVotes, HTMLStencilElement {}
+  var HTMLBureauxVotesElement: {
+    prototype: HTMLBureauxVotesElement;
+    new (): HTMLBureauxVotesElement;
   };
 
   interface HTMLFormIncidentElement extends Components.FormIncident, HTMLStencilElement {}
@@ -543,6 +561,7 @@ declare global {
     'page-don': HTMLPageDonElement
     'page-brigade': HTMLPageBrigadeElement
     'page-consigne': HTMLPageConsigneElement
+    'bureaux-votes': HTMLBureauxVotesElement
     'form-incident': HTMLFormIncidentElement
     'form-proces-verbal': HTMLFormProcesVerbalElement
     'form-scrutateur': HTMLFormScrutateurElement
@@ -579,6 +598,7 @@ declare global {
     'page-don': HTMLPageDonElement;
     'page-brigade': HTMLPageBrigadeElement;
     'page-consigne': HTMLPageConsigneElement;
+    'bureaux-votes': HTMLBureauxVotesElement;
     'form-incident': HTMLFormIncidentElement;
     'form-proces-verbal': HTMLFormProcesVerbalElement;
     'form-scrutateur': HTMLFormScrutateurElement;

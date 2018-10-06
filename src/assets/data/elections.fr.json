@@ -1,6 +1,6 @@
 [
   {
-    "_id": "bureau-vote",
+    "_id": "bureaux-votes",
     "position": 10,
     "publish": true,
     "color": "rgb(0,112,134)",

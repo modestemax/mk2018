@@ -12,11 +12,13 @@ export class ElectionForm {
   // @State() editMode: boolean;
   // @State() entity: any;
   poolData: { region_id: string; division_id: string; council_id: string; pool_id: string; };
+  private options: any;
 
-  constructor($this) {
+  constructor($this, options = {pool_id: true, command: true}) {
+    $this.options = options;
     $this.formData = this.formData;
     $this.poolData = this.poolData;
-    $this.componentWillLoad = this.componentWillLoad.bind($this);
+    $this.componentWillLoad = $this.componentWillLoad || this.componentWillLoad.bind($this);
     $this.edit = $this.edit || this.edit.bind($this);
     $this.cancel = $this.cancel || this.cancel.bind($this);
     $this.delete = $this.delete || this.delete.bind($this);
@@ -115,14 +117,14 @@ export class ElectionForm {
             </ion-item>
           </ion-card-header>
           <ion-card-content>
-            <pooling-station/>
+            <pooling-station showPool={this.options.pool_id}/>
             <hr/>
             {editMode ? this['editData']() : (entity ? this['displayData']() : '')}
           </ion-card-content>
         </ion-card>
       </ion-content>,
 
-      editMode || entity ? <ion-footer>
+      this.options.command ? (editMode || entity ? <ion-footer>
         <ion-toolbar color="light">
           <ion-buttons slot="start">
             <ion-button onClick={button1Click} color="primary">{button1Text}</ion-button>
@@ -131,7 +133,7 @@ export class ElectionForm {
             <ion-button onClick={button2Click} color="dark">{button2Text}</ion-button>
           </ion-buttons>
         </ion-toolbar>
-      </ion-footer> : ''
+      </ion-footer> : '') : ''
     ];
   }
 

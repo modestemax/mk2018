@@ -38,6 +38,17 @@ export class Ballots extends Firebase {
     }
   }
 
+  static async getDoc(id: any) {
+    const doc = await this.firestoreBallots.doc(id).get();
+    return doc;
+  }
+
+
+  static async getDocs(id: any) {
+    const docs = await this.firestoreBallots.collection(id).get();
+    return docs.docs;
+  }
+
   static async saveScrutineer({region_id, division_id, council_id, pool_id, scrutineer}: { region_id: string; division_id: string; council_id: string; pool_id: string; scrutineer: any }) {
     if (region_id && division_id && council_id && pool_id && scrutineer) {
       this.save({poolData: {region_id, division_id, council_id, pool_id}, entity: scrutineer, entityName: 'scrutineer'});
@@ -91,7 +102,6 @@ export class Ballots extends Firebase {
 
   private static saveProcesVerbalStat({poolData, procesVerbal}: { poolData: { region_id: string; division_id: string; council_id: string; pool_id: string }; procesVerbal: any }) {
     const {region_id, division_id, council_id, pool_id} = poolData;
-    debugger
     const id = `${region_id}:${division_id}:${council_id}:${pool_id}`;
     this.firestoreBallotsStats.doc(`proces-verbeaux/${id}`).set({
       ...poolData,
@@ -105,4 +115,5 @@ export class Ballots extends Firebase {
     const id = `${region_id}:${division_id}:${council_id}:${pool_id}`;
     this.firestoreBallotsStats.doc(`proces-verbeaux/${id}`).delete();
   }
+
 }
