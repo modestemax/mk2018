@@ -7,8 +7,9 @@ module.exports = {
 
     // First application
     {
-      name: "KAMTO'18",
+      name: "KAMTO18",
       script: 'start.sh',
+      "exec_mode": "cluster",
       env: {},
       env_production: {
         NODE_ENV: 'production'
