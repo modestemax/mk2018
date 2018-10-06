@@ -8,7 +8,8 @@ module.exports = {
     // First application
     {
       name: "KAMTO18",
-      script: 'start.sh',
+      script: 'cap',
+      args: 'serve',
       "exec_mode": "cluster",
       env: {},
       env_production: {
