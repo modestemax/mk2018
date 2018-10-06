@@ -65,7 +65,9 @@ function collectionsConfig() {
     'elections_fr': '/assets/data/elections.fr.json',
     'elections_en': '/assets/data/elections.fr.json',
     'brigades_fr': '/assets/data/brigades.fr.json',
-    'brigades_en': '/assets/data/brigades.fr.json'
+    'brigades_en': '/assets/data/brigades.fr.json',
+    'consignes_fr': '/assets/data/consignes.fr.json',
+    'consignes_en': '/assets/data/consignes.fr.json'
   };
 }
 

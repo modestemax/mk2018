@@ -133,6 +133,13 @@ export namespace Components {
     'goback'?: string;
   }
 
+  interface PageConsigne {
+    'goback': string;
+  }
+  interface PageConsigneAttributes extends StencilHTMLAttributes {
+    'goback'?: string;
+  }
+
   interface FormIncident {
     'goback': string;
   }
@@ -264,6 +271,7 @@ declare global {
     'PageContact': Components.PageContact;
     'PageDon': Components.PageDon;
     'PageBrigade': Components.PageBrigade;
+    'PageConsigne': Components.PageConsigne;
     'FormIncident': Components.FormIncident;
     'FormProcesVerbal': Components.FormProcesVerbal;
     'FormScrutateur': Components.FormScrutateur;
@@ -299,6 +307,7 @@ declare global {
     'page-contact': Components.PageContactAttributes;
     'page-don': Components.PageDonAttributes;
     'page-brigade': Components.PageBrigadeAttributes;
+    'page-consigne': Components.PageConsigneAttributes;
     'form-incident': Components.FormIncidentAttributes;
     'form-proces-verbal': Components.FormProcesVerbalAttributes;
     'form-scrutateur': Components.FormScrutateurAttributes;
@@ -402,6 +411,12 @@ declare global {
   var HTMLPageBrigadeElement: {
     prototype: HTMLPageBrigadeElement;
     new (): HTMLPageBrigadeElement;
+  };
+
+  interface HTMLPageConsigneElement extends Components.PageConsigne, HTMLStencilElement {}
+  var HTMLPageConsigneElement: {
+    prototype: HTMLPageConsigneElement;
+    new (): HTMLPageConsigneElement;
   };
 
   interface HTMLFormIncidentElement extends Components.FormIncident, HTMLStencilElement {}
@@ -527,6 +542,7 @@ declare global {
     'page-contact': HTMLPageContactElement
     'page-don': HTMLPageDonElement
     'page-brigade': HTMLPageBrigadeElement
+    'page-consigne': HTMLPageConsigneElement
     'form-incident': HTMLFormIncidentElement
     'form-proces-verbal': HTMLFormProcesVerbalElement
     'form-scrutateur': HTMLFormScrutateurElement
@@ -562,6 +578,7 @@ declare global {
     'page-contact': HTMLPageContactElement;
     'page-don': HTMLPageDonElement;
     'page-brigade': HTMLPageBrigadeElement;
+    'page-consigne': HTMLPageConsigneElement;
     'form-incident': HTMLFormIncidentElement;
     'form-proces-verbal': HTMLFormProcesVerbalElement;
     'form-scrutateur': HTMLFormScrutateurElement;
