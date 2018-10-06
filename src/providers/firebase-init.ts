@@ -64,6 +64,8 @@ function collectionsConfig() {
     'contacts_en': '/assets/data/contacts.en.json',
     'elections_fr': '/assets/data/elections.fr.json',
     'elections_en': '/assets/data/elections.fr.json',
+    'brigades_fr': '/assets/data/brigades.fr.json',
+    'brigades_en': '/assets/data/brigades.fr.json'
   };
 }
 

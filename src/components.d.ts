@@ -126,6 +126,13 @@ export namespace Components {
     'goback'?: string;
   }
 
+  interface PageBrigade {
+    'goback': string;
+  }
+  interface PageBrigadeAttributes extends StencilHTMLAttributes {
+    'goback'?: string;
+  }
+
   interface FormIncident {
     'goback': string;
   }
@@ -256,6 +263,7 @@ declare global {
     'PageContactForm': Components.PageContactForm;
     'PageContact': Components.PageContact;
     'PageDon': Components.PageDon;
+    'PageBrigade': Components.PageBrigade;
     'FormIncident': Components.FormIncident;
     'FormProcesVerbal': Components.FormProcesVerbal;
     'FormScrutateur': Components.FormScrutateur;
@@ -290,6 +298,7 @@ declare global {
     'page-contact-form': Components.PageContactFormAttributes;
     'page-contact': Components.PageContactAttributes;
     'page-don': Components.PageDonAttributes;
+    'page-brigade': Components.PageBrigadeAttributes;
     'form-incident': Components.FormIncidentAttributes;
     'form-proces-verbal': Components.FormProcesVerbalAttributes;
     'form-scrutateur': Components.FormScrutateurAttributes;
@@ -387,6 +396,12 @@ declare global {
   var HTMLPageDonElement: {
     prototype: HTMLPageDonElement;
     new (): HTMLPageDonElement;
+  };
+
+  interface HTMLPageBrigadeElement extends Components.PageBrigade, HTMLStencilElement {}
+  var HTMLPageBrigadeElement: {
+    prototype: HTMLPageBrigadeElement;
+    new (): HTMLPageBrigadeElement;
   };
 
   interface HTMLFormIncidentElement extends Components.FormIncident, HTMLStencilElement {}
@@ -511,6 +526,7 @@ declare global {
     'page-contact-form': HTMLPageContactFormElement
     'page-contact': HTMLPageContactElement
     'page-don': HTMLPageDonElement
+    'page-brigade': HTMLPageBrigadeElement
     'form-incident': HTMLFormIncidentElement
     'form-proces-verbal': HTMLFormProcesVerbalElement
     'form-scrutateur': HTMLFormScrutateurElement
@@ -545,6 +561,7 @@ declare global {
     'page-contact-form': HTMLPageContactFormElement;
     'page-contact': HTMLPageContactElement;
     'page-don': HTMLPageDonElement;
+    'page-brigade': HTMLPageBrigadeElement;
     'form-incident': HTMLFormIncidentElement;
     'form-proces-verbal': HTMLFormProcesVerbalElement;
     'form-scrutateur': HTMLFormScrutateurElement;

@@ -24,11 +24,11 @@
     "img": "scrutateur2.png"
   },
   {
-    "_id": "brigarde",
+    "_id": "brigade",
     "position": 40,
     "publish": true,
     "color": "rgb(30, 130, 76)",
-    "section": "Brigarde",
+    "section": "BRIGADES A CONTACTER",
     "img": "brigarde_inv.png"
   },
   {
