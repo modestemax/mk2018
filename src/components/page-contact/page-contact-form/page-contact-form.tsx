@@ -20,7 +20,11 @@ export class PageContactForm {
   private message: HTMLInputElement;
 
   async show(text) {
-    await Toast.show({text, duration: 'long'});
+    try {
+      await Toast.show({text, duration: 'long'});
+    }catch (e) {
+      alert(text)
+    }
   }
 
   dismiss() {

@@ -74,7 +74,11 @@ export class ElectionForm {
   }
 
   async show(text) {
-    await Toast.show({ text, duration: 'long' });
+    try {
+      await Toast.show({text, duration: 'long'});
+    } catch (e) {
+      alert(text)
+    }
   }
 
   render() {
