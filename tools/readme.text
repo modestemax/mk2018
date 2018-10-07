@@ -1,0 +1,8 @@
+-- import to firestore
+
+GOOGLE_APPLICATION_CREDENTIALS=kamto18-service-account.json firestore-import  -n menu -b import-export/kamto18_dev/menu.json -y
+
+
+--export from firestore
+
+GOOGLE_APPLICATION_CREDENTIALS=kamto18-dev-service-account.json firestore-export -p -n menu  -b import-export/kamto18_dev/menu.json
