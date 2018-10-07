@@ -44,23 +44,23 @@ export class FormProcesVerbal {
     return (
       <ion-grid>
         <ion-row>
-          <ion-col>Inscrits</ion-col>
+          <ion-col>{__('INSCRITS')}</ion-col>
           <ion-col>:{this.entity.inscrits}</ion-col>
         </ion-row>
         <ion-row>
-          <ion-col>Votants</ion-col>
+          <ion-col>{__('VOTANTS')}</ion-col>
           <ion-col>:{this.entity.votants}</ion-col>
         </ion-row>
         <ion-row>
-          <ion-col>Votes</ion-col>
+          <ion-col>{__('VOTES')}</ion-col>
           <ion-col>:{this.entity.votes}</ion-col>
         </ion-row>
         <ion-row>
-          <ion-col>Nuls</ion-col>
+          <ion-col>{__('NULS')}</ion-col>
           <ion-col>:{this.entity.nuls}</ion-col>
         </ion-row>
         <ion-row>
-          <ion-col>Blancs</ion-col>
+          <ion-col>{__('BLANCS')}</ion-col>
           <ion-col>:{this.entity.blancs}</ion-col>
         </ion-row>
         <hr/>
