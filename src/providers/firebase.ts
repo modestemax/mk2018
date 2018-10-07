@@ -45,7 +45,7 @@ export abstract class Firebase {
 
       this.initFirestore(this.firestore, {offline: true});
       this.initFirestore(this.firestoreBallotsStats, {offline: true});
-      this.initFirestore(this.firestoreBallots);
+      this.initFirestore(this.firestoreBallots, {offline: true});
 
     } else {
       this.firestore = firebase.firestore();
