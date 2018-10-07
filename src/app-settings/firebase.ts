@@ -1,4 +1,4 @@
-export const config = {
+export const configKamto18 = {
   apiKey: 'AIzaSyBXEjYNgPVqe8jUxxXiqpXi0FxlQ8Hj0Ck',
   authDomain: 'kamto-2018.firebaseapp.com',
   databaseURL: 'https://kamto-2018.firebaseio.com',
