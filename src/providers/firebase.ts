@@ -1,6 +1,6 @@
 import firebase from 'firebase/app';
 import 'firebase/firestore';
-import {configBallots, configBallotsStats, configKamto18} from '../app-settings/firebase';
+import {configBallots, /*configBallotsStats, */configKamto18} from '../app-settings/firebase';
 import {loadDefaultDataByCollection, pushDefaultData} from './firebase-init';
 import {UserData} from './user-data';
 
@@ -38,14 +38,16 @@ export abstract class Firebase {
     if (!firebase.apps.length) {
       firebase.initializeApp(configKamto18);
       const ballots = firebase.initializeApp(configBallots, 'ballots');
-      const ballotsStats = firebase.initializeApp(configBallotsStats, 'ballotsStats');
+      // const ballotsStats = firebase.initializeApp(configBallotsStats, 'ballotsStats');
+
       this.firestore = firebase.firestore();
       this.firestoreBallots = firebase.firestore(ballots);
-      this.firestoreBallotsStats = firebase.firestore(ballotsStats);
+      // this.firestoreBallotsStats = firebase.firestore(ballotsStats);
+      this.firestoreBallotsStats = this.firestoreBallots
 
       this.initFirestore(this.firestore, {offline: true});
       this.initFirestore(this.firestoreBallotsStats, {offline: true});
-      this.initFirestore(this.firestoreBallots);
+      // this.initFirestore(this.firestoreBallots);
 
     } else {
       this.firestore = firebase.firestore();
