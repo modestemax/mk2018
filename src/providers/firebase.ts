@@ -1,5 +1,6 @@
 import firebase from 'firebase/app';
 import 'firebase/firestore';
+import 'firebase/auth';
 import {configBallots, configBallotsStats, configKamto18} from '../app-settings/firebase';
 import {loadDefaultDataByCollection, pushDefaultData} from './firebase-init';
 import {UserData} from './user-data';
@@ -10,6 +11,7 @@ export abstract class Firebase {
   static firestoreBallots: any;
   static firestoreBallotsStats: any;
   static data;
+  static firebase: any;
 
   static async initFirestore(db, {offline = false} = {}) {
 
@@ -42,7 +44,7 @@ export abstract class Firebase {
       this.firestore = firebase.firestore();
       this.firestoreBallots = firebase.firestore(ballots);
       this.firestoreBallotsStats = firebase.firestore(ballotsStats);
-
+      this.firebase = firebase;
       this.initFirestore(this.firestore, {offline: true});
       this.initFirestore(this.firestoreBallotsStats, {offline: true});
       this.initFirestore(this.firestoreBallots, {offline: true});
