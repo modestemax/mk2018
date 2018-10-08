@@ -55,16 +55,21 @@
     "EMAIL_ERROR": "Entrer une adresse émail valide s'il vous plait",
     "SAVE_SUCCESS": "Enregistré",
     "DELETE_SUCCESS": "Supprimé",
-    "MOTIF":"Motif",
-    "COMMENTAIRE":"Commentaire",
-    "ATTACH_PV":"Attacher le PV",
-    "PROCES_VERBAL":"Proces Verbal",
-    "CLICK_TO_SHOW_PV":"Montrer le PV",
-    "INSCRITS":"Inscrits",
-    "VOTANTS":"Votants",
-    "VOTES":"Votes Exprimés",
-    "NULS":"Votes Nuls",
-    "BLANCS":"Votes Blancs"
+    "MOTIF": "Motif",
+    "COMMENTAIRE": "Commentaire",
+    "ATTACH_PV": "Attacher le PV",
+    "PROCES_VERBAL": "Proces Verbal",
+    "CLICK_TO_SHOW_PV": "Montrer le PV",
+    "INSCRITS": "Inscrits",
+    "VOTANTS": "Votants",
+    "VOTES": "Votes Exprimés",
+    "NULS": "Votes Nuls",
+    "BLANCS": "Votes Blancs",
+    "SELECT_AN_AUTHORISER": "Autorité",
+    "ASK_CODE": "Demander un Code",
+    "VERIFY": "Verifier",
+    "ENTRER_CODE": "Entrer Le Code",
+    "DEMANDE_EN_COURS": "Demande en Cours..."
   },
   {
     "_id": "en",
@@ -105,6 +110,11 @@
     "VILLE_DE_RESIDENCE": "City of Residence",
     "SHARE": "Share",
     "SHARE_APP_TEXT": "Really awesome thing you need to see right meow",
-    "PRÉSIDENTIELLES_2018": ""
+    "PRÉSIDENTIELLES_2018": "",
+    "SELECT_AN_AUTHORISER": "Authorizer",
+    "ASK_CODE": "Ask Code",
+    "VERIFY": "Verify",
+    "ENTRER_CODE": "Enter Code",
+    "DEMANDE_EN_COURS": "Requesting..."
   }
 ]

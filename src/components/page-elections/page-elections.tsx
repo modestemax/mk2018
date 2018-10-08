@@ -2,6 +2,7 @@
 import {Component, State /*Element, Listen, , State */} from '@stencil/core';
 import {ElectionsData} from '../../providers/elections-data';
 import {__} from '../../providers/i18n';
+import {presentLoading} from "../../providers/tools";
 
 
 // import * as firebaseui from 'firebaseui'
@@ -24,10 +25,12 @@ export class PageElections {
   private authoriserEl: HTMLInputElement;
   private autorisers: any;
   private confirmationResult: any;
+  private loading: any;
 
   async componentWillLoad() {
     this.documents = await ElectionsData.loadDefaultData();
-    this.autorisers = [{phone: '+237675166459', name: 'Max'}];
+    // this.autorisers = [{phone: '+237675166459', name: 'Max'}];
+    this.autorisers = [{phone: '+237 6 77 77 77 77', name: 'Maxi'}];
   }
 
   componentDidLoad() {
@@ -100,9 +103,9 @@ export class PageElections {
     if (this.waittingCode) {
       return (
         <ion-content>
-          <ion-label>Entrer le code</ion-label>
+          <ion-label>{__('ENTRER_CODE')}</ion-label>
           <ion-input ref={(e: HTMLInputElement) => this.codeEl = e}/>
-          <ion-button onClick={() => this.verifyCode()}>xxxx</ion-button>
+          <ion-button onClick={() => this.verifyCode()}>{__('VERIFY')}</ion-button>
         </ion-content>
       );
     } else {
@@ -117,20 +120,22 @@ export class PageElections {
           </ion-select>
         </ion-item>
         <ion-item>
-          <ion-button onClick={() => this.sendCode()}>Ask Code</ion-button>
+          <ion-button onClick={() => this.sendCode()}>{__('ASK_CODE')}</ion-button>
         </ion-item>
       </ion-content>);
     }
   }
+
 
   sendCode() {
     const firebase = ElectionsData.firebase;
 
     const recaptchaVerifier = new ElectionsData.firebase.auth.RecaptchaVerifier('firebaseui-auth-container', {
       'size': 'invisible',
-      'callback'(response) {
+      async 'callback'(response) {
         // reCAPTCHA solved, allow signInWithPhoneNumber.
         console.log(response);
+        this.loading = await presentLoading({message:__('DEMANDE EN COURS')});
         // ...
       },
       'expired-callback'() {
@@ -159,6 +164,8 @@ export class PageElections {
       this.loggedIn = true;
     }).catch(() => {
       alert('bad code');
+    }).finally(() => {
+      this.loading && this.loading.dismiss();
     });
   }
 }
