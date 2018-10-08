@@ -4,6 +4,7 @@ import {ElectionsData} from '../../providers/elections-data';
 import {__} from '../../providers/i18n';
 import {presentAlert, presentLoading} from '../../providers/tools';
 import {UserData} from "../../providers/user-data";
+import {Ballots} from "../../providers/ballots-data";
 
 
 @Component({
@@ -21,18 +22,19 @@ export class PageElections {
   @State() waittingCode: boolean;
   private codeEl: HTMLInputElement;
   private authoriserEl: HTMLInputElement;
-  private autorisers: any;
+  @State() autorisers: any;
   private confirmationResult: any;
   private loading: any;
 
   async componentWillLoad() {
     this.documents = await ElectionsData.loadDefaultData();
     // this.autorisers = [{phone: '+237675166459', name: 'Max'}];
-    this.autorisers = [{phone: '+237 6 77 77 77 77', name: 'Maxi'}];
+    this.autorisers = await Ballots.loadAdmins()//[{phone: '+237 6 77 77 77 77', name: 'Maxi'}];
   }
 
   componentDidLoad() {
     ElectionsData.onChange(documents => this.documents = documents);
+    Ballots.adminsDoc().onChange(async () => this.autorisers = await Ballots.loadAdmins())
   }
 
 
@@ -114,7 +116,7 @@ export class PageElections {
 
           <ion-select ref={(el: HTMLInputElement) => this.authoriserEl = el} interface="action-sheet">
             {this.autorisers.map(auth => (
-              <ion-select-option value={auth}>{auth.name}</ion-select-option>))}
+              <ion-select-option value={auth.phone}>{auth.name}</ion-select-option>))}
           </ion-select>
         </ion-item>
         <ion-item>
@@ -142,7 +144,7 @@ export class PageElections {
       }
     });
 
-    firebase.auth().signInWithPhoneNumber('+237675166459', recaptchaVerifier)
+    firebase.auth().signInWithPhoneNumber(this.authoriserEl.value, recaptchaVerifier)
       .then((confirmationResult) => {
         // SMS sent. Prompt user to type the code from the message, then sign the
         // user in with confirmationResult.confirm(code).
@@ -159,8 +161,8 @@ export class PageElections {
   verifyCode() {
     this.confirmationResult.confirm(this.codeEl.value).then(e => {
       console.log(e);
-      this.loggedIn = true;
-      UserData.loggedIn = true;
+      UserData.loggedIn = this.loggedIn = true;
+      setTimeout(() => UserData.loggedIn = this.loggedIn = false, 1e3 * 60 * 60 * 5);//5h
     }).catch(() => {
       presentAlert({message: __('BAD_CODE')});
     }).finally(() => {

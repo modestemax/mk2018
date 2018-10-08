@@ -1,7 +1,7 @@
 import {Component, Listen, Prop, State} from '@stencil/core';
 import {__} from '../../../../providers/i18n';
 import {ElectionForm} from '../election-form';
-import {CameraResultType, CameraSource, Plugins} from '@capacitor/core';
+// import {CameraResultType, CameraSource, Plugins} from '@capacitor/core';
 
 
 @Component({
@@ -28,7 +28,7 @@ export class FormProcesVerbal {
   private garga: HTMLInputElement;
   private ndam: HTMLInputElement;
   private biya: HTMLInputElement;
-  private pvScan: string;
+  // private pvScan: string;
 
   constructor() {
     new ElectionForm(this);
@@ -189,18 +189,18 @@ export class FormProcesVerbal {
   }
 
   async takePicture() {
-    const {Camera} = Plugins;
-
-    const image = await Camera.getPhoto({
-      quality: 90,
-      allowEditing: true,
-      resultType: CameraResultType.Base64,
-      source: CameraSource.Camera
-    });
+    // const {Camera} = Plugins;
+    //
+    // const image = await Camera.getPhoto({
+    //   quality: 90,
+    //   allowEditing: true,
+    //   resultType: CameraResultType.Base64,
+    //   source: CameraSource.Camera
+    // });
 
     // Example of using the Base64 return type. It's recommended to use CameraResultType.Uri
     // instead for performance reasons when showing large, or a large amount of images.
-    this.pvScan = image && (image.base64Data);
+    // this.pvScan = image && (image.base64Data);
   }
 
 
