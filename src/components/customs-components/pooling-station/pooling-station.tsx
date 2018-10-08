@@ -1,6 +1,6 @@
-import {Component, Event, EventEmitter, Prop, State} from '@stencil/core';
-import {__} from '../../../providers/i18n';
-import {Ballots} from '../../../providers/ballots-data';
+import { Component, Event, EventEmitter, Prop, State } from '@stencil/core';
+import { __ } from '../../../providers/i18n';
+import { Ballots } from '../../../providers/ballots-data';
 
 @Component({
   tag: 'pooling-station',
@@ -26,7 +26,7 @@ export class PoolingStation {
 
   async onRegionChanged() {
     if (this.region.value) {
-      this.divisions = await Ballots.getDivisions({region_id: this.region.value});
+      this.divisions = await Ballots.getDivisions({ region_id: this.region.value });
     } else {
       this.divisions = [];
     }
@@ -43,7 +43,7 @@ export class PoolingStation {
 
   async onDivisionChanged() {
     if (this.region.value && this.division.value) {
-      this.councils = await Ballots.getCouncils({region_id: this.region.value, division_id: this.division.value});
+      this.councils = await Ballots.getCouncils({ region_id: this.region.value, division_id: this.division.value });
     } else {
       this.councils = [];
     }
@@ -98,7 +98,7 @@ export class PoolingStation {
 
   render() {
     const cancel = (el) => {
-      return this.cancelSelect ? <ion-button slot="end" onClick={() => el.value = null}>X</ion-button> : ''
+      return this.cancelSelect ? <ion-button slot="end" onClick={() => el.value = null}>X</ion-button> : '';
     };
     return (
       <ion-list class="form">
@@ -107,7 +107,7 @@ export class PoolingStation {
         {/*</ion-list-header>*/}
         <ion-item>
           <ion-label position="stacked">{__('REGION')}</ion-label>
-          <ion-item style={{width: '100%'}}>
+          <ion-item style={{ width: '100%' }}>
             <ion-select onIonChange={this.onRegionChanged.bind(this)} ref={(el: HTMLInputElement) => this.region = el}
                         interface="action-sheet">
               {this.regions.map(region => (<ion-select-option value={region.id}>{region.data().name}</ion-select-option>))}
@@ -117,7 +117,7 @@ export class PoolingStation {
         </ion-item>
         <ion-item>
           <ion-label position="stacked">{__('DIVISION')}</ion-label>
-          <ion-item style={{width: '100%'}}>
+          <ion-item style={{ width: '100%' }}>
             <ion-select onIonChange={this.onDivisionChanged.bind(this)} ref={(el: HTMLInputElement) => this.division = el}
                         interface="action-sheet">
               {this.divisions.map(division => (
@@ -128,7 +128,7 @@ export class PoolingStation {
         </ion-item>
         <ion-item>
           <ion-label position="stacked">{__('COUNCIL')}</ion-label>
-          <ion-item style={{width: '100%'}}>
+          <ion-item style={{ width: '100%' }}>
             <ion-select onIonChange={this.onCouncilChanged.bind(this)} ref={(el: HTMLInputElement) => this.council = el}
                         interface="action-sheet">
               {this.councils.map(council => (
@@ -137,9 +137,9 @@ export class PoolingStation {
             {cancel(this.council)}
           </ion-item>
         </ion-item>
-        <ion-item style={{visibility: this.showPool ? 'visible' : 'hidden'}}>
+        <ion-item style={{ visibility: this.showPool ? 'visible' : 'hidden' }}>
           <ion-label position="stacked">{__('POLLING_STATION')}</ion-label>
-          <ion-item style={{width: '100%'}}>
+          <ion-item style={{ width: '100%' }}>
             <ion-select onIonChange={this.onPoolingStationChanged.bind(this)} ref={(el: HTMLInputElement) => this.pool = el}
                         interface="action-sheet">
               {this.pools.map(poolingStation => (
@@ -148,7 +148,6 @@ export class PoolingStation {
             {cancel(this.pool)}
           </ion-item>
         </ion-item>
-
 
       </ion-list>
     );

@@ -10,6 +10,7 @@ export class UserDataController {
 
   public lng = DEFAULT_LANG;
   private lngChangedHandlers: any = [];
+  loggedIn: boolean;
 
   hasFavorite(sessionName: string): boolean {
     return this.favorites.has(sessionName);

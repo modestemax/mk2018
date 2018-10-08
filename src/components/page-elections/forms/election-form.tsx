@@ -1,9 +1,11 @@
-import { ElectionsData } from '../../../providers/elections-data';
-import { Ballots } from '../../../providers/ballots-data';
-import { __ } from '../../../providers/i18n';
-import { Plugins } from '@capacitor/core';
+import {ElectionsData} from '../../../providers/elections-data';
+import {Ballots} from '../../../providers/ballots-data';
+import {__} from '../../../providers/i18n';
+import {Plugins} from '@capacitor/core';
+import {presentAlert} from '../../../providers/tools';
+import {UserData} from "../../../providers/user-data";
 
-const { Toast, /*Share*/ } = Plugins;
+const {Toast, /*Share*/} = Plugins;
 
 export class ElectionForm {
 
@@ -14,7 +16,7 @@ export class ElectionForm {
   poolData: { region_id: string; division_id: string; council_id: string; pool_id: string; };
   private options: any;
 
-  constructor($this, options = { pool_id: true, command: true, cancel_select: false }) {
+  constructor($this, options = {pool_id: true, command: true, cancel_select: false}) {
     $this.options = options;
     $this.formData = this.formData;
     $this.poolData = this.poolData;
@@ -53,7 +55,7 @@ export class ElectionForm {
   }
 
   async delete() {
-    await Ballots.delete({ poolData: this.poolData, entityName: this['entityName'] });
+    await Ballots.delete({poolData: this.poolData, entityName: this['entityName']});
     this['entity'] = null;
     this['editMode'] = true;
     this.show(__('DELETE_SUCCESS'));
@@ -77,7 +79,7 @@ export class ElectionForm {
     try {
       await Toast.show({text, duration: 'long'});
     } catch (e) {
-      alert(text)
+      await presentAlert({message: text});
     }
   }
 
@@ -112,24 +114,24 @@ export class ElectionForm {
 
       <ion-content class="elections-detail">
         <ion-card class="content-detail">
-          <ion-card-header style={{ backgroundColor: this.formData.color }}>
+          <ion-card-header style={{backgroundColor: this.formData.color}}>
             <ion-item>
               <ion-thumbnail class="logo">
                 <img-video img={this.formData.img} height="20%"/>
               </ion-thumbnail>
               <ion-text color="light" class="page-title"
-                        style={{ 'font-size': '22px', 'margin-left': '17px' }}>{this.formData.section}</ion-text>
+                        style={{'font-size': '22px', 'margin-left': '17px'}}>{this.formData.section}</ion-text>
             </ion-item>
           </ion-card-header>
           <ion-card-content>
             <pooling-station showPool={this.options.pool_id} cancelSelect={this.options.cancel_select}/>
             <hr/>
-            {editMode ? this['editData']() : (entity ? this['displayData']() : '')}
+            {editMode ? (!UserData.loggedIn ? 'You are not Connected' : this['editData']()) : (entity ? this['displayData']() : '')}
           </ion-card-content>
         </ion-card>
       </ion-content>,
 
-      this.options.command ? (editMode || entity ? <ion-footer>
+      !UserData.loggedIn ? '' : (this.options.command ? (editMode || entity ? <ion-footer>
         <ion-toolbar color="light">
           <ion-buttons slot="start">
             <ion-button onClick={button1Click} color="primary">{button1Text}</ion-button>
@@ -138,7 +140,7 @@ export class ElectionForm {
             <ion-button onClick={button2Click} color="dark">{button2Text}</ion-button>
           </ion-buttons>
         </ion-toolbar>
-      </ion-footer> : '') : ''
+      </ion-footer> : '') : '')
     ];
   }
 

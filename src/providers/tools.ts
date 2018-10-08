@@ -13,6 +13,20 @@ export async function presentLoading({message, duration = 0}) {
 
   const loading = await
     loadingController.create({message, translucent: true, duration});
-  loading.present();
+  await loading.present();
   return loading;
+}
+
+
+export async function presentAlert({header = 'Alert', subHeader='', message='', buttons = ['OK']}={}) {
+  let alertController: any = document.querySelector('ion-alert-controller');
+  if (!alertController) {
+    alertController = document.createElement('ion-alert-controller')
+    document.body.appendChild(alertController)
+  }
+  await alertController.componentOnReady();
+
+  const alert = await alertController.create({header, subHeader, message, buttons});
+  await alert.present();
+  return alert;
 }

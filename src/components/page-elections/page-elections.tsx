@@ -2,10 +2,8 @@
 import {Component, State /*Element, Listen, , State */} from '@stencil/core';
 import {ElectionsData} from '../../providers/elections-data';
 import {__} from '../../providers/i18n';
-import {presentLoading} from "../../providers/tools";
-
-
-// import * as firebaseui from 'firebaseui'
+import {presentAlert, presentLoading} from '../../providers/tools';
+import {UserData} from "../../providers/user-data";
 
 
 @Component({
@@ -135,7 +133,7 @@ export class PageElections {
       async 'callback'(response) {
         // reCAPTCHA solved, allow signInWithPhoneNumber.
         console.log(response);
-        this.loading = await presentLoading({message:__('DEMANDE EN COURS')});
+        this.loading = await presentLoading({message: __('DEMANDE EN COURS')});
         // ...
       },
       'expired-callback'() {
@@ -162,8 +160,9 @@ export class PageElections {
     this.confirmationResult.confirm(this.codeEl.value).then(e => {
       console.log(e);
       this.loggedIn = true;
+      UserData.loggedIn = true;
     }).catch(() => {
-      alert('bad code');
+      presentAlert({message: __('BAD_CODE')});
     }).finally(() => {
       this.loading && this.loading.dismiss();
     });

@@ -1,7 +1,7 @@
-import {Component, Listen, Prop, State} from '@stencil/core';
-import {__} from '../../../../providers/i18n';
-import {ElectionForm} from '../election-form';
-import {CameraResultType, CameraSource, Plugins} from "@capacitor/core";
+import { Component, Listen, Prop, State } from '@stencil/core';
+import { __ } from '../../../../providers/i18n';
+import { ElectionForm } from '../election-form';
+import { CameraResultType, CameraSource, Plugins } from '@capacitor/core';
 
 
 @Component({
@@ -182,7 +182,7 @@ export class FormProcesVerbal {
   }
 
   async takePicture() {
-    const {Camera} = Plugins;
+    const { Camera } = Plugins;
 
     const image = await Camera.getPhoto({
       quality: 90,
@@ -197,7 +197,7 @@ export class FormProcesVerbal {
   }
 
 
-  isValid({/*lastName, /!*firstName,*!/ orange, mtn, nextel, camtel, email*/}) {
+  isValid({ /*lastName, /!*firstName,*!/ orange, mtn, nextel, camtel, email*/ }) {
     const error = '';
 
     // if (!_.trim(lastName)) {
@@ -216,10 +216,10 @@ export class FormProcesVerbal {
 
   buildEntity() {
     const [inscrits, votants, votes, nuls, blancs,
-      kamto, akere, matomba, ndifor, cabral, osih, garga, ndam, biya] =
+           kamto, akere, matomba, ndifor, cabral, osih, garga, ndam, biya] =
       [this.inscrits.value, this.votants.value, this.votes.value, this.nuls.value, this.blancs.value,
-        this.kamto.value, this.akere.value, this.matomba.value, this.ndifor.value,
-        this.cabral.value, this.osih.value, this.garga.value, this.ndam.value, this.biya.value
+       this.kamto.value, this.akere.value, this.matomba.value, this.ndifor.value,
+       this.cabral.value, this.osih.value, this.garga.value, this.ndam.value, this.biya.value
       ];
     return {
       inscrits, votants, votes, nuls, blancs,

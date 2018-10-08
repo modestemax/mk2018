@@ -65,11 +65,12 @@
     "VOTES": "Votes Exprimés",
     "NULS": "Votes Nuls",
     "BLANCS": "Votes Blancs",
-    "SELECT_AN_AUTHORISER": "Autorité",
+    "SELECT_AN_AUTHORISER": "Administrateur",
     "ASK_CODE": "Demander un Code",
     "VERIFY": "Verifier",
     "ENTRER_CODE": "Entrer Le Code",
-    "DEMANDE_EN_COURS": "Demande en Cours..."
+    "DEMANDE_EN_COURS": "Demande en Cours...",
+    "BAD_CODE": "Code Incorrect"
   },
   {
     "_id": "en",
@@ -111,10 +112,11 @@
     "SHARE": "Share",
     "SHARE_APP_TEXT": "Really awesome thing you need to see right meow",
     "PRÉSIDENTIELLES_2018": "",
-    "SELECT_AN_AUTHORISER": "Authorizer",
+    "SELECT_AN_AUTHORISER": "Administrator",
     "ASK_CODE": "Ask Code",
     "VERIFY": "Verify",
     "ENTRER_CODE": "Enter Code",
-    "DEMANDE_EN_COURS": "Requesting..."
+    "DEMANDE_EN_COURS": "Requesting...",
+    "BAD_CODE": "Invalid Code"
   }
 ]
