@@ -2,7 +2,7 @@ import {ElectionsData} from '../../../providers/elections-data';
 import {Ballots} from '../../../providers/ballots-data';
 import {__} from '../../../providers/i18n';
 import {Plugins} from '@capacitor/core';
-import {presentAlert} from '../../../providers/tools';
+import {presentAlert, presentLoading} from '../../../providers/tools';
 import {UserData} from "../../../providers/user-data";
 
 const {Toast, /*Share*/} = Plugins;
@@ -15,6 +15,7 @@ export class ElectionForm {
   // @State() entity: any;
   poolData: { region_id: string; division_id: string; council_id: string; pool_id: string; };
   private options: any;
+  private loading: any;
 
   constructor($this, options = {pool_id: true, command: true, cancel_select: false}) {
     $this.options = options;
@@ -64,12 +65,13 @@ export class ElectionForm {
   async save() {
     const entity = this['entity'] = this['buildEntity']();
     if (this['isValid'](entity)) {
-
+      this.loading = await presentLoading({message: "Saving..."})
       await Ballots.save({
         poolData: this['poolData'], // as  { region_id: string; division_id: string; council_id: string; pool_id: string; },
         entity,
         entityName: this['entityName']
       });
+      this.loading.dismiss();
       this['editMode'] = false;
       this['show'](__('SAVE_SUCCESS'));
     }
@@ -79,7 +81,7 @@ export class ElectionForm {
     try {
       await Toast.show({text, duration: 'long'});
     } catch (e) {
-      await presentAlert({message: text});
+      await presentAlert({header: text});
     }
   }
 
