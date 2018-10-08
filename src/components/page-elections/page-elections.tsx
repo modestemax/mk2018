@@ -34,7 +34,7 @@ export class PageElections {
 
   componentDidLoad() {
     ElectionsData.onChange(documents => this.documents = documents);
-    Ballots.adminsDoc().onChange(async () => this.autorisers = await Ballots.loadAdmins())
+    Ballots.adminsDoc().onSnapshot(async () => this.autorisers = await Ballots.loadAdmins())
   }
 
 
@@ -103,9 +103,11 @@ export class PageElections {
     if (this.waittingCode) {
       return (
         <ion-content>
-          <ion-label>{__('ENTRER_CODE')}</ion-label>
-          <ion-input ref={(e: HTMLInputElement) => this.codeEl = e}/>
-          <ion-button onClick={() => this.verifyCode()}>{__('VERIFY')}</ion-button>
+          <ion-item>
+            <ion-label>{__('ENTRER_CODE')}</ion-label>
+            <ion-input ref={(e: HTMLInputElement) => this.codeEl = e}/>
+            <ion-button onClick={() => this.verifyCode()}>{__('VERIFY')}</ion-button>
+          </ion-item>
         </ion-content>
       );
     } else {
@@ -128,34 +130,36 @@ export class PageElections {
 
 
   sendCode() {
-    const firebase = ElectionsData.firebase;
+    if (this.authoriserEl.value) {
+      const me = this;
+      const firebase = ElectionsData.firebase;
+      const recaptchaVerifier = new ElectionsData.firebase.auth.RecaptchaVerifier('firebaseui-auth-container', {
+        'size': 'invisible',
+        async 'callback'(response) {
+          // reCAPTCHA solved, allow signInWithPhoneNumber.
+          console.log(response);
+          me.loading = await presentLoading({message: __('DEMANDE EN COURS')});
+          // ...
+        },
+        'expired-callback'() {
+          // Response expired. Ask user to solve reCAPTCHA again.
+          // ...
+        }
+      });
 
-    const recaptchaVerifier = new ElectionsData.firebase.auth.RecaptchaVerifier('firebaseui-auth-container', {
-      'size': 'invisible',
-      async 'callback'(response) {
-        // reCAPTCHA solved, allow signInWithPhoneNumber.
-        console.log(response);
-        this.loading = await presentLoading({message: __('DEMANDE EN COURS')});
+      firebase.auth().signInWithPhoneNumber(this.authoriserEl.value, recaptchaVerifier)
+        .then((confirmationResult) => {
+          // SMS sent. Prompt user to type the code from the message, then sign the
+          // user in with confirmationResult.confirm(code).
+          this.confirmationResult = confirmationResult;
+          this.waittingCode = true;
+          this.loading && this.loading.dismiss();
+        }).catch((error) => {
+        // Error; SMS not sent
         // ...
-      },
-      'expired-callback'() {
-        // Response expired. Ask user to solve reCAPTCHA again.
-        // ...
-      }
-    });
-
-    firebase.auth().signInWithPhoneNumber(this.authoriserEl.value, recaptchaVerifier)
-      .then((confirmationResult) => {
-        // SMS sent. Prompt user to type the code from the message, then sign the
-        // user in with confirmationResult.confirm(code).
-        this.confirmationResult = confirmationResult;
-
-        this.waittingCode = true;
-      }).catch((error) => {
-      // Error; SMS not sent
-      // ...
-      console.error(error);
-    });
+        console.error(error);
+      });
+    }
   }
 
   verifyCode() {
@@ -165,8 +169,6 @@ export class PageElections {
       setTimeout(() => UserData.loggedIn = this.loggedIn = false, 1e3 * 60 * 60 * 5);//5h
     }).catch(() => {
       presentAlert({message: __('BAD_CODE')});
-    }).finally(() => {
-      this.loading && this.loading.dismiss();
     });
   }
 }
