@@ -1,7 +1,7 @@
-import { Component, Listen, Prop, State } from '@stencil/core';
-import { __ } from '../../../../providers/i18n';
-import { ElectionForm } from '../election-form';
-import { CameraResultType, CameraSource, Plugins } from '@capacitor/core';
+import {Component, Listen, Prop, State} from '@stencil/core';
+import {__} from '../../../../providers/i18n';
+import {ElectionForm} from '../election-form';
+import {CameraResultType, CameraSource, Plugins} from '@capacitor/core';
 
 
 @Component({
@@ -65,45 +65,48 @@ export class FormProcesVerbal {
         </ion-row>
         <hr/>
         <ion-row>
-          <ion-col>Maurice Kamto</ion-col>
+          <ion-col>Biya Paul</ion-col>
+          <ion-col>:{this.entity.biya}</ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>Garga Haman Adji</ion-col>
+          <ion-col>:{this.entity.garga}</ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>Kamto Maurice</ion-col>
           <ion-col>:{this.entity.kamto}</ion-col>
         </ion-row>
         <ion-row>
-          <ion-col>Akere Muna</ion-col>
+          <ion-col>Libii Cabral</ion-col>
+          <ion-col>:{this.entity.cabral}</ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>Matomba Serges Espor</ion-col>
+          <ion-col>:{this.entity.matomba}</ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>Muna Akere</ion-col>
           <ion-col>:{this.entity.akere}</ion-col>
         </ion-row>
         <ion-row>
-          <ion-col>Serges Espor Matomba</ion-col>
-          <ion-col>:{this.entity.matomba}</ion-col>
+          <ion-col>Ndam Njoya Adamou</ion-col>
+          <ion-col>:{this.entity.ndam}</ion-col>
         </ion-row>
         <ion-row>
           <ion-col>Ndifor Frankline</ion-col>
           <ion-col>:{this.entity.ndifor}</ion-col>
         </ion-row>
+
         <ion-row>
-          <ion-col>Cabral Libi Ngue</ion-col>
-          <ion-col>:{this.entity.cabral}</ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col>Joshua Osih</ion-col>
+          <ion-col> Osih Joshua</ion-col>
           <ion-col>:{this.entity.osih}</ion-col>
         </ion-row>
-        <ion-row>
-          <ion-col>Garga Aaman Adji</ion-col>
-          <ion-col>:{this.entity.garga}</ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col>Adamou Ndam Njoya</ion-col>
-          <ion-col>:{this.entity.ndam}</ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col>Paul Biya</ion-col>
-          <ion-col>:{this.entity.biya}</ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col>{__('PROCES_VERBAL')}</ion-col>
-          <ion-col>{__('CLICK_TO_SHOW_PV')}</ion-col>
-        </ion-row>
+
+
+        {/*<ion-row>*/}
+        {/*<ion-col>{__('PROCES_VERBAL')}</ion-col>*/}
+        {/*<ion-col>{__('CLICK_TO_SHOW_PV')}</ion-col>*/}
+        {/*</ion-row>*/}
       </ion-grid>
     );
   }
@@ -135,54 +138,58 @@ export class FormProcesVerbal {
       <hr/>
 
       <ion-item>
-        <ion-label position="floating"> Maurice Kamto</ion-label>
-        <ion-input type="number" value={this.entity.kamto} ref={(el: HTMLInputElement) => this.kamto = el}/>
-      </ion-item>
-      <ion-item>
-        <ion-label position="floating"> Akere Muna</ion-label>
-        <ion-input type="number" value={this.entity.akere} ref={(el: HTMLInputElement) => this.akere = el}/>
-      </ion-item>
-      <ion-item>
-        <ion-label position="floating"> Serges Espor Matomba</ion-label>
-        <ion-input type="number" value={this.entity.matomba} ref={(el: HTMLInputElement) => this.matomba = el}/>
-      </ion-item>
-      <ion-item>
-        <ion-label position="floating"> Ndifor Frankline</ion-label>
-        <ion-input type="number" value={this.entity.ndifor} ref={(el: HTMLInputElement) => this.ndifor = el}/>
-      </ion-item>
-      <ion-item>
-        <ion-label position="floating"> Cabral Libii Li Ngue</ion-label>
-        <ion-input type="number" value={this.entity.cabral} ref={(el: HTMLInputElement) => this.cabral = el}/>
-      </ion-item>
-      <ion-item>
-        <ion-label position="floating"> Joshua Osih</ion-label>
-        <ion-input type="number" value={this.entity.osih} ref={(el: HTMLInputElement) => this.osih = el}/>
+        <ion-label position="floating"> Biya Paul</ion-label>
+        <ion-input type="number" value={this.entity.biya} ref={(el: HTMLInputElement) => this.biya = el}/>
       </ion-item>
       <ion-item>
         <ion-label position="floating"> Garga Haman Adji</ion-label>
         <ion-input type="number" value={this.entity.garga} ref={(el: HTMLInputElement) => this.garga = el}/>
       </ion-item>
       <ion-item>
-        <ion-label position="floating"> Adamou Ndam Njoya</ion-label>
+        <ion-label position="floating"> Kamto Maurice</ion-label>
+        <ion-input type="number" value={this.entity.kamto} ref={(el: HTMLInputElement) => this.kamto = el}/>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating"> Libii Cabral</ion-label>
+        <ion-input type="number" value={this.entity.cabral} ref={(el: HTMLInputElement) => this.cabral = el}/>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating"> Matomba Serges Espor</ion-label>
+        <ion-input type="number" value={this.entity.matomba} ref={(el: HTMLInputElement) => this.matomba = el}/>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating"> Muna Akere</ion-label>
+        <ion-input type="number" value={this.entity.akere} ref={(el: HTMLInputElement) => this.akere = el}/>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating"> Ndam Njoya Adamou</ion-label>
         <ion-input type="number" value={this.entity.ndam} ref={(el: HTMLInputElement) => this.ndam = el}/>
       </ion-item>
-      <ion-item>
-        <ion-label position="floating"> Paul Biya</ion-label>
-        <ion-input type="number" value={this.entity.biya} ref={(el: HTMLInputElement) => this.biya = el}/>
-      </ion-item>
-      <ion-item>
-        <img-video img={this.pvScan}/>
-        <button onClick={this.takePicture.bind(this)} ion-button color="primary"> __('ATTACH_PV')
-          <ion-icon name="camera"></ion-icon>
-        </button>
 
+      <ion-item>
+        <ion-label position="floating"> Ndifor Frankline</ion-label>
+        <ion-input type="number" value={this.entity.ndifor} ref={(el: HTMLInputElement) => this.ndifor = el}/>
       </ion-item>
+
+      <ion-item>
+        <ion-label position="floating"> Osih Joshua</ion-label>
+        <ion-input type="number" value={this.entity.osih} ref={(el: HTMLInputElement) => this.osih = el}/>
+      </ion-item>
+
+
+      {/*<ion-item>*/}
+      {/*<img-video img={this.pvScan}/>*/}
+      {/*<button onClick={this.takePicture.bind(this)} ion-button color="primary"> __('ATTACH_PV')*/}
+      {/*<ion-icon name="camera"></ion-icon>*/}
+      {/*</button>*/}
+
+      {/*</ion-item>*/}
 
     </ion-list>);
   }
 
   async takePicture() {
-    const { Camera } = Plugins;
+    const {Camera} = Plugins;
 
     const image = await Camera.getPhoto({
       quality: 90,
@@ -197,7 +204,7 @@ export class FormProcesVerbal {
   }
 
 
-  isValid({ /*lastName, /!*firstName,*!/ orange, mtn, nextel, camtel, email*/ }) {
+  isValid({/*lastName, /!*firstName,*!/ orange, mtn, nextel, camtel, email*/}) {
     const error = '';
 
     // if (!_.trim(lastName)) {
@@ -216,10 +223,10 @@ export class FormProcesVerbal {
 
   buildEntity() {
     const [inscrits, votants, votes, nuls, blancs,
-           kamto, akere, matomba, ndifor, cabral, osih, garga, ndam, biya] =
+      kamto, akere, matomba, ndifor, cabral, osih, garga, ndam, biya] =
       [this.inscrits.value, this.votants.value, this.votes.value, this.nuls.value, this.blancs.value,
-       this.kamto.value, this.akere.value, this.matomba.value, this.ndifor.value,
-       this.cabral.value, this.osih.value, this.garga.value, this.ndam.value, this.biya.value
+        this.kamto.value, this.akere.value, this.matomba.value, this.ndifor.value,
+        this.cabral.value, this.osih.value, this.garga.value, this.ndam.value, this.biya.value
       ];
     return {
       inscrits, votants, votes, nuls, blancs,
