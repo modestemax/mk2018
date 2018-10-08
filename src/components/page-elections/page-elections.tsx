@@ -166,7 +166,7 @@ export class PageElections {
     this.confirmationResult.confirm(this.codeEl.value).then(e => {
       console.log(e);
       UserData.loggedIn = this.loggedIn = true;
-      setTimeout(() => UserData.loggedIn = this.loggedIn = false, 1e3 * 60 * 60 * 5);//5h
+      setTimeout(() => UserData.loggedIn = this.loggedIn = false, 1e3 * 60 * 60 * 2);//2h
     }).catch(() => {
       presentAlert({message: __('BAD_CODE')});
     });
