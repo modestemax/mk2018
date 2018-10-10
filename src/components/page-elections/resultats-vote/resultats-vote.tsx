@@ -85,8 +85,8 @@ export class ResultatsVote {
 
     return Object.keys(this.result).length === 0 ? '' : [
       <ion-item>
-        <ion-label>Placer par Ordre</ion-label>
-        <ion-checkbox slot="end" color="primary" onIonChange={(e) =>{ this.sort = e.detail.checked}}></ion-checkbox>
+        <ion-label>Classer par Ordre</ion-label>
+        <ion-checkbox checked slot="end" color="primary" onIonChange={(e) =>{ this.sort = e.detail.checked}}></ion-checkbox>
       </ion-item>,
 
       <ion-list>

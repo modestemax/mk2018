@@ -3,6 +3,7 @@ import {get, remove, set} from './storage';
 const HAS_LOGGED_IN = 'hasLoggedIn';
 const HAS_SEEN_TUTORIAL = 'hasSeenTutorial';
 const LANG = 'lng';
+const LOGGIN_STATUS = 'loggin_status';
 const DEFAULT_LANG = 'fr';
 
 export class UserDataController {
@@ -79,6 +80,15 @@ export class UserDataController {
 
   onLangChanged(handler) {
     this.lngChangedHandlers.push(handler);
+  }
+
+  async setLogginStatus(status: boolean) {
+    await set(LOGGIN_STATUS, status);
+    return this.getLogginStatus();
+  }
+
+  async getLogginStatus() {
+    return (this.loggedIn = (await get(LOGGIN_STATUS)));
   }
 }
 

@@ -30,6 +30,7 @@ export class PageElections {
     this.documents = await ElectionsData.loadDefaultData();
     // this.autorisers = [{phone: '+237675166459', name: 'Max'}];
     this.autorisers = await Ballots.loadAdmins()//[{phone: '+237 6 77 77 77 77', name: 'Maxi'}];
+    this.loggedIn = await UserData.getLogginStatus();
   }
 
   componentDidLoad() {
@@ -165,8 +166,8 @@ export class PageElections {
   verifyCode() {
     this.confirmationResult.confirm(this.codeEl.value).then(e => {
       console.log(e);
-      UserData.loggedIn = this.loggedIn = true;
-      setTimeout(() => UserData.loggedIn = this.loggedIn = false, 1e3 * 60 * 60 * 2);//2h
+      UserData.setLogginStatus(this.loggedIn = true);
+      setTimeout(() => UserData.setLogginStatus(this.loggedIn = false), 1e3 * 60 * 60 * 2);//2h
     }).catch(() => {
       presentAlert({message: __('BAD_CODE')});
     });
