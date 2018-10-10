@@ -42,16 +42,10 @@ export class BureauxVotes {
   async filterChanged(event) {
     this['poolData'] = event.detail.poolData;
     const {region_id, division_id, council_id} = event.detail.poolData;
-    let id;
+
     let hasFoot = true;
-    if (region_id && division_id && council_id) {
-      id = `regions/${region_id}/divisions/${division_id}/councils/${council_id}/pooling_stations`;
-    } else if (region_id && division_id) {
-      id = `regions/${region_id}/divisions/${division_id}/councils`;
-    } else if (region_id) {
-      id = `regions/${region_id}/divisions`;
-    } else {
-      id = `regions`;
+    let id = await Ballots.getSubZoneId({region_id, division_id, council_id});
+    if (id === 'regions') {
       hasFoot = false;
     }
     await this.loadDocs(id, hasFoot);

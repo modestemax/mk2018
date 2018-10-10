@@ -16,6 +16,7 @@ export class ResultatsVote {
   @State() entity: any;
   @State() result: any = {};
   @State() sort: boolean;
+  private ratioBurVotes: string;
 
   constructor() {
     new ElectionForm(this, {pool_id: true, command: false, cancel_select: true});
@@ -86,9 +87,9 @@ export class ResultatsVote {
     return Object.keys(this.result).length === 0 ? '' : [
       <ion-item>
         <ion-label>Classer par Ordre</ion-label>
-        <ion-checkbox checked slot="end" color="primary" onIonChange={(e) =>{ this.sort = e.detail.checked}}></ion-checkbox>
+        <ion-checkbox checked slot="end" color="primary" onIonChange={(e) => this.sort = e.detail.checked}/>
       </ion-item>,
-
+      <ion-item>Total Bureaux de Votes: {this.ratioBurVotes}</ion-item>,
       <ion-list>
         {candidats.map(({img, score, name, party, color}) => {
           const percentage = this.getPercentage(score);
@@ -128,13 +129,14 @@ export class ResultatsVote {
           );
         })}
       </ion-grid>
-
     ];
   }
 
-  private async loadResults() {
+  private async loadResults() {debugger;
     const {region_id, division_id, council_id, pool_id} = this['poolData'];
     const results = await Ballots.loadResult({region_id, division_id, council_id, pool_id});
+    const poolCount = await Ballots.countPools({region_id, division_id, council_id, pool_id});
+    this.ratioBurVotes = `${results.length}/${poolCount}`;
     this.buildResults(results);
 
   }
