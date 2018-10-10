@@ -15,7 +15,7 @@ export class ResultatsVote {
   @State() editMode: boolean;
   @State() entity: any;
   @State() result: any = {};
-  @State() sort: boolean;
+  @State() sort: boolean = true;
   private ratioBurVotes: string;
 
   constructor() {
@@ -64,14 +64,14 @@ export class ResultatsVote {
     const {kamto, akere, matomba, cabral, biya, ndam, ndifor, osih, garga, inscrits, votants, votes, blancs, nuls,} = this.result;
     let candidats = [
       {img: 'kamto.png', score: kamto, name: 'Maurice Kamto', party: 'MRC', color: 'red'},
-      {img: 'akere.png', score: akere, name: 'Akere Muna', party: 'XXX', color: 'blue'},
+      {img: 'akere.png', score: akere, name: 'Akere Muna', party: 'FPD', color: 'blue'},
       {img: 'matomba.png', score: matomba, name: 'Serge Espoir Matomba', party: 'PURS', color: 'blue'},
       {img: 'cabral.png', score: cabral, name: 'Cabral Libii Li Ngue', party: 'UNIVERS', color: 'blue'},
       {img: 'biya.png', score: biya, name: 'Paul Biya', party: 'RDPC', color: 'blue'},
       {img: 'ndam.png', score: ndam, name: 'Adamou Ndam Njoya', party: 'UDC', color: 'blue'},
-      {img: 'ndifor.png', score: ndifor, name: 'Franklin Ndifor', party: 'XXX', color: 'blue'},
+      {img: 'ndifor.png', score: ndifor, name: 'Franklin Ndifor', party: 'NCMC', color: 'blue'},
       {img: 'osih.png', score: osih, name: 'Joshua Osih', party: 'SDF', color: 'blue'},
-      {img: 'garga.png', score: garga, name: 'Garga Haman Adji', party: 'XXX', color: 'blue'},
+      {img: 'garga.png', score: garga, name: 'Garga Haman Adji', party: 'ADD', color: 'blue'},
     ];
     if (this.sort) {
       candidats = _.orderBy(candidats, 'score', 'desc');
@@ -87,7 +87,7 @@ export class ResultatsVote {
     return Object.keys(this.result).length === 0 ? '' : [
       <ion-item>
         <ion-label>Classer par Ordre</ion-label>
-        <ion-checkbox checked slot="end" color="primary" onIonChange={(e) => this.sort = e.detail.checked}/>
+        <ion-checkbox checked={this.sort} slot="end" color="primary" onIonChange={(e) => this.sort = e.detail.checked}/>
       </ion-item>,
       <ion-item>Total Bureaux de Votes: {this.ratioBurVotes}</ion-item>,
       <ion-list>
@@ -132,7 +132,8 @@ export class ResultatsVote {
     ];
   }
 
-  private async loadResults() {debugger;
+  private async loadResults() {
+    debugger;
     const {region_id, division_id, council_id, pool_id} = this['poolData'];
     const results = await Ballots.loadResult({region_id, division_id, council_id, pool_id});
     const poolCount = await Ballots.countPools({region_id, division_id, council_id, pool_id});
