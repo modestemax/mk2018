@@ -1,0 +1,911 @@
+COUNCIL_NAME,POLLING_STATION,inscrits,votants,votes,nuls,blancs,biya,garga,kamto,cabral,matomba,akere,ndam,ndifor,osih
+Ngaoundal,,,,,,,,,,,,,,,
+Ngaoundal,Centre Dinstruction Cpefan A,,,,,,,,,,,,,,
+Yaounde I,,,,,,,,,,,,,,,
+Yaounde I,Aspca Cabinet De Soins Ekombitie A,97,70,70,00,00,55,00,13,07,00,00,00,01,02
+Yaounde I,C S Iplex B,395,188,186,2,0,101,1,53,17,1,1,5,1,6
+Yaounde I,C S Iplex C,,,,,,74,01,49,17,00,02,03,03,06
+Yaounde I,C S Iplex E,334,145,144,0,1,73,1,56,11,0,0,1,1,1
+Yaounde I,C S Iplex F,344,131,131,0,0,76,1,26,18,1,1,4,2,2
+Yaounde I,C S Iplex G,352,127,126,1,0,51,0,54,10,0,0,1,1,9
+Yaounde I,C S Iplex H,348,137,142,1,0,69,1,39,21,0,1,6,0,5
+Yaounde I,C S Iplex I,344,313,311,0,2,205,0,62,30,1,1,3,0,9
+Yaounde I,C S Iplex J,348,191,191,0,0,78,2,69,30,0,1,5,1,5
+Yaounde I,Cabinet St Raphael A,420,231,227,01,03,172,00,29,19,02,00,00,00,05
+Yaounde I,Cabinet St Raphael B,406,171,171,0,0,123,0,32,12,1,0,0,1,2
+Yaounde I,Cabinet St Raphael C,40,18,20,0,0,14,0,2,4,0,0,0,0,0
+Yaounde I,Centre De Sante Bonne Volonte A,135,96,100,01,00,78,00,22,09,00,00,00,00,00
+Yaounde I,Centre De Sante Zogo Abena A,275,170,167,3,0,116,4,23,20,2,0,1,0,1
+Yaounde I,Cetic Charles Atangana A,307,133,132,0,1,80,1,18,27,0,0,0,0,6
+Yaounde I,Cetic Charles Atangana B,302,127,125,2,1,69,2,27,18,0,0,2,0,6
+Yaounde I,Cetic Charles Atangana C,332,142,142,00,00,85,01,26,18,00,00,00,01,11
+Yaounde I,Cetic Charles Atangana D,317,148,146,02,,85,02,24,19,01,00,00,02,13
+Yaounde I,Cetic Communal A,265,128,128,00,00,86,00,21,13,02,01,00,00,05
+Yaounde I,Chambre Dagriculture A,420,209,207,2,0,122,0,44,35,3,0,1,0,2
+Yaounde I,Club Camtel A,326,141,140,0,1,109,2,20,8,0,0,0,0,1
+Yaounde I,Club Camtel D,336,131,131,01,00,88,01,23,14,00,00,00,00,04
+Yaounde I,Club Camtel E,335,114,114,0,0,66,1,27,15,1,0,1,0,3
+Yaounde I,Club Camtel G,318,97,95,0,2,47,2,22,19,0,0,0,1,4
+Yaounde I,Club Camtel H,306,152,151,1,0,89,1,31,25,2,0,0,1,2
+Yaounde I,Club Camtel I,308,123,122,1,,66,01,31,16,01,00,00,01,06
+Yaounde I,College Adventiste A,331,178,178,00,,111,03,44,17,00,01,00,01,01
+Yaounde I,College Adventiste C,333,133,140,02,00,84,01,32,15,01,02,00,03,00
+Yaounde I,College Adventiste E,282,122,119,03,,67,03,21,20,03,01,00,01,03
+Yaounde I,College Blaise Pascal A,367,162,162,00,00,101,01,32,15,01,00,01,02,08
+Yaounde I,College Blaise Pascal B,188,86,86,00,00,57,00,18,07,01,01,00,00,02
+Yaounde I,College Matamfem A,339,133,132,01,,78,03,22,24,00,00,01,00,04
+Yaounde I,College Matamfem C,302,102,102,00,00,53,01,27,19,00,00,00,00,02
+Yaounde I,College Mvom Nnam A,361,240,239,1,0,196,0,30,12,0,0,0,0,1
+Yaounde I,College Prive Enfant Dafrique A,347,197,195,2,0,130,0,39,21,0,1,0,1,3
+Yaounde I,College Prive Enfant Dafrique B,342,173,173,0,0,107,0,51,9,0,0,0,1,5
+Yaounde I,College Prive Enfant Dafrique C,330,195,192,3,0,118,0,43,25,0,1,2,1,2
+Yaounde I,Commissariat Central A,211,108,108,0,0,84,0,12,9,2,0,0,0,1
+Yaounde I,Commissariat Central B,219,107,107,0,0,79,0,15,10,0,0,0,0,3
+Yaounde I,Commissariat Special Chemin De Fer A,176,72,70,00,00,42,01,10,14,00,00,01,00,02
+Yaounde I,Complexe Scol Les Fleurettes A,400,179,177,02,,111,01,33,22,01,00,00,01,08
+Yaounde I,Complexe Scol Les Fleurettes B,403,181,180,01,,111,03,35,24,00,00,00,03,04
+Yaounde I,Complexe Scolaire La Gaiete B,331,122,118,04,00,64,02,27,19,01,00,00,02,03
+Yaounde I,Complexe Scolaire La Gaiete C,356,152,150,1,1,86,3,40,9,1,0,3,3,5
+Yaounde I,Complexe Scolaire La Gaiete D,350,139,136,03,00,68,05,30,21,01,02,00,01,08
+Yaounde I,Complexe Scolaire Ornel A,379,178,176,02,00,86,01,56,21,0,0,0,0,12
+Yaounde I,Complexe Scolaire Ornel B,365,176,176,00,00,62,05,77,15,01,00,00,04,12
+Yaounde I,Complexe Scolaire Ornel C,383,188,188,01,00,80,10,60,26,00,00,03,01,07
+Yaounde I,Complexe Scolaire Pi Ju A,345,196,194,0,1,105,16,43,24,0,0,1,1,4
+Yaounde I,Complexe Scolaire Pi Ju D,336,165,162,02,01,70,03,69,11,01,00,01,00,07
+Yaounde I,Complexe Scolaire Pi Ju E,308,161,160,00,01,93,07,38,14,00,00,01,01,06
+Yaounde I,Complexe Scolaire Pi Ju F,365,135,135,5,0,55,01,39,27,02,00,00,01,05
+Yaounde I,Cplexe Scol Mariane Paul A,392,198,197,01,00,126,01,44,15,01,01,00,00,09
+Yaounde I,Cplexe Scol Mariane Paul B,70,33,33,00,00,20,00,06,03,00,00,00,00,04
+Yaounde I,Dgsn A,344,212,211,00,01,172,00,13,21,03,00,00,01,01
+Yaounde I,Dgsn B,349,212,206,1,5,156,1,23,20,1,0,0,0,5
+Yaounde I,Dgsn D,317,190,190,00,,132,00,38,17,00,00,00,01,02
+Yaounde I,Dgsn F,369,155,155,00,00,120,01,11,20,00,00,00,00,03
+Yaounde I,Dgsn G,135,68,67,0,1,50,0,9,5,0,0,1,0,2
+Yaounde I,Dispensaire Beau Cesar A,378,226,222,3,1,143,3,44,18,3,2,1,1,7
+Yaounde I,Dispensaire Beau Cesar B,371,183,183,0,0,115,1,43,13,1,0,2,1,7
+Yaounde I,Dispensaire Beau Cesar C,268,205,205,0,0,106,0,68,17,1,0,1,0,7
+Yaounde I,Dispensaire Beau Cesar D,363,213,213,0,0,143,2,40,19,2,0,3,1,3
+Yaounde I,Dispensaire Beau Cesar E,346,173,173,00,00,78,00,72,11,03,02,03,00,04
+Yaounde I,Dispensaire Beau Cesar F,380,147,147,02,00,95,01,29,11,02,00,04,00,03
+Yaounde I,Dispensaire Beau Cesar G,379,185,185,00,00,101,03,46,19,02,00,04,01,09
+Yaounde I,E Francophone De Bastos A,394,142,140,0,2,93,1,29,10,2,0,0,0,5
+Yaounde I,E Francophone De Bastos D,338,175,173,2,0,100,3,32,27,1,0,0,3,7
+Yaounde I,E M Bilingue Les Libellules B,323,144,143,00,01,99,00,24,16,00,00,00,02,02
+Yaounde I,E M Bilingue Les Libellules C,168,90,90,00,00,58,00,19,11,00,00,00,00,02
+Yaounde I,E M P Bilingue De Bastos A,397,191,189,2,0,106,2,39,31,0,0,1,1,9
+Yaounde I,E M P Bilingue De Bastos B,384,153,152,1,0,74,4,43,21,0,1,0,1,8
+Yaounde I,E M P Bilingue De Bastos C,389,172,171,0,0,92,1,41,29,2,0,0,1,5
+Yaounde I,E M Privee La Pepiniere A,357,174,174,0,0,119,2,24,22,1,0,0,2,4
+Yaounde I,E M Privee La Pepiniere F,332,140,139,1,0,82,2,19,30,2,0,1,0,3
+Yaounde I,E M Privee Le Classique A,377,218,214,4,0,123,4,54,15,0,0,4,2,12
+Yaounde I,E M Privee Le Classique B,393,149,149,0,0,80,2,34,22,0,0,0,1,10
+Yaounde I,E M Privee Le Classique C,395,195,193,02,,124,00,52,13,00,00,00,01,03
+Yaounde I,E M Privee Le Classique D,364,202,199,2,1,134,2,50,14,1,0,2,2,4
+Yaounde I,E Mat Publique Nkolndom Ii A,365,264,264,0,0,229,1,20,13,1,0,0,0,0
+Yaounde I,E P Bilingue De Njoanassi A,416,223,221,2,0,160,1,32,17,1,0,1,1,8
+Yaounde I,E P De Mballa Ii A,370,169,165,00,04,118,01,22,15,00,00,01,02,06
+Yaounde I,E P De Mballa Ii B,399,129,128,0,1,75,0,35,6,1,0,2,1,8
+Yaounde I,E P De Mballa Ii C,370,189,188,1,0,112,2,44,18,1,0,0,4,7
+Yaounde I,E P De Mballa Ii D,460,241,237,5,0,124,5,50,29,1,0,2,4,22
+Yaounde I,E P De Mballa Vii A,371,192,191,1,1,137,2,27,21,0,0,1,1,2
+Yaounde I,E P De Mballa Vii B,356,323,321,2,0,274,2,27,14,0,0,1,1,2
+Yaounde I,E P De Mballa Vii C,344,129,128,1,0,100,0,11,11,0,0,1,0,5
+Yaounde I,E P De Mballa Vii D,355,173,173,0,0,123,4,32,12,1,0,0,0,1
+Yaounde I,E P De Mballa Vii E,168,73,73,3,1,46,1,12,10,0,0,0,0,1
+Yaounde I,E P Detoa Meki C,325,163,163,03,00,100,02,27,27,00,01,03,00,02
+Yaounde I,E P Detoa Meki D,321,188,188,00,00,127,03,29,19,01,01,03,00,05
+Yaounde I,E P Maternelle Privee Le Flambeau A,329,138,135,3,0,67,0,53,11,1,1,0,1,1
+Yaounde I,E P Mballa Iv A,375,257,256,1,0,160,3,66,16,0,0,1,1,9
+Yaounde I,E P Mballa Iv B,379,212,211,1,0,104,1,78,18,0,1,0,1,8
+Yaounde I,E P Mballa Iv C,353,169,168,01,,88,04,62,10,00,00,00,00,04
+Yaounde I,E P Mballa Iv D,353,127,125,01,01,83,00,28,10,00,01,00,02,01
+Yaounde I,E P Mballa Iv E,377,239,238,1,0,158,2,60,11,1,0,0,2,4
+Yaounde I,E P Mballa Iv F,306,158,155,3,0,106,0,27,13,1,0,1,1,6
+Yaounde I,E P Mballa Iv G,363,268,264,04,,187,00,57,09,00,01,04,01,06
+Yaounde I,E P Mballa Iv H,370,218,218,0,0,101,2,70,28,1,0,2,2,12
+Yaounde I,E P Mballa Iv I,368,193,195,1,1,85,0,67,25,2,0,3,2,11
+Yaounde I,E P Mfandena I A,329,161,159,0,2,100,5,33,9,1,0,3,1,7
+Yaounde I,E P Mfandena I B,339,149,147,2,0,84,0,30,18,1,1,3,1,8
+Yaounde I,E P Mfandena I C,364,179,179,0,0,110,0,47,16,1,0,0,0,5
+Yaounde I,E P Mfandena I D,205,74,73,1,0,43,1,12,10,0,0,5,0,2
+Yaounde I,E P Nyom Ii A,350,212,212,0,0,159,0,34,15,0,0,0,0,4
+Yaounde I,E P Nyom Ii B,320,178,176,1,1,132,0,30,10,0,0,1,0,3
+Yaounde I,E P Nyom Ii C,316,212,212,0,0,144,1,37,22,1,0,2,1,4
+Yaounde I,E P P Catholique St Aloys A,373,209,209,00,01,135,01,52,16,00,00,01,00,02
+Yaounde I,E P P Catholique St Aloys B,388,167,165,02,,101,01,46,15,00,00,00,01,01
+Yaounde I,E P P Catholique St Aloys C,379,179,179,00,00,121,00,32,18,01,00,02,01,01
+Yaounde I,E P P Catholique St Aloys D,388,180,179,01,00,108,01,44,16,01,00,00,01,08
+Yaounde I,E P P Catholique St Aloys E,353,168,167,01,,98,01,41,20,00,00,00,02,05
+Yaounde I,E P P Catholique St Aloys F,392,171,170,01,,106,01,37,20,02,00,00,00,04
+Yaounde I,E P Tsinga Village A,321,200,200,0,0,154,2,31,8,0,2,0,0,3
+Yaounde I,E P Tsinga Village B,173,106,104,2,1,60,4,26,9,0,0,0,2,3
+Yaounde I,E Pr Cnps A,326,188,187,01,00,60,00,101,20,01,00,02,01,02
+Yaounde I,E Pr Cnps B,318,166,164,02,00,47,00,103,13,00,00,00,00,03
+Yaounde I,E Pr Cnps C,264,175,174,01,00,70,00,92,05,00,01,00,02,04
+Yaounde I,Ecole Bilingue De Bastos A,378,239,234,00,05,174,02,39,09,02,00,01,02,05
+Yaounde I,Ecole Bilingue De Bastos B,345,210,208,0,2,141,3,44,13,1,0,2,1,3
+Yaounde I,Ecole Bilingue The Champions A,389,210,208,0,2,131,0,39,10,0,0,0,6,22
+Yaounde I,Ecole Bilingue The Champions B,403,189,187,1,1,120,0,38,14,1,0,1,0,13
+Yaounde I,Ecole Bilingue The Champions C,362,183,183,0,0,109,0,43,15,2,0,0,4,10
+Yaounde I,Ecole Bilingue The Champions D,350,160,166,0,0,91,1,38,18,1,1,0,3,13
+Yaounde I,Ecole Bilingue The Champions E,392,177,175,02,,98,00,50,14,01,00,00,01,11
+Yaounde I,Ecole Bilingue The Champions F,370,166,165,3,2,87,0,53,21,0,2,0,1,1
+Yaounde I,Ecole Bilingue The Champions G,385,158,157,01,00,70,02,51,21,00,01,00,03,09
+Yaounde I,Ecole Franco Anglaise The Winners A,90,65,65,00,,59,00,02,02,00,00,00,01,01
+Yaounde I,Ecole Mat Parc Repiquet A,384,162,162,0,0,77,1,61,13,0,0,1,0,7
+Yaounde I,Ecole Mat Parc Repiquet B,387,155,154,1,0,62,3,68,14,1,1,0,0,5
+Yaounde I,Ecole Publique Dolembe Ii B,410,216,216,0,2,88,3,104,10,0,1,4,1,3
+Yaounde I,Ecole Publique Dolembe Ii C,416,198,198,00,00,73,00,106,10,00,00,02,00,07
+Yaounde I,Ecole Publique Dolembe Ii D,402,200,198,02,,78,01,97,09,01,01,04,00,07
+Yaounde I,Ecole Publique Dolembe Ii E,408,216,215,1,0,75,0,101,25,1,1,3,0,9
+Yaounde I,Ecole Publique Dolembe Ii G,442,234,233,1,0,105,3,92,15,0,0,9,0,9
+Yaounde I,Elig Edzoa Chapelle A,354,182,187,1,0,102,3,46,24,1,0,5,0,6
+Yaounde I,Elig Edzoa Chapelle B,377,150,150,0,0,96,4,30,15,0,0,0,1,4
+Yaounde I,Elig Edzoa Chapelle C,380,152,156,01,00,89,02,32,21,01,00,03,01,07
+Yaounde I,Elig Edzoa Chapelle D,311,138,138,01,00,78,00,26,27,00,00,03,01,02
+Yaounde I,Elite School A,407,214,211,1,2,115,0,66,16,2,0,1,0,11
+Yaounde I,Elite School B,162,165,112,0,0,58,0,32,18,1,0,1,0,0
+Yaounde I,Ep Privee Mvogo Mbida A,205,205,204,0,1,167,0,23,11,1,0,0,1,1
+Yaounde I,Ep Privee Mvogo Mbida B,300,184,184,0,0,110,0,40,15,1,0,0,0,18
+Yaounde I,Eta Major Armee De Terre A,317,191,191,1,0,150,1,19,17,0,0,0,1,2
+Yaounde I,Etat Major Marine Nationale A,298,166,163,1,2,144,0,5,10,1,00,0,1,2
+Yaounde I,Etat Major Marine Nationale B,154,127,127,0,0,117,2,4,2,0,0,0,2,0
+Yaounde I,Etat Major Prc A,386,272,272,01,00,263,00,01,07,00,00,00,00,00
+Yaounde I,Etat Major Prc B,372,238,238,03,00,228,00,03,04,00,00,00,00,00
+Yaounde I,Etat Major Sapeurs Pompiers A,314,175,171,2,2,132,0,12,20,0,0,0,1,6
+Yaounde I,Etoudi Marche A,430,215,214,01,00,141,00,61,01,01,01,04,01,04
+Yaounde I,Etoudi Marche B,389,161,161,01,00,99,01,48,,07,00,00,01,04
+Yaounde I,Etoudi Marche C,357,184,172,11,,113,00,44,05,01,01,05,03,00
+Yaounde I,Etoudi Marche D,367,153,152,1,0,104,4,28,6,1,0,4,2,3
+Yaounde I,Etoudi Mosquee B,402,146,146,03,03,83,19,11,26,00,00,01,01,03
+Yaounde I,Etoudi Mosquee C,420,206,206,00,,118,25,22,30,01,01,02,00,05
+Yaounde I,Fondation Deo Gracia A,393,233,232,01,00,155,01,44,24,02,00,01,00,05
+Yaounde I,Fondation Deo Gracia B,372,195,194,1,0,119,1,57,14,0,0,1,1,1
+Yaounde I,Fondation Deo Gracia C,343,177,185,5,5,112,8,42,13,0,0,0,3,2
+Yaounde I,Fondation Main Douce A,470,259,259,02,00,157,00,62,30,00,00,00,00,08
+Yaounde I,Fondation Tsoungui A,378,174,173,1,0,106,2,44,17,1,0,1,1,1
+Yaounde I,Fondation Tsoungui C,363,166,166,04,00,86,01,61,12,00,0,01,01,04
+Yaounde I,Fondation Tsoungui D,362,205,208,00,02,136,01,52,21,00,00,00,01,04
+Yaounde I,Fondation Tsoungui E,366,219,219,02,00,122,02,75,12,02,01,01,00,02
+Yaounde I,Fondation Tsoungui F,368,174,174,02,02,86,04,50,20,02,00,01,01,08
+Yaounde I,Fondation Tsoungui G,392,187,184,3,0,74,1,70,25,1,0,2,2,9
+Yaounde I,Fondation Tsoungui H,361,195,,03,01,82,02,73,23,02,00,03,02,05
+Yaounde I,G S B Abomo Ewondo A,390,203,201,02,,129,01,47,17,00,00,00,01,05
+Yaounde I,G S B Abomo Ewondo C,386,165,164,1,0,102,2,31,17,0,1,1,1,9
+Yaounde I,G S B Pierres Precieuses A,337,154,151,03,00,89,07,32,18,00,00,00,01,04
+Yaounde I,G S B Pierres Precieuses B,355,163,162,01,00,90,05,40,13,01,01,03,02,07
+Yaounde I,G S B Pierres Precieuses C,325,189,189,00,00,70,05,43,14,01,00,00,01,15
+Yaounde I,G S B Pierres Precieuses E,344,221,219,03,01,116,17,50,22,04,00,01,02,05
+Yaounde I,G Scolaire Bilingue La Grace A,379,178,176,2,0,110,0,46,11,0,0,0,0,7
+Yaounde I,G Scolaire Bilingue La Grace B,369,154,150,1,3,93,1,35,15,1,0,0,1,4
+Yaounde I,G Scolaire Bilingue La Grace C,378,188,187,1,0,86,0,81,13,0,0,2,0,5
+Yaounde I,G Scolaire Bilingue La Grace D,397,205,205,04,00,93,00,58,35,01,00,00,05,09
+Yaounde I,Gpe Sco Bilingue Sinai A,109,112,112,00,00,106,00,03,02,00,00,00,01,00
+Yaounde I,Groupe Scolaire Bilik City A,375,219,219,0,0,128,2,67,14,1,0,1,3,3
+Yaounde I,Groupe Scolaire Bilik City B,325,187,185,1,0,96,0,64,19,0,0,0,1,5
+Yaounde I,Groupe Scolaire Bilingue Ange A,346,172,172,0,0,129,0,25,12,1,0,,1,3
+Yaounde I,Groupe Scolaire Bilingue Ange B,292,131,131,00,00,100,01,14,13,00,00,00,01,02
+Yaounde I,Groupe Scolaire Bilingue Les A,356,205,203,02,,120,00,58,15,01,01,01,01,06
+Yaounde I,Groupe Scolaire La Marfee A,372,258,258,00,00,194,02,34,12,01,00,00,02,16
+Yaounde I,Groupe Scolaire La Marfee B,,,,,,178,00,40,11,00,00,00,03,10
+Yaounde I,Groupe Scolaire La Marfee C,339,168,168,00,01,117,01,20,19,00,00,02,01,07
+Yaounde I,Groupe Scolaire La Marfee D,370,134,133,1,0,77,0,37,9,0,1,1,0,8
+Yaounde I,Groupe Scolaire La Marfee E,355,151,151,0,0,71,2,45,17,0,0,0,6,10
+Yaounde I,Groupe Scolaire Le Nil A,348,205,205,0,,109,0,81,12,0,0,0,1,2
+Yaounde I,Groupe Scolaire Le Nil B,369,195,193,2,2,77,0,88,25,0,0,0,2,1
+Yaounde I,Groupe Scolaire Le Nil C,264,144,144,01,00,59,01,57,20,02,01,02,00,01
+Yaounde I,Hopital De District Olembe A,397,244,243,1,0,174,2,45,15,1,0,2,0,4
+Yaounde I,Hopital De District Olembe C,368,178,171,07,00,108,00,45,12,00,00,01,02,03
+Yaounde I,Hopital De District Olembe D,379,164,164,0,0,86,0,57,16,1,0,1,0,3
+Yaounde I,Hopital De District Olembe E,356,191,191,00,,108,01,48,20,01,01,05,01,06
+Yaounde I,Institut Bilingue Demana A,393,192,193,01,,88,02,77,12,02,00,00,00,12
+Yaounde I,Institut Bilingue Demana B,374,178,183,0,0,85,0,78,12,1,1,0,0,6
+Yaounde I,Institut Bilingue Demana C,392,172,172,00,00,67,02,86,14,02,00,00,00,01
+Yaounde I,Institut Bilingue Demana D,395,182,181,1,0,89,2,63,22,1,0,0,1,3
+Yaounde I,Institut Bilingue Demana E,394,182,182,0,0,56,0,106,10,2,0,0,1,7
+Yaounde I,Institut Bilingue Demana F,386,207,206,01,,75,00,99,19,01,00,00,02,10
+Yaounde I,Institut Moderne Mbassi A,371,254,251,3,0,148,0,70,21,2,1,1,2,6
+Yaounde I,Institut Moderne Mbassi B,363,181,181,0,0,104,0,51,21,0,0,1,0,4
+Yaounde I,Institut Moderne Mbassi C,320,179,177,2,0,128,0,33,13,1,0,0,0,2
+Yaounde I,Institut Moderne Mbassi D,377,248,245,00,,117,00,106,19,00,02,01,00,03
+Yaounde I,Institut Moderne Mbassi E,313,142,141,1,0,75,0,42,21,0,0,0,0,3
+Yaounde I,Institut Moderne Mbassi F,292,196,194,0,2,122,1,41,21,1,1,0,1,6
+Yaounde I,Institut Sup Tech Medicale A,393,212,210,2,0,139,1,58,10,1,0,0,0,1
+Yaounde I,Ipar A,344,172,172,02,00,117,00,31,15,00,00,01,00,06
+Yaounde I,Ipar B,331,152,151,00,01,77,01,48,20,01,00,00,00,04
+Yaounde I,Lycee De Nkol Eton A,366,174,173,1,0,119,2,31,12,1,0,0,1,7
+Yaounde I,Lycee De Nkol Eton B,356,126,126,00,00,72,05,28,18,01,01,00,01,02
+Yaounde I,Lycee De Nkol Eton C,337,130,128,1,1,89,1,17,17,0,0,1,0,3
+Yaounde I,Lycee De Nkol Eton E,256,102,102,00,,61,02,20,12,00,00,01,01,05
+Yaounde I,Lycee Delig Essono B,340,166,171,02,02,116,01,29,15,00,01,00,01,04
+Yaounde I,Lycee Delig Essono C,327,157,154,3,0,103,2,30,13,1,1,1,0,3
+Yaounde I,Lycee Delig Essono D,236,102,102,0,0,73,0,8,16,3,0,0,0,2
+Yaounde I,Lycee Demana A,415,224,224,0,0,120,1,71,28,0,0,0,0,4
+Yaounde I,Lycee Mballa Ii A,364,195,195,00,00,107,00,49,26,01,00,00,03,09
+Yaounde I,Lycee Mballa Ii B,347,151,149,2,1,95,2,30,17,0,0,0,1,4
+Yaounde I,Lycee Mballa Ii C,350,144,144,01,00,87,01,30,18,01,00,00,02,02
+Yaounde I,Lycee Mballa Ii D,337,158,156,2,0,91,0,35,16,1,0,2,0,11
+Yaounde I,Lycee Mballa Ii E,360,133,133,00,00,72,02,33,15,00,01,00,02,08
+Yaounde I,Lycee Mballa Ii F,339,118,118,0,0,71,2,25,17,0,0,0,0,3
+Yaounde I,Lycee Mballa Ii G,348,157,156,0,1,96,0,29,20,1,0,0,0,10
+Yaounde I,Marche Elig Edzoa A,398,204,202,1,1,134,4,41,14,1,0,2,2,4
+Yaounde I,Marche Elig Edzoa B,422,160,158,2,0,79,0,55,14,0,0,2,0,8
+Yaounde I,Marche Elig Edzoa C,405,160,155,3,2,84,5,45,11,2,0,3,1,4
+Yaounde I,Marche Elig Edzoa D,120,62,60,02,00,29,02,21,05,00,00,00,00,03
+Yaounde I,Marche Mfoundi B,352,100,100,00,00,62,02,20,12,01,00,01,02,02
+Yaounde I,Place St Paul Debendi A,410,315,313,02,00,211,06,72,14,00,00,01,02,07
+Yaounde I,Place St Paul Debendi B,331,184,180,4,0,100,4,51,18,1,0,2,0,4
+Yaounde I,Poste Agricole De Nkolndom I A,415,260,259,1,1,222,0,13,18,2,0,1,0,3
+Yaounde Ii,,,,,,,,,,,,,,,
+Yaounde Ii,College De La Grace A,386,189,186,3,0,122,2,43,13,0,0,1,0,5
+Yaounde Ii,College De La Grace B,162,162,162,0,0,83,02,50,16,02,01,03,01,04
+Yaounde Ii,E Bilg Newton A,476,231,229,02,0,123,16,50,25,05,01,01,03,05
+Yaounde Ii,E Mat Christ Roi Tsinga A,348,210,209,01,0,128,03,48,14,2,01,01,0,12
+Yaounde Ii,E Mat Christ Roi Tsinga B,388,94,94,0,0,47,5,29,8,0,0,1,1,3
+Yaounde Ii,E Mat Christ Roi Tsinga D,366,165,162,0,03,88,01,44,26,01,0,02,0,0
+Yaounde Ii,E Mission Cath I A,315,164,162,2,0,94,4,36,12,1,0,12,0,3
+Yaounde Ii,E Mission Cath I B,269,110,107,3,0,59,6,14,12,0,0,16,0,0
+Yaounde Ii,E Mission Cath I C,224,134,133,1,0,83,4,17,11,0,0,15,0,3
+Yaounde Ii,E Mission Cath Ii A,237,125,124,1,0,80,1,26,15,0,0,2,0,0
+Yaounde Ii,E Mission Cath Ii B,246,114,114,0,0,88,0,14,6,0,0,6,0,0
+Yaounde Ii,E Nat Sup De Police Ii B,327,119,118,1,0,54,8,24,22,0,0,4,1,5
+Yaounde Ii,E P Messa A,418,258,251,7,0,156,8,56,23,1,0,2,1,4
+Yaounde Ii,E P Tsinga A,402,137,135,2,0,57,14,51,10,1,0,1,0,1
+Yaounde Ii,E P Tsinga C,415,154,151,3,0,80,9,36,17,1,0,2,3,3
+Yaounde Ii,E P Tsinga Oliga B,394,181,180,0,0,90,01,58,25,01,01,01,01,02
+Yaounde Ii,E Pr Bethlehem B,360,139,138,1,0,54,4,64,9,0,0,2,0,5
+Yaounde Ii,E Pr Grace I B,432,214,208,6,0,74,1,107,12,1,0,3,4,6
+Yaounde Ii,E Pr Grace Ii A,371,212,208,4,0,98,8,68,19,1,0,7,2,5
+Yaounde Ii,Ecole Des Sources Ii A,411,202,200,02,0,64,02,99,15,0,0,07,03,10
+Yaounde Ii,Ecole Des Sources Ii C,176,64,64,01,0,25,01,29,06,0,0,0,0,02
+Yaounde Ii,Ecole Maternelle Dekoudou A,327,166,159,07,0,96,20,19,19,1,2,1,0,1
+Yaounde Ii,Ecole Maternelle Dekoudou B,329,124,123,01,0,80,9,14,14,0,0,4,0,2
+Yaounde Ii,Ecole Publique Dekoudou Iii B,384,197,193,4,0,146,5,14,23,0,0,1,0,4
+Yaounde Ii,Foyer Bakangoue A,280,119,221,2,0,37,4,59,11,1,0,6,0,1
+Yaounde Ii,Foyer Banka A,318,136,134,2,0,74,6,21,23,2,0,5,0,3
+Yaounde Ii,Foyer Bazou Nkomkana A,359,140,134,6,1,73,5,33,13,0,0,4,3,4
+Yaounde Ii,Good Chesser School A,399,186,186,00,0,104,02,56,09,02,0,0,02,11
+Yaounde Ii,Good Chesser School B,382,196,193,3,0,78,2,82,10,0,0,0,2,19
+Yaounde Ii,Good Chesser School D,388,126,125,1,0,54,0,42,17,1,0,1,2,8
+Yaounde Ii,Good Chesser School F,427,153,153,0,0,60,0,59,17,01,01,0,01,14
+Yaounde Ii,Good Chesser School G,386,147,147,0,0,60,2,56,6,1,2,00,1,19
+Yaounde Ii,Good Chesser School H,385,196,194,2,0,68,0,93,13,1,0,1,2,16
+Yaounde Ii,Hopital Central A,237,78,77,1,0,49,0,17,9,0,0,1,0,1
+Yaounde Ii,Institut Matamfen Superieur I A,333,165,159,6,0,107,4,28,13,0,1,1,0,5
+Yaounde Ii,Institut Matamfen Superieur I B,354,169,166,3,0,82,5,55,18,0,0,2,0,4
+Yaounde Ii,Institut Matamfen Superieur I D,334,119,118,1,0,45,0,51,13,0,0,3,0,3
+Yaounde Ii,Institut Matamfen Superieur Ii B,313,113,112,0,1,54,2,31,16,0,0,1,0,8
+Yaounde Ii,Les Coccinelles A,393,241,239,0,02,125,0,80,14,01,0,01,01,17
+Yaounde Ii,Les Coccinelles C,328,151,149,02,0,74,0,57,07,0,0,01,01,09
+Yaounde Ii,Les Coccinelles D,343,140,140,0,0,67,01,49,12,02,0,0,01,08
+Yaounde Ii,Les Coccinelles E,349,143,143,00,00,76,02,46,08,0,0,01,0,10
+Yaounde Ii,Les Coccinelles F,364,173,173,0,0,58,01,88,07,0,0,02,04,13
+Yaounde Ii,Les Coccinelles G,312,101,100,01,0,38,03,46,09,0,0,01,0,03
+Yaounde Ii,Les Coccinelles H,351,271,271,0,0,172,03,55,21,01,0,02,03,14
+Yaounde Ii,Les Coccinelles I,303,118,16,02,0,51,01,40,12,01,01,02,01,07
+Yaounde Ii,Lycee De La Cite Verte A,466,247,246,01,00,113,03,93,27,01,01,02,0,06
+Yaounde Ii,Lycee De Tsinga I B,383,133,131,2,0,67,4,37,15,0,00,4,0,4
+Yaounde Ii,Lycee De Tsinga I C,363,148,143,5,0,80,10,33,17,0,1,0,1,2
+Yaounde Ii,Lycee De Tsinga Ii A,362,149,147,2,0,61,7,57,12,1,1,2,0,6
+Yaounde Ii,Maison De La Femme A,316,114,112,02,0,75,12,13,09,01,0,01,0,01
+Yaounde Ii,Maison De La Femme B,359,138,138,0,0,81,14,26,10,0,0,02,01,04
+Yaounde Ii,Maison De La Femme C,369,131,131,0,0,63,06,48,06,1,0,0,03,04
+Yaounde Ii,Mosquee Briqueterie Ouest A,284,147,144,3,0,79,15,18,19,0,1,9,0,3
+Yaounde Iii,,,,,,,,,,,,,,,
+Yaounde Iii,Brigade Du Quartier General A,380,280,277,3,0,256,0,4,13,0,0,0,0,4
+Yaounde Iii,Brigade Du Quartier General B,378,247,246,0,1,215,2,11,10,2,0,0,1,5
+Yaounde Iii,Brigade Du Quartier General C,376,258,255,3,0,206,1,19,19,2,0,1,1,6
+Yaounde Iii,Brigade Du Quartier General D,401,329,332,02,02,282,01,18,12,03,00,03,00,13
+Yaounde Iii,Brigade Du Quartier General F,377,220,220,00,00,176,00,16,14,00,00,00,02,12
+Yaounde Iii,Brigade Du Quartier General G,359,245,242,3,0,188,3,27,11,0,1,0,0,12
+Yaounde Iii,Brigade Du Quartier General H,365,229,227,0,2,184,0,16,16,2,0,1,0,8
+Yaounde Iii,Brigade Du Quartier General I,343,190,190,01,01,159,02,10,09,01,00,00,00,08
+Yaounde Iii,Brigade Du Quartier General J,358,166,166,00,00,134,01,17,09,00,00,00,01,04
+Yaounde Iii,Brigade Du Quartier General K,375,234,233,00,01,199,01,14,11,01,00,01,01,05
+Yaounde Iii,Brigade Du Quartier General M,436,187,186,0,1,67,3,78,27,1,0,0,1,9
+Yaounde Iii,Brigade Du Quartier General N,312,229,228,0,1,183,1,15,22,0,0,2,0,5
+Yaounde Iii,Brigade Du Quartier General O,396,215,212,0,3,168,0,23,15,1,0,0,0,5
+Yaounde Iii,Centre De Sante Afanoyoa 4 A,390,269,267,00,02,245,00,12,08,01,00,00,01,00
+Yaounde Iii,Cetic Ngoa Ekelle C,361,114,112,2,0,60,2,28,16,0,0,0,0,6
+Yaounde Iii,Cetic Ngoa Ekelle D,343,139,144,01,00,50,01,56,31,00,00,00,00,05
+Yaounde Iii,College Diderot A,401,218,217,1,0,116,1,56,34,1,1,0,0,8
+Yaounde Iii,College Diderot B,404,198,198,0,0,113,1,40,39,3,1,0,0,1
+Yaounde Iii,College Diderot C,433,210,210,0,0,103,2,52,41,2,0,0,1,9
+Yaounde Iii,College Diderot D,419,208,207,1,0,106,1,41,53,1,1,1,0,3
+Yaounde Iii,College Diderot E,360,219,217,2,0,114,1,39,48,0,0,2,1,12
+Yaounde Iii,College La Rosiere A,385,220,220,0,0,64,2,124,11,0,0,0,0,19
+Yaounde Iii,College La Rosiere B,422,253,250,3,0,79,0,118,26,2,0,3,3,19
+Yaounde Iii,College La Rosiere C,389,227,226,01,00,100,00,83,29,01,00,00,00,13
+Yaounde Iii,College La Rosiere D,373,177,177,0,0,83,0,56,22,1,0,0,2,12
+Yaounde Iii,College La Rosiere E,392,192,191,1,0,76,0,92,9,0,1,0,0,13
+Yaounde Iii,College La Rosiere F,393,200,199,0,1,80,0,90,18,1,0,0,2,8
+Yaounde Iii,College La Rosiere G,381,164,163,1,1,44,0,93,14,0,0,0,1,11
+Yaounde Iii,College La Rosiere H,396,214,211,3,0,100,0,80,16,1,2,0,2,10
+Yaounde Iii,College La Rosiere J,352,141,139,0,1,44,1,60,21,0,0,0,2,11
+Yaounde Iii,College La Rosiere K,342,162,162,0,0,26,0,118,11,0,1,0,2,4
+Yaounde Iii,College La Rosiere L,379,179,178,1,1,57,0,91,18,0,0,0,0,12
+Yaounde Iii,College La Rosiere O,449,219,219,0,0,72,1,96,29,1,0,1,3,16
+Yaounde Iii,College La Rosiere P,384,187,185,02,00,80,01,62,30,01,00,00,03,08
+Yaounde Iii,College La Rosiere Q,352,200,199,0,1,68,2,86,36,0,0,0,2,5
+Yaounde Iii,College La Rosiere R,334,143,153,0,0,38,0,67,30,0,0,0,0,8
+Yaounde Iii,College Les Futurs Boss A,377,190,190,00,00,154,00,12,23,00,00,00,00,01
+Yaounde Iii,College Les Futurs Boss B,382,191,192,01,,135,01,20,290,00,00,02,01,02
+Yaounde Iii,College Les Futurs Boss C,381,184,183,00,01,125,00,33,20,00,01,00,00,04
+Yaounde Iii,College Les Futurs Boss D,313,122,122,00,,79,00,13,26,02,00,01,00,01
+Yaounde Iii,College Les Futurs Boss F,320,130,130,00,00,82,00,28,17,01,00,00,00,02
+Yaounde Iii,College Les Futurs Boss G,366,124,123,01,00,88,00,14,16,00,00,00,01,04
+Yaounde Iii,College Les Futurs Boss H,303,121,120,00,01,64,00,40,15,00,00,00,00,01
+Yaounde Iii,College Les Futurs Boss I,357,142,142,00,00,70,00,28,42,00,00,01,00,01
+Yaounde Iii,College Vogt A,350,202,202,00,00,104,01,64,25,00,00,00,01,07
+Yaounde Iii,College Vogt B,351,209,208,1,0,108,0,56,38,1,0,3,2,0
+Yaounde Iii,College Vogt C,334,196,196,0,0,83,0,91,7,2,0,1,1,11
+Yaounde Iii,College Vogt D,349,161,160,1,0,87,0,46,17,0,0,0,2,8
+Yaounde Iii,College Vogt E,346,186,186,0,0,89,2,64,19,2,0,3,0,7
+Yaounde Iii,College Vogt F,301,148,148,02,01,64,01,55,17,04,00,01,01,03
+Yaounde Iii,College Vogt G,300,139,139,0,0,62,1,49,21,0,1,0,0,5
+Yaounde Iii,College Vogt H,308,133,132,0,1,66,0,43,17,0,0,0,0,6
+Yaounde Iii,College Vogt J,315,137,137,00,00,64,02,39,23,01,00,02,01,05
+Yaounde Iii,College Vogt K,360,168,165,0,3,75,0,57,26,0,0,4,0,3
+Yaounde Iii,College Vogt L,362,190,187,0,3,84,2,59,34,2,0,0,4,2
+Yaounde Iii,College Vogt M,388,197,197,0,0,75,0,62,35,0,1,12,1,11
+Yaounde Iii,College Vogt N,352,177,176,1,0,70,1,63,32,0,0,1,3,6
+Yaounde Iii,College Vogt O,341,187,187,0,0,69,0,70,42,0,0,1,1,4
+Yaounde Iii,College Vogt P,387,114,114,1,0,41,1,44,20,0,0,0,0,7
+Yaounde Iii,Commissariat Ctral N 3 Efoulan A,250,109,109,00,,81,00,09,16,00,00,00,00,03
+Yaounde Iii,Commissariat Special N 3 A,137,64,53,0,1,29,0,20,10,0,0,0,1,3
+Yaounde Iii,E Bon Samaritain Ahala Ii B,350,185,185,00,,132,00,16,27,00,01,00,00,05
+Yaounde Iii,E Bon Samaritain Ahala Ii C,336,169,168,0,1,105,0,30,25,0,0,1,0,7
+Yaounde Iii,E Bon Samaritain Ahala Ii D,357,158,158,00,,123,01,23,11,08,00,00,00,04
+Yaounde Iii,E Bon Samaritain Ahala Ii E,358,146,146,00,,90,01,16,31,00,00,00,01,07
+Yaounde Iii,E Bon Samaritain Ahala Ii F,352,128,128,0,0,71,0,32,19,0,1,0,0,7
+Yaounde Iii,E Ctre Administratif A,319,142,142,00,00,99,03,22,18,00,00,00,00,00
+Yaounde Iii,E Ctre Administratif B,353,137,137,01,01,98,01,14,18,01,00,00,01,03
+Yaounde Iii,E De Gendarmerie Mobile A,327,149,147,0,2,116,0,17,10,1,0,0,0,3
+Yaounde Iii,E De Gendarmerie Mobile B,227,95,93,0,2,76,0,8,5,0,0,0,0,4
+Yaounde Iii,E Du Plateau Atemengue A,393,190,189,01,00,87,01,62,20,01,00,00,02,16
+Yaounde Iii,E Du Plateau Atemengue B,409,190,190,00,00,93,02,54,22,00,00,01,00,18
+Yaounde Iii,E Du Plateau Atemengue C,403,166,165,01,00,68,00,58,26,03,00,01,01,08
+Yaounde Iii,E Du Plateau Atemengue D,406,205,203,0,2,84,1,72,28,0,0,1,1,16
+Yaounde Iii,E Du Plateau Atemengue E,411,177,176,0,1,54,1,82,30,1,1,0,0,7
+Yaounde Iii,E Du Plateau Atemengue F,419,201,201,0,0,49,2,99,35,2,0,2,2,10
+Yaounde Iii,E Du Plateau Atemengue G,360,175,174,0,1,39,1,99,22,0,2,1,0,10
+Yaounde Iii,E Du Plateau Atemengue H,402,199,199,0,0,66,0,70,43,1,0,1,2,17
+Yaounde Iii,E Du Plateau Atemengue I,438,206,206,0,0,45,3,99,36,3,0,0,0,20
+Yaounde Iii,E Du Plateau Atemengue J,410,195,194,1,0,56,1,92,27,3,0,0,1,14
+Yaounde Iii,E Du Plateau Atemengue K,356,197,198,1,0,42,1,113,27,1,0,2,1,10
+Yaounde Iii,E Du Plateau Atemengue L,300,155,150,3,2,28,2,79,33,0,0,2,1,5
+Yaounde Iii,E Mat Les Stephanois A,367,202,199,03,00,118,01,50,21,00,00,00,03,06
+Yaounde Iii,E Mat Les Stephanois B,223,73,73,00,00,38,01,17,10,00,00,00,02,05
+Yaounde Iii,E Mat Mekoumbou I A,101,76,75,01,,72,00,01,02,00,00,00,00,00
+Yaounde Iii,E P Biyem Assi Ii A,401,244,243,1,0,90,1,116,14,0,0,0,4,18
+Yaounde Iii,E P Biyem Assi Ii B,407,221,221,0,0,78,0,113,10,1,1,0,3,15
+Yaounde Iii,E P Biyem Assi Ii C,408,174,174,0,0,57,0,70,20,0,2,0,9,16
+Yaounde Iii,E P Biyem Assi Ii E,407,142,142,0,0,44,0,79,9,0,1,0,3,6
+Yaounde Iii,E P Biyem Assi Ii F,395,159,158,0,1,43,0,76,22,0,2,0,2,13
+Yaounde Iii,E P Efoulan A,420,220,224,01,,157,03,26,32,01,00,00,00,04
+Yaounde Iii,E P Efoulan B,418,227,224,03,00,154,03,33,30,00,01,00,01,02
+Yaounde Iii,E P Efoulan C,397,199,198,1,0,125,1,43,22,1,2,0,1,3
+Yaounde Iii,E P Efoulan D,406,194,194,03,00,139,00,26,24,00,00,00,00,02
+Yaounde Iii,E P Efoulan E,404,200,200,0,0,108,,42,44,0,0,0,1,5
+Yaounde Iii,E P Efoulan F,414,181,177,01,03,103,01,23,46,00,00,01,00,03
+Yaounde Iii,E P Efoulan G,393,173,171,2,0,101,0,44,22,1,0,0,0,3
+Yaounde Iii,E P Efoulan H,390,176,173,03,00,91,01,30,44,01,00,01,00,05
+Yaounde Iii,E P Efoulan I,369,209,211,0,1,107,0,39,56,4,0,0,1,3
+Yaounde Iii,E P Efoulan J,401,191,191,00,,89,04,36,55,00,01,00,02,03
+Yaounde Iii,E P Olezoa A,392,207,207,00,00,153,02,27,16,02,00,00,00,07
+Yaounde Iii,E P Olezoa B,338,174,172,2,0,110,3,20,35,0,0,1,0,3
+Yaounde Iii,E P Olezoa C,340,155,155,00,00,95,01,16,32,03,01,01,02,04
+Yaounde Iii,E P Olezoa D,221,107,107,0,0,65,0,18,21,1,0,0,0,2
+Yaounde Iii,E Ste Therese Ahala I C,411,227,226,0,1,144,0,43,32,0,0,2,0,5
+Yaounde Iii,E Ste Therese Ahala I F,319,155,154,1,0,98,0,25,28,1,0,2,0,0
+Yaounde Iii,E Ste Therese Ahala I I,338,121,121,00,,73,00,30,15,01,00,00,00,01
+Yaounde Iii,E Ste Therese Ahala I J,323,127,127,00,00,70,00,27,17,01,00,02,02,08
+Yaounde Iii,E Ste Therese Ahala I K,384,154,154,0,0,79,0,39,26,3,0,1,1,5
+Yaounde Iii,E Ste Therese Ahala I L,361,158,157,1,0,83,1,36,33,0,1,0,1,2
+Yaounde Iii,E Ste Therese Ahala I M,388,147,146,1,0,73,0,37,34,0,0,0,0,2
+Yaounde Iii,E Ste Therese Ahala I N,351,107,111,0,0,47,3,29,27,0,0,0,0,5
+Yaounde Iii,E Ste Therese Ahala I O,267,271,150,0,1,88,0,32,26,1,0,1,1,1
+Yaounde Iii,Ecole Des Postes A,394,133,131,2,0,40,1,57,21,1,0,0,2,9
+Yaounde Iii,Ecole Des Postes B,379,146,143,3,0,30,0,85,15,0,0,0,1,12
+Yaounde Iii,Ecole Des Postes C,383,118,116,2,0,41,0,59,10,0,0,2,1,3
+Yaounde Iii,Ecole Des Postes D,386,140,138,2,0,42,0,67,22,1,0,0,1,5
+Yaounde Iii,Ecole Des Postes E,389,136,135,1,0,18,0,99,8,2,0,0,3,5
+Yaounde Iii,Ecole Des Postes F,387,93,90,3,0,31,2,34,20,1,0,0,0,2
+Yaounde Iii,Ecole Des Postes H,317,124,122,2,0,31,0,63,22,0,0,1,1,4
+Yaounde Iii,Ecole Des Postes I,254,105,103,2,0,26,0,48,17,0,0,1,0,11
+Yaounde Iii,Ecole Des Postes K,242,83,82,0,1,22,0,45,8,0,0,0,1,6
+Yaounde Iii,Ecole Des Postes L,258,93,93,0,0,23,1,51,11,0,0,1,0,6
+Yaounde Iii,Ecole Des Postes M,275,130,129,1,0,22,0,88,14,0,0,0,0,5
+Yaounde Iii,Ecole Des Postes N,256,73,73,0,0,23,0,32,14,0,0,0,1,2
+Yaounde Iii,Ecole Des Postes O,234,73,73,0,0,13,0,40,14,0,0,0,1,5
+Yaounde Iii,Ecole Des Postes P,231,109,109,0,0,22,1,60,19,0,0,0,1,6
+Yaounde Iii,Ecole Des Postes Q,382,130,129,1,0,25,1,72,24,0,0,0,1,6
+Yaounde Iii,Ecole Des Postes R,339,117,117,0,0,27,1,66,19,1,0,1,0,2
+Yaounde Iii,Ecole Des Postes S,327,94,94,0,0,18,3,51,17,0,0,0,0,5
+Yaounde Iii,Ecole Des Postes T,390,172,171,1,0,34,5,90,27,3,0,2,1,9
+Yaounde Iii,Ecole Des Postes U,338,140,140,0,0,38,1,63,27,1,0,0,4,6
+Yaounde Iii,Ecole Eden Solly B,425,184,184,01,,124,01,13,38,01,01,00,01,03
+Yaounde Iii,Ecole Eden Solly C,443,186,187,00,,122,03,23,36,01,00,00,00,01
+Yaounde Iii,Ecole Eden Solly D,419,205,203,03,,123,01,25,50,00,00,00,00,04
+Yaounde Iii,Ecole La Rosiere B,390,239,236,3,0,78,1,135,8,1,1,0,2,10
+Yaounde Iii,Ecole La Rosiere C,399,213,213,0,0,44,2,137,11,0,0,1,2,16
+Yaounde Iii,Ecole La Rosiere E,398,216,214,2,0,58,4,115,16,0,0,3,2,16
+Yaounde Iii,Ecole La Rosiere F,392,184,183,1,0,51,1,93,16,1,0,1,5,11
+Yaounde Iii,Ecole La Rosiere H,382,179,179,0,0,54,0,90,17,0,1,0,2,15
+Yaounde Iii,Ecole La Rosiere I,382,159,159,0,0,40,0,85,19,1,0,0,1,13
+Yaounde Iii,Ecole La Rosiere J,378,201,198,3,0,45,1,98,29,0,1,0,3,21
+Yaounde Iii,Ecole La Rosiere K,358,208,208,0,0,81,0,89,16,0,1,0,5,16
+Yaounde Iii,Ecole Les Colibris A,430,266,264,01,01,178,1,31,45,0,0,0,0,9
+Yaounde Iii,Ecole Les Colibris B,395,212,210,2,0,118,2,44,34,1,2,2,1,6
+Yaounde Iii,Ecole Les Colibris C,420,254,254,0,0,137,0,69,40,0,0,0,2,6
+Yaounde Iii,Ecole Les Colibris D,387,179,179,0,0,115,1,25,27,1,1,0,0,7
+Yaounde Iii,Ecole Les Colibris E,186,186,185,1,0,109,0,39,30,0,1,0,1,5
+Yaounde Iii,Ecole Les Colibris F,391,203,201,02,02,113,00,40,45,01,00,00,00,02
+Yaounde Iii,Ecole Les Colibris H,386,173,172,0,1,90,0,48,28,1,0,0,0,6
+Yaounde Iii,Ecole Les Colibris I,405,177,175,2,0,87,0,39,44,0,0,0,0,5
+Yaounde Iii,Ecole Les Colibris J,367,171,171,0,0,87,3,42,27,1,0,1,2,8
+Yaounde Iii,Ecole Les Colibris K,396,213,211,2,0,106,1,47,50,2,1,0,1,3
+Yaounde Iii,Ecole Pub Mekoumbou Ii A,70,60,58,02,00,55,00,01,01,00,00,00,00,01
+Yaounde Iii,Ecole Pub Ntouessong I A,95,90,93,00,00,87,00,06,00,00,00,00,00,00
+Yaounde Iii,English High School A,397,217,217,06,,109,02,58,18,02,00,01,03,18
+Yaounde Iii,English High School B,397,188,188,00,,73,01,67,27,00,02,01,00,17
+Yaounde Iii,English High School C,400,207,207,02,,88,01,73,29,01,00,01,01,10
+Yaounde Iii,English High School D,383,154,154,00,,69,01,47,25,00,00,01,02,10
+Yaounde Iii,Esplanade Dakar Ii A,428,232,230,2,0,196,00,10,19,0,0,0,4,1
+Yaounde Iii,Esplanade Dakar Ii B,139,66,66,0,0,52,1,6,6,0,0,0,0,1
+Yaounde Iii,Eta Maj Comp Gendarmerie Efoulan A,61,26,26,0,0,16,0,8,1,0,0,0,0,1
+Yaounde Iii,Fountain Nursery And Primary School A,322,179,178,00,01,50,00,105,04,01,00,01,03,14
+Yaounde Iii,Fountain Nursery And Primary School B,341,180,183,00,00,59,00,94,13,00,00,01,01,15
+Yaounde Iii,Fountain Nursery And Primary School C,335,202,201,00,01,37,01,137,13,01,00,00,03,09
+Yaounde Iii,Fountain Nursery And Primary School D,325,154,154,0,0,51,1,68,19,0,0,0,3,12
+Yaounde Iii,Fountain Nursery And Primary School G,135,135,134,1,0,18,0,101,8,0,0,1,2,4
+Yaounde Iii,Foyer Etoa B,302,179,177,00,02,114,00,34,28,01,00,00,00,00
+Yaounde Iii,Foyer Social A,402,226,226,0,0,110,1,81,15,1,2,0,2,14
+Yaounde Iii,Foyer Social B,353,144,143,1,1,53,1,63,12,0,0,0,3,11
+Yaounde Iii,Foyer Social C,453,223,221,1,1,61,1,100,31,4,2,0,1,21
+Yaounde Iii,Foyer Social D,112,10,10,00,00,05,00,02,02,00,00,00,00,01
+Yaounde Iii,Gpe Scolaire Les Sapins Montee Jouvence A,356,199,199,1,0,77,2,92,16,0,1,1,0,9
+Yaounde Iii,Gpe Scolaire Les Sapins Montee Jouvence B,349,210,208,1,0,52,0,130,16,1,0,0,3,6
+Yaounde Iii,Gpe Scolaire Les Sapins Montee Jouvence C,317,198,195,1,2,61,2,106,17,3,1,1,0,4
+Yaounde Iii,Gpe Scolaire Les Sapins Montee Jouvence D,301,176,176,00,00,32,01,125,08,00,01,00,00,09
+Yaounde Iii,Gpe Scolaire Les Sapins Montee Jouvence E,337,181,179,0,2,39,0,108,19,0,0,0,3,10
+Yaounde Iii,Gpe Scolaire Les Sapins Montee Jouvence F,378,180,180,2,0,59,2,90,13,0,0,1,1,12
+Yaounde Iii,Gpe Scolaire Les Sapins Montee Jouvence G,297,134,12,0,2,45,1,66,15,0,0,0,0,4
+Yaounde Iii,Gpe Scolaire Les Sapins Montee Jouvence H,338,176,176,0,0,41,0,114,16,0,0,0,0,5
+Yaounde Iii,Gpe Scolaire Les Sapins Montee Jouvence I,330,127,124,3,0,25,1,74,18,0,0,0,0,6
+Yaounde Iii,Gpe Scolaire Les Sapins Montee Jouvence J,402,193,192,0,1,48,0,109,26,0,0,0,0,9
+Yaounde Iii,Gpe Scolaire Les Sapins Montee Jouvence L,370,194,194,0,1,68,0,92,24,0,0,1,0,8
+Yaounde Iii,Gpe Scolaire Les Sapins Montee Jouvence N,310,25,29,2,2,7,0,13,4,0,0,0,0,3
+Yaounde Iii,J E C A,298,162,161,1,0,129,0,16,12,0,0,0,2,2
+Yaounde Iii,J E C B,266,128,127,1,0,93,0,12,17,0,0,0,1,4
+Yaounde Iii,Jumping Jack School A,388,165,165,0,0,79,0,51,10,0,0,1,4,20
+Yaounde Iii,Jumping Jack School C,387,161,161,0,0,60,0,67,13,2,0,0,2,17
+Yaounde Iii,Jumping Jack School D,378,131,134,0,0,28,0,67,14,2,0,1,4,17
+Yaounde Iii,Jumping Jack School E,344,127,129,0,0,34,3,59,18,2,0,1,0,12
+Yaounde Iii,Lycee Dafanoyoa A,156,119,119,00,00,114,01,03,0,01,00,00,00,00
+Yaounde Iii,Lycee Efoulan A,396,228,228,01,00,137,00,47,29,02,00,00,02,10
+Yaounde Iii,Lycee Efoulan B,386,202,202,00,00,131,02,33,33,00,00,00,00,03
+Yaounde Iii,Lycee Efoulan C,376,192,188,04,04,113,01,38,25,01,00,01,01,08
+Yaounde Iii,Lycee Efoulan D,380,164,164,01,01,104,00,307,20,00,01,00,02,06
+Yaounde Iii,Lycee Efoulan E,384,169,169,00,00,84,00,48,21,01,01,01,01,11
+Yaounde Iii,Lycee Efoulan F,385,181,181,01,00,82,00,54,38,01,00,01,00,04
+Yaounde Iii,Mada Dominion Bil Nursery Pr School A,372,153,152,01,0,51,00,59,15,00,00,00,01,26
+Yaounde Iii,Mada Dominion Bil Nursery Pr School B,384,135,134,01,00,41,01,53,18,01,00,00,04,16
+Yaounde Iv,,,,,,,,,,,,,,,
+Yaounde Iv,C E S Dodza Meyo A,180,110,110,0,0,85,0,14,9,1,0,0,0,1
+Yaounde Iv,C J A R C Ekie Nord A,398,218,217,1,0,91,2,92,20,2,0,2,0,8
+Yaounde Iv,C J A R C Ekie Nord C,381,186,185,1,0,83,1,58,32,2,0,0,0,9
+Yaounde Iv,C M A Dodza E,368,204,203,1,0,93,2,73,31,1,0,0,1,2
+Yaounde Iv,Centre Formation Crtv A,255,127,127,0,0,95,1,13,9,1,0,2,0,6
+Yaounde Iv,Cfta A,473,258,258,0,0,192,3,27,28,0,0,1,0,7
+Yaounde Iv,College Gazolant B,382,165,160,5,0,58,0,79,9,3,0,0,1,10
+Yaounde Iv,College Gazolant C,357,163,162,1,0,77,1,53,22,2,0,0,0,7
+Yaounde Iv,College Gazolant D,387,211,207,4,0,81,0,95,22,1,0,3,0,5
+Yaounde Iv,College Infirma Mundi A,239,188,186,2,0,172,1,3,9,01,0,0,0,0
+Yaounde Iv,College Jardin Deden A,363,158,157,1,0,78,0,64,9,0,0,1,0,5
+Yaounde Iv,College Jardin Deden C,241,79,79,0,0,28,0,33,13,0,0,1,1,3
+Yaounde Iv,College Les Cartesiens A,371,186,186,0,0,124,0,40,20,0,1,0,0,1
+Yaounde Iv,College Les Cartesiens B,91,51,51,0,0,35,0,12,3,0,0,0,0,1
+Yaounde Iv,E Cath Messamendongo C,302,147,146,1,0,93,0,30,22,0,0,0,1,0
+Yaounde Iv,E Cath Messamendongo D,357,170,169,1,0,94,0,33,37,2,0,0,0,3
+Yaounde Iv,E Cath Messamendongo F,292,124,122,2,0,74,1,20,18,0,0,0,1,8
+Yaounde Iv,E P Ekoumdoum A,399,211,210,1,0,124,1,59,19,1,0,0,2,4
+Yaounde Iv,E P Ekounou I A,431,215,213,2,0,139,1,33,34,1,0,0,1,4
+Yaounde Iv,E P Ekounou I B,436,199,199,0,0,118,1,43,29,2,0,1,0,5
+Yaounde Iv,E P Ekounou Ii B,461,196,194,2,0,128,0,34,27,0,0,0,1,4
+Yaounde Iv,E P Ekounou Ii C,430,199,199,0,0,139,1,33,23,0,0,0,1,2
+Yaounde Iv,E P Nkomo D,409,152,151,1,0,90,0,37,22,0,0,0,1,1
+Yaounde Iv,E Pr Metropolitaine A,323,161,160,1,0,71,1,65,6,3,0,0,0,14
+Yaounde Iv,E Pr Metropolitaine B,349,167,166,1,0,74,1,70,12,0,1,0,1,7
+Yaounde Iv,E Pr Metropolitaine C,339,128,128,0,0,50,0,59,8,0,1,0,1,9
+Yaounde Iv,E Pr Metropolitaine E,241,90,89,1,0,45,0,34,8,0,0,0,0,2
+Yaounde Iv,Ecole La Reference A,320,196,193,3,0,147,0,16,24,0,0,0,2,4
+Yaounde Iv,Ecole Privee De Savoir A,375,208,208,0,0,154,1,25,23,0,0,0,0,5
+Yaounde Iv,Ecole Privee De Savoir B,391,170,168,2,0,132,1,16,17,1,0,0,0,1
+Yaounde Iv,Ecole Privee De Savoir C,167,60,60,0,0,38,0,14,3,0,0,0,0,5
+Yaounde Iv,Ecole Privee La Mere Des Enfants A,340,168,167,1,0,112,1,32,20,0,0,0,0,2
+Yaounde Iv,Ecole Privee La Mere Des Enfants D,327,146,144,2,0,77,1,46,17,1,0,0,0,2
+Yaounde Iv,Ecole Privee La Mere Des Enfants F,281,80,80,0,0,30,0,34,10,0,0,0,3,2
+Yaounde Iv,Ecole Privee Ndema A,400,194,192,2,0,131,1,33,20,0,0,0,0,7
+Yaounde Iv,Ecole Privee Noula B,414,193,192,1,0,86,0,66,31,1,0,1,0,7
+Yaounde Iv,Ecole Publique Mvan A,405,190,188,2,0,126,2,27,28,0,0,0,1,4
+Yaounde Iv,Ecole Publique Mvan B,424,206,205,1,0,148,1,22,30,1,0,0,0,3
+Yaounde Iv,Groupe Scolaire Pilote B,270,121,119,2,0,80,1,23,8,1,1,0,1,4
+Yaounde Iv,Groupe Scolaire Pilote C,418,135,135,0,0,67,1,44,14,01,1,0,1,6
+Yaounde Iv,Impm Nkomo Ii Nord B,366,177,174,3,0,67,1,88,12,0,0,2,1,3
+Yaounde Iv,Institut Ifp Chec Odza Iii B,181,41,41,0,0,24,1,9,4,0,0,1,0,2
+Yaounde Iv,Lycee Dekounou A,413,198,198,0,0,99,1,61,21,1,0,1,0,14
+Yaounde V,,,,,,,,,,,,,,,
+Yaounde V,Alberto Ecole Mat Prim B,352,204,203,0,0,83,0,72,30,5,0,2,3,8
+Yaounde V,Alberto Ecole Mat Prim E,296,127,127,0,0,40,1,68,11,1,1,1,1,3
+Yaounde V,College Mongo Beti I A,392,196,196,1,0,129,2,37,26,0,0,0,1,0
+Yaounde V,College Mongo Beti I B,401,164,162,2,2,94,3,39,19,2,0,3,1,1
+Yaounde V,College Mongo Beti Ii A,380,152,152,0,0,87,0,31,31,0,2,0,0,1
+Yaounde V,College Mongo Beti Ii B,382,148,146,2,0,82,1,29,29,1,0,1,2,1
+Yaounde V,College Montesquieu I A,403,221,221,1,0,168,2,23,21,1,0,1,0,4
+Yaounde V,College Montesquieu I B,402,171,169,02,00,112,03,17,35,00,00,00,01,00
+Yaounde V,College Montesquieu Ii B,310,115,116,0,0,78,0,13,24,0,0,0,0,1
+Yaounde V,College Ndjankeu B,424,217,217,1,0,72,1,101,28,3,1,5,1,4
+Yaounde V,College Prive Les Chanterelles A,417,214,212,1,1,88,3,65,40,2,2,1,1,10
+Yaounde V,College Privee Les Lilas A,334,200,198,0,2,57,1,103,25,2,1,1,2,6
+Yaounde V,College Privee Les Lilas C,333,172,0,0,0,60,0,87,18,0,0,0,1,6
+Yaounde V,College Privee Les Lilas D,317,154,151,1,2,41,2,76,24,0,1,1,1,5
+Yaounde V,College Privee Les Lilas E,369,195,193,0,0,65,1,88,32,1,0,0,0,6
+Yaounde V,College Privee Les Lilas F,336,186,185,1,0,73,0,81,29,1,0,0,0,1
+Yaounde V,College Saint Augustin B,369,127,127,00,00,66,000,42,16,00,00,01,01,01
+Yaounde V,Dispensaire Mvog Ada B,368,175,175,00,00,113,01,16,35,01,01,01,01,06
+Yaounde V,E Mat Les Biquettins B,361,165,162,1,2,68,1,69,18,1,0,1,1,3
+Yaounde V,E Mat Les Biquettins C,314,100,98,0,2,34,0,36,22,0,0,0,1,5
+Yaounde V,E Mat Les Louvetaux A,364,196,195,0,1,56,0,123,9,2,1,0,0,4
+Yaounde V,E Mat Les Louvetaux B,341,183,182,1,0,47,0,117,8,0,1,0,1,9
+Yaounde V,E Mat Les Petits Futes A,437,258,257,1,0,66,1,160,15,2,1,1,2,9
+Yaounde V,E Mat Les Petits Futes B,435,199,198,0,1,59,1,110,16,0,2,4,2,4
+Yaounde V,E Mat Les Petits Futes C,415,182,181,1,0,51,1,107,14,1,2,1,1,4
+Yaounde V,E Mat Les Petits Futes D,421,185,185,0,0,58,0,109,14,1,0,0,1,2
+Yaounde V,E Mat Les Petits Futes E,432,206,204,2,0,55,0,133,12,0,0,0,1,3
+Yaounde V,E Mat Les Petits Futes F,418,192,19,0,1,54,0,104,27,0,0,1,0,5
+Yaounde V,E Mat Sainte Helene A,381,200,198,02,00,145,02,18,33,00,00,00,00,00
+Yaounde V,E Mat Yves Et Les Majorettes I A,416,208,206,2,0,82,0,71,51,0,1,0,0,1
+Yaounde V,E Mat Yves Et Les Majorettes I B,449,210,208,02,0,74,1,75,50,0,0,0,1,7
+Yaounde V,E Mat Yves Et Les Majorettes Ii A,380,216,214,2,0,88,1,81,36,0,1,0,1,6
+Yaounde V,E Mat Yves Et Les Majorettes Ii B,349,149,148,1,0,57,0,57,28,2,0,0,1,3
+Yaounde V,E Mat Yves Et Les Majorettes Ii C,368,169,167,02,0,61,2,57,42,1,0,0,0,4
+Yaounde V,E Pr La Branche Du Succes A,438,195,193,2,0,81,2,71,24,0,1,2,3,9
+Yaounde V,Ecole Les Modeles A,206,117,117,0,0,31,1,67,10,0,1,2,1,4
+Yaounde V,Ecole Mat Prim Cesam Crera A,317,146,145,0,1,79,0,40,16,0,1,0,0,9
+Yaounde V,Ecole Mat Prim Cesam Crera B,307,150,148,2,0,71,2,41,19,0,0,1,3,11
+Yaounde V,Ecole Notre Dame Des Victoires I A,334,145,145,0,0,91,1,27,22,1,1,0,0,2
+Yaounde V,Ecole Notre Dame Des Victoires Iii A,453,217,217,00,00,133,01,33,38,01,01,02,02,06
+Yaounde V,Ecole Prim Et Mat Les Allouettes A,380,205,205,1,2,111,5,53,22,0,1,5,0,5
+Yaounde V,Ecole Prim Et Mat Les Allouettes B,367,160,160,0,0,71,1,52,26,1,0,3,1,5
+Yaounde V,Ecole Prim Et Mat Les Allouettes C,374,159,159,2,0,56,4,57,24,1,0,3,3,9
+Yaounde V,Ecole Publique De Mfandena A,478,209,209,00,00,117,01,39,38,03,01,01,01,08
+Yaounde V,Ecole Publique De Mfandena B,376,185,185,00,00,103,01,42,29,00,01,02,00,07
+Yaounde V,Ecole Publique De Mfandena C,363,200,200,00,00,96,02,50,43,02,00,02,00,05
+Yaounde V,Ecole Publique De Mfandena D,356,129,129,00,00,73,02,25,20,01,00,00,01,05
+Yaounde V,G S B La Republique A,287,187,185,00,02,77,01,85,17,00,00,00,00,05
+Yaounde V,G S B Lembryon A,463,269,268,1,0,154,0,89,19,0,0,2,1,3
+Yaounde V,G S B Polyvalent Les Colombes A,393,239,237,00,02,90,01,117,21,02,00,01,01,04
+Yaounde V,G S B Polyvalent Les Colombes B,406,210,209,01,,71,00,111,11,02,01,00,02,05
+Yaounde V,Gpe Scol Bil Majio B,407,196,196,3,0,84,1,63,33,3,0,0,2,7
+Yaounde V,Gpe Scol Le Bon Temps A,375,189,187,01,01,73,00,101,10,01,00,00,00,02
+Yaounde V,Gpe Scol Le Bon Temps B,363,212,212,00,00,59,00,136,13,00,00,00,00,04
+Yaounde V,Gpe Scol Le Bon Temps C,366,182,181,01,00,55,01,95,24,00,00,01,00,05
+Yaounde V,Gpe Scol Les Petits Anges A,369,195,191,1,3,90,3,38,47,5,0,3,0,5
+Yaounde V,Gpe Scol Les Petits Anges B,370,150,150,0,0,84,2,26,29,0,0,3,0,6
+Yaounde V,Gpe Scol Les Petits Anges C,324,137,136,1,0,65,0,28,36,0,1,1,2,3
+Yaounde V,Gpe Scol Les Petits Anges D,317,115,115,0,0,66,1,14,25,1,1,2,3,2
+Yaounde V,Gpe Scol Les Petits Anges E,347,128,127,1,0,61,1,19,32,2,0,7,1,4
+Yaounde V,Gpe Scol Les Petits Anges F,315,116,115,0,0,68,1,18,23,1,0,0,0,4
+Yaounde V,Gpe Scol Mewoulou A,358,218,218,00,00,103,02,88,19,00,01,03,00,07
+Yaounde V,Grpe Scol Dominique Savio A,412,188,185,3,0,87,3,61,23,0,1,1,1,8
+Yaounde V,Grpe Scolaire Bilingue La Samaga A,349,189,189,0,0,106,0,60,9,0,,2,1,11
+Yaounde V,Grpe Scolaire Bilingue La Samaga B,340,187,187,0,0,61,0,100,23,1,0,0,2,0
+Yaounde V,Grpe Scolaire Bilingue La Samaga C,309,177,177,0,0,92,0,56,22,0,1,1,1,4
+Yaounde V,Institut Saint Andre A,371,181,179,02,00,117,00,28,27,1,00,02,01,03
+Yaounde V,La Luciole A,165,82,82,1,0,56,1,4,19,0,1,0,0,0
+Yaounde V,Lycee De Ngoulmekong J,346,157,155,2,0,64,1,54,31,0,0,0,1,4
+Yaounde Vii,,,,,,,,,,,,,,,
+Yaounde Vii,Bat Adm Irad A,410,194,194,0,1,100,1,52,23,1,0,1,3,12
+Yaounde Vii,Bat Adm Irad B,99,56,56,0,0,18,1,17,17,0,0,0,0,3
+Yaounde Vii,Centre De Sante Ebod Mefou A,333,186,186,2,0,125,0,42,11,1,0,1,4,4
+Yaounde Vii,Centre De Sante Ebod Mefou B,350,173,173,1,0,113,1,42,12,1,0,0,0,3
+Yaounde Vii,Centre De Sante Ebod Mefou C,367,180,179,1,0,83,5,59,1,0,0,1,0,11
+Yaounde Vii,Club Agronomique A,348,353,181,0,0,102,3,41,27,0,0,0,1,7
+Yaounde Vii,College De La Paix A,409,207,207,01,0,80,0,91,17,1,1,0,2,14
+Yaounde Vii,College De La Paix B,431,234,234,0,0,86,4,107,16,1,3,1,0,16
+Yaounde Vii,College De La Paix C,401,173,173,4,1,63,0,81,12,1,0,1,1,10
+Yaounde Vii,E Mat Nnom Nnam A,438,223,223,0,1,82,1,112,20,0,0,1,1,5
+Yaounde Vii,E P Ekorozock B,370,150,149,1,0,81,2,46,13,0,1,0,2,4
+Yaounde Vii,E P Ekorozock C,368,165,165,0,1,75,0,73,12,0,0,0,1,3
+Yaounde Vii,E P Nkolbisson C,384,172,171,1,0,107,3,24,24,0,1,0,0,11
+Yaounde Vii,E P Nkolbisson E,383,160,160,0,1,96,3,33,23,0,0,1,0,3
+Yaounde Vii,E P Oyom Abang C,390,170,170,1,0,103,1,37,25,0,0,0,0,3
+Yaounde Vii,E P Oyom Abang E,373,158,158,0,0,85,1,48,18,1,0,0,2,3
+Yaounde Vii,E Pr B A A,404,213,213,3,2,90,1,89,20,0,1,0,1,8
+Yaounde Vii,E Pr B A C,187,190,100,4,3,48,1,28,16,0,0,0,1,2
+Yaounde Vii,E Pr Kamdzona A,398,215,215,0,0,165,1,26,18,0,0,0,0,5
+Yaounde Vii,E Pr Les Mbomielithes A,369,215,215,1,0,109,0,58,35,2,2,3,0,5
+Yaounde Vii,E Pr Les Mbomielithes B,372,178,178,1,0,96,4,48,28,0,1,0,0,0
+Yaounde Vii,E Pr Les Mbomielithes C,356,174,174,0,0,85,0,46,38,0,0,0,1,3
+Yaounde Vii,E Pr Tebap A,432,195,195,1,0,104,1,62,18,0,0,0,1,8
+Yaounde Vii,E Pr Tebap B,440,187,186,1,1,73,5,69,16,0,0,0,1,11
+Yaounde Vii,E Pr Theresia Ngondi A,320,191,191,0,1,101,0,68,18,1,0,0,0,2
+Yaounde Vii,E Pr Theresia Ngondi B,326,153,152,1,1,91,0,37,19,1,0,0,0,2
+Yaounde Vii,E Pr Theresia Ngondi D,340,165,165,0,0,78,0,44,34,1,0,1,1,6
+Yaounde Vii,E Privee Le Germinal A,103,49,49,0,0,25,1,11,10,1,0,0,0,1
+Yaounde Vii,Ecole Damelie B,353,165,165,1,0,80,1,58,19,0,1,1,0,4
+Yaounde Vii,Ecole Publique Fam Assi A,384,345,50,0,0,290,2,43,12,0,0,0,1,2
+Yaounde Vii,Ecole Publique Fam Assi B,143,113,113,0,0,74,0,30,7,0,0,0,0,2
+Yaounde Vii,G S Bil Onana Jeanne A,141,74,74,1,0,48,1,14,7,1,0,0,0,2
+Yaounde Vii,Goupe Scolaire La Ruche A,389,207,207,4,1,130,1,40,26,0,0,1,1,3
+Yaounde Vii,Salle Des Actes De La Mairie A,401,203,203,0,0,133,0,33,28,2,0,0,1,6
+Batcham,,,,,,,,,,,,,,,
+Batcham,C E S De Bantsiet A,288,234,233,1,0,112,3,88,4,1,1,3,2,19
+Batcham,Centre De La Jeunesse A,319,210,209,,1,137,3,57,1,,,1,3,7
+Batcham,Ces De Bebakouo A,290,220,217,1,2,110,4,76,2,1,8,4,3,9
+Batcham,College Polyvalent De Konti A,327,252,249,2,1,161,,66,,,,,,22
+Batcham,Cooperative De Nzindong A,411,284,276,8,1,156,4,94,3,2,,2,2,13
+Batcham,E P De Badengang Bangang A,359,261,258,2,1,162,3,62,5,1,6,,2,18
+Batcham,E P De Bakui A,183,170,170,1,,131,1,21,,,4,2,1,9
+Batcham,E P De Balafotio Chefferie A,149,117,116,,1,88,1,19,1,,,,,7
+Batcham,E P De Baleghang A,248,191,190,1,,135,,37,1,2,1,1,,13
+Batcham,E P De Baleghang B,234,173,175,1,,118,,39,1,1,1,,3,12
+Batcham,E P De Balena A,419,339,334,4,1,183,3,114,1,,1,1,2,29
+Batcham,E P De Balena B,412,304,300,3,1,136,,130,2,,,1,4,27
+Batcham,E P De Balepi A,203,178,166,2,,83,2,59,1,1,2,2,3,13
+Batcham,E P De Bambi A,289,212,208,3,1,134,,56,,,1,,,17
+Batcham,E P De Bambi B,286,202,197,5,,108,,47,1,,,,12,29
+Batcham,E P De Bamboue I A,382,301,300,1,,222,3,51,,1,3,2,6,10
+Batcham,E P De Bamboue I B,308,,,,,204,,62,4,1,2,5,3,16
+Batcham,E P De Bamboue I C,294,199,197,2,,140,,50,,,,1,3,3
+Batcham,E P De Bameboro A,265,188,187,,1,108,,57,3,1,1,1,,16
+Batcham,E P De Bamougong Chefferie A,342,255,251,4,,184,1,41,,1,3,1,3,17
+Batcham,E P De Bangouang A,433,306,301,5,,169,5,106,,,2,1,3,15
+Batcham,E P De Bapepa A,376,294,291,3,,188,1,74,3,1,1,1,2,20
+Batcham,E P De Bapepa B,351,221,217,4,,131,1,72,1,,1,,,5
+Batcham,E P De Batcham Chefferie A,378,304,297,7,,199,2,61,4,3,3,1,1,23
+Batcham,E P De Batcham Chefferie B,287,190,189,,,112,1,55,1,,,,2,18
+Batcham,E P De Batoumbi A,302,236,232,4,,142,1,63,,1,,,6,20
+Batcham,E P De Bazimbap A,410,336,328,5,3,199,1,105,3,1,3,,2,14
+Batcham,E P De Medoumgong A,485,420,418,2,,315,1,72,1,2,,,3,24
+Batcham,E P De Nzindong A,342,247,242,5,,133,3,83,1,1,2,1,2,12
+Batcham,E P De Tchuelekouet A,316,239,238,1,,155,3,55,5,2,2,1,2,13
+Batcham,E P De Tchuelekouet B,287,210,209,1,,138,,55,,,,,,16
+Batcham,E P Du Centre Urbain A,369,228,227,1,,107,1,96,2,2,1,1,4,13
+Batcham,E P Du Centre Urbain B,114,60,59,1,,28,1,26,1,1,,,,
+Batcham,Ecole Cath De Bamefo A,245,204,198,4,2,143,,42,1,4,1,,,7
+Batcham,Ecole Cath De Bameghuie A,290,239,232,6,1,156,,68,,,,,,8
+Batcham,Ecole Cath De Bangouang A,284,266,262,4,,178,,71,,,,1,,12
+Batcham,Ecole Cath De Bangouang B,268,225,222,3,,138,1,66,1,,2,,1,13
+Batcham,Ecole Cath De Bangueala Bangang A,248,174,172,2,,125,,27,,,,,,19
+Batcham,Ecole Cath De Banguie A,345,,,,,169,,55,1,,,,1,15
+Batcham,Ecole Cath De Batchuetio A,396,335,328,4,3,240,3,50,3,2,3,1,1,25
+Batcham,Ecole Cath De Batchuetio B,391,293,290,3,,206,1,41,1,1,1,2,4,33
+Batcham,Ecole Cath De Batoumoc A,200,162,161,1,,100,1,47,2,,,1,3,6
+Batcham,Ecole Cath De Batsepou A,291,249,248,,1,158,,48,,,,12,,30
+Batcham,Ecole Cath De Metio A,,,,,,157,,112,2,1,1,9,,56
+Batcham,Ecole Cath De Metio B,371,288,288,2,,111,2,105,5,4,3,,4,52
+Batcham,Ecole Cath De Metio C,388,221,218,3,,74,2,103,6,,,1,1,31
+Batcham,Ecole Cath St Jacques De Bangang A,260,183,182,1,,124,1,41,2,,,1,1,12
+Batcham,Ecole Cebec De Balakam A,404,355,353,2,,202,9,117,1,3,1,1,2,17
+Batcham,Ecole Cebec De Baletsi A,312,240,240,3,,221,1,102,1,1,,,,11
+Batcham,Ecole Cebec De Bamboue Bangang A,243,158,155,3,,101,1,42,,,,1,,10
+Batcham,Ecole Cebec De Bamboue Bangang B,262,199,191,3,5,188,1,56,,,,3,,13
+Batcham,Ecole Cebec De Bamemba A,230,217,213,4,,154,1,41,3,1,1,4,2,6
+Batcham,Ecole Cebec De Bamendou Bangang A,148,125,125,,,93,,23,1,,,1,1,6
+Batcham,Ecole Cebec De Bamessang A,411,296,294,2,,192,1,67,4,1,3,2,4,20
+Batcham,Ecole Cebec De Bataki A,261,206,210,6,3,120,1,57,1,,7,3,3,8
+Batcham,Ecole Cebec De Bataki B,253,244,242,2,,187,,45,,,,,,10
+Batcham,Ecole Cebec De Konkeua A,217,171,170,1,,116,,41,,,,1,,12
+Batcham,Ecole Cebec De Mena A,350,251,245,6,,187,1,187,2,1,1,1,2,18
+Batcham,Ecole Cebec De Nzong A,220,129,128,1,,79,,30,5,2,1,,1,10
+Batcham,Ecole Cebec De Nzong B,224,128,126,1,1,86,,29,,1,2,,1,7
+Batcham,Foyer Bakapfong A,261,195,194,1,,119,,48,,,1,3,,23
+Batcham,Foyer Bakapfong B,263,190,188,1,,123,1,38,5,,3,3,,13
+Batcham,Foyer De Baghang I A,312,255,251,4,,118,,97,2,,1,13,1,19
+Batcham,Foyer De Balafotio A,396,272,270,2,,172,,70,,,,13,,15
+Batcham,Foyer De Baletia A,375,244,263,1,,116,,120,,,,,,33
+Batcham,Foyer De Balie A,305,219,218,1,,137,,51,5,1,1,6,1,16
+Batcham,Foyer De Bameboro A,292,232,230,3,1,133,2,53,1,1,,1,3,33
+Batcham,Foyer De Bameghang A,316,256,255,1,,181,,56,1,,,,8,9
+Batcham,Foyer De Bameguea A,329,236,234,2,,127,6,59,2,,1,10,4,25
+Batcham,Foyer De Bamembou A,347,262,258,4,1,157,,82,,,,,,19
+Batcham,Foyer De Bangouo A,305,228,226,2,,93,1,107,3,3,2,3,7,7
+Batcham,Foyer De Bantsa A,282,219,217,2,,140,3,36,2,5,6,3,1,21
+Batcham,Foyer De Tomogo I A,268,220,214,3,3,134,,58,1,,,1,1,19
+Batcham,Lycee De Bametim Bangang A,211,169,166,3,,85,1,48,1,,3,1,12,15
+Batcham,Lycee De Bametim Bangang B,206,167,162,5,,87,3,36,3,,2,,9,22
+Batcham,Lycee De Bamougong A,276,261,260,1,,192,,47,,1,,,1,19
+Batcham,Lycee De Bamougong B,273,200,199,,1,144,,33,,,,1,,21
+Batcham,Lycee De Bangang A,196,123,121,2,,80,1,21,1,1,2,,2,13
+Batcham,Lycee Technique De Batcham A,358,284,281,3,,204,,51,,,2,,,24
+Bana,,,,,,,,,,,,,,,
+Bana,Case Communautaire Bakam A,333,128,,0,1,49,2,59,6,5,2,0,3,1
+Bana,Case Communautaire Bapouh A,294,225,,1,0,49,2,100,6,5,5,0,3,1
+Bana,Ecole Cebec Konte A,28,19,,0,0,5,0,13,0,0,0,0,1,0
+Bana,Ecole Maternelle Basso B,50,27,,0,0,11,0,12,1,1,0,0,0,1
+Bana,Ecole Publique Bana Centre B,248,136,,0,0,85,0,37,6,0,0,0,7,1
+Bana,Ecole Publique Bandoumkassa A,236,109,0,0,0,45,1,56,0,3,4,0,0,0
+Bana,Lycee Classique Bana A,242,105,,1,0,40,3,54,1,0,2,1,1,2
+Bana,Tribune Du Marche Bana B,376,76,,0,0,20,3,38,1,0,1,0,5,2
+Banwa,,,,,,,,,,,,,,,
+Banwa,Centre De Jeunesse De Banwa Centre A,311,187,186,1,0,37,1,134,1,0,3,1,1,8
+Banwa,Delegation Agriculture Banwa A,71,38,38,0,0,8,1,27,0,0,0,0,0,0
+Banwa,E P Banwa Centre A,143,102,102,0,0,35,18,57,1,1,1,1,1,3
+Banwa,Ecole Cath De Moumee Marche A,597,387,381,3,5,147,4,189,5,3,4,2,4,13
+Banwa,Ecole Cath De Moumee Marche B,227,155,152,3,0,53,3,74,3,2,1,1,0,15
+Banwa,Ep Fotsi Nord A,61,33,33,0,0,7,0,26,0,0,0,0,0,0
+Banwa,Foyer Banwa Centre A,364,222,220,2,0,44,1,156,0,0,3,0,11,5
+Baham,,,,,,,,,,,,,,,
+Baham,Centre Multifonctionnel A,,,,,,54,,110,,,,,,
+Baham,Centre Multifonctionnel B,,,,,,44,,27,,,,,,
+Baham,Csi De Bahiala A,,,,,,125,,181,,,,,,
+Baham,Csi De Bahiala B,,,,,,95,,26,,,,,,
+Baham,Csi De Bapi A,,,,,,169,,55,,,,,,
+Baham,Ep Banka A,,,,,,58,,127,,,,,,
+Baham,Ep Banka B,,,,,,52,,110,,,,,,
+Baham,Ep Chengne A,,,,,,113,,124,,,,,,
+Baham,Ep Du Centre A,,,,,,46,,111,,,,,,
+Baham,Ep Du Centre B,,,,,,44,,61,,,,,,
+Baham,Ep Du Centre C,,,,,,42,,96,,,,,,
+Baham,Ep Du Centre D,,,,,,79,,114,,,,,,
+Baham,Ep Gengarmerie A,,,,,,113,,80,,,,,,
+Baham,Ep Gengarmerie B,,,,,,49,,11,,,,,,
+Baham,Ep Mafoche A,,,,,,76,,126,,,,,,
+Baham,Ep Mafoche B,,,,,,14,,65,,,,,,
+Baham,Ep Poumze A,,,,,,113,,173,,,,,,
+Baham,Fc Lagweu A,,,,,,23,,184,,,,,,
+Baham,Fc Lagweu B,,,,,,35,,186,,,,,,
+Baham,Lycee Bilingue De Baham A,,,,,,17,,55,,,,,,
+Baham,Mc Penkwa A,,,,,,63,,79,,,,,,
+Baham,Mc Poumze A,,,,,,53,,62,,,,,,
+Baham,Mc Saint Andre A,,,,,,26,,87,,,,,,
+Batie,,,,,,,,,,,,,,,
+Batie,Cebec Chefferie A,360,121,120,01,,43,02,66,00,00,00,00,06,03
+Batie,Cebec Famgoum Ii A,285,148,,02,,76,0,63,02,00,01,01,02,06
+Batie,Ces Balig A,146,106,,01,,48,00,45,01,02,00,01,00,08
+Batie,Csi Bametchetcha A,85,48,,01,,35,0,05,0,0,01,0,03,03
+Batie,E Mat De Bachepang A,311,234,228,04,02,156,04,54,01,01,01,00,02,09
+Batie,E P De Nsoo A,83,56,,00,,28,,27,,,,,01,
+Batie,Emc Balig A,279,134,,01,,64,01,62,,1,0,,,5
+Batie,Emc Famgoum Ii A,337,172,,03,,65,0,86,00,00,01,01,06,10
+Batie,Ep Badjeugou A,264,149,,01,,,,,,,,,,
+Fokoue,,,,,,,,,,,,,,,
+Fokoue,Foyer Fokoue A,157,145,145,,,95,1,34,2,1,,,2,10
+Fokoue,Poste Agricole Bamegwou A,143,114,113,1,,52,,37,1,2,1,,,20
+Penka Michel,,,,,,,,,,,,,,,
+Penka Michel,C S I Bamendou Chefferie A,342,221,,3,,86,2,99,2,0,,0,4,25
+Penka Michel,Ces Bilingue De Ngouang A,257,156,,5,,28,2,94,0,2,,1,1,22
+Penka Michel,Cetic Bamendou King Place A,367,234,,,,108,0,104,0,1,,0,,6
+Penka Michel,Cooperative Batoula A,160,117,,,,61,1,49,0,0,,2,0,5
+Penka Michel,Ec Bamendou Leo A,175,134,,1,,76,2,36,4,1,,4,1,7
+Penka Michel,Ec Bamendou Poping A,198,145,,,,80,1,42,2,1,,1,2,15
+Penka Michel,Ep Dedeng A,194,142,,1,,67,0,65,2,0,,0,1,4
+Penka Michel,Ep Messing A,202,160,,1,,120,2,30,0,1,,1,1,4
+Penka Michel,Ep Nguimeto A,184,130,,,,53,0,63,2,0,,0,1,8
+Penka Michel,Ep Nkotsa A,450,411,,1,,85,0,212,1,0,,0,0,9
+Penka Michel,Ep Nkotsa B,54,36,,,,18,0,17,1,0,,0,0,0
+Penka Michel,Ep Panni A,223,154,,,,97,0,44,0,0,,0,4,4
+Penka Michel,Foyer Balefock A,336,232,,,,87,2,99,2,5,,3,3,24
+Penka Michel,Foyer Batoula A,198,136,,1,,57,6,40,2,1,,4,3,17
+Penka Michel,Foyer Messing A,213,145,,2,,58,0,69,1,3,,3,0,6
+Bangangte,,,,,,,,,,,,,,,
+Bangangte,Dispensaire Bamena A,422,159,159,03,0,62,0,81,04,01,0,01,01,06
+Bangangte,District De Sante De Bgte B,399,176,,04,0,79,01,80,04,0,0,01,01,12
+Bangangte,Ecole Maternelle Bilingue Quartier 2 A,413,200,200,04,02,79,04,90,08,01,01,01,01,12
+Bangangte,Ecole Maternelle Bilingue Quartier 2 B,,,,,,84,02,77,03,02,00,00,02,11
+Bangangte,Ep Groupe 4 D,349,187,183,04,00,59,01,108,07,00,00,01,03,04
+Bangangte,Ep Kamna B,,40,40,01,00,12,00,23,00,01,00,00,01,02
+Bangangte,Ep Kontap A,317,192,,,,102,04,100,02,03,00,01,03,10
+Bangangte,Foyer Bandjoun De Bgte A,460,271,215,06,00,106,00,135,09,01,01,00,01,04
+Bangangte,Foyer Bandjoun De Bgte B,399,145,145,00,00,41,00,89,07,03,01,00,00,04
+Bangangte,Foyer Ndepnou A,272,178,178,02,02,76,03,82,01,00,02,01,01,08
+Bangangte,Lycee Classique De Bgte A,444,298,298,00,00,185,06,80,09,00,02,00,03,01
+Bangangte,Lycee De Babou A,104,101,101,00,00,87,00,08,04,00,01,00,00,01
+Bangangte,Lycee Technique De Bgte C,97,37,37,00,00,22,00,22,00,00,00,00,00,01
+Tonga,,,,,,,,,,,,,,,
+Tonga,Case Communautaire Quartier 05 A,295,141,141,0,0,76,0,39,1,0,0,0,1,24
+Tonga,Cebec A,472,254,251,03,0,116,1,85,2,1,3,3,10,30
+Tonga,Cebec B,358,308,308,0,0,213,0,64,5,2,3,01,4,16
+Tonga,Cebec C,355,147,147,3,0,67,0,49,1,3,0,2,4,18
+Tonga,Cebec D,143,74,74,01,0,67,0,25,1,0,0,02,5,18
+Tonga,Ces Bilingue Bandounga A,113,112,111,01,0,97,01,10,0,0,0,0,0,03
+Tonga,Ecole Bilingue A,91,95,,,,53,,25,,1,,,5,11
+Tonga,Em Leumthe A,378,201,19605,,,94,0,61,03,2,0,1,10,25
+Tonga,Ep Bandounga A,270,228,228,,,204,0,18,0,0,0,0,0,6
+Tonga,Ep Bandounga B,240,237,240,1,,220,0,15,0,0,0,0,1,3
+Tonga,Ep Djantchali A,89,87,87,0,,88,,01,1,,,,,1
+Tonga,Ep Gendarmerie A,416,381,379,02,,287,1,165,,1,1,1,2,21
+Tonga,Ep Gendarmerie B,225,180,176,4,,118,,30,3,,,,9,16
+Tonga,Ep Maham 2 A,225,89,89,,,69,1,12,1,,,,2,4
+Tonga,Ep Medima A,114,111,,,,101,,5,,1,,,,4
+Tonga,Ep Tonga A,316,190,187,3,,101,01,62,01,03,01,,03,15
+Tonga,Ep Tonga C A,286,234,233,01,,139,02,78,,02,,01,03,09
+Tonga,Foyer Babitchoua A,216,220,218,02,,206,,07,,,,,,05
+Tonga,Foyer Balloua A,242,210,208,02,,196,,08,,,01,,,03
+Tonga,Foyer Balloua B,217,222,204,,,169,,27,,,,,,08
+Tonga,Foyer Municipal A,396,198,189,09,,64,,86,01,02,03,01,07,25
+Tonga,Inspection Primaire A,253,120,120,03,02,74,01,27,02,02,,,05,07
+Tonga,Lycee Technique A,352,214,211,02,,89,03,87,04,03,03,,04,18
+Tonga,Lycee Tonga A,388,280,279,01,,192,01,62,01,01,02,01,08,11
+Tonga,Lycee Tonga B,308,275,278,,,210,01,51,,,,02,02,12
+Tonga,Maison Communautaire Fagno A,204,199,,,,198,,01,,,,,,
+Tonga,Maison Communautaire Medima A,80,76,76,,,57,,17,,,,,,02
+Tonga,Maison Communautaire Qtr 13 A,78,59,58,01,,42,81,13,,,,,,02
+Tonga,Mission Catholique B,394,180,177,03,,93,02,55,02,01,02,03,03,16
+Tonga,Mission Catholique C,92,96,96,,,61,,19,07,01,,,03,05
+Foumban,,,,,,,,,,,,,,,
+Foumban,Centre De Promotion De La Femme A,,,,,,125,0,13,5,0,0,108,0,0
+Foumban,Commune Rurale De Foumban B,,249,,,,99,2,14,12,0,0,117,4,1
+Foumban,Delegation Dep Des Affaires Sociales A,,,,,,68,2,5,5,0,0,117,0,0
+Foumban,Delegation Departementale Elevage A,,,,,,57,0,4,3,0,0,36,2,0
+Foumban,Ecole Annexe Groupe I A,,,,,,77,1,6,3,0,0,194,,4
+Foumban,Ecole Cebec Njisse A,,,,,,111,3,7,6,0,0,134,0,0
+Foumban,Ecole Cebec Njisse B,,,,,,100,2,4,5,0,1,147,0,1
+Foumban,Ecole Cebec Njisse C,,,,,,110,3,8,7,0,0,107,0,0
+Foumban,Ecole Des Infirmiers Diplomes Detat A,,,,,,29,0,32,5,0,0,26,1,0
+Foumban,Ecole Publique De Gbetpefa A,,,,,,141,2,2,2,0,0,153,0,0
+Foumban,Ecole Publique De Kounga A,,,,,,87,1,27,13,2,0,78,27,1
+Foumban,Ecole Publique De Kounga B,,,,,,79,2,,15,0,12,13,0,1
+Foumban,Ecole Publique De Njiloum B,,,,,,90,1,8,9,0,0,105,0,0
+Foumban,Ecole Publique De Njinka A,,,,,,46,2,8,3,0,0,225,0,0
+Foumban,Ecole Publique De Njinka B,,,,,,36,5,9,4,0,0,212,0,0
+Foumban,Ecole Publique De Njinka C,,,,,,36,5,9,4,0,0,212,0,0
+Foumban,Inspection Darrond Deducation De Base A,,,,,,32,1,7,0,0,0,33,2,1
+Foumban,Lycee Bilingue De Foumban B,,,,,,62,1,37,11,0,0,107,0,2
+Foumban,Lycee Classique De Foumban C,,,,,,19,0,14,7,0,0,29,0,2
+Foumban,Service Departemental Des Domaines B,,,,,,75,0,4,5,0,0,72,1,1
+Kouoptamo,,,,,,,,,,,,,,,
+Kouoptamo,Cebec Bankouop A,446,288,282,06,02,171,01,20,16,03,02,43,07,19
+Kouoptamo,Centre De Sante Integre De La Chanas A,426,275,274,01,00,182,03,20,06,04,00,30,05,24
+Kouoptamo,Ecole Franco Islamique S Prefecture A,346,230,228,01,01,83,00,01,2,00,00,142,00,0
+Kouoptamo,Ecole Maternelle De La Mairie A,435,261,258,01,02,128,03,16,07,01,04,76,10,13
+Kouoptamo,Ecole Maternelle De La Mairie B,420,242,239,03,01,98,04,24,07,04,00,80,00,18
+Kouoptamo,Ecole Pub De Njindoun A,471,322,322,10,01,103,07,06,04,01,01,190,00,00
+Kouoptamo,Ecole Publique De Ngouendam A,343,197,197,0,0,80,04,09,00,00,00,103,01,00
+Kouoptamo,Ecole Publique De Ngouenjiamgbie A,396,257,254,02,01,99,02,03,05,00,01,133,04,06
+Kouoptamo,Ecole Publique De Ngouenjingoumbe A,262,160,155,05,05,119,00,12,02,01,00,20,01,00
+Kouoptamo,Ecole Publique De Nkouncha A,220,162,160,01,01,84,03,03,00,00,00,69,00,01
+Kouoptamo,Ecole Publique Njingoumbe Marche A,426,292,291,01,00,122,01,07,04,01,03,150,01,02
+Kouoptamo,Ecole Publique Njingoumbe Njissen A,342,258,258,00,00,127,04,05,01,01,01,116,03,00
+Kouoptamo,Mission Catholique De Kouomboum A,440,307,306,01,0,98,02,21,04,04,01,106,09,07
+Kouoptamo,Poste Agricole A,240,157,156,01,00,95,03,02,00,01,00,54,00,01
+Malantouen,,,,,,,,,,,,,,,
+Malantouen,Centre Evangelique De Mantambouoh A,246,213,212,1,0,75,1,9,1,1,0,127,0,0
+Malantouen,Cepca Manje Koutou A,318,,,,,120,7,5,2,0,0,75,1,1
+Malantouen,Cepca Njighait A,132,99,99,0,0,38,1,3,0,1,0,56,0,0
+Malantouen,E P De Malong A,94,86,86,0,0,84,0,1,0,0,0,1,0,0
+Malantouen,Ecole Franco Islamic De Mankare A,365,286,284,2,1,138,2,3,0,0,0,141,0,0
+Malantouen,Ecole Franco Islamique Manjouom A,147,114,113,0,1,50,0,4,0,0,0,59,0,0
+Malantouen,Ecole Franco Islamique Njingbabayit A,301,201,198,2,3,51,1,17,0,2,0,126,1,0
+Malantouen,Ecole P Bil De Makoutam Plateau A,239,147,146,0,1,35,2,3,0,1,1,103,1,0
+Malantouen,Ecole Publique Bilingue De Feripa A,,,,,,74,1,5,1,1,0,108,2,8
+Malantouen,Ecole Publique De Koutou Matam A,137,127,127,0,0,52,2,1,1,1,0,68,0,0
+Malantouen,Ecole Publique De Mafouatie A,161,119,118,1,0,91,0,3,0,0,0,24,0,0
+Malantouen,Ecole Publique De Makoundou A,,,,,,87,2,1,3,0,0,159,1,0
+Malantouen,Ecole Publique De Makoutam A,266,204,202,0,2,53,4,1,0,0,1,141,0,2
+Malantouen,Ecole Publique De Mambayen A,68,43,43,0,0,15,0,2,4,0,0,22,0,0
+Malantouen,Ecole Publique De Mambicham A,127,90,90,0,0,28,2,4,0,1,0,55,0,0
+Malantouen,Ecole Publique De Manda A,341,279,277,1,1,91,0,16,0,0,0,170,0,0
+Malantouen,Ecole Publique De Manje Koutou A,159,85,85,0,0,46,2,0,1,0,0,36,0,0
+Malantouen,Ecole Publique De Manje Magnit A,134,95,94,1,0,40,1,2,0,0,1,51,0,0
+Malantouen,Ecole Publique De Mantoum Village A,414,257,254,1,2,89,3,8,4,1,1,147,1,0
+Malantouen,Ecole Publique De Marapndoum A,296,169,166,2,1,81,3,6,4,3,1,65,0,3
+Malantouen,Ecole Publique De Maren A,140,113,112,1,0,55,2,2,1,0,1,49,0,0
+Malantouen,Ecole Publique De Matachom A,217,150,147,3,0,95,1,4,0,0,0,47,0,0
+Malantouen,Ecole Publique De Matagnom A,134,96,91,4,1,24,0,2,1,0,1,62,1,0
+Malantouen,Ecole Publique De Matoupou A,409,275,275,0,0,85,2,5,1,0,0,179,1,2
+Malantouen,Ecole Publique De Matoupou B,400,282,282,0,0,98,3,2,0,0,0,178,0,1
+Malantouen,Ecole Publique De Matoupou C,178,121,118,3,0,45,0,2,0,0,0,71,0,0
+Malantouen,Ecole Publique De Ndetnga A,224,170,168,1,1,106,1,2,0,0,1,58,0,0
+Malantouen,Ecole Publique De Njinga A,317,213,209,4,0,93,2,3,0,3,0,107,0,1
+Malantouen,Ecole Publique De Njinga B,287,194,189,2,3,65,0,6,1,1,0,116,0,0
+Malantouen,Ecole Publique De Njitiem A,155,103,103,0,0,34,0,2,0,0,0,67,0,0
+Malantouen,Ecole Publique Groupe I De Mal A,370,211,211,0,0,97,0,20,5,2,1,78,5,3
+Malantouen,Ecole Publique Groupe I De Mal B,344,,173,2,7,69,00,24,2,2,0,65,0,11
+Malantouen,Ecole Publique Groupe Ii De Mal A,411,253,251,1,1,118,4,25,3,0,0,85,5,11
+Malantouen,Ecole Publique Groupe Ii De Mal B,353,215,214,1,0,99,1,16,2,0,1,90,2,3
+Malantouen,Ecole Publique Groupe Ii De Mal C,367,216,215,0,1,106,0,14,5,2,0,83,1,4
+Malantouen,Foyer Jeunesse Et Animation A,132,93,92,1,0,41,0,3,0,0,0,47,1,0
+Malantouen,Poste Agricole Mantoum A,99,68,67,1,0,18,0,2,0,0,0,47,0,0

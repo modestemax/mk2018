@@ -1,0 +1,56 @@
+COUNCIL_NAME,POLLING_STATION,inscrits,votants,votes,nuls,blancs,biya,garga,kamto,cabral,matomba,akere,ndam,ndifor,osih
+Yaounde Ii,,,,,,,,,,,,,,,
+Yaounde Ii,College De La Grace A,386,189,186,3,0,122,2,43,13,0,0,1,0,5
+Yaounde Ii,College De La Grace B,162,162,162,0,0,83,02,50,16,02,01,03,01,04
+Yaounde Ii,E Bilg Newton A,476,231,229,02,0,123,16,50,25,05,01,01,03,05
+Yaounde Ii,E Mat Christ Roi Tsinga A,348,210,209,01,0,128,03,48,14,2,01,01,0,12
+Yaounde Ii,E Mat Christ Roi Tsinga B,388,94,94,0,0,47,5,29,8,0,0,1,1,3
+Yaounde Ii,E Mat Christ Roi Tsinga D,366,165,162,0,03,88,01,44,26,01,0,02,0,0
+Yaounde Ii,E Mission Cath I A,315,164,162,2,0,94,4,36,12,1,0,12,0,3
+Yaounde Ii,E Mission Cath I B,269,110,107,3,0,59,6,14,12,0,0,16,0,0
+Yaounde Ii,E Mission Cath I C,224,134,133,1,0,83,4,17,11,0,0,15,0,3
+Yaounde Ii,E Mission Cath Ii A,237,125,124,1,0,80,1,26,15,0,0,2,0,0
+Yaounde Ii,E Mission Cath Ii B,246,114,114,0,0,88,0,14,6,0,0,6,0,0
+Yaounde Ii,E Nat Sup De Police Ii B,327,119,118,1,0,54,8,24,22,0,0,4,1,5
+Yaounde Ii,E P Messa A,418,258,251,7,0,156,8,56,23,1,0,2,1,4
+Yaounde Ii,E P Tsinga A,402,137,135,2,0,57,14,51,10,1,0,1,0,1
+Yaounde Ii,E P Tsinga C,415,154,151,3,0,80,9,36,17,1,0,2,3,3
+Yaounde Ii,E P Tsinga Oliga B,394,181,180,0,0,90,01,58,25,01,01,01,01,02
+Yaounde Ii,E Pr Bethlehem B,360,139,138,1,0,54,4,64,9,0,0,2,0,5
+Yaounde Ii,E Pr Grace I B,432,214,208,6,0,74,1,107,12,1,0,3,4,6
+Yaounde Ii,E Pr Grace Ii A,371,212,208,4,0,98,8,68,19,1,0,7,2,5
+Yaounde Ii,Ecole Des Sources Ii A,411,202,200,02,0,64,02,99,15,0,0,07,03,10
+Yaounde Ii,Ecole Des Sources Ii C,176,64,64,01,0,25,01,29,06,0,0,0,0,02
+Yaounde Ii,Ecole Maternelle Dekoudou A,327,166,159,07,0,96,20,19,19,1,2,1,0,1
+Yaounde Ii,Ecole Maternelle Dekoudou B,329,124,123,01,0,80,9,14,14,0,0,4,0,2
+Yaounde Ii,Ecole Publique Dekoudou Iii B,384,197,193,4,0,146,5,14,23,0,0,1,0,4
+Yaounde Ii,Foyer Bakangoue A,280,119,221,2,0,37,4,59,11,1,0,6,0,1
+Yaounde Ii,Foyer Banka A,318,136,134,2,0,74,6,21,23,2,0,5,0,3
+Yaounde Ii,Foyer Bazou Nkomkana A,359,140,134,6,1,73,5,33,13,0,0,4,3,4
+Yaounde Ii,Good Chesser School A,399,186,186,00,0,104,02,56,09,02,0,0,02,11
+Yaounde Ii,Good Chesser School B,382,196,193,3,0,78,2,82,10,0,0,0,2,19
+Yaounde Ii,Good Chesser School D,388,126,125,1,0,54,0,42,17,1,0,1,2,8
+Yaounde Ii,Good Chesser School F,427,153,153,0,0,60,0,59,17,01,01,0,01,14
+Yaounde Ii,Good Chesser School G,386,147,147,0,0,60,2,56,6,1,2,00,1,19
+Yaounde Ii,Good Chesser School H,385,196,194,2,0,68,0,93,13,1,0,1,2,16
+Yaounde Ii,Hopital Central A,237,78,77,1,0,49,0,17,9,0,0,1,0,1
+Yaounde Ii,Institut Matamfen Superieur I A,333,165,159,6,0,107,4,28,13,0,1,1,0,5
+Yaounde Ii,Institut Matamfen Superieur I B,354,169,166,3,0,82,5,55,18,0,0,2,0,4
+Yaounde Ii,Institut Matamfen Superieur I D,334,119,118,1,0,45,0,51,13,0,0,3,0,3
+Yaounde Ii,Institut Matamfen Superieur Ii B,313,113,112,0,1,54,2,31,16,0,0,1,0,8
+Yaounde Ii,Les Coccinelles A,393,241,239,0,02,125,0,80,14,01,0,01,01,17
+Yaounde Ii,Les Coccinelles C,328,151,149,02,0,74,0,57,07,0,0,01,01,09
+Yaounde Ii,Les Coccinelles D,343,140,140,0,0,67,01,49,12,02,0,0,01,08
+Yaounde Ii,Les Coccinelles E,349,143,143,00,00,76,02,46,08,0,0,01,0,10
+Yaounde Ii,Les Coccinelles F,364,173,173,0,0,58,01,88,07,0,0,02,04,13
+Yaounde Ii,Les Coccinelles G,312,101,100,01,0,38,03,46,09,0,0,01,0,03
+Yaounde Ii,Les Coccinelles H,351,271,271,0,0,172,03,55,21,01,0,02,03,14
+Yaounde Ii,Les Coccinelles I,303,118,16,02,0,51,01,40,12,01,01,02,01,07
+Yaounde Ii,Lycee De La Cite Verte A,466,247,246,01,00,113,03,93,27,01,01,02,0,06
+Yaounde Ii,Lycee De Tsinga I B,383,133,131,2,0,67,4,37,15,0,00,4,0,4
+Yaounde Ii,Lycee De Tsinga I C,363,148,143,5,0,80,10,33,17,0,1,0,1,2
+Yaounde Ii,Lycee De Tsinga Ii A,362,149,147,2,0,61,7,57,12,1,1,2,0,6
+Yaounde Ii,Maison De La Femme A,316,114,112,02,0,75,12,13,09,01,0,01,0,01
+Yaounde Ii,Maison De La Femme B,359,138,138,0,0,81,14,26,10,0,0,02,01,04
+Yaounde Ii,Maison De La Femme C,369,131,131,0,0,63,06,48,06,1,0,0,03,04
+Yaounde Ii,Mosquee Briqueterie Ouest A,284,147,144,3,0,79,15,18,19,0,1,9,0,3
