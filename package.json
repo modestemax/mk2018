@@ -7,6 +7,7 @@
     "dist/"
   ],
   "scripts": {
+    "demarrer":"npm run build && cap sync && cap serve",
     "deploy": "git push remote master && pm2 deploy production",
     "build": "stencil build",
     "dev": "stencil build --dev --watch --serve",
