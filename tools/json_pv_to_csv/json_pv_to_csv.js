@@ -26,22 +26,7 @@ let pvList = _.groupBy(procesVerbaux, 'council_id');
 
 pvList = _.map(pvList, (pvs, council_id) => {
 
-  let sheet = [[unSnake(council_id),
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '']].concat(_.map(pvs, pv => {
+  let sheet = [[unSnake(council_id), '', '', '', '', '', '', '', '', '', '', '', '', '', '', '']].concat(_.map(pvs, pv => {
     return [
       unSnake(pv.council_id),
       unSnake(pv.pool_id),
