@@ -30,11 +30,11 @@ export class Menu extends Firebase {
     // await I18nData.loadStrings();
     return [
       {label: 'Kamto', 'icon': 'person', name: 'tab-who-am-i', show: false},
-      {label: 'Elections', 'icon': 'key', name: 'tab-elections', show: true},
+      {label: 'Elections', 'icon': 'key', name: 'tab-elections', show: false},
       {label: '', 'icon': '', name: 'tab-others', show: false},
+      {label: __('ACTUALITÉS'), 'icon': 'megaphone', name: 'tab-actualites'},
       {label: __('CHANTIERS'), 'icon': 'construct', name: 'tab-programme'},
       {label: __('ENGAGEMENTS'), 'icon': 'clipboard', name: 'tab-engagements'},
-      {label: __('ACTUALITÉS'), 'icon': 'megaphone', name: 'tab-actualites'}
     ];
   }
 }
