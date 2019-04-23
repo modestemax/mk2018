@@ -16,7 +16,7 @@ export abstract class Firebase {
   static async initFirestore(db, {offline = false} = {}) {
 
     db.settings({
-      timestampsInSnapshots: true,
+      // timestampsInSnapshots: true,
       // experimentalTabSynchronization: true
     });
     !offline && await db.enablePersistence()
